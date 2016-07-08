@@ -34,6 +34,8 @@
 # FastRamp
 # HQSounds_FinalModPack
 #
+# Совместимые моды:
+#   * SolarsNewUFOs
 #
 # Что уже готово:
 #   * startingBase
@@ -53,7 +55,7 @@
 #   *
 #
 # Что ещё нужно сделать:
-#   *
+#   * Кислотное оружие (после изобретения биологии пришельцев)
 #   *
 #
 #
@@ -338,7 +340,7 @@ craftWeapons:
   - type: STR_ALLOY_CANNON_UC
     sprite: 2
     sound: 4
-    damage: 10
+    damage: 15
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
     accuracy: 35 #accuracy: 25
     reloadCautious: 2
@@ -491,6 +493,14 @@ items:
   - delete: STR_FUSION_BALL # alien technologies cannot be reproduced
 
 # Standard armors
+
+  - type: CIVM_CORPSE
+    bigSprite: 57
+    floorSprite: 50
+
+  - type: CIVF_CORPSE
+    bigSprite: 58
+    floorSprite: 51
 
   - type: STR_CORPSE
     weight: 22
@@ -920,13 +930,13 @@ items:
     dropoff: 2
     meleePower: 50
     tuMelee: 40
-    accuracyMelee: 100
+    accuracyMelee: 125
 
   - type: STR_RIFLE_CLIP
     size: 0.075 #size: 0.1
     costBuy: 200
     costSell: 150
-    weight: 3
+    weight: 2 #weight: 3
     bigSprite: 2
     floorSprite: 2
     handSprite: 352
@@ -943,7 +953,7 @@ items:
     listOrder: 2201
     size: 0.075 #size: 0.1
     costSell: 390
-    weight: 3
+    weight: 2 #weight: 3
     bigSprite: 522
     floorSprite: 2
     handSprite: 352
@@ -1053,9 +1063,9 @@ items:
     autoRange: 15
     minRange: 2
     dropoff: 2
-    meleePower: 50
-    tuMelee: 40
-    accuracyMelee: 100
+    meleePower: 60
+    tuMelee: 45
+    accuracyMelee: 150
 
   - type: STR_ALLOY_RIFLE_CLIP # new item
     listOrder: 2206
@@ -1152,13 +1162,16 @@ items:
     autoRange: 0
     minRange: 0
     dropoff: 4
+    meleePower: 70
+    tuMelee: 30
+    accuracyMelee: 175
 
   - type: STR_SHOTGUN_AMMO # new item
     listOrder: 2281
     size: 0.033
     costBuy: 200
     costSell: 150
-    weight: 2
+    weight: 1
     bigSprite: 561
     floorSprite: 561
     handSprite: 352
@@ -1173,10 +1186,10 @@ items:
     armor: 12
 
   - type: STR_SHOTGUN_CLIP # new item
-    listOrder: 2281
+    listOrder: 2282
     size: 0.035
     costSell: 390
-    weight: 3
+    weight: 2
     bigSprite: 562
     floorSprite: 562
     handSprite: 384
@@ -1194,7 +1207,7 @@ items:
     size: 0.3
     costBuy: 6400
     costSell: 4800
-    weight: 24 #weight: 18
+    weight: 18
     bigSprite: 11
     floorSprite: 11
     handSprite: 24
@@ -1226,7 +1239,7 @@ items:
     size: 0.1
     costBuy: 0 #costBuy: 300
     costSell: 750 #costSell: 225
-    weight: 4 #weight: 6
+    weight: 3 #weight: 6
     bigSprite: 12
     floorSprite: 12
     handSprite: 312
@@ -1284,7 +1297,7 @@ items:
     size: 0.3
     costBuy: 13500
     costSell: 10125
-    weight: 22 #weight: 19
+    weight: 20 #weight: 19
     bigSprite: 7
     floorSprite: 7
     handSprite: 32
@@ -1388,8 +1401,8 @@ items:
       - STR_GL_I_AMMO
       - STR_GL_S_AMMO
     accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 80
+    accuracySnap: 44
+    accuracyAimed: 66
     tuAuto: 0
     tuSnap: 33
     tuAimed: 66
@@ -1418,7 +1431,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 50
+    power: 40
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -1437,7 +1450,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 70
+    power: 60
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -1590,7 +1603,7 @@ items:
     bigSprite: 20
     floorSprite: 20
     handSprite: 344
-    power: 60
+    power: 70 #power: 60
     damageType: 9
     battleType: 4
     blastRadius: 5
@@ -2121,7 +2134,7 @@ items:
   - type: STR_STUN_ROD
     size: 0.1
     costBuy: 0 #costBuy: 1260 - we will manufacture it
-    costSell: 59500 #costSell: 945
+    costSell: 48400 #costSell: 945
     weight: 8 #weight: 6
     bigSprite: 26
     floorSprite: 26
@@ -2358,13 +2371,12 @@ armors:
     corpseBattle:
       - STR_ARMORED_VEST_CORPSE
     storeItem: STR_ARMORED_VEST
-    weight: 8
+    weight: 9
     stats:
       tu: -5
       stamina: -15
-      firing: 5
-      reactions: 15
-      melee: 15
+      reactions: 10
+      melee: 10
     frontArmor: 30
     sideArmor: 20
     rearArmor: 12
@@ -2388,10 +2400,10 @@ armors:
     corpseBattle:
       - STR_LIGHT_VEST_CORPSE
     storeItem: STR_LIGHT_VEST
-    weight: 3
+    weight: 5
     stats:
       stamina: -15
-      firing: 15
+      firing: 10
     frontArmor: 18
     sideArmor: 12
     rearArmor: 7
@@ -2417,13 +2429,12 @@ armors:
     corpseBattle:
       - STR_HEAVY_CORPSE_ARMOR
     storeItem: STR_HEAVY_PERSONAL_ARMOR
-    weight: 12
+    weight: 16
     stats:
       tu: -5
       stamina: -15
-      firing: 5
-      reactions: 15
-      throwing: 15
+      reactions: 10
+      throwing: 10
     frontArmor: 60
     sideArmor: 48
     rearArmor: 36
@@ -2447,7 +2458,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_ARMOR
     storeItem: STR_PERSONAL_ARMOR
-    weight: 8
+    weight: 12
     stats:
       stamina: -15
       firing: 5
@@ -2476,10 +2487,10 @@ armors:
     corpseBattle:
       - STR_LIGHT_CORPSE_ARMOR
     storeItem: STR_LIGHT_PERSONAL_ARMOR
-    weight: 5
+    weight: 8
     stats:
       stamina: -15
-      firing: 15
+      firing: 10
     frontArmor: 45
     sideArmor: 30
     rearArmor: 15
@@ -2505,10 +2516,10 @@ armors:
     corpseBattle:
       - STR_CORPSE_SUIT
     storeItem: STR_POWER_SUIT
-    weight: 15
+    weight: 20
     stats:
       tu: 10
-      stamina: -10
+      stamina: -15
       reactions: 10
       firing: 10
       throwing: 10
@@ -2535,7 +2546,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_SUIT
     storeItem: STR_FLYING_SUIT
-    weight: 18
+    weight: 22
     stats:
       tu: 5
     frontArmor: 115
@@ -2562,7 +2573,7 @@ armors:
     corpseBattle:
       - STR_LIGHT_CORPSE_SUIT
     storeItem: STR_LIGHT_FLYING_SUIT
-    weight: 5
+    weight: 8
     stats:
       tu: 5
       firing: 10
@@ -2595,7 +2606,7 @@ armors:
     underArmor: 2
     damageModifier:
       - 1.0 # None
-      - 0.8 # Armor Piercing
+      - 0.7 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.5 # Laser
@@ -2667,9 +2678,9 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.6 # High Explosive
+      - 0.8 # Armor Piercing
+      - 1.1 # Incendiary
+      - 0.8 # High Explosive
       - 1.0 # Laser
       - 0.65 # Plasma
       - 0.0 # Stun
@@ -2834,7 +2845,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.5 # Plasma
-      - 0.8 # Stun
+      - 0.6 # Stun
       - 1.6 # Melee
       - 1.5 # Acid
       - 0.2 # Smoke
@@ -2852,7 +2863,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.5 # Plasma
-      - 0.8 # Stun
+      - 0.6 # Stun
       - 1.6 # Melee
       - 1.5 # Acid
       - 0.2 # Smoke
@@ -3065,7 +3076,7 @@ research:
   - name: STR_ALLOY_CANNON
     listOrder: 911
     cost: 250
-    points: 10
+    points: 15
     dependencies:
       - STR_ALLOY_CLIPS
       - STR_UFO_NAVIGATION
@@ -3083,21 +3094,21 @@ research:
 
   - name: STR_ALLOY_CLIPS
     listOrder: 911
-    cost: 350
-    points: 15
+    cost: 200
+    points: 20
     dependencies:
       - STR_ALIEN_ALLOYS
 
   - name: STR_ALLOY_RIFLE
     listOrder: 910
-    cost: 175
+    cost: 150
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
 
   - name: STR_ALLOY_SNIPER_RIFLE_RESEARCH
     listOrder: 910
-    cost: 200
+    cost: 150
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
@@ -3201,10 +3212,16 @@ research:
       - STR_ALIEN_FOOD
       - STR_ALIEN_BIOLOGY
 
+  - name: STR_STUN_ROD
+    cost: 50
+    score: 5
+    dependencies:
+      - STR_ALIEN_BIOLOGY
+
   - name: STR_ALIEN_BIOLOGY
     listOrder: 1299
-    cost: 275
-    points: 10
+    cost: 300
+    points: 20
     dependencies:
       - STR_SECTOID_AUTOPSY
       - STR_SNAKEMAN_AUTOPSY
@@ -3558,8 +3575,37 @@ manufacture:
 
 # Conventional weapons
 
-  - name: STR_PISTOL_AL_CLIP
+  - name: STR_AL_CLIPS
     listOrder: 801
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 80
+    cost: 2000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_PISTOL_AL_CLIP: 4
+      STR_MACHINE_PISTOL_AL_CLIP: 4
+      STR_RIFLE_AL_CLIP: 3
+      STR_SNIPER_RIFLE_AL_CLIP: 3
+
+  - name: STR_AL_AMMO
+    listOrder: 802
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 80
+    cost: 2000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_SHOTGUN_CLIP: 4
+      STR_HC_AP_AMMO: 2
+      STR_AC_AP_AMMO: 2
+
+  - name: STR_PISTOL_AL_CLIP
+    listOrder: 803
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
@@ -3571,7 +3617,7 @@ manufacture:
       STR_PISTOL_AL_CLIP: 5
 
   - name: STR_MACHINE_PISTOL_AL_CLIP
-    listOrder: 802
+    listOrder: 804
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
@@ -3583,7 +3629,7 @@ manufacture:
       STR_MACHINE_PISTOL_AL_CLIP: 3
 
   - name: STR_RIFLE_AL_CLIP
-    listOrder: 803
+    listOrder: 805
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
@@ -3595,7 +3641,7 @@ manufacture:
       STR_RIFLE_AL_CLIP: 3
 
   - name: STR_SNIPER_RIFLE_AL_CLIP
-    listOrder: 804
+    listOrder: 806
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
@@ -3653,34 +3699,34 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
 
   - name: STR_SHOTGUN_CLIP
-    listOrder: 805
-    category: STR_AMMUNITION
-    requires:
-      - STR_ALLOY_CLIPS
-    time: 24
-    cost: 800
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    requiredItems:
-      STR_SHOTGUN_CLIP: 4
-
-  - name: STR_HC_AP_AMMO
-    listOrder: 806
-    category: STR_AMMUNITION
-    requires:
-      - STR_ALLOY_CLIPS
-    time: 24
-    cost: 540
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-
-  - name: STR_AC_AP_AMMO
     listOrder: 807
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 32
+    time: 24
     cost: 600
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_SHOTGUN_CLIP: 4
+
+  - name: STR_HC_AP_AMMO
+    listOrder: 808
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 32
+    cost: 800
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_AC_AP_AMMO
+    listOrder: 809
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 32
+    cost: 800
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -3769,14 +3815,14 @@ manufacture:
       STR_FLOATER_CORPSE: 1
       STR_SNAKEMAN_CORPSE: 1
 
-  - name: STR_STUN_ROD # profit = 1.387.000/m, we can make money at middle
+  - name: STR_STUN_ROD # profit = 884.600/m, we can make money at middle
     listOrder: 1299
     category: STR_EQUIPMENT
     requires:
-      - STR_ALIEN_BIOLOGY
+      - STR_STUN_ROD
     space: 4
-    time: 450
-    cost: 21500
+    time: 400
+    cost: 21600
 
   - name: STR_PSI_AMP # profit = 1.817.720/m, we can make money at final
     category: STR_EQUIPMENT
@@ -3788,10 +3834,9 @@ manufacture:
 
 # Alien technologies cannot be reproduced, except ALIEN ALLOYS
 
-  - name: STR_ALIEN_ALLOYS
+  - name: STR_ALIEN_ALLOYS # profit = 50.652/m, we can make money at beginning
     space: 10
-    time: 60 #time: 100, profit = 635.000/m, we can make money at beginning
-    cost: 3000
+    time: 92 #time: 100
 
   - delete: STR_UFO_POWER_SOURCE
   - delete: STR_UFO_NAVIGATION
@@ -4073,7 +4118,7 @@ ufopaedia:
 
   - id: STR_STUN_ROD
     requires:
-      - STR_ALIEN_BIOLOGY
+      - STR_STUN_ROD
 
 # Research weapons and ammo from ALIEN ALLOYS
 
@@ -4474,6 +4519,34 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/AwesomeGuns/UI/Inventory/civilianf.png
+
+  - type: BIGOBS.PCK
+    files:
+      57: Resources/AwesomeGuns/UI/Civilians/civilianm_bigob.png
+      58: Resources/AwesomeGuns/UI/Civilians/civilianf_bigob.png
+
+  - type: FLOOROB.PCK
+    files:
+      50: Resources/AwesomeGuns/UI/Civilians/civilianm_floorpb.png
+      51: Resources/AwesomeGuns/UI/Civilians/civilianf_floorob.png
+
+  # These sprites do not work, TODO: should be replaced
+  # - type: CIVM.PCK
+  #   width: 512
+  #   height: 720
+  #   subX: 32
+  #   subY: 40
+  #   files:
+  #     0: Resources/AwesomeGuns/UI/Civilians/civilianm_sprites.png
+
+  # These sprites do not work, TODO: should be replaced
+  # - type: CIVF.PCK
+  #   width: 512
+  #   height: 720
+  #   subX: 32
+  #   subY: 40
+  #   files:
+  #     0: Resources/AwesomeGuns/UI/Civilians/civilianf_sprites.png
 
 # Standard armors
 
@@ -5151,17 +5224,13 @@ extraStrings:
   - type: en
     strings:
       STR_IMPROVED_INTERCEPTOR: "Improved interceptor"
-      STR_UFO_POWER_SOURCE_UFOPEDIA: "The power source of alien craft is an anti-matter reactor which uses Elerium (element 115) to generate powerful gravity waves as well as other forms of energy.  The conversion of matter to energy is an incredible 99% efficient, therefore tiny quantities of Elerium can produce a huge amount of power.  This unit can be reproduced easily using alien alloys.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce items of aliens."
       STR_RAVEN: "RAVEN"
       STR_RAVEN_UFOPEDIA: "THIS IS A PULSE-ENGINE HEAVILY MODIFIED FAST ATTACK FIGHTER. THE UPGRADE COMBINES ALIEN ALLOYS WITH THE LATEST EARTH TECHNOLOGY."
-      STR_UFO_NAVIGATION_UFOPEDIA: "Alien craft use sophisticated computers to navigate on earth and through space.  The system is based on optical processors arranged in network fashion.  The control interface is relatively simple - the navigator controls the direction of gravity waves generated by the power source to move the craft in any direction.  This system can be used easily by humans, and it can be reproduced using alien alloys and other components.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce items of aliens."
   - type: ru
     strings:
       STR_IMPROVED_INTERCEPTOR: "Усовершенствованный перехватчик"
-      STR_UFO_POWER_SOURCE_UFOPEDIA: "Источник энергии, применяемый на кораблях пришельцев, основан на реакторе антивещества, использующем элериум (элемент 115) и генерирующим мощные гравитационные волны и другие формы энергии. КПД преобразования материи в энергию достигает 99%, поэтому даже незначительное количество элериума может произвести огромное количество энергии. Это устройство можно легко воспроизвести при наличии сплавов пришельцев.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать предметы пришельцев."
       STR_RAVEN: "ВОРОН"
-      STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИИ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
-      STR_UFO_NAVIGATION_UFOPEDIA: "Управление полетом инопланетных кораблей осуществляется при помощи мощных компьютеров. Система основана на оптических процессорах, соединенных в сеть. Интерфейс управления относительно прост - навигатор изменяет направление гравитационных волн, генерируемых реактором, чтобы переместить корабль в нужном направлении. Интерфейс управления может быть освоен человеком. Для производства системы необходимы сплавы пришельцев и ряд других компонентов.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать предметы пришельцев."
+      STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИЙ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
 
 # Craft Weapons
   - type: en
@@ -5353,7 +5422,10 @@ extraStrings:
     strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
 
       STR_ALLOY_CLIPS: "Improved ammunition"
-      STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles, including a sniper, shotguns, manual and automatic guns. {NEWLINE} {NEWLINE} Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
+      STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles (including sniper), shotguns, manual and automatic guns.{NEWLINE}{NEWLINE}From one alien alloy can be carried out several rounds of ammunition, depending on the type of weapons. Also, engineers can proizvdit ammunition in one production stream for multiple types of weapons.{NEWLINE}{NEWLINE}Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
+
+      STR_AL_CLIPS: "Бронебойные боеприпасы"
+      STR_AL_AMMO: "Бронебойные дроби"
 
       STR_PISTOL: "Пистолет"
       STR_PISTOL_CLIP: "Магазин к пистолету"
@@ -5430,7 +5502,10 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Улучшенные боеприпасы"
-      STR_ALLOY_CLIPS_UFOPEDIA: "На основе наших знаний о сплавах пришельцев учённые предложили новую технологию изготовления бронебойных боеприпасов и картечей с увеличенной мощностью поражения. По мимо убойной силы, также увеличено и количество зарядов в обойме. Наши оперативники смогут использовать новые бронебойные боеприпасы в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Более того, возможно дальнейшее усовершенствование открытой технологии. На основе существующих образцов земного стрелкового оружия, учённые готовы разработать производственные чертежи новых типов вооружения, таких как штурмовая и снайперская винтовка."
+      STR_ALLOY_CLIPS_UFOPEDIA: "На основе наших знаний о сплавах пришельцев учённые предложили новую технологию изготовления бронебойных боеприпасов и картечей с увеличенной мощностью поражения. По мимо убойной силы, также увеличено и количество зарядов в обойме. Наши оперативники смогут использовать новые бронебойные боеприпасы в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов, в зависимости от типа вооружения. Также, инженеры могут произвдить боеприпасы в одном производственном потоке для нескольких типов вооружения.{NEWLINE}{NEWLINE}Более того, возможно дальнейшее усовершенствование открытой технологии. На основе существующих образцов земного стрелкового оружия, учённые готовы разработать производственные чертежи новых типов вооружения, таких как штурмовая и снайперская винтовка."
+
+      STR_AL_CLIPS: "Бронебойные боеприпасы"
+      STR_AL_AMMO: "Бронебойные дроби"
 
       STR_PISTOL: "Пистолет"
       STR_PISTOL_CLIP: "Магазин к пистолету"
