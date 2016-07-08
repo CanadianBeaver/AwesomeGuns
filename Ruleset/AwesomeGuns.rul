@@ -1,0 +1,5612 @@
+#
+# Awesome Guns MOD (version alpha).
+# Author: Radu Martin
+#
+#
+# I got images and ideas from many mods. Base of them are:
+# X-Com Weapon Rework and Expansion - 0.8.5
+# Weapon Rework/Expansion
+# Robin's Extra Weapons
+# Improved Hand Objects
+# AlienInventory
+# NewTUReserveUI
+# 2012DeathSounds
+# CraftMissleSound
+# Doom_Skill_Levels
+# Laser Rifle Recolor
+# GrenadeLauncher
+# Incendiary_grenade_24jul
+# ImprovedHandObsPack
+# EqualTerms1.03
+# Equal Terms (Prime alpha)
+# Ryskeliini_GunsNGadgets_1st_pack_v12
+# OpticalEleriumV0-94b
+# TinyResearchMod 1.0
+# Raven
+# Air Combat Rebalanced
+# Railgun
+# Better look personal armor
+# Armored Vest
+# Scout Power Armor
+# Stormhawk
+# Quick-Draw Hip Slot
+# Reproduction
+# FastRamp
+# HQSounds_FinalModPack
+#
+#
+# Что уже готово:
+#   * startingBase
+#   * дальность всех радаров
+#   * сканер движения
+#   * медкомплект
+#   * биология пришельцев, изолятор пришельцев и парализатор
+#   * самолёты и вооружение самолётов
+#   *
+#
+# Что нужно проверить:
+#   * стрелковое оружие
+#   * персональная броня
+#   * боевые платформы
+#   * предметы и экипировка
+#   * проверить защиту брони инопланетян на различные уроны
+#   *
+#
+# Что ещё нужно сделать:
+#   *
+#   *
+#
+#
+
+facilities:
+
+# Capacities of MODULES
+
+  - type: STR_HANGAR
+    buildCost: 200000
+    buildTime: 22 #buildTime: 25
+    monthlyCost: 25000
+    storage: 10 #storage: 0
+
+  - type: STR_GENERAL_STORES
+    buildCost: 150000
+    buildTime: 8 #buildTime: 10
+    monthlyCost: 5000
+    storage: 50
+
+  - type: STR_LIVING_QUARTERS
+    buildCost: 400000
+    buildTime: 16
+    monthlyCost: 10000
+    personnel: 50
+
+  - type: STR_LABORATORY
+    buildCost: 750000
+    buildTime: 26
+    monthlyCost: 30000
+    labs: 50
+
+  - type: STR_WORKSHOP
+    buildCost: 800000
+    buildTime: 32
+    monthlyCost: 35000
+    workshops: 50
+    storage: 3 #storage: 0
+
+# Fix the RADAR SYSTEMS
+
+  - type: STR_SMALL_RADAR_SYSTEM
+    buildCost: 350000 #buildCost: 500000
+    buildTime: 8 #buildTime: 12
+    monthlyCost: 10000
+    radarRange: 1500
+    radarChance: 35 #radarChance: 10
+
+  - type: STR_LARGE_RADAR_SYSTEM
+    buildCost: 600000 #buildCost: 800000
+    buildTime: 18 #buildTime: 25
+    monthlyCost: 35000 #monthlyCost: 15000
+    radarRange: 2400 #radarRange: 2250
+    radarChance: 5 #radarChance: 20
+
+  - type: STR_HYPER_WAVE_DECODER
+    requires:
+      - STR_HYPER_WAVE_DECODER
+    buildCost: 1200000 #buildCost: 1400000
+    buildTime: 25 #buildTime: 26
+    monthlyCost: 80000 #monthlyCost: 30000
+    radarRange: 2000 #radarRange: 2400
+    radarChance: 85 #radarChance: 100
+
+# Fix the DEFENSES
+
+  - type: STR_MISSILE_DEFENSES
+    buildCost: 200000
+    buildTime: 15 #buildTime: 16
+    monthlyCost: 5000
+    defense: 600 #defense: 500
+    hitRatio: 60 #hitRatio: 50
+
+  - type: STR_LASER_DEFENSES
+    requires:
+      - STR_LASER_DEFENSE
+    buildCost: 400000
+    buildTime: 20 #buildTime: 24
+    monthlyCost: 12000 #monthlyCost: 10000
+    defense: 700 #defense: 600
+    hitRatio: 70 #hitRatio: 60
+
+  - delete: STR_PLASMA_DEFENSES # alien technologies cannot be reproduced
+
+  - delete: STR_FUSION_BALL_DEFENSES # alien technologies cannot be reproduced
+
+# Fix the ALIEN CONTAINMENT
+
+  - type: STR_ALIEN_CONTAINMENT
+    requires:
+      - STR_ALIEN_CONTAINMENT
+    buildCost: 400000
+    buildTime: 18
+    monthlyCost: 15000
+    aliens: 10
+
+
+
+crafts:
+
+  - type: STR_SKYRANGER
+    sprite: 0
+    fuelMax: 1500
+    damageMax: 90 #damageMax: 150
+    speedMax: 780 #speedMax: 760
+    accel: 2
+    soldiers: 14
+    vehicles: 3
+    costBuy: 500000
+    costRent: 500000
+    refuelRate: 50
+    radarRange: 620 # ranger radar
+    transferTime: 60 #transferTime: 72
+    score: 200
+
+  - type: STR_INTERCEPTOR
+    sprite: 3
+    fuelMax: 1000
+    damageMax: 65 #damageMax: 100
+    speedMax: 2100
+    accel: 3
+    weapons: 2
+    costBuy: 600000
+    costRent: 600000
+    refuelRate: 50
+    radarRange: 350 # interceptor radar
+    transferTime: 72 #transferTime: 96
+    score: 250
+
+  - type: STR_RAVEN # new improved interceptor
+    listOrder: 205
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    sprite: 23
+    fuelMax: 1200
+    damageMax: 220
+    speedMax: 2800
+    accel: 5
+    weapons: 2
+    costSell: 900000
+    costRent: 150000
+    refuelRate: 50
+    radarRange: 450 # improved interceptor radar
+    score: 275
+
+  - type: STR_FIRESTORM
+    requires:
+      - STR_NEW_FIGHTER_CRAFT
+    sprite: 4
+    fuelMax: 36 #fuelMax: 20
+    damageMax: 500
+    speedMax: 4800 #speedMax: 4200
+    accel: 9
+    weapons: 2
+    costRent: 250000 #costRent: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 3 #refuelRate: 5
+    repairRate: 2 # 1 is the default for all crafts
+    radarRange: 450 # improved interceptor radar
+    score: 300 #score: 200
+
+  - type: STR_LIGHTNING
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    sprite: 1
+    fuelMax: 52 #fuelMax: 30
+    damageMax: 800
+    speedMax: 3100
+    accel: 9
+    weapons: 1
+    soldiers: 12
+    costRent: 330000 #costRent: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 4 #refuelRate: 5
+    repairRate: 2 # 1 is the default for all crafts
+    radarRange: 620 # ranger radar
+    score: 350 #score: 300
+
+  - type: STR_AVENGER
+    requires:
+      - STR_ULTIMATE_CRAFT
+    sprite: 2
+    fuelMax: 66 #fuelMax: 60
+    damageMax: 1200
+    speedMax: 5400
+    accel: 10
+    weapons: 2
+    soldiers: 26
+    vehicles: 4
+    costRent: 380000 #costRent: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    repairRate: 2 # 1 is the default for all crafts
+    radarRange: 725 # improved ranger radar
+    score: 400
+
+
+
+craftWeapons:
+
+# Conventional
+
+  - type: STR_AVALANCHE
+    sprite: 1
+    sound: 14 #sound: 5
+    damage: 280 #damage: 100
+    range: 45 #range: 60
+    accuracy: 15 #accuracy: 80
+    reloadCautious: 48
+    reloadStandard: 36
+    reloadAggressive: 24
+    ammoMax: 2 #ammoMax: 3
+    launcher: STR_AVALANCHE_LAUNCHER
+    clip: STR_AVALANCHE_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+
+  - type: STR_STINGRAY
+    sprite: 0
+    sound: 5
+    damage: 44 #damage: 70
+    range: 25 #range: 30
+    accuracy: 20 #accuracy: 70
+    reloadCautious: 32
+    reloadStandard: 24
+    reloadAggressive: 16
+    ammoMax: 6
+    launcher: STR_STINGRAY_LAUNCHER
+    clip: STR_STINGRAY_MISSILES
+    projectileType: 0
+    projectileSpeed: 10
+
+  - type: STR_CANNON_UC
+    sprite: 2
+    sound: 4
+    damage: 10
+    range: 10
+    accuracy: 15 #accuracy: 25
+    reloadCautious: 2
+    reloadStandard: 2
+    reloadAggressive: 2
+    ammoMax: 90 #ammoMax: 200
+    rearmRate: 50 #rearmRate: 100
+    launcher: STR_CANNON
+    clip: STR_CANNON_ROUNDS_X50
+    projectileType: 2
+    projectileSpeed: 12 #projectileSpeed: 8
+
+# Alloy
+
+  - type: STR_ALLOY_AVALANCHE
+    sprite: 1
+    sound: 14 #sound: 5
+    damage: 280 #damage: 100
+    range: 45 #range: 60
+    accuracy: 40 #accuracy: 80
+    reloadCautious: 40 #reloadCautious: 48
+    reloadStandard: 30 #reloadStandard: 36
+    reloadAggressive: 20 #reloadAggressive: 24
+    ammoMax: 2 #ammoMax: 3
+    launcher: STR_ALLOY_AVALANCHE_LAUNCHER
+    clip: STR_AVALANCHE_MISSILES
+    rearmRate: 2
+    projectileType: 1
+    projectileSpeed: 10
+
+  - type: STR_ALLOY_STINGRAY
+    sprite: 0
+    sound: 5
+    damage: 44 #damage: 70
+    range: 25 #range: 30
+    accuracy: 50 #accuracy: 70
+    reloadCautious: 24 #reloadCautious: 32
+    reloadStandard: 18 #reloadStandard: 24
+    reloadAggressive: 12 #reloadAggressive: 16
+    ammoMax: 6
+    launcher: STR_ALLOY_STINGRAY_LAUNCHER
+    clip: STR_STINGRAY_MISSILES
+    projectileType: 0
+    projectileSpeed: 12 #projectileSpeed: 8
+
+  - type: STR_ALLOY_CANNON_UC
+    sprite: 2
+    sound: 4
+    damage: 10
+    range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
+    accuracy: 35 #accuracy: 25
+    reloadCautious: 2
+    reloadStandard: 2
+    reloadAggressive: 2
+    ammoMax: 120 #ammoMax: 200
+    rearmRate: 60 #rearmRate: 100
+    launcher: STR_ALLOY_CANNON
+    clip: STR_CANNON_ROUNDS_X50
+    projectileType: 2
+    projectileSpeed: 15 #projectileSpeed: 8
+
+# New
+
+  - type: STR_STORM # new improved launcher
+    sprite: 11
+    sound: 15
+    damage: 290
+    range: 65 # (65 is used by STR_BATTLESHIP)
+    accuracy: 80
+    reloadCautious: 40
+    reloadStandard: 30
+    reloadAggressive: 20
+    ammoMax: 2
+    launcher: STR_STORM_LAUNCHER
+    clip: STR_STORM_MISSILES
+    rearmRate: 2
+    projectileType: 1
+    projectileSpeed: 14
+
+  - type: STR_LASER_CANNON_UC
+    sprite: 4
+    sound: 8
+    damage: 70
+    range: 20 # (22 is used by STR_HARVESTER)
+    accuracy: 80 #accuracy: 35
+    reloadCautious: 10 #reloadCautious: 12
+    reloadStandard: 10 #reloadStandard: 12
+    reloadAggressive: 10 #reloadAggressive: 12
+    ammoMax: 24 #ammoMax: 100
+    rearmRate: 4 #rearmRate: 50
+    launcher: STR_LASER_CANNON
+    projectileType: 4
+
+  - type: STR_PLASMA_BEAM_UC
+    sprite: 3 #sprite: 5
+    sound: 9
+    damage: 120 #damage: 140
+    range: 40 #range: 52 (42 is used by STR_TERROR_SHIP)
+    accuracy: 50
+    reloadCautious: 13 #reloadCautious: 12
+    reloadStandard: 12 #reloadStandard: 12
+    reloadAggressive: 11 #reloadAggressive: 12
+    ammoMax: 12 #ammoMax: 100
+    rearmRate: 2 #rearmRate: 50
+    launcher: STR_PLASMA_BEAM
+    projectileType: 3 #projectileType: 5
+    projectileSpeed: 18
+
+  - delete: STR_FUSION_BALL_UC # alien technologies cannot be reproduced
+
+
+
+items:
+
+# Craft weapons
+
+  - type: STR_AVALANCHE_LAUNCHER
+    size: 1
+    costBuy: 85000 #costBuy: 17000
+    costSell: 63750 #costSell: 12750
+    transferTime: 48
+
+  - type: STR_AVALANCHE_MISSILES
+    size: 1.5
+    costBuy: 11250 #costBuy: 9000
+    costSell: 9000 #costSell: 7200
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_STINGRAY_LAUNCHER
+    size: 0.8
+    costBuy: 16000
+    costSell: 12000
+    transferTime: 48
+
+  - type: STR_STINGRAY_MISSILES
+    size: 0.4
+    costBuy: 3000
+    costSell: 2400
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_CANNON
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48
+
+  - type: STR_CANNON_ROUNDS_X50
+    size: 0.075 #0.1
+    costBuy: 1240
+    costSell: 1012
+    transferTime: 48 #transferTime: 96
+    clipSize: 50
+
+  - type: STR_ALLOY_AVALANCHE_LAUNCHER
+    listOrder: 301
+    size: 1
+    costSell: 102000
+    transferTime: 48
+
+  - type: STR_ALLOY_STINGRAY_LAUNCHER
+    listOrder: 101
+    size: 0.8
+    costSell: 192000
+    transferTime: 48
+
+  - type: STR_ALLOY_CANNON
+    listOrder: 501
+    size: 1.5
+    costSell: 36000
+    transferTime: 48
+
+  - type: STR_STORM_LAUNCHER
+    listOrder: 401
+    size: 1
+    costSell: 182000
+    transferTime: 48
+
+  - type: STR_STORM_MISSILES
+    listOrder: 402
+    size: 0.5
+    costSell: 12000
+    transferTime: 48
+    clipSize: 1
+
+  - type: STR_LASER_CANNON
+    size: 2.0
+    costSell: 211000
+    transferTime: 48
+
+  - type: STR_PLASMA_BEAM # alien technologies cannot be reproduced, but this is an unique exception
+    size: 1.2
+    costSell: 267300
+    transferTime: 48
+
+  - delete: STR_FUSION_BALL_LAUNCHER # alien technologies cannot be reproduced
+
+  - delete: STR_FUSION_BALL # alien technologies cannot be reproduced
+
+# Standard armors
+
+  - type: STR_CORPSE
+    weight: 22
+    bigSprite: 45
+    floorSprite: 39
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_ARMORED_VEST
+    listOrder: 10594
+    size: 0.4
+    costBuy: 24000
+    costSell: 14000
+
+  - type: STR_ARMORED_VEST_CORPSE
+    listOrder: 4702
+    name: STR_CORPSE
+    weight: 27
+    bigSprite: 1003
+    floorSprite: 1003
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_LIGHT_VEST
+    listOrder: 10593
+    size: 0.4
+    costBuy: 20000
+    costSell: 12000
+
+  - type: STR_LIGHT_VEST_CORPSE
+    listOrder: 4703
+    name: STR_CORPSE
+    weight: 25
+    bigSprite: 1001
+    floorSprite: 1001
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+# Personal armors
+
+  - type: STR_HEAVY_PERSONAL_ARMOR
+    listOrder: 10601
+    size: 0.9
+    costSell: 60000
+
+  - type: STR_HEAVY_CORPSE_ARMOR
+    listOrder: 4801
+    name: STR_CORPSE
+    weight: 34
+    bigSprite: 1004
+    floorSprite: 1004
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    recover: false
+
+  - type: STR_PERSONAL_ARMOR
+    size: 0.8
+    costSell: 54000
+
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    weight: 36 #weight: 24
+    bigSprite: 28
+    floorSprite: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+  - type: STR_LIGHT_PERSONAL_ARMOR
+    listOrder: 10599
+    size: 0.8
+    costSell: 50000
+
+  - type: STR_LIGHT_CORPSE_ARMOR
+    listOrder: 4799
+    name: STR_CORPSE
+    weight: 27
+    bigSprite: 1005
+    floorSprite: 1005
+    invWidth: 2
+    invHeight: 3
+    armor: 28
+    recover: false
+
+# Power and Flying Suits
+
+  - type: STR_CORPSE_SUIT
+    name: STR_CORPSE
+    weight: 40 #weight: 26
+    bigSprite: 44
+    floorSprite: 41
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: false
+
+  - type: STR_POWER_SUIT
+    size: 1
+    costSell: 85000
+
+  - type: STR_FLYING_SUIT
+    size: 1
+    costSell: 115000
+
+  - type: STR_LIGHT_FLYING_SUIT
+    listOrder: 10801
+    size: 0.8
+    costSell: 75000
+
+  - type: STR_LIGHT_CORPSE_SUIT
+    listOrder: 4901
+    name: STR_CORPSE
+    weight: 28
+    bigSprite: 1005 # use the same image as STR_LIGHT_CORPSE_ARMOR
+    floorSprite: 1005 # use the same image as STR_LIGHT_CORPSE_ARMOR
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false
+
+# Heavy Weapon Platforms (Tanks)
+
+  - type: STR_TANK_CANNON
+    size: 6
+    costBuy: 420000
+    costSell: 340000
+    transferTime: 48 #transferTime: 96
+    weight: 1
+    bigSprite: 43
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 4
+    fireSound: 12
+    compatibleAmmo:
+      - STR_HWP_CANNON_SHELLS
+    accuracyAuto: 60
+    accuracySnap: 66 #accuracySnap: 60
+    accuracyAimed: 100 #accuracyAimed: 90
+    tuAuto: 66
+    tuSnap: 33
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    autoShots: 3
+    invWidth: 2
+    invHeight: 3
+    turretType: 0
+
+  - type: STR_HWP_CANNON_SHELLS
+    size: 0.075 #0.1
+    costBuy: 200
+    costSell: 100
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 12
+    hitSound: 13
+    hitAnimation: 26
+    power: 90 #power: 60
+    damageType: 1
+    clipSize: 18 #clipSize: 30
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+
+  - type: STR_TANK_ROCKET_LAUNCHER
+    size: 6
+    costBuy: 480000
+    costSell: 360000
+    transferTime: 48 #transferTime: 96
+    weight: 1
+    bigSprite: 42
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_HWP_ROCKETS
+    accuracyAuto: 60
+    accuracySnap: 60 #accuracySnap: 55
+    accuracyAimed: 90 #accuracyAimed: 115
+    tuAuto: 66
+    tuSnap: 45
+    tuAimed: 85 #tuAimed: 75
+    battleType: 1
+    fixedWeapon: true
+    autoShots: 2
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+
+  - type: STR_HWP_ROCKETS
+    size: 0.4 #size: 0.6
+    costBuy: 3000
+    costSell: 2250
+    transferTime: 48
+    weight: 1
+    bigSprite: -1
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    power: 90 #power: 85
+    damageType: 3
+    clipSize: 10 #clipSize: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+
+  - type: STR_TANK_LASER_CANNON
+    size: 6
+    costSell: 594000
+    transferTime: 48 #transferTime: 96
+    weight: 1
+    bigSprite: 54
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 5
+    fireSound: 11
+    hitSound: 19
+    hitAnimation: 36
+    power: 120 #power: 110
+    damageType: 4
+    accuracySnap: 85 #accuracySnap: 50
+    accuracyAimed: 100 #accuracyAimed: 85
+    tuSnap: 30 #tuSnap: 33
+    tuAimed: 60 #tuAimed: 75
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    turretType: 2
+
+  - type: STR_HOVERTANK_PLASMA
+    size: 6
+    costSell: 980000
+    transferTime: 48 #transferTime: 96
+    weight: 1
+    bigSprite: 40
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 18
+    hitSound: 19
+    power: 120 #power: 110
+    damageType: 5
+    hitAnimation: 66 #hitAnimation: 46
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    turretType: 3
+
+  - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
+  - delete: STR_HWP_FUSION_BOMB # alien technologies cannot be reproduced
+
+# CONVENTIONAL weapons
+
+  - type: STR_PISTOL
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    bigSprite: 3
+    floorSprite: 3
+    handSprite: 96
+    bulletSprite: 1
+    fireSound: 8001 #fireSound: 4
+    compatibleAmmo:
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_AL_CLIP
+    accuracyAuto: 0
+    accuracySnap: 58 #accuracySnap: 60
+    accuracyAimed: 76 #accuracyAimed: 78
+    tuAuto: 0
+    tuSnap: 16 #tuSnap: 18
+    tuAimed: 26 #tuAimed: 30
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 18
+    maxRange: 24
+    aimRange: 18
+    snapRange: 12
+    autoRange: 0
+    minRange: 0
+    dropoff: 5
+
+  - type: STR_PISTOL_CLIP
+    size: 0.05 #size: 0.1
+    costBuy: 70
+    costSell: 52
+    weight: 1 #weight: 3
+    bigSprite: 4
+    floorSprite: 4
+    handSprite: 360
+    hitSound: 8002 #hitSound: 22
+    bulletSpeed: 0
+    hitAnimation: 26
+    power: 26
+    damageType: 1
+    clipSize: 9 #clipSize: 12
+    battleType: 2
+    armor: 10
+
+  - type: STR_PISTOL_AL_CLIP # new item
+    listOrder: 2001
+    size: 0.05 #size: 0.1
+    costSell: 135
+    weight: 1 #weight: 3
+    bigSprite: 502
+    floorSprite: 4
+    handSprite: 360
+    bulletSpeed: 1
+    hitSound: 8002 #hitSound: 22
+    hitAnimation: 56
+    power: 36
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 10
+
+  - type: STR_MACHINE_PISTOL # new item
+    listOrder: 2010
+    size: 0.1
+    costBuy: 850
+    costSell: 620
+    weight: 6
+    bigSprite: 510
+    floorSprite: 510
+    handSprite: 510
+    bulletSprite: 1
+    fireSound: 8005
+    compatibleAmmo:
+      - STR_MACHINE_PISTOL_CLIP
+      - STR_MACHINE_PISTOL_AL_CLIP
+    accuracyAuto: 46
+    accuracySnap: 56
+    tuAuto: 30
+    tuSnap: 18
+    battleType: 1
+    autoShots: 5
+    invWidth: 2
+    invHeight: 2
+    armor: 18
+    maxRange: 22
+    aimRange: 0
+    snapRange: 10
+    autoRange: 10
+    minRange: 0
+    dropoff: 5
+
+  - type: STR_MACHINE_PISTOL_CLIP # new item
+    listOrder: 2011
+    size: 0.07 #size: 0.1
+    costBuy: 112
+    costSell: 84
+    weight: 1
+    bigSprite: 511
+    floorSprite: 511
+    handSprite: 360
+    bulletSpeed: 0
+    hitSound: 8002
+    hitAnimation: 26
+    power: 26
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 10
+
+  - type: STR_MACHINE_PISTOL_AL_CLIP # new item
+    listOrder: 2012
+    size: 0.07 #size: 0.1
+    costSell: 215
+    weight: 1
+    bigSprite: 512
+    floorSprite: 511
+    handSprite: 360
+    bulletSpeed: 1
+    hitSound: 8002
+    hitAnimation: 56
+    power: 36
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 10
+
+  - type: STR_RIFLE
+    size: 0.16 #size: 0.2
+    costBuy: 3000
+    costSell: 2250
+    weight: 10 #weight: 8
+    bigSprite: 1
+    floorSprite: 1
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 8009 #fireSound: 4
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_AL_CLIP
+    accuracyAuto: 30 #accuracyAuto: 35
+    accuracySnap: 60 #accuracySnap: 60
+    accuracyAimed: 85 #accuracyAimed: 110
+    tuAuto: 35 #tuAuto: 35
+    tuSnap: 25 #tuSnap: 25
+    tuAimed: 70 #tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    maxRange: 40
+    aimRange: 28
+    snapRange: 20
+    autoRange: 10
+    minRange: 2
+    dropoff: 2
+    meleePower: 50
+    tuMelee: 40
+    accuracyMelee: 100
+
+  - type: STR_RIFLE_CLIP
+    size: 0.075 #size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 2
+    floorSprite: 2
+    handSprite: 352
+    bulletSpeed: 1
+    hitSound: 8010 #hitSound: 22
+    hitAnimation: 26
+    power: 32 #power: 30
+    damageType: 1
+    clipSize: 12 #clipSize: 20
+    battleType: 2
+    armor: 12
+
+  - type: STR_RIFLE_AL_CLIP # new item
+    listOrder: 2201
+    size: 0.075 #size: 0.1
+    costSell: 390
+    weight: 3
+    bigSprite: 522
+    floorSprite: 2
+    handSprite: 352
+    bulletSpeed: 2
+    hitSound: 8010 #hitSound: 22
+    hitAnimation: 56
+    power: 42
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 12
+
+  - type: STR_SNIPER_RIFLE # new item
+    listOrder: 2214
+    size: 0.2
+    costBuy: 6000
+    costSell: 4500
+    weight: 18
+    bigSprite: 630
+    floorSprite: 630
+    handSprite: 630
+    bulletSprite: 12
+    fireSound: 8015
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_CLIP
+      - STR_SNIPER_RIFLE_AL_CLIP
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 52
+    tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 22
+    maxRange: 50
+    aimRange: 36
+    snapRange: 20
+    autoRange: 0
+    minRange: 15
+    dropoff: 2
+
+  - type: STR_SNIPER_RIFLE_CLIP # new item
+    listOrder: 2215
+    size: 0.05
+    costBuy: 400
+    costSell: 300
+    weight: 3
+    bigSprite: 631
+    floorSprite: 631
+    handSprite: 352
+    bulletSpeed: 3
+    hitSound: 8010
+    hitAnimation: 26
+    power: 38
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    armor: 12
+
+  - type: STR_SNIPER_RIFLE_AL_CLIP # new item
+    listOrder: 2216
+    size: 0.05
+    costSell: 785
+    weight: 3
+    bigSprite: 632
+    floorSprite: 631
+    handSprite: 352
+    bulletSpeed: 4
+    hitSound: 8010
+    hitAnimation: 56
+    power: 52
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 12
+
+  - type: STR_ALLOY_RIFLE # new item
+    listOrder: 2205
+    size: 0.2
+    costSell: 16000
+    weight: 18
+    bigSprite: 530
+    floorSprite: 530
+    handSprite: 530
+    bulletSprite: 13
+    fireSound: 8011 #fireSound: 4
+    compatibleAmmo:
+      - STR_ALLOY_RIFLE_CLIP
+    accuracyAuto: 33
+    accuracySnap: 63
+    accuracyAimed: 85
+    tuAuto: 23
+    tuSnap: 23
+    tuAimed: 65
+    battleType: 1
+    autoShots: 2
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 25
+    maxRange: 48
+    aimRange: 33
+    snapRange: 25
+    autoRange: 15
+    minRange: 2
+    dropoff: 2
+    meleePower: 50
+    tuMelee: 40
+    accuracyMelee: 100
+
+  - type: STR_ALLOY_RIFLE_CLIP # new item
+    listOrder: 2206
+    size: 0.075
+    costSell: 800
+    weight: 3
+    bigSprite: 531
+    floorSprite: 531
+    handSprite: 352
+    bulletSpeed: 3
+    hitSound: 8010
+    hitAnimation: 56
+    power: 46
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 15
+
+  - type: STR_ALLOY_SNIPER_RIFLE # new item
+    listOrder: 2226
+    size: 0.3
+    costSell: 75000
+    weight: 30
+    bigSprite: 550
+    floorSprite: 550
+    handSprite: 550
+    bulletSprite: 14
+    fireSound: 8017
+    compatibleAmmo:
+      - STR_ALLOY_SNIPER_RIFLE_CLIP
+    accuracyAuto: 0
+    accuracySnap: 0
+    accuracyAimed: 120
+    tuAuto: 0
+    tuSnap: 0
+    tuAimed: 97
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 23
+    maxRange: 61
+    aimRange: 53
+    snapRange: 0
+    autoRange: 0
+    minRange: 35
+    dropoff: 5
+
+  - type: STR_ALLOY_SNIPER_RIFLE_CLIP # new item
+    listOrder: 2227
+    size: 0.05
+    costSell: 1050
+    weight: 5
+    bigSprite: 551
+    floorSprite: 551
+    handSprite: 352
+    bulletSpeed: 5
+    hitSound: 8018
+    hitAnimation: 56
+    power: 84
+    damageType: 1
+    clipSize: 3
+    battleType: 2
+    armor: 12
+
+  - type: STR_SHOTGUN # new item
+    listOrder: 2280
+    size: 0.18
+    costBuy: 3400
+    costSell: 2550
+    weight: 9
+    bigSprite: 560
+    floorSprite: 560
+    handSprite: 560
+    bulletSprite: 2
+    fireSound: 8021
+    compatibleAmmo:
+      - STR_SHOTGUN_AMMO
+      - STR_SHOTGUN_CLIP
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 33
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    maxRange: 20
+    aimRange: 15
+    snapRange: 10
+    autoRange: 0
+    minRange: 0
+    dropoff: 4
+
+  - type: STR_SHOTGUN_AMMO # new item
+    listOrder: 2281
+    size: 0.033
+    costBuy: 200
+    costSell: 150
+    weight: 2
+    bigSprite: 561
+    floorSprite: 561
+    handSprite: 352
+    bulletSpeed: 0
+    hitSound: 8022
+    hitAnimation: 26
+    power: 22
+    damageType: 1
+    clipSize: 4
+    shotgunPellets: 5
+    battleType: 2
+    armor: 12
+
+  - type: STR_SHOTGUN_CLIP # new item
+    listOrder: 2281
+    size: 0.035
+    costSell: 390
+    weight: 3
+    bigSprite: 562
+    floorSprite: 562
+    handSprite: 384
+    bulletSpeed: 0
+    hitSound: 8022
+    hitAnimation: 56
+    power: 45
+    damageType: 1
+    clipSize: 6
+    shotgunPellets: 4
+    battleType: 2
+    armor: 14
+
+  - type: STR_HEAVY_CANNON
+    size: 0.3
+    costBuy: 6400
+    costSell: 4800
+    weight: 24 #weight: 18
+    bigSprite: 11
+    floorSprite: 11
+    handSprite: 24
+    bulletSprite: 4
+    fireSound: 8025 #fireSound: 12
+    compatibleAmmo:
+      - STR_HC_HE_AMMO
+      - STR_HC_I_AMMO
+      - STR_HC_AP_AMMO
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 35 #tuSnap: 33
+    tuAimed: 85 #tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    maxRange: 28
+    aimRange: 20
+    snapRange: 12
+    autoRange: 0
+    minRange: 5
+    dropoff: 3
+
+  - type: STR_HC_AP_AMMO
+    size: 0.1
+    costBuy: 0 #costBuy: 300
+    costSell: 750 #costSell: 225
+    weight: 4 #weight: 6
+    bigSprite: 12
+    floorSprite: 12
+    handSprite: 312
+    fireSound: 8027
+    hitSound: 8022 #hitSound: 13
+    hitAnimation: 56 #hitAnimation: 26
+    power: 30 #power: 56
+    damageType: 1
+    clipSize: 6
+    shotgunPellets: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_HC_HE_AMMO
+    size: 0.1
+    costBuy: 500
+    costSell: 275
+    weight: 6
+    bigSprite: 13
+    floorSprite: 13
+    handSprite: 320
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 66 #power: 52
+    damageType: 3
+    clipSize: 4 #clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_HC_I_AMMO
+    size: 0.1
+    costBuy: 400
+    costSell: 300
+    weight: 6
+    bigSprite: 14
+    floorSprite: 14
+    handSprite: 328
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 72 #power: 60
+    damageType: 2
+    clipSize: 4 #clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_AUTO_CANNON
+    size: 0.3
+    costBuy: 13500
+    costSell: 10125
+    weight: 22 #weight: 19
+    bigSprite: 7
+    floorSprite: 7
+    handSprite: 32
+    bulletSprite: 3
+    fireSound: 8029 #fireSound: 12
+    compatibleAmmo:
+      - STR_AC_HE_AMMO
+      - STR_AC_I_AMMO
+      - STR_AC_AP_AMMO
+    accuracyAuto: 40 #accuracyAuto: 32
+    accuracySnap: 0 #accuracySnap: 56
+    accuracyAimed: 0 #accuracyAimed: 82
+    tuAuto: 40
+    tuSnap: 0 #tuSnap: 33
+    tuAimed: 0 #tuAimed: 80
+    battleType: 1
+    autoShots: 4
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    maxRange: 24
+    aimRange: 0
+    snapRange: 0
+    autoRange: 16
+    minRange: 5
+    dropoff: 3
+
+  - type: STR_AC_AP_AMMO
+    size: 0.1
+    costBuy: 0 #costBuy: 500
+    costSell: 840 #costSell: 400
+    weight: 5
+    bigSprite: 8
+    floorSprite: 8
+    handSprite: 288
+    hitSound: 8022 #hitSound: 13
+    hitAnimation: 56 #hitAnimation: 26
+    power: 20 #power: 42
+    damageType: 1
+    clipSize: 14
+    shotgunPellets: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_AC_HE_AMMO
+    size: 0.1
+    costBuy: 700
+    costSell: 560
+    weight: 6 #weight: 5
+    bigSprite: 9
+    floorSprite: 9
+    handSprite: 296
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 40 #power: 44
+    damageType: 3
+    clipSize: 14
+    battleType: 2
+    blastRadius: 1
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_AC_I_AMMO
+    size: 0.1
+    costBuy: 650
+    costSell: 520
+    weight: 6 #weight: 5
+    bigSprite: 10
+    floorSprite: 10
+    handSprite: 304
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 48 #power: 42
+    damageType: 2
+    clipSize: 14
+    battleType: 2
+    blastRadius: 1
+    invWidth: 2
+    invHeight: 1
+    armor: 8
+
+  - type: STR_GRENADE_LAUNCHER # new item
+    listOrder: 3090
+    size: 0.15
+    costBuy: 5800
+    costSell: 4350
+    weight: 8
+    bigSprite: 590
+    floorSprite: 590
+    handSprite: 590
+    bulletSprite: 11
+    fireSound: 8033
+    compatibleAmmo:
+      - STR_GL_HE_AMMO
+      - STR_GL_I_AMMO
+      - STR_GL_S_AMMO
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 0
+    tuSnap: 33
+    tuAimed: 66
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    armor: 16
+    maxRange: 38
+    aimRange: 28
+    snapRange: 20
+    autoRange: 0
+    minRange: 12
+    dropoff: 3
+
+  - type: STR_GL_HE_AMMO
+    listOrder: 3091
+    size: 0.08
+    costBuy: 320
+    costSell: 250
+    weight: 3
+    bigSprite: 591
+    floorSprite: 19
+    handSprite: 120
+    bulletSpeed: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 50
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    blastRadius: 4
+    armor: 8
+
+  - type: STR_GL_I_AMMO
+    listOrder: 3092
+    size: 0.08
+    costBuy: 350
+    costSell: 280
+    weight: 3
+    bigSprite: 592
+    floorSprite: 19
+    handSprite: 120
+    bulletSpeed: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 70
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    blastRadius: 4
+    armor: 8
+
+  - type: STR_GL_S_AMMO
+    listOrder: 3093
+    size: 0.08
+    costBuy: 160
+    costSell: 120
+    weight: 3
+    bigSprite: 593
+    floorSprite: 19
+    handSprite: 120
+    bulletSpeed: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 60
+    damageType: 9
+    clipSize: 1
+    battleType: 2
+    blastRadius: 4
+    armor: 8
+
+  - type: STR_ROCKET_LAUNCHER
+    size: 0.4
+    costBuy: 4000
+    costSell: 3000
+    weight: 12
+    bigSprite: 15
+    floorSprite: 15
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 8037 #fireSound: 52
+    compatibleAmmo:
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      - STR_SMALL_ROCKET
+    accuracyAuto: 0
+    accuracySnap: 55 #accuracySnap: 55
+    accuracyAimed: 100 #accuracyAimed: 115
+    tuAuto: 0
+    tuSnap: 45
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 22
+    maxRange: 200
+    aimRange: 34
+    snapRange: 26
+    autoRange: 0
+    minRange: 12
+    dropoff: 5
+
+  - type: STR_SMALL_ROCKET
+    size: 0.1 #size: 0.2
+    costBuy: 0 # costBuy: 600
+    costSell: 1600 #costSell: 480
+    weight: 9 #weight: 6
+    bigSprite: 16
+    floorSprite: 16
+    handSprite: 256
+    bulletSpeed: 3
+    hitSound: 8038 #hitSound: 0
+    hitAnimation: 0
+    power: 225 #power: 75
+    damageType: 1 #damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 6
+
+  - type: STR_LARGE_ROCKET
+    size: 0.16
+    costBuy: 850 #costBuy: 900
+    costSell: 630 #costSell: 720
+    weight: 6 #weight: 8
+    bigSprite: 17
+    floorSprite: 17
+    handSprite: 264
+    bulletSpeed: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 6
+
+  - type: STR_INCENDIARY_ROCKET
+    size: 0.16
+    costBuy: 1100 #costBuy: 1200
+    costSell: 800 #costSell: 960
+    weight: 6 #weight: 8
+    bigSprite: 18
+    floorSprite: 18
+    handSprite: 272
+    bulletSpeed: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 125 #power: 90
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 6
+
+# Explosions
+
+  - type: STR_GRENADE
+    size: 0.08
+    costBuy: 300
+    costSell: 240
+    weight: 3
+    bigSprite: 19
+    floorSprite: 19
+    power: 50
+    damageType: 3
+    battleType: 4
+    blastRadius: 5
+    armor: 6
+
+  - type: STR_INCENDIARY_GRENADE # new item
+    listOrder: 3810
+    size: 0.08
+    costBuy: 340
+    costSell: 280
+    weight: 3
+    bigSprite: 610
+    floorSprite: 610
+    handSprite: 610
+    power: 70
+    damageType: 2
+    battleType: 4
+    blastRadius: 5
+    armor: 6
+
+  - type: STR_SMOKE_GRENADE
+    size: 0.08
+    costBuy: 150
+    costSell: 120
+    weight: 3
+    bigSprite: 20
+    floorSprite: 20
+    handSprite: 344
+    power: 60
+    damageType: 9
+    battleType: 4
+    blastRadius: 5
+    armor: 6
+
+  - type: STR_PROXIMITY_GRENADE
+    size: 0.08
+    costBuy: 500
+    costSell: 400
+    weight: 3
+    bigSprite: 21
+    floorSprite: 21
+    handSprite: 232
+    power: 70
+    damageType: 3
+    battleType: 5
+    blastRadius: 5
+    armor: 6
+
+  - type: STR_HIGH_EXPLOSIVE
+    size: 0.15
+    costBuy: 4000 #costBuy: 1500
+    costSell: 3000
+    weight: 6
+    bigSprite: 22
+    floorSprite: 22
+    handSprite: 216
+    power: 110
+    damageType: 3
+    battleType: 4
+    invWidth: 2
+    invHeight: 1
+    blastRadius: 5
+    armor: 5
+
+  - type: STR_ALIEN_GRENADE
+    requires:
+      - STR_ALIEN_GRENADE
+    size: 0.1
+    costSell: 14850
+    weight: 3
+    bigSprite: 39
+    floorSprite: 38
+    handSprite: 336
+    power: 90
+    damageType: 3
+    battleType: 4
+    recoveryPoints: 1
+    blastRadius: 5
+    armor: 8
+
+# LASER weapons
+
+  - type: STR_LASER_PISTOL
+    size: 0.1
+    costSell: 20000
+    weight: 8 #weight: 7
+    bigSprite: 5
+    floorSprite: 5
+    handSprite: 112
+    bulletSprite: 5
+    bulletSpeed: 2
+    fireSound: 8051 #fireSound: 11
+    hitSound: 8054 #hitSound: 19
+    hitAnimation: 36
+    power: 40 #power: 46
+    damageType: 4
+    accuracyAuto: 0 #accuracyAuto: 28
+    accuracySnap: 50 #accuracySnap: 40
+    accuracyAimed: 68
+    tuAuto: 0 #tuAuto: 25
+    tuSnap: 22 #tuSnap: 20
+    tuAimed: 33 #tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 20
+    maxRange: 40
+    aimRange: 30
+    snapRange: 20
+    autoRange: 0
+    minRange: 0
+    dropoff: 3
+
+  - type: STR_LASER_RIFLE
+    size: 0.2
+    costSell: 36900
+    weight: 12 #weight: 8
+    bigSprite: 0
+    floorSprite: 0
+    handSprite: 8
+    bulletSprite: 6
+    bulletSpeed: 3
+    fireSound: 8052 #fireSound: 11
+    hitSound: 8054 #hitSound: 19
+    hitAnimation: 36
+    power: 52 #power: 60
+    damageType: 4
+    accuracyAuto: 0 #accuracyAuto: 46
+    accuracySnap: 65
+    accuracyAimed: 85 #accuracyAimed: 100
+    tuAuto: 0 #tuAuto: 34
+    tuSnap: 24 #tuSnap: 25
+    tuAimed: 74 #tuAimed: 50
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 22
+    maxRange: 60
+    aimRange: 45
+    snapRange: 30
+    autoRange: 0
+    minRange: 0
+    dropoff: 2
+
+  - type: STR_HEAVY_LASER
+    size: 0.3
+    costSell: 61000
+    weight: 18 #weight: 18
+    bigSprite: 6
+    floorSprite: 6
+    handSprite: 16
+    bulletSprite: 7
+    bulletSpeed: 0 #bulletSpeed: 4
+    fireSound: 8053 #fireSound: 11
+    hitSound: 8054 #hitSound: 19
+    hitAnimation: 36
+    power: 60 #power: 85
+    damageType: 4
+    accuracyAuto: 0
+    accuracySnap: 65 #accuracySnap: 50
+    accuracyAimed: 85 #accuracyAimed: 84
+    tuSnap: 50 #tuSnap: 33
+    tuAimed: 75 #tuAimed: 75
+    tuAuto: 0
+    clipSize: -1
+    shotgunPellets: 3
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 24
+    maxRange: 25
+    aimRange: 18
+    snapRange: 12
+    autoRange: 0
+    minRange: 0
+    dropoff: 4
+
+# PLASMA weapons
+
+  - type: STR_PLASMA_PISTOL
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_PLASMA_PISTOL
+    size: 0.1
+    costSell: 84000
+    weight: 5 #weight: 3
+    bigSprite: 32
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 16 #bulletSprite: 8
+    bulletSpeed: 1
+    fireSound: 8061 #fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_PISTOL_CLIP
+    accuracyAuto: 50
+    accuracySnap: 65
+    accuracyAimed: 85
+    tuAuto: 40 #tuAuto: 30
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 28
+    maxRange: 45
+    aimRange: 35
+    snapRange: 25
+    autoRange: 15
+    minRange: 0
+    dropoff: 3
+
+  - type: STR_PLASMA_PISTOL_CLIP
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_PLASMA_PISTOL_CLIP
+    size: 0.1
+    costSell: 4440
+    weight: 3
+    bigSprite: 34
+    floorSprite: 33
+    handSprite: 710 #handSprite: 368
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 46
+    power: 55 #power: 52
+    damageType: 5
+    clipSize: 25 #clipSize: 26
+    battleType: 2
+    recoveryPoints: 1
+    armor: 16
+
+  - type: STR_PLASMA_RIFLE
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_PLASMA_RIFLE
+    size: 0.2
+    costSell: 126500
+    weight: 14 #weight: 5
+    bigSprite: 31
+    floorSprite: 30
+    handSprite: 48
+    bulletSprite: 17 #bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 8062 #fireSound: 18
+    compatibleAmmo:
+      - STR_PLASMA_RIFLE_CLIP
+    accuracyAuto: 55
+    accuracySnap: 73 #accuracySnap: 86
+    accuracyAimed: 93 #accuracyAimed: 100
+    tuAuto: 40 #tuAuto: 36
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 30
+    maxRange: 65
+    aimRange: 50
+    snapRange: 35
+    autoRange: 20
+    minRange: 2
+    dropoff: 2
+
+  - type: STR_PLASMA_RIFLE_CLIP
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_PLASMA_RIFLE_CLIP
+    size: 0.1
+    costSell: 6290
+    weight: 3
+    bigSprite: 41
+    floorSprite: 33
+    handSprite: 710 #handSprite: 376
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 46
+    power: 85 #power: 80
+    damageType: 5
+    clipSize: 25 #clipSize: 28
+    battleType: 2
+    recoveryPoints: 1
+    armor: 17
+
+  - type: STR_HEAVY_PLASMA
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_HEAVY_PLASMA
+    size: 0.2
+    costSell: 171600
+    weight: 20 #weight: 8
+    bigSprite: 30
+    floorSprite: 29
+    handSprite: 40
+    bulletSprite: 18 #bulletSprite: 8
+    bulletSpeed: 3
+    fireSound: 8063 #fireSound: 18
+    compatibleAmmo:
+      - STR_HEAVY_PLASMA_CLIP
+    accuracyAuto: 50
+    accuracySnap: 65 #accuracySnap: 75
+    accuracyAimed: 85 #accuracyAimed: 110
+    tuAuto: 45 #tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 32
+    maxRange: 65
+    aimRange: 50
+    snapRange: 35
+    autoRange: 20
+    minRange: 1
+    dropoff: 2
+
+  - type: STR_HEAVY_PLASMA_CLIP
+    requires:
+      - STR_PLASMA_WEAPONS #- STR_HEAVY_PLASMA_CLIP
+    size: 0.3
+    costSell: 9590
+    weight: 3
+    bigSprite: 25
+    floorSprite: 33
+    handSprite: 384
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 46
+    power: 120 #power: 115
+    damageType: 5
+    clipSize: 25 #clipSize: 35
+    battleType: 2
+    recoveryPoints: 1
+    armor: 18
+
+# RAIL weapons
+
+  - type: STR_RAILGUN # new item
+    listOrder: 3705
+    size: 0.2
+    costSell: 144000
+    weight: 38
+    bigSprite: 750
+    floorSprite: 750
+    handSprite: 750
+    bulletSprite: 15
+    fireSound: 8067
+    compatibleAmmo:
+      - STR_RAILGUN_SLUGS
+    accuracyAuto: 0
+    accuracySnap: 0
+    accuracyAimed: 125
+    tuAuto: 0
+    tuSnap: 0
+    tuAimed: 98
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    maxRange: 80
+    aimRange: 60
+    snapRange: 0
+    autoRange: 0
+    minRange: 30
+    dropoff: 4
+
+  - type: STR_RAILGUN_SLUGS # new item
+    listOrder: 3706
+    size: 0.1
+    costSell: 3150
+    weight: 2
+    bigSprite: 751
+    floorSprite: 751
+    handSprite: 120
+    bulletSpeed: 8
+    hitSound: 8018
+    hitAnimation: 76
+    power: 100
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 15
+
+# Freaky alien weapons
+
+  - type: STR_BLASTER_LAUNCHER
+    requires:
+      - STR_BLASTER_LAUNCHER
+    size: 0.3
+    costSell: 144000
+    weight: 24 #weight: 16
+    bigSprite: 35
+    floorSprite: 34
+    handSprite: 56
+    bulletSprite: 10
+    bulletSpeed: 0
+    fireSound: 53
+    compatibleAmmo:
+      - STR_BLASTER_BOMB
+    accuracyAimed: 120
+    tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    waypoint: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 28
+    maxRange: 200
+    aimRange: 200
+    snapRange: 15
+    autoRange: 7
+    minRange: 0
+    dropoff: 2
+
+  - type: STR_BLASTER_BOMB
+    requires:
+      - STR_BLASTER_BOMB
+    size: 0.2
+    costSell: 17028
+    weight: 4 #weight: 3
+    bigSprite: 36
+    floorSprite: 35
+    handSprite: 280
+    hitSound: 0
+    hitAnimation: 0
+    power: 200
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 1
+    blastRadius: 10
+    armor: 10
+
+  - type: STR_SMALL_LAUNCHER
+    requires:
+      - STR_SMALL_LAUNCHER
+    size: 0.2
+    costSell: 120000
+    weight: 10
+    bigSprite: 37
+    floorSprite: 36
+    handSprite: 64
+    bulletSprite: 9
+    bulletSpeed: 0
+    fireSound: 53
+    compatibleAmmo:
+      - STR_STUN_BOMB
+    accuracySnap: 65
+    accuracyAimed: 110
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 4
+    armor: 18
+    maxRange: 200
+    aimRange: 200
+    snapRange: 15
+    autoRange: 7
+    minRange: 0
+    dropoff: 2
+
+  - type: STR_STUN_BOMB
+    requires:
+      - STR_STUN_BOMB
+    size: 0.1
+    costSell: 15200
+    weight: 3
+    bigSprite: 38
+    floorSprite: 37
+    handSprite: 392
+    hitSound: 0
+    hitAnimation: 0
+    power: 90
+    damageType: 6
+    clipSize: 1
+    battleType: 2
+    recoveryPoints: 1
+    armor: 8
+
+# Toys
+
+  - type: STR_MOTION_SCANNER # it can be bought
+    size: 0.1
+    costBuy: 34000 #costBuy: 0
+    costSell: 25500 #costSell: 45600
+    weight: 3
+    bigSprite: 23
+    floorSprite: 23
+    handSprite: 224
+    battleType: 7
+    tuUse: 25
+    armor: 18
+
+  - type: STR_MEDI_KIT
+    size: 0.1
+    costSell: 46500
+    weight: 5
+    bigSprite: 24
+    floorSprite: 24
+    handSprite: 208
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    painKiller: 10
+    heal: 10
+    stimulant: 10
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    flatRate: true
+    armor: 18
+
+  - type: STR_MIND_PROBE
+    requires:
+      - STR_MIND_PROBE
+    size: 0.1
+    costSell: 304000
+    weight: 6 #weight: 5
+    bigSprite: 29
+    floorSprite: 28
+    handSprite: 248
+    hitSound: 37
+    battleType: 8
+    invWidth: 2
+    invHeight: 2
+    tuUse: 50
+    recoveryPoints: 1
+    armor: 8
+
+  - type: STR_PSI_AMP
+    requires:
+      - STR_PSI_AMP
+    size: 0.1
+    costSell: 194700
+    weight: 12 #weight: 10
+    bigSprite: 33
+    floorSprite: 32
+    handSprite: 88
+    hitSound: 36
+    battleType: 9
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    tuUse: 25
+    flatRate: true
+
+  - type: STR_STUN_ROD
+    size: 0.1
+    costBuy: 0 #costBuy: 1260 - we will manufacture it
+    costSell: 59500 #costSell: 945
+    weight: 8 #weight: 6
+    bigSprite: 26
+    floorSprite: 26
+    handSprite: 80
+    meleeSound: 54
+    power: 65
+    damageType: 6
+    accuracyMelee: 100
+    tuMelee: 30
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    armor: 16
+
+  - type: STR_ELECTRO_FLARE
+    size: 0.1
+    costBuy: 60
+    costSell: 40
+    weight: 1 #weight: 3
+    bigSprite: 55
+    floorSprite: 72
+    handSprite: 240
+    power: 16 #power: 15
+    battleType: 10
+    armor: 8
+
+  - type: STR_ELERIUM_115
+    size: 0.1
+    costSell: 5000
+    weight: 1 #weight: 3
+    bigSprite: 56
+    floorSprite: 73 #floorSprite: 37
+    handSprite: 400
+    invWidth: 1
+    invHeight: 1
+    armor: 1
+
+
+
+# Restyling inventory screen
+#   1. Remove cell from shoulders and legs
+#   2. Add the handgun holster (quick draw)
+invs:
+
+  - id: STR_QUICK_DRAW
+    x: 159
+    y: 78
+    slots:
+      - [0, 0]
+      - [0, 1]
+    costs:
+      STR_BACK_PACK: 16
+      STR_GROUND: 6
+      STR_LEFT_HAND: 1
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 12
+      STR_RIGHT_HAND: 1
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 12
+      STR_BELT: 6
+
+  - id: STR_GROUND
+    x: 0
+    y: 152
+    type: 2
+    costs:
+      STR_BACK_PACK: 20
+      STR_BELT: 12
+      STR_LEFT_HAND: 8
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 12
+      STR_RIGHT_HAND: 8
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 12
+      STR_QUICK_DRAW: 12
+
+  - id: STR_RIGHT_HAND
+    x: 0
+    y: 63
+    type: 1
+    costs:
+      STR_BACK_PACK: 14
+      STR_BELT: 8
+      STR_GROUND: 2
+      STR_LEFT_HAND: 4
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_LEG: 8
+      STR_RIGHT_SHOULDER: 10
+      STR_QUICK_DRAW: 2
+
+  - id: STR_LEFT_HAND
+    x: 125 #x: 128
+    y: 63
+    type: 1
+    costs:
+      STR_BACK_PACK: 14
+      STR_BELT: 8
+      STR_GROUND: 2
+      STR_LEFT_LEG: 8
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 4
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 10
+      STR_QUICK_DRAW: 2
+
+  - id: STR_BELT
+    x: 192
+    y: 95 #y: 104
+    slots:
+      - [0, 0]
+      - [1, 0]
+      - [2, 0]
+      - [3, 0]
+    costs:
+      STR_BACK_PACK: 16
+      STR_GROUND: 6
+      STR_LEFT_HAND: 4
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 12
+      STR_RIGHT_HAND: 4
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 12
+      STR_QUICK_DRAW: 6
+
+  - id: STR_RIGHT_LEG
+    x: 0
+    y: 120
+    slots:
+      - [1, 0]
+    costs:
+      STR_BACK_PACK: 18
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 6
+      STR_LEFT_LEG: 10
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 4
+      STR_RIGHT_SHOULDER: 10
+      STR_QUICK_DRAW: 10
+
+  - id: STR_LEFT_LEG
+    x: 125 #x: 128
+    y: 120
+    slots:
+      - [0, 0]
+    costs:
+      STR_BACK_PACK: 18
+      STR_BELT: 10
+      STR_GROUND: 6
+      STR_LEFT_HAND: 4
+      STR_LEFT_SHOULDER: 10
+      STR_RIGHT_HAND: 6
+      STR_RIGHT_LEG: 10
+      STR_RIGHT_SHOULDER: 10
+      STR_QUICK_DRAW: 10
+
+  - id: STR_RIGHT_SHOULDER
+    x: 0
+    y: 37
+    slots:
+      - [1, 0]
+    costs:
+      STR_BACK_PACK: 16
+      STR_BELT: 10
+      STR_GROUND: 4
+      STR_LEFT_HAND: 3
+      STR_LEFT_LEG: 12
+      STR_LEFT_SHOULDER: 8
+      STR_RIGHT_HAND: 3
+      STR_RIGHT_LEG: 12
+      STR_QUICK_DRAW: 10
+
+  - id: STR_LEFT_SHOULDER
+    x: 125 #x: 128
+    y: 37
+    slots:
+      - [0, 0]
+    costs:
+      STR_BACK_PACK: 16
+      STR_BELT: 10
+      STR_GROUND: 4
+      STR_LEFT_HAND: 3
+      STR_LEFT_LEG: 12
+      STR_RIGHT_HAND: 3
+      STR_RIGHT_LEG: 12
+      STR_RIGHT_SHOULDER: 8
+      STR_QUICK_DRAW: 10
+
+  - id: STR_BACK_PACK
+    x: 192
+    y: 37
+    slots:
+      - [0, 0]
+      - [1, 0]
+      - [2, 0]
+      - [0, 1]
+      - [1, 1]
+      - [2, 1]
+      - [0, 2]
+      - [1, 2]
+      - [2, 2]
+    costs:
+      STR_BELT: 12
+      STR_GROUND: 10
+      STR_LEFT_HAND: 8
+      STR_LEFT_LEG: 16
+      STR_LEFT_SHOULDER: 14
+      STR_RIGHT_HAND: 8
+      STR_RIGHT_LEG: 16
+      STR_RIGHT_SHOULDER: 14
+      STR_QUICK_DRAW: 12
+
+
+
+armors:
+
+# Standard armors
+
+  - type: STR_NONE_UC
+    stats:
+      bravery: -10
+      melee: -15
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+
+  - type: STR_ARMORED_VEST_UC
+    spriteSheet: ARMOREDVEST.PCK
+    spriteInv: MAN_4
+    corpseBattle:
+      - STR_ARMORED_VEST_CORPSE
+    storeItem: STR_ARMORED_VEST
+    weight: 8
+    stats:
+      tu: -5
+      stamina: -15
+      firing: 5
+      reactions: 15
+      melee: 15
+    frontArmor: 30
+    sideArmor: 20
+    rearArmor: 12
+    underArmor: 5
+    damageModifier:
+      - 1.0 # None
+      - 0.7 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.7 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.8 # Stun
+      - 1.0 # Melee
+      - 1.0 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+  - type: STR_LIGHT_VEST_UC
+    spriteSheet: LIGHTVEST.PCK
+    spriteInv: MAN_6
+    corpseBattle:
+      - STR_LIGHT_VEST_CORPSE
+    storeItem: STR_LIGHT_VEST
+    weight: 3
+    stats:
+      stamina: -15
+      firing: 15
+    frontArmor: 18
+    sideArmor: 12
+    rearArmor: 7
+    underArmor: 3
+    damageModifier:
+      - 1.0 # None
+      - 0.85 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.85 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.9 # Stun
+      - 1.0 # Melee
+      - 1.0 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+# Personal armors
+
+  - type: STR_HEAVY_PERSONAL_ARMOR_UC
+    spriteSheet: HEAVYPERSONALARMOR.PCK
+    spriteInv: MAN_7
+    corpseBattle:
+      - STR_HEAVY_CORPSE_ARMOR
+    storeItem: STR_HEAVY_PERSONAL_ARMOR
+    weight: 12
+    stats:
+      tu: -5
+      stamina: -15
+      firing: 5
+      reactions: 15
+      throwing: 15
+    frontArmor: 60
+    sideArmor: 48
+    rearArmor: 36
+    underArmor: 36
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.6 # Incendiary
+      - 0.8 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.7 # Stun
+      - 1.0 # Melee
+      - 1.1 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+  - type: STR_PERSONAL_ARMOR_UC
+    spriteSheet: XCOM_1.PCK
+    spriteInv: MAN_1
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    weight: 8
+    stats:
+      stamina: -15
+      firing: 5
+      reactions: 5
+      throwing: 5
+    frontArmor: 50
+    sideArmor: 40
+    rearArmor: 30
+    underArmor: 30
+    damageModifier:
+      - 1.0 # None
+      - 0.8 # Armor Piercing
+      - 0.8 # Incendiary
+      - 0.9 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.8 # Stun
+      - 1.0 # Melee
+      - 1.1 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+  - type: STR_LIGHT_PERSONAL_ARMOR_UC
+    spriteSheet: LIGHTPERSONALARMOR.PCK
+    spriteInv: MAN_8
+    corpseBattle:
+      - STR_LIGHT_CORPSE_ARMOR
+    storeItem: STR_LIGHT_PERSONAL_ARMOR
+    weight: 5
+    stats:
+      stamina: -15
+      firing: 15
+    frontArmor: 45
+    sideArmor: 30
+    rearArmor: 15
+    underArmor: 15
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.9 # Stun
+      - 1.0 # Melee
+      - 1.1 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+# Power and Flying Suits
+
+  - type: STR_POWER_SUIT_UC
+    spriteSheet: XCOM_2.PCK
+    spriteInv: MAN_2
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    storeItem: STR_POWER_SUIT
+    weight: 15
+    stats:
+      tu: 10
+      stamina: -10
+      reactions: 10
+      firing: 10
+      throwing: 10
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.5 # Laser
+      - 1.0 # Plasma
+      - 0.7 # Stun
+      - 1.0 # Melee
+      - 1.0 # Acid
+      - 0.0 # Smoke
+    loftempsSet: [ 3 ]
+
+  - type: STR_FLYING_SUIT_UC
+    spriteSheet: XCOM_2.PCK
+    spriteInv: MAN_3
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    storeItem: STR_FLYING_SUIT
+    weight: 18
+    stats:
+      tu: 5
+    frontArmor: 115
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    movementType: 1
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.5 # Laser
+      - 1.0 # Plasma
+      - 0.7 # Stun
+      - 1.0 # Melee
+      - 1.0 # Acid
+      - 0.0 # Smoke
+    loftempsSet: [ 3 ]
+
+  - type: STR_LIGHT_FLYING_SUIT_UC
+    spriteSheet: LIGHTFLYINGSUIT.PCK
+    spriteInv: MAN_9
+    corpseBattle:
+      - STR_LIGHT_CORPSE_SUIT
+    storeItem: STR_LIGHT_FLYING_SUIT
+    weight: 5
+    stats:
+      tu: 5
+      firing: 10
+    frontArmor: 45
+    sideArmor: 30
+    rearArmor: 15
+    underArmor: 15
+    movementType: 1
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.9 # Stun
+      - 1.0 # Melee
+      - 1.1 # Acid
+      - 1.0 # Smoke
+    loftempsSet: [ 3 ]
+
+# Restyling inventory images for aliens and civilians
+# Damage of plasma is double less
+
+  - type: SECTOID_ARMOR0
+    spriteInv: sectoidInventoryImage
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0 # None
+      - 0.8 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.5 # Laser
+      - 0.3 # Plasma
+      - 1.2 # Stun
+      - 1.6 # Melee
+      - 0.4 # Acid
+      - 2.0 # Smoke
+
+  - type: FLOATER_ARMOR0
+    spriteInv: floaterInventoryImage
+    frontArmor: 8
+    sideArmor: 6
+    rearArmor: 4
+    underArmor: 12
+    damageModifier:
+      - 1.0 # None
+      - 0.7 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.0 # Laser
+      - 0.5 # Plasma
+      - 0.6 # Stun
+      - 1.0 # Melee
+      - 0.4 # Acid
+      - 1.0 # Smoke
+
+  - type: FLOATER_ARMOR1
+    spriteInv: floaterInventoryImage
+    frontArmor: 16
+    sideArmor: 12
+    rearArmor: 8
+    underArmor: 14
+    damageModifier:
+      - 1.0 # None
+      - 0.65 # Armor Piercing
+      - 0.9 # Incendiary
+      - 0.9 # High Explosive
+      - 1.0 # Laser
+      - 0.5 # Plasma
+      - 0.6 # Stun
+      - 1.0 # Melee
+      - 0.4 # Acid
+      - 1.0 # Smoke
+
+  - type: FLOATER_ARMOR2
+    spriteInv: floaterInventoryImage
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 12
+    underArmor: 16
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.8 # Incendiary
+      - 0.8 # High Explosive
+      - 1.0 # Laser
+      - 0.5 # Plasma
+      - 0.5 # Stun
+      - 0.8 # Melee
+      - 0.4 # Acid
+      - 1.0 # Smoke
+
+  - type: CYBERDISC_ARMOR
+    spriteInv: cyberdiscInventoryImage
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 1.0 # Laser
+      - 0.65 # Plasma
+      - 0.0 # Stun
+      - 0.4 # Melee
+      - 1.7 # Acid
+      - 0.0 # Smoke
+
+  - type: REAPER_ARMOR
+    spriteInv: reaperInventoryImage
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 4
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 3.0 # Incendiary
+      - 0.3 # High Explosive
+      - 1.0 # Laser
+      - 0.35 # Plasma
+      - 1.0 # Stun
+      - 0.6 # Melee
+      - 1.0 # Acid
+      - 2.0 # Smoke
+
+  - type: SECTOPOD_ARMOR
+    spriteInv: sectopodInventoryImage
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.8 # High Explosive
+      - 1.5 # Laser
+      - 0.4 # Plasma
+      - 0.0 # Stun
+      - 0.4 # Melee
+      - 3.8 # Acid
+      - 0.0 # Smoke
+
+  - type: SNAKEMAN_ARMOR0
+    spriteInv: snakemanInventoryImage
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.4 # Incendiary
+      - 0.4 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.4 # Acid
+      - 2.0 # Smoke
+
+  - type: SNAKEMAN_ARMOR1
+    spriteInv: snakemanInventoryImage
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 22
+    underArmor: 20
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.4 # Incendiary
+      - 0.4 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.4 # Acid
+      - 2.0 # Smoke
+
+  - type: SNAKEMAN_ARMOR2
+    spriteInv: snakemanInventoryImage
+    frontArmor: 26
+    sideArmor: 26
+    rearArmor: 22
+    underArmor: 22
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 0.4 # Incendiary
+      - 0.4 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 0.8 # Stun
+      - 0.8 # Melee
+      - 0.4 # Acid
+      - 2.0 # Smoke
+
+  - type: MUTON_ARMOR0
+    spriteInv: mutonInventoryImage
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
+    damageModifier:
+      - 1.0 # None
+      - 0.4 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: MUTON_ARMOR1
+    spriteInv: mutonInventoryImage
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 24
+    underArmor: 15
+    damageModifier:
+      - 1.0 # None
+      - 0.4 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: MUTON_ARMOR2
+    spriteInv: mutonInventoryImage
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 20
+    damageModifier:
+      - 1.0 # None
+      - 0.35 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.2 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: ETHEREAL_ARMOR0
+    spriteInv: etherealInventoryImage
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 40
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 0.5 # Plasma
+      - 0.8 # Stun
+      - 1.6 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
+
+  - type: ETHEREAL_ARMOR1
+    spriteInv: etherealInventoryImage
+    frontArmor: 44
+    sideArmor: 44
+    rearArmor: 44
+    underArmor: 44
+    damageModifier:
+      - 1.0 # None
+      - 1.2 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 0.5 # Plasma
+      - 0.8 # Stun
+      - 1.6 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
+
+  - type: ETHEREAL_ARMOR2
+    spriteInv: etherealInventoryImage
+    frontArmor: 48
+    sideArmor: 48
+    rearArmor: 48
+    underArmor: 48
+    damageModifier:
+      - 1.0 # None
+      - 1.4 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 0.5 # Plasma
+      - 0.6 # Stun
+      - 1.4 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
+
+  - type: CHRYSSALID_ARMOR
+    spriteInv: chryssalidInventoryImage
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier:
+      - 1.0 # None
+      - 0.8 # Armor Piercing
+      - 0.8 # Incendiary
+      - 1.0 # High Explosive
+      - 0.65 # Laser
+      - 0.28 # Plasma
+      - 0.9 # Stun
+      - 0.6 # Melee
+      - 2.2 # Acid
+      - 1.0 # Smoke
+
+  - type: ZOMBIE_ARMOR
+    spriteInv: zombieInventoryImage
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    damageModifier:
+      - 1.0 # None
+      - 0.6 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.8 # High Explosive
+      - 0.7 # Laser
+      - 0.7 # Plasma
+      - 0.0 # Stun
+      - 1.0 # Melee
+      - 0.4 # Acid
+      - 0.0 # Smoke
+
+  - type: SILACOID_ARMOR
+    spriteInv: silacoidInventoryImage
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 10
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 0.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 1.0 # Stun
+      - 1.5 # Melee
+      - 2.0 # Acid
+      - 0.0 # Smoke
+
+  - type: CELATID_ARMOR
+    spriteInv: celatidInventoryImage
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    damageModifier:
+      - 1.0 # None
+      - 1.5 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.2 # Laser
+      - 0.2 # Plasma
+      - 1.0 # Stun
+      - 1.2 # Melee
+      - 1.0 # Acid
+      - 0.0 # Smoke
+
+  - type: CIVM_ARMOR
+    spriteInv: civilianMInventoryImage
+
+  - type: CIVF_ARMOR
+    spriteInv: civilianFInventoryImage
+
+
+
+units:
+
+# Aliens killing effects
+  - type: STR_SECTOID_SOLDIER
+    deathSound: 71
+  - type: STR_SECTOID_ENGINEER
+    deathSound: 71
+  - type: STR_SECTOID_MEDIC
+    deathSound: 71
+  - type: STR_SECTOID_NAVIGATOR
+    deathSound: 71
+  - type: STR_SECTOID_LEADER
+    deathSound: 71
+  - type: STR_SECTOID_COMMANDER
+    deathSound: 71
+  - type: STR_CYBERDISC_TERRORIST
+    deathSound: 81
+  - type: STR_FLOATER_SOLDIER
+    deathSound: 72
+  - type: STR_FLOATER_ENGINEER
+    deathSound: 72
+  - type: STR_FLOATER_NAVIGATOR
+    deathSound: 72
+  - type: STR_FLOATER_MEDIC
+    deathSound: 72
+  - type: STR_FLOATER_LEADER
+    deathSound: 72
+  - type: STR_FLOATER_COMMANDER
+    deathSound: 72
+  - type: STR_SNAKEMAN_SOLDIER
+    deathSound: 73
+  - type: STR_SNAKEMAN_NAVIGATOR
+    deathSound: 73
+  - type: STR_SNAKEMAN_ENGINEER
+    deathSound: 73
+  - type: STR_SNAKEMAN_LEADER
+    deathSound: 73
+  - type: STR_SNAKEMAN_COMMANDER
+    deathSound: 73
+  - type: STR_CHRYSSALID_TERRORIST
+    deathSound: 74
+  - type: STR_MUTON_SOLDIER
+    deathSound: 75
+  - type: STR_MUTON_NAVIGATOR
+    deathSound: 75
+  - type: STR_MUTON_ENGINEER
+    deathSound: 75
+  - type: STR_ETHEREAL_SOLDIER
+    deathSound: 76
+  - type: STR_ETHEREAL_LEADER
+    deathSound: 76
+  - type: STR_ETHEREAL_COMMANDER
+    deathSound: 76
+  - type: STR_SECTOPOD_TERRORIST
+    deathSound: 82
+  - type: STR_CELATID_TERRORIST
+    deathSound: 77
+  - type: STR_REAPER_TERRORIST
+    deathSound: 78
+  - type: STR_SILACOID_TERRORIST
+    deathSound: 79
+  - type: STR_ZOMBIE
+    deathSound: 80
+
+
+
+research:
+
+# Base facilities, alien technologies cannot be reproduced
+
+  - delete: STR_FUSION_DEFENSE
+  - delete: STR_PLASMA_DEFENSE
+
+# Crafts
+
+  - name: STR_IMPROVED_INTERCEPTOR
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_UFO_NAVIGATION
+
+  - name: STR_UFO_CONSTRUCTION
+    cost: 550 #cost: 450
+    points: 30
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_UFO_POWER_SOURCE
+      - STR_IMPROVED_INTERCEPTOR
+
+# Craft weapons
+
+  - name: STR_ALLOY_ROCKETS
+    listOrder: 912
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_UFO_NAVIGATION
+
+  - name: STR_STORM_LAUNCHER
+    listOrder: 913
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALLOY_ROCKETS
+
+  - name: STR_ALLOY_CANNON
+    listOrder: 911
+    cost: 250
+    points: 10
+    dependencies:
+      - STR_ALLOY_CLIPS
+      - STR_UFO_NAVIGATION
+
+  - name: STR_PLASMA_CANNON
+    cost: 660
+    points: 25
+    dependencies:
+      - STR_PLASMA_WEAPONS
+      - STR_UFO_NAVIGATION
+  - delete: STR_PLASMA_CANNON_DEP1
+  - delete: STR_PLASMA_CANNON_DEP2
+
+# New weapons and ammo from ALIEN ALLOYS
+
+  - name: STR_ALLOY_CLIPS
+    listOrder: 911
+    cost: 350
+    points: 15
+    dependencies:
+      - STR_ALIEN_ALLOYS
+
+  - name: STR_ALLOY_RIFLE
+    listOrder: 910
+    cost: 175
+    points: 10
+    dependencies:
+      - STR_ALLOY_CLIPS
+
+  - name: STR_ALLOY_SNIPER_RIFLE_RESEARCH
+    listOrder: 910
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_ALLOY_CLIPS
+
+# LASER weapons
+
+  - name: STR_LASER_WEAPONS
+    cost: 200 #cost: 50
+    points: 10
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_ALIEN_ALLOYS
+      - STR_UFO_POWER_SOURCE
+
+  - name: STR_LASER_CANNON
+    cost: 460 #cost: 420
+    points: 15
+    dependencies:
+      - STR_LASER_WEAPONS
+      - STR_UFO_NAVIGATION
+
+  - name: STR_LASER_PISTOL
+    cost: 200 #cost: 100
+    points: 10
+    dependencies:
+      - STR_LASER_RIFLE
+
+  - name: STR_LASER_RIFLE
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_LASER_CANNON
+
+  - name: STR_HEAVY_LASER
+    cost: 360 #cost: 460
+    points: 10
+    dependencies:
+      - STR_LASER_RIFLE
+
+  - name: STR_LASER_DEFENSE
+    cost: 600 #cost: 510
+    points: 15
+    dependencies:
+      - STR_LASER_CANNON
+
+# Electromagnetic weapons
+
+  - name: STR_ELECTROMAGNETIC_WEAPONS
+    listOrder: 4305
+    cost: 300
+    points: 15
+    dependencies:
+      - STR_NEW_FIGHTER_CRAFT
+
+  - name: STR_GRAV_SHIELD
+    dependencies:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ELECTROMAGNETIC_WEAPONS
+
+  - name: STR_ULTIMATE_CRAFT
+    dependencies:
+      - STR_GRAV_SHIELD
+
+# Soldiers' toys
+
+  - delete: STR_MOTION_SCANNER # it can be bought
+
+  - name: STR_MEDI_KIT
+    cost: 210
+    points: 20
+    dependencies:
+      - STR_SECTOID_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_SNAKEMAN_AUTOPSY
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_PSI_AMP
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_MIND_PROBE
+      - STR_PSI_LAB
+
+# Fix the ALIEN CONTAINMENT
+
+  - name: STR_ALIEN_ENTERTAINMENT
+    cost: 75 #cost: 150
+    points: 15 #points: 30
+    needItem: true
+
+  - name: STR_ALIEN_FOOD
+    cost: 75 #cost: 150
+    points: 15 #points: 30
+    needItem: true
+
+  - name: STR_ALIEN_CONTAINMENT
+    cost: 300
+    score: 10
+    dependencies:
+      - STR_ALIEN_ENTERTAINMENT
+      - STR_ALIEN_FOOD
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_ALIEN_BIOLOGY
+    listOrder: 1299
+    cost: 275
+    points: 10
+    dependencies:
+      - STR_SECTOID_AUTOPSY
+      - STR_SNAKEMAN_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_MUTON_AUTOPSY
+      - STR_ETHEREAL_AUTOPSY
+      - STR_CHRYSSALID_AUTOPSY
+      - STR_REAPER_AUTOPSY
+      - STR_CELATID_AUTOPSY
+      - STR_SILACOID_AUTOPSY
+
+  - name: STR_SECTOID_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_SNAKEMAN_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_FLOATER_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_MUTON_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_ETHEREAL_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_CHRYSSALID_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_REAPER_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_CELATID_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_SILACOID_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+# Aliens' technologies
+
+  - name: STR_PLASMA_PISTOL
+    cost: 600
+    points: 20
+    needItem: true
+    dependencies:
+      - STR_PLASMA_PISTOL_CLIP
+
+  - name: STR_PLASMA_PISTOL_CLIP
+    cost: 400
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ELERIUM_115
+
+  - name: STR_PLASMA_RIFLE
+    cost: 700
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_PISTOL
+
+  - name: STR_PLASMA_RIFLE_CLIP
+    cost: 400
+    points: 6
+    needItem: true
+    dependencies:
+      - STR_PLASMA_PISTOL_CLIP
+
+  - name: STR_HEAVY_PLASMA
+    cost: 800
+    points: 30
+    needItem: true
+    dependencies:
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_PLASMA_RIFLE
+
+  - name: STR_HEAVY_PLASMA_CLIP
+    cost: 400
+    points: 7
+    needItem: true
+    dependencies:
+      - STR_PLASMA_RIFLE_CLIP
+
+  - name: STR_PLASMA_WEAPONS
+    listOrder: 101
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+
+  - name: STR_ALIEN_GRENADE
+    cost: 200
+    points: 20
+    needItem: true
+    dependencies:
+      - STR_ELERIUM_115
+
+  - name: STR_BLASTER_LAUNCHER
+    cost: 900
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_PLASMA_WEAPONS
+
+  - name: STR_BLASTER_BOMB
+    cost: 300
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_PLASMA_WEAPONS
+
+  - delete: STR_FUSION_MISSILE
+
+  - name: STR_SMALL_LAUNCHER
+    cost: 550
+    points: 30
+    needItem: true
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ALIEN_CONTAINMENT
+
+  - name: STR_STUN_BOMB
+    cost: 180
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_ALIEN_CONTAINMENT
+
+  - name: STR_MIND_PROBE
+    cost: 600
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_ELERIUM_115
+
+# Armors
+
+  - name: STR_PERSONAL_ARMOR
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+
+  - name: STR_POWER_SUIT
+    cost: 350 #cost: 205
+    points: 20
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_UFO_POWER_SOURCE
+      - STR_PERSONAL_ARMOR
+
+  - name: STR_FLYING_SUIT
+    cost: 330
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_UFO_NAVIGATION
+
+
+
+manufacture:
+
+# Crafts
+
+  - name: STR_RAVEN # new improved interceptor
+    listOrder: 3250
+    category: STR_CRAFT
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    space: 20
+    time: 6000
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 48
+      STR_UFO_NAVIGATION: 2
+
+  - name: STR_FIRESTORM
+    category: STR_CRAFT
+    requires:
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 14000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130 #STR_ALIEN_ALLOYS: 65
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 4 #STR_UFO_NAVIGATION: 1
+
+  - name: STR_LIGHTNING
+    category: STR_CRAFT
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    space: 34
+    time: 18000
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 170 #STR_ALIEN_ALLOYS: 85
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 8 #STR_UFO_NAVIGATION: 1
+
+  - name: STR_AVENGER
+    category: STR_CRAFT
+    requires:
+      - STR_ULTIMATE_CRAFT
+    space: 36
+    time: 34000
+    cost: 900000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 240 #STR_ALIEN_ALLOYS: 120
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 10 #STR_UFO_NAVIGATION: 1
+
+# Craft Weapons - Alloy
+
+  - name: STR_ALLOY_AVALANCHE_LAUNCHER
+    listOrder: 52
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_ROCKETS
+    space: 6
+    time: 500
+    cost: 20000
+    requiredItems:
+      STR_AVALANCHE_LAUNCHER: 1
+      STR_ALIEN_ALLOYS: 8
+      STR_UFO_NAVIGATION: 1
+
+  - name: STR_ALLOY_STINGRAY_LAUNCHER
+    listOrder: 50
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_ROCKETS
+    space: 6
+    time: 400
+    cost: 10000
+    requiredItems:
+      STR_STINGRAY_LAUNCHER: 1
+      STR_ALIEN_ALLOYS: 6
+      STR_UFO_NAVIGATION: 1
+
+  - name: STR_ALLOY_CANNON
+    listOrder: 58
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ALLOY_CANNON
+    space: 6
+    time: 250
+    cost: 8000
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+      STR_CANNON: 1
+      STR_ALIEN_ALLOYS: 4
+
+# Craft Weapons - New
+
+  - name: STR_STORM_LAUNCHER # new improved launcher
+    listOrder: 55
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_STORM_LAUNCHER
+    space: 6
+    time: 2000
+    cost: 95000
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+      STR_ALIEN_ALLOYS: 10
+
+  - name: STR_STORM_MISSILES # missiles for new improved launcher
+    listOrder: 56
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_STORM_LAUNCHER
+    space: 6
+    time: 100
+    cost: 28000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_AVALANCHE_MISSILES: 1
+
+  - name: STR_LASER_CANNON
+    listOrder: 100
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 6
+    time: 500 #time: 300
+    cost: 182000
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 4
+
+  - name: STR_PLASMA_BEAM  # alien technologies cannot be reproduced, but this is an unique exception
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_PLASMA_CANNON
+    space: 8
+    time: 500
+    cost: 226000
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 18
+      STR_HEAVY_PLASMA: 18
+      STR_HEAVY_PLASMA_CLIP: 36
+
+  - delete: STR_FUSION_BALL_LAUNCHER # alien technologies cannot be reproduced
+  - delete: STR_FUSION_BALL # alien technologies cannot be reproduced
+
+# Tanks
+
+  - name: STR_TANK_LASER_CANNON
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_LASER_CANNON
+    space: 25
+    time: 1200
+    cost: 500000
+    requiredItems:
+      STR_LASER_CANNON: 1
+      STR_ALIEN_ALLOYS: 5
+
+  - name: STR_HOVERTANK_PLASMA
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_PLASMA_CANNON
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 1500 #time: 1200
+    cost: 850000
+    requiredItems:
+      STR_PLASMA_BEAM: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 30
+
+  - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
+  - delete: STR_HWP_FUSION_BOMB # alien technologies cannot be reproduced
+
+# Conventional weapons
+
+  - name: STR_PISTOL_AL_CLIP
+    listOrder: 801
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_PISTOL_AL_CLIP: 5
+
+  - name: STR_MACHINE_PISTOL_AL_CLIP
+    listOrder: 802
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 335
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_MACHINE_PISTOL_AL_CLIP: 3
+
+  - name: STR_RIFLE_AL_CLIP
+    listOrder: 803
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 600
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_RIFLE_AL_CLIP: 3
+
+  - name: STR_SNIPER_RIFLE_AL_CLIP
+    listOrder: 804
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 800
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_SNIPER_RIFLE_AL_CLIP: 2
+
+  - name: STR_ALLOY_RIFLE
+    category: STR_WEAPON
+    listOrder: 810
+    requires:
+      - STR_ALLOY_RIFLE
+    space: 2
+    time: 360
+    cost: 12500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+  - name: STR_ALLOY_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 811
+    requires:
+      - STR_ALLOY_RIFLE
+    space: 2
+    time: 36
+    cost: 800
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_ALLOY_RIFLE_CLIP: 3
+
+  - name: STR_ALLOY_SNIPER_RIFLE
+    category: STR_WEAPON
+    listOrder: 815
+    requires:
+      - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+    space: 4
+    time: 480
+    cost: 55000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 18
+
+  - name: STR_ALLOY_SNIPER_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 816
+    requires:
+      - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+    space: 2
+    time: 36
+    cost: 750
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_SHOTGUN_CLIP
+    listOrder: 805
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 800
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiredItems:
+      STR_SHOTGUN_CLIP: 4
+
+  - name: STR_HC_AP_AMMO
+    listOrder: 806
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 24
+    cost: 540
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_AC_AP_AMMO
+    listOrder: 807
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_CLIPS
+    time: 32
+    cost: 600
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_SMALL_ROCKET
+    listOrder: 835
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_ROCKETS
+    time: 450
+    cost: 1200
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+
+# LASER weapons
+
+  - name: STR_LASER_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_PISTOL
+    space: 2
+    time: 300
+    cost: 8000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+
+  - name: STR_LASER_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_RIFLE
+    space: 3
+    time: 400
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 1
+
+  - name: STR_HEAVY_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_HEAVY_LASER
+    space: 4
+    time: 700
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_ELERIUM_115: 2
+
+# Electromagnetic weapons
+
+  - name: STR_RAILGUN
+    listOrder: 1105
+    category: STR_WEAPON
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS
+    space: 4
+    time: 600
+    cost: 98000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+
+  - name: STR_RAILGUN_SLUGS
+    listOrder: 1106
+    category: STR_AMMUNITION
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS
+    space: 4
+    time: 60
+    cost: 1680
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+
+# Soldiers' toys
+
+  - delete: STR_MOTION_SCANNER # it can be bought
+
+  - name: STR_MEDI_KIT
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MEDI_KIT
+    space: 4
+    time: 420
+    cost: 28000
+    requiredItems:
+      STR_SECTOID_CORPSE: 1
+      STR_FLOATER_CORPSE: 1
+      STR_SNAKEMAN_CORPSE: 1
+
+  - name: STR_STUN_ROD # profit = 1.387.000/m, we can make money at middle
+    listOrder: 1299
+    category: STR_EQUIPMENT
+    requires:
+      - STR_ALIEN_BIOLOGY
+    space: 4
+    time: 450
+    cost: 21500
+
+  - name: STR_PSI_AMP # profit = 1.817.720/m, we can make money at final
+    category: STR_EQUIPMENT
+    requires:
+      - STR_PSI_AMP
+    space: 6
+    time: 500
+    cost: 145000
+
+# Alien technologies cannot be reproduced, except ALIEN ALLOYS
+
+  - name: STR_ALIEN_ALLOYS
+    space: 10
+    time: 60 #time: 100, profit = 635.000/m, we can make money at beginning
+    cost: 3000
+
+  - delete: STR_UFO_POWER_SOURCE
+  - delete: STR_UFO_NAVIGATION
+  - delete: STR_PLASMA_PISTOL
+  - delete: STR_PLASMA_PISTOL_CLIP
+  - delete: STR_PLASMA_RIFLE
+  - delete: STR_PLASMA_RIFLE_CLIP
+  - delete: STR_HEAVY_PLASMA
+  - delete: STR_HEAVY_PLASMA_CLIP
+  - delete: STR_BLASTER_LAUNCHER
+  - delete: STR_BLASTER_BOMB
+  - delete: STR_SMALL_LAUNCHER
+  - delete: STR_STUN_BOMB
+  - delete: STR_ALIEN_GRENADE
+  - delete: STR_MIND_PROBE
+
+# Personal armors
+
+  - name: STR_HEAVY_PERSONAL_ARMOR
+    listOrder: 2701
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 14
+    time: 1000
+    cost: 28000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+
+  - name: STR_PERSONAL_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 12
+    time: 850 #time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5 #STR_ALIEN_ALLOYS: 4
+
+  - name: STR_LIGHT_PERSONAL_ARMOR
+    listOrder: 2696
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PERSONAL_ARMOR
+    space: 10
+    time: 800
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+
+# Power and Flying Suits
+
+  - name: STR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 16
+    time: 1100 #time: 1000
+    cost: 45000 #cost: 42000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10 #STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 5
+
+  - name: STR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 16
+    time: 1400
+    cost: 62000 #cost: 58000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10 #STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 16
+
+  - name: STR_FLYING_SUIT_FROM_POWER_SUIT
+    listOrder: 2899
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 12
+    time: 350
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 12
+      STR_POWER_SUIT: 1
+    producedItems:
+      STR_FLYING_SUIT: 1
+
+  - name: STR_LIGHT_FLYING_SUIT
+    listOrder: 2698
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 12
+    time: 1000
+    cost: 37000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 10
+
+  - name: STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR
+    listOrder: 2697
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 12
+    time: 300
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 10
+      STR_LIGHT_PERSONAL_ARMOR: 1
+    producedItems:
+      STR_LIGHT_FLYING_SUIT: 1
+
+
+
+ufopaedia:
+
+# Crafts
+
+  - id: STR_RAVEN # new improved interceptor
+    listOrder: 406
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    image_id: RavenUFOpaediaImage
+    rect_stats:
+      x: 5
+      y: 110
+      width: 160
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 210
+      height: 60
+    text: STR_RAVEN_UFOPEDIA
+
+  - id: STR_FIRESTORM
+    listOrder: 150
+
+  - id: STR_LIGHTNING
+    rect_stats:
+      x: 160
+      y: 5
+      width: 160
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 140
+      height: 100
+
+# Craft weapons
+
+  - id: STR_ALLOY_AVALANCHE
+    listOrder: 750
+    type_id: 2
+    requires:
+      - STR_ALLOY_ROCKETS
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: Tornado_UFOpaedia
+    text: STR_ALLOY_AVALANCHE_UFOPEDIA
+
+  - id: STR_ALLOY_STINGRAY
+    listOrder: 650
+    type_id: 2
+    requires:
+      - STR_ALLOY_ROCKETS
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: Barracuda_UFOpaedia
+    text: STR_ALLOY_STINGRAY_UFOPEDIA
+
+  - id: STR_ALLOY_CANNON_UC
+    listOrder: 850
+    type_id: 2
+    requires:
+      - STR_ALLOY_CANNON
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: ALLOY_CANNON_UFOpaedia
+    text: STR_ALLOY_CANNON_UFOPEDIA
+
+  - id: STR_STORM # new improved launcher
+    listOrder: 755
+    type_id: 2
+    requires:
+      - STR_STORM_LAUNCHER
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: STORM_UFOpaedia
+    text: STR_STORM_UFOPEDIA
+
+  - delete: STR_FUSION_BALL_UC # alien technologies cannot be reproduced
+
+# Tanks
+
+  - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
+
+# Standard armors
+
+  - id: STR_NONE_UC
+    listOrder: 1692
+    type_id: 5
+    title: STR_NONE_UC_TITLE
+    section: STR_WEAPONS_AND_EQUIPMENT
+
+  - id: STR_ARMORED_VEST_UC
+    listOrder: 1694
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+
+  - id: STR_LIGHT_VEST_UC
+    listOrder: 1693
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+
+# Personal armors
+
+  - id: STR_HEAVY_PERSONAL_ARMOR_UC
+    listOrder: 1701
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PERSONAL_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+
+  - id: STR_LIGHT_PERSONAL_ARMOR_UC
+    listOrder: 1698
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PERSONAL_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+
+# Power and Flying Suits
+
+  - id: STR_POWER_SUIT_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_POWER_SUIT
+    text: STR_POWER_SUIT_UFOPEDIA
+
+  - id: STR_FLYING_SUIT_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_FLYING_SUIT
+    text: STR_FLYING_SUIT_UFOPEDIA
+
+  - id: STR_LIGHT_FLYING_SUIT_UC
+    listOrder: 1699
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_FLYING_SUIT
+    text: STR_LIGHT_FLYING_SUIT_UFOPEDIA
+
+# Soldiers' toys
+
+  - id: STR_MOTION_SCANNER # it can be bought
+    requires: []
+
+# Fix the ALIEN CONTAINMENT
+
+  - id: STR_ALIEN_BIOLOGY
+    listOrder: 4590
+    type_id: 8
+    section: STR_ALIEN_LIFE_FORMS
+    text: STR_ALIEN_BIOLOGY_UFOPEDIA
+    requires:
+      - STR_ALIEN_BIOLOGY
+
+  - id: STR_ALIEN_CONTAINMENT
+    requires:
+      - STR_ALIEN_CONTAINMENT
+
+  - id: STR_STUN_ROD
+    requires:
+      - STR_ALIEN_BIOLOGY
+
+# Research weapons and ammo from ALIEN ALLOYS
+
+  - id: STR_ALLOY_CLIPS
+    listOrder: 1926
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ALLOY_CLIPS_UFOPEDIA
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_ALLOY_ROCKETS
+    listOrder: 1924
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ALLOY_ROCKETS_UFOPEDIA
+    requires:
+      - STR_ALLOY_ROCKETS
+
+# Fix the LASER and PLASMA weapons
+
+  - id: STR_LASER_WEAPONS
+    listOrder: 1927
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_LASER_WEAPONS_UFOPEDIA
+    requires:
+      - STR_LASER_WEAPONS
+
+  - id: STR_PLASMA_WEAPONS
+    listOrder: 1928
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_PLASMA_WEAPONS_UFOPEDIA
+    requires:
+      - STR_PLASMA_WEAPONS
+
+# Alloy weapons
+
+  - id: STR_PISTOL_AL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_MACHINE_PISTOL
+    listOrder: 2006
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MACHINE_PISTOL_UFOPEDIA
+  - id: STR_MACHINE_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_MACHINE_PISTOL_AL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_RIFLE_AL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_SNIPER_RIFLE
+    listOrder: 2215
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SNIPER_RIFLE_UFOPEDIA
+  - id: STR_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_SNIPER_RIFLE_AL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_ALLOY_RIFLE
+    listOrder: 2212
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ALLOY_RIFLE_UFOPEDIA
+    requires:
+      - STR_ALLOY_RIFLE
+  - id: STR_ALLOY_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_RIFLE
+
+  - id: STR_ALLOY_SNIPER_RIFLE
+    listOrder: 2224
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ALLOY_SNIPER_RIFLE_UFOPEDIA
+    requires:
+      - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+  - id: STR_ALLOY_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+
+  - id: STR_SHOTGUN
+    listOrder: 2235
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SHOTGUN_UFOPEDIA
+  - id: STR_SHOTGUN_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_SHOTGUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_HC_AP_AMMO
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_AC_AP_AMMO
+    requires:
+      - STR_ALLOY_CLIPS
+
+  - id: STR_GRENADE_LAUNCHER
+    listOrder: 3010
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_GRENADE_LAUNCHER_UFOPEDIA
+  - id: STR_GL_HE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_GL_I_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_GL_S_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+  - id: STR_SMALL_ROCKET
+    requires:
+      - STR_ALLOY_ROCKETS
+
+  - id: STR_INCENDIARY_GRENADE
+    listOrder: 3906
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_INCENDIARY_GRENADE_UFOPEDIA
+
+# Electromagnetic weapons
+
+  - id: STR_ELECTROMAGNETIC_WEAPONS
+    listOrder: 1935
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS
+
+  - id: STR_RAILGUN
+    listOrder: 5705
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_RAILGUN_UFOPEDIA
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS
+
+  - id: STR_RAILGUN_SLUGS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+# Fix the Plasma order in UFOpaedia
+# TODO: it doesn't work, I don't know why...
+
+  #- id: STR_PLASMA_PISTOL
+    #listOrder: 5000
+  #- id: STR_PLASMA_PISTOL_CLIP
+    #listOrder: 5100
+  #- id: STR_HEAVY_PLASMA
+    #listOrder: 5400
+  #- id: STR_HEAVY_PLASMA_CLIP
+    #listOrder: 5500
+
+
+
+MCDPatches:
+# Reproduction tweak
+  - type: U_BASE
+    data:
+      - MCDIndex: 29
+        specialType: 6
+# FastRamp tweak
+  - type: PLANE
+    data:
+      - MCDIndex: 62
+        bigWall: 0
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+      - MCDIndex: 63
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+      - MCDIndex: 64
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+  - type: AVENGER
+    data:
+      - MCDIndex: 53
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+      - MCDIndex: 54
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+      - MCDIndex: 55
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+  - type: LIGHTNIN
+    data:
+      - MCDIndex: 38
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+      - MCDIndex: 39
+        TUWalk: 1
+        TUFly: 1
+        TUSlide: 1
+
+
+
+extraSprites:
+
+# Crafts
+
+  # Raven - new improved interceptor
+  - type: RavenUFOpaediaImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Raven/UFOpaedia.gif
+  - type: BASEBITS.PCK
+    files:
+      57: Resources/AwesomeGuns/Crafts/Raven/Base.gif
+  - type: INTICON.PCK
+    files:
+      24: Resources/AwesomeGuns/Crafts/Raven/Minimized.gif
+      35: Resources/AwesomeGuns/Crafts/Raven/Dogfight.gif
+
+# Craft weapons
+
+  - type: Tornado_UFOpaedia
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Tornado_UFOpaedia.gif
+
+  - type: Barracuda_UFOpaedia
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Barracuda_UFOpaedia.gif
+
+  - type: ALLOY_CANNON_UFOpaedia
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Cannon_UFOpaedia.gif
+
+  # Plasma image for UFOpaedia
+  - type: UP011.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpaedia.gif
+
+  # Storm craft weapon
+  - type: STORM_UFOpaedia
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Storm_UFOpaedia.gif
+  - type: INTICON.PCK
+    files:
+      16: Resources/AwesomeGuns/Crafts/Weapons/Storm_Inticon.gif
+  - type: BASEBITS.PCK
+    files:
+      59: Resources/AwesomeGuns/Crafts/Weapons/Storm_Basebit.gif
+
+# Restyling images for aliens and civilians
+
+  - type: sectoidInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/sectoid.png
+
+  - type: cyberdiscInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/cyberdisc.png
+
+  - type: floaterInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/floater.png
+
+  - type: reaperInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/reaper.png
+
+  - type: snakemanInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/snakeman.png
+
+  - type: chryssalidInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/chryssalid.png
+
+  - type: zombieInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/zombie.png
+
+  - type: mutonInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/muton.png
+
+  - type: celatidInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/celatid.png
+
+  - type: silacoidInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/silacoid.png
+
+  - type: etherealInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/ethereal.png
+
+  - type: sectopodInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/sectopod.png
+
+  - type: civilianMInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/civilianm.png
+
+  - type: civilianFInventoryImage
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Inventory/civilianf.png
+
+# Standard armors
+
+  - type: BIGOBS.PCK
+    files:
+      1003: Resources/AwesomeGuns/Armors/MAN_4_Corpse.gif
+  - type: FLOOROB.PCK
+    files:
+      1003: Resources/AwesomeGuns/Armors/MAN_4_Floorob.gif
+  - type: ARMOREDVEST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_4_Sheet.png
+  - type: MAN_4M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4M0.png
+  - type: MAN_4M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4M1.png
+  - type: MAN_4M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4M2.png
+  - type: MAN_4M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4M3.png
+  - type: MAN_4F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4F0.png
+  - type: MAN_4F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4F1.png
+  - type: MAN_4F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4F2.png
+  - type: MAN_4F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_4F3.png
+
+  - type: BIGOBS.PCK
+    files:
+      1001: Resources/AwesomeGuns/Armors/MAN_6_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      1001: Resources/AwesomeGuns/Armors/MAN_6_Floorob.png
+  - type: LIGHTVEST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_6_Sheet.png
+  - type: MAN_6M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6M0.png
+  - type: MAN_6M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6M1.png
+  - type: MAN_6M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6M2.png
+  - type: MAN_6M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6M3.png
+  - type: MAN_6F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6F0.png
+  - type: MAN_6F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6F1.png
+  - type: MAN_6F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6F2.png
+  - type: MAN_6F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_6F3.png
+
+# Personal armors
+
+  - type: BIGOBS.PCK
+    files:
+      1004: Resources/AwesomeGuns/Armors/MAN_7_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      1004: Resources/AwesomeGuns/Armors/MAN_7_Floorob.png
+  - type: HEAVYPERSONALARMOR.PCK
+    width: 256
+    height: 1400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_7_Sheet.png
+  - type: MAN_7M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7M0.png
+  - type: MAN_7M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7M1.png
+  - type: MAN_7M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7M2.png
+  - type: MAN_7M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7M3.png
+  - type: MAN_7F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7F0.png
+  - type: MAN_7F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7F1.png
+  - type: MAN_7F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7F2.png
+  - type: MAN_7F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_7F3.png
+
+  - type: BIGOBS.PCK
+    files:
+      1005: Resources/AwesomeGuns/Armors/MAN_8_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      1005: Resources/AwesomeGuns/Armors/MAN_8_Floorob.png
+  - type: LIGHTPERSONALARMOR.PCK
+    width: 1024
+    height: 360
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_8_Sheet.gif
+  - type: MAN_8M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8M0.gif
+  - type: MAN_8M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8M1.gif
+  - type: MAN_8M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8M2.gif
+  - type: MAN_8M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8M3.gif
+  - type: MAN_8F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F0.png
+  - type: MAN_8F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F1.png
+  - type: MAN_8F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F2.png
+  - type: MAN_8F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F3.png
+
+# Power and Flying Suits
+
+  - type: LIGHTFLYINGSUIT.PCK
+    width: 1024
+    height: 360
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_9_Sheet.gif
+  - type: MAN_9M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9M0.gif
+  - type: MAN_9M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9M1.gif
+  - type: MAN_9M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9M2.gif
+  - type: MAN_9M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9M3.gif
+  - type: MAN_9F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F0.png
+  - type: MAN_9F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F1.png
+  - type: MAN_9F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F2.png
+  - type: MAN_9F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F3.png
+
+# Restyling images of Power and Flying Suits for inventory (remove helms)
+
+  - type: MAN_2M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M0.gif
+  - type: MAN_2M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M1.gif
+  - type: MAN_2M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M2.gif
+  - type: MAN_2M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M3.gif
+  - type: MAN_2F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F0.gif
+  - type: MAN_2F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F1.gif
+  - type: MAN_2F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F2.gif
+  - type: MAN_2F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F3.gif
+  - type: MAN_3M0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3M0.gif
+  - type: MAN_3M1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3M1.gif
+  - type: MAN_3M2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3M2.gif
+  - type: MAN_3M3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3M3.gif
+  - type: MAN_3F0.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3F0.gif
+  - type: MAN_3F1.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3F1.gif
+  - type: MAN_3F2.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3F2.gif
+  - type: MAN_3F3.SPK
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_3F3.gif
+
+# Colors for Control Panel - movings buttons
+
+  - type: TFTDReserve
+    width: 59
+    height: 24
+    singleImage: true
+    files:
+      0: Resources/AwesomeGuns/UI/Movings.png
+
+# Improve visualization of objects in soldier's hands, step by 8 images
+# Also improve hits and sprites
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      208: Resources/AwesomeGuns/Weapons/Animations/MediKit.gif
+      216: Resources/AwesomeGuns/Weapons/Animations/HE.gif
+      224: Resources/AwesomeGuns/Weapons/Animations/Scanner.gif
+      232: Resources/AwesomeGuns/Weapons/Animations/Proxie.gif
+      240: Resources/AwesomeGuns/Weapons/Animations/ElectroFlare.gif
+      248: Resources/AwesomeGuns/Weapons/Animations/MindProbe.gif
+      256: Resources/AwesomeGuns/Weapons/Animations/SMRocket.gif
+      264: Resources/AwesomeGuns/Weapons/Animations/LGRocket.gif
+      272: Resources/AwesomeGuns/Weapons/Animations/INRocket.gif
+      280: Resources/AwesomeGuns/Weapons/Animations/BlasterBomb.gif
+      288: Resources/AwesomeGuns/Weapons/Animations/APAutoCannon.gif
+      296: Resources/AwesomeGuns/Weapons/Animations/HEAutoCannon.gif
+      304: Resources/AwesomeGuns/Weapons/Animations/INAutoCannon.gif
+      312: Resources/AwesomeGuns/Weapons/Animations/APHeavyCannon.gif
+      320: Resources/AwesomeGuns/Weapons/Animations/HEHeavyCannon.gif
+      328: Resources/AwesomeGuns/Weapons/Animations/INHeavyCannon.gif
+      336: Resources/AwesomeGuns/Weapons/Animations/AlienGrenade.gif
+      344: Resources/AwesomeGuns/Weapons/Animations/SmokeGrenade.gif
+      352: Resources/AwesomeGuns/Weapons/Animations/RifleClip.gif
+      360: Resources/AwesomeGuns/Weapons/Animations/PistolClip.gif
+      368: Resources/AwesomeGuns/Weapons/Animations/PPistolClip.gif
+      376: Resources/AwesomeGuns/Weapons/Animations/PRifleClip.gif
+      384: Resources/AwesomeGuns/Weapons/Animations/PHeavyClip.gif
+      392: Resources/AwesomeGuns/Weapons/Animations/StunBomb.gif
+      400: Resources/AwesomeGuns/Weapons/Animations/Elerium.gif
+
+  - type: FLOOROB.PCK
+    files:
+      73: Resources/AwesomeGuns/Weapons/Animations/EleriumFloor.gif
+
+  - type: SMOKE.PCK
+    width: 160
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/AwesomeGuns/Weapons/Animations/Hit_ALLOY.gif
+
+  - type: SMOKE.PCK
+    width: 320
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      66: Resources/AwesomeGuns/Weapons/Animations/Hit_HeavyPlasma.png
+
+  - type: SMOKE.PCK
+    width: 160
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      76: Resources/AwesomeGuns/Weapons/Animations/Hit_Rail.gif
+
+  - type: Projectiles
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/AwesomeGuns/Weapons/Animations/Sprites_GrenadeLauncher.png
+
+  - type: Projectiles
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      420: Resources/AwesomeGuns/Weapons/Animations/Sprites_SniperRifle.png
+
+  - type: Projectiles
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      455: Resources/AwesomeGuns/Weapons/Animations/Sprites_Rifle_AL.png
+
+  - type: Projectiles
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      490: Resources/AwesomeGuns/Weapons/Animations/Sprites_SniperRifle_AL.png
+
+  - type: Projectiles
+    width: 105
+    height: 9
+    subX: 3
+    subY: 3
+    files:
+      525: Resources/AwesomeGuns/Weapons/Animations/Sprites_Rail.png
+
+  - type: Projectiles
+    width: 105
+    height: 9
+    subX: 3
+    subY: 3
+    files:
+      560: Resources/AwesomeGuns/Weapons/Animations/Sprites_Plasma.png
+
+# Change visualization of weapon in soldier's hands, step by 8(+2) images
+
+  - type: BIGOBS.PCK
+    files:
+      3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.png
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.png
+      502: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.png
+      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob.gif
+      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.png
+      512: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.png
+      1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.png
+      2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.png
+      522: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.png
+      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob.png
+      631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
+      632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.png
+      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_CLIP.png
+      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
+      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_CLIP.gif
+      560: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.png
+      561: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
+      562: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_CLIP.gif
+      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob.png
+      12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_AP_AMMO.png
+      13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_HP_AMMO.png
+      14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.png
+      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.png
+      590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob.gif
+      591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.gif
+      592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.gif
+      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.gif
+      15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
+      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_SR.gif
+      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
+      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
+      32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
+      34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png
+      31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png
+      41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
+      750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.png
+      751: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
+
+  - type: FLOOROB.PCK
+    files:
+      3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.png
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.png
+      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
+      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
+      1: Resources/AwesomeGuns/Weapons/RIFLE/Floorob.png
+      2: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_CLIP.png
+      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.png
+      631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.png
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.png
+      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_CLIP.png
+      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob.gif
+      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_CLIP.gif
+      560: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob.png
+      561: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_AMMO.gif
+      562: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_CLIP.gif
+      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob.png
+      13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_HP_AMMO.png
+      14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_I_AMMO.png
+      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Floorob.png
+      590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob.gif
+      15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
+      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_SR.gif
+      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
+      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.gif
+      33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
+      30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
+      750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
+      751: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
+
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      96: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.png
+      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
+      0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.png
+      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.png
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.png
+      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
+      560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.png
+      570: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.png
+      24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.png
+      32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.png
+      590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs.png
+      72: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs.png
+      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
+      8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.png
+      710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
+      48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
+      750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
+
+
+
+extraSounds:
+
+# Craft weapon sounds
+
+  - type: GEO.CAT # SAMPLE.CAT
+    files:
+      14: Resources/AwesomeGuns/Crafts/Sounds/avalanche.wav
+      5: Resources/AwesomeGuns/Crafts/Sounds/stingray.wav
+      15: Resources/AwesomeGuns/Crafts/Sounds/storm.wav
+      4: Resources/AwesomeGuns/Crafts/Sounds/cannon.wav
+      #8: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
+      9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
+
+# Global sounds interface
+
+  - type: GEO.CAT # SAMPLE.CAT
+    files:
+      0: Resources/AwesomeGuns/UI/Sounds/Geo/Button1.ogg
+      6: Resources/AwesomeGuns/UI/Sounds/Geo/Button2.ogg
+      1: Resources/AwesomeGuns/UI/Sounds/Geo/WindowClose.ogg
+      2: Resources/AwesomeGuns/UI/Sounds/Geo/WindowOpen.ogg
+      3: Resources/AwesomeGuns/UI/Sounds/Geo/WindowOpen.ogg
+      10: Resources/AwesomeGuns/UI/Sounds/Geo/CraftHit.ogg
+
+# Aliens and civilians killing effects
+
+  - type: BATTLE.CAT # SAMPLE2.CAT
+    files:
+      71: Resources/AwesomeGuns/UI/Sounds/Aliens/death_sectoid.wav
+      72: Resources/AwesomeGuns/UI/Sounds/Aliens/death_floater.wav
+      73: Resources/AwesomeGuns/UI/Sounds/Aliens/death_snakeman.wav
+      74: Resources/AwesomeGuns/UI/Sounds/Aliens/death_chryssalid.wav
+      75: Resources/AwesomeGuns/UI/Sounds/Aliens/death_muton.wav
+      76: Resources/AwesomeGuns/UI/Sounds/Aliens/death_ethereal.wav
+      77: Resources/AwesomeGuns/UI/Sounds/Aliens/death_celatid.wav
+      78: Resources/AwesomeGuns/UI/Sounds/Aliens/death_reaper.ogg
+      79: Resources/AwesomeGuns/UI/Sounds/Aliens/death_silacoid.wav
+      80: Resources/AwesomeGuns/UI/Sounds/Aliens/death_zombie.ogg
+      81: Resources/AwesomeGuns/UI/Sounds/Aliens/death_cyberdisc.wav
+      82: Resources/AwesomeGuns/UI/Sounds/Aliens/death_sectopod.wav
+
+      41: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_m1.ogg
+      42: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_m2.ogg
+      43: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_m3.ogg
+      44: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_f1.ogg
+      45: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_f2.ogg
+      46: Resources/AwesomeGuns/UI/Sounds/Aliens/death_x_f3.ogg
+
+# Battle interface sounds
+
+  - type: BATTLE.CAT # SAMPLE2.CAT
+    files:
+      3: Resources/AwesomeGuns/UI/Sounds/Battle/door_barn.ogg
+      5: Resources/AwesomeGuns/UI/Sounds/Battle/explosion.ogg
+
+      0: Resources/AwesomeGuns/UI/Sounds/Battle/move_snakeman.ogg
+      14: Resources/AwesomeGuns/UI/Sounds/Battle/move_tank.ogg
+      15: Resources/AwesomeGuns/UI/Sounds/Battle/move_hover.ogg
+      16: Resources/AwesomeGuns/UI/Sounds/Battle/move_snakeman.ogg
+      17: Resources/AwesomeGuns/UI/Sounds/Battle/reload.ogg
+      23: Resources/AwesomeGuns/UI/Sounds/Battle/tank_destroyed.ogg
+
+      24: Resources/AwesomeGuns/UI/Sounds/Battle/walk_metal1.ogg
+      25: Resources/AwesomeGuns/UI/Sounds/Battle/walk_metal2.ogg
+      26: Resources/AwesomeGuns/UI/Sounds/Battle/walk_ground1.ogg
+      27: Resources/AwesomeGuns/UI/Sounds/Battle/walk_ground2.ogg
+      28: Resources/AwesomeGuns/UI/Sounds/Battle/walk_martian1.ogg
+      29: Resources/AwesomeGuns/UI/Sounds/Battle/walk_martian2.ogg
+      30: Resources/AwesomeGuns/UI/Sounds/Battle/walk_water1.ogg
+      31: Resources/AwesomeGuns/UI/Sounds/Battle/walk_water2.ogg
+      32: Resources/AwesomeGuns/UI/Sounds/Battle/walk_sand1.ogg
+      33: Resources/AwesomeGuns/UI/Sounds/Battle/walk_sand2.ogg
+      34: Resources/AwesomeGuns/UI/Sounds/Battle/walk_snow1.ogg
+      35: Resources/AwesomeGuns/UI/Sounds/Battle/walk_snow2.ogg
+
+      36: Resources/AwesomeGuns/UI/Sounds/Battle/psy_attack.ogg
+      37: Resources/AwesomeGuns/UI/Sounds/Battle/psy_check.ogg
+      38: Resources/AwesomeGuns/UI/Sounds/Battle/place.ogg
+      39: Resources/AwesomeGuns/UI/Sounds/Battle/throw.ogg
+      40: Resources/AwesomeGuns/UI/Sounds/Battle/move_hover.ogg
+      47: Resources/AwesomeGuns/UI/Sounds/Battle/move_silacoid.ogg
+
+      48: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_reaper.ogg
+      50: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_celatid.ogg
+      61: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_chryssalid.ogg
+      62: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_zombie.ogg
+      63: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_silacoid.ogg
+
+# Weapon effects - shooting and hits
+
+  - type: BATTLE.CAT # SAMPLE2.CAT
+    files:
+      8001: Resources/AwesomeGuns/Weapons/PISTOL/Fire.ogg
+      8002: Resources/AwesomeGuns/Weapons/PISTOL/Hit.wav
+      8005: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Fire.wav
+      #8006: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Hit.wav - it uses PISTOL sound
+      8009: Resources/AwesomeGuns/Weapons/RIFLE/Fire.wav
+      8010: Resources/AwesomeGuns/Weapons/RIFLE/Hit.wav
+      8015: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Fire.ogg
+      #8016: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Hit.wav - it uses RIFLE sound
+      8011: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Fire.wav
+      #8012: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Hit.wav - it uses RIFLE sound
+      8017: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Fire.wav
+      8018: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Hit.wav
+      8021: Resources/AwesomeGuns/Weapons/SHOTGUN/Fire.wav
+      8022: Resources/AwesomeGuns/Weapons/SHOTGUN/Hit.wav
+      8025: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Fire.wav
+      #8026: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Hit.wav - it uses SHOTGUN sound only for AP AMMO
+      8027: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Fire_AP.wav
+      8029: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Fire.wav
+      #8030: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Hit.wav - it uses SHOTGUN sound only for AP AMMO
+      8033: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Fire.wav
+      #8034: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Hit.wav - it doesn't use sound
+      8037: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Fire.wav
+      8038: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Hit.wav
+      8051: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire1.wav
+      8052: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire2.wav
+      8053: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire3.wav
+      8054: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Hit.ogg
+      8061: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire1.wav
+      8062: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire2.wav
+      8063: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire3.wav
+      8064: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Hit.wav
+      8067: Resources/AwesomeGuns/Weapons/RAILGUN/Fire.ogg
+
+
+
+extraStrings:
+
+# Restyling New Game dialog like DOOM-II
+
+  - type: en
+    strings:
+      STR_1_BEGINNER: "I'm too young to die"
+      STR_2_EXPERIENCED: "Hey, not too rough"
+      STR_3_VETERAN: "Hurt me plenty"
+      STR_4_GENIUS: "Ultra-Violence"
+      STR_5_SUPERHUMAN: "Nightmare!"
+  - type: ru
+    strings:
+      STR_1_BEGINNER: "Я слишком молод, чтобы умереть"
+      STR_2_EXPERIENCED: "Эй, не так грубо"
+      STR_3_VETERAN: "Сделай мне больно"
+      STR_4_GENIUS: "Сверхнасилие"
+      STR_5_SUPERHUMAN: "Ночной кошмар!"
+
+# Restyling inventory screen
+
+  - type: en
+    strings:
+      STR_QUICK_DRAW: "QUICK"
+  - type: ru
+    strings:
+      STR_QUICK_DRAW: "КОБУРА"
+
+# Raven - new improved interceptor
+  - type: en
+    strings:
+      STR_IMPROVED_INTERCEPTOR: "Improved interceptor"
+      STR_UFO_POWER_SOURCE_UFOPEDIA: "The power source of alien craft is an anti-matter reactor which uses Elerium (element 115) to generate powerful gravity waves as well as other forms of energy.  The conversion of matter to energy is an incredible 99% efficient, therefore tiny quantities of Elerium can produce a huge amount of power.  This unit can be reproduced easily using alien alloys.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce items of aliens."
+      STR_RAVEN: "RAVEN"
+      STR_RAVEN_UFOPEDIA: "THIS IS A PULSE-ENGINE HEAVILY MODIFIED FAST ATTACK FIGHTER. THE UPGRADE COMBINES ALIEN ALLOYS WITH THE LATEST EARTH TECHNOLOGY."
+      STR_UFO_NAVIGATION_UFOPEDIA: "Alien craft use sophisticated computers to navigate on earth and through space.  The system is based on optical processors arranged in network fashion.  The control interface is relatively simple - the navigator controls the direction of gravity waves generated by the power source to move the craft in any direction.  This system can be used easily by humans, and it can be reproduced using alien alloys and other components.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce items of aliens."
+  - type: ru
+    strings:
+      STR_IMPROVED_INTERCEPTOR: "Усовершенствованный перехватчик"
+      STR_UFO_POWER_SOURCE_UFOPEDIA: "Источник энергии, применяемый на кораблях пришельцев, основан на реакторе антивещества, использующем элериум (элемент 115) и генерирующим мощные гравитационные волны и другие формы энергии. КПД преобразования материи в энергию достигает 99%, поэтому даже незначительное количество элериума может произвести огромное количество энергии. Это устройство можно легко воспроизвести при наличии сплавов пришельцев.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать предметы пришельцев."
+      STR_RAVEN: "ВОРОН"
+      STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИИ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
+      STR_UFO_NAVIGATION_UFOPEDIA: "Управление полетом инопланетных кораблей осуществляется при помощи мощных компьютеров. Система основана на оптических процессорах, соединенных в сеть. Интерфейс управления относительно прост - навигатор изменяет направление гравитационных волн, генерируемых реактором, чтобы переместить корабль в нужном направлении. Интерфейс управления может быть освоен человеком. Для производства системы необходимы сплавы пришельцев и ряд других компонентов.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать предметы пришельцев."
+
+# Craft Weapons
+  - type: en
+    strings:
+
+      #TODO: translation should be corrected (it's a Google Translator from Russian)
+      STR_ALLOY_ROCKETS: "Improved launchers"
+      STR_ALLOY_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE} {NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
+
+      STR_STINGRAY: "STINGRAY"
+      STR_STINGRAY_LAUNCHER: "Stingray Launcher"
+      STR_STINGRAY_MISSILES: "Stingray Missiles"
+      STR_STINGRAY_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH SPECIALLY SHIELDED ELECTRONICS."
+      STR_ALLOY_STINGRAY: "TUNED STINGRAY"
+      STR_ALLOY_STINGRAY_LAUNCHER: "Tuned Stingray Launcher"
+      STR_ALLOY_STINGRAY_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH SPECIALLY SHIELDED ELECTRONICS.{NEWLINE}{NEWLINE}GUIDANCE SYSTEMS HAVE BEEN TUNED TO IMPROVE ACQUISITION AND TRACKING OF ALIEN SAUCER TARGETS."
+
+      STR_AVALANCHE: "AVALANCHE"
+      STR_AVALANCHE_LAUNCHER: "Avalanche Launcher"
+      STR_AVALANCHE_MISSILES: "Avalanche Missiles"
+      STR_AVALANCHE_UFOPEDIA: "AIR TO AIR MISSILE WITH NUCLEAR WARHEAD, BUT AN EXTREMELY HEAVY LOAD."
+      STR_ALLOY_AVALANCHE: "TUNED AVALANCHE"
+      STR_ALLOY_AVALANCHE_LAUNCHER: "Tuned Avalanche Launcher"
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "DEVASTATING AIR TO AIR MISSILE WITH A NUCLEAR WARHEAD.{NEWLINE}{NEWLINE}GUIDANCE SYSTEMS HAVE BEEN TUNED TO IMPROVE ACQUISITION AND TRACKING OF ALIEN SAUCER TARGETS."
+
+      STR_CANNON_UC: "CANNON"
+      STR_CANNON: "Cannon"
+      STR_CANNON_ROUNDS_X50: "Cannon Rounds(x50)"
+      STR_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOR PIERCING ROUNDS CAPABLE OF PENETRATING 16 INCHES OF STEEL."
+      STR_ALLOY_CANNON_UC: "TUNED CANNON"
+      STR_ALLOY_CANNON: "Tuned Cannon"
+      STR_ALLOY_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
+
+      STR_PLASMA_BEAM_UFOPEDIA: "EVEN THOUGH THAT WE ARE UNABLE TO REPRODUCE ALIEN ARTIFACTS, OUR ENGINEERS HAVE FOUND A WAY TO PRODUCE PLASMA WEAPON FROM VARIOUS COMPONENTS FOR AIRCRAFTS."
+
+      STR_STORM: "STORM"
+      STR_STORM_LAUNCHER: "Storm Missile Launcher"
+      STR_STORM_MISSILES: "Storm Missile"
+      STR_STORM_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH NUCLEAR WARHEAD BASED ON THE ALIEN ALLOYS TECHNOLOGY, SMALLER AND LIGHTER THAN AVALANCHE."
+
+  - type: ru
+    strings:
+
+      STR_ALLOY_ROCKETS: "Улучшенные пусковые установки"
+      STR_ALLOY_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволит повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения пусковых комплектов кораблей и наземных ракетных установок.{NEWLINE}{NEWLINE}Особо интересной разработкой наших учёных является новая компактная бронебойная ракета, которая способна пробивать корпус НЛО прямо на поле боя, открывая таким образом нашим оперативникам путь внутрь инопланетного корабля в любом удобном для них месте."
+
+      STR_STINGRAY: "СКАТ"
+      STR_STINGRAY_LAUNCHER: "Пусковая установка \"Скат\""
+      STR_STINGRAY_MISSILES: "Ракета \"Скат\""
+      STR_STINGRAY_UFOPEDIA: "ПЕРЕДОВАЯ РАКЕТА КЛАССА ВОЗДУХ-ВОЗДУХ СО СПЕЦИАЛЬНО ЭКРАНИРОВАННЫМИ ЭЛЕКТРОННЫМИ СИСТЕМАМИ."
+      STR_ALLOY_STINGRAY: "БАРРАКУДА"
+      STR_ALLOY_STINGRAY_LAUNCHER: "Пусковая установка \"Барракуда\""
+      STR_ALLOY_STINGRAY_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА ДЛЯ РАКЕТ СКАТ."
+
+      STR_AVALANCHE: "ЛАВИНА"
+      STR_AVALANCHE_LAUNCHER: "Пусковая установка \"Лавина\""
+      STR_AVALANCHE_MISSILES: "Ракета \"Лавина\""
+      STR_AVALANCHE_UFOPEDIA: "РАКЕТА КЛАССА ВОЗДУХ-ВОЗДУХ С ЯДЕРНОЙ БОЕГОЛОВКОЙ. ОТЛИЧАЕТСЯ КРАЙНЕ МЕДЛЕННОЙ ПЕРЕЗАРЯДКОЙ."
+      STR_ALLOY_AVALANCHE: "ТОРНАДО"
+      STR_ALLOY_AVALANCHE_LAUNCHER: "Пусковая установка \"Торнадо\""
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА ДЛЯ РАКЕТ ЛАВИНА."
+
+      STR_CANNON_UC: "АВИАПУШКА"
+      STR_CANNON: "Авиапушка"
+      STR_CANNON_ROUNDS_X50: "Снаряды к авиапушке (х50)"
+      STR_CANNON_UFOPEDIA: "АВТОМАТИЧЕСКАЯ ПУШКА БОЛЬШОЙ МОЩНОСТИ, СТРЕЛЯЮЩАЯ БРОНЕБОЙНЫМИ СНАРЯДАМИ, СПОСОБНЫМИ ПРОБИТЬ 400-МИЛЛИМЕТРОВУЮ СТАЛЬ."
+      STR_ALLOY_CANNON_UC: "УЛУЧШЕННАЯ АВИАПУШКА"
+      STR_ALLOY_CANNON: "Улучшенная Авиапушка"
+      STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
+
+      STR_PLASMA_BEAM_UFOPEDIA: "НЕСМОТРЯ НА ТО, ЧТО МЫ НЕ В СОСТОЯНИИ ВОСПРОИЗВОДИТЬ ИНОПЛАНЕТНЫЕ АРТЕФАКТЫ, НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
+
+      STR_STORM: "ШТОРМ"
+      STR_STORM_LAUNCHER: "Пусковая установка \"Шторм\""
+      STR_STORM_MISSILES: "Ракета \"Шторм\""
+      STR_STORM_UFOPEDIA: "УПРАВЛЯЕМАЯ РАКЕТА \"ШТОРМ\". ИСПОЛЬЗУЯ НОВЫЕ ТЕХНОЛОГИИ СТАЛО ВОЗМОЖНЫМ ПРОИЗВЕСТИ ОЧЕРЕДНОЕ УЛУЧШЕНИЕ РАКЕТ \"ЛАВИНА\" НА ДАЛЬНОСТЬ ПОЛЕТА И ТОЧНОСТЬ ПОРАЖЕНИЯ ЦЕЛЕЙ, А ТАКЖЕ НЕМНОГО УВЕЛИЧИТЬ МОЩНОСТЬ ЗАРЯДА."
+
+# Fix the ALIEN CONTAINMENT
+
+  - type: en
+    strings:
+      STR_ALIEN_BIOLOGY: "Alien Biology"
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "Our preliminary research show that aliens have DNA much like ours, but so different that we should assume it has extraterrestrial origins - or at least coming from some inconceivable depths of time. Moreover, certain fragments seem to have been added artificially, probably extracted from Earth organisms. This likely helps the aliens to adapt to our environment, but it is either short-term or incomplete: dependant on pre-processed nutrients and with poor immunology, aliens can't survive on Earth for long, therefore special arrangements must be made to study a living specimen."
+  - type: ru
+    strings:
+      STR_ALIEN_BIOLOGY: "Биология пришельцев"
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
+
+# UFOpaedia corrections, because alien technologies cannot be reproduced
+
+  - type: en
+    strings:
+      STR_PLASMA_PISTOL_UFOPEDIA: "Plasma Pistols are a lethal alien weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
+      STR_PLASMA_RIFLE_UFOPEDIA: "This is a devastatingly powerful weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
+      STR_HEAVY_PLASMA_UFOPEDIA: "This is a devastatingly powerful weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow.  When you have positioned enough way points click on the special launch icon.{NEWLINE}{NEWLINE}It can be used only in combat."
+      STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Very useful for capturing live aliens.{NEWLINE}{NEWLINE}It can be used only in combat."
+      STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful.{NEWLINE}{NEWLINE}It can be used only in combat."
+  - type: ru
+    strings:
+      STR_PLASMA_PISTOL_UFOPEDIA: "Смертоносное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
+      STR_PLASMA_RIFLE_UFOPEDIA: "Разрушительное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
+      STR_HEAVY_PLASMA_UFOPEDIA: "Смертоносное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. После задания траектории нажмите специальную кнопку пуска ракеты.{NEWLINE}{NEWLINE}Можно использовать в бою."
+      STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. Весьма полезна для захвата живых инопланетян.{NEWLINE}{NEWLINE}Можно использовать в бою."
+      STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность.{NEWLINE}{NEWLINE}Можно использовать в бою."
+
+# Fix the LASER and PLASMA weapons
+
+  - type: en
+    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
+      STR_LASER_WEAPONS: "Laser Weapons"
+      STR_LASER_WEAPONS_UFOPEDIA: "Elerium-115 is truly an inexhaustible source of energy. Through experiments, we found one more feature of the substance. {NEWLINE} {NEWLINE} Crystals Elerium-115, carved a special cubic form, under the influence of electromagnetic pulses of a certain frequency, able to refract light rays so that it is possible to create a single point in space huge energy kick . {NEWLINE} {NEWLINE} implies that using alien alloys and crystals Elerium-115 can construct a device that can shoot beams of light. We call this laser weapon. {NEWLINE} {NEWLINE} According to our assumptions, the power of such weapons, even in the simplest of his performance, will surpass all existing terrestrial analogues of small arms. At the same time, weapons made in laser technology will have a virtually infinite ammunition."
+      STR_PLASMA_WEAPONS: "Plasma Weapons"
+      STR_PLASMA_WEAPONS_UFOPEDIA: "Initially, it was clear that a major component of plasma weapons power is Elerium-115. Now we understand the functioning of these weapons, and we can use it, not by battle. {NEWLINE} {NEWLINE} Unfortunately manufacturing techniques such weapons on so complex that we can not reproduce it on Earth. Therefore, care should be taken to preserve ammunition and copies plasma weapons produced in the battle, and to sell them only in extreme necessity. {NEWLINE} {NEWLINE} However, our scientists are optimistic and ready to develop ways to use plasma weapons in our vehicles, and combat platforms."
+  - type: ru
+    strings:
+      STR_LASER_WEAPONS: "Лазерное оружие"
+      STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
+      STR_PLASMA_WEAPONS: "Плазменное оружие"
+      STR_PLASMA_WEAPONS_UFOPEDIA: "Изначально было понятно, что основным компонентом энергии плазменного оружия является Элериум-115. Теперь же мы понимаем как функционирует это оружие и можем применять его не посредство в бою.{NEWLINE}{NEWLINE}К сожалению технология изготовления такого оружия на столько сложна, что мы не в состоянии её воспроизвести в земных условиях. Поэтому, следует позаботиться о сохранении боеприпасов и экземпляров плазменного оружия добытых в бою и продавать их только по крайней необходимости.{NEWLINE}{NEWLINE}Тем не менее, наши учённые полны оптимизма и готовы разработать способы применения плазменного оружия в наших кораблях и боевых платформах."
+
+# Armors
+
+  - type: en
+    strings:
+      # Standard armors
+      STR_NONE_UC_TITLE: "STANDARD EQUIPMENT"
+      STR_ARMORED_VEST_UC: "HEAVY VEST"
+      STR_ARMORED_VEST: "Heavy Vest"
+      STR_LIGHT_VEST_UC: "LIGHT VEST"
+      STR_LIGHT_VEST: "Light Vest"
+      # Personal armors
+      STR_HEAVY_PERSONAL_ARMOR_UC: "HEAVY ARMOR"
+      STR_HEAVY_PERSONAL_ARMOR: "Heavy Armor"
+      STR_PERSONAL_ARMOR_UC: "PERSONAL ARMOR"
+      STR_PERSONAL_ARMOR: "Personal Armor"
+      STR_LIGHT_PERSONAL_ARMOR_UC: "LIGHT ARMOR"
+      STR_LIGHT_PERSONAL_ARMOR: "Light Armor"
+      # Power and Flying Suits
+      STR_POWER_SUIT_UC: "POWER SUIT"
+      STR_POWER_SUIT: "Power Suit"
+      STR_FLYING_SUIT_UC: "FLYING SUIT"
+      STR_FLYING_SUIT: "Flying Suit"
+      STR_LIGHT_FLYING_SUIT_UC: "FLYING ARMOR"
+      STR_LIGHT_FLYING_SUIT: "Flying Armor"
+      # Manufacture
+      STR_FLYING_SUIT_FROM_POWER_SUIT: "Flying Suit from Power Suit"
+      STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Flying Armor from Light Armor"
+      # UFOpaedia
+      STR_PERSONAL_ARMOR_UFOPEDIA: "Using the newly discovered Alien Alloys, this new armor gives our men a fighting chance against the alien threat."
+      STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Using the newly discovered Alien Alloys and incorporating alien anti-gravity navigation technology to allow full freedom of movement across the battlefield."
+      STR_POWER_SUIT_UFOPEDIA: "A powerful new protection for soldiers, this armor is powered by an Elerium energy source and greatly amplifies the strength of the wearer, it offers the best protection yet for combat troops."
+      STR_FLYING_SUIT_UFOPEDIA: "An enhanced version of the Power Suit, incorporating alien anti-gravity navigation technology to allow full freedom of movement across the battlefield."
+  - type: ru
+    strings:
+      # Стандартная экипировка
+      STR_NONE_UC_TITLE: "СТАНДАРТНАЯ ЭКИПИРОВКА"
+      STR_ARMORED_VEST_UC: "ТЯЖЕЛЫЙ БРОНЕЖИЛЕТ"
+      STR_ARMORED_VEST: "Тяжёлый бронежилет"
+      STR_LIGHT_VEST_UC: "ЛЕГКИЙ БРОНЕЖИЛЕТ"
+      STR_LIGHT_VEST: "Лёгкий бронежилет"
+      # Персональная броня
+      STR_HEAVY_PERSONAL_ARMOR_UC: "ТЯЖEЛЫЙ БРОНЕКОСТЮМ"
+      STR_HEAVY_PERSONAL_ARMOR: "Тяжёлый бронекостюм"
+      STR_PERSONAL_ARMOR_UC: "БРОНЕКОСТЮМ"
+      STR_PERSONAL_ARMOR: "Бронекостюм"
+      STR_LIGHT_PERSONAL_ARMOR_UC: "ЛЕГКИЙ БРОНЕКОСТЮМ"
+      STR_LIGHT_PERSONAL_ARMOR: "Лёгкий бронекостюм"
+      # Скафандры
+      STR_POWER_SUIT_UC: "ЭНЕРГОСКАФАНДР"
+      STR_POWER_SUIT: "Энергоскафандр"
+      STR_FLYING_SUIT_UC: "ЛЕТАЮЩИЙ СКАФАНДР"
+      STR_FLYING_SUIT: "Летающий скафандр"
+      STR_LIGHT_FLYING_SUIT_UC: "ЛЕТАЮЩИЙ БРОНЕКОСТЮМ"
+      STR_LIGHT_FLYING_SUIT: "Летающий бронекостюм"
+      # Производство
+      STR_FLYING_SUIT_FROM_POWER_SUIT: "Переделка энергоскафандра"
+      STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Переделка лёгкого бронекостюма"
+      # UFOpaedia
+      STR_PERSONAL_ARMOR_UFOPEDIA: "Броня с использованием сплавов пришельцев дает нашим бойцам больше шансов в сражении с инопланетной угрозой."
+      STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Легкая броня с использованием сплавов пришельцев и технологии антигравитации и навигации, дающая полную свободу передвижения на поле боя."
+      STR_POWER_SUIT_UFOPEDIA: "Эта броня питается от энергетического источника на элериуме и значительно увеличивает силу, что делает ее наилучшей защитой для бойцов."
+      STR_FLYING_SUIT_UFOPEDIA: "Улучшенная версия энергоскафандра, объединяющая технологии антигравитации и навигации пришельцев, дающая полную свободу передвижения на поле боя."
+
+# Conventional weapons
+
+  - type: en
+    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
+
+      STR_ALLOY_CLIPS: "Improved ammunition"
+      STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles, including a sniper, shotguns, manual and automatic guns. {NEWLINE} {NEWLINE} Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
+
+      STR_PISTOL: "Пистолет"
+      STR_PISTOL_CLIP: "Магазин к пистолету"
+      STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
+      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть экипировки любого снайпера, как дополнительное оружие."
+
+      STR_MACHINE_PISTOL: "Пистолет-пулемёт"
+      STR_MACHINE_PISTOL_CLIP: "Магазин к пистолет-пулемёту"
+      STR_MACHINE_PISTOL_AL_CLIP: "Магазин ББ к пистолет-пулемёту"
+      STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон 9-го калибра. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
+
+      STR_RIFLE: "Винтовка"
+      STR_RIFLE_CLIP: "Магазин к винтовке"
+      STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
+      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 6,7 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
+
+      STR_HEAVY_CANNON: "Тяжелая пушка"
+      STR_HC_AP_AMMO: "ТП-ББ магазин"
+      STR_HC_HE_AMMO: "ТП-Р магазин"
+      STR_HC_I_AMMO: "ТП-З магазин"
+      STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
+
+      STR_AUTO_CANNON: "Авто-пушка"
+      STR_AC_AP_AMMO: "АП-ББ магазин"
+      STR_AC_HE_AMMO: "АП-Р магазин"
+      STR_AC_I_AMMO: "АП-З магазин"
+      STR_AUTO_CANNON_UFOPEDIA: "Авто-пушка сочетает эксплуатационную гибкость и мощность тяжелой пушки с возможностью автоматического огня."
+
+      STR_SHOTGUN: "Дробовик"
+      STR_SHOTGUN_AMMO: "Патроны к дробовику"
+      STR_SHOTGUN_CLIP: "Патроны ББ к дробовику"
+      STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 4 патрона."
+
+      STR_SNIPER_RIFLE: "Снайперская винтовка"
+      STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
+      STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 4 бронебойных заряда."
+
+      STR_ALLOY_RIFLE: "Штурмовая винтовка"
+      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
+      STR_ALLOY_RIFLE_CLIP: "Магазин к штурмовой винтовке"
+
+      STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин к Молнии Зевса"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Стандартный магазин содержит 3 бронебойных заряда."
+
+      STR_GRENADE_LAUNCHER: "Ручной гранотомёт"
+      STR_GL_HE_AMMO: "40mm граната"
+      STR_GL_I_AMMO: "40mm зажигательная граната"
+      STR_GL_S_AMMO: "40mm дымовая граната"
+      STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт. Способен выпускать навесом фугасные, зажигательные и дымовые гранаты на большие расстояния."
+
+      STR_ROCKET_LAUNCHER: "Ракетная установка"
+      STR_SMALL_ROCKET: "Бронебойная ракета"
+      STR_LARGE_ROCKET: "Тяжелая ракета"
+      STR_INCENDIARY_ROCKET: "Зажигательная ракета"
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+
+      STR_INCENDIARY_GRENADE: "Зажигательная граната"
+      STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
+
+      STR_LASER_PISTOL_UFOPEDIA: "Передел минитюризации лазерной технологии. Дальность и точность срельбы принесены в жертву мобильности устройсва и мощности выстрела."
+      STR_LASER_RIFLE_UFOPEDIA: "Вторая попытка использования лазерной технологии в бою. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
+      STR_HEAVY_LASER_UFOPEDIA: "Воплощение лазерной технологии на поле боя. Это дробовик способен выпускать 3 лазерных луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
+
+      STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
+      STR_RAILGUN: "Railgun"
+      STR_RAILGUN_SLUGS: "Railgun Slugs"
+      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
+      STR_RAILGUN_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
+
+  - type: ru
+    strings:
+
+      STR_ALLOY_CLIPS: "Улучшенные боеприпасы"
+      STR_ALLOY_CLIPS_UFOPEDIA: "На основе наших знаний о сплавах пришельцев учённые предложили новую технологию изготовления бронебойных боеприпасов и картечей с увеличенной мощностью поражения. По мимо убойной силы, также увеличено и количество зарядов в обойме. Наши оперативники смогут использовать новые бронебойные боеприпасы в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Более того, возможно дальнейшее усовершенствование открытой технологии. На основе существующих образцов земного стрелкового оружия, учённые готовы разработать производственные чертежи новых типов вооружения, таких как штурмовая и снайперская винтовка."
+
+      STR_PISTOL: "Пистолет"
+      STR_PISTOL_CLIP: "Магазин к пистолету"
+      STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
+      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть экипировки любого снайпера, как дополнительное оружие."
+
+      STR_MACHINE_PISTOL: "Пистолет-пулемёт"
+      STR_MACHINE_PISTOL_CLIP: "Магазин к пистолет-пулемёту"
+      STR_MACHINE_PISTOL_AL_CLIP: "Магазин ББ к пистолет-пулемёту"
+      STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон 9-го калибра. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
+
+      STR_RIFLE: "Винтовка"
+      STR_RIFLE_CLIP: "Магазин к винтовке"
+      STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
+      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 6,7 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
+
+      STR_HEAVY_CANNON: "Тяжелая пушка"
+      STR_HC_AP_AMMO: "ТП-ББ магазин"
+      STR_HC_HE_AMMO: "ТП-Р магазин"
+      STR_HC_I_AMMO: "ТП-З магазин"
+      STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
+
+      STR_AUTO_CANNON: "Авто-пушка"
+      STR_AC_AP_AMMO: "АП-ББ магазин"
+      STR_AC_HE_AMMO: "АП-Р магазин"
+      STR_AC_I_AMMO: "АП-З магазин"
+      STR_AUTO_CANNON_UFOPEDIA: "Автоматическая пушка сочетает пальбу очередью и мощность тяжелой пушки. Выпускает до четырёх зарядов за раз, точность стрельбы соответствующая."
+
+      STR_SHOTGUN: "Дробовик"
+      STR_SHOTGUN_AMMO: "Патроны к дробовику"
+      STR_SHOTGUN_CLIP: "Патроны ББ к дробовику"
+      STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 4 патрона."
+
+      STR_SNIPER_RIFLE: "Снайперская винтовка"
+      STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
+      STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 4 бронебойных заряда."
+
+      STR_ALLOY_RIFLE: "Штурмовая винтовка"
+      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
+      STR_ALLOY_RIFLE_CLIP: "Магазин к штурмовой винтовке"
+
+      STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин к Молнии Зевса"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Стандартный магазин содержит 3 бронебойных заряда."
+
+      STR_GRENADE_LAUNCHER: "Гранотомёт"
+      STR_GL_HE_AMMO: "40mm граната"
+      STR_GL_I_AMMO: "40mm зажигательная граната"
+      STR_GL_S_AMMO: "40mm дымовая граната"
+      STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт способен выпускать фугасные, зажигательные и дымовые гранаты на большие расстояния по навесной траектории."
+
+      STR_ROCKET_LAUNCHER: "Ракетная установка"
+      STR_SMALL_ROCKET: "Бронебойная ракета"
+      STR_LARGE_ROCKET: "Тяжелая ракета"
+      STR_INCENDIARY_ROCKET: "Зажигательная ракета"
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+
+      STR_INCENDIARY_GRENADE: "Зажигательная граната"
+      STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
+
+      STR_LASER_PISTOL_UFOPEDIA: "Передел минитюризации лазерной технологии. Дальность и точность срельбы принесены в жертву мобильности устройсва и мощности выстрела."
+      STR_LASER_RIFLE_UFOPEDIA: "Вторая попытка использования лазерной технологии в бою. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
+      STR_HEAVY_LASER_UFOPEDIA: "Воплощение лазерной технологии на поле боя. Это дробовик способен выпускать 3 лазерных луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
+
+      STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
+      STR_RAILGUN: "Ручной рельсотрон"
+      STR_RAILGUN_SLUGS: "Жетоны к ручному рельсотрону"
+      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле."
+      STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное. Создать штурмовой аналог не представляется возможным."
+
+
+
+startingBase:
+  facilities:
+      - type: STR_ACCESS_LIFT
+        x: 2
+        y: 2
+      - type: STR_HANGAR
+        x: 0
+        y: 0
+      - type: STR_HANGAR
+        x: 2
+        y: 0
+      - type: STR_HANGAR
+        x: 4
+        y: 0
+      - type: STR_LIVING_QUARTERS
+        x: 2
+        y: 3
+      - type: STR_MISSILE_DEFENSES
+        x: 0
+        y: 4
+      - type: STR_GENERAL_STORES
+        x: 1
+        y: 4
+      - type: STR_SMALL_RADAR_SYSTEM
+        x: 2
+        y: 4
+      - type: STR_LABORATORY
+        x: 3
+        y: 4
+      - type: STR_WORKSHOP
+        x: 4
+        y: 4
+  scientists: 25
+  engineers: 10
+  randomSoldiers: 10
+  crafts:
+    - type: STR_SKYRANGER
+      id: 1
+      fuel: 1500
+      damage: 0
+      items:
+        STR_PISTOL: 2
+        STR_PISTOL_CLIP: 4
+        STR_MACHINE_PISTOL: 2
+        STR_MACHINE_PISTOL_CLIP: 4
+        STR_SHOTGUN: 1
+        STR_SHOTGUN_AMMO: 3
+        STR_RIFLE: 3
+        STR_RIFLE_CLIP: 6
+        STR_HEAVY_CANNON: 1
+        STR_HC_HE_AMMO: 1
+        STR_HC_I_AMMO: 1
+        STR_AUTO_CANNON: 1
+        STR_AC_HE_AMMO: 1
+        STR_AC_I_AMMO: 1
+        STR_GRENADE: 8
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 1
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_AVALANCHE
+          ammo: 2
+        - type: STR_CANNON_UC
+          ammo: 90
+      status: STR_READY
+    - type: STR_INTERCEPTOR
+      id: 2
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 90
+      status: STR_READY
+  items:
+    # craft weapons
+    STR_AVALANCHE_LAUNCHER: 1
+    STR_AVALANCHE_MISSILES: 12
+    STR_STINGRAY_LAUNCHER: 1
+    STR_STINGRAY_MISSILES: 25
+    STR_CANNON: 1
+    STR_CANNON_ROUNDS_X50: 6
+    # weapons and items
+    STR_TANK_CANNON: 1
+    STR_HWP_CANNON_SHELLS: 24
+    STR_PISTOL: 1
+    STR_PISTOL_CLIP: 4
+    STR_MACHINE_PISTOL: 1
+    STR_MACHINE_PISTOL_CLIP: 4
+    STR_SHOTGUN: 1
+    STR_SHOTGUN_AMMO: 5
+    STR_RIFLE: 1
+    STR_RIFLE_CLIP: 4
+    #STR_HEAVY_CANNON: 1
+    STR_HC_HE_AMMO: 4
+    STR_HC_I_AMMO: 4
+    #STR_AUTO_CANNON: 1
+    STR_AC_HE_AMMO: 4
+    STR_AC_I_AMMO: 4
+    STR_ROCKET_LAUNCHER: 1
+    STR_LARGE_ROCKET: 2
+    STR_GRENADE: 5
