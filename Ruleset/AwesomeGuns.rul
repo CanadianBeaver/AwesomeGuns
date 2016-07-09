@@ -1929,7 +1929,7 @@ items:
     accuracyAimed: 125
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 98
+    tuAimed: 99
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -2678,8 +2678,8 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 1.1 # Incendiary
+      - 0.8 # Armor Piercing
+      - 1.0 # Incendiary
       - 0.6 # High Explosive
       - 1.0 # Laser
       - 0.65 # Plasma
@@ -3455,7 +3455,7 @@ manufacture:
     requires:
       - STR_ALLOY_ROCKETS
     space: 6
-    time: 500
+    time: 800
     cost: 20000
     requiredItems:
       STR_AVALANCHE_LAUNCHER: 1
@@ -3468,7 +3468,7 @@ manufacture:
     requires:
       - STR_ALLOY_ROCKETS
     space: 6
-    time: 400
+    time: 600
     cost: 10000
     requiredItems:
       STR_STINGRAY_LAUNCHER: 1
@@ -3481,7 +3481,7 @@ manufacture:
     requires:
       - STR_ALLOY_CANNON
     space: 6
-    time: 250
+    time: 300
     cost: 8000
     requiredItems:
       STR_UFO_NAVIGATION: 1
