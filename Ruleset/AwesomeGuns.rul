@@ -4140,7 +4140,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_ROCKETS
 
-# Fix the LASER and PLASMA weapons
+# The LASER and PLASMA weapons articles
 
   - id: STR_LASER_WEAPONS
     listOrder: 1928
@@ -4151,12 +4151,28 @@ ufopaedia:
       - STR_LASER_WEAPONS
 
   - id: STR_PLASMA_WEAPONS
-    listOrder: 1929
+    listOrder: 4799
     type_id: 8
-    section: STR_WEAPONS_AND_EQUIPMENT
+    section: STR_ALIEN_ARTIFACTS
     text: STR_PLASMA_WEAPONS_UFOPEDIA
     requires:
       - STR_PLASMA_WEAPONS
+
+# Fix the list order for PLASMA items
+
+  - id: STR_PLASMA_PISTOL
+    listOrder: 4800
+  - id: STR_PLASMA_PISTOL_CLIP
+    listOrder: 4900
+  - id: STR_HEAVY_PLASMA
+    listOrder: 5200
+  - id: STR_HEAVY_PLASMA_CLIP
+    listOrder: 5300
+
+# Fix the list order for ELERIUM_115 item
+
+  - id: STR_ELERIUM_115
+    listOrder: 6050
 
 # Alloy weapons
 
@@ -4294,18 +4310,6 @@ ufopaedia:
   - id: STR_RAILGUN_SLUGS
     type_id: 4
     section: STR_NOT_AVAILABLE
-
-# Fix the Plasma order in UFOpaedia
-# TODO: it doesn't work, I don't know why...
-
-  #- id: STR_PLASMA_PISTOL
-    #listOrder: 5000
-  #- id: STR_PLASMA_PISTOL_CLIP
-    #listOrder: 5100
-  #- id: STR_HEAVY_PLASMA
-    #listOrder: 5400
-  #- id: STR_HEAVY_PLASMA_CLIP
-    #listOrder: 5500
 
 
 
@@ -5321,25 +5325,6 @@ extraStrings:
       STR_ALIEN_BIOLOGY: "Биология пришельцев"
       STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
 
-# UFOpaedia corrections, because alien technologies cannot be reproduced
-
-  - type: en
-    strings:
-      STR_PLASMA_PISTOL_UFOPEDIA: "Plasma Pistols are a lethal alien weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
-      STR_PLASMA_RIFLE_UFOPEDIA: "This is a devastatingly powerful weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
-      STR_HEAVY_PLASMA_UFOPEDIA: "This is a devastatingly powerful weapon based on accelerating particles from within a minute anti-gravity field.{NEWLINE}{NEWLINE}Unfortunately, our engineers are not able to reproduce weapons of aliens, but our soldiers can use them on the battlefield."
-      STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow.  When you have positioned enough way points click on the special launch icon.{NEWLINE}{NEWLINE}It can be used only in combat."
-      STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Very useful for capturing live aliens.{NEWLINE}{NEWLINE}It can be used only in combat."
-      STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful.{NEWLINE}{NEWLINE}It can be used only in combat."
-  - type: ru
-    strings:
-      STR_PLASMA_PISTOL_UFOPEDIA: "Смертоносное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
-      STR_PLASMA_RIFLE_UFOPEDIA: "Разрушительное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
-      STR_HEAVY_PLASMA_UFOPEDIA: "Смертоносное плазменное оружие пришельцев, основанное на принципе ускорения частиц антигравитационным полем.{NEWLINE}{NEWLINE}К сожалению, наши инженеры не способны изготавливать оружие пришельцев, но наши оперативники могут использовать их на поле боя."
-      STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. После задания траектории нажмите специальную кнопку пуска ракеты.{NEWLINE}{NEWLINE}Можно использовать в бою."
-      STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. Весьма полезна для захвата живых инопланетян.{NEWLINE}{NEWLINE}Можно использовать в бою."
-      STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность.{NEWLINE}{NEWLINE}Можно использовать в бою."
-
 # Fix the LASER and PLASMA weapons
 
   - type: en
@@ -5353,7 +5338,7 @@ extraStrings:
       STR_LASER_WEAPONS: "Лазерное оружие"
       STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
       STR_PLASMA_WEAPONS: "Плазменное оружие"
-      STR_PLASMA_WEAPONS_UFOPEDIA: "Изначально было понятно, что основным компонентом энергии плазменного оружия является Элериум-115. Теперь же мы понимаем как функционирует это оружие и можем применять его не посредство в бою.{NEWLINE}{NEWLINE}К сожалению технология изготовления такого оружия на столько сложна, что мы не в состоянии её воспроизвести в земных условиях. Поэтому, следует позаботиться о сохранении боеприпасов и экземпляров плазменного оружия добытых в бою и продавать их только по крайней необходимости.{NEWLINE}{NEWLINE}Тем не менее, наши учённые полны оптимизма и готовы разработать способы применения плазменного оружия в наших кораблях и боевых платформах."
+      STR_PLASMA_WEAPONS_UFOPEDIA: "Изначально было понятно, что основным компонентом энергии плазменного оружия является Элериум-115. Теперь же мы понимаем как функционирует это оружие и можем применять его не посредство в бою.{NEWLINE}{NEWLINE}К сожалению технология изготовления такого оружия на столько сложна, что мы не в состоянии её воспроизвести в земных условиях. Поэтому, следует позаботиться о сохранении боеприпасов и экземпляров оружия пришельцев добытых в бою и продавать их только по крайней необходимости.{NEWLINE}{NEWLINE}Тем не менее, наши учённые полны оптимизма и готовы разработать способы применения плазменного оружия в наших кораблях и боевых платформах."
 
 # Armors
 
