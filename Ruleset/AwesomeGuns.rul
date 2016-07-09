@@ -1801,7 +1801,7 @@ items:
     handSprite: 710 #handSprite: 368
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
-    power: 55 #power: 52
+    power: 50 #power: 52
     damageType: 5
     clipSize: 25 #clipSize: 26
     battleType: 2
@@ -1852,7 +1852,7 @@ items:
     handSprite: 710 #handSprite: 376
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
-    power: 85 #power: 80
+    power: 80
     damageType: 5
     clipSize: 25 #clipSize: 28
     battleType: 2
@@ -1903,7 +1903,7 @@ items:
     handSprite: 384
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
-    power: 120 #power: 115
+    power: 115
     damageType: 5
     clipSize: 25 #clipSize: 35
     battleType: 2
@@ -2436,7 +2436,7 @@ armors:
       reactions: 10
       throwing: 10
     frontArmor: 60
-    sideArmor: 48
+    sideArmor: 50 # PLASMA pistol has power=50 (52 is original value for PLASMA pistol)
     rearArmor: 36
     underArmor: 36
     damageModifier:
@@ -2464,7 +2464,7 @@ armors:
       firing: 5
       reactions: 5
       throwing: 5
-    frontArmor: 50
+    frontArmor: 50 # PLASMA pistol has power=50 (52 is original value for PLASMA pistol)
     sideArmor: 40
     rearArmor: 30
     underArmor: 30
@@ -2491,10 +2491,10 @@ armors:
     stats:
       stamina: -15
       firing: 10
-    frontArmor: 45
-    sideArmor: 30
-    rearArmor: 15
-    underArmor: 15
+    frontArmor: 42
+    sideArmor: 33
+    rearArmor: 25
+    underArmor: 25
     damageModifier:
       - 1.0 # None
       - 1.0 # Armor Piercing
@@ -2524,7 +2524,7 @@ armors:
       firing: 10
       throwing: 10
     frontArmor: 100
-    sideArmor: 80
+    sideArmor: 80 # PLASMA rifle has power=80
     rearArmor: 70
     underArmor: 60
     damageModifier:
@@ -2549,7 +2549,7 @@ armors:
     weight: 22
     stats:
       tu: 5
-    frontArmor: 115
+    frontArmor: 115 # HEAVY PLASMA has power=115
     sideArmor: 90
     rearArmor: 80
     underArmor: 70
@@ -2559,7 +2559,7 @@ armors:
       - 0.6 # Armor Piercing
       - 0.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.5 # Laser
+      - 0.6 # Laser
       - 1.0 # Plasma
       - 0.7 # Stun
       - 1.0 # Melee
@@ -2577,10 +2577,10 @@ armors:
     stats:
       tu: 5
       firing: 10
-    frontArmor: 45
-    sideArmor: 30
-    rearArmor: 15
-    underArmor: 15
+    frontArmor: 42
+    sideArmor: 33
+    rearArmor: 25
+    underArmor: 25
     movementType: 1
     damageModifier:
       - 1.0 # None
@@ -2678,9 +2678,9 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.8 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 1.1 # Incendiary
-      - 0.8 # High Explosive
+      - 0.6 # High Explosive
       - 1.0 # Laser
       - 0.65 # Plasma
       - 0.0 # Stun
