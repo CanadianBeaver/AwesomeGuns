@@ -2501,7 +2501,7 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.0 # Laser
-      - 1.0 # Plasma  d
+      - 1.0 # Plasma
       - 0.9 # Stun
       - 1.0 # Melee
       - 1.1 # Acid
