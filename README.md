@@ -37,6 +37,12 @@ If you have the same preferences, I would like to invite you to create it togeth
 * Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
 
+###Compatible mods:
+
+I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
+- [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
+- [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
+
 ###Special thanks
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
@@ -69,9 +75,3 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Reproduction
 - FastRamp
 - HQSounds_FinalModPack
-
-###Compatible mods:
-
-I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
-- [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
-- [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
