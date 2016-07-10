@@ -1,14 +1,15 @@
-﻿X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXCom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXCom is awesome I would like to introduce my collection of changes for this game plot and graphics.
+﻿X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXcom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes for this game plot and graphics.
 
 #AwesomeGuns
 
-This is a mod for [OpenXCom game](http://openxcom.org). Current state: development. [Read more...](DESCRIPTION.md)
+This is a mod for the [OpenXcom game](http://openxcom.org). 
+Current state: **development**. [Read more...](DESCRIPTION.md)
 
 ###Why am I doing it?
 
 Original gameplay of X-COM: UFO Defense has a big problem in the middle and in the end of game. The game can make you feel bored. There are a steam of small UFOs, the monotonous and repetitive missions, the heavy plasma has no alternative...  My suggestion to improve this situation is to make more efficient conventional weapons. Let the soldiers use different pistols, rifles, even grenade launchers and more different types of guns. Also, let the soldiers use different armours with different colours and possibilities. Moreover, let be more explosives in in the battles, more incendiary weapons and more smoke.
 
-I researched [a lot of mods](http://www.openxcom.com/mods) for OpenXCom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods that will never work. Unfortunately, a lot of mods were made for night game's release and do not work for the stable game's release.
+I researched [a lot of mods](http://www.openxcom.com/mods) for OpenXcom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods that will never work. Unfortunately, a lot of mods were made for night game's release and do not work for the stable game's release.
 
 I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, it should work for the stable game release, it should be simple and it should make only necessary changes.
 
