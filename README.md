@@ -2,7 +2,7 @@
 
 #AwesomeGuns
 
-This is a mod for OpenXCom game. [Read more...](DESCRIPTION.md)
+This is a mod for OpenXCom game. Current state: development. [Read more...](DESCRIPTION.md)
 
 ###Why am I doing it?
 
@@ -36,7 +36,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 * Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
-* The folder *Descriptions* contains only work documents. Files in this folder are using just for description and development process.
+* The folder *Descriptions* contains only work documents. Files in this folder are used just for development process.
 
 ###Compatible mods:
 
