@@ -2,7 +2,7 @@
 
 #AwesomeGuns
 
-This is a mod for OpenXCom game.
+This is a mod for OpenXCom game. [Read more...](DESCRIPTION.md)
 
 ###Why am I doing it?
 
