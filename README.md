@@ -22,7 +22,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 - The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
 - And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
 
-##The main ideas
+###The main ideas
 
 - Do only the necessary changes.
 - Do not copy ideas or implementations from another mods without checking, adaptation and improvement.
