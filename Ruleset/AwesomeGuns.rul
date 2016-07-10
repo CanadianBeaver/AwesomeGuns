@@ -1078,7 +1078,7 @@ items:
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 56
-    power: 46
+    power: 56
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -2627,7 +2627,7 @@ armors:
       - 1.0 # Incendiary
       - 0.6 # High Explosive
       - 1.0 # Laser
-      - 1.3 # Plasma
+      - 1.2 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
       - 1.7 # Acid
@@ -2645,11 +2645,11 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.0 # Laser
-      - 0.8 # Plasma
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 1.0 # Smoke
+      - 1.6 # Smoke
 
   - type: FLOATER_ARMOR1
     spriteInv: floaterInventoryImage
@@ -2663,11 +2663,11 @@ armors:
       - 0.9 # Incendiary
       - 0.9 # High Explosive
       - 1.0 # Laser
-      - 0.8 # Plasma
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 1.0 # Smoke
+      - 1.4 # Smoke
 
   - type: FLOATER_ARMOR2
     spriteInv: floaterInventoryImage
@@ -2681,11 +2681,11 @@ armors:
       - 0.8 # Incendiary
       - 0.8 # High Explosive
       - 1.0 # Laser
-      - 0.8 # Plasma
-      - 0.5 # Stun
-      - 0.8 # Melee
+      - 0.6 # Plasma
+      - 0.6 # Stun
+      - 1.0 # Melee
       - 0.4 # Acid
-      - 1.0 # Smoke
+      - 1.25 # Smoke
 
   - type: REAPER_ARMOR
     spriteInv: reaperInventoryImage
@@ -2713,13 +2713,13 @@ armors:
     underArmor: 12
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
+      - 0.8 # Armor Piercing
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 1.0 # Stun
-      - 1.0 # Melee
+      - 1.2 # Stun
+      - 1.2 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
 
@@ -2731,7 +2731,7 @@ armors:
     underArmor: 20
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
+      - 0.7 # Armor Piercing
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
@@ -2750,8 +2750,8 @@ armors:
     damageModifier:
       - 1.0 # None
       - 0.6 # Armor Piercing
-      - 0.4 # Incendiary
-      - 0.4 # High Explosive
+      - 0.8 # Incendiary
+      - 1.0 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
       - 0.8 # Stun
@@ -2767,15 +2767,15 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.8 # Armor Piercing
-      - 0.8 # Incendiary
-      - 1.0 # High Explosive
-      - 0.65 # Laser
+      - 0.6 # Armor Piercing
+      - 0.6 # Incendiary
+      - 1.4 # High Explosive
+      - 0.6 # Laser
       - 0.6 # Plasma
-      - 0.9 # Stun
+      - 0.6 # Stun
       - 0.6 # Melee
-      - 2.2 # Acid
-      - 1.0 # Smoke
+      - 0.4 # Acid
+      - 3.0 # Smoke
 
   - type: ZOMBIE_ARMOR
     spriteInv: zombieInventoryImage
@@ -2785,14 +2785,14 @@ armors:
     underArmor: 4
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
+      - 1.0 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.8 # High Explosive
+      - 1.0 # High Explosive
       - 0.7 # Laser
       - 0.7 # Plasma
       - 0.0 # Stun
       - 1.0 # Melee
-      - 0.4 # Acid
+      - 0.0 # Acid
       - 0.0 # Smoke
 
   - type: MUTON_ARMOR0
