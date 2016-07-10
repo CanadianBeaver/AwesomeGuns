@@ -56,7 +56,7 @@
 #
 # Что ещё нужно сделать:
 #   * Кислотное оружие (после изобретения биологии пришельцев)
-#   *
+#   * Получаемый пришельцами урон (сделано до змей - SNAKEMAN_ARMOR0)
 #
 #
 
@@ -2596,7 +2596,6 @@ armors:
     loftempsSet: [ 3 ]
 
 # Restyling inventory images for aliens and civilians
-# Damage of plasma is double less
 
   - type: SECTOID_ARMOR0
     spriteInv: sectoidInventoryImage
@@ -2610,11 +2609,29 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.5 # Laser
-      - 0.3 # Plasma
+      - 0.6 # Plasma
       - 1.2 # Stun
       - 1.6 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
+
+  - type: CYBERDISC_ARMOR
+    spriteInv: cyberdiscInventoryImage
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier:
+      - 1.0 # None
+      - 0.8 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 1.0 # Laser
+      - 1.3 # Plasma
+      - 0.0 # Stun
+      - 0.4 # Melee
+      - 1.7 # Acid
+      - 0.0 # Smoke
 
   - type: FLOATER_ARMOR0
     spriteInv: floaterInventoryImage
@@ -2628,7 +2645,7 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.0 # Laser
-      - 0.5 # Plasma
+      - 0.8 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
@@ -2646,7 +2663,7 @@ armors:
       - 0.9 # Incendiary
       - 0.9 # High Explosive
       - 1.0 # Laser
-      - 0.5 # Plasma
+      - 0.8 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
@@ -2664,29 +2681,11 @@ armors:
       - 0.8 # Incendiary
       - 0.8 # High Explosive
       - 1.0 # Laser
-      - 0.5 # Plasma
+      - 0.8 # Plasma
       - 0.5 # Stun
       - 0.8 # Melee
       - 0.4 # Acid
       - 1.0 # Smoke
-
-  - type: CYBERDISC_ARMOR
-    spriteInv: cyberdiscInventoryImage
-    frontArmor: 34
-    sideArmor: 34
-    rearArmor: 34
-    underArmor: 34
-    damageModifier:
-      - 1.0 # None
-      - 0.8 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.6 # High Explosive
-      - 1.0 # Laser
-      - 0.65 # Plasma
-      - 0.0 # Stun
-      - 0.4 # Melee
-      - 1.7 # Acid
-      - 0.0 # Smoke
 
   - type: REAPER_ARMOR
     spriteInv: reaperInventoryImage
@@ -2700,29 +2699,11 @@ armors:
       - 3.0 # Incendiary
       - 0.3 # High Explosive
       - 1.0 # Laser
-      - 0.35 # Plasma
+      - 0.7 # Plasma
       - 1.0 # Stun
       - 0.6 # Melee
       - 1.0 # Acid
       - 2.0 # Smoke
-
-  - type: SECTOPOD_ARMOR
-    spriteInv: sectopodInventoryImage
-    frontArmor: 145
-    sideArmor: 130
-    rearArmor: 100
-    underArmor: 90
-    damageModifier:
-      - 1.0 # None
-      - 1.0 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.8 # High Explosive
-      - 1.5 # Laser
-      - 0.4 # Plasma
-      - 0.0 # Stun
-      - 0.4 # Melee
-      - 3.8 # Acid
-      - 0.0 # Smoke
 
   - type: SNAKEMAN_ARMOR0
     spriteInv: snakemanInventoryImage
@@ -2736,7 +2717,7 @@ armors:
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
-      - 0.2 # Plasma
+      - 0.4 # Plasma
       - 1.0 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
@@ -2754,7 +2735,7 @@ armors:
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
-      - 0.2 # Plasma
+      - 0.4 # Plasma
       - 1.0 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
@@ -2772,119 +2753,11 @@ armors:
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
-      - 0.2 # Plasma
+      - 0.4 # Plasma
       - 0.8 # Stun
       - 0.8 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
-
-  - type: MUTON_ARMOR0
-    spriteInv: mutonInventoryImage
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 10
-    damageModifier:
-      - 1.0 # None
-      - 0.4 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.2 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
-      - 0.8 # Acid
-      - 2.0 # Smoke
-
-  - type: MUTON_ARMOR1
-    spriteInv: mutonInventoryImage
-    frontArmor: 24
-    sideArmor: 24
-    rearArmor: 24
-    underArmor: 15
-    damageModifier:
-      - 1.0 # None
-      - 0.4 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.2 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
-      - 0.8 # Acid
-      - 2.0 # Smoke
-
-  - type: MUTON_ARMOR2
-    spriteInv: mutonInventoryImage
-    frontArmor: 28
-    sideArmor: 28
-    rearArmor: 28
-    underArmor: 20
-    damageModifier:
-      - 1.0 # None
-      - 0.35 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.2 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
-      - 0.8 # Acid
-      - 2.0 # Smoke
-
-  - type: ETHEREAL_ARMOR0
-    spriteInv: etherealInventoryImage
-    frontArmor: 40
-    sideArmor: 40
-    rearArmor: 40
-    underArmor: 40
-    damageModifier:
-      - 1.0 # None
-      - 1.0 # Armor Piercing
-      - 2.0 # Incendiary
-      - 1.0 # High Explosive
-      - 0.8 # Laser
-      - 0.5 # Plasma
-      - 0.6 # Stun
-      - 1.6 # Melee
-      - 1.5 # Acid
-      - 0.2 # Smoke
-
-  - type: ETHEREAL_ARMOR1
-    spriteInv: etherealInventoryImage
-    frontArmor: 44
-    sideArmor: 44
-    rearArmor: 44
-    underArmor: 44
-    damageModifier:
-      - 1.0 # None
-      - 1.2 # Armor Piercing
-      - 2.0 # Incendiary
-      - 1.0 # High Explosive
-      - 0.8 # Laser
-      - 0.5 # Plasma
-      - 0.6 # Stun
-      - 1.6 # Melee
-      - 1.5 # Acid
-      - 0.2 # Smoke
-
-  - type: ETHEREAL_ARMOR2
-    spriteInv: etherealInventoryImage
-    frontArmor: 48
-    sideArmor: 48
-    rearArmor: 48
-    underArmor: 48
-    damageModifier:
-      - 1.0 # None
-      - 1.4 # Armor Piercing
-      - 2.0 # Incendiary
-      - 1.0 # High Explosive
-      - 0.8 # Laser
-      - 0.5 # Plasma
-      - 0.6 # Stun
-      - 1.4 # Melee
-      - 1.5 # Acid
-      - 0.2 # Smoke
 
   - type: CHRYSSALID_ARMOR
     spriteInv: chryssalidInventoryImage
@@ -2898,7 +2771,7 @@ armors:
       - 0.8 # Incendiary
       - 1.0 # High Explosive
       - 0.65 # Laser
-      - 0.28 # Plasma
+      - 0.6 # Plasma
       - 0.9 # Stun
       - 0.6 # Melee
       - 2.2 # Acid
@@ -2921,6 +2794,132 @@ armors:
       - 1.0 # Melee
       - 0.4 # Acid
       - 0.0 # Smoke
+
+  - type: MUTON_ARMOR0
+    spriteInv: mutonInventoryImage
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
+    damageModifier:
+      - 1.0 # None
+      - 0.4 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.4 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: MUTON_ARMOR1
+    spriteInv: mutonInventoryImage
+    frontArmor: 24
+    sideArmor: 24
+    rearArmor: 24
+    underArmor: 15
+    damageModifier:
+      - 1.0 # None
+      - 0.4 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.4 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: MUTON_ARMOR2
+    spriteInv: mutonInventoryImage
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 20
+    damageModifier:
+      - 1.0 # None
+      - 0.4 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.6 # High Explosive
+      - 0.4 # Laser
+      - 0.4 # Plasma
+      - 1.2 # Stun
+      - 1.0 # Melee
+      - 0.8 # Acid
+      - 2.0 # Smoke
+
+  - type: SECTOPOD_ARMOR
+    spriteInv: sectopodInventoryImage
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 1.0 # Incendiary
+      - 0.8 # High Explosive
+      - 1.5 # Laser
+      - 0.8 # Plasma
+      - 0.0 # Stun
+      - 0.4 # Melee
+      - 3.8 # Acid
+      - 0.0 # Smoke
+
+  - type: ETHEREAL_ARMOR0
+    spriteInv: etherealInventoryImage
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 40
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 1.0 # Plasma
+      - 0.6 # Stun
+      - 1.6 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
+
+  - type: ETHEREAL_ARMOR1
+    spriteInv: etherealInventoryImage
+    frontArmor: 44
+    sideArmor: 44
+    rearArmor: 44
+    underArmor: 44
+    damageModifier:
+      - 1.0 # None
+      - 1.2 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 1.0 # Plasma
+      - 0.6 # Stun
+      - 1.6 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
+
+  - type: ETHEREAL_ARMOR2
+    spriteInv: etherealInventoryImage
+    frontArmor: 48
+    sideArmor: 48
+    rearArmor: 48
+    underArmor: 48
+    damageModifier:
+      - 1.0 # None
+      - 1.4 # Armor Piercing
+      - 2.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.8 # Laser
+      - 1.0 # Plasma
+      - 0.6 # Stun
+      - 1.4 # Melee
+      - 1.5 # Acid
+      - 0.2 # Smoke
 
   - type: SILACOID_ARMOR
     spriteInv: silacoidInventoryImage
