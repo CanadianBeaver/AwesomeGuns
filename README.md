@@ -34,7 +34,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 ###Special thanks
 
-I got images and ideas from many mods, but I never copy these without adaptation. Base of mods are:
+I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
 - X-Com Weapon Rework and Expansion - 0.8.5
 - Weapon Rework/Expansion
 - Robin's Extra Weapons
@@ -68,5 +68,5 @@ I got images and ideas from many mods, but I never copy these without adaptation
 ###Compatible mods:
 
 I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
-- eXPANDED_terror
-- SolarsNewUFOs
+- [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
+- [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
