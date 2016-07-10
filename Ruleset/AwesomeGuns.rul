@@ -783,11 +783,11 @@ items:
       - STR_PISTOL_CLIP
       - STR_PISTOL_AL_CLIP
     accuracyAuto: 0
-    accuracySnap: 58 #accuracySnap: 60
-    accuracyAimed: 76 #accuracyAimed: 78
+    accuracySnap: 60 #accuracySnap: 60
+    accuracyAimed: 78 #accuracyAimed: 78
     tuAuto: 0
-    tuSnap: 16 #tuSnap: 18
-    tuAimed: 26 #tuAimed: 30
+    tuSnap: 15 #tuSnap: 18
+    tuAimed: 25 #tuAimed: 30
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -991,12 +991,12 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 22
-    maxRange: 50
-    aimRange: 36
-    snapRange: 20
+    maxRange: 52
+    aimRange: 38
+    snapRange: 26
     autoRange: 0
     minRange: 15
-    dropoff: 2
+    dropoff: 3
 
   - type: STR_SNIPER_RIFLE_CLIP # new item
     listOrder: 2215
@@ -1057,7 +1057,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 25
-    maxRange: 48
+    maxRange: 46
     aimRange: 33
     snapRange: 25
     autoRange: 15
@@ -1107,8 +1107,8 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 23
-    maxRange: 61
-    aimRange: 53
+    maxRange: 62
+    aimRange: 50
     snapRange: 0
     autoRange: 0
     minRange: 35
@@ -1157,7 +1157,7 @@ items:
     invHeight: 3
     armor: 20
     maxRange: 20
-    aimRange: 15
+    aimRange: 0
     snapRange: 10
     autoRange: 0
     minRange: 0
@@ -1431,7 +1431,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 40
+    power: 44
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -1450,7 +1450,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 60
+    power: 62
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -1501,7 +1501,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 22
-    maxRange: 200
+    maxRange: 75
     aimRange: 34
     snapRange: 26
     autoRange: 0
@@ -1669,22 +1669,22 @@ items:
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 40 #power: 46
+    power: 42 #power: 46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
     accuracySnap: 50 #accuracySnap: 40
     accuracyAimed: 68
     tuAuto: 0 #tuAuto: 25
-    tuSnap: 22 #tuSnap: 20
+    tuSnap: 20 #tuSnap: 20
     tuAimed: 33 #tuAimed: 55
     clipSize: -1
     battleType: 1
     invWidth: 1
     invHeight: 2
     armor: 20
-    maxRange: 40
-    aimRange: 30
-    snapRange: 20
+    maxRange: 35
+    aimRange: 25
+    snapRange: 15
     autoRange: 0
     minRange: 0
     dropoff: 3
@@ -1701,23 +1701,23 @@ items:
     fireSound: 8052 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 52 #power: 60
+    power: 55 #power: 60
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
-    accuracySnap: 65
+    accuracySnap: 60 #accuracySnap: 65
     accuracyAimed: 85 #accuracyAimed: 100
     tuAuto: 0 #tuAuto: 34
     tuSnap: 24 #tuSnap: 25
-    tuAimed: 74 #tuAimed: 50
+    tuAimed: 68 #tuAimed: 50
     clipSize: -1
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
     armor: 22
-    maxRange: 60
-    aimRange: 45
-    snapRange: 30
+    maxRange: 45
+    aimRange: 35
+    snapRange: 25
     autoRange: 0
     minRange: 0
     dropoff: 2
@@ -1734,13 +1734,13 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 60 #power: 85
+    power: 65 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 65 #accuracySnap: 50
-    accuracyAimed: 85 #accuracyAimed: 84
+    accuracyAimed: 0 #accuracyAimed: 84
     tuSnap: 50 #tuSnap: 33
-    tuAimed: 75 #tuAimed: 75
+    tuAimed: 0 #tuAimed: 75
     tuAuto: 0
     clipSize: -1
     shotgunPellets: 3
@@ -1749,12 +1749,12 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 24
-    maxRange: 25
-    aimRange: 18
+    maxRange: 28
+    aimRange: 0
     snapRange: 12
     autoRange: 0
     minRange: 0
-    dropoff: 4
+    dropoff: 3
 
 # PLASMA weapons
 
@@ -1783,11 +1783,11 @@ items:
     invHeight: 2
     recoveryPoints: 3
     armor: 28
-    maxRange: 45
-    aimRange: 35
-    snapRange: 25
+    maxRange: 40
+    aimRange: 30
+    snapRange: 20
     autoRange: 15
-    minRange: 0
+    minRange: 1
     dropoff: 3
 
   - type: STR_PLASMA_PISTOL_CLIP
@@ -1801,7 +1801,7 @@ items:
     handSprite: 710 #handSprite: 368
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
-    power: 50 #power: 52
+    power: 52 #power: 52
     damageType: 5
     clipSize: 25 #clipSize: 26
     battleType: 2
@@ -1822,7 +1822,7 @@ items:
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
-    accuracyAuto: 55
+    accuracyAuto: 50 #accuracyAuto: 55
     accuracySnap: 73 #accuracySnap: 86
     accuracyAimed: 93 #accuracyAimed: 100
     tuAuto: 40 #tuAuto: 36
@@ -1874,9 +1874,9 @@ items:
     compatibleAmmo:
       - STR_HEAVY_PLASMA_CLIP
     accuracyAuto: 50
-    accuracySnap: 65 #accuracySnap: 75
-    accuracyAimed: 85 #accuracyAimed: 110
-    tuAuto: 45 #tuAuto: 35
+    accuracySnap: 67 #accuracySnap: 75
+    accuracyAimed: 87 #accuracyAimed: 110
+    tuAuto: 40 #tuAuto: 35
     tuSnap: 30
     tuAimed: 60
     battleType: 1
@@ -1889,7 +1889,7 @@ items:
     aimRange: 50
     snapRange: 35
     autoRange: 20
-    minRange: 1
+    minRange: 3
     dropoff: 2
 
   - type: STR_HEAVY_PLASMA_CLIP
@@ -1953,7 +1953,7 @@ items:
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 76
-    power: 100
+    power: 120
     damageType: 1
     clipSize: 6
     battleType: 2
@@ -4371,6 +4371,20 @@ ufopaedia:
   - id: STR_RAILGUN_SLUGS
     type_id: 4
     section: STR_NOT_AVAILABLE
+
+
+
+alienItemLevels:
+  - [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+  - [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+  - [0, 0, 0, 0, 0, 1, 1, 1, 1, 2]
+  - [0, 0, 0, 1, 1, 1, 1, 1, 2, 2]
+  - [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]
+  - [0, 0, 1, 1, 1, 1, 2, 2, 2, 2]
+  - [0, 0, 1, 1, 1, 2, 2, 2, 2, 2]
+  - [0, 1, 1, 1, 2, 2, 2, 2, 2, 2]
+  - [0, 1, 1, 2, 2, 2, 2, 2, 2, 2]
+  - [0, 1, 2, 2, 2, 2, 2, 2, 2, 2]
 
 
 
