@@ -1,4 +1,4 @@
-﻿X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing original plot and original graphic of this game with great possibilities for mod makers. The name of this project is [OpenXCom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXCom is awesome I would like to introduce my collection of changes for game plot and graphics.
+﻿X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXCom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXCom is awesome I would like to introduce my collection of changes for this game plot and graphics.
 
 #AwesomeGuns
 
@@ -6,19 +6,19 @@ This is a mod for OpenXCom game.
 
 ###Why am I doing it?
 
-Original gameplay of X-COM: UFO Defense has a big problem at middle and end of game. The game can make you feel bored. There are a steam of small UFOs, the monotonous and repetitive missions, the heavy plasma has no alternative...  My suggestion to improve this situation is to make more efficient conventional weapons. Let the soldiers would use different pistols, rifles, even grenade launchers and more different types of guns. Also, let the soldiers would use different armours with different colours and possibilities. Moreover, let in battles will be more explosives, more incendiary weapon and more smoke.
+Original gameplay of X-COM: UFO Defense has a big problem in the middle and in the end of game. The game can make you feel bored. There are a steam of small UFOs, the monotonous and repetitive missions, the heavy plasma has no alternative...  My suggestion to improve this situation is to make more efficient conventional weapons. Let the soldiers use different pistols, rifles, even grenade launchers and more different types of guns. Also, let the soldiers use different armours with different colours and possibilities. Moreover, let be more explosives in in the battles, more incendiary weapons and more smoke.
 
-I researched [a lot of mods](http://www.openxcom.com/mods) for OpenXCom and found that there are two kinds of mods. Main of them is a simple and perfect mods, but they do not work together. Another mods like a dump of different mods that never work. Unfortunately, a lot of mods were made for night game's release and do not work for the stable game's release.
+I researched [a lot of mods](http://www.openxcom.com/mods) for OpenXCom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods that will never work. Unfortunately, a lot of mods were made for night game's release and do not work for the stable game's release.
 
-I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum. I would like to make a mod with the same ideas. It should be stable, it should work for the stable game release, it should be simple and it should make only necessary changes.
+I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, it should work for the stable game release, it should be simple and it should make only necessary changes.
 
 If you have the same preferences, I would like to invite you to create it together.
 
-###How do I do it?
+###How do I make it?
 
-- Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope my mod will work on other platforms without problems.
+- Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope this mod will work fine on other platforms without problems.
 - Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license. Please feel free to offer me if you know another great text editor for yaml structures.
-- I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I collect images from another mods. I change some of images, but a lot of images I introduce without changes.
+- I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I collect images from another mods. I change some images, but a lot of images I introduce without changes.
 - The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
 - And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
 
@@ -70,5 +70,3 @@ I got images and ideas from many mods, but I never copy these without adaptation
 I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
 - eXPANDED_terror
 - SolarsNewUFOs
-
-
