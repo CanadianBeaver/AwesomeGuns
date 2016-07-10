@@ -960,7 +960,7 @@ items:
     bulletSpeed: 2
     hitSound: 8010 #hitSound: 22
     hitAnimation: 56
-    power: 42
+    power: 44
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -1010,7 +1010,7 @@ items:
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 26
-    power: 38
+    power: 40
     damageType: 1
     clipSize: 4
     battleType: 2
@@ -1027,7 +1027,7 @@ items:
     bulletSpeed: 4
     hitSound: 8010
     hitAnimation: 56
-    power: 52
+    power: 58
     damageType: 1
     clipSize: 5
     battleType: 2
@@ -1078,7 +1078,7 @@ items:
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 56
-    power: 56
+    power: 52
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -1125,7 +1125,7 @@ items:
     bulletSpeed: 5
     hitSound: 8018
     hitAnimation: 56
-    power: 84
+    power: 82
     damageType: 1
     clipSize: 3
     battleType: 2
@@ -1147,10 +1147,10 @@ items:
       - STR_SHOTGUN_CLIP
     accuracyAuto: 0
     accuracySnap: 60
-    accuracyAimed: 90
+    accuracyAimed: 0
     tuAuto: 0
-    tuSnap: 33
-    tuAimed: 60
+    tuSnap: 30
+    tuAimed: 0
     battleType: 1
     twoHanded: true
     invWidth: 1
@@ -1196,10 +1196,10 @@ items:
     bulletSpeed: 0
     hitSound: 8022
     hitAnimation: 56
-    power: 45
+    power: 36
     damageType: 1
     clipSize: 6
-    shotgunPellets: 4
+    shotgunPellets: 5
     battleType: 2
     armor: 14
 
@@ -1246,10 +1246,10 @@ items:
     fireSound: 8027
     hitSound: 8022 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
-    power: 30 #power: 56
+    power: 56
     damageType: 1
     clipSize: 6
-    shotgunPellets: 5
+    shotgunPellets: 3
     battleType: 2
     invWidth: 2
     invHeight: 1
@@ -1336,7 +1336,7 @@ items:
     handSprite: 288
     hitSound: 8022 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
-    power: 20 #power: 42
+    power: 22 #power: 42
     damageType: 1
     clipSize: 14
     shotgunPellets: 3
@@ -2715,7 +2715,7 @@ armors:
       - 1.0 # None
       - 0.8 # Armor Piercing
       - 0.4 # Incendiary
-      - 0.4 # High Explosive
+      - 0.6 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
       - 1.2 # Stun
@@ -2733,7 +2733,7 @@ armors:
       - 1.0 # None
       - 0.75 # Armor Piercing
       - 0.4 # Incendiary
-      - 0.4 # High Explosive
+      - 0.6 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
       - 1.0 # Stun
@@ -2751,7 +2751,7 @@ armors:
       - 1.0 # None
       - 0.7 # Armor Piercing
       - 0.4 # Incendiary
-      - 0.4 # High Explosive
+      - 0.6 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
       - 1.0 # Stun
@@ -2769,7 +2769,7 @@ armors:
       - 1.0 # None
       - 0.5 # Armor Piercing
       - 0.2 # Incendiary
-      - 2.8 # High Explosive
+      - 2.0 # High Explosive
       - 0.2 # Laser
       - 0.2 # Plasma
       - 1.0 # Stun
@@ -2785,9 +2785,9 @@ armors:
     underArmor: 4
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 1.0 # Incendiary
-      - 1.0 # High Explosive
+      - 0.8 # High Explosive
       - 0.6 # Laser
       - 0.6 # Plasma
       - 0.0 # Stun
@@ -2823,12 +2823,12 @@ armors:
       - 1.0 # None
       - 0.4 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.6 # High Explosive
+      - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
-      - 0.8 # Acid
+      - 0.8 # Stun
+      - 0.8 # Melee
+      - 1.0 # Acid
       - 2.0 # Smoke
 
   - type: MUTON_ARMOR2
@@ -2841,30 +2841,48 @@ armors:
       - 1.0 # None
       - 0.4 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.6 # High Explosive
+      - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
-      - 0.8 # Acid
+      - 0.8 # Stun
+      - 0.8 # Melee
+      - 1.0 # Acid
       - 2.0 # Smoke
 
-  - type: SECTOPOD_ARMOR
-    spriteInv: sectopodInventoryImage
-    frontArmor: 145
-    sideArmor: 130
-    rearArmor: 100
-    underArmor: 90
+  - type: CELATID_ARMOR
+    spriteInv: celatidInventoryImage
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
+      - 1.4 # Armor Piercing
       - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 0.2 # Laser
+      - 0.2 # Plasma
+      - 0.8 # Stun
+      - 1.2 # Melee
+      - 0.0 # Acid
+      - 0.0 # Smoke
+
+  - type: SILACOID_ARMOR
+    spriteInv: silacoidInventoryImage
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 10
+    damageModifier:
+      - 1.0 # None
+      - 0.8 # Armor Piercing
+      - 0.0 # Incendiary
       - 0.8 # High Explosive
-      - 1.5 # Laser
-      - 0.8 # Plasma
-      - 0.0 # Stun
-      - 0.4 # Melee
-      - 3.8 # Acid
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 0.8 # Stun
+      - 0.6 # Melee
+      - 0.0 # Acid
       - 0.0 # Smoke
 
   - type: ETHEREAL_ARMOR0
@@ -2876,10 +2894,10 @@ armors:
     damageModifier:
       - 1.0 # None
       - 1.0 # Armor Piercing
-      - 2.0 # Incendiary
+      - 0.6 # Incendiary
       - 1.0 # High Explosive
       - 0.8 # Laser
-      - 1.0 # Plasma
+      - 0.8 # Plasma
       - 0.6 # Stun
       - 1.6 # Melee
       - 1.5 # Acid
@@ -2893,13 +2911,13 @@ armors:
     underArmor: 44
     damageModifier:
       - 1.0 # None
-      - 1.2 # Armor Piercing
-      - 2.0 # Incendiary
+      - 1.1 # Armor Piercing
+      - 0.6 # Incendiary
       - 1.0 # High Explosive
       - 0.8 # Laser
-      - 1.0 # Plasma
+      - 0.8 # Plasma
       - 0.6 # Stun
-      - 1.6 # Melee
+      - 1.5 # Melee
       - 1.5 # Acid
       - 0.2 # Smoke
 
@@ -2911,50 +2929,32 @@ armors:
     underArmor: 48
     damageModifier:
       - 1.0 # None
-      - 1.4 # Armor Piercing
-      - 2.0 # Incendiary
+      - 1.25 # Armor Piercing
+      - 0.6 # Incendiary
       - 1.0 # High Explosive
       - 0.8 # Laser
-      - 1.0 # Plasma
+      - 0.8 # Plasma
       - 0.6 # Stun
       - 1.4 # Melee
       - 1.5 # Acid
       - 0.2 # Smoke
 
-  - type: SILACOID_ARMOR
-    spriteInv: silacoidInventoryImage
-    frontArmor: 50
-    sideArmor: 50
-    rearArmor: 50
-    underArmor: 10
+  - type: SECTOPOD_ARMOR
+    spriteInv: sectopodInventoryImage
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
     damageModifier:
       - 1.0 # None
       - 1.0 # Armor Piercing
-      - 0.0 # Incendiary
-      - 1.0 # High Explosive
-      - 1.0 # Laser
-      - 1.0 # Plasma
-      - 1.0 # Stun
-      - 1.5 # Melee
-      - 2.0 # Acid
-      - 0.0 # Smoke
-
-  - type: CELATID_ARMOR
-    spriteInv: celatidInventoryImage
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
-    damageModifier:
-      - 1.0 # None
-      - 1.5 # Armor Piercing
       - 1.0 # Incendiary
-      - 1.0 # High Explosive
-      - 0.2 # Laser
-      - 0.2 # Plasma
-      - 1.0 # Stun
-      - 1.2 # Melee
-      - 1.0 # Acid
+      - 0.8 # High Explosive
+      - 1.4 # Laser
+      - 0.8 # Plasma
+      - 0.0 # Stun
+      - 0.4 # Melee
+      - 3.8 # Acid
       - 0.0 # Smoke
 
   - type: CIVM_ARMOR
@@ -4172,6 +4172,68 @@ ufopaedia:
 
   - id: STR_ELERIUM_115
     listOrder: 6050
+
+# Fix the list order for alien AUTOPSies
+
+  - id: STR_SECTOID
+    listOrder: 7900
+  - id: STR_SECTOID_AUTOPSY
+    listOrder: 7800
+
+  - id: STR_CYBERDISC
+    listOrder: 8100
+  - id: STR_CYBERDISC_AUTOPSY
+    listOrder: 8000
+
+  - id: STR_FLOATER
+    listOrder: 8300
+  - id: STR_FLOATER_AUTOPSY
+    listOrder: 8200
+
+  - id: STR_REAPER
+    listOrder: 8500
+  - id: STR_REAPER_AUTOPSY
+    listOrder: 8400
+
+  - id: STR_SNAKEMAN
+    listOrder: 8700
+  - id: STR_SNAKEMAN_AUTOPSY
+    listOrder: 8600
+
+  - id: STR_CHRYSSALID
+    listOrder: 8900
+  - id: STR_CHRYSSALID_AUTOPSY
+    listOrder: 8800
+
+  #- id: STR_ZOMBIE TODO: there is no article, but there is a research
+    #listOrder: 8951
+  #- id: STR_ZOMBIE_AUTOPSY
+    #listOrder: 8950
+
+  - id: STR_MUTON
+    listOrder: 9100
+  - id: STR_MUTON_AUTOPSY
+    listOrder: 9000
+
+  - id: STR_CELATID
+    listOrder: 9300
+  - id: STR_CELATID_AUTOPSY
+    listOrder: 9200
+
+  - id: STR_SILACOID
+    listOrder: 9500
+  - id: STR_SILACOID_AUTOPSY
+    listOrder: 9400
+
+  - id: STR_ETHEREAL
+    listOrder: 9700
+  - id: STR_ETHEREAL_AUTOPSY
+    listOrder: 9600
+
+  - id: STR_SECTOPOD
+    listOrder: 9900
+  - id: STR_SECTOPOD_AUTOPSY
+    listOrder: 9800
 
 # Alloy weapons
 
