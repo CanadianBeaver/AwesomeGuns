@@ -9,6 +9,7 @@
 # Robin's Extra Weapons
 # Improved Hand Objects
 # AlienInventory
+# Advanced_Medikit
 # NewTUReserveUI
 # 2012DeathSounds
 # CraftMissleSound
@@ -2076,6 +2077,29 @@ items:
     tuUse: 25
     armor: 18
 
+  - type: STR_MEDI_CHEST
+    listOrder: 4299
+    size: 0.2
+    costBuy: 18000
+    costSell: 13500
+    weight: 5
+    bigSprite: 59
+    floorSprite: 74
+    handSprite: 408
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 0
+    heal: 4
+    stimulant: 4
+    woundRecovery: 1
+    healthRecovery: 2
+    stunRecovery: 3
+    energyRecovery: 8
+    tuUse: 20
+    flatRate: true
+    armor: 14
+
   - type: STR_MEDI_KIT
     size: 0.1
     costSell: 46500
@@ -2546,7 +2570,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_SUIT
     storeItem: STR_FLYING_SUIT
-    weight: 22
+    weight: 18
     stats:
       tu: 5
     frontArmor: 115 # HEAVY PLASMA has power=115
@@ -2573,7 +2597,7 @@ armors:
     corpseBattle:
       - STR_LIGHT_CORPSE_SUIT
     storeItem: STR_LIGHT_FLYING_SUIT
-    weight: 8
+    weight: 6
     stats:
       tu: 5
       firing: 10
@@ -4095,6 +4119,12 @@ ufopaedia:
   - id: STR_MOTION_SCANNER # it can be bought
     requires: []
 
+  - id: STR_MEDI_CHEST
+    listOrder: 4399
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MEDI_CHEST_UFOPEDIA
+
 # Fix the ALIEN CONTAINMENT
 
   - id: STR_ALIEN_BIOLOGY
@@ -4969,10 +4999,16 @@ extraSprites:
       384: Resources/AwesomeGuns/Weapons/Animations/PHeavyClip.gif
       392: Resources/AwesomeGuns/Weapons/Animations/StunBomb.gif
       400: Resources/AwesomeGuns/Weapons/Animations/Elerium.gif
+      408: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs.png
+
+  - type: BIGOBS.PCK
+    files:
+      59: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Bigob.gif
 
   - type: FLOOROB.PCK
     files:
       73: Resources/AwesomeGuns/Weapons/Animations/EleriumFloor.gif
+      74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.gif
 
   - type: SMOKE.PCK
     width: 160
@@ -5563,6 +5599,9 @@ extraStrings:
       STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
       STR_RAILGUN_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
 
+      STR_MEDI_CHEST: "Medicine Chest"
+      STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
+
   - type: ru
     strings:
 
@@ -5645,6 +5684,9 @@ extraStrings:
       STR_RAILGUN_SLUGS: "Жетоны к ручному рельсотрону"
       STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле."
       STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное. Создать штурмовой аналог не представляется возможным."
+
+      STR_MEDI_CHEST: "Медицинская аптечка"
+      STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
 
 
 
