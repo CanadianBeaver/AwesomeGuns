@@ -56,7 +56,7 @@
 #
 # Что ещё нужно сделать:
 #   * Кислотное оружие (после изобретения биологии пришельцев)
-#   * Получаемый пришельцами урон (сделано до змей - SNAKEMAN_ARMOR0)
+#   * Получаемый пришельцами урон (сделано до MUTON_ARMOR0)
 #
 #
 
@@ -2625,9 +2625,9 @@ armors:
       - 1.0 # None
       - 0.8 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.6 # High Explosive
+      - 0.5 # High Explosive
       - 1.0 # Laser
-      - 1.2 # Plasma
+      - 0.8 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
       - 1.7 # Acid
@@ -2659,15 +2659,15 @@ armors:
     underArmor: 14
     damageModifier:
       - 1.0 # None
-      - 0.65 # Armor Piercing
-      - 0.9 # Incendiary
-      - 0.9 # High Explosive
+      - 0.7 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 1.4 # Smoke
+      - 1.6 # Smoke
 
   - type: FLOATER_ARMOR2
     spriteInv: floaterInventoryImage
@@ -2677,15 +2677,15 @@ armors:
     underArmor: 16
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.8 # Incendiary
-      - 0.8 # High Explosive
+      - 0.7 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 1.25 # Smoke
+      - 1.6 # Smoke
 
   - type: REAPER_ARMOR
     spriteInv: reaperInventoryImage
@@ -2695,14 +2695,14 @@ armors:
     underArmor: 4
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
-      - 3.0 # Incendiary
-      - 0.3 # High Explosive
-      - 1.0 # Laser
+      - 0.7 # Armor Piercing
+      - 2.8 # Incendiary
+      - 0.7 # High Explosive
+      - 0.7 # Laser
       - 0.7 # Plasma
-      - 1.0 # Stun
+      - 0.6 # Stun
       - 0.6 # Melee
-      - 1.0 # Acid
+      - 0.4 # Acid
       - 2.0 # Smoke
 
   - type: SNAKEMAN_ARMOR0
@@ -2731,7 +2731,7 @@ armors:
     underArmor: 20
     damageModifier:
       - 1.0 # None
-      - 0.7 # Armor Piercing
+      - 0.75 # Armor Piercing
       - 0.4 # Incendiary
       - 0.4 # High Explosive
       - 0.4 # Laser
@@ -2749,13 +2749,13 @@ armors:
     underArmor: 22
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.8 # Incendiary
-      - 1.0 # High Explosive
+      - 0.7 # Armor Piercing
+      - 0.4 # Incendiary
+      - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 0.8 # Stun
-      - 0.8 # Melee
+      - 1.0 # Stun
+      - 1.0 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
 
@@ -2767,15 +2767,15 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.6 # Incendiary
-      - 1.4 # High Explosive
-      - 0.6 # Laser
-      - 0.6 # Plasma
-      - 0.6 # Stun
-      - 0.6 # Melee
+      - 0.5 # Armor Piercing
+      - 0.2 # Incendiary
+      - 2.8 # High Explosive
+      - 0.2 # Laser
+      - 0.2 # Plasma
+      - 1.0 # Stun
+      - 1.0 # Melee
       - 0.4 # Acid
-      - 3.0 # Smoke
+      - 1.6 # Smoke
 
   - type: ZOMBIE_ARMOR
     spriteInv: zombieInventoryImage
@@ -2788,8 +2788,8 @@ armors:
       - 1.0 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.7 # Laser
-      - 0.7 # Plasma
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.0 # Stun
       - 1.0 # Melee
       - 0.0 # Acid
