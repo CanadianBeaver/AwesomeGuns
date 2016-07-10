@@ -32,6 +32,11 @@ If you have the same preferences, I would like to invite you to create it togeth
 - Realistic balance for crafts, shooting, alien's protection.
 - Some changes just for fun...
 
+##How to install it?
+
+* Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
+* Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
+
 ###Special thanks
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
