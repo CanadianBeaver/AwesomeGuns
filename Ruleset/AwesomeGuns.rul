@@ -5263,6 +5263,7 @@ extraSounds:
       39: Resources/AwesomeGuns/UI/Sounds/Battle/throw.ogg
       40: Resources/AwesomeGuns/UI/Sounds/Battle/move_hover.ogg
       47: Resources/AwesomeGuns/UI/Sounds/Battle/move_silacoid.ogg
+      54: Resources/AwesomeGuns/UI/Sounds/Battle/stun_rod.ogg
 
       48: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_reaper.ogg
       50: Resources/AwesomeGuns/UI/Sounds/Aliens/attack_celatid.ogg
