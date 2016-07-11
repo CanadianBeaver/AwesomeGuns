@@ -27,6 +27,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 - Do only the necessary changes.
 - Do not copy ideas or implementations from another mods without checking, adaptation and improvement.
+- Improve visualization without compromises.
 - Alien's technologies is impossible for implementing. Therefore, we can't manufacture plasma or fusion weapons, but our soldiers can use it in the battle.
 - Conventional weapons should be suitable as long as possible
 - Armour should be more different and more specialized. There are armor for snipers, for heavy soldiers, for supports. It is difficult for realization, because the game doesn't have soldier's specialization, but it can be done.
