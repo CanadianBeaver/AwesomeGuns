@@ -190,7 +190,7 @@ crafts:
     listOrder: 205
     requires:
       - STR_IMPROVED_INTERCEPTOR
-    sprite: 23
+    sprite: 24
     fuelMax: 1200
     damageMax: 220
     speedMax: 2800
@@ -989,7 +989,7 @@ items:
     tuAimed: 80
     battleType: 1
     twoHanded: true
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     armor: 22
     maxRange: 52
@@ -1046,11 +1046,11 @@ items:
     fireSound: 8011 #fireSound: 4
     compatibleAmmo:
       - STR_ALLOY_RIFLE_CLIP
-    accuracyAuto: 33
-    accuracySnap: 63
+    accuracyAuto: 32
+    accuracySnap: 62
     accuracyAimed: 85
-    tuAuto: 23
-    tuSnap: 23
+    tuAuto: 25
+    tuSnap: 25
     tuAimed: 65
     battleType: 1
     autoShots: 2
@@ -1058,10 +1058,10 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 25
-    maxRange: 46
-    aimRange: 33
-    snapRange: 25
-    autoRange: 15
+    maxRange: 44
+    aimRange: 32
+    snapRange: 23
+    autoRange: 12
     minRange: 2
     dropoff: 2
     meleePower: 60
@@ -1079,7 +1079,7 @@ items:
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 56
-    power: 52
+    power: 46
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -2082,16 +2082,16 @@ items:
     size: 0.2
     costBuy: 18000
     costSell: 13500
-    weight: 5
+    weight: 4
     bigSprite: 59
     floorSprite: 74
     handSprite: 408
     battleType: 6
     invWidth: 2
     invHeight: 2
-    painKiller: 0
+    painKiller: 2
     heal: 4
-    stimulant: 4
+    stimulant: 2
     woundRecovery: 1
     healthRecovery: 2
     stunRecovery: 3
@@ -3431,7 +3431,7 @@ manufacture:
     time: 6000
     cost: 250000
     requiredItems:
-      STR_ALIEN_ALLOYS: 48
+      STR_ALIEN_ALLOYS: 42
       STR_UFO_NAVIGATION: 2
 
   - name: STR_FIRESTORM
@@ -3442,7 +3442,7 @@ manufacture:
     time: 14000
     cost: 400000
     requiredItems:
-      STR_ALIEN_ALLOYS: 130 #STR_ALIEN_ALLOYS: 65
+      STR_ALIEN_ALLOYS: 100 #STR_ALIEN_ALLOYS: 65
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 4 #STR_UFO_NAVIGATION: 1
 
@@ -3454,7 +3454,7 @@ manufacture:
     time: 18000
     cost: 600000
     requiredItems:
-      STR_ALIEN_ALLOYS: 170 #STR_ALIEN_ALLOYS: 85
+      STR_ALIEN_ALLOYS: 180 #STR_ALIEN_ALLOYS: 85
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 8 #STR_UFO_NAVIGATION: 1
 
@@ -5008,7 +5008,7 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       73: Resources/AwesomeGuns/Weapons/Animations/EleriumFloor.gif
-      74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.gif
+      74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
 
   - type: SMOKE.PCK
     width: 160
