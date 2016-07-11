@@ -753,9 +753,9 @@ items:
     bulletSprite: 8
     fireSound: 18
     hitSound: 19
-    power: 120 #power: 110
+    power: 130 #power: 110
     damageType: 5
-    hitAnimation: 66 #hitAnimation: 46
+    hitAnimation: 86 #hitAnimation: 46
     accuracySnap: 85
     accuracyAimed: 100
     tuSnap: 30
@@ -830,7 +830,7 @@ items:
     bulletSpeed: 1
     hitSound: 8002 #hitSound: 22
     hitAnimation: 56
-    power: 36
+    power: 38
     damageType: 1
     clipSize: 12
     battleType: 2
@@ -895,7 +895,7 @@ items:
     bulletSpeed: 1
     hitSound: 8002
     hitAnimation: 56
-    power: 36
+    power: 38
     damageType: 1
     clipSize: 18
     battleType: 2
@@ -963,7 +963,7 @@ items:
     bulletSpeed: 2
     hitSound: 8010 #hitSound: 22
     hitAnimation: 56
-    power: 44
+    power: 48
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -1015,7 +1015,7 @@ items:
     hitAnimation: 26
     power: 40
     damageType: 1
-    clipSize: 4
+    clipSize: 3
     battleType: 2
     armor: 12
 
@@ -1030,9 +1030,9 @@ items:
     bulletSpeed: 4
     hitSound: 8010
     hitAnimation: 56
-    power: 58
+    power: 62
     damageType: 1
-    clipSize: 5
+    clipSize: 4
     battleType: 2
     armor: 12
 
@@ -1048,6 +1048,7 @@ items:
     fireSound: 8011 #fireSound: 4
     compatibleAmmo:
       - STR_ALLOY_RIFLE_CLIP
+      - STR_ACID_RIFLE_CLIP
     accuracyAuto: 32
     accuracySnap: 62
     accuracyAimed: 85
@@ -1080,9 +1081,26 @@ items:
     handSprite: 352
     bulletSpeed: 3
     hitSound: 8010
-    hitAnimation: 56
-    power: 46
+    hitAnimation: 66
+    power: 52
     damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 15
+
+  - type: STR_ACID_RIFLE_CLIP # new item
+    listOrder: 2206
+    size: 0.075
+    costSell: 800
+    weight: 3
+    bigSprite: 532
+    floorSprite: 531
+    handSprite: 352
+    bulletSpeed: 3
+    hitSound: 8013
+    hitAnimation: 76
+    power: 54
+    damageType: 8
     clipSize: 15
     battleType: 2
     armor: 15
@@ -1099,12 +1117,13 @@ items:
     fireSound: 8017
     compatibleAmmo:
       - STR_ALLOY_SNIPER_RIFLE_CLIP
+      - STR_ACID_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
     accuracyAimed: 120
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 97
+    tuAimed: 99
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -1127,10 +1146,27 @@ items:
     handSprite: 352
     bulletSpeed: 5
     hitSound: 8018
-    hitAnimation: 56
+    hitAnimation: 66
     power: 82
     damageType: 1
-    clipSize: 3
+    clipSize: 2
+    battleType: 2
+    armor: 12
+
+  - type: STR_ACID_SNIPER_RIFLE_CLIP # new item
+    listOrder: 2227
+    size: 0.05
+    costSell: 1200
+    weight: 5
+    bigSprite: 552
+    floorSprite: 551
+    handSprite: 352
+    bulletSpeed: 5
+    hitSound: 8013
+    hitAnimation: 76
+    power: 84
+    damageType: 8
+    clipSize: 2
     battleType: 2
     armor: 12
 
@@ -1159,7 +1195,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 20
-    maxRange: 20
+    maxRange: 18
     aimRange: 0
     snapRange: 10
     autoRange: 0
@@ -1269,7 +1305,7 @@ items:
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
-    power: 66 #power: 52
+    power: 62 #power: 52
     damageType: 3
     clipSize: 4 #clipSize: 6
     battleType: 2
@@ -1288,7 +1324,7 @@ items:
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
-    power: 72 #power: 60
+    power: 80 #power: 60
     damageType: 2
     clipSize: 4 #clipSize: 6
     battleType: 2
@@ -1359,7 +1395,7 @@ items:
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
-    power: 40 #power: 44
+    power: 42 #power: 44
     damageType: 3
     clipSize: 14
     battleType: 2
@@ -1434,7 +1470,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 44
+    power: 48
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -1453,7 +1489,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 62
+    power: 65
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -1541,7 +1577,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 100
+    power: 120 #power: 100
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -1560,7 +1596,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 125 #power: 90
+    power: 140 #power: 90
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -1577,14 +1613,14 @@ items:
     weight: 3
     bigSprite: 19
     floorSprite: 19
-    power: 50
+    power: 52 #power: 50
     damageType: 3
     battleType: 4
     blastRadius: 5
     armor: 6
 
   - type: STR_INCENDIARY_GRENADE # new item
-    listOrder: 3810
+    listOrder: 3825
     size: 0.08
     costBuy: 340
     costSell: 280
@@ -1606,13 +1642,14 @@ items:
     bigSprite: 20
     floorSprite: 20
     handSprite: 344
-    power: 70 #power: 60
+    power: 66 #power: 60
     damageType: 9
     battleType: 4
     blastRadius: 5
     armor: 6
 
   - type: STR_PROXIMITY_GRENADE
+    listOrder: 3815
     size: 0.08
     costBuy: 500
     costSell: 400
@@ -1620,7 +1657,7 @@ items:
     bigSprite: 21
     floorSprite: 21
     handSprite: 232
-    power: 70
+    power: 75 #power: 70
     damageType: 3
     battleType: 5
     blastRadius: 5
@@ -1672,7 +1709,7 @@ items:
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 42 #power: 46
+    power: 40 #power: 46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
     accuracySnap: 50 #accuracySnap: 40
@@ -1704,7 +1741,7 @@ items:
     fireSound: 8052 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 55 #power: 60
+    power: 56 #power: 60
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
     accuracySnap: 60 #accuracySnap: 65
@@ -1932,7 +1969,7 @@ items:
     accuracyAimed: 125
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 99
+    tuAimed: 95
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -1955,7 +1992,7 @@ items:
     handSprite: 120
     bulletSpeed: 8
     hitSound: 8018
-    hitAnimation: 76
+    hitAnimation: 66
     power: 120
     damageType: 1
     clipSize: 6
@@ -2639,7 +2676,7 @@ armors:
       - 1.2 # Stun
       - 1.6 # Melee
       - 0.4 # Acid
-      - 2.0 # Smoke
+      - 2.5 # Smoke
 
   - type: CYBERDISC_ARMOR
     spriteInv: cyberdiscInventoryImage
@@ -2649,14 +2686,14 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.8 # Armor Piercing
-      - 1.0 # Incendiary
-      - 0.5 # High Explosive
-      - 1.0 # Laser
-      - 0.8 # Plasma
+      - 0.6 # Armor Piercing
+      - 0.75 # Incendiary
+      - 0.4 # High Explosive
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
-      - 1.7 # Acid
+      - 2.2 # Acid
       - 0.0 # Smoke
 
   - type: FLOATER_ARMOR0
@@ -2673,9 +2710,9 @@ armors:
       - 1.0 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
-      - 1.0 # Melee
+      - 1.2 # Melee
       - 0.4 # Acid
-      - 1.6 # Smoke
+      - 2.0 # Smoke
 
   - type: FLOATER_ARMOR1
     spriteInv: floaterInventoryImage
@@ -2691,9 +2728,9 @@ armors:
       - 1.0 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
-      - 1.0 # Melee
+      - 1.2 # Melee
       - 0.4 # Acid
-      - 1.6 # Smoke
+      - 1.8 # Smoke
 
   - type: FLOATER_ARMOR2
     spriteInv: floaterInventoryImage
@@ -2709,7 +2746,7 @@ armors:
       - 1.0 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
-      - 1.0 # Melee
+      - 1.2 # Melee
       - 0.4 # Acid
       - 1.6 # Smoke
 
@@ -2729,7 +2766,7 @@ armors:
       - 0.6 # Stun
       - 0.6 # Melee
       - 0.4 # Acid
-      - 2.0 # Smoke
+      - 2.2 # Smoke
 
   - type: SNAKEMAN_ARMOR0
     spriteInv: snakemanInventoryImage
@@ -2747,7 +2784,7 @@ armors:
       - 1.2 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
-      - 2.0 # Smoke
+      - 2.4 # Smoke
 
   - type: SNAKEMAN_ARMOR1
     spriteInv: snakemanInventoryImage
@@ -2765,7 +2802,7 @@ armors:
       - 1.0 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 2.0 # Smoke
+      - 2.2 # Smoke
 
   - type: SNAKEMAN_ARMOR2
     spriteInv: snakemanInventoryImage
@@ -2781,7 +2818,7 @@ armors:
       - 0.4 # Laser
       - 0.4 # Plasma
       - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.8 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
 
@@ -2793,7 +2830,7 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.5 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 0.2 # Incendiary
       - 2.0 # High Explosive
       - 0.2 # Laser
@@ -2801,7 +2838,7 @@ armors:
       - 1.0 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 1.6 # Smoke
+      - 2.5 # Smoke
 
   - type: ZOMBIE_ARMOR
     spriteInv: zombieInventoryImage
@@ -2831,11 +2868,11 @@ armors:
       - 1.0 # None
       - 0.4 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.6 # High Explosive
+      - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 1.2 # Stun
-      - 1.0 # Melee
+      - 0.8 # Stun
+      - 0.8 # Melee
       - 0.8 # Acid
       - 2.0 # Smoke
 
@@ -2854,7 +2891,7 @@ armors:
       - 0.4 # Plasma
       - 0.8 # Stun
       - 0.8 # Melee
-      - 1.0 # Acid
+      - 0.8 # Acid
       - 2.0 # Smoke
 
   - type: MUTON_ARMOR2
@@ -2872,7 +2909,7 @@ armors:
       - 0.4 # Plasma
       - 0.8 # Stun
       - 0.8 # Melee
-      - 1.0 # Acid
+      - 0.8 # Acid
       - 2.0 # Smoke
 
   - type: CELATID_ARMOR
@@ -2927,7 +2964,7 @@ armors:
       - 0.6 # Stun
       - 1.6 # Melee
       - 1.5 # Acid
-      - 0.2 # Smoke
+      - 3.0 # Smoke
 
   - type: ETHEREAL_ARMOR1
     spriteInv: etherealInventoryImage
@@ -2945,7 +2982,7 @@ armors:
       - 0.6 # Stun
       - 1.5 # Melee
       - 1.5 # Acid
-      - 0.2 # Smoke
+      - 3.5 # Smoke
 
   - type: ETHEREAL_ARMOR2
     spriteInv: etherealInventoryImage
@@ -2963,7 +3000,7 @@ armors:
       - 0.6 # Stun
       - 1.4 # Melee
       - 1.5 # Acid
-      - 0.2 # Smoke
+      - 3.8 # Smoke
 
   - type: SECTOPOD_ARMOR
     spriteInv: sectopodInventoryImage
@@ -3084,27 +3121,27 @@ research:
 # Craft weapons
 
   - name: STR_ALLOY_ROCKETS
-    listOrder: 912
+    listOrder: 920
     cost: 400
     points: 20
     dependencies:
       - STR_ALIEN_ALLOYS
       - STR_UFO_NAVIGATION
 
-  - name: STR_STORM_LAUNCHER
-    listOrder: 913
-    cost: 400
-    points: 20
-    dependencies:
-      - STR_ALLOY_ROCKETS
-
   - name: STR_ALLOY_CANNON
-    listOrder: 911
+    listOrder: 921
     cost: 250
     points: 15
     dependencies:
       - STR_ALLOY_CLIPS
       - STR_UFO_NAVIGATION
+
+  - name: STR_STORM_LAUNCHER
+    listOrder: 922
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_ALLOY_ROCKETS
 
   - name: STR_PLASMA_CANNON
     cost: 660
@@ -3125,18 +3162,27 @@ research:
       - STR_ALIEN_ALLOYS
 
   - name: STR_ALLOY_RIFLE
-    listOrder: 910
+    listOrder: 912
     cost: 125
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
 
   - name: STR_ALLOY_SNIPER_RIFLE_RESEARCH
-    listOrder: 910
+    listOrder: 913
     cost: 150
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
+
+  - name: STR_ACID_CLIPS
+    listOrder: 914
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_ALLOY_RIFLE
+      - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+      - STR_CHRYSSALID_AUTOPSY
 
 # LASER weapons
 
@@ -3238,8 +3284,8 @@ research:
       - STR_ALIEN_BIOLOGY
 
   - name: STR_STUN_ROD
-    cost: 50
-    score: 5
+    cost: 100
+    score: 10
     dependencies:
       - STR_ALIEN_BIOLOGY
 
@@ -3695,6 +3741,17 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
+  - name: STR_ACID_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 812
+    requires:
+      - STR_ACID_CLIPS
+    space: 2
+    time: 36
+    cost: 700
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
   - name: STR_ALLOY_SNIPER_RIFLE
     category: STR_WEAPON
     listOrder: 815
@@ -3711,6 +3768,17 @@ manufacture:
     listOrder: 816
     requires:
       - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+    space: 2
+    time: 36
+    cost: 900
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+  - name: STR_ACID_SNIPER_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 817
+    requires:
+      - STR_ACID_CLIPS
     space: 2
     time: 36
     cost: 900
@@ -4163,6 +4231,14 @@ ufopaedia:
     requires:
       - STR_ALLOY_CLIPS
 
+  - id: STR_ACID_CLIPS
+    listOrder: 1928
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ACID_CLIPS_UFOPEDIA
+    requires:
+      - STR_ACID_CLIPS
+
   - id: STR_ALLOY_ROCKETS
     listOrder: 1924
     type_id: 8
@@ -4321,6 +4397,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ALLOY_RIFLE
+  - id: STR_ACID_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ACID_CLIPS
 
   - id: STR_ALLOY_SNIPER_RIFLE
     listOrder: 2224
@@ -4334,6 +4415,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+  - id: STR_ACID_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ACID_CLIPS
 
   - id: STR_SHOTGUN
     listOrder: 2235
@@ -4976,31 +5062,31 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      208: Resources/AwesomeGuns/Weapons/Animations/MediKit.gif
-      216: Resources/AwesomeGuns/Weapons/Animations/HE.gif
-      224: Resources/AwesomeGuns/Weapons/Animations/Scanner.gif
-      232: Resources/AwesomeGuns/Weapons/Animations/Proxie.gif
-      240: Resources/AwesomeGuns/Weapons/Animations/ElectroFlare.gif
-      248: Resources/AwesomeGuns/Weapons/Animations/MindProbe.gif
-      256: Resources/AwesomeGuns/Weapons/Animations/SMRocket.gif
-      264: Resources/AwesomeGuns/Weapons/Animations/LGRocket.gif
-      272: Resources/AwesomeGuns/Weapons/Animations/INRocket.gif
-      280: Resources/AwesomeGuns/Weapons/Animations/BlasterBomb.gif
-      288: Resources/AwesomeGuns/Weapons/Animations/APAutoCannon.gif
-      296: Resources/AwesomeGuns/Weapons/Animations/HEAutoCannon.gif
-      304: Resources/AwesomeGuns/Weapons/Animations/INAutoCannon.gif
-      312: Resources/AwesomeGuns/Weapons/Animations/APHeavyCannon.gif
-      320: Resources/AwesomeGuns/Weapons/Animations/HEHeavyCannon.gif
-      328: Resources/AwesomeGuns/Weapons/Animations/INHeavyCannon.gif
-      336: Resources/AwesomeGuns/Weapons/Animations/AlienGrenade.gif
-      344: Resources/AwesomeGuns/Weapons/Animations/SmokeGrenade.gif
-      352: Resources/AwesomeGuns/Weapons/Animations/RifleClip.gif
-      360: Resources/AwesomeGuns/Weapons/Animations/PistolClip.gif
-      368: Resources/AwesomeGuns/Weapons/Animations/PPistolClip.gif
-      376: Resources/AwesomeGuns/Weapons/Animations/PRifleClip.gif
-      384: Resources/AwesomeGuns/Weapons/Animations/PHeavyClip.gif
-      392: Resources/AwesomeGuns/Weapons/Animations/StunBomb.gif
-      400: Resources/AwesomeGuns/Weapons/Animations/Elerium.gif
+      208: Resources/AwesomeGuns/Weapons/Animation_Hands/MediKit.gif
+      216: Resources/AwesomeGuns/Weapons/Animation_Hands/HE.gif
+      224: Resources/AwesomeGuns/Weapons/Animation_Hands/Scanner.gif
+      232: Resources/AwesomeGuns/Weapons/Animation_Hands/Proxie.gif
+      240: Resources/AwesomeGuns/Weapons/Animation_Hands/ElectroFlare.gif
+      248: Resources/AwesomeGuns/Weapons/Animation_Hands/MindProbe.gif
+      256: Resources/AwesomeGuns/Weapons/Animation_Hands/SMRocket.gif
+      264: Resources/AwesomeGuns/Weapons/Animation_Hands/LGRocket.gif
+      272: Resources/AwesomeGuns/Weapons/Animation_Hands/INRocket.gif
+      280: Resources/AwesomeGuns/Weapons/Animation_Hands/BlasterBomb.gif
+      288: Resources/AwesomeGuns/Weapons/Animation_Hands/APAutoCannon.gif
+      296: Resources/AwesomeGuns/Weapons/Animation_Hands/HEAutoCannon.gif
+      304: Resources/AwesomeGuns/Weapons/Animation_Hands/INAutoCannon.gif
+      312: Resources/AwesomeGuns/Weapons/Animation_Hands/APHeavyCannon.gif
+      320: Resources/AwesomeGuns/Weapons/Animation_Hands/HEHeavyCannon.gif
+      328: Resources/AwesomeGuns/Weapons/Animation_Hands/INHeavyCannon.gif
+      336: Resources/AwesomeGuns/Weapons/Animation_Hands/AlienGrenade.gif
+      344: Resources/AwesomeGuns/Weapons/Animation_Hands/SmokeGrenade.gif
+      352: Resources/AwesomeGuns/Weapons/Animation_Hands/RifleClip.gif
+      360: Resources/AwesomeGuns/Weapons/Animation_Hands/PistolClip.gif
+      368: Resources/AwesomeGuns/Weapons/Animation_Hands/PPistolClip.gif
+      376: Resources/AwesomeGuns/Weapons/Animation_Hands/PRifleClip.gif
+      384: Resources/AwesomeGuns/Weapons/Animation_Hands/PHeavyClip.gif
+      392: Resources/AwesomeGuns/Weapons/Animation_Hands/StunBomb.gif
+      400: Resources/AwesomeGuns/Weapons/Animation_Hands/Elerium.gif
       408: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs.png
 
   - type: BIGOBS.PCK
@@ -5009,7 +5095,7 @@ extraSprites:
 
   - type: FLOOROB.PCK
     files:
-      73: Resources/AwesomeGuns/Weapons/Animations/EleriumFloor.gif
+      73: Resources/AwesomeGuns/Weapons/Animation_Hands/EleriumFloor.gif
       74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
 
   - type: SMOKE.PCK
@@ -5018,15 +5104,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      56: Resources/AwesomeGuns/Weapons/Animations/Hit_ALLOY.gif
-
-  - type: SMOKE.PCK
-    width: 320
-    height: 40
-    subX: 32
-    subY: 40
-    files:
-      66: Resources/AwesomeGuns/Weapons/Animations/Hit_HeavyPlasma.png
+      56: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ALLOY.gif
 
   - type: SMOKE.PCK
     width: 160
@@ -5034,7 +5112,23 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      76: Resources/AwesomeGuns/Weapons/Animations/Hit_Rail.gif
+      66: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ALLOY_HEAVY.gif
+
+  - type: SMOKE.PCK
+    width: 320
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      76: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ACID.gif
+
+  - type: SMOKE.PCK
+    width: 320
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      86: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_PLASMA.png
 
   - type: Projectiles
     width: 105
@@ -5042,7 +5136,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/AwesomeGuns/Weapons/Animations/Sprites_GrenadeLauncher.png
+      385: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_GrenadeLauncher.png
 
   - type: Projectiles
     width: 105
@@ -5050,7 +5144,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      420: Resources/AwesomeGuns/Weapons/Animations/Sprites_SniperRifle.png
+      455: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Rifle_AL.png
 
   - type: Projectiles
     width: 105
@@ -5058,7 +5152,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      455: Resources/AwesomeGuns/Weapons/Animations/Sprites_Rifle_AL.png
+      420: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_SniperRifle.png
 
   - type: Projectiles
     width: 105
@@ -5066,7 +5160,15 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      490: Resources/AwesomeGuns/Weapons/Animations/Sprites_SniperRifle_AL.png
+      490: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_SniperRifle_AL.png
+
+  - type: Projectiles
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      525: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Rail.png
 
   - type: Projectiles
     width: 105
@@ -5074,15 +5176,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      525: Resources/AwesomeGuns/Weapons/Animations/Sprites_Rail.png
-
-  - type: Projectiles
-    width: 105
-    height: 9
-    subX: 3
-    subY: 3
-    files:
-      560: Resources/AwesomeGuns/Weapons/Animations/Sprites_Plasma.png
+      560: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Plasma.png
 
 # Change visualization of weapon in soldier's hands, step by 8(+2) images
 
@@ -5101,9 +5195,11 @@ extraSprites:
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.png
-      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_CLIP.png
+      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.png
+      532: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.png
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
-      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_CLIP.gif
+      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.gif
+      552: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.gif
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.png
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_CLIP.gif
@@ -5287,8 +5383,10 @@ extraSounds:
       #8016: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Hit.wav - it uses RIFLE sound
       8011: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Fire.wav
       #8012: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Hit.wav - it uses RIFLE sound
+      8013: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/AcidHit.wav
       8017: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Fire.wav
       8018: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Hit.wav
+      #8019: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/AcidHit.wav - it uses ALLOY RIFLE sound only for ACID hits
       8021: Resources/AwesomeGuns/Weapons/SHOTGUN/Fire.wav
       8022: Resources/AwesomeGuns/Weapons/SHOTGUN/Hit.wav
       8025: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Fire.wav
@@ -5418,7 +5516,7 @@ extraStrings:
       STR_CANNON_ROUNDS_X50: "Снаряды к авиапушке (х50)"
       STR_CANNON_UFOPEDIA: "АВТОМАТИЧЕСКАЯ ПУШКА БОЛЬШОЙ МОЩНОСТИ, СТРЕЛЯЮЩАЯ БРОНЕБОЙНЫМИ СНАРЯДАМИ, СПОСОБНЫМИ ПРОБИТЬ 400-МИЛЛИМЕТРОВУЮ СТАЛЬ."
       STR_ALLOY_CANNON_UC: "УЛУЧШЕННАЯ АВИАПУШКА"
-      STR_ALLOY_CANNON: "Улучшенная Авиапушка"
+      STR_ALLOY_CANNON: "Улучшенная авиапушка"
       STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
       STR_PLASMA_BEAM_UFOPEDIA: "НЕСМОТРЯ НА ТО, ЧТО МЫ НЕ В СОСТОЯНИИ ВОСПРОИЗВОДИТЬ ИНОПЛАНЕТНЫЕ АРТЕФАКТЫ, НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
@@ -5525,6 +5623,9 @@ extraStrings:
       STR_ALLOY_CLIPS: "Improved ammunition"
       STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles (including sniper), shotguns, manual and automatic guns.{NEWLINE}{NEWLINE}From one alien alloy can be carried out several rounds of ammunition, depending on the type of weapons. Also, engineers can proizvdit ammunition in one production stream for multiple types of weapons.{NEWLINE}{NEWLINE}Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
 
+      STR_ACID_CLIPS: "Acid ammunition"
+      STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning. {NEWLINE} {NEWLINE} It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
+
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
 
@@ -5566,16 +5667,18 @@ extraStrings:
       STR_SNIPER_RIFLE: "Снайперская винтовка"
       STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
       STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 4 бронебойных заряда."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
       STR_ALLOY_RIFLE: "Штурмовая винтовка"
       STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
-      STR_ALLOY_RIFLE_CLIP: "Магазин к штурмовой винтовке"
+      STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
+      STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
 
       STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
-      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Стандартный магазин содержит 3 бронебойных заряда."
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин расчитан на 2 заряда."
 
       STR_GRENADE_LAUNCHER: "Ручной гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
@@ -5610,6 +5713,9 @@ extraStrings:
 
       STR_ALLOY_CLIPS: "Улучшенные боеприпасы"
       STR_ALLOY_CLIPS_UFOPEDIA: "На основе наших знаний о сплавах пришельцев учённые предложили новую технологию изготовления бронебойных боеприпасов и картечей с увеличенной мощностью поражения. По мимо убойной силы, также увеличено и количество зарядов в обойме. Наши оперативники смогут использовать новые бронебойные боеприпасы в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов, в зависимости от типа вооружения. Также, инженеры могут производить боеприпасы в одном производственном потоке для нескольких типов вооружения.{NEWLINE}{NEWLINE}Более того, возможно дальнейшее усовершенствование открытой технологии. На основе существующих образцов земного стрелкового оружия, учённые готовы разработать производственные чертежи новых типов вооружения, таких как штурмовая и снайперская винтовка."
+
+      STR_ACID_CLIPS: "Кислотные боеприпасы"
+      STR_ACID_CLIPS_UFOPEDIA: "Извлеченный из тела криссалида яд можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов, которые при соприкосновении с целью детонируют и распыляют кислоту в тело врага. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает иммунитетом к кислоте, в той или иной степени. Однако, их роботы, скорее всего сильно уязвимы к такому типу вооружения."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
@@ -5652,16 +5758,18 @@ extraStrings:
       STR_SNIPER_RIFLE: "Снайперская винтовка"
       STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
       STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 4 бронебойных заряда."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
       STR_ALLOY_RIFLE: "Штурмовая винтовка"
       STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
-      STR_ALLOY_RIFLE_CLIP: "Магазин к штурмовой винтовке"
+      STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
+      STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
 
       STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
-      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Стандартный магазин содержит 3 бронебойных заряда."
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин расчитан на 2 бронебойных заряда."
 
       STR_GRENADE_LAUNCHER: "Гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
