@@ -111,7 +111,7 @@ facilities:
     buildCost: 600000 #buildCost: 800000
     buildTime: 18 #buildTime: 25
     monthlyCost: 35000 #monthlyCost: 15000
-    radarRange: 2400 #radarRange: 2250
+    radarRange: 2300 #radarRange: 2250
     radarChance: 5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
@@ -264,7 +264,7 @@ craftWeapons:
   - type: STR_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 260 #damage: 100
+    damage: 230 #damage: 100
     range: 45 #range: 60
     accuracy: 15 #accuracy: 80
     reloadCautious: 48
@@ -279,7 +279,7 @@ craftWeapons:
   - type: STR_STINGRAY
     sprite: 0
     sound: 5
-    damage: 44 #damage: 70
+    damage: 40 #damage: 70
     range: 25 #range: 30
     accuracy: 20 #accuracy: 70
     reloadCautious: 32
@@ -312,7 +312,7 @@ craftWeapons:
   - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 260 #damage: 100
+    damage: 230 #damage: 100
     range: 45 #range: 60
     accuracy: 40 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
@@ -328,7 +328,7 @@ craftWeapons:
   - type: STR_ALLOY_STINGRAY
     sprite: 0
     sound: 5
-    damage: 44 #damage: 70
+    damage: 40 #damage: 70
     range: 25 #range: 30
     accuracy: 50 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
@@ -361,7 +361,7 @@ craftWeapons:
   - type: STR_STORM # new improved launcher
     sprite: 11
     sound: 15
-    damage: 290
+    damage: 260
     range: 65 # (65 is used by STR_BATTLESHIP)
     accuracy: 80
     reloadCautious: 40
@@ -377,13 +377,13 @@ craftWeapons:
   - type: STR_LASER_CANNON_UC
     sprite: 4
     sound: 8
-    damage: 70
-    range: 20 # (22 is used by STR_HARVESTER)
-    accuracy: 80 #accuracy: 35
+    damage: 60 #damage: 70
+    range: 21 # (22 is used by STR_HARVESTER)
+    accuracy: 75 #accuracy: 35
     reloadCautious: 10 #reloadCautious: 12
     reloadStandard: 10 #reloadStandard: 12
     reloadAggressive: 10 #reloadAggressive: 12
-    ammoMax: 24 #ammoMax: 100
+    ammoMax: 20 #ammoMax: 100
     rearmRate: 4 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
@@ -391,7 +391,7 @@ craftWeapons:
   - type: STR_PLASMA_BEAM_UC
     sprite: 3 #sprite: 5
     sound: 9
-    damage: 120 #damage: 140
+    damage: 80 #damage: 140
     range: 40 #range: 52 (42 is used by STR_TERROR_SHIP)
     accuracy: 50
     reloadCautious: 13 #reloadCautious: 12
@@ -1240,7 +1240,7 @@ items:
     listOrder: 2282
     size: 0.035
     costSell: 400
-    weight: 2
+    weight: 1
     bigSprite: 562
     floorSprite: 562
     handSprite: 384
@@ -1310,7 +1310,7 @@ items:
     size: 0.1
     costBuy: 500
     costSell: 400
-    weight: 6
+    weight: 3 #weight: 6
     bigSprite: 13
     floorSprite: 13
     handSprite: 320
@@ -1329,7 +1329,7 @@ items:
     size: 0.1
     costBuy: 400
     costSell: 300
-    weight: 6
+    weight: 3 #weight: 6
     bigSprite: 14
     floorSprite: 14
     handSprite: 328
@@ -1400,7 +1400,7 @@ items:
     size: 0.1
     costBuy: 700
     costSell: 560
-    weight: 6 #weight: 5
+    weight: 5
     bigSprite: 9
     floorSprite: 9
     handSprite: 296
@@ -1420,7 +1420,7 @@ items:
     size: 0.1
     costBuy: 650
     costSell: 520
-    weight: 6 #weight: 5
+    weight: 5
     bigSprite: 10
     floorSprite: 10
     handSprite: 304
@@ -1563,7 +1563,7 @@ items:
     size: 0.1 #size: 0.2
     costBuy: 0 # costBuy: 600
     costSell: 1800 #costSell: 480
-    weight: 9 #weight: 6
+    weight: 6
     bigSprite: 16
     floorSprite: 16
     handSprite: 256
@@ -1582,7 +1582,7 @@ items:
     size: 0.16
     costBuy: 850 #costBuy: 900
     costSell: 630 #costSell: 720
-    weight: 6 #weight: 8
+    weight: 4 #weight: 8
     bigSprite: 17
     floorSprite: 17
     handSprite: 264
@@ -1601,7 +1601,7 @@ items:
     size: 0.16
     costBuy: 1100 #costBuy: 1200
     costSell: 800 #costSell: 960
-    weight: 6 #weight: 8
+    weight: 4 #weight: 8
     bigSprite: 18
     floorSprite: 18
     handSprite: 272
@@ -2701,7 +2701,7 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.7 # Armor Piercing
+      - 0.8 # Armor Piercing
       - 0.8 # Incendiary
       - 0.4 # High Explosive
       - 0.6 # Laser
@@ -2774,7 +2774,7 @@ armors:
     damageModifier:
       - 1.0 # None
       - 0.7 # Armor Piercing
-      - 2.8 # Incendiary
+      - 1.8 # Incendiary
       - 0.7 # High Explosive
       - 0.7 # Laser
       - 0.7 # Plasma
@@ -2786,16 +2786,16 @@ armors:
   - type: SNAKEMAN_ARMOR0
     spriteInv: snakemanInventoryImage
     frontArmor: 20
-    sideArmor: 18
+    sideArmor: 20
     rearArmor: 16
-    underArmor: 12
+    underArmor: 16
     damageModifier:
       - 1.0 # None
       - 0.8 # Armor Piercing
-      - 0.4 # Incendiary
+      - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
+      - 0.5 # Laser
+      - 0.5 # Plasma
       - 1.2 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
@@ -2805,17 +2805,17 @@ armors:
     spriteInv: snakemanInventoryImage
     frontArmor: 24
     sideArmor: 24
-    rearArmor: 22
+    rearArmor: 20
     underArmor: 20
     damageModifier:
       - 1.0 # None
-      - 0.75 # Armor Piercing
-      - 0.4 # Incendiary
+      - 0.8 # Armor Piercing
+      - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
-      - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.5 # Laser
+      - 0.5 # Plasma
+      - 1.1 # Stun
+      - 1.1 # Melee
       - 0.4 # Acid
       - 2.2 # Smoke
 
@@ -2827,13 +2827,13 @@ armors:
     underArmor: 22
     damageModifier:
       - 1.0 # None
-      - 0.7 # Armor Piercing
-      - 0.4 # Incendiary
+      - 0.8 # Armor Piercing
+      - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
+      - 0.5 # Laser
+      - 0.5 # Plasma
       - 1.0 # Stun
-      - 0.8 # Melee
+      - 1.0 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
 
@@ -2978,7 +2978,7 @@ armors:
       - 0.8 # Plasma
       - 0.6 # Stun
       - 1.6 # Melee
-      - 1.5 # Acid
+      - 1.6 # Acid
       - 3.0 # Smoke
 
   - type: ETHEREAL_ARMOR1
@@ -2996,7 +2996,7 @@ armors:
       - 0.8 # Plasma
       - 0.6 # Stun
       - 1.5 # Melee
-      - 1.5 # Acid
+      - 1.4 # Acid
       - 3.5 # Smoke
 
   - type: ETHEREAL_ARMOR2
@@ -3007,14 +3007,14 @@ armors:
     underArmor: 48
     damageModifier:
       - 1.0 # None
-      - 1.25 # Armor Piercing
+      - 1.2 # Armor Piercing
       - 0.6 # Incendiary
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
       - 0.6 # Stun
       - 1.4 # Melee
-      - 1.5 # Acid
+      - 1.2 # Acid
       - 3.8 # Smoke
 
   - type: SECTOPOD_ARMOR
@@ -3025,14 +3025,14 @@ armors:
     underArmor: 90
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
-      - 1.0 # Incendiary
+      - 0.8 # Armor Piercing
+      - 0.8 # Incendiary
       - 0.8 # High Explosive
-      - 1.4 # Laser
-      - 0.8 # Plasma
+      - 2.0 # Laser
+      - 0.4 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
-      - 2.8 # Acid
+      - 2.4 # Acid
       - 0.0 # Smoke
 
   - type: CIVM_ARMOR
