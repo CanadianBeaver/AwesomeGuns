@@ -264,7 +264,7 @@ craftWeapons:
   - type: STR_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 280 #damage: 100
+    damage: 260 #damage: 100
     range: 45 #range: 60
     accuracy: 15 #accuracy: 80
     reloadCautious: 48
@@ -296,7 +296,7 @@ craftWeapons:
     sound: 4
     damage: 10
     range: 10
-    accuracy: 15 #accuracy: 25
+    accuracy: 18 #accuracy: 25
     reloadCautious: 2
     reloadStandard: 2
     reloadAggressive: 2
@@ -312,7 +312,7 @@ craftWeapons:
   - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 280 #damage: 100
+    damage: 260 #damage: 100
     range: 45 #range: 60
     accuracy: 40 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
@@ -345,7 +345,7 @@ craftWeapons:
     sound: 4
     damage: 15
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
-    accuracy: 35 #accuracy: 25
+    accuracy: 38 #accuracy: 25
     reloadCautious: 2
     reloadStandard: 2
     reloadAggressive: 2
@@ -3148,12 +3148,13 @@ research:
       - STR_ALLOY_CLIPS
       - STR_UFO_NAVIGATION
 
-  - name: STR_STORM_LAUNCHER
+  - name: STR_STORM_RESEARCH
     listOrder: 922
     cost: 400
     points: 20
     dependencies:
       - STR_ALLOY_ROCKETS
+      - STR_ACID_CLIPS
 
   - name: STR_PLASMA_CANNON
     cost: 660
@@ -3577,7 +3578,7 @@ manufacture:
     listOrder: 55
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_STORM_LAUNCHER
+      - STR_STORM_RESEARCH
     space: 6
     time: 1200
     cost: 95000
@@ -3589,7 +3590,7 @@ manufacture:
     listOrder: 56
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_STORM_LAUNCHER
+      - STR_STORM_RESEARCH
     space: 6
     time: 100
     cost: 28000
@@ -4125,7 +4126,7 @@ ufopaedia:
     listOrder: 755
     type_id: 2
     requires:
-      - STR_STORM_LAUNCHER
+      - STR_STORM_RESEARCH
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: STORM_UFOpaedia
     text: STR_STORM_UFOPEDIA
@@ -5498,6 +5499,7 @@ extraStrings:
       STR_PLASMA_BEAM_UFOPEDIA: "EVEN THOUGH THAT WE ARE UNABLE TO REPRODUCE ALIEN ARTIFACTS, OUR ENGINEERS HAVE FOUND A WAY TO PRODUCE PLASMA WEAPON FROM VARIOUS COMPONENTS FOR AIRCRAFTS."
 
       STR_STORM: "STORM"
+      STR_STORM_RESEARCH: "ACID Missile Launcher"
       STR_STORM_LAUNCHER: "Storm Missile Launcher"
       STR_STORM_MISSILES: "Storm Missile"
       STR_STORM_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH NUCLEAR WARHEAD BASED ON THE ALIEN ALLOYS TECHNOLOGY, SMALLER AND LIGHTER THAN AVALANCHE."
@@ -5535,9 +5537,10 @@ extraStrings:
       STR_PLASMA_BEAM_UFOPEDIA: "НЕСМОТРЯ НА ТО, ЧТО МЫ НЕ В СОСТОЯНИИ ВОСПРОИЗВОДИТЬ ИНОПЛАНЕТНЫЕ АРТЕФАКТЫ, НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
 
       STR_STORM: "ШТОРМ"
+      STR_STORM_RESEARCH: "Кислотная пусковая установка"
       STR_STORM_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_STORM_MISSILES: "Ракета \"Шторм\""
-      STR_STORM_UFOPEDIA: "УПРАВЛЯЕМАЯ РАКЕТА \"ШТОРМ\". ИСПОЛЬЗУЯ НОВЫЕ ТЕХНОЛОГИИ СТАЛО ВОЗМОЖНЫМ ПРОИЗВЕСТИ ОЧЕРЕДНОЕ УЛУЧШЕНИЕ РАКЕТ \"ЛАВИНА\" НА ДАЛЬНОСТЬ ПОЛЕТА И ТОЧНОСТЬ ПОРАЖЕНИЯ ЦЕЛЕЙ, А ТАКЖЕ НЕМНОГО УВЕЛИЧИТЬ МОЩНОСТЬ ЗАРЯДА."
+      STR_STORM_UFOPEDIA: "ИСПОЛЬЗУЯ НОВЫЕ ТЕХНОЛОГИИ СТАЛО ВОЗМОЖНЫМ ПРОИЗВЕСТИ ОЧЕРЕДНОЕ УЛУЧШЕНИЕ РАКЕТ \"ЛАВИНА\" НА ДАЛЬНОСТЬ ПОЛЕТА И ТОЧНОСТЬ ПОРАЖЕНИЯ ЦЕЛЕЙ, А ТАКЖЕ НЕМНОГО УВЕЛИЧИТЬ МОЩНОСТЬ ЗАРЯДА. ПОМИМО ЭТОГО, ИМЕЕТ БАЛОН С КИСЛОТОЙ, КОТОРЫЙ РАСПЫЛЯЕТСЯ ПРИ ПОПАДАНИИ В ЦЕЛЬ."
 
 # Fix the ALIEN CONTAINMENT
 
