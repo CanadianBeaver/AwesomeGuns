@@ -1722,7 +1722,7 @@ items:
   - type: STR_LASER_PISTOL
     size: 0.1
     costSell: 20000
-    weight: 8 #weight: 7
+    weight: 6 #weight: 7
     bigSprite: 5
     floorSprite: 5
     handSprite: 112
@@ -1754,7 +1754,7 @@ items:
   - type: STR_LASER_RIFLE
     size: 0.2
     costSell: 36900
-    weight: 12 #weight: 8
+    weight: 11 #weight: 8
     bigSprite: 0
     floorSprite: 0
     handSprite: 8
@@ -1787,7 +1787,7 @@ items:
   - type: STR_HEAVY_LASER
     size: 0.3
     costSell: 61000
-    weight: 18 #weight: 18
+    weight: 14 #weight: 18
     bigSprite: 6
     floorSprite: 6
     handSprite: 16
@@ -5013,6 +5013,13 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       1002: Resources/AwesomeGuns/Armors/MAN_2_Floorob.png
+  - type: XCOM_2.PCK
+    width: 1024
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/AwesomeGuns/Armors/MAN_2_Sheet.png
   - type: MAN_2M0.SPK
     singleImage: true
     files:
