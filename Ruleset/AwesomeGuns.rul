@@ -770,6 +770,18 @@ items:
   - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
   - delete: STR_HWP_FUSION_BOMB # alien technologies cannot be reproduced
 
+# Alien's Weapons
+
+  - type: CYBERDISC_WEAPON
+    fireSound: 8063 #fireSound: 18
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 86 #hitAnimation: 46
+
+  - type: SECTOPOD_WEAPON
+    fireSound: 8063 #fireSound: 18
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 86 #hitAnimation: 46
+
 # CONVENTIONAL weapons
 
   - type: STR_PISTOL
@@ -916,7 +928,7 @@ items:
       - STR_RIFLE_AL_CLIP
     accuracyAuto: 30 #accuracyAuto: 35
     accuracySnap: 60 #accuracySnap: 60
-    accuracyAimed: 85 #accuracyAimed: 110
+    accuracyAimed: 75 #accuracyAimed: 110
     tuAuto: 35 #tuAuto: 35
     tuSnap: 25 #tuSnap: 25
     tuAimed: 70 #tuAimed: 80
@@ -991,7 +1003,7 @@ items:
     tuAimed: 80
     battleType: 1
     twoHanded: true
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
     armor: 22
     maxRange: 52
@@ -1051,10 +1063,10 @@ items:
       - STR_ACID_RIFLE_CLIP
     accuracyAuto: 32
     accuracySnap: 62
-    accuracyAimed: 85
+    accuracyAimed: 78
     tuAuto: 25
     tuSnap: 25
-    tuAimed: 65
+    tuAimed: 80
     battleType: 1
     autoShots: 2
     twoHanded: true
@@ -1099,7 +1111,7 @@ items:
     bulletSpeed: 3
     hitSound: 8013
     hitAnimation: 76
-    power: 54
+    power: 50
     damageType: 8
     clipSize: 15
     battleType: 2
@@ -1140,7 +1152,7 @@ items:
     listOrder: 2227
     size: 0.05
     costSell: 1200
-    weight: 5
+    weight: 3
     bigSprite: 551
     floorSprite: 551
     handSprite: 352
@@ -1157,14 +1169,14 @@ items:
     listOrder: 2227
     size: 0.05
     costSell: 1200
-    weight: 5
+    weight: 3
     bigSprite: 552
     floorSprite: 551
     handSprite: 352
     bulletSpeed: 5
     hitSound: 8013
     hitAnimation: 76
-    power: 84
+    power: 80
     damageType: 8
     clipSize: 2
     battleType: 2
@@ -1217,7 +1229,7 @@ items:
     bulletSpeed: 0
     hitSound: 8022
     hitAnimation: 26
-    power: 22
+    power: 28
     damageType: 1
     clipSize: 4
     shotgunPellets: 5
@@ -1235,10 +1247,10 @@ items:
     bulletSpeed: 0
     hitSound: 8022
     hitAnimation: 56
-    power: 36
+    power: 42
     damageType: 1
     clipSize: 6
-    shotgunPellets: 5
+    shotgunPellets: 6
     battleType: 2
     armor: 14
 
@@ -1285,10 +1297,10 @@ items:
     fireSound: 8027
     hitSound: 8022 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
-    power: 56
+    power: 52
     damageType: 1
     clipSize: 6
-    shotgunPellets: 3
+    shotgunPellets: 5
     battleType: 2
     invWidth: 2
     invHeight: 1
@@ -1375,10 +1387,10 @@ items:
     handSprite: 288
     hitSound: 8022 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
-    power: 22 #power: 42
+    power: 40 #power: 42
     damageType: 1
     clipSize: 14
-    shotgunPellets: 3
+    shotgunPellets: 4
     battleType: 2
     invWidth: 2
     invHeight: 1
@@ -1519,7 +1531,7 @@ items:
     size: 0.4
     costBuy: 4000
     costSell: 3000
-    weight: 12
+    weight: 10
     bigSprite: 15
     floorSprite: 15
     handSprite: 72
@@ -1709,14 +1721,14 @@ items:
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 40 #power: 46
+    power: 48 #power: 46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
-    accuracySnap: 50 #accuracySnap: 40
-    accuracyAimed: 68
+    accuracySnap: 80 #accuracySnap: 40
+    accuracyAimed: 85 #accuracyAimed: 68
     tuAuto: 0 #tuAuto: 25
-    tuSnap: 20 #tuSnap: 20
-    tuAimed: 33 #tuAimed: 55
+    tuSnap: 40 #tuSnap: 20
+    tuAimed: 50 #tuAimed: 55
     clipSize: -1
     battleType: 1
     invWidth: 1
@@ -1741,14 +1753,14 @@ items:
     fireSound: 8052 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 56 #power: 60
+    power: 62 #power: 60
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
-    accuracySnap: 60 #accuracySnap: 65
+    accuracySnap: 80 #accuracySnap: 65
     accuracyAimed: 85 #accuracyAimed: 100
     tuAuto: 0 #tuAuto: 34
-    tuSnap: 24 #tuSnap: 25
-    tuAimed: 68 #tuAimed: 50
+    tuSnap: 40 #tuSnap: 25
+    tuAimed: 60 #tuAimed: 50
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -1774,7 +1786,7 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 65 #power: 85
+    power: 70 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 65 #accuracySnap: 50
@@ -2686,14 +2698,14 @@ armors:
     underArmor: 34
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.75 # Incendiary
+      - 0.7 # Armor Piercing
+      - 0.8 # Incendiary
       - 0.4 # High Explosive
       - 0.6 # Laser
       - 0.6 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
-      - 2.2 # Acid
+      - 1.8 # Acid
       - 0.0 # Smoke
 
   - type: FLOATER_ARMOR0
@@ -3017,7 +3029,7 @@ armors:
       - 0.8 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
-      - 3.8 # Acid
+      - 2.8 # Acid
       - 0.0 # Smoke
 
   - type: CIVM_ARMOR
