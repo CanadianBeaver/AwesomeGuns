@@ -605,6 +605,16 @@ items:
     armor: 40
     recover: false
 
+  - type: STR_POWER_CORPSE_SUIT
+    name: STR_CORPSE
+    weight: 42 #weight: 26
+    bigSprite: 1002
+    floorSprite: 1002
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recover: false
+
   - type: STR_POWER_SUIT
     size: 1
     costSell: 85000
@@ -2592,7 +2602,7 @@ armors:
     spriteSheet: XCOM_2.PCK
     spriteInv: MAN_2
     corpseBattle:
-      - STR_CORPSE_SUIT
+      - STR_POWER_CORPSE_SUIT
     storeItem: STR_POWER_SUIT
     weight: 20
     stats:
@@ -4983,38 +4993,44 @@ extraSprites:
 
 # Restyling images of Power and Flying Suits for inventory (remove helms)
 
+  - type: BIGOBS.PCK
+    files:
+      1002: Resources/AwesomeGuns/Armors/MAN_2_Corpse.png
+  - type: FLOOROB.PCK
+    files:
+      1002: Resources/AwesomeGuns/Armors/MAN_2_Floorob.png
   - type: MAN_2M0.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M0.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M0.png
   - type: MAN_2M1.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M1.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M1.png
   - type: MAN_2M2.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M2.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M2.png
   - type: MAN_2M3.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M3.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2M3.png
   - type: MAN_2F0.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F0.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F0.png
   - type: MAN_2F1.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F1.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F1.png
   - type: MAN_2F2.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F2.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F2.png
   - type: MAN_2F3.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F3.gif
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_2F3.png
   - type: MAN_3M0.SPK
     singleImage: true
     files:
