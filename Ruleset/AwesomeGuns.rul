@@ -4058,6 +4058,20 @@ manufacture:
 
 ufopaedia:
 
+# Facilities order
+  - id: STR_HANGAR
+    listOrder: 6125
+  - id: STR_GENERAL_STORES
+    listOrder: 6150
+  - id: STR_HYPER_WAVE_DECODER
+    listOrder: 6650
+  - id: STR_LASER_DEFENSES
+    listOrder: 6750
+  - id: STR_GRAV_SHIELD
+    listOrder: 6775
+  - id: STR_MIND_SHIELD
+    listOrder: 6776
+
 # Crafts
 
   - id: STR_RAVEN # new improved interceptor
