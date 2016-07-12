@@ -1812,7 +1812,7 @@ items:
 
   - type: STR_PLASMA_PISTOL
     requires:
-      - STR_PLASMA_WEAPONS #- STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL
     size: 0.1
     costSell: 84000
     weight: 5 #weight: 3
@@ -1844,7 +1844,8 @@ items:
 
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
-      - STR_PLASMA_WEAPONS #- STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ELERIUM_115
     size: 0.1
     costSell: 4440
     weight: 3
@@ -1896,6 +1897,7 @@ items:
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
       - STR_PLASMA_WEAPONS #- STR_PLASMA_RIFLE_CLIP
+      - STR_ELERIUM_115
     size: 0.1
     costSell: 6290
     weight: 3
@@ -1947,6 +1949,7 @@ items:
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_PLASMA_WEAPONS #- STR_HEAVY_PLASMA_CLIP
+      - STR_ELERIUM_115
     size: 0.3
     costSell: 9590
     weight: 3
@@ -3160,8 +3163,10 @@ research:
     cost: 660
     points: 25
     dependencies:
-      - STR_PLASMA_WEAPONS
+      - STR_ELERIUM_115
       - STR_UFO_NAVIGATION
+      - STR_PLASMA_WEAPONS
+      - STR_HEAVY_PLASMA_CLIP
   - delete: STR_PLASMA_CANNON_DEP1
   - delete: STR_PLASMA_CANNON_DEP2
 
@@ -3359,54 +3364,40 @@ research:
     cost: 600
     points: 20
     needItem: true
-    dependencies:
-      - STR_PLASMA_PISTOL_CLIP
 
   - name: STR_PLASMA_PISTOL_CLIP
     cost: 400
     points: 5
     needItem: true
-    dependencies:
-      - STR_ALIEN_ALLOYS
-      - STR_ELERIUM_115
 
   - name: STR_PLASMA_RIFLE
     cost: 700
     points: 25
     needItem: true
-    dependencies:
-      - STR_PLASMA_RIFLE_CLIP
-      - STR_PLASMA_PISTOL
 
   - name: STR_PLASMA_RIFLE_CLIP
     cost: 400
     points: 6
     needItem: true
-    dependencies:
-      - STR_PLASMA_PISTOL_CLIP
 
   - name: STR_HEAVY_PLASMA
     cost: 800
     points: 30
     needItem: true
-    dependencies:
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_PLASMA_RIFLE
 
   - name: STR_HEAVY_PLASMA_CLIP
     cost: 400
     points: 7
     needItem: true
-    dependencies:
-      - STR_PLASMA_RIFLE_CLIP
 
   - name: STR_PLASMA_WEAPONS
     listOrder: 101
     cost: 600
     points: 25
     dependencies:
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
-      - STR_HEAVY_PLASMA_CLIP
 
   - name: STR_ALIEN_GRENADE
     cost: 200
