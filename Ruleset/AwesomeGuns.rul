@@ -104,15 +104,15 @@ facilities:
     buildCost: 350000 #buildCost: 500000
     buildTime: 8 #buildTime: 12
     monthlyCost: 10000
-    radarRange: 1500
-    radarChance: 35 #radarChance: 10
+    radarRange: 1300 #radarRange: 1500
+    radarChance: 36 #radarChance: 10
 
   - type: STR_LARGE_RADAR_SYSTEM
     buildCost: 600000 #buildCost: 800000
     buildTime: 18 #buildTime: 25
     monthlyCost: 35000 #monthlyCost: 15000
-    radarRange: 2300 #radarRange: 2250
-    radarChance: 5 #radarChance: 20
+    radarRange: 2275 #radarRange: 2250
+    radarChance: 12.5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
     requires:
@@ -391,7 +391,7 @@ craftWeapons:
   - type: STR_PLASMA_BEAM_UC
     sprite: 3 #sprite: 5
     sound: 9
-    damage: 80 #damage: 140
+    damage: 90 #damage: 140
     range: 40 #range: 52 (42 is used by STR_TERROR_SHIP)
     accuracy: 50
     reloadCautious: 13 #reloadCautious: 12
@@ -953,9 +953,9 @@ items:
     autoRange: 10
     minRange: 2
     dropoff: 2
-    meleePower: 50
-    tuMelee: 40
-    accuracyMelee: 125
+    meleePower: 75
+    tuMelee: 30
+    accuracyMelee: 175
 
   - type: STR_RIFLE_CLIP
     size: 0.075 #size: 0.1
@@ -1089,8 +1089,8 @@ items:
     autoRange: 12
     minRange: 2
     dropoff: 2
-    meleePower: 60
-    tuMelee: 45
+    meleePower: 65
+    tuMelee: 30
     accuracyMelee: 150
 
   - type: STR_ALLOY_RIFLE_CLIP # new item
@@ -1142,7 +1142,7 @@ items:
       - STR_ACID_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 120
+    accuracyAimed: 99
     tuAuto: 0
     tuSnap: 0
     tuAimed: 99
@@ -1223,7 +1223,7 @@ items:
     autoRange: 0
     minRange: 0
     dropoff: 4
-    meleePower: 70
+    meleePower: 75
     tuMelee: 30
     accuracyMelee: 175
 
@@ -1282,8 +1282,8 @@ items:
     accuracySnap: 60
     accuracyAimed: 90
     tuAuto: 0
-    tuSnap: 35 #tuSnap: 33
-    tuAimed: 85 #tuAimed: 80
+    tuSnap: 33 #tuSnap: 33
+    tuAimed: 80 #tuAimed: 80
     battleType: 1
     twoHanded: true
     invWidth: 1
@@ -1462,7 +1462,7 @@ items:
       - STR_GL_I_AMMO
       - STR_GL_S_AMMO
     accuracyAuto: 0
-    accuracySnap: 44
+    accuracySnap: 33
     accuracyAimed: 66
     tuAuto: 0
     tuSnap: 33
@@ -1801,7 +1801,7 @@ items:
     accuracyAuto: 0
     accuracySnap: 75 #accuracySnap: 50
     accuracyAimed: 0 #accuracyAimed: 84
-    tuSnap: 50 #tuSnap: 33
+    tuSnap: 34 #tuSnap: 33
     tuAimed: 0 #tuAimed: 75
     tuAuto: 0
     clipSize: -1
@@ -1991,7 +1991,7 @@ items:
       - STR_RAILGUN_SLUGS
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 125
+    accuracyAimed: 100
     tuAuto: 0
     tuSnap: 0
     tuAimed: 95
@@ -2606,7 +2606,7 @@ armors:
     storeItem: STR_POWER_SUIT
     weight: 20
     stats:
-      tu: 10
+      tu: 15
       stamina: -15
       reactions: 10
       firing: 10
@@ -2647,7 +2647,7 @@ armors:
       - 0.6 # Armor Piercing
       - 0.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.6 # Laser
+      - 0.5 # Laser
       - 1.0 # Plasma
       - 0.7 # Stun
       - 1.0 # Melee
@@ -3581,7 +3581,7 @@ manufacture:
     requires:
       - STR_STORM_RESEARCH
     space: 6
-    time: 1200
+    time: 2000
     cost: 95000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
@@ -3605,7 +3605,7 @@ manufacture:
     requires:
       - STR_LASER_CANNON
     space: 6
-    time: 1500 #time: 300
+    time: 1800 #time: 300
     cost: 182000
     requiredItems:
       STR_UFO_NAVIGATION: 1
@@ -3617,7 +3617,7 @@ manufacture:
     requires:
       - STR_PLASMA_CANNON
     space: 8
-    time: 1000 #time: 500
+    time: 3250 #time: 500
     cost: 226000
     requiredItems:
       STR_UFO_NAVIGATION: 1
@@ -5479,6 +5479,16 @@ extraStrings:
   - type: ru
     strings:
       STR_QUICK_DRAW: "КОБУРА"
+
+# Radar facilities
+  - type: en
+    strings:
+      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1300 nautical miles and is linked to satellite systems for ground search. Each system has a 36% chance of detecting an average sized object every 10 minutes."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2275 nautical miles and is linked to satellite systems for ground search. Each system has a 12.5% chance of detecting an average sized object every 10 minutes."
+  - type: ru
+    strings:
+      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1300 километров и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 36% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия 2275 километров и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 12.5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
 
 # Raven - new improved interceptor
   - type: en
