@@ -1073,7 +1073,7 @@ items:
       - STR_ACID_RIFLE_CLIP
     accuracyAuto: 32
     accuracySnap: 62
-    accuracyAimed: 78
+    accuracyAimed: 80
     tuAuto: 25
     tuSnap: 25
     tuAimed: 80
@@ -1734,8 +1734,8 @@ items:
     power: 48 #power: 46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
-    accuracySnap: 80 #accuracySnap: 40
-    accuracyAimed: 85 #accuracyAimed: 68
+    accuracySnap: 70 #accuracySnap: 40
+    accuracyAimed: 80 #accuracyAimed: 68
     tuAuto: 0 #tuAuto: 25
     tuSnap: 40 #tuSnap: 20
     tuAimed: 50 #tuAimed: 55
@@ -1767,7 +1767,7 @@ items:
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
     accuracySnap: 80 #accuracySnap: 65
-    accuracyAimed: 85 #accuracyAimed: 100
+    accuracyAimed: 100 #accuracyAimed: 100
     tuAuto: 0 #tuAuto: 34
     tuSnap: 40 #tuSnap: 25
     tuAimed: 60 #tuAimed: 50
@@ -1799,7 +1799,7 @@ items:
     power: 70 #power: 85
     damageType: 4
     accuracyAuto: 0
-    accuracySnap: 65 #accuracySnap: 50
+    accuracySnap: 75 #accuracySnap: 50
     accuracyAimed: 0 #accuracyAimed: 84
     tuSnap: 50 #tuSnap: 33
     tuAimed: 0 #tuAimed: 75
@@ -1836,7 +1836,7 @@ items:
       - STR_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
     accuracySnap: 65
-    accuracyAimed: 85
+    accuracyAimed: 80 #accuracyAimed: 85
     tuAuto: 40 #tuAuto: 30
     tuSnap: 30
     tuAimed: 60
@@ -1886,7 +1886,7 @@ items:
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
     accuracyAuto: 50 #accuracyAuto: 55
-    accuracySnap: 73 #accuracySnap: 86
+    accuracySnap: 74 #accuracySnap: 86
     accuracyAimed: 93 #accuracyAimed: 100
     tuAuto: 40 #tuAuto: 36
     tuSnap: 30
@@ -1938,7 +1938,7 @@ items:
     compatibleAmmo:
       - STR_HEAVY_PLASMA_CLIP
     accuracyAuto: 50
-    accuracySnap: 67 #accuracySnap: 75
+    accuracySnap: 69 #accuracySnap: 75
     accuracyAimed: 87 #accuracyAimed: 110
     tuAuto: 40 #tuAuto: 35
     tuSnap: 30
