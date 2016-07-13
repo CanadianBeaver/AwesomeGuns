@@ -3531,7 +3531,7 @@ research:
     listOrder: 4450
     cost: 180
     points: 10
-    STR_STUN_BOMB:
+    dependencies:
       - STR_STUN_BOMB
 
 # Armors
