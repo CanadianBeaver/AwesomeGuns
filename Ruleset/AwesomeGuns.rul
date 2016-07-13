@@ -266,7 +266,7 @@ craftWeapons:
     sound: 14 #sound: 5
     damage: 230 #damage: 100
     range: 45 #range: 60
-    accuracy: 15 #accuracy: 80
+    accuracy: 10 #accuracy: 80
     reloadCautious: 48
     reloadStandard: 36
     reloadAggressive: 24
@@ -345,7 +345,7 @@ craftWeapons:
     sound: 4
     damage: 15
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
-    accuracy: 38 #accuracy: 25
+    accuracy: 36 #accuracy: 25
     reloadCautious: 2
     reloadStandard: 2
     reloadAggressive: 2
@@ -361,12 +361,12 @@ craftWeapons:
   - type: STR_STORM # new improved launcher
     sprite: 11
     sound: 15
-    damage: 260
+    damage: 290
     range: 65 # (65 is used by STR_BATTLESHIP)
-    accuracy: 80
-    reloadCautious: 40
-    reloadStandard: 30
-    reloadAggressive: 20
+    accuracy: 120
+    reloadCautious: 36
+    reloadStandard: 27
+    reloadAggressive: 18
     ammoMax: 2
     launcher: STR_STORM_LAUNCHER
     clip: STR_STORM_MISSILES
@@ -3584,7 +3584,6 @@ manufacture:
     time: 1200
     cost: 95000
     requiredItems:
-      STR_UFO_NAVIGATION: 1
       STR_ALIEN_ALLOYS: 10
 
   - name: STR_STORM_MISSILES # missiles for new improved launcher
@@ -3596,6 +3595,7 @@ manufacture:
     time: 100
     cost: 28000
     requiredItems:
+      STR_UFO_NAVIGATION: 1
       STR_ALIEN_ALLOYS: 2
       STR_AVALANCHE_MISSILES: 1
 
@@ -5544,7 +5544,7 @@ extraStrings:
       STR_STINGRAY_UFOPEDIA: "ПЕРЕДОВАЯ РАКЕТА КЛАССА ВОЗДУХ-ВОЗДУХ СО СПЕЦИАЛЬНО ЭКРАНИРОВАННЫМИ ЭЛЕКТРОННЫМИ СИСТЕМАМИ."
       STR_ALLOY_STINGRAY: "БАРРАКУДА"
       STR_ALLOY_STINGRAY_LAUNCHER: "Пусковая установка \"Барракуда\""
-      STR_ALLOY_STINGRAY_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА ДЛЯ РАКЕТ СКАТ."
+      STR_ALLOY_STINGRAY_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА И ЦЕЛЕУКАЗАТЕЛЬ ДЛЯ РАКЕТ СКАТ."
 
       STR_AVALANCHE: "ЛАВИНА"
       STR_AVALANCHE_LAUNCHER: "Пусковая установка \"Лавина\""
@@ -5552,7 +5552,7 @@ extraStrings:
       STR_AVALANCHE_UFOPEDIA: "РАКЕТА КЛАССА ВОЗДУХ-ВОЗДУХ С ЯДЕРНОЙ БОЕГОЛОВКОЙ. ОТЛИЧАЕТСЯ КРАЙНЕ МЕДЛЕННОЙ ПЕРЕЗАРЯДКОЙ."
       STR_ALLOY_AVALANCHE: "ТОРНАДО"
       STR_ALLOY_AVALANCHE_LAUNCHER: "Пусковая установка \"Торнадо\""
-      STR_ALLOY_AVALANCHE_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА ДЛЯ РАКЕТ ЛАВИНА."
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "УЛУЧШЕННАЯ ПУСКОВАЯ УСТАНОВКА И ЦЕЛЕУКАЗАТЕЛЬ ДЛЯ РАКЕТ ЛАВИНА."
 
       STR_CANNON_UC: "АВИАПУШКА"
       STR_CANNON: "Авиапушка"
@@ -5568,7 +5568,7 @@ extraStrings:
       STR_STORM_RESEARCH: "Кислотная пусковая установка"
       STR_STORM_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_STORM_MISSILES: "Ракета \"Шторм\""
-      STR_STORM_UFOPEDIA: "ИСПОЛЬЗУЯ НОВЫЕ ТЕХНОЛОГИИ СТАЛО ВОЗМОЖНЫМ ПРОИЗВЕСТИ ОЧЕРЕДНОЕ УЛУЧШЕНИЕ РАКЕТ \"ЛАВИНА\" НА ДАЛЬНОСТЬ ПОЛЕТА И ТОЧНОСТЬ ПОРАЖЕНИЯ ЦЕЛЕЙ, А ТАКЖЕ НЕМНОГО УВЕЛИЧИТЬ МОЩНОСТЬ ЗАРЯДА. ПОМИМО ЭТОГО, ИМЕЕТ БАЛОН С КИСЛОТОЙ, КОТОРЫЙ РАСПЫЛЯЕТСЯ ПРИ ПОПАДАНИИ В ЦЕЛЬ."
+      STR_STORM_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ КОМПЛЕКСА \"ЛАВИНА\" СО ВСТРОЕННЫМ В РАКЕТУ ЦЕЛЕУКАЗАТЕЛЕМ И КОНТЕЙНЕРОМ С КИСЛОТОЙ."
 
 # Fix the ALIEN CONTAINMENT
 
