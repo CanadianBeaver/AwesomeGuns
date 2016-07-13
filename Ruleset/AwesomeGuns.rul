@@ -358,7 +358,7 @@ craftWeapons:
 
 # New
 
-  - type: STR_STORM # new improved launcher
+  - type: STR_STORM_UC # new ACID launcher
     sprite: 11
     sound: 15
     damage: 290
@@ -1169,7 +1169,7 @@ items:
     bulletSpeed: 5
     hitSound: 8018
     hitAnimation: 66
-    power: 82
+    power: 88
     damageType: 1
     clipSize: 2
     battleType: 2
@@ -3576,7 +3576,7 @@ manufacture:
 
 # Craft Weapons - New
 
-  - name: STR_STORM_LAUNCHER # new improved launcher
+  - name: STR_STORM_LAUNCHER # new ACID launcher
     listOrder: 55
     category: STR_CRAFT_WEAPON
     requires:
@@ -3587,7 +3587,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 10
 
-  - name: STR_STORM_MISSILES # missiles for new improved launcher
+  - name: STR_STORM_MISSILES # missiles for new ACID launcher
     listOrder: 56
     category: STR_CRAFT_AMMUNITION
     requires:
@@ -4138,7 +4138,7 @@ ufopaedia:
     image_id: ALLOY_CANNON_UFOpaedia
     text: STR_ALLOY_CANNON_UFOPEDIA
 
-  - id: STR_STORM # new improved launcher
+  - id: STR_STORM_UC # new ACID launcher
     listOrder: 755
     type_id: 2
     requires:
@@ -5537,7 +5537,7 @@ extraStrings:
 
       STR_PLASMA_BEAM_UFOPEDIA: "EVEN THOUGH THAT WE ARE UNABLE TO REPRODUCE ALIEN ARTIFACTS, OUR ENGINEERS HAVE FOUND A WAY TO PRODUCE PLASMA WEAPON FROM VARIOUS COMPONENTS FOR AIRCRAFTS."
 
-      STR_STORM: "STORM"
+      STR_STORM_UC: "STORM"
       STR_STORM_RESEARCH: "ACID Missile Launcher"
       STR_STORM_LAUNCHER: "Storm Missile Launcher"
       STR_STORM_MISSILES: "Storm Missile"
@@ -5575,7 +5575,7 @@ extraStrings:
 
       STR_PLASMA_BEAM_UFOPEDIA: "НЕСМОТРЯ НА ТО, ЧТО МЫ НЕ В СОСТОЯНИИ ВОСПРОИЗВОДИТЬ ИНОПЛАНЕТНЫЕ АРТЕФАКТЫ, НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
 
-      STR_STORM: "ШТОРМ"
+      STR_STORM_UC: "ШТОРМ"
       STR_STORM_RESEARCH: "Кислотная пусковая установка"
       STR_STORM_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_STORM_MISSILES: "Ракета \"Шторм\""
