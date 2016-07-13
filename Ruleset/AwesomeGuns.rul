@@ -264,8 +264,8 @@ craftWeapons:
   - type: STR_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 230 #damage: 100
-    range: 45 #range: 60
+    damage: 160 #damage: 100
+    range: 42 #range: 60 (42 is used by STR_TERROR_SHIP)
     accuracy: 10 #accuracy: 80
     reloadCautious: 48
     reloadStandard: 36
@@ -280,7 +280,7 @@ craftWeapons:
     sprite: 0
     sound: 5
     damage: 40 #damage: 70
-    range: 25 #range: 30
+    range: 20 #range: 30 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 20 #accuracy: 70
     reloadCautious: 32
     reloadStandard: 24
@@ -312,8 +312,8 @@ craftWeapons:
   - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 230 #damage: 100
-    range: 45 #range: 60
+    damage: 160 #damage: 100
+    range: 42 #range: 60
     accuracy: 40 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
     reloadStandard: 30 #reloadStandard: 36
@@ -329,7 +329,7 @@ craftWeapons:
     sprite: 0
     sound: 5
     damage: 40 #damage: 70
-    range: 25 #range: 30
+    range: 20 #range: 30
     accuracy: 50 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
     reloadStandard: 18 #reloadStandard: 24
@@ -343,7 +343,7 @@ craftWeapons:
   - type: STR_ALLOY_CANNON_UC
     sprite: 2
     sound: 4
-    damage: 15
+    damage: 12
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
     accuracy: 36 #accuracy: 25
     reloadCautious: 2
@@ -358,32 +358,16 @@ craftWeapons:
 
 # New
 
-  - type: STR_STORM_UC # new ACID launcher
-    sprite: 11
-    sound: 15
-    damage: 290
-    range: 65 # (65 is used by STR_BATTLESHIP)
-    accuracy: 120
-    reloadCautious: 36
-    reloadStandard: 27
-    reloadAggressive: 18
-    ammoMax: 2
-    launcher: STR_STORM_LAUNCHER
-    clip: STR_STORM_MISSILES
-    rearmRate: 2
-    projectileType: 1
-    projectileSpeed: 14
-
   - type: STR_LASER_CANNON_UC
     sprite: 4
     sound: 8
-    damage: 60 #damage: 70
-    range: 21 # (22 is used by STR_HARVESTER)
+    damage: 50 #damage: 70
+    range: 18 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 75 #accuracy: 35
     reloadCautious: 10 #reloadCautious: 12
     reloadStandard: 10 #reloadStandard: 12
     reloadAggressive: 10 #reloadAggressive: 12
-    ammoMax: 20 #ammoMax: 100
+    ammoMax: 25 #ammoMax: 100
     rearmRate: 4 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
@@ -391,7 +375,7 @@ craftWeapons:
   - type: STR_PLASMA_BEAM_UC
     sprite: 3 #sprite: 5
     sound: 9
-    damage: 90 #damage: 140
+    damage: 80 #damage: 140
     range: 40 #range: 52 (42 is used by STR_TERROR_SHIP)
     accuracy: 50
     reloadCautious: 13 #reloadCautious: 12
@@ -403,7 +387,20 @@ craftWeapons:
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
 
-  - delete: STR_FUSION_BALL_UC # alien technologies cannot be reproduced
+  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade
+    sprite: 11 #sprite: 3
+    sound: 15 #sound: 7
+    damage: 230
+    range: 65 # (65 is used by STR_BATTLESHIP)
+    accuracy: 90 #accuracy: 100
+    reloadCautious: 36 #reloadCautious: 32
+    reloadStandard: 26 #reloadStandard: 24
+    reloadAggressive: 16 #reloadAggressive: 16
+    ammoMax: 2
+    launcher: STR_FUSION_BALL_LAUNCHER
+    clip: STR_FUSION_BALL
+    projectileType: 1 #projectileType: 3
+    projectileSpeed: 14 #projectileSpeed: 8
 
 
 
@@ -468,19 +465,6 @@ items:
     costSell: 36000
     transferTime: 48
 
-  - type: STR_STORM_LAUNCHER
-    listOrder: 401
-    size: 1
-    costSell: 182000
-    transferTime: 48
-
-  - type: STR_STORM_MISSILES
-    listOrder: 402
-    size: 0.5
-    costSell: 12000
-    transferTime: 48
-    clipSize: 1
-
   - type: STR_LASER_CANNON
     size: 2.0
     costSell: 211000
@@ -491,9 +475,16 @@ items:
     costSell: 267300
     transferTime: 48
 
-  - delete: STR_FUSION_BALL_LAUNCHER # alien technologies cannot be reproduced
+  - type: STR_FUSION_BALL_LAUNCHER # AVALANCHE upgrade launcher
+    size: 2.0
+    costSell: 281000
+    transferTime: 48
 
-  - delete: STR_FUSION_BALL # alien technologies cannot be reproduced
+  - type: STR_FUSION_BALL # AVALANCHE upgrade missile
+    size: 0.6
+    costSell: 53300
+    transferTime: 48
+    clipSize: 1
 
 # Standard armors
 
@@ -1855,7 +1846,6 @@ items:
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
       - STR_PLASMA_PISTOL_CLIP
-      - STR_ELERIUM_115
     size: 0.1
     costSell: 4440
     weight: 3
@@ -1873,7 +1863,7 @@ items:
 
   - type: STR_PLASMA_RIFLE
     requires:
-      - STR_PLASMA_WEAPONS #- STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE
     size: 0.2
     costSell: 126500
     weight: 14 #weight: 5
@@ -1906,8 +1896,7 @@ items:
 
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
-      - STR_PLASMA_WEAPONS #- STR_PLASMA_RIFLE_CLIP
-      - STR_ELERIUM_115
+      - STR_PLASMA_RIFLE_CLIP
     size: 0.1
     costSell: 6290
     weight: 3
@@ -1925,7 +1914,7 @@ items:
 
   - type: STR_HEAVY_PLASMA
     requires:
-      - STR_PLASMA_WEAPONS #- STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA
     size: 0.2
     costSell: 171600
     weight: 20 #weight: 8
@@ -1958,8 +1947,7 @@ items:
 
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
-      - STR_PLASMA_WEAPONS #- STR_HEAVY_PLASMA_CLIP
-      - STR_ELERIUM_115
+      - STR_HEAVY_PLASMA_CLIP
     size: 0.3
     costSell: 9590
     weight: 3
@@ -2029,6 +2017,7 @@ items:
   - type: STR_BLASTER_LAUNCHER
     requires:
       - STR_BLASTER_LAUNCHER
+      - STR_ALIENS_ONLY
     size: 0.3
     costSell: 144000
     weight: 24 #weight: 16
@@ -2059,6 +2048,7 @@ items:
   - type: STR_BLASTER_BOMB
     requires:
       - STR_BLASTER_BOMB
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 17028
     weight: 4 #weight: 3
@@ -2222,7 +2212,7 @@ items:
   - type: STR_STUN_ROD
     size: 0.1
     costBuy: 0 #costBuy: 1260 - we will manufacture it
-    costSell: 48400 #costSell: 945
+    costSell: 48000 #costSell: 945
     weight: 8 #weight: 6
     bigSprite: 26
     floorSprite: 26
@@ -3143,7 +3133,7 @@ research:
       - STR_UFO_POWER_SOURCE
       - STR_IMPROVED_INTERCEPTOR
 
-# Craft weapons
+# Craft alloy weapons
 
   - name: STR_ALLOY_ROCKETS
     listOrder: 920
@@ -3160,25 +3150,6 @@ research:
     dependencies:
       - STR_ALLOY_CLIPS
       - STR_UFO_NAVIGATION
-
-  - name: STR_STORM_RESEARCH
-    listOrder: 922
-    cost: 400
-    points: 20
-    dependencies:
-      - STR_ALLOY_ROCKETS
-      - STR_ACID_CLIPS
-
-  - name: STR_PLASMA_CANNON
-    cost: 660
-    points: 25
-    dependencies:
-      - STR_ELERIUM_115
-      - STR_UFO_NAVIGATION
-      - STR_PLASMA_WEAPONS
-      - STR_HEAVY_PLASMA_CLIP
-  - delete: STR_PLASMA_CANNON_DEP1
-  - delete: STR_PLASMA_CANNON_DEP2
 
 # New weapons and ammo from ALIEN ALLOYS
 
@@ -3294,12 +3265,12 @@ research:
 # Fix the ALIEN CONTAINMENT
 
   - name: STR_ALIEN_ENTERTAINMENT
-    cost: 75 #cost: 150
+    cost: 90 #cost: 150
     points: 15 #points: 30
     needItem: true
 
   - name: STR_ALIEN_FOOD
-    cost: 75 #cost: 150
+    cost: 90 #cost: 150
     points: 15 #points: 30
     needItem: true
 
@@ -3336,19 +3307,15 @@ research:
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-  - name: STR_SNAKEMAN_AUTOPSY
-    unlocks:
-      - STR_ALIEN_BIOLOGY
-
   - name: STR_FLOATER_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-  - name: STR_MUTON_AUTOPSY
+  - name: STR_REAPER_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-  - name: STR_ETHEREAL_AUTOPSY
+  - name: STR_SNAKEMAN_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
 
@@ -3356,7 +3323,7 @@ research:
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-  - name: STR_REAPER_AUTOPSY
+  - name: STR_MUTON_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
 
@@ -3368,92 +3335,182 @@ research:
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-# Aliens' technologies
+  - name: STR_ETHEREAL_AUTOPSY
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+
+# PLASMA weapons and Aliens' technologies
+
+  - name: STR_SECTOID_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_ALIEN_GRENADE
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_FLOATER_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_ALIEN_GRENADE
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_SNAKEMAN_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_ALIEN_GRENADE
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_MUTON_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_ALIEN_GRENADE
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_ETHEREAL_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PSI_LAB
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_ALIEN_GRENADE
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
 
   - name: STR_PLASMA_PISTOL
     cost: 600
     points: 20
     needItem: true
+    dependencies:
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_PLASMA_PISTOL_CLIP
     cost: 400
     points: 5
     needItem: true
+    dependencies:
+      - STR_PLASMA_PISTOL
 
   - name: STR_PLASMA_RIFLE
     cost: 700
     points: 25
     needItem: true
+    dependencies:
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_PLASMA_RIFLE_CLIP
     cost: 400
     points: 6
     needItem: true
+    dependencies:
+      - STR_PLASMA_RIFLE
 
   - name: STR_HEAVY_PLASMA
     cost: 800
     points: 30
     needItem: true
+    dependencies:
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_HEAVY_PLASMA_CLIP
     cost: 400
     points: 7
     needItem: true
+    dependencies:
+      - STR_HEAVY_PLASMA
 
-  - name: STR_PLASMA_WEAPONS
-    listOrder: 101
-    cost: 600
+  - name: STR_PLASMA_CANNON
+    cost: 660
     points: 25
     dependencies:
-      - STR_PLASMA_PISTOL
+      - STR_ELERIUM_115
+      - STR_UFO_NAVIGATION
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+  - delete: STR_PLASMA_CANNON_DEP1
+  - delete: STR_PLASMA_CANNON_DEP2
 
   - name: STR_ALIEN_GRENADE
     cost: 200
     points: 20
     needItem: true
     dependencies:
-      - STR_ELERIUM_115
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_BLASTER_LAUNCHER
     cost: 900
     points: 10
     needItem: true
     dependencies:
-      - STR_PLASMA_WEAPONS
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_BLASTER_BOMB
     cost: 300
     points: 10
     needItem: true
     dependencies:
-      - STR_PLASMA_WEAPONS
+      - STR_BLASTER_LAUNCHER
 
-  - delete: STR_FUSION_MISSILE
+  - name: STR_FUSION_MISSILE # AVALANCHE upgrade launcher
+    cost: 880
+    points: 25
+    dependencies:
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
 
   - name: STR_SMALL_LAUNCHER
     cost: 550
     points: 30
     needItem: true
     dependencies:
-      - STR_ALIEN_ALLOYS
-      - STR_ALIEN_CONTAINMENT
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_STUN_BOMB
     cost: 180
     points: 10
     needItem: true
     dependencies:
-      - STR_ELERIUM_115
-      - STR_ALIEN_CONTAINMENT
-
-  - name: STR_MIND_PROBE
-    cost: 600
-    points: 25
-    needItem: true
-    dependencies:
-      - STR_ELERIUM_115
+      - STR_SMALL_LAUNCHER
 
 # Armors
 
@@ -3562,7 +3619,7 @@ manufacture:
       STR_UFO_NAVIGATION: 1
 
   - name: STR_ALLOY_CANNON
-    listOrder: 58
+    listOrder: 158
     category: STR_CRAFT_WEAPON
     requires:
       - STR_ALLOY_CANNON
@@ -3576,32 +3633,7 @@ manufacture:
 
 # Craft Weapons - New
 
-  - name: STR_STORM_LAUNCHER # new ACID launcher
-    listOrder: 55
-    category: STR_CRAFT_WEAPON
-    requires:
-      - STR_STORM_RESEARCH
-    space: 6
-    time: 2000
-    cost: 95000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 10
-
-  - name: STR_STORM_MISSILES # missiles for new ACID launcher
-    listOrder: 56
-    category: STR_CRAFT_AMMUNITION
-    requires:
-      - STR_STORM_RESEARCH
-    space: 6
-    time: 100
-    cost: 28000
-    requiredItems:
-      STR_UFO_NAVIGATION: 1
-      STR_ALIEN_ALLOYS: 2
-      STR_AVALANCHE_MISSILES: 1
-
   - name: STR_LASER_CANNON
-    listOrder: 100
     category: STR_CRAFT_WEAPON
     requires:
       - STR_LASER_CANNON
@@ -3627,8 +3659,31 @@ manufacture:
       STR_HEAVY_PLASMA: 18
       STR_HEAVY_PLASMA_CLIP: 36
 
-  - delete: STR_FUSION_BALL_LAUNCHER # alien technologies cannot be reproduced
-  - delete: STR_FUSION_BALL # alien technologies cannot be reproduced
+  - name: STR_FUSION_BALL_LAUNCHER # AVALANCHE upgrade launcher
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_FUSION_MISSILE
+    space: 6
+    time: 2000 #time: 400
+    cost: 242000
+    requiredItems:
+      STR_AVALANCHE_LAUNCHER: 1
+      STR_BLASTER_LAUNCHER: 1
+      STR_ALIEN_ALLOYS: 10 #STR_ALIEN_ALLOYS: 1
+
+  - name: STR_FUSION_BALL # AVALANCHE upgrade missile
+    listOrder: 105
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_FUSION_MISSILE
+    space: 6
+    time: 600
+    cost: 28000
+    requiredItems:
+      #STR_ELERIUM_115: 4
+      STR_UFO_NAVIGATION: 1
+      STR_AVALANCHE_MISSILES: 1
+      STR_BLASTER_BOMB: 1
 
 # Tanks
 
@@ -3917,22 +3972,25 @@ manufacture:
       STR_FLOATER_CORPSE: 1
       STR_SNAKEMAN_CORPSE: 1
 
-  - name: STR_STUN_ROD # profit = 884.600/m, we can make money at middle
+  - name: STR_STUN_ROD # profit = 775.000/m, we can make money at middle
     listOrder: 1299
     category: STR_EQUIPMENT
     requires:
       - STR_STUN_ROD
     space: 4
     time: 400
-    cost: 21600
+    cost: 23000
 
-  - name: STR_PSI_AMP # profit = 1.817.720/m, we can make money at final
+  - name: STR_PSI_AMP
     category: STR_EQUIPMENT
     requires:
       - STR_PSI_AMP
     space: 6
     time: 500
-    cost: 145000
+    cost: 160000
+    requiredItems:
+      STR_ELERIUM_115: 1
+      STR_MIND_PROBE: 1
 
 # Alien technologies cannot be reproduced, except ALIEN ALLOYS
 
@@ -4138,16 +4196,8 @@ ufopaedia:
     image_id: ALLOY_CANNON_UFOpaedia
     text: STR_ALLOY_CANNON_UFOPEDIA
 
-  - id: STR_STORM_UC # new ACID launcher
-    listOrder: 755
-    type_id: 2
-    requires:
-      - STR_STORM_RESEARCH
-    section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: STORM_UFOpaedia
-    text: STR_STORM_UFOPEDIA
-
-  - delete: STR_FUSION_BALL_UC # alien technologies cannot be reproduced
+  - id: STR_FUSION_BALL_UC
+    listOrder: 750
 
 # Tanks
 
@@ -4276,7 +4326,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_ROCKETS
 
-# The LASER and PLASMA weapons articles
+# The LASER weapons articles
 
   - id: STR_LASER_WEAPONS
     listOrder: 1928
@@ -4285,14 +4335,6 @@ ufopaedia:
     text: STR_LASER_WEAPONS_UFOPEDIA
     requires:
       - STR_LASER_WEAPONS
-
-  - id: STR_PLASMA_WEAPONS
-    listOrder: 4799
-    type_id: 8
-    section: STR_ALIEN_ARTIFACTS
-    text: STR_PLASMA_WEAPONS_UFOPEDIA
-    requires:
-      - STR_PLASMA_WEAPONS
 
 # Fix the list order for PLASMA items
 
@@ -4634,19 +4676,19 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpaedia.gif
 
-  # Storm craft weapon
-  - type: STORM_UFOpaedia
+  # Fusion craft weapon
+  - type: UP009.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Storm_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Fusion_UFOpaedia.gif
   - type: INTICON.PCK
     files:
-      16: Resources/AwesomeGuns/Crafts/Weapons/Storm_Inticon.gif
+      16: Resources/AwesomeGuns/Crafts/Weapons/Fusion_Inticon.gif
   - type: BASEBITS.PCK
     files:
-      59: Resources/AwesomeGuns/Crafts/Weapons/Storm_Basebit.gif
+      59: Resources/AwesomeGuns/Crafts/Weapons/Fusion_Basebit.gif
 
 # Restyling images for aliens and civilians
 
@@ -5331,10 +5373,10 @@ extraSounds:
     files:
       14: Resources/AwesomeGuns/Crafts/Sounds/avalanche.wav
       5: Resources/AwesomeGuns/Crafts/Sounds/stingray.wav
-      15: Resources/AwesomeGuns/Crafts/Sounds/storm.wav
       4: Resources/AwesomeGuns/Crafts/Sounds/cannon.wav
-      #8: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
+      #8: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg we will use standard sound
       9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
+      15: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
 
 # Global sounds interface
 
@@ -5535,13 +5577,13 @@ extraStrings:
       STR_ALLOY_CANNON: "Tuned Cannon"
       STR_ALLOY_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
 
-      STR_PLASMA_BEAM_UFOPEDIA: "EVEN THOUGH THAT WE ARE UNABLE TO REPRODUCE ALIEN ARTIFACTS, OUR ENGINEERS HAVE FOUND A WAY TO PRODUCE PLASMA WEAPON FROM VARIOUS COMPONENTS FOR AIRCRAFTS."
+      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE A SHIP WEAPON FROM VARIOUS COMPONENTS OF HEAVY WEAPONS OF ALIENS. THIS WEAPON GENERATES THE PLASMA BUNCH."
 
-      STR_STORM_UC: "STORM"
-      STR_STORM_RESEARCH: "ACID Missile Launcher"
-      STR_STORM_LAUNCHER: "Storm Missile Launcher"
-      STR_STORM_MISSILES: "Storm Missile"
-      STR_STORM_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH NUCLEAR WARHEAD BASED ON THE ALIEN ALLOYS TECHNOLOGY, SMALLER AND LIGHTER THAN AVALANCHE."
+      STR_FUSION_MISSILE: "AVALANCHE upgrading"
+      STR_FUSION_BALL_UC: "STORM"
+      STR_FUSION_BALL_LAUNCHER: "Storm Launcher"
+      STR_FUSION_BALL: "Storm Missile"
+      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN AIMER AND ALIEN'S BLASTER BOMB IN THE MISSILES."
 
   - type: ru
     strings:
@@ -5573,13 +5615,13 @@ extraStrings:
       STR_ALLOY_CANNON: "Улучшенная авиапушка"
       STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
-      STR_PLASMA_BEAM_UFOPEDIA: "НЕСМОТРЯ НА ТО, ЧТО МЫ НЕ В СОСТОЯНИИ ВОСПРОИЗВОДИТЬ ИНОПЛАНЕТНЫЕ АРТЕФАКТЫ, НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
+      STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ГЕНЕРИРУЮЩУЮ ПЛАЗМЕННЫЕ СГУСТКИ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
 
-      STR_STORM_UC: "ШТОРМ"
-      STR_STORM_RESEARCH: "Кислотная пусковая установка"
-      STR_STORM_LAUNCHER: "Пусковая установка \"Шторм\""
-      STR_STORM_MISSILES: "Ракета \"Шторм\""
-      STR_STORM_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ КОМПЛЕКСА \"ЛАВИНА\" СО ВСТРОЕННЫМ В РАКЕТУ ЦЕЛЕУКАЗАТЕЛЕМ И КОНТЕЙНЕРОМ С КИСЛОТОЙ."
+      STR_FUSION_MISSILE: "МОДЕРНИЗАЦИЯ ЛАВИНЫ"
+      STR_FUSION_BALL_UC: "ШТОРМ"
+      STR_FUSION_BALL_LAUNCHER: "Пусковая установка \"Шторм\""
+      STR_FUSION_BALL: "Ракета \"Шторм\""
+      STR_FUSION_BALL_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ КОМПЛЕКСА \"ЛАВИНА\" СО ВСТРОЕННЫМ В РАКЕТУ ЦЕЛЕУКАЗАТЕЛЕМ И БЛАСТЕРНОЙ БОМБОЙ ПРИШЕЛЬЦЕВ."
 
 # Fix the ALIEN CONTAINMENT
 
@@ -5592,20 +5634,18 @@ extraStrings:
       STR_ALIEN_BIOLOGY: "Биология пришельцев"
       STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
 
-# Fix the LASER and PLASMA weapons
+# Fix the LASER and BLASTER weapons
 
   - type: en
     strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
       STR_LASER_WEAPONS: "Laser Weapons"
       STR_LASER_WEAPONS_UFOPEDIA: "Elerium-115 is truly an inexhaustible source of energy. Through experiments, we found one more feature of the substance. {NEWLINE} {NEWLINE} Crystals Elerium-115, carved a special cubic form, under the influence of electromagnetic pulses of a certain frequency, able to refract light rays so that it is possible to create a single point in space huge energy kick . {NEWLINE} {NEWLINE} implies that using alien alloys and crystals Elerium-115 can construct a device that can shoot beams of light. We call this laser weapon. {NEWLINE} {NEWLINE} According to our assumptions, the power of such weapons, even in the simplest of his performance, will surpass all existing terrestrial analogues of small arms. At the same time, weapons made in laser technology will have a virtually infinite ammunition."
-      STR_PLASMA_WEAPONS: "Plasma Weapons"
-      STR_PLASMA_WEAPONS_UFOPEDIA: "Initially, it was clear that a major component of plasma weapons power is Elerium-115. Now we understand the functioning of these weapons, and we can use it, not by battle. {NEWLINE} {NEWLINE} Unfortunately manufacturing techniques such weapons on so complex that we can not reproduce it on Earth. Therefore, care should be taken to preserve ammunition and copies plasma weapons produced in the battle, and to sell them only in extreme necessity. {NEWLINE} {NEWLINE} However, our scientists are optimistic and ready to develop ways to use plasma weapons in our vehicles, and combat platforms."
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
     strings:
       STR_LASER_WEAPONS: "Лазерное оружие"
       STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
-      STR_PLASMA_WEAPONS: "Плазменное оружие"
-      STR_PLASMA_WEAPONS_UFOPEDIA: "Изначально было понятно, что основным компонентом энергии плазменного оружия является Элериум-115. Теперь же мы понимаем как функционирует это оружие и можем применять его не посредство в бою.{NEWLINE}{NEWLINE}К сожалению технология изготовления такого оружия на столько сложна, что мы не в состоянии её воспроизвести в земных условиях. Поэтому, следует позаботиться о сохранении боеприпасов и экземпляров оружия пришельцев добытых в бою и продавать их только по крайней необходимости.{NEWLINE}{NEWLINE}Тем не менее, наши учённые полны оптимизма и готовы разработать способы применения плазменного оружия в наших кораблях и боевых платформах."
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
 
 # Armors
 
