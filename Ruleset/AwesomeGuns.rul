@@ -1708,6 +1708,21 @@ items:
     blastRadius: 5
     armor: 8
 
+  - type: STR_STUN_GRENADE
+    listOrder: 4505
+    size: 0.1
+    costSell: 14850
+    weight: 3
+    bigSprite: 760
+    floorSprite: 760
+    handSprite: 760 #handSprite: 392
+    hitSound: 0
+    hitAnimation: 0
+    power: 62
+    damageType: 6
+    battleType: 4
+    armor: 8
+
 # LASER weapons
 
   - type: STR_LASER_PISTOL
@@ -2218,7 +2233,7 @@ items:
     floorSprite: 26
     handSprite: 80
     meleeSound: 54
-    power: 65
+    power: 72 #power: 65
     damageType: 6
     accuracyMelee: 100
     tuMelee: 30
@@ -2688,7 +2703,7 @@ armors:
       - 1.0 # High Explosive
       - 1.5 # Laser
       - 0.6 # Plasma
-      - 1.2 # Stun
+      - 1.4 # Stun
       - 1.6 # Melee
       - 0.4 # Acid
       - 2.5 # Smoke
@@ -2724,7 +2739,7 @@ armors:
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
-      - 0.6 # Stun
+      - 1.1 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
@@ -2742,7 +2757,7 @@ armors:
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
-      - 0.6 # Stun
+      - 1.0 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
       - 1.8 # Smoke
@@ -2760,7 +2775,7 @@ armors:
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
-      - 0.6 # Stun
+      - 0.9 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
       - 1.6 # Smoke
@@ -2886,7 +2901,7 @@ armors:
       - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 0.8 # Stun
+      - 0.7 # Stun
       - 0.8 # Melee
       - 0.8 # Acid
       - 2.0 # Smoke
@@ -2904,7 +2919,7 @@ armors:
       - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 0.8 # Stun
+      - 0.6 # Stun
       - 0.8 # Melee
       - 0.8 # Acid
       - 2.0 # Smoke
@@ -2922,7 +2937,7 @@ armors:
       - 0.4 # High Explosive
       - 0.4 # Laser
       - 0.4 # Plasma
-      - 0.8 # Stun
+      - 0.5 # Stun
       - 0.8 # Melee
       - 0.8 # Acid
       - 2.0 # Smoke
@@ -2994,7 +3009,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
-      - 0.6 # Stun
+      - 0.5 # Stun
       - 1.5 # Melee
       - 1.4 # Acid
       - 3.5 # Smoke
@@ -3012,7 +3027,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
-      - 0.6 # Stun
+      - 0.4 # Stun
       - 1.4 # Melee
       - 1.2 # Acid
       - 3.8 # Smoke
@@ -3506,11 +3521,18 @@ research:
       - STR_ETHEREAL_SOLDIER
 
   - name: STR_STUN_BOMB
-    cost: 180
+    cost: 200 #cost: 180
     points: 10
     needItem: true
     dependencies:
       - STR_SMALL_LAUNCHER
+
+  - name: STR_STUN_GRENADE
+    listOrder: 4450
+    cost: 180
+    points: 10
+    STR_STUN_BOMB:
+      - STR_STUN_BOMB
 
 # Armors
 
@@ -3973,7 +3995,7 @@ manufacture:
       STR_SNAKEMAN_CORPSE: 1
 
   - name: STR_STUN_ROD # profit = 775.000/m, we can make money at middle
-    listOrder: 1299
+    listOrder: 1390
     category: STR_EQUIPMENT
     requires:
       - STR_STUN_ROD
@@ -4012,6 +4034,17 @@ manufacture:
   - delete: STR_STUN_BOMB
   - delete: STR_ALIEN_GRENADE
   - delete: STR_MIND_PROBE
+
+  - name: STR_STUN_GRENADE # production is similar to STR_ALIEN_GRENADE
+    listOrder: 1395
+    category: STR_WEAPON
+    requires:
+      - STR_STUN_GRENADE
+    space: 2
+    time: 200
+    cost: 6700
+    requiredItems:
+      STR_STUN_BOMB: 1
 
 # Personal armors
 
@@ -4291,6 +4324,14 @@ ufopaedia:
   - id: STR_STUN_ROD
     requires:
       - STR_STUN_ROD
+
+  - id: STR_STUN_GRENADE
+    listOrder: 4605
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_STUN_GRENADE_UFOPEDIA
+    requires:
+      - STR_STUN_GRENADE
 
 # Research weapons and ammo from ALIEN ALLOYS
 
@@ -5306,6 +5347,7 @@ extraSprites:
       41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.png
       751: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
+      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -5338,6 +5380,7 @@ extraSprites:
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       751: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
+      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5362,6 +5405,7 @@ extraSprites:
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
+      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
 
 
 
@@ -5803,6 +5847,10 @@ extraStrings:
       STR_MEDI_CHEST: "Medicine Chest"
       STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
 
+      STR_STUN_GRENADE: "Stun Grenade"
+      STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Though some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
+
+
   - type: ru
     strings:
 
@@ -5893,6 +5941,9 @@ extraStrings:
 
       STR_MEDI_CHEST: "Медицинская аптечка"
       STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
+
+      STR_STUN_GRENADE: "Парализующая граната"
+      STR_STUN_GRENADE_UFOPEDIA: "Парализующая бомба с гранатным детонатором и чекой. Несмотря на снижение эффективности в процессе адаптации, это слияние технологии людей и пришельцев даёт определённое удобство."
 
 
 
