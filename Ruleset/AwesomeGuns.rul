@@ -3477,6 +3477,7 @@ research:
     dependencies:
       - STR_POWER_SUIT
       - STR_UFO_NAVIGATION
+      - STR_FLOATER_AUTOPSY
 
 
 
