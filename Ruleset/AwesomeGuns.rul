@@ -362,7 +362,7 @@ craftWeapons:
     sprite: 4
     sound: 8
     damage: 50 #damage: 70
-    range: 18 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
+    range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 75 #accuracy: 35
     reloadCautious: 10 #reloadCautious: 12
     reloadStandard: 10 #reloadStandard: 12
@@ -376,7 +376,7 @@ craftWeapons:
     sprite: 3 #sprite: 5
     sound: 9
     damage: 80 #damage: 140
-    range: 40 #range: 52 (42 is used by STR_TERROR_SHIP)
+    range: 36 #range: 52 (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
     accuracy: 50
     reloadCautious: 13 #reloadCautious: 12
     reloadStandard: 12 #reloadStandard: 12
@@ -752,11 +752,11 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 8
-    fireSound: 18
-    hitSound: 19
+    fireSound: 8063 #fireSound: 18
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 86 #hitAnimation: 46
     power: 130 #power: 110
     damageType: 5
-    hitAnimation: 86 #hitAnimation: 46
     accuracySnap: 85
     accuracyAimed: 100
     tuSnap: 30
@@ -941,7 +941,7 @@ items:
     maxRange: 40
     aimRange: 28
     snapRange: 20
-    autoRange: 10
+    autoRange: 9
     minRange: 2
     dropoff: 2
     meleePower: 75
@@ -1000,7 +1000,7 @@ items:
     accuracySnap: 60
     accuracyAimed: 90
     tuAuto: 0
-    tuSnap: 52
+    tuSnap: 51
     tuAimed: 80
     battleType: 1
     twoHanded: true
@@ -1136,7 +1136,7 @@ items:
     accuracyAimed: 95
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 98
+    tuAimed: 99
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -1713,9 +1713,9 @@ items:
     size: 0.1
     costSell: 14850
     weight: 3
-    bigSprite: 760
-    floorSprite: 760
-    handSprite: 760 #handSprite: 392
+    bigSprite: 770
+    floorSprite: 770
+    handSprite: 770 #handSprite: 392
     hitSound: 0
     hitAnimation: 0
     power: 62
@@ -1851,10 +1851,10 @@ items:
     invHeight: 2
     recoveryPoints: 3
     armor: 28
-    maxRange: 40
-    aimRange: 30
-    snapRange: 20
-    autoRange: 15
+    maxRange: 35
+    aimRange: 25
+    snapRange: 16
+    autoRange: 12
     minRange: 1
     dropoff: 3
 
@@ -1902,10 +1902,10 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 30
-    maxRange: 65
-    aimRange: 50
-    snapRange: 35
-    autoRange: 20
+    maxRange: 50
+    aimRange: 40
+    snapRange: 26
+    autoRange: 16
     minRange: 2
     dropoff: 2
 
@@ -1953,10 +1953,10 @@ items:
     invHeight: 3
     recoveryPoints: 5
     armor: 32
-    maxRange: 65
-    aimRange: 50
-    snapRange: 35
-    autoRange: 20
+    maxRange: 50
+    aimRange: 40
+    snapRange: 28
+    autoRange: 18
     minRange: 3
     dropoff: 2
 
@@ -1984,7 +1984,7 @@ items:
     listOrder: 3450
     size: 0.2
     costSell: 144000
-    weight: 38
+    weight: 40
     bigSprite: 750
     floorSprite: 750
     handSprite: 750
@@ -1997,14 +1997,14 @@ items:
     accuracyAimed: 100
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 99
+    tuAimed: 80
     battleType: 1
     twoHanded: true
     invWidth: 2
     invHeight: 3
     armor: 30
-    maxRange: 80
-    aimRange: 60
+    maxRange: 72
+    aimRange: 55
     snapRange: 0
     autoRange: 0
     minRange: 30
@@ -2015,9 +2015,9 @@ items:
     size: 0.1
     costSell: 3150
     weight: 2
-    bigSprite: 751
-    floorSprite: 751
-    handSprite: 120
+    bigSprite: 760
+    floorSprite: 760
+    handSprite: 760 # handSprite: 120
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 66
@@ -3595,7 +3595,7 @@ manufacture:
     requires:
       - STR_IMPROVED_INTERCEPTOR
     space: 20
-    time: 6000
+    time: 6500
     cost: 250000
     requiredItems:
       STR_ALIEN_ALLOYS: 42
@@ -3606,7 +3606,7 @@ manufacture:
     requires:
       - STR_NEW_FIGHTER_CRAFT
     space: 30
-    time: 14000
+    time: 16000 #time: 14000
     cost: 400000
     requiredItems:
       STR_ALIEN_ALLOYS: 100 #STR_ALIEN_ALLOYS: 65
@@ -3618,7 +3618,7 @@ manufacture:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
     space: 34
-    time: 18000
+    time: 22000 #time: 18000
     cost: 600000
     requiredItems:
       STR_ALIEN_ALLOYS: 180 #STR_ALIEN_ALLOYS: 85
@@ -3630,7 +3630,7 @@ manufacture:
     requires:
       - STR_ULTIMATE_CRAFT
     space: 36
-    time: 34000
+    time: 35000 #time: 34000
     cost: 900000
     requiredItems:
       STR_ALIEN_ALLOYS: 240 #STR_ALIEN_ALLOYS: 120
@@ -3738,11 +3738,11 @@ manufacture:
     requires:
       - STR_LASER_CANNON
     space: 25
-    time: 1000 #time: 1200
+    time: 1500 #time: 1200
     cost: 300000 #cost: 500000
     requiredItems:
       STR_LASER_CANNON: 1
-      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 15
 
   - name: STR_HOVERTANK_PLASMA
     category: STR_HEAVY_WEAPONS_PLATFORM
@@ -3750,11 +3750,12 @@ manufacture:
       - STR_PLASMA_CANNON
       - STR_NEW_FIGHTER_CRAFT
     space: 30
-    time: 1500 #time: 1200
+    time: 3200 #time: 1200
     cost: 550000 #cost: 850000
     requiredItems:
+      STR_UFO_POWER_SOURCE: 1
       STR_PLASMA_BEAM: 1
-      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 30
       STR_ELERIUM_115: 30
 
   - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
@@ -3981,7 +3982,7 @@ manufacture:
 # Electromagnetic weapons
 
   - name: STR_RAILGUN
-    listOrder: 805
+    listOrder: 845
     category: STR_WEAPON
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
@@ -3989,10 +3990,10 @@ manufacture:
     time: 600
     cost: 98000
     requiredItems:
-      STR_ALIEN_ALLOYS: 8
+      STR_ALIEN_ALLOYS: 10
 
   - name: STR_RAILGUN_SLUGS
-    listOrder: 806
+    listOrder: 846
     category: STR_AMMUNITION
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
@@ -5370,8 +5371,8 @@ extraSprites:
       31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png
       41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.png
-      751: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
-      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
+      760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.png
+      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -5403,8 +5404,8 @@ extraSprites:
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
-      751: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
-      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
+      760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
+      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5429,8 +5430,8 @@ extraSprites:
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
-      760: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
-
+      760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
+      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
 
 
 extraSounds:
@@ -5599,7 +5600,7 @@ extraStrings:
   - type: ru
     strings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1500 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 20% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
-      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия 2400 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия в 2400 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
 
 # Raven - new improved interceptor
   - type: en
