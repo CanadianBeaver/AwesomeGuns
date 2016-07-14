@@ -1226,7 +1226,7 @@ items:
     weight: 1
     bigSprite: 561
     floorSprite: 561
-    handSprite: 352
+    handSprite: 568
     bulletSpeed: 0
     hitSound: 8022
     hitAnimation: 26
@@ -1244,7 +1244,7 @@ items:
     weight: 1
     bigSprite: 562
     floorSprite: 562
-    handSprite: 384
+    handSprite: 576
     bulletSpeed: 0
     hitSound: 8022
     hitAnimation: 56
@@ -5420,7 +5420,8 @@ extraSprites:
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.png
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.png
-      570: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.png
+      568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.png
+      576: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_CLIP.png
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.png
       32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.png
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs.png
@@ -5432,6 +5433,7 @@ extraSprites:
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
+
 
 
 extraSounds:
