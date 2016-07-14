@@ -63,6 +63,40 @@
 #
 #
 
+regions:
+  - type: STR_NORTH_AMERICA
+    cities:
+      - name: STR_NEW_YORK
+        lon: 286.125
+        lat: -40.75
+      - name: STR_WASHINGTON
+        lon: 282.875
+        lat: -38.75
+      - name: STR_LOS_ANGELES
+        lon: 241.75
+        lat: -34.125
+      - name: STR_MONTREAL
+        lon: 284.25
+        lat: -45.5
+      - name: STR_HAVANA
+        lon: 277.625
+        lat: -22.5
+      - name: STR_MEXICO_CITY
+        lon: 260.875
+        lat: -19.375
+      - name: STR_CHICAGO
+        lon: 272.375
+        lat: -41.875
+      - name: STR_VANCOUVER
+        lon: 236.75
+        lat: -49.375
+      - name: STR_DALLAS
+        lon: 263.375
+        lat: -32.75
+      - name: STR_TORONTO # it is my city...
+        lon: 281.385
+        lat: -43.75
+
 facilities:
 
 # Capacities of MODULES
@@ -1102,7 +1136,7 @@ items:
     armor: 15
 
   - type: STR_ACID_RIFLE_CLIP # new item
-    listOrder: 2206
+    listOrder: 2207
     size: 0.075
     costSell: 800
     weight: 3
@@ -1167,7 +1201,7 @@ items:
     armor: 12
 
   - type: STR_ACID_SNIPER_RIFLE_CLIP # new item
-    listOrder: 2227
+    listOrder: 2228
     size: 0.05
     costSell: 1200
     weight: 2
@@ -1997,7 +2031,7 @@ items:
     accuracyAimed: 100
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 80
+    tuAimed: 82 # 15tu for reloading a weapon, 1tu for turning in place 45 degrees, soldier should have at least 84tu for firing without pauses, at least 85tu for firing without pauses and turning in place 45 degrees
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -5605,6 +5639,15 @@ extraSounds:
 
 extraStrings:
 
+# Extra cities
+
+  - type: en
+    strings:
+      STR_TORONTO: "Toronto"
+  - type: ru
+    strings:
+      STR_TORONTO: "Торонто"
+
 # Restyling New Game dialog like DOOM-II
 
   - type: en
@@ -6001,7 +6044,7 @@ extraStrings:
       STR_RAILGUN: "Ручной рельсотрон"
       STR_RAILGUN_SLUGS: "Жетоны к ручному рельсотрону"
       STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле."
-      STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное. Создать штурмовой аналог не представляется возможным."
+      STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное, к тому же однозарядное. Создать штурмовой аналог не представляется возможным."
 
       STR_MEDI_CHEST: "Медицинская аптечка"
       STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
