@@ -1133,10 +1133,10 @@ items:
       - STR_ACID_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 99
+    accuracyAimed: 95
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 99
+    tuAimed: 98
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -1153,7 +1153,7 @@ items:
     listOrder: 2227
     size: 0.05
     costSell: 1200
-    weight: 3
+    weight: 2
     bigSprite: 551
     floorSprite: 551
     handSprite: 352
@@ -1170,7 +1170,7 @@ items:
     listOrder: 2227
     size: 0.05
     costSell: 1200
-    weight: 3
+    weight: 2
     bigSprite: 552
     floorSprite: 551
     handSprite: 352
@@ -1981,7 +1981,7 @@ items:
 # RAIL weapons
 
   - type: STR_RAILGUN # new item
-    listOrder: 3705
+    listOrder: 3450
     size: 0.2
     costSell: 144000
     weight: 38
@@ -1997,7 +1997,7 @@ items:
     accuracyAimed: 100
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 95
+    tuAimed: 99
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -2011,7 +2011,7 @@ items:
     dropoff: 4
 
   - type: STR_RAILGUN_SLUGS # new item
-    listOrder: 3706
+    listOrder: 3451
     size: 0.1
     costSell: 3150
     weight: 2
@@ -2027,7 +2027,7 @@ items:
     battleType: 2
     armor: 15
 
-# Freaky alien weapons
+# BLASTER (ALIENS ONLY) and SMALL LAUNCHER weapons
 
   - type: STR_BLASTER_LAUNCHER
     requires:
@@ -2151,7 +2151,7 @@ items:
     size: 0.2
     costBuy: 18000
     costSell: 13500
-    weight: 4
+    weight: 5
     bigSprite: 59
     floorSprite: 74
     handSprite: 408
@@ -2159,7 +2159,7 @@ items:
     invWidth: 2
     invHeight: 2
     painKiller: 2
-    heal: 4
+    heal: 3
     stimulant: 2
     woundRecovery: 1
     healthRecovery: 2
@@ -3128,6 +3128,9 @@ research:
 
 # Base facilities, alien technologies cannot be reproduced
 
+  - name: STR_HYPER_WAVE_DECODER
+    cost: 700 #cost: 670
+
   - delete: STR_FUSION_DEFENSE
   - delete: STR_PLASMA_DEFENSE
 
@@ -3201,14 +3204,14 @@ research:
 # LASER weapons
 
   - name: STR_LASER_WEAPONS
-    cost: 200 #cost: 50
+    cost: 100 #cost: 50
     points: 10
     dependencies:
       - STR_ELERIUM_115
       - STR_UFO_POWER_SOURCE
 
   - name: STR_LASER_CANNON
-    cost: 460 #cost: 420
+    cost: 400 #cost: 420
     points: 15
     dependencies:
       - STR_LASER_WEAPONS
@@ -3354,7 +3357,7 @@ research:
     unlocks:
       - STR_ALIEN_BIOLOGY
 
-# PLASMA weapons and Aliens' technologies
+# PLASMA weapons and Greanades
 
   - name: STR_SECTOID_SOLDIER
     unlocks:
@@ -3363,8 +3366,6 @@ research:
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_ALIEN_GRENADE
-      - STR_SMALL_LAUNCHER
-      - STR_BLASTER_LAUNCHER
 
   - name: STR_FLOATER_SOLDIER
     unlocks:
@@ -3373,8 +3374,6 @@ research:
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_ALIEN_GRENADE
-      - STR_SMALL_LAUNCHER
-      - STR_BLASTER_LAUNCHER
 
   - name: STR_SNAKEMAN_SOLDIER
     unlocks:
@@ -3383,8 +3382,6 @@ research:
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_ALIEN_GRENADE
-      - STR_SMALL_LAUNCHER
-      - STR_BLASTER_LAUNCHER
 
   - name: STR_MUTON_SOLDIER
     unlocks:
@@ -3393,8 +3390,6 @@ research:
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_ALIEN_GRENADE
-      - STR_SMALL_LAUNCHER
-      - STR_BLASTER_LAUNCHER
 
   - name: STR_ETHEREAL_SOLDIER
     unlocks:
@@ -3404,8 +3399,6 @@ research:
       - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_ALIEN_GRENADE
-      - STR_SMALL_LAUNCHER
-      - STR_BLASTER_LAUNCHER
 
   - name: STR_PLASMA_PISTOL
     cost: 600
@@ -3484,41 +3477,25 @@ research:
       - STR_MUTON_SOLDIER
       - STR_ETHEREAL_SOLDIER
 
-  - name: STR_BLASTER_LAUNCHER
-    cost: 900
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
+# Alien's SMALL LAUNCHER
 
-  - name: STR_BLASTER_BOMB
-    cost: 300
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_BLASTER_LAUNCHER
+  - name: STR_SECTOID_MEDIC
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_SMALL_LAUNCHER
 
-  - name: STR_FUSION_MISSILE # AVALANCHE upgrade launcher
-    cost: 880
-    points: 25
-    dependencies:
-      - STR_BLASTER_LAUNCHER
-      - STR_BLASTER_BOMB
+  - name: STR_FLOATER_MEDIC
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_SMALL_LAUNCHER
 
   - name: STR_SMALL_LAUNCHER
     cost: 550
     points: 30
     needItem: true
     dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
+      - STR_SECTOID_MEDIC
+      - STR_FLOATER_MEDIC
 
   - name: STR_STUN_BOMB
     cost: 200 #cost: 180
@@ -3533,6 +3510,54 @@ research:
     points: 10
     dependencies:
       - STR_STUN_BOMB
+
+# BLASTER weapons
+
+  - name: STR_SECTOID_ENGINEER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_FLOATER_ENGINEER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_SNAKEMAN_ENGINEER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_MUTON_ENGINEER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_BLASTER_LAUNCHER # STR_ALIENS_ONLY
+    cost: 900
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
+
+  - name: STR_BLASTER_BOMB # STR_ALIENS_ONLY
+    cost: 300
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_FUSION_MISSILE # AVALANCHE upgrade launcher
+    cost: 880
+    points: 25
+    dependencies:
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_UFO_CONSTRUCTION
+      - STR_HYPER_WAVE_DECODER
 
 # Armors
 
@@ -3691,7 +3716,6 @@ manufacture:
     requiredItems:
       STR_AVALANCHE_LAUNCHER: 1
       STR_BLASTER_LAUNCHER: 1
-      STR_ALIEN_ALLOYS: 10 #STR_ALIEN_ALLOYS: 1
 
   - name: STR_FUSION_BALL # AVALANCHE upgrade missile
     listOrder: 105
@@ -3957,7 +3981,7 @@ manufacture:
 # Electromagnetic weapons
 
   - name: STR_RAILGUN
-    listOrder: 1105
+    listOrder: 805
     category: STR_WEAPON
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
@@ -3968,7 +3992,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 8
 
   - name: STR_RAILGUN_SLUGS
-    listOrder: 1106
+    listOrder: 806
     category: STR_AMMUNITION
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
@@ -4516,7 +4540,7 @@ ufopaedia:
       - STR_ACID_CLIPS
 
   - id: STR_ALLOY_SNIPER_RIFLE
-    listOrder: 2224
+    listOrder: 2220
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_ALLOY_SNIPER_RIFLE_UFOPEDIA
@@ -4583,7 +4607,7 @@ ufopaedia:
 # Electromagnetic weapons
 
   - id: STR_ELECTROMAGNETIC_WEAPONS
-    listOrder: 1935
+    listOrder: 1995
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA
@@ -4591,7 +4615,7 @@ ufopaedia:
       - STR_ELECTROMAGNETIC_WEAPONS
 
   - id: STR_RAILGUN
-    listOrder: 5705
+    listOrder: 2230
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_RAILGUN_UFOPEDIA
