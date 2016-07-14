@@ -4129,7 +4129,7 @@ manufacture:
   - delete: STR_MIND_PROBE
 
   - name: STR_STUN_GRENADE # production is similar to STR_ALIEN_GRENADE
-    listOrder: 1395
+    listOrder: 1190
     category: STR_WEAPON
     requires:
       - STR_STUN_GRENADE
