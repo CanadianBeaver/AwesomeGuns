@@ -2021,9 +2021,9 @@ items:
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 66
-    power: 120
+    power: 125
     damageType: 1
-    clipSize: 6
+    clipSize: 1
     battleType: 2
     armor: 15
 
