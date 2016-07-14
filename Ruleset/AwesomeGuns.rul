@@ -165,6 +165,8 @@ facilities:
     monthlyCost: 5000
     defense: 600 #defense: 500
     hitRatio: 60 #hitRatio: 50
+    fireSound: 5
+    hitSound: 10
 
   - type: STR_LASER_DEFENSES
     requires:
@@ -174,6 +176,8 @@ facilities:
     monthlyCost: 12000 #monthlyCost: 10000
     defense: 700 #defense: 600
     hitRatio: 70 #hitRatio: 60
+    fireSound: 15 #fireSound: 8
+    hitSound: 10
 
   - delete: STR_PLASMA_DEFENSES # alien technologies cannot be reproduced
 
@@ -5538,7 +5542,7 @@ extraSounds:
       14: Resources/AwesomeGuns/Crafts/Sounds/avalanche.wav
       5: Resources/AwesomeGuns/Crafts/Sounds/stingray.wav
       4: Resources/AwesomeGuns/Crafts/Sounds/cannon.wav
-      #8: Resources/AwesomeGuns/Crafts/Sounds/ufo.ogg - it is an UFO fire sound
+      8: Resources/AwesomeGuns/Crafts/Sounds/ufo.ogg
       15: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
       9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
       7: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
