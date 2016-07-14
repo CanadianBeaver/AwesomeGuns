@@ -5496,7 +5496,7 @@ extraSprites:
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_SR.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
-      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.gif
+      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.png
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
