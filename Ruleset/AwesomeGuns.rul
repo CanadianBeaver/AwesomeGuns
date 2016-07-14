@@ -360,7 +360,7 @@ craftWeapons:
 
   - type: STR_LASER_CANNON_UC
     sprite: 4
-    sound: 8
+    sound: 14 #sound: 8
     damage: 50 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 75 #accuracy: 35
@@ -5480,9 +5480,10 @@ extraSounds:
       14: Resources/AwesomeGuns/Crafts/Sounds/avalanche.wav
       5: Resources/AwesomeGuns/Crafts/Sounds/stingray.wav
       4: Resources/AwesomeGuns/Crafts/Sounds/cannon.wav
-      #8: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg we will use standard sound
+      #8: Resources/AwesomeGuns/Crafts/Sounds/ufo.ogg - it is an UFO fire sound
+      14: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
       9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
-      15: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
+      7: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
 
 # Global sounds interface
 
