@@ -394,7 +394,7 @@ craftWeapons:
 
   - type: STR_LASER_CANNON_UC
     sprite: 4
-    sound: 14 #sound: 8
+    sound: 15 #sound: 8
     damage: 50 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 75 #accuracy: 35
@@ -423,7 +423,7 @@ craftWeapons:
 
   - type: STR_FUSION_BALL_UC # AVALANCHE upgrade
     sprite: 11 #sprite: 3
-    sound: 15 #sound: 7
+    sound: 7
     damage: 230
     range: 65 # (65 is used by STR_BATTLESHIP)
     accuracy: 90 #accuracy: 100
@@ -700,6 +700,7 @@ items:
     weight: 1
     bigSprite: -1
     floorSprite: 12
+    bulletSpeed: 4
     hitSound: 13
     hitAnimation: 26
     power: 90 #power: 60
@@ -743,6 +744,7 @@ items:
     weight: 1
     bigSprite: -1
     floorSprite: 16
+    bulletSpeed: 2
     hitSound: 0
     hitAnimation: 0
     power: 90 #power: 85
@@ -761,6 +763,7 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 7 #bulletSprite: 5
+    bulletSpeed: 5
     fireSound: 8055 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
@@ -786,6 +789,7 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 8
+    bulletSpeed: 5
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 86 #hitAnimation: 46
@@ -811,11 +815,13 @@ items:
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 86 #hitAnimation: 46
+    bulletSpeed: 5
 
   - type: SECTOPOD_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 86 #hitAnimation: 46
+    bulletSpeed: 5
 
 # CONVENTIONAL weapons
 
@@ -5533,7 +5539,7 @@ extraSounds:
       5: Resources/AwesomeGuns/Crafts/Sounds/stingray.wav
       4: Resources/AwesomeGuns/Crafts/Sounds/cannon.wav
       #8: Resources/AwesomeGuns/Crafts/Sounds/ufo.ogg - it is an UFO fire sound
-      14: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
+      15: Resources/AwesomeGuns/Crafts/Sounds/laser.ogg
       9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
       7: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
 
@@ -5786,7 +5792,7 @@ extraStrings:
 
       STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ГЕНЕРИРУЮЩУЮ ПЛАЗМЕННЫЕ СГУСТКИ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
 
-      STR_FUSION_MISSILE: "МОДЕРНИЗАЦИЯ ЛАВИНЫ"
+      STR_FUSION_MISSILE: "Улучшение ЛАВИНЫ"
       STR_FUSION_BALL_UC: "ШТОРМ"
       STR_FUSION_BALL_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_FUSION_BALL: "Ракета \"Шторм\""
