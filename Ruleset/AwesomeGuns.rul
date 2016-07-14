@@ -766,10 +766,10 @@ items:
     hitAnimation: 36
     power: 120 #power: 110
     damageType: 4
-    accuracySnap: 85 #accuracySnap: 50
-    accuracyAimed: 100 #accuracyAimed: 85
-    tuSnap: 30 #tuSnap: 33
-    tuAimed: 60 #tuAimed: 75
+    accuracySnap: 90 #accuracySnap: 50
+    accuracyAimed: 120 #accuracyAimed: 85
+    tuSnap: 34 #tuSnap: 33
+    tuAimed: 66 #tuAimed: 75
     battleType: 1
     fixedWeapon: true
     clipSize: -1
@@ -791,7 +791,7 @@ items:
     hitAnimation: 86 #hitAnimation: 46
     power: 130 #power: 110
     damageType: 5
-    accuracySnap: 85
+    accuracySnap: 80 #accuracySnap: 85
     accuracyAimed: 100
     tuSnap: 30
     tuAimed: 60
@@ -2843,7 +2843,7 @@ armors:
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 0.6 # Plasma
-      - 0.9 # Stun
+      - 1.0 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
       - 1.6 # Smoke
@@ -2861,8 +2861,8 @@ armors:
       - 0.7 # High Explosive
       - 0.7 # Laser
       - 0.7 # Plasma
-      - 0.6 # Stun
-      - 0.6 # Melee
+      - 0.7 # Stun
+      - 0.7 # Melee
       - 0.4 # Acid
       - 2.2 # Smoke
 
@@ -2897,7 +2897,7 @@ armors:
       - 0.6 # High Explosive
       - 0.5 # Laser
       - 0.5 # Plasma
-      - 1.1 # Stun
+      - 1.15 # Stun
       - 1.1 # Melee
       - 0.4 # Acid
       - 2.2 # Smoke
@@ -2915,7 +2915,7 @@ armors:
       - 0.6 # High Explosive
       - 0.5 # Laser
       - 0.5 # Plasma
-      - 1.0 # Stun
+      - 1.1 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
       - 2.0 # Smoke
@@ -2964,14 +2964,14 @@ armors:
     underArmor: 10
     damageModifier:
       - 1.0 # None
-      - 0.4 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.4 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
-      - 0.7 # Stun
+      - 0.6 # High Explosive
+      - 0.6 # Laser
+      - 0.6 # Plasma
+      - 0.6 # Stun
       - 0.8 # Melee
-      - 0.8 # Acid
+      - 1.0 # Acid
       - 2.0 # Smoke
 
   - type: MUTON_ARMOR1
@@ -2982,14 +2982,14 @@ armors:
     underArmor: 15
     damageModifier:
       - 1.0 # None
-      - 0.4 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.4 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
+      - 0.6 # High Explosive
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
-      - 0.8 # Acid
+      - 1.0 # Acid
       - 2.0 # Smoke
 
   - type: MUTON_ARMOR2
@@ -3000,14 +3000,14 @@ armors:
     underArmor: 20
     damageModifier:
       - 1.0 # None
-      - 0.4 # Armor Piercing
+      - 0.6 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.4 # High Explosive
-      - 0.4 # Laser
-      - 0.4 # Plasma
-      - 0.5 # Stun
+      - 0.6 # High Explosive
+      - 0.6 # Laser
+      - 0.6 # Plasma
+      - 0.6 # Stun
       - 0.8 # Melee
-      - 0.8 # Acid
+      - 1.0 # Acid
       - 2.0 # Smoke
 
   - type: CELATID_ARMOR
@@ -3059,7 +3059,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
-      - 0.6 # Stun
+      - 0.8 # Stun
       - 1.6 # Melee
       - 1.6 # Acid
       - 3.0 # Smoke
@@ -3077,7 +3077,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
-      - 0.5 # Stun
+      - 0.75 # Stun
       - 1.5 # Melee
       - 1.4 # Acid
       - 3.5 # Smoke
@@ -3095,7 +3095,7 @@ armors:
       - 1.0 # High Explosive
       - 0.8 # Laser
       - 0.8 # Plasma
-      - 0.4 # Stun
+      - 0.7 # Stun
       - 1.4 # Melee
       - 1.2 # Acid
       - 3.8 # Smoke
@@ -3806,11 +3806,29 @@ manufacture:
     requires:
       - STR_LASER_CANNON
     space: 25
-    time: 1500 #time: 1200
-    cost: 300000 #cost: 500000
+    time: 400 #time: 1200
+    cost: 20000 #cost: 500000
     requiredItems:
+      STR_TANK_CANNON: 1
       STR_LASER_CANNON: 1
-      STR_ALIEN_ALLOYS: 15
+    producedItems:
+        STR_TANK_LASER_CANNON: 1
+        STR_CANNON: 1
+
+  - name: STR_TANK_CANNON
+    listOrder: 499
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_LASER_CANNON
+    space: 25
+    time: 400 #time: 1200
+    cost: 20000 #cost: 500000
+    requiredItems:
+      STR_TANK_LASER_CANNON: 1
+      STR_CANNON: 1
+    producedItems:
+        STR_TANK_CANNON: 1
+        STR_LASER_CANNON: 1
 
   - name: STR_HOVERTANK_PLASMA
     category: STR_HEAVY_WEAPONS_PLATFORM
