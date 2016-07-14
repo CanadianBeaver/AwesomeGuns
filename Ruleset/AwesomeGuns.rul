@@ -2228,7 +2228,7 @@ items:
     size: 0.1
     costBuy: 0 #costBuy: 1260 - we will manufacture it
     costSell: 48000 #costSell: 945
-    weight: 8 #weight: 6
+    weight: 6
     bigSprite: 26
     floorSprite: 26
     handSprite: 80
