@@ -104,23 +104,23 @@ facilities:
     buildCost: 350000 #buildCost: 500000
     buildTime: 8 #buildTime: 12
     monthlyCost: 10000
-    radarRange: 1300 #radarRange: 1500
-    radarChance: 36 #radarChance: 10
+    radarRange: 1500 #radarRange: 1500 (1500 is minimum allowed in the game)
+    radarChance: 20 #radarChance: 10
 
   - type: STR_LARGE_RADAR_SYSTEM
     buildCost: 600000 #buildCost: 800000
-    buildTime: 18 #buildTime: 25
-    monthlyCost: 35000 #monthlyCost: 15000
-    radarRange: 2275 #radarRange: 2250
-    radarChance: 12.5 #radarChance: 20
+    buildTime: 15 #buildTime: 25
+    monthlyCost: 30000 #monthlyCost: 15000
+    radarRange: 2400 #radarRange: 2250
+    radarChance: 5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
     requires:
       - STR_HYPER_WAVE_DECODER
-    buildCost: 1200000 #buildCost: 1400000
-    buildTime: 25 #buildTime: 26
-    monthlyCost: 80000 #monthlyCost: 30000
-    radarRange: 2000 #radarRange: 2400
+    buildCost: 1800000 #buildCost: 1400000
+    buildTime: 20 #buildTime: 26
+    monthlyCost: 90000 #monthlyCost: 30000
+    radarRange: 2150 #radarRange: 2400
     radarChance: 85 #radarChance: 100
 
 # Fix the DEFENSES
@@ -199,7 +199,7 @@ crafts:
     accel: 5
     weapons: 2
     costSell: 900000
-    costRent: 150000
+    costRent: 175000
     refuelRate: 50
     radarRange: 450 # improved interceptor radar
     score: 275
@@ -5594,12 +5594,12 @@ extraStrings:
 # Radar facilities
   - type: en
     strings:
-      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1300 nautical miles and is linked to satellite systems for ground search. Each system has a 36% chance of detecting an average sized object every 10 minutes."
-      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2275 nautical miles and is linked to satellite systems for ground search. Each system has a 12.5% chance of detecting an average sized object every 10 minutes."
+      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1500 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 10 minutes."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2400 nautical miles and is linked to satellite systems for ground search. Each system has a 5% chance of detecting an average sized object every 10 minutes."
   - type: ru
     strings:
-      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1300 километров и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 36% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
-      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия 2275 километров и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 12.5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1500 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 20% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия 2400 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
 
 # Raven - new improved interceptor
   - type: en
