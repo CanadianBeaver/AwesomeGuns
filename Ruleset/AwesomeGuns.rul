@@ -1974,6 +1974,7 @@ items:
   - type: STR_HEAVY_PLASMA
     requires:
       - STR_HEAVY_PLASMA
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 171600
     weight: 28 #weight: 8
@@ -2007,6 +2008,7 @@ items:
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIENS_ONLY
     size: 0.3
     costSell: 9590
     weight: 3
