@@ -2035,7 +2035,7 @@ items:
       - STR_ALIENS_ONLY
     size: 0.3
     costSell: 144000
-    weight: 24 #weight: 16
+    weight: 26 #weight: 16
     bigSprite: 35
     floorSprite: 34
     handSprite: 56
@@ -2087,7 +2087,7 @@ items:
       - STR_SMALL_LAUNCHER
     size: 0.2
     costSell: 120000
-    weight: 10
+    weight: 14 #weight: 10
     bigSprite: 37
     floorSprite: 36
     handSprite: 64
@@ -2266,6 +2266,40 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 1
+
+# Alien's CORPSES weight (the drawing order depends on these parameters)
+
+  - type: STR_SECTOID_CORPSE
+    weight: 30
+    armor: 26
+
+  - type: STR_FLOATER_CORPSE
+    weight: 32 #weight: 20
+    armor: 26
+
+  - type: STR_SNAKEMAN_CORPSE
+    weight: 40
+    armor: 26
+
+  - type: STR_CHRYSSALID_CORPSE
+    weight: 40
+    armor: 36
+
+  - type: STR_MUTON_CORPSE
+    weight: 40
+    armor: 26
+
+  - type: STR_CELATID_CORPSE
+    weight: 35
+    armor: 26
+
+  - type: STR_SILACOID_CORPSE
+    weight: 40
+    armor: 26
+
+  - type: STR_ETHEREAL_CORPSE
+    weight: 32 #weight: 25
+    armor: 26
 
 
 
