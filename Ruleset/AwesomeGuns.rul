@@ -727,7 +727,7 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 7 #bulletSprite: 5
-    fireSound: 8053 #fireSound: 11
+    fireSound: 8055 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
     power: 120 #power: 110
@@ -5589,10 +5589,11 @@ extraSounds:
       #8034: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Hit.wav - it doesn't use sound
       8037: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Fire.wav
       8038: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Hit.wav
-      8051: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire1.wav
-      8052: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire2.wav
-      8053: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire3.wav
+      8051: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire1.ogg
+      8052: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire2.ogg
+      8053: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Fire3.ogg
       8054: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Hit.ogg
+      8055: Resources/AwesomeGuns/Weapons/LASER_RIFLE/FireT.ogg
       8061: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire1.wav
       8062: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire2.wav
       8063: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire3.wav
