@@ -726,9 +726,9 @@ items:
     bigSprite: 54
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 5
-    fireSound: 11
-    hitSound: 19
+    bulletSprite: 7 #bulletSprite: 5
+    fireSound: 8053 #fireSound: 11
+    hitSound: 8054 #hitSound: 19
     hitAnimation: 36
     power: 120 #power: 110
     damageType: 4
