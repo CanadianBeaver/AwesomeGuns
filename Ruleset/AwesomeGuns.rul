@@ -3744,7 +3744,7 @@ manufacture:
     requiredItems:
       STR_UFO_NAVIGATION: 1
       STR_CANNON: 1
-      STR_ALIEN_ALLOYS: 4
+      STR_ALIEN_ALLOYS: 15
 
 # Craft Weapons - New
 
@@ -5780,8 +5780,8 @@ extraStrings:
       STR_CANNON: "Авиапушка"
       STR_CANNON_ROUNDS_X50: "Снаряды к авиапушке (х50)"
       STR_CANNON_UFOPEDIA: "АВТОМАТИЧЕСКАЯ ПУШКА БОЛЬШОЙ МОЩНОСТИ, СТРЕЛЯЮЩАЯ БРОНЕБОЙНЫМИ СНАРЯДАМИ, СПОСОБНЫМИ ПРОБИТЬ 400-МИЛЛИМЕТРОВУЮ СТАЛЬ."
-      STR_ALLOY_CANNON_UC: "УЛУЧШЕННАЯ АВИАПУШКА"
-      STR_ALLOY_CANNON: "Улучшенная авиапушка"
+      STR_ALLOY_CANNON_UC: "АВИАПУШКА ИЗ СПЛАВОВ"
+      STR_ALLOY_CANNON: "Авиапушка из сплавов пришельцев"
       STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
       STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ГЕНЕРИРУЮЩУЮ ПЛАЗМЕННЫЕ СГУСТКИ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
