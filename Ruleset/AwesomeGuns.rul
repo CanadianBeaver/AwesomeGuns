@@ -2082,9 +2082,9 @@ items:
     size: 0.3
     costSell: 144000
     weight: 28 #weight: 16
-    bigSprite: 35
-    floorSprite: 34
-    handSprite: 56
+    bigSprite: 820 #bigSprite: 35
+    floorSprite: 820 #floorSprite: 34
+    handSprite: 820 #handSprite: 56
     bulletSprite: 10
     bulletSpeed: 0
     fireSound: 53
@@ -5479,6 +5479,7 @@ extraSprites:
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
+      820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.png
 
   - type: FLOOROB.PCK
     files:
@@ -5515,6 +5516,7 @@ extraSprites:
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
+      820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.png
 
   - type: HANDOB.PCK
     width: 256
@@ -5546,7 +5548,7 @@ extraSprites:
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
-
+      820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.png
 
 
 
