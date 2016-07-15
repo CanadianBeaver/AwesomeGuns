@@ -3474,54 +3474,43 @@ research:
   - name: STR_SECTOID_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_RIFLE
-      - STR_HEAVY_PLASMA
-      - STR_ALIEN_GRENADE
+      - STR_ALIEN_SOLDIER
 
   - name: STR_FLOATER_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_RIFLE
-      - STR_HEAVY_PLASMA
-      - STR_ALIEN_GRENADE
+      - STR_ALIEN_SOLDIER
 
   - name: STR_SNAKEMAN_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_RIFLE
-      - STR_HEAVY_PLASMA
-      - STR_ALIEN_GRENADE
+      - STR_ALIEN_SOLDIER
 
   - name: STR_MUTON_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_RIFLE
-      - STR_HEAVY_PLASMA
-      - STR_ALIEN_GRENADE
+      - STR_ALIEN_SOLDIER
 
   - name: STR_ETHEREAL_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
       - STR_PSI_LAB
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_RIFLE
-      - STR_HEAVY_PLASMA
-      - STR_ALIEN_GRENADE
+      - STR_ALIEN_SOLDIER
 
-  - name: STR_PLASMA_PISTOL
-    cost: 600
-    points: 20
-    needItem: true
+  - name: STR_ALIEN_SOLDIER
     dependencies:
       - STR_SECTOID_SOLDIER
       - STR_FLOATER_SOLDIER
       - STR_SNAKEMAN_SOLDIER
       - STR_MUTON_SOLDIER
       - STR_ETHEREAL_SOLDIER
+
+  - name: STR_PLASMA_PISTOL
+    cost: 600
+    points: 20
+    needItem: true
+    dependencies:
+      - STR_ALIEN_SOLDIER
 
   - name: STR_PLASMA_PISTOL_CLIP
     cost: 400
@@ -3531,15 +3520,11 @@ research:
       - STR_PLASMA_PISTOL
 
   - name: STR_PLASMA_RIFLE
-    cost: 700
+    cost: 800 #cost: 700
     points: 25
     needItem: true
     dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
+      - STR_ALIEN_SOLDIER
 
   - name: STR_PLASMA_RIFLE_CLIP
     cost: 400
@@ -3553,11 +3538,7 @@ research:
     points: 30
     needItem: true
     dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
+      - STR_ALIEN_SOLDIER
 
   - name: STR_HEAVY_PLASMA_CLIP
     cost: 400
@@ -3572,7 +3553,6 @@ research:
     dependencies:
       - STR_ELERIUM_115
       - STR_UFO_NAVIGATION
-      - STR_PLASMA_RIFLE
       - STR_HEAVY_PLASMA
       - STR_HEAVY_PLASMA_CLIP
   - delete: STR_PLASMA_CANNON_DEP1
@@ -3583,11 +3563,7 @@ research:
     points: 20
     needItem: true
     dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
+      - STR_ALIEN_SOLDIER
 
 # Alien's SMALL LAUNCHER
 
