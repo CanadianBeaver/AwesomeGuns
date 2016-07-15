@@ -3361,6 +3361,7 @@ research:
     points: 15
     dependencies:
       - STR_NEW_FIGHTER_CRAFT
+      - STR_ALIEN_ENGINEER
 
   - name: STR_GRAV_SHIELD
     dependencies:
@@ -3627,32 +3628,36 @@ research:
   - name: STR_SECTOID_ENGINEER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_BLASTER_LAUNCHER
+      - STR_ALIEN_ENGINEER
 
   - name: STR_FLOATER_ENGINEER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_BLASTER_LAUNCHER
+      - STR_ALIEN_ENGINEER
 
   - name: STR_SNAKEMAN_ENGINEER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_BLASTER_LAUNCHER
+      - STR_ALIEN_ENGINEER
 
   - name: STR_MUTON_ENGINEER
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_BLASTER_LAUNCHER
+      - STR_ALIEN_ENGINEER
+
+  - name: STR_ALIEN_ENGINEER
+    dependencies:
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
 
   - name: STR_BLASTER_LAUNCHER # STR_ALIENS_ONLY
     cost: 900
     points: 10
     needItem: true
     dependencies:
-      - STR_SECTOID_ENGINEER
-      - STR_FLOATER_ENGINEER
-      - STR_SNAKEMAN_ENGINEER
-      - STR_MUTON_ENGINEER
+      - STR_ALIEN_ENGINEER
 
   - name: STR_BLASTER_BOMB # STR_ALIENS_ONLY
     cost: 300
