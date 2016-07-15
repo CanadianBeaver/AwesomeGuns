@@ -3518,6 +3518,7 @@ research:
     needItem: true
     dependencies:
       - STR_PLASMA_PISTOL
+      - STR_ELERIUM_115
 
   - name: STR_PLASMA_RIFLE
     cost: 800 #cost: 700
@@ -3532,6 +3533,7 @@ research:
     needItem: true
     dependencies:
       - STR_PLASMA_RIFLE
+      - STR_ELERIUM_115
 
   - name: STR_HEAVY_PLASMA
     cost: 800
@@ -3546,6 +3548,7 @@ research:
     needItem: true
     dependencies:
       - STR_HEAVY_PLASMA
+      - STR_ELERIUM_115
 
   - name: STR_PLASMA_CANNON
     cost: 660
