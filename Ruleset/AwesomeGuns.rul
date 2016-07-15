@@ -1585,7 +1585,6 @@ items:
     compatibleAmmo:
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
-      - STR_SMALL_ROCKET
     accuracyAuto: 0
     accuracySnap: 55 #accuracySnap: 55
     accuracyAimed: 100 #accuracyAimed: 115
@@ -1604,24 +1603,7 @@ items:
     minRange: 12
     dropoff: 5
 
-  - type: STR_SMALL_ROCKET
-    size: 0.1 #size: 0.2
-    costBuy: 0 # costBuy: 600
-    costSell: 1800 #costSell: 480
-    weight: 6
-    bigSprite: 16
-    floorSprite: 16
-    handSprite: 256
-    bulletSpeed: 3
-    hitSound: 8038 #hitSound: 0
-    hitAnimation: 0
-    power: 225 #power: 75
-    damageType: 1 #damageType: 3
-    clipSize: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 2
-    armor: 6
+  - delete: STR_SMALL_ROCKET
 
   - type: STR_LARGE_ROCKET
     size: 0.16
@@ -1660,6 +1642,39 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 6
+
+  - type: STR_SMALL_ROCKET_LAUNCHER
+    size: 0.2
+    costSell: 15000
+    weight: 6
+    bigSprite: 830
+    floorSprite: 830
+    handSprite: 830
+    bulletSprite: 0
+    bulletSpeed: 3
+    hitSound: 8038 #hitSound: 0
+    hitAnimation: 0
+    fireSound: 8037 #fireSound: 52
+    accuracyAuto: 0
+    accuracySnap: 75 #accuracySnap: 55
+    accuracyAimed: 100 #accuracyAimed: 115
+    tuAuto: 0
+    tuSnap: 33
+    tuAimed: 66
+    power: 220
+    damageType: 1
+    clipSize: 1
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 22
+    maxRange: 25
+    aimRange: 20
+    snapRange: 15
+    autoRange: 0
+    minRange: 5
+    dropoff: 5
 
 # Explosions
 
@@ -4040,15 +4055,15 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
-  - name: STR_SMALL_ROCKET
+  - name: STR_SMALL_ROCKET_LAUNCHER
     listOrder: 835
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_ROCKETS
     time: 400
-    cost: 1400
+    cost: 11250
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_ALLOYS: 5
 
 # LASER weapons
 
@@ -4701,7 +4716,11 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
 
-  - id: STR_SMALL_ROCKET
+  - id: STR_SMALL_ROCKET_LAUNCHER
+    listOrder: 3510
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA
     requires:
       - STR_ALLOY_ROCKETS
 
@@ -5469,7 +5488,6 @@ extraSprites:
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.png
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
-      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_SR.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
@@ -5480,6 +5498,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.png
+      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Bigob.gif
 
   - type: FLOOROB.PCK
     files:
@@ -5508,7 +5527,6 @@ extraSprites:
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_I_AMMO.png
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
-      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_SR.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.png
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
@@ -5517,6 +5535,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.png
+      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Floorob.gif
 
   - type: HANDOB.PCK
     width: 256
@@ -5549,6 +5568,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.png
+      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Handobs.png
 
 
 
@@ -5980,10 +6000,12 @@ extraStrings:
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт. Способен выпускать навесом фугасные, зажигательные и дымовые гранаты на большие расстояния."
 
       STR_ROCKET_LAUNCHER: "Ракетная установка"
-      STR_SMALL_ROCKET: "Бронебойная ракета"
       STR_LARGE_ROCKET: "Тяжелая ракета"
       STR_INCENDIARY_ROCKET: "Зажигательная ракета"
       STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+
+      STR_SMALL_ROCKET_LAUNCHER: "Бронебойная ракета"
+      STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
 
       STR_INCENDIARY_GRENADE: "Зажигательная граната"
       STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
@@ -6075,10 +6097,12 @@ extraStrings:
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт способен выпускать фугасные, зажигательные и дымовые гранаты на большие расстояния по навесной траектории."
 
       STR_ROCKET_LAUNCHER: "Ракетная установка"
-      STR_SMALL_ROCKET: "Бронебойная ракета"
       STR_LARGE_ROCKET: "Тяжелая ракета"
       STR_INCENDIARY_ROCKET: "Зажигательная ракета"
       STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+
+      STR_SMALL_ROCKET_LAUNCHER: "Бронебойная ракета"
+      STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
 
       STR_INCENDIARY_GRENADE: "Зажигательная граната"
       STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
