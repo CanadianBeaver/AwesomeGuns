@@ -1861,7 +1861,7 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 70 #power: 85
+    power: 68 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 75 #accuracySnap: 50
@@ -1876,9 +1876,9 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 24
-    maxRange: 28
+    maxRange: 20
     aimRange: 0
-    snapRange: 12
+    snapRange: 10
     autoRange: 0
     minRange: 0
     dropoff: 3
