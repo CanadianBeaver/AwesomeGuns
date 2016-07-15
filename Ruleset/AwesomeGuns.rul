@@ -6008,7 +6008,7 @@ extraStrings:
 
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
-      STR_RAILGUN_SLUGS: "Railgun Slugs"
+      STR_RAILGUN_SLUGS: "Railgun Slug"
       STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
       STR_RAILGUN_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
 
@@ -6105,7 +6105,7 @@ extraStrings:
 
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
       STR_RAILGUN: "Ручной рельсотрон"
-      STR_RAILGUN_SLUGS: "Жетоны к ручному рельсотрону"
+      STR_RAILGUN_SLUGS: "Жетон к ручному рельсотрону"
       STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле."
       STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное, к тому же однозарядное. Создать штурмовой аналог не представляется возможным."
 
