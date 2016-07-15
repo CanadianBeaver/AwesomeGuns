@@ -237,7 +237,7 @@ crafts:
     accel: 5
     weapons: 2
     costSell: 800000
-    costRent: 400000
+    costRent: 300000
     refuelRate: 50
     radarRange: 450 # improved interceptor radar
     score: 275
@@ -251,7 +251,7 @@ crafts:
     speedMax: 4500 #speedMax: 4200
     accel: 9
     weapons: 2
-    costRent: 300000 #costRent: 0
+    costRent: 200000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 3 #refuelRate: 5
     repairRate: 2 # 1 is the default for all crafts
@@ -268,7 +268,7 @@ crafts:
     accel: 9
     weapons: 1
     soldiers: 12
-    costRent: 350000 #costRent: 0
+    costRent: 300000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 4 #refuelRate: 5
     repairRate: 2 # 1 is the default for all crafts
@@ -286,7 +286,7 @@ crafts:
     weapons: 2
     soldiers: 26
     vehicles: 4
-    costRent: 380000 #costRent: 0
+    costRent: 450000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
     repairRate: 2 # 1 is the default for all crafts
