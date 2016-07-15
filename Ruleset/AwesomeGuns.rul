@@ -1276,7 +1276,7 @@ items:
     hitAnimation: 26
     power: 28
     damageType: 1
-    clipSize: 4
+    clipSize: 6
     shotgunPellets: 5
     battleType: 2
     armor: 12
