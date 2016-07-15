@@ -1522,8 +1522,8 @@ items:
     costSell: 250
     weight: 3
     bigSprite: 591
-    floorSprite: 19
-    handSprite: 120
+    floorSprite: 591
+    handSprite: 598
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1541,8 +1541,8 @@ items:
     costSell: 280
     weight: 3
     bigSprite: 592
-    floorSprite: 19
-    handSprite: 120
+    floorSprite: 592
+    handSprite: 606
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1560,8 +1560,8 @@ items:
     costSell: 120
     weight: 3
     bigSprite: 593
-    floorSprite: 19
-    handSprite: 120
+    floorSprite: 593
+    handSprite: 614
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1684,7 +1684,7 @@ items:
     weight: 3
     bigSprite: 610
     floorSprite: 610
-    handSprite: 610
+    handSprite: 622
     power: 70
     damageType: 2
     battleType: 4
@@ -5467,7 +5467,7 @@ extraSprites:
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob.gif
       591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.png
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.png
-      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.gif
+      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_SR.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
@@ -5503,6 +5503,9 @@ extraSprites:
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_I_AMMO.png
       7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Floorob.png
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob.gif
+      591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_HE_AMMO.png
+      592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_I_AMMO.png
+      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_SR.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
@@ -5532,14 +5535,18 @@ extraSprites:
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.png
       32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.png
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs.png
+      598: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_HE_AMMO.png
+      606: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_I_AMMO.png
+      614: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_S_AMMO.png
       72: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs.png
-      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
+      622: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
       8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.png
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
+
 
 
 
