@@ -3256,7 +3256,7 @@ research:
 
 # Craft alloy weapons
 
-  - name: STR_ALLOY_ROCKETS
+  - name: STR_IMPROVED_ROCKETS
     listOrder: 920
     cost: 400
     points: 20
@@ -3269,7 +3269,7 @@ research:
     cost: 250
     points: 15
     dependencies:
-      - STR_ALLOY_CLIPS
+      - STR_ALIEN_ALLOYS
       - STR_UFO_NAVIGATION
 
 # New weapons and ammo from ALIEN ALLOYS
@@ -3754,7 +3754,7 @@ manufacture:
     listOrder: 52
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
     space: 6
     time: 800
     cost: 20000
@@ -3767,7 +3767,7 @@ manufacture:
     listOrder: 50
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
     space: 6
     time: 600
     cost: 10000
@@ -4067,7 +4067,7 @@ manufacture:
     listOrder: 835
     category: STR_AMMUNITION
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
     time: 400
     cost: 11250
     requiredItems:
@@ -4360,7 +4360,7 @@ ufopaedia:
     listOrder: 750
     type_id: 2
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: Tornado_UFOpaedia
     text: STR_ALLOY_AVALANCHE_UFOPEDIA
@@ -4369,7 +4369,7 @@ ufopaedia:
     listOrder: 650
     type_id: 2
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: Barracuda_UFOpaedia
     text: STR_ALLOY_STINGRAY_UFOPEDIA
@@ -4513,13 +4513,13 @@ ufopaedia:
     requires:
       - STR_ACID_CLIPS
 
-  - id: STR_ALLOY_ROCKETS
+  - id: STR_IMPROVED_ROCKETS
     listOrder: 1924
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_ALLOY_ROCKETS_UFOPEDIA
+    text: STR_IMPROVED_ROCKETS_UFOPEDIA
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
 
 # The LASER weapons articles
 
@@ -4730,7 +4730,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA
     requires:
-      - STR_ALLOY_ROCKETS
+      - STR_IMPROVED_ROCKETS
 
   - id: STR_INCENDIARY_GRENADE
     listOrder: 3906
@@ -5776,8 +5776,8 @@ extraStrings:
     strings:
 
       #TODO: translation should be corrected (it's a Google Translator from Russian)
-      STR_ALLOY_ROCKETS: "Improved launchers"
-      STR_ALLOY_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE} {NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
+      STR_IMPROVED_ROCKETS: "Improved launchers"
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE} {NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
 
       STR_STINGRAY: "STINGRAY"
       STR_STINGRAY_LAUNCHER: "Stingray Launcher"
@@ -5814,8 +5814,8 @@ extraStrings:
   - type: ru
     strings:
 
-      STR_ALLOY_ROCKETS: "Улучшенные пусковые установки"
-      STR_ALLOY_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволит повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения пусковых комплектов кораблей и наземных ракетных установок.{NEWLINE}{NEWLINE}Особо интересной разработкой наших учёных является новая компактная бронебойная ракета, которая способна пробивать корпус НЛО прямо на поле боя, открывая таким образом нашим оперативникам путь внутрь инопланетного корабля в любом удобном для них месте."
+      STR_IMPROVED_ROCKETS: "Улучшенные пусковые установки"
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволит повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения пусковых комплектов кораблей и наземных ракетных установок.{NEWLINE}{NEWLINE}Особо интересной разработкой наших учёных является новая компактная бронебойная ракета, которая способна пробивать корпус НЛО прямо на поле боя, открывая таким образом нашим оперативникам путь внутрь инопланетного корабля в любом удобном для них месте."
 
       STR_STINGRAY: "СКАТ"
       STR_STINGRAY_LAUNCHER: "Пусковая установка \"Скат\""
