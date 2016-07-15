@@ -236,8 +236,8 @@ crafts:
     speedMax: 2800
     accel: 5
     weapons: 2
-    costSell: 900000
-    costRent: 175000
+    costSell: 800000
+    costRent: 400000
     refuelRate: 50
     radarRange: 450 # improved interceptor radar
     score: 275
@@ -246,12 +246,12 @@ crafts:
     requires:
       - STR_NEW_FIGHTER_CRAFT
     sprite: 4
-    fuelMax: 36 #fuelMax: 20
+    fuelMax: 32 #fuelMax: 20
     damageMax: 500
-    speedMax: 4800 #speedMax: 4200
+    speedMax: 4500 #speedMax: 4200
     accel: 9
     weapons: 2
-    costRent: 250000 #costRent: 0
+    costRent: 300000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 3 #refuelRate: 5
     repairRate: 2 # 1 is the default for all crafts
@@ -262,13 +262,13 @@ crafts:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
     sprite: 1
-    fuelMax: 52 #fuelMax: 30
+    fuelMax: 48 #fuelMax: 30
     damageMax: 800
     speedMax: 3100
     accel: 9
     weapons: 1
     soldiers: 12
-    costRent: 330000 #costRent: 0
+    costRent: 350000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 4 #refuelRate: 5
     repairRate: 2 # 1 is the default for all crafts
@@ -279,7 +279,7 @@ crafts:
     requires:
       - STR_ULTIMATE_CRAFT
     sprite: 2
-    fuelMax: 66 #fuelMax: 60
+    fuelMax: 64 #fuelMax: 60
     damageMax: 1200
     speedMax: 5400
     accel: 10
@@ -3691,7 +3691,7 @@ manufacture:
       - STR_IMPROVED_INTERCEPTOR
     space: 20
     time: 6500
-    cost: 250000
+    cost: 600000
     requiredItems:
       STR_ALIEN_ALLOYS: 42
       STR_UFO_NAVIGATION: 2
