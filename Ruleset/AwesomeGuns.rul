@@ -3276,33 +3276,41 @@ research:
 
   - name: STR_ALLOY_CLIPS
     listOrder: 911
-    cost: 200
+    cost: 250
     points: 20
     dependencies:
       - STR_ALIEN_ALLOYS
 
   - name: STR_ALLOY_RIFLE
     listOrder: 912
-    cost: 125
+    cost: 200
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
+    unlocks:
+      - STR_ALLOY_WEAPON
 
   - name: STR_ALLOY_SNIPER_RIFLE_RESEARCH
     listOrder: 913
-    cost: 150
+    cost: 200
     points: 10
     dependencies:
       - STR_ALLOY_CLIPS
+    unlocks:
+      - STR_ALLOY_WEAPON
 
-  - name: STR_ACID_CLIPS
-    listOrder: 914
-    cost: 100
-    points: 10
+  - name: STR_ALLOY_WEAPON
     dependencies:
       - STR_ALLOY_RIFLE
       - STR_ALLOY_SNIPER_RIFLE_RESEARCH
+
+  - name: STR_ACID_CLIPS
+    listOrder: 914
+    cost: 150
+    points: 10
+    dependencies:
       - STR_CHRYSSALID_AUTOPSY
+      - STR_ALLOY_WEAPON
 
 # LASER weapons
 
