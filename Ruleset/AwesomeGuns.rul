@@ -1322,7 +1322,7 @@ items:
     hitAnimation: 56 #hitAnimation: 26
     power: 52
     damageType: 1
-    clipSize: 6
+    clipSize: 4
     shotgunPellets: 5
     battleType: 2
     invWidth: 2
