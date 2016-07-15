@@ -889,7 +889,7 @@ items:
     hitAnimation: 56
     power: 38
     damageType: 1
-    clipSize: 12
+    clipSize: 9 #clipSize: 12
     battleType: 2
     armor: 10
 
@@ -954,7 +954,7 @@ items:
     hitAnimation: 56
     power: 38
     damageType: 1
-    clipSize: 18
+    clipSize: 15
     battleType: 2
     armor: 10
 
@@ -1022,7 +1022,7 @@ items:
     hitAnimation: 56
     power: 48
     damageType: 1
-    clipSize: 15
+    clipSize: 12 #clipSize: 20
     battleType: 2
     armor: 12
 
@@ -1089,7 +1089,7 @@ items:
     hitAnimation: 56
     power: 62
     damageType: 1
-    clipSize: 4
+    clipSize: 3
     battleType: 2
     armor: 12
 
