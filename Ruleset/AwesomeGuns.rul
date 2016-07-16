@@ -1563,6 +1563,7 @@ items:
     compatibleAmmo:
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
+      - STR_SMALL_ROCKET
     accuracyAuto: 0
     accuracySnap: 55 #accuracySnap: 55
     accuracyAimed: 100 #accuracyAimed: 115
@@ -1581,7 +1582,26 @@ items:
     minRange: 12
     dropoff: 5
 
-  - delete: STR_SMALL_ROCKET
+  - type: STR_SMALL_ROCKET
+    requires:
+      - STR_FUSION_ROCKET
+    size: 0.2
+    costBuy: 0 #costBuy: 600
+    costSell: 17028 #costSell: 480
+    weight: 4
+    bigSprite: 16
+    floorSprite: 16
+    handSprite: 256
+    hitSound: 0
+    hitAnimation: 0
+    power: 160 #power: 75, power: 200
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    blastRadius: 8 #blastRadius: 10
+    armor: 6
 
   - type: STR_LARGE_ROCKET
     size: 0.16
@@ -1621,7 +1641,7 @@ items:
     invHeight: 3
     armor: 6
 
-  - type: STR_SMALL_ROCKET_LAUNCHER
+  - type: STR_SINGLE_ROCKET_LAUNCHER
     size: 0.2
     costSell: 15000
     weight: 6
@@ -3449,6 +3469,10 @@ research:
 
 # PLASMA weapons and Greanades
 
+  - name: STR_ALIEN_WEAPON
+    cost: 200
+    points: 20
+
   - name: STR_SECTOID_SOLDIER
     unlocks:
       - STR_ALIEN_ORIGINS
@@ -3488,6 +3512,7 @@ research:
     points: 20
     needItem: true
     dependencies:
+      - STR_ALIEN_WEAPON
       - STR_ALIEN_SOLDIER
 
   - name: STR_PLASMA_PISTOL_CLIP
@@ -3503,6 +3528,7 @@ research:
     points: 25
     needItem: true
     dependencies:
+      - STR_ALIEN_WEAPON
       - STR_ALIEN_SOLDIER
 
   - name: STR_PLASMA_RIFLE_CLIP
@@ -3518,6 +3544,7 @@ research:
     points: 30
     needItem: true
     dependencies:
+      - STR_ALIEN_WEAPON
       - STR_ALIEN_SOLDIER
 
   - name: STR_HEAVY_PLASMA_CLIP
@@ -3544,6 +3571,7 @@ research:
     points: 20
     needItem: true
     dependencies:
+      - STR_ALIEN_WEAPON
       - STR_ALIEN_SOLDIER
 
 # Alien's SMALL LAUNCHER
@@ -3551,33 +3579,36 @@ research:
   - name: STR_SECTOID_MEDIC
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_MEDIC
 
   - name: STR_FLOATER_MEDIC
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_MEDIC
+
+  - name: STR_ALIEN_MEDIC
+    dependencies:
+      - STR_SECTOID_MEDIC
+      - STR_FLOATER_MEDIC
 
   - name: STR_SMALL_LAUNCHER
     cost: 550
     points: 30
     needItem: true
     dependencies:
-      - STR_SECTOID_MEDIC
-      - STR_FLOATER_MEDIC
+      - STR_ALIEN_MEDIC
 
   - name: STR_STUN_BOMB
     cost: 200 #cost: 180
     points: 10
     needItem: true
-    dependencies:
-      - STR_SMALL_LAUNCHER
 
   - name: STR_STUN_GRENADE
     listOrder: 4450
     cost: 180
     points: 10
     dependencies:
+      - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
 
 # BLASTER weapons
@@ -3613,22 +3644,25 @@ research:
     cost: 900
     points: 10
     needItem: true
-    dependencies:
-      - STR_ALIEN_ENGINEER
 
   - name: STR_BLASTER_BOMB # STR_ALIENS_ONLY
     cost: 300
     points: 10
     needItem: true
+
+  - name: STR_FUSION_ROCKET # ROCKET LAUNCHER upgrade
+    cost: 300
+    points: 10
     dependencies:
       - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_ALIEN_ENGINEER
 
   - name: STR_FUSION_MISSILE # AVALANCHE upgrade launcher
     cost: 880
     points: 25
     dependencies:
-      - STR_BLASTER_LAUNCHER
-      - STR_BLASTER_BOMB
+      - STR_FUSION_ROCKET
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_ROCKETS
 
@@ -4025,7 +4059,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
-  - name: STR_SMALL_ROCKET_LAUNCHER
+  - name: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 835
     category: STR_AMMUNITION
     requires:
@@ -4150,6 +4184,16 @@ manufacture:
   - delete: STR_STUN_BOMB
   - delete: STR_ALIEN_GRENADE
   - delete: STR_MIND_PROBE
+
+  - name: STR_SMALL_ROCKET  # production is similar to STR_BLASTER_BOMB
+    category: STR_AMMUNITION
+    requires:
+      - STR_FUSION_ROCKET
+    space: 3
+    time: 220
+    cost: 8000
+    requiredItems:
+      STR_BLASTER_BOMB: 1
 
   - name: STR_STUN_GRENADE # production is similar to STR_ALIEN_GRENADE
     listOrder: 1190
@@ -4449,6 +4493,12 @@ ufopaedia:
     requires:
       - STR_STUN_GRENADE
 
+  - id: STR_SMALL_ROCKET
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMALL_ROCKET_UFOPEDIA
+    requires:
+      - STR_FUSION_ROCKET
+
 # Research weapons and ammo from ALIEN ALLOYS
 
   - id: STR_ALLOY_CLIPS
@@ -4486,7 +4536,7 @@ ufopaedia:
 # The LASER weapons articles
 
   - id: STR_LASER_WEAPONS
-    listOrder: 1928
+    listOrder: 3590
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_LASER_WEAPONS_UFOPEDIA
@@ -4494,6 +4544,14 @@ ufopaedia:
       - STR_LASER_WEAPONS
 
 # Fix the list order for PLASMA items
+
+  - id: STR_ALIEN_WEAPON
+    listOrder: 4710
+    type_id: 8
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_ALIEN_WEAPON_UFOPEDIA
+    requires:
+      - STR_ALIEN_WEAPON
 
   - id: STR_PLASMA_PISTOL
     listOrder: 4800
@@ -4686,11 +4744,11 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
 
-  - id: STR_SMALL_ROCKET_LAUNCHER
+  - id: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 3510
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA
+    text: STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA
     requires:
       - STR_IMPROVED_ROCKETS
 
@@ -5375,6 +5433,7 @@ extraSprites:
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.png
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
+      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_BOMB.png
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
@@ -5385,7 +5444,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.png
-      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Bigob.gif
+      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
 
   - type: FLOOROB.PCK
     files:
@@ -5417,6 +5476,7 @@ extraSprites:
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_I_AMMO.png
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
+      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_BOMB.png
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.png
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
@@ -5425,7 +5485,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.png
-      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Floorob.gif
+      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
   - type: HANDOB.PCK
     width: 256
@@ -5441,7 +5501,6 @@ extraSprites:
       232: Resources/AwesomeGuns/Weapons/ITEMS/Proxie.gif
       240: Resources/AwesomeGuns/Weapons/ITEMS/ElectroFlare.gif
       248: Resources/AwesomeGuns/Weapons/ITEMS/MindProbe.gif
-      #256: free
       336: Resources/AwesomeGuns/Weapons/ITEMS/AlienGrenade.gif
       344: Resources/AwesomeGuns/Weapons/ITEMS/SmokeGrenade.gif
       #368: free
@@ -5474,6 +5533,7 @@ extraSprites:
       606: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_I_AMMO.png
       614: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_S_AMMO.png
       72: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs.png
+      256: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_BOMB.png
       264: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_L_Rocket.gif
       272: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_I_Rocket.gif
       622: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
@@ -5486,7 +5546,7 @@ extraSprites:
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.png
       280: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
-      830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Handobs.png
+      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.png
 
 
 
@@ -5776,11 +5836,15 @@ extraStrings:
     strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
       STR_LASER_WEAPONS: "Laser Weapons"
       STR_LASER_WEAPONS_UFOPEDIA: "Elerium-115 is truly an inexhaustible source of energy. Through experiments, we found one more feature of the substance. {NEWLINE} {NEWLINE} Crystals Elerium-115, carved a special cubic form, under the influence of electromagnetic pulses of a certain frequency, able to refract light rays so that it is possible to create a single point in space huge energy kick . {NEWLINE} {NEWLINE} implies that using alien alloys and crystals Elerium-115 can construct a device that can shoot beams of light. We call this laser weapon. {NEWLINE} {NEWLINE} According to our assumptions, the power of such weapons, even in the simplest of his performance, will surpass all existing terrestrial analogues of small arms. At the same time, weapons made in laser technology will have a virtually infinite ammunition."
+      STR_ALIEN_WEAPON: "Alien's weapon"
+      STR_ALIEN_WEAPON_UFOPEDIA: ""
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
     strings:
       STR_LASER_WEAPONS: "Лазерное оружие"
       STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
+      STR_ALIEN_WEAPON: "Оружие пришельцев"
+      STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
       STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
 
 # Armors
@@ -5918,12 +5982,14 @@ extraStrings:
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт. Способен выпускать навесом фугасные, зажигательные и дымовые гранаты на большие расстояния."
 
       STR_ROCKET_LAUNCHER: "Ракетная установка"
+      STR_SMALL_ROCKET: "Бластерная ракета"
       STR_LARGE_ROCKET: "Тяжелая ракета"
       STR_INCENDIARY_ROCKET: "Зажигательная ракета"
       STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета для ракетной установки. "
 
-      STR_SMALL_ROCKET_LAUNCHER: "Бронебойная ракета"
-      STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
+      STR_SINGLE_ROCKET_LAUNCHER: "Бронебойная ракета"
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
 
       STR_INCENDIARY_GRENADE: "Зажигательная граната"
       STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
@@ -6015,12 +6081,14 @@ extraStrings:
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт способен выпускать фугасные, зажигательные и дымовые гранаты на большие расстояния по навесной траектории."
 
       STR_ROCKET_LAUNCHER: "Ракетная установка"
+      STR_SMALL_ROCKET: "Бластерная ракета"
       STR_LARGE_ROCKET: "Тяжелая ракета"
       STR_INCENDIARY_ROCKET: "Зажигательная ракета"
       STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
+      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета"
 
-      STR_SMALL_ROCKET_LAUNCHER: "Бронебойная ракета"
-      STR_SMALL_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
+      STR_SINGLE_ROCKET_LAUNCHER: "Бронебойная ракета"
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
 
       STR_INCENDIARY_GRENADE: "Зажигательная граната"
       STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
