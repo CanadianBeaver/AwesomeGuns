@@ -1903,7 +1903,7 @@ items:
     weight: 3
     bigSprite: 34
     floorSprite: 33
-    handSprite: 710 #handSprite: 368
+    handSprite: 710
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 52 #power: 52
@@ -1954,7 +1954,7 @@ items:
     weight: 3
     bigSprite: 41
     floorSprite: 33
-    handSprite: 710 #handSprite: 376
+    handSprite: 710
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 80
@@ -2193,7 +2193,7 @@ items:
     weight: 5
     bigSprite: 59
     floorSprite: 74
-    handSprite: 408
+    handSprite: 200
     battleType: 6
     invWidth: 2
     invHeight: 2
@@ -5301,63 +5301,14 @@ extraSprites:
 # Improve visualization of objects in soldier's hands, step by 8 images
 # Also improve hits and sprites
 
-  - type: HANDOB.PCK
-    width: 256
-    height: 40
-    subX: 32
-    subY: 40
-    files:
-      208: Resources/AwesomeGuns/Weapons/Animation_Hands/MediKit.gif
-      216: Resources/AwesomeGuns/Weapons/Animation_Hands/HE.gif
-      224: Resources/AwesomeGuns/Weapons/Animation_Hands/Scanner.gif
-      232: Resources/AwesomeGuns/Weapons/Animation_Hands/Proxie.gif
-      240: Resources/AwesomeGuns/Weapons/Animation_Hands/ElectroFlare.gif
-      248: Resources/AwesomeGuns/Weapons/Animation_Hands/MindProbe.gif
-      256: Resources/AwesomeGuns/Weapons/Animation_Hands/SMRocket.gif
-      264: Resources/AwesomeGuns/Weapons/Animation_Hands/LGRocket.gif
-      272: Resources/AwesomeGuns/Weapons/Animation_Hands/INRocket.gif
-      280: Resources/AwesomeGuns/Weapons/Animation_Hands/BlasterBomb.gif
-      288: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_AP_AMMO.gif
-      296: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_HE_AMMO.gif
-      304: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_I_AMMO.gif
-      312: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
-      320: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
-      328: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
-      336: Resources/AwesomeGuns/Weapons/Animation_Hands/AlienGrenade.gif
-      344: Resources/AwesomeGuns/Weapons/Animation_Hands/SmokeGrenade.gif
-      352: Resources/AwesomeGuns/Weapons/Animation_Hands/RifleClip.gif
-      360: Resources/AwesomeGuns/Weapons/Animation_Hands/PistolClip.gif
-      368: Resources/AwesomeGuns/Weapons/Animation_Hands/PPistolClip.gif
-      376: Resources/AwesomeGuns/Weapons/Animation_Hands/PRifleClip.gif
-      384: Resources/AwesomeGuns/Weapons/Animation_Hands/PHeavyClip.gif
-      392: Resources/AwesomeGuns/Weapons/Animation_Hands/StunBomb.gif
-      400: Resources/AwesomeGuns/Weapons/Animation_Hands/Elerium.gif
-      408: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs.png
-
-  - type: BIGOBS.PCK
-    files:
-      59: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Bigob.gif
-
-  - type: FLOOROB.PCK
-    files:
-      73: Resources/AwesomeGuns/Weapons/Animation_Hands/EleriumFloor.gif
-      74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
-
   - type: SMOKE.PCK
     width: 160
     height: 80
     subX: 32
     subY: 40
     files:
-      56: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ALLOY.gif
-
-  - type: SMOKE.PCK
-    width: 160
-    height: 80
-    subX: 32
-    subY: 40
-    files:
-      66: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ALLOY_HEAVY.gif
+      56: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY.gif
+      66: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY_HEAVY.gif
 
   - type: SMOKE.PCK
     width: 320
@@ -5365,15 +5316,8 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      76: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_ACID.gif
-
-  - type: SMOKE.PCK
-    width: 320
-    height: 40
-    subX: 32
-    subY: 40
-    files:
-      86: Resources/AwesomeGuns/Weapons/Animation_Sprites/Hit_PLASMA.png
+      76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
+      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
 
   - type: Projectiles
     width: 105
@@ -5381,39 +5325,11 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_GrenadeLauncher.png
-
-  - type: Projectiles
-    width: 105
-    height: 3
-    subX: 3
-    subY: 3
-    files:
-      455: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Rifle_AL.png
-
-  - type: Projectiles
-    width: 105
-    height: 3
-    subX: 3
-    subY: 3
-    files:
-      420: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_SniperRifle.png
-
-  - type: Projectiles
-    width: 105
-    height: 3
-    subX: 3
-    subY: 3
-    files:
-      490: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_SniperRifle_AL.png
-
-  - type: Projectiles
-    width: 105
-    height: 3
-    subX: 3
-    subY: 3
-    files:
-      525: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Rail.png
+      385: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_GrenadeLauncher.png
+      455: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rifle_AL.png
+      420: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle.png
+      490: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle_AL.png
+      525: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rail.png
 
   - type: Projectiles
     width: 105
@@ -5421,12 +5337,13 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      560: Resources/AwesomeGuns/Weapons/Animation_Sprites/Sprites_Plasma.png
+      560: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma.png
 
-# Change visualization of weapon in soldier's hands, step by 8(+2) images
+# Change items visualization on the battle screen, in the hands and on the floor
 
   - type: BIGOBS.PCK
     files:
+      59: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Bigob.gif
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.png
       4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.png
       502: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.png
@@ -5474,6 +5391,8 @@ extraSprites:
     files:
       3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.png
       4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.png
+      73: Resources/AwesomeGuns/Weapons/ITEMS/Floorob_Elerium.gif
+      74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
       511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
       1: Resources/AwesomeGuns/Weapons/RIFLE/Floorob.png
@@ -5514,9 +5433,27 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+      # items
+      200: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs_MediChest.png
+      208: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs_MediKit.gif
+      216: Resources/AwesomeGuns/Weapons/ITEMS/HE.gif
+      224: Resources/AwesomeGuns/Weapons/ITEMS/Scanner.gif
+      232: Resources/AwesomeGuns/Weapons/ITEMS/Proxie.gif
+      240: Resources/AwesomeGuns/Weapons/ITEMS/ElectroFlare.gif
+      248: Resources/AwesomeGuns/Weapons/ITEMS/MindProbe.gif
+      #256: free
+      336: Resources/AwesomeGuns/Weapons/ITEMS/AlienGrenade.gif
+      344: Resources/AwesomeGuns/Weapons/ITEMS/SmokeGrenade.gif
+      #368: free
+      #376: free
+      392: Resources/AwesomeGuns/Weapons/ITEMS/StunBomb.gif
+      400: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_Elerium.gif
+      # weapons
       96: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.png
+      360: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
       0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.png
+      352: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.png
       638: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.png
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.png
@@ -5525,20 +5462,30 @@ extraSprites:
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.png
       576: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_CLIP.png
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.png
+      312: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
+      320: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
+      328: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
       32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.png
+      288: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_AP_AMMO.gif
+      296: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_HE_AMMO.gif
+      304: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_I_AMMO.gif
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs.png
       598: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_HE_AMMO.png
       606: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_I_AMMO.png
       614: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_S_AMMO.png
       72: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs.png
+      264: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_L_Rocket.gif
+      272: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_I_Rocket.gif
       622: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
       8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.png
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
+      384: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
       770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.png
+      280: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
       830: Resources/AwesomeGuns/Weapons/SMALL_ROCKET_LAUNCHER/Handobs.png
 
 
