@@ -1322,7 +1322,7 @@ items:
     hitAnimation: 56 #hitAnimation: 26
     power: 52
     damageType: 1
-    clipSize: 4
+    clipSize: 4 #clipSize: 6
     shotgunPellets: 5
     battleType: 2
     invWidth: 2
@@ -5317,12 +5317,12 @@ extraSprites:
       264: Resources/AwesomeGuns/Weapons/Animation_Hands/LGRocket.gif
       272: Resources/AwesomeGuns/Weapons/Animation_Hands/INRocket.gif
       280: Resources/AwesomeGuns/Weapons/Animation_Hands/BlasterBomb.gif
-      288: Resources/AwesomeGuns/Weapons/Animation_Hands/APAutoCannon.gif
-      296: Resources/AwesomeGuns/Weapons/Animation_Hands/HEAutoCannon.gif
-      304: Resources/AwesomeGuns/Weapons/Animation_Hands/INAutoCannon.gif
-      312: Resources/AwesomeGuns/Weapons/Animation_Hands/APHeavyCannon.gif
-      320: Resources/AwesomeGuns/Weapons/Animation_Hands/HEHeavyCannon.gif
-      328: Resources/AwesomeGuns/Weapons/Animation_Hands/INHeavyCannon.gif
+      288: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_AP_AMMO.gif
+      296: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_HE_AMMO.gif
+      304: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_I_AMMO.gif
+      312: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
+      320: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
+      328: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
       336: Resources/AwesomeGuns/Weapons/Animation_Hands/AlienGrenade.gif
       344: Resources/AwesomeGuns/Weapons/Animation_Hands/SmokeGrenade.gif
       352: Resources/AwesomeGuns/Weapons/Animation_Hands/RifleClip.gif
@@ -5489,6 +5489,7 @@ extraSprites:
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_CLIP.gif
       11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob.png
+      12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_AP_AMMO.png
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_HP_AMMO.png
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_I_AMMO.png
       7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Floorob.png
