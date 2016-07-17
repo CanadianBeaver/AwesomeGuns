@@ -5429,9 +5429,9 @@ extraSprites:
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.png
       7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.png
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob.gif
-      591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.png
-      592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.png
-      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.png
+      591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.gif
+      592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.gif
+      593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.gif
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_BOMB.gif
       610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
