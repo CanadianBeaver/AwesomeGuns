@@ -1565,10 +1565,10 @@ items:
       - STR_INCENDIARY_ROCKET
       - STR_SMALL_ROCKET
     accuracyAuto: 0
-    accuracySnap: 55 #accuracySnap: 55
-    accuracyAimed: 100 #accuracyAimed: 115
+    accuracySnap: 60 #accuracySnap: 55
+    accuracyAimed: 120 #accuracyAimed: 115
     tuAuto: 0
-    tuSnap: 45
+    tuSnap: 40 #tuSnap: 45
     tuAimed: 75
     battleType: 1
     twoHanded: true
@@ -1709,8 +1709,8 @@ items:
     costBuy: 150
     costSell: 120
     weight: 3
-    bigSprite: 20
-    floorSprite: 20
+    bigSprite: 620 #bigSprite: 20
+    floorSprite: 620 #floorSprite: 20
     handSprite: 344
     power: 66 #power: 60
     damageType: 9
@@ -4186,6 +4186,7 @@ manufacture:
   - delete: STR_MIND_PROBE
 
   - name: STR_SMALL_ROCKET  # production is similar to STR_BLASTER_BOMB
+    listOrder: 840
     category: STR_AMMUNITION
     requires:
       - STR_FUSION_ROCKET
@@ -5434,7 +5435,8 @@ extraSprites:
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_S_AMMO.gif
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.png
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_BOMB.gif
-      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Bigob.gif
+      610: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_INCENDIARY.gif
+      620: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
       34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png
@@ -5442,7 +5444,7 @@ extraSprites:
       41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.png
-      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Bigob.png
+      770: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN.gif
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.png
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
 
@@ -5450,7 +5452,7 @@ extraSprites:
     files:
       3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.png
       4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.png
-      73: Resources/AwesomeGuns/Weapons/ITEMS/Floorob_Elerium.gif
+      73: Resources/AwesomeGuns/Weapons/ITEMS/Floorob_ELERIUM.gif
       74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
       511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
@@ -5476,14 +5478,15 @@ extraSprites:
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_I_AMMO.png
       593: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_S_AMMO.png
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.png
-      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_BOMB.png
-      610: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Floorob.gif
+      16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_BOMB.gif
+      610: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_INCENDIARY.gif
+      620: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_SMOKE.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.png
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
-      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Floorob.png
+      770: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN.gif
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.png
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
@@ -5496,17 +5499,17 @@ extraSprites:
       # items
       200: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs_MediChest.png
       208: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Handobs_MediKit.gif
-      216: Resources/AwesomeGuns/Weapons/ITEMS/HE.gif
+      216: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HE.gif
       224: Resources/AwesomeGuns/Weapons/ITEMS/Scanner.gif
-      232: Resources/AwesomeGuns/Weapons/ITEMS/Proxie.gif
-      240: Resources/AwesomeGuns/Weapons/ITEMS/ElectroFlare.gif
+      232: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
+      240: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_ELECTRO_FLARE.gif
       248: Resources/AwesomeGuns/Weapons/ITEMS/MindProbe.gif
-      336: Resources/AwesomeGuns/Weapons/ITEMS/AlienGrenade.gif
-      344: Resources/AwesomeGuns/Weapons/ITEMS/SmokeGrenade.gif
+      336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
+      344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
       #368: free
       #376: free
-      392: Resources/AwesomeGuns/Weapons/ITEMS/StunBomb.gif
-      400: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_Elerium.gif
+      392: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_STUN_BOMB.gif
+      400: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_ELERIUM.gif
       # weapons
       96: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.png
       360: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
@@ -5533,17 +5536,17 @@ extraSprites:
       606: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_I_AMMO.png
       614: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_S_AMMO.png
       72: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs.png
-      256: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_BOMB.png
+      256: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_BOMB.gif
       264: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_L_Rocket.gif
       272: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_I_Rocket.gif
-      622: Resources/AwesomeGuns/Weapons/INCENDIARY_GRENADE/Handobs.gif
+      622: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
       8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.png
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       384: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.png
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.png
-      770: Resources/AwesomeGuns/Weapons/STUN_GRENADE/Handobs.png
+      770: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN.gif
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.png
       280: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.png
