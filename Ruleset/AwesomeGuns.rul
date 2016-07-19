@@ -860,8 +860,8 @@ items:
     costSell: 140
     weight: 1 #weight: 3
     bigSprite: 502
-    floorSprite: 4
-    handSprite: 360
+    floorSprite: 502
+    handSprite: 368
     bulletSpeed: 1
     hitSound: 8002 #hitSound: 22
     hitAnimation: 56
@@ -5404,23 +5404,23 @@ extraSprites:
     files:
       59: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Bigob.gif
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.png
-      4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.png
-      502: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.png
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.gif
+      502: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob.gif
-      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.png
-      512: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.png
+      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.gif
+      512: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.gif
       1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.png
-      2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.png
-      522: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.png
+      2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.gif
+      522: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.gif
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob.png
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.png
-      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.png
-      532: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.png
+      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.gif
+      532: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.gif
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
-      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.png
-      552: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.png
+      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.gif
+      552: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.gif
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.png
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_CLIP.gif
@@ -5437,6 +5437,7 @@ extraSprites:
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_BOMB.gif
       610: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_INCENDIARY.gif
       620: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif
+      39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
       34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png
@@ -5451,7 +5452,8 @@ extraSprites:
   - type: FLOOROB.PCK
     files:
       3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.png
-      4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.png
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.gif
+      502: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_AL_CLIP.gif
       73: Resources/AwesomeGuns/Weapons/ITEMS/Floorob_ELERIUM.gif
       74: Resources/AwesomeGuns/Weapons/MEDI_CHEST/Floorob.png
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
@@ -5506,13 +5508,13 @@ extraSprites:
       248: Resources/AwesomeGuns/Weapons/ITEMS/MindProbe.gif
       336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
       344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
-      #368: free
       #376: free
       392: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_STUN_BOMB.gif
       400: Resources/AwesomeGuns/Weapons/ITEMS/Handobs_ELERIUM.gif
       # weapons
       96: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.png
       360: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
+      368: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
       0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.png
       352: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
