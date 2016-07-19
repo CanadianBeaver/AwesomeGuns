@@ -5460,7 +5460,7 @@ extraSprites:
       511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
       # 1: Resources/AwesomeGuns/Weapons/RIFLE/Floorob.gif - default image is OK
       2: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_CLIP.png
-      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.png
+      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.gif
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.png
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_AL_CLIP.png
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.png
@@ -5518,7 +5518,7 @@ extraSprites:
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
       #0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif - default image is OK
       352: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
-      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.png
+      630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.gif
       638: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.png
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.png
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
