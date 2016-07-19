@@ -5428,7 +5428,7 @@ extraSprites:
       12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_AP_AMMO.png
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_HP_AMMO.png
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.png
-      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.png
+      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.gif
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob.gif
       591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.gif
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_I_AMMO.gif
@@ -5474,7 +5474,7 @@ extraSprites:
       12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_AP_AMMO.png
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_HP_AMMO.png
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_I_AMMO.png
-      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Floorob.png
+      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Floorob.gif
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob.gif
       591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_HE_AMMO.png
       592: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Floorob_I_AMMO.png
@@ -5529,7 +5529,7 @@ extraSprites:
       312: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
       320: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
       328: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
-      32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.png
+      32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.gif
       288: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_AP_AMMO.gif
       296: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_HE_AMMO.gif
       304: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_I_AMMO.gif
