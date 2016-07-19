@@ -5415,7 +5415,7 @@ extraSprites:
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob.png
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.png
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.gif
       531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.gif
       532: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.gif
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
@@ -5463,7 +5463,7 @@ extraSprites:
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.gif
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.png
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_AL_CLIP.png
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.png
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.gif
       531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_CLIP.png
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob.gif
       551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_CLIP.gif
@@ -5516,11 +5516,11 @@ extraSprites:
       360: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
       368: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
-      #0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif - default image is OK
+      0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif
       352: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.gif
       638: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.png
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.png
+      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.gif
       550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.png
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.png
