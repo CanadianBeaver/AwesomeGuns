@@ -5341,8 +5341,7 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/UI/Movings.png
 
-# Improve visualization of objects in soldier's hands, step by 8 images
-# Also improve hits and sprites
+# Improve hits and sprites
 
   - type: SMOKE.PCK
     width: 160
@@ -5361,6 +5360,7 @@ extraSprites:
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
       86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
+      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.png
 
   - type: Projectiles
     width: 105
@@ -5503,13 +5503,14 @@ extraSprites:
       #352:
       #360: #368: #376: #384:
       #392:
-      # convntional weapons use images from 400
+      # conventional weapons use images from 400
       #400: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
       #408:
       #416:
       #424:
       #432:
       #440:
+      #448:
       1361: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
       1371: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
