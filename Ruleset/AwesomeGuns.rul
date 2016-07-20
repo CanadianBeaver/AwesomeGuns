@@ -1683,6 +1683,7 @@ items:
     weight: 3
     bigSprite: 19
     floorSprite: 19
+    handSprite: 120
     power: 52 #power: 50
     damageType: 3
     battleType: 4
@@ -5492,13 +5493,13 @@ extraSprites:
       #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.gif - default image is OK
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
-  - type: HANDOB.PCK
+  - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First avalaible index is 128.
     width: 256
     height: 40
     subX: 32
     subY: 40
     files:
-      # items
+      # items, will use images from index number 200, 128-199 will be reserved
       200: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs_MediChest.gif
       208: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs_MediKit.gif
       216: Resources/AwesomeGuns/Items/Handobs_MOTION_SCANNER.gif
@@ -5512,7 +5513,7 @@ extraSprites:
       #280:
       #288:
       #296:
-      # explosions
+      # explosions use images from 304
       304: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
       312: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
       320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
@@ -5525,11 +5526,13 @@ extraSprites:
       376: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
       384: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
       #392:
-      # weapons
-      #400:
-      #622:
-      #770:
-      #96: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
+      # convntional weapons use images from 400
+      #400: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
+      #408:
+      #416:
+      #424:
+      #432:
+      #440:
       1361: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
       1371: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
@@ -5543,6 +5546,8 @@ extraSprites:
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.gif
       576: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_CLIP.gif
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.gif
+      #622:
+      #770:
       1301: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
       1311: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
       1321: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
@@ -5559,6 +5564,7 @@ extraSprites:
       1211: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_L_Rocket.gif
       1221: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_I_Rocket.gif
       8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.gif
+      # alien's weapons use images from 800
       710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       1381: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
