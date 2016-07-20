@@ -3354,51 +3354,13 @@ research:
     dependencies:
       - STR_GRAV_SHIELD
 
-# Soldiers' toys
 
-  - delete: STR_MOTION_SCANNER # it can be bought
+# Fix the bug in the research tree that relatives to research time of SECTOID COMMANDER
 
-  - name: STR_MEDI_KIT
-    cost: 210
-    points: 20
-    dependencies:
-      - STR_SECTOID_AUTOPSY
-      - STR_FLOATER_AUTOPSY
-      - STR_SNAKEMAN_AUTOPSY
-      - STR_ALIEN_BIOLOGY
+  - name: STR_SECTOID_COMMANDER
+    cost: 192 #cost: 190
 
-  - name: STR_PSI_AMP
-    cost: 500
-    points: 20
-    dependencies:
-      - STR_MIND_PROBE
-      - STR_PSI_LAB
-
-# Fix the ALIEN CONTAINMENT
-
-  - name: STR_ALIEN_ENTERTAINMENT
-    cost: 90 #cost: 150
-    points: 15 #points: 30
-    needItem: true
-
-  - name: STR_ALIEN_FOOD
-    cost: 90 #cost: 150
-    points: 15 #points: 30
-    needItem: true
-
-  - name: STR_ALIEN_CONTAINMENT
-    cost: 300
-    score: 10
-    dependencies:
-      - STR_ALIEN_ENTERTAINMENT
-      - STR_ALIEN_FOOD
-      - STR_ALIEN_BIOLOGY
-
-  - name: STR_STUN_ROD
-    cost: 100
-    score: 10
-    dependencies:
-      - STR_ALIEN_BIOLOGY
+# ALIEN BIOLOGY section
 
   - name: STR_ALIEN_BIOLOGY
     listOrder: 1299
@@ -3450,6 +3412,52 @@ research:
   - name: STR_ETHEREAL_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
+
+# Fix the ALIEN CONTAINMENT (depends by ALIEN BIOLOGY)
+
+  - name: STR_ALIEN_ENTERTAINMENT
+    cost: 90 #cost: 150
+    points: 15 #points: 30
+    needItem: true
+
+  - name: STR_ALIEN_FOOD
+    cost: 90 #cost: 150
+    points: 15 #points: 30
+    needItem: true
+
+  - name: STR_ALIEN_CONTAINMENT
+    cost: 300
+    score: 10
+    dependencies:
+      - STR_ALIEN_ENTERTAINMENT
+      - STR_ALIEN_FOOD
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_STUN_ROD
+    cost: 100
+    score: 10
+    dependencies:
+      - STR_ALIEN_CONTAINMENT #STR_ALIEN_BIOLOGY. TODO: I am thinking about...
+
+# Fix the Soldiers' toys
+
+  - delete: STR_MOTION_SCANNER # it can be bought
+
+  - name: STR_MEDI_KIT
+    cost: 210
+    points: 20
+    dependencies:
+      - STR_SECTOID_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_SNAKEMAN_AUTOPSY
+      - STR_ALIEN_BIOLOGY
+
+  - name: STR_PSI_AMP
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_MIND_PROBE
+      - STR_PSI_LAB
 
 # PLASMA weapons and Greanades
 
