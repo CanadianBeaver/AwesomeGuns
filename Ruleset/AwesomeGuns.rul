@@ -2455,7 +2455,7 @@ invs:
       STR_GROUND: 6
       STR_BACK_PACK: 16
       STR_BELT: 8
-      STR_LEFT_HAND: 2
+      STR_LEFT_HAND: 1
       STR_RIGHT_HAND: 2
       STR_RIGHT_LEG: 10
       STR_RIGHT_SHOULDER: 12
