@@ -1773,7 +1773,7 @@ items:
     weight: 3
     bigSprite: 770
     floorSprite: 770
-    handSprite: 376
+    handSprite: 344
     hitSound: 0
     hitAnimation: 0
     power: 62
@@ -2182,7 +2182,7 @@ items:
     weight: 3
     bigSprite: 38
     floorSprite: 37
-    handSprite: 384
+    handSprite: 176
     hitSound: 0
     hitAnimation: 0
     power: 90
@@ -2201,7 +2201,7 @@ items:
     weight: 3
     bigSprite: 23
     floorSprite: 23
-    handSprite: 216
+    handSprite: 136
     battleType: 7
     tuUse: 25
     armor: 18
@@ -2214,7 +2214,7 @@ items:
     weight: 5
     bigSprite: 59
     floorSprite: 74
-    handSprite: 200
+    handSprite: 168
     battleType: 6
     invWidth: 2
     invHeight: 2
@@ -2235,7 +2235,7 @@ items:
     weight: 5
     bigSprite: 24
     floorSprite: 24
-    handSprite: 208
+    handSprite: 160
     battleType: 6
     invWidth: 1
     invHeight: 2
@@ -2258,7 +2258,7 @@ items:
     weight: 6 #weight: 5
     bigSprite: 29
     floorSprite: 28
-    handSprite: 224
+    handSprite: 144
     hitSound: 37
     battleType: 8
     invWidth: 2
@@ -2311,7 +2311,7 @@ items:
     weight: 1 #weight: 3
     bigSprite: 55
     floorSprite: 72
-    handSprite: 232
+    handSprite: 152
     power: 16 #power: 15
     battleType: 10
     armor: 8
@@ -2322,7 +2322,7 @@ items:
     weight: 1 #weight: 3
     bigSprite: 56
     floorSprite: 73
-    handSprite: 240
+    handSprite: 128
     invWidth: 1
     invHeight: 1
     armor: 1
@@ -5384,7 +5384,7 @@ extraSprites:
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
-  - type: BIGOBS.PCK
+  - type: BIGOBS.PCK # Contains 57 (0-56) objects. #57-#58 are reserved for CIVM_CORPSE and CIVF_CORPSE. #1001-#1005 are reserved for personal armors.
     files:
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif
@@ -5433,7 +5433,7 @@ extraSprites:
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
 
-  - type: FLOOROB.PCK
+  - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
       74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
       73: Resources/AwesomeGuns/Items/Floorob_ELERIUM.gif
@@ -5476,25 +5476,22 @@ extraSprites:
       #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.gif - default image is OK
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
-  - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First avalaible index is 128.
+  - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
     height: 40
     subX: 32
     subY: 40
     files:
-      # items, will use images from index number 200, 128-199 will be reserved
-      200: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs_MediChest.gif
-      208: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs_MediKit.gif
-      216: Resources/AwesomeGuns/Items/Handobs_MOTION_SCANNER.gif
-      224: Resources/AwesomeGuns/Items/Handobs_MIND_PROBE.gif
-      232: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
-      240: Resources/AwesomeGuns/Items/Handobs_ELERIUM.gif
-      #248:
-      #256:
-      #264:
-      #272:
-      #280:
-      #288:
+      # items
+      128: Resources/AwesomeGuns/Items/Handobs_ELERIUM.gif
+      136: Resources/AwesomeGuns/Items/Handobs_MOTION_SCANNER.gif
+      144: Resources/AwesomeGuns/Items/Handobs_MIND_PROBE.gif
+      152: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
+      160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
+      168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
+      176: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
+      #184:
+      #192: #200: #208: #216: #224: #232: #240: #248: #256: #264: #272: #280:  #288:
       #296:
       # explosions use images from 304
       304: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
@@ -5502,12 +5499,9 @@ extraSprites:
       320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
       328: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
       336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
-      #344:
+      344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
       #352:
-      #360:
-      #368:
-      376: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
-      384: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
+      #360: #368: #376: #384:
       #392:
       # convntional weapons use images from 400
       #400: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
