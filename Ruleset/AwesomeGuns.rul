@@ -123,7 +123,7 @@ facilities:
     buildCost: 600000 #buildCost: 800000
     buildTime: 15 #buildTime: 25
     monthlyCost: 30000 #monthlyCost: 15000
-    radarRange: 2400 #radarRange: 2250
+    radarRange: 2250 #radarRange: 2250
     radarChance: 5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
@@ -132,7 +132,7 @@ facilities:
     buildCost: 1800000 #buildCost: 1400000
     buildTime: 20 #buildTime: 26
     monthlyCost: 90000 #monthlyCost: 30000
-    radarRange: 2150 #radarRange: 2400
+    radarRange: 1900 #radarRange: 2400
     radarChance: 85 #radarChance: 100
 
 # Fix the DEFENSES
@@ -5867,11 +5867,13 @@ extraStrings:
   - type: en
     strings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1500 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 10 minutes."
-      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2400 nautical miles and is linked to satellite systems for ground search. Each system has a 5% chance of detecting an average sized object every 10 minutes."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2250 nautical miles and is linked to satellite systems for ground search. Each system has a 5% chance of detecting an average sized object every 10 minutes."
+      STR_HYPER_WAVE_DECODER_UFOPEDIA: "Alien communications rely on a supra-dimensional wave which travels almost instantaneously. The decoder facility intercepts UFO transmissions and decodes the information an effective range of 1900 nautical miles. This system has a 85% chance of detecting and will show the type of UFO, the alien race and the type of activity."
   - type: ru
     strings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1500 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 20% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
-      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия в 2400 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Радарная система дальнего обнаружения имеет эффективный радиус действия в 2250 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 5% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
+      STR_HYPER_WAVE_DECODER_UFOPEDIA: "Средства связи инопланетян основаны на использовании гиперпространственных волн, распространяющихся почти мгновенно. Декодер позволяет осуществить перехват и расшифровку переговоров НЛО на расстоянии в 1900 морских миль. Возможно определение типа НЛО, его принадлежности определенной расе инопланетян и тип выполняемого им задания с вероятностью 85%."
 
 # Raven - new improved interceptor
   - type: en
