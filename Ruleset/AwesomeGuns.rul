@@ -194,7 +194,7 @@ crafts:
     sprite: 3
     fuelMax: 1000
     damageMax: 65 #damageMax: 100
-    speedMax: 2100
+    speedMax: 2150 #speedMax: 2100
     accel: 3
     weapons: 2
     costBuy: 600000
@@ -211,7 +211,7 @@ crafts:
     sprite: 24
     fuelMax: 1200
     damageMax: 220
-    speedMax: 2800
+    speedMax: 2600
     accel: 5
     weapons: 2
     costSell: 800000
@@ -1861,7 +1861,7 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 68 #power: 85
+    power: 64 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 75 #accuracySnap: 50
@@ -4418,13 +4418,16 @@ ufopaedia:
 
 # Crafts
 
+  - id: STR_INTERCEPTOR
+    listOrder: 101
+
   - id: STR_RAVEN # new improved interceptor
-    listOrder: 406
+    listOrder: 102
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
       - STR_IMPROVED_INTERCEPTOR
-    image_id: RavenUFOpaediaImage
+    image_id: RAVEN_UFOPEDIAImage
     rect_stats:
       x: 5
       y: 110
@@ -4460,7 +4463,7 @@ ufopaedia:
     requires:
       - STR_IMPROVED_ROCKETS
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: Tornado_UFOpaedia
+    image_id: Tornado_UFOPEDIAImage
     text: STR_ALLOY_AVALANCHE_UFOPEDIA
 
   - id: STR_ALLOY_STINGRAY
@@ -4469,7 +4472,7 @@ ufopaedia:
     requires:
       - STR_IMPROVED_ROCKETS
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: Barracuda_UFOpaedia
+    image_id: Barracuda_UFOPEDIAImage
     text: STR_ALLOY_STINGRAY_UFOPEDIA
 
   - id: STR_ALLOY_CANNON_UC
@@ -4478,7 +4481,7 @@ ufopaedia:
     requires:
       - STR_ALLOY_CANNON
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: ALLOY_CANNON_UFOpaedia
+    image_id: ALLOY_CANNON_UFOPEDIAImage
     text: STR_ALLOY_CANNON_UFOPEDIA
 
   - id: STR_FUSION_BALL_UC
@@ -4563,9 +4566,11 @@ ufopaedia:
 
   - id: STR_ALIEN_BIOLOGY
     listOrder: 4590
-    type_id: 8
+    type_id: 7
     section: STR_ALIEN_LIFE_FORMS
+    text_width: 146
     text: STR_ALIEN_BIOLOGY_UFOPEDIA
+    image_id: ALIEN_BIOLOGY_UFOPEDIAImage
     requires:
       - STR_ALIEN_BIOLOGY
 
@@ -4595,9 +4600,11 @@ ufopaedia:
 
   - id: STR_ALLOY_CLIPS
     listOrder: 1926
-    type_id: 8
+    type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
     text: STR_ALLOY_CLIPS_UFOPEDIA
+    image_id: ALLOY_CLIPS_UFOPEDIAImage
     requires:
       - STR_ALLOY_CLIPS
 
@@ -4611,17 +4618,21 @@ ufopaedia:
 
   - id: STR_ACID_CLIPS
     listOrder: 1928
-    type_id: 8
+    type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
     text: STR_ACID_CLIPS_UFOPEDIA
+    image_id: ACID_CLIPS_UFOPEDIAImage
     requires:
       - STR_ACID_CLIPS
 
   - id: STR_IMPROVED_ROCKETS
     listOrder: 1924
-    type_id: 8
+    type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
     text: STR_IMPROVED_ROCKETS_UFOPEDIA
+    image_id: IMPROVED_ROCKETS_UFOPEDIAImage
     requires:
       - STR_IMPROVED_ROCKETS
 
@@ -4629,9 +4640,11 @@ ufopaedia:
 
   - id: STR_LASER_WEAPONS
     listOrder: 3590
-    type_id: 8
+    type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
     text: STR_LASER_WEAPONS_UFOPEDIA
+    image_id: LASER_WEAPONS_UFOPEDIAImage
     requires:
       - STR_LASER_WEAPONS
 
@@ -4877,15 +4890,17 @@ ufopaedia:
 # Electromagnetic weapons
 
   - id: STR_ELECTROMAGNETIC_WEAPONS
-    listOrder: 1995
-    type_id: 8
+    listOrder: 3860
+    type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
     text: STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA
+    image_id: ELECTROMAGNETIC_WEAPONS_UFOPEDIAImage
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
 
   - id: STR_RAILGUN
-    listOrder: 2230
+    listOrder: 3861
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_RAILGUN_UFOPEDIA
@@ -4966,12 +4981,12 @@ extraSprites:
 # Crafts
 
   # Raven - new improved interceptor
-  - type: RavenUFOpaediaImage
+  - type: RAVEN_UFOPEDIAImage
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Raven/UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Raven/UFOpedia.gif
   - type: BASEBITS.PCK
     files:
       57: Resources/AwesomeGuns/Crafts/Raven/Base.gif
@@ -4982,34 +4997,34 @@ extraSprites:
 
 # Craft weapons
 
-  - type: Tornado_UFOpaedia
+  - type: Tornado_UFOPEDIAImage
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Tornado_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Tornado_UFOpedia.gif
 
-  - type: Barracuda_UFOpaedia
+  - type: Barracuda_UFOPEDIAImage
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Barracuda_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Barracuda_UFOpedia.gif
 
-  - type: ALLOY_CANNON_UFOpaedia
+  - type: ALLOY_CANNON_UFOPEDIAImage
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Cannon_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Cannon_UFOpedia.gif
 
-  # Plasma image for UFOpaedia
+  # Plasma image for UFOpedia
   - type: UP011.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpedia.gif
 
   # Fusion craft weapon
   - type: UP009.SPK
@@ -5017,7 +5032,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/AwesomeGuns/Crafts/Weapons/Fusion_UFOpaedia.gif
+      0: Resources/AwesomeGuns/Crafts/Weapons/Fusion_UFOpedia.gif
   - type: INTICON.PCK
     files:
       16: Resources/AwesomeGuns/Crafts/Weapons/Fusion_Inticon.gif
@@ -5691,6 +5706,50 @@ extraSprites:
       1231: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
       830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
+# Images for UFOPAEDIA
+
+  - type: LASER_WEAPONS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/LASER_WEAPONS_UFOpedia.gif
+
+  - type: ALIEN_BIOLOGY_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ALIEN_BIOLOGY_UFOpedia.gif
+
+  - type: ALLOY_CLIPS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ALLOY_CLIPS_UFOpedia.gif
+
+  - type: ACID_CLIPS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ACID_CLIPS_UFOpedia.gif
+
+  - type: IMPROVED_ROCKETS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/IMPROVED_ROCKETS_UFOpedia.gif
+
+  - type: ELECTROMAGNETIC_WEAPONS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ELECTROMAGNETIC_WEAPONS_UFOpedia.gif
+
 
 
 extraSounds:
@@ -6032,7 +6091,7 @@ extraStrings:
       # Manufacture
       STR_FLYING_SUIT_FROM_POWER_SUIT: "Flying Suit from Power Suit"
       STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Flying Armor from Light Armor"
-      # UFOpaedia
+      # UFOpedia
       STR_PERSONAL_ARMOR_UFOPEDIA: "Using the newly discovered Alien Alloys, this new armor gives our men a fighting chance against the alien threat."
       STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Using the newly discovered Alien Alloys and incorporating alien anti-gravity navigation technology to allow full freedom of movement across the battlefield."
       STR_POWER_SUIT_UFOPEDIA: "A powerful new protection for soldiers, this armor is powered by an Elerium energy source and greatly amplifies the strength of the wearer, it offers the best protection yet for combat troops."
@@ -6062,7 +6121,7 @@ extraStrings:
       # Производство
       STR_FLYING_SUIT_FROM_POWER_SUIT: "Переделка энергоскафандра"
       STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Переделка лёгкого бронекостюма"
-      # UFOpaedia
+      # UFOpedia
       STR_PERSONAL_ARMOR_UFOPEDIA: "Броня с использованием сплавов пришельцев дает нашим бойцам больше шансов в сражении с инопланетной угрозой."
       STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Легкая броня с использованием сплавов пришельцев и технологии антигравитации и навигации, дающая полную свободу передвижения на поле боя."
       STR_POWER_SUIT_UFOPEDIA: "Эта броня питается от энергетического источника на элериуме и значительно увеличивает силу, что делает ее наилучшей защитой для бойцов."
