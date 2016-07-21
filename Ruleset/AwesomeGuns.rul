@@ -2121,7 +2121,7 @@ items:
     handSprite: 760 # handSprite: 120
     bulletSpeed: 8
     hitSound: 8018
-    hitAnimation: 66
+    hitAnimation: 96
     power: 125
     damageType: 1
     clipSize: 1
@@ -2335,6 +2335,7 @@ items:
     floorSprite: 26
     handSprite: 80
     meleeSound: 54
+    meleeAnimation: 4
     power: 72 #power: 65
     damageType: 6
     accuracyMelee: 100
@@ -5490,7 +5491,15 @@ extraSprites:
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
       86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
-      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
+      96: Resources/AwesomeGuns/Weapons/SPRITES/HIT_RAILGUN.gif
+
+  - type: HIT.PCK
+    width: 320
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
 
   - type: Projectiles
     width: 105
