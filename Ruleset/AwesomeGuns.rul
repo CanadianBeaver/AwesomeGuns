@@ -1753,6 +1753,7 @@ items:
   - type: STR_ALIEN_GRENADE
     requires:
       - STR_ALIEN_GRENADE
+      - STR_ALIEN_WEAPON
     size: 0.1
     costSell: 14850
     weight: 3
@@ -1770,7 +1771,7 @@ items:
     listOrder: 4505
     size: 0.1
     costSell: 14850
-    weight: 3
+    weight: 4
     bigSprite: 770
     floorSprite: 770
     handSprite: 344
@@ -1887,6 +1888,7 @@ items:
   - type: STR_PLASMA_PISTOL
     requires:
       - STR_PLASMA_PISTOL
+      - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 84000
     weight: 10 #weight: 3
@@ -1898,6 +1900,7 @@ items:
     fireSound: 8061 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_PISTOL_CLIP
+      - STR_CONVERTED_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
     accuracySnap: 65
     accuracyAimed: 80 #accuracyAimed: 85
@@ -1919,6 +1922,7 @@ items:
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
       - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 4440
     weight: 3
@@ -1929,14 +1933,32 @@ items:
     hitAnimation: 46
     power: 52 #power: 52
     damageType: 5
-    clipSize: 25 #clipSize: 26
+    clipSize: 26
     battleType: 2
     recoveryPoints: 1
     armor: 16
 
+  - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 4440
+    weight: 4
+    bigSprite: 34
+    floorSprite: 33
+    handSprite: 710
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 46
+    power: 48 #power: 52
+    damageType: 5
+    clipSize: 13 #clipSize: 26
+    battleType: 2
+    armor: 10
+
   - type: STR_PLASMA_RIFLE
     requires:
       - STR_PLASMA_RIFLE
+      - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 126500
     weight: 20 #weight: 5
@@ -1948,6 +1970,7 @@ items:
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
+      - STR_CONVERTED_PLASMA_RIFLE_CLIP
     accuracyAuto: 50 #accuracyAuto: 55
     accuracySnap: 74 #accuracySnap: 86
     accuracyAimed: 93 #accuracyAimed: 100
@@ -1970,6 +1993,7 @@ items:
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
       - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 6290
     weight: 3
@@ -1980,10 +2004,27 @@ items:
     hitAnimation: 46
     power: 80
     damageType: 5
-    clipSize: 25 #clipSize: 28
+    clipSize: 28
     battleType: 2
     recoveryPoints: 1
     armor: 17
+
+  - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 6290
+    weight: 4
+    bigSprite: 41
+    floorSprite: 33
+    handSprite: 710
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 46
+    power: 70
+    damageType: 5
+    clipSize: 14
+    battleType: 2
+    armor: 10
 
   - type: STR_HEAVY_PLASMA
     requires:
@@ -2145,6 +2186,7 @@ items:
   - type: STR_SMALL_LAUNCHER
     requires:
       - STR_SMALL_LAUNCHER
+      - STR_ALIEN_WEAPON
     size: 0.2
     costSell: 120000
     weight: 15 #weight: 10
@@ -2287,7 +2329,7 @@ items:
   - type: STR_STUN_ROD
     size: 0.1
     costBuy: 0 #costBuy: 1260 - we will manufacture it
-    costSell: 48000 #costSell: 945
+    costSell: 39000 #costSell: 945
     weight: 6
     bigSprite: 26
     floorSprite: 26
@@ -2773,7 +2815,7 @@ armors:
       - 1.0 # Smoke
     loftempsSet: [ 3 ]
 
-# Restyling inventory images for aliens and civilians
+# Restyling inventory images for aliens and civilians. Also describes alien armor.
 
   - type: SECTOID_ARMOR0
     spriteInv: sectoidInventoryImage
@@ -2808,7 +2850,7 @@ armors:
       - 0.6 # Plasma
       - 0.0 # Stun
       - 0.4 # Melee
-      - 1.8 # Acid
+      - 1.5 # Acid
       - 0.0 # Smoke
 
   - type: FLOATER_ARMOR0
@@ -2876,7 +2918,7 @@ armors:
       - 0.7 # Armor Piercing
       - 1.8 # Incendiary
       - 0.7 # High Explosive
-      - 0.8 # Laser
+      - 0.6 # Laser
       - 0.6 # Plasma
       - 0.7 # Stun
       - 0.7 # Melee
@@ -2947,13 +2989,13 @@ armors:
       - 1.0 # None
       - 0.6 # Armor Piercing
       - 0.2 # Incendiary
-      - 1.8 # High Explosive
+      - 1.5 # High Explosive
       - 0.2 # Laser
       - 0.2 # Plasma
       - 1.0 # Stun
       - 1.0 # Melee
       - 0.4 # Acid
-      - 2.5 # Smoke
+      - 2.0 # Smoke
 
   - type: ZOMBIE_ARMOR
     spriteInv: zombieInventoryImage
@@ -2984,7 +3026,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.8 # Laser
+      - 0.5 # Laser
       - 0.5 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -3002,7 +3044,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.8 # Laser
+      - 0.5 # Laser
       - 0.5 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -3020,7 +3062,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.8 # Laser
+      - 0.5 # Laser
       - 0.5 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -3236,6 +3278,25 @@ research:
       - STR_UFO_POWER_SOURCE
       - STR_IMPROVED_INTERCEPTOR
 
+  - name: STR_NEW_FIGHTER_CRAFT
+    cost: 600
+    points: 30
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+
+  - name: STR_NEW_FIGHTER_TRANSPORTER
+    cost: 900 #cost: 700
+    points: 30
+    dependencies:
+      - STR_NEW_FIGHTER_CRAFT
+      - STR_HYPER_WAVE_DECODER
+
+  - name: STR_ULTIMATE_CRAFT
+    cost: 1200 #cost: 900
+    points: 30
+    dependencies:
+      - STR_GRAV_SHIELD
+
 # Craft alloy weapons
 
   - name: STR_IMPROVED_ROCKETS
@@ -3294,6 +3355,30 @@ research:
       - STR_CHRYSSALID_AUTOPSY
       - STR_ALLOY_WEAPON
 
+# Armors
+
+  - name: STR_PERSONAL_ARMOR
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+
+  - name: STR_POWER_SUIT
+    cost: 350 #cost: 205
+    points: 20
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_UFO_POWER_SOURCE
+      - STR_PERSONAL_ARMOR
+
+  - name: STR_FLYING_SUIT
+    cost: 330
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_UFO_NAVIGATION
+      - STR_FLOATER_AUTOPSY
+
 # LASER weapons
 
   - name: STR_LASER_WEAPONS
@@ -3342,18 +3427,8 @@ research:
     cost: 300
     points: 15
     dependencies:
-      - STR_NEW_FIGHTER_CRAFT
+      - STR_ELERIUM_115
       - STR_ALIEN_ENGINEER
-
-  - name: STR_GRAV_SHIELD
-    dependencies:
-      - STR_NEW_FIGHTER_TRANSPORTER
-      - STR_ELECTROMAGNETIC_WEAPONS
-
-  - name: STR_ULTIMATE_CRAFT
-    dependencies:
-      - STR_GRAV_SHIELD
-
 
 # Fix the bug in the research tree that relatives to research time of SECTOID COMMANDER
 
@@ -3459,11 +3534,15 @@ research:
       - STR_MIND_PROBE
       - STR_PSI_LAB
 
-# PLASMA weapons and Greanades
+# Alien Live Dependencies (there is only STR_LEADER_PLUS in the game)
 
-  - name: STR_ALIEN_WEAPON
-    cost: 200
-    points: 20
+  - name: STR_ALIEN_SOLDIER # SOLDIER
+    dependencies:
+      - STR_SECTOID_SOLDIER
+      - STR_FLOATER_SOLDIER
+      - STR_SNAKEMAN_SOLDIER
+      - STR_MUTON_SOLDIER
+      - STR_ETHEREAL_SOLDIER
 
   - name: STR_SECTOID_SOLDIER
     unlocks:
@@ -3491,82 +3570,10 @@ research:
       - STR_PSI_LAB
       - STR_ALIEN_SOLDIER
 
-  - name: STR_ALIEN_SOLDIER
+  - name: STR_ALIEN_MEDIC # MEDIC
     dependencies:
-      - STR_SECTOID_SOLDIER
-      - STR_FLOATER_SOLDIER
-      - STR_SNAKEMAN_SOLDIER
-      - STR_MUTON_SOLDIER
-      - STR_ETHEREAL_SOLDIER
-
-  - name: STR_PLASMA_PISTOL
-    cost: 600
-    points: 20
-    needItem: true
-    dependencies:
-      - STR_ALIEN_WEAPON
-      - STR_ALIEN_SOLDIER
-
-  - name: STR_PLASMA_PISTOL_CLIP
-    cost: 400
-    points: 5
-    needItem: true
-    dependencies:
-      - STR_PLASMA_PISTOL
-      - STR_ELERIUM_115
-
-  - name: STR_PLASMA_RIFLE
-    cost: 800 #cost: 700
-    points: 25
-    needItem: true
-    dependencies:
-      - STR_ALIEN_WEAPON
-      - STR_ALIEN_SOLDIER
-
-  - name: STR_PLASMA_RIFLE_CLIP
-    cost: 400
-    points: 6
-    needItem: true
-    dependencies:
-      - STR_PLASMA_RIFLE
-      - STR_ELERIUM_115
-
-  - name: STR_HEAVY_PLASMA
-    cost: 800
-    points: 30
-    needItem: true
-    dependencies:
-      - STR_ALIEN_WEAPON
-      - STR_ALIEN_SOLDIER
-
-  - name: STR_HEAVY_PLASMA_CLIP
-    cost: 400
-    points: 7
-    needItem: true
-    dependencies:
-      - STR_HEAVY_PLASMA
-      - STR_ELERIUM_115
-
-  - name: STR_PLASMA_CANNON
-    cost: 660
-    points: 25
-    dependencies:
-      - STR_ELERIUM_115
-      - STR_UFO_NAVIGATION
-      - STR_HEAVY_PLASMA
-      - STR_HEAVY_PLASMA_CLIP
-  - delete: STR_PLASMA_CANNON_DEP1
-  - delete: STR_PLASMA_CANNON_DEP2
-
-  - name: STR_ALIEN_GRENADE
-    cost: 200
-    points: 20
-    needItem: true
-    dependencies:
-      - STR_ALIEN_WEAPON
-      - STR_ALIEN_SOLDIER
-
-# Alien's SMALL LAUNCHER
+      - STR_SECTOID_MEDIC
+      - STR_FLOATER_MEDIC
 
   - name: STR_SECTOID_MEDIC
     unlocks:
@@ -3578,32 +3585,12 @@ research:
       - STR_ALIEN_ORIGINS
       - STR_ALIEN_MEDIC
 
-  - name: STR_ALIEN_MEDIC
+  - name: STR_ALIEN_ENGINEER # ENGINEER
     dependencies:
-      - STR_SECTOID_MEDIC
-      - STR_FLOATER_MEDIC
-
-  - name: STR_SMALL_LAUNCHER
-    cost: 550
-    points: 30
-    needItem: true
-    dependencies:
-      - STR_ALIEN_MEDIC
-
-  - name: STR_STUN_BOMB
-    cost: 200 #cost: 180
-    points: 10
-    needItem: true
-
-  - name: STR_STUN_GRENADE
-    listOrder: 4450
-    cost: 180
-    points: 10
-    dependencies:
-      - STR_SMALL_LAUNCHER
-      - STR_STUN_BOMB
-
-# BLASTER weapons
+      - STR_SECTOID_ENGINEER
+      - STR_FLOATER_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
 
   - name: STR_SECTOID_ENGINEER
     unlocks:
@@ -3625,17 +3612,127 @@ research:
       - STR_ALIEN_ORIGINS
       - STR_ALIEN_ENGINEER
 
-  - name: STR_ALIEN_ENGINEER
+# PLASMA weapons and Greanades
+
+  - name: STR_ALIEN_WEAPON
+    cost: 1000
+    points: 20
     dependencies:
-      - STR_SECTOID_ENGINEER
-      - STR_FLOATER_ENGINEER
-      - STR_SNAKEMAN_ENGINEER
-      - STR_MUTON_ENGINEER
+      - STR_ALIEN_SOLDIER
+      - STR_ALIEN_WEAPON_DEPENDENCY
+
+  - name: STR_ALIEN_WEAPON_USING
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_ALIEN_WEAPON
+      - STR_LEADER_PLUS
+      - STR_ALIEN_WEAPON_USING_DEPENDENCY
+
+  - name: STR_ALIEN_WEAPON_DEPENDENCY
+    dependencies:
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+      - STR_SMALL_LAUNCHER
+      - STR_BLASTER_LAUNCHER
+
+  - name: STR_ALIEN_WEAPON_USING_DEPENDENCY
+    dependencies:
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_HEAVY_PLASMA_CLIP
+
+  - name: STR_PLASMA_PISTOL
+    cost: 600
+    points: 20
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_DEPENDENCY
+
+  - name: STR_PLASMA_PISTOL_CLIP # STR_ALIENS_ONLY
+    cost: 400
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_USING_DEPENDENCY
+
+  - name: STR_PLASMA_RIFLE
+    cost: 800 #cost: 700
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_DEPENDENCY
+
+  - name: STR_PLASMA_RIFLE_CLIP # STR_ALIENS_ONLY
+    cost: 400
+    points: 6
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_USING_DEPENDENCY
+
+  - name: STR_HEAVY_PLASMA # STR_ALIENS_ONLY
+    cost: 800
+    points: 30
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_DEPENDENCY
+
+  - name: STR_HEAVY_PLASMA_CLIP # STR_ALIENS_ONLY
+    cost: 400
+    points: 7
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_USING_DEPENDENCY
+
+  - name: STR_PLASMA_CANNON
+    cost: 660
+    points: 25
+    dependencies:
+      - STR_ALIEN_WEAPON
+      - STR_ELERIUM_115
+      - STR_UFO_NAVIGATION
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+  - delete: STR_PLASMA_CANNON_DEP1
+  - delete: STR_PLASMA_CANNON_DEP2
+
+  - name: STR_ALIEN_GRENADE
+    cost: 250 #cost: 200
+    points: 20
+    needItem: true
+
+# Alien's SMALL LAUNCHER
+
+  - name: STR_SMALL_LAUNCHER
+    cost: 600 #cost: 550
+    points: 30
+    needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_DEPENDENCY
+
+  - name: STR_STUN_BOMB
+    cost: 200 #cost: 180
+    points: 10
+    needItem: true
+
+  - name: STR_STUN_GRENADE
+    listOrder: 4450
+    cost: 180
+    points: 10
+    dependencies:
+      - STR_SMALL_LAUNCHER
+      - STR_STUN_BOMB
+      - STR_ALIEN_MEDIC
+
+# BLASTER weapons
 
   - name: STR_BLASTER_LAUNCHER # STR_ALIENS_ONLY
     cost: 900
     points: 10
     needItem: true
+    unlocks:
+      - STR_ALIEN_WEAPON_DEPENDENCY
 
   - name: STR_BLASTER_BOMB # STR_ALIENS_ONLY
     cost: 300
@@ -3657,30 +3754,6 @@ research:
       - STR_FUSION_ROCKET
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_ROCKETS
-
-# Armors
-
-  - name: STR_PERSONAL_ARMOR
-    cost: 180
-    points: 20
-    dependencies:
-      - STR_ALIEN_ALLOYS
-
-  - name: STR_POWER_SUIT
-    cost: 350 #cost: 205
-    points: 20
-    dependencies:
-      - STR_ELERIUM_115
-      - STR_UFO_POWER_SOURCE
-      - STR_PERSONAL_ARMOR
-
-  - name: STR_FLYING_SUIT
-    cost: 330
-    points: 20
-    dependencies:
-      - STR_POWER_SUIT
-      - STR_UFO_NAVIGATION
-      - STR_FLOATER_AUTOPSY
 
 
 
@@ -3788,8 +3861,8 @@ manufacture:
     cost: 182000
     requiredItems:
       STR_UFO_NAVIGATION: 1
-      STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 4
+      STR_ALIEN_ALLOYS: 12
+      STR_ELERIUM_115: 8
 
   - name: STR_PLASMA_BEAM  # alien technologies cannot be reproduced, but this is an unique exception
     category: STR_CRAFT_WEAPON
@@ -4083,7 +4156,7 @@ manufacture:
     cost: 25000 #cost: 20000
     requiredItems:
       STR_ALIEN_ALLOYS: 5
-      STR_ELERIUM_115: 1
+      STR_ELERIUM_115: 2
 
   - name: STR_HEAVY_LASER
     category: STR_WEAPON
@@ -4094,7 +4167,7 @@ manufacture:
     cost: 35000 #cost: 32000
     requiredItems:
       STR_ALIEN_ALLOYS: 8
-      STR_ELERIUM_115: 2
+      STR_ELERIUM_115: 4
 
 # Electromagnetic weapons
 
@@ -4104,10 +4177,11 @@ manufacture:
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
     space: 4
-    time: 600
+    time: 2000
     cost: 98000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 10
 
   - name: STR_RAILGUN_SLUGS
     listOrder: 846
@@ -4115,7 +4189,7 @@ manufacture:
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
     space: 4
-    time: 60
+    time: 180
     cost: 1680
     requiredItems:
       STR_ALIEN_ALLOYS: 1
@@ -4136,13 +4210,13 @@ manufacture:
       STR_FLOATER_CORPSE: 1
       STR_SNAKEMAN_CORPSE: 1
 
-  - name: STR_STUN_ROD # profit = 775.000/m, we can make money at middle
+  - name: STR_STUN_ROD # profit = 107.000/m, we can make money at middle
     listOrder: 1390
     category: STR_EQUIPMENT
     requires:
       - STR_STUN_ROD
     space: 4
-    time: 400
+    time: 400 # 72 items per month for 40 engineers
     cost: 23000
 
   - name: STR_PSI_AMP
@@ -4158,9 +4232,9 @@ manufacture:
 
 # Alien technologies cannot be reproduced, except ALIEN ALLOYS
 
-  - name: STR_ALIEN_ALLOYS # profit = 50.652/m, we can make money at beginning
+  - name: STR_ALIEN_ALLOYS # profit = 75.000/m, we can make money at beginning
     space: 10
-    time: 92 #time: 100
+    time: 90 #time: 100, 320 items per month for 40 engineers
 
   - delete: STR_UFO_POWER_SOURCE
   - delete: STR_UFO_NAVIGATION
@@ -4199,6 +4273,30 @@ manufacture:
     requiredItems:
       STR_STUN_BOMB: 1
 
+  - name: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    listOrder: 2001
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 600
+    cost: 2000
+    requiredItems:
+      STR_ELERIUM_115: 1
+      STR_PLASMA_PISTOL_CLIP: 1
+
+  - name: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    listOrder: 1801
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 800
+    cost: 3000
+    requiredItems:
+      STR_ELERIUM_115: 1
+      STR_PLASMA_RIFLE_CLIP: 1
+
 # Personal armors
 
   - name: STR_HEAVY_PERSONAL_ARMOR
@@ -4210,7 +4308,7 @@ manufacture:
     time: 1000
     cost: 28000
     requiredItems:
-      STR_ALIEN_ALLOYS: 8
+      STR_ALIEN_ALLOYS: 10
 
   - name: STR_PERSONAL_ARMOR
     category: STR_PERSONAL_ARMOR
@@ -4220,7 +4318,7 @@ manufacture:
     time: 850 #time: 800
     cost: 22000
     requiredItems:
-      STR_ALIEN_ALLOYS: 6 #STR_ALIEN_ALLOYS: 4
+      STR_ALIEN_ALLOYS: 8 #STR_ALIEN_ALLOYS: 4
 
   - name: STR_LIGHT_PERSONAL_ARMOR
     listOrder: 2696
@@ -4231,7 +4329,7 @@ manufacture:
     time: 800
     cost: 20000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 6
 
 # Power and Flying Suits
 
@@ -4243,7 +4341,7 @@ manufacture:
     time: 1100 #time: 1000
     cost: 45000 #cost: 42000
     requiredItems:
-      STR_ALIEN_ALLOYS: 12 #STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 18 #STR_ALIEN_ALLOYS: 5
       STR_ELERIUM_115: 5
 
   - name: STR_FLYING_SUIT
@@ -4254,7 +4352,7 @@ manufacture:
     time: 1400
     cost: 62000 #cost: 58000
     requiredItems:
-      STR_ALIEN_ALLOYS: 12 #STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 18 #STR_ALIEN_ALLOYS: 5
       STR_ELERIUM_115: 16
 
   - name: STR_FLYING_SUIT_FROM_POWER_SUIT
@@ -4281,7 +4379,7 @@ manufacture:
     time: 1000
     cost: 37000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_ALLOYS: 6
       STR_ELERIUM_115: 10
 
   - name: STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR
@@ -4546,6 +4644,14 @@ ufopaedia:
     requires:
       - STR_ALIEN_WEAPON
 
+  - id: STR_ALIEN_WEAPON_USING
+    listOrder: 58011
+    type_id: 8
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_ALIEN_WEAPON_USING_UFOPEDIA
+    requires:
+      - STR_ALIEN_WEAPON_USING
+
   - id: STR_PLASMA_PISTOL
     listOrder: 4800
   - id: STR_PLASMA_PISTOL_CLIP
@@ -4554,6 +4660,22 @@ ufopaedia:
     listOrder: 5200
   - id: STR_HEAVY_PLASMA_CLIP
     listOrder: 5300
+
+  - id: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    listOrder: 4901
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    listOrder: 5101
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
 
 # Fix the list order for ELERIUM_115 item
 
@@ -5368,7 +5490,7 @@ extraSprites:
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
       86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
-      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.png
+      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
 
   - type: Projectiles
     width: 105
@@ -5850,7 +5972,13 @@ extraStrings:
       STR_LASER_WEAPONS: "Laser Weapons"
       STR_LASER_WEAPONS_UFOPEDIA: "Elerium-115 is truly an inexhaustible source of energy. Through experiments, we found one more feature of the substance. {NEWLINE} {NEWLINE} Crystals Elerium-115, carved a special cubic form, under the influence of electromagnetic pulses of a certain frequency, able to refract light rays so that it is possible to create a single point in space huge energy kick . {NEWLINE} {NEWLINE} implies that using alien alloys and crystals Elerium-115 can construct a device that can shoot beams of light. We call this laser weapon. {NEWLINE} {NEWLINE} According to our assumptions, the power of such weapons, even in the simplest of his performance, will surpass all existing terrestrial analogues of small arms. At the same time, weapons made in laser technology will have a virtually infinite ammunition."
       STR_ALIEN_WEAPON: "Alien's weapon"
-      STR_ALIEN_WEAPON_UFOPEDIA: ""
+      STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
+      STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
     strings:
@@ -5858,6 +5986,12 @@ extraStrings:
       STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
       STR_ALIEN_WEAPON: "Оружие пришельцев"
       STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
+      STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
       STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
 
 # Armors
