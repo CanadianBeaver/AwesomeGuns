@@ -226,7 +226,7 @@ crafts:
     sprite: 4
     fuelMax: 32 #fuelMax: 20
     damageMax: 500
-    speedMax: 4500 #speedMax: 4200
+    speedMax: 4000 #speedMax: 4200
     accel: 9
     weapons: 2
     costRent: 200000 #costRent: 0
@@ -259,7 +259,7 @@ crafts:
     sprite: 2
     fuelMax: 64 #fuelMax: 60
     damageMax: 1200
-    speedMax: 5400
+    speedMax: 5200 #speedMax: 5400
     accel: 10
     weapons: 2
     soldiers: 26
@@ -4485,7 +4485,7 @@ ufopaedia:
     text: STR_ALLOY_CANNON_UFOPEDIA
 
   - id: STR_FUSION_BALL_UC
-    listOrder: 750
+    listOrder: 751
 
 # Tanks
 
