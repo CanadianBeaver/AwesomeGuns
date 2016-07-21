@@ -3431,7 +3431,7 @@ research:
       - STR_ELERIUM_115
       - STR_ALIEN_ENGINEER
 
-# Fix the bug in the research tree that relatives to research time of SECTOID COMMANDER
+# Fix the error that relatives to research time of SECTOID COMMANDER
 
   - name: STR_SECTOID_COMMANDER
     cost: 192 #cost: 190
@@ -5547,7 +5547,7 @@ extraSprites:
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.gif
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_CLIP.gif
-      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob.gif
+      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_2.gif
       12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_AP_AMMO.gif
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_HP_AMMO.gif
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.gif
@@ -5593,7 +5593,7 @@ extraSprites:
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob.gif
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_CLIP.gif
-      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob.gif
+      11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_2.gif
       12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_AP_AMMO.gif
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_HP_AMMO.gif
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Floorob_I_AMMO.gif
@@ -5662,7 +5662,7 @@ extraSprites:
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.gif
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.gif
       576: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_CLIP.gif
-      24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.gif
+      24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_2.gif
       #622:
       #770:
       1301: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
@@ -5979,7 +5979,7 @@ extraStrings:
   - type: en
     strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
       STR_LASER_WEAPONS: "Laser Weapons"
-      STR_LASER_WEAPONS_UFOPEDIA: "Elerium-115 is truly an inexhaustible source of energy. Through experiments, we found one more feature of the substance. {NEWLINE} {NEWLINE} Crystals Elerium-115, carved a special cubic form, under the influence of electromagnetic pulses of a certain frequency, able to refract light rays so that it is possible to create a single point in space huge energy kick . {NEWLINE} {NEWLINE} implies that using alien alloys and crystals Elerium-115 can construct a device that can shoot beams of light. We call this laser weapon. {NEWLINE} {NEWLINE} According to our assumptions, the power of such weapons, even in the simplest of his performance, will surpass all existing terrestrial analogues of small arms. At the same time, weapons made in laser technology will have a virtually infinite ammunition."
+      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
       STR_ALIEN_WEAPON: "Alien's weapon"
       STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
       STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
@@ -5992,7 +5992,7 @@ extraStrings:
   - type: ru
     strings:
       STR_LASER_WEAPONS: "Лазерное оружие"
-      STR_LASER_WEAPONS_UFOPEDIA: "Элериум-115 воистину неисчерпаемый источник энергии. Проводя эксперименты мы обнаружили ещё одно свойство этого вещества.{NEWLINE}{NEWLINE}Кристалы Элериум-115, выточенные особой кубической формой, под воздействием электромагнитных импульсов определённой частоты, способны преломлять лучи света таким образом, что возможно создавать в одной точке пространства огромный энергетический удар.{NEWLINE}{NEWLINE}Предпологается, что используя сплавы пришельцев и кристаллы Элериум-115 можно сконструировать устройство, способное стрелять лучами света. Мы называем это лазерным оружием.{NEWLINE}{NEWLINE}По нашим предположениям, мощность такого оружия, даже в самом простом его исполнении, будет превосходить все существующие земные аналоги стрелкового оружия. При этом, оружие выполненное по лазерной технологии будет обладать практически бесконечным боезапасом."
+      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
       STR_ALIEN_WEAPON: "Оружие пришельцев"
       STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
       STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
