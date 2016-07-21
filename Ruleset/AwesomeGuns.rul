@@ -1864,7 +1864,7 @@ items:
     power: 64 #power: 85
     damageType: 4
     accuracyAuto: 0
-    accuracySnap: 75 #accuracySnap: 50
+    accuracySnap: 68 #accuracySnap: 50
     accuracyAimed: 0 #accuracyAimed: 84
     tuSnap: 34 #tuSnap: 33
     tuAimed: 0 #tuAimed: 75
@@ -4562,51 +4562,6 @@ ufopaedia:
       - STR_FLYING_SUIT
     text: STR_LIGHT_FLYING_SUIT_UFOPEDIA
 
-# Soldiers' toys
-
-  - id: STR_MOTION_SCANNER # it can be bought
-    requires: []
-
-  - id: STR_MEDI_CHEST
-    listOrder: 4399
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MEDI_CHEST_UFOPEDIA
-
-# Fix the ALIEN CONTAINMENT
-
-  - id: STR_ALIEN_BIOLOGY
-    listOrder: 4590
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    text_width: 146
-    text: STR_ALIEN_BIOLOGY_UFOPEDIA
-    image_id: ALIEN_BIOLOGY_UFOPEDIAImage
-    requires:
-      - STR_ALIEN_BIOLOGY
-
-  - id: STR_ALIEN_CONTAINMENT
-    requires:
-      - STR_ALIEN_CONTAINMENT
-
-  - id: STR_STUN_ROD
-    requires:
-      - STR_STUN_ROD
-
-  - id: STR_STUN_GRENADE
-    listOrder: 4605
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_STUN_GRENADE_UFOPEDIA
-    requires:
-      - STR_STUN_GRENADE
-
-  - id: STR_SMALL_ROCKET
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SMALL_ROCKET_UFOPEDIA
-    requires:
-      - STR_FUSION_ROCKET
-
 # Research weapons and ammo from ALIEN ALLOYS
 
   - id: STR_ALLOY_CLIPS
@@ -4619,16 +4574,8 @@ ufopaedia:
     requires:
       - STR_ALLOY_CLIPS
 
-  - id: STR_ALLOY_CLIPS_MANUFACTURE
-    listOrder: 1927
-    type_id: 8
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA
-    requires:
-      - STR_ALLOY_CLIPS
-
   - id: STR_ACID_CLIPS
-    listOrder: 1928
+    listOrder: 1927
     type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
     text_width: 146
@@ -4636,6 +4583,14 @@ ufopaedia:
     image_id: ACID_CLIPS_UFOPEDIAImage
     requires:
       - STR_ACID_CLIPS
+
+  - id: STR_ALLOY_CLIPS_MANUFACTURE
+    listOrder: 1928
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA
+    requires:
+      - STR_ALLOY_CLIPS
 
 # The LASER weapons articles
 
@@ -4692,10 +4647,55 @@ ufopaedia:
       - STR_ALIEN_WEAPON_USING
     text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
 
+# Soldiers' toys
+
+  - id: STR_MOTION_SCANNER # it can be bought
+    requires: []
+
+  - id: STR_MEDI_CHEST
+    listOrder: 4399
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MEDI_CHEST_UFOPEDIA
+
 # Fix the list order for ELERIUM_115 item
 
   - id: STR_ELERIUM_115
     listOrder: 6050
+
+# Fix the ALIEN CONTAINMENT
+
+  - id: STR_ALIEN_BIOLOGY
+    listOrder: 4590
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    text_width: 146
+    text: STR_ALIEN_BIOLOGY_UFOPEDIA
+    image_id: ALIEN_BIOLOGY_UFOPEDIAImage
+    requires:
+      - STR_ALIEN_BIOLOGY
+
+  - id: STR_ALIEN_CONTAINMENT
+    requires:
+      - STR_ALIEN_CONTAINMENT
+
+  - id: STR_STUN_ROD
+    requires:
+      - STR_STUN_ROD
+
+  - id: STR_STUN_GRENADE
+    listOrder: 4605
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_STUN_GRENADE_UFOPEDIA
+    requires:
+      - STR_STUN_GRENADE
+
+  - id: STR_SMALL_ROCKET
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMALL_ROCKET_UFOPEDIA
+    requires:
+      - STR_FUSION_ROCKET
 
 # Fix the list order for alien AUTOPSies
 
@@ -5962,7 +5962,7 @@ extraStrings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
       STR_IMPROVED_ROCKETS_TITLE: "Improved launchers"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE} {NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE}{NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
 
       STR_STINGRAY: "STINGRAY"
       STR_STINGRAY_LAUNCHER: "Stingray Launcher"
@@ -6106,97 +6106,67 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
-      STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles (including sniper), shotguns, manual and automatic guns.{NEWLINE}{NEWLINE}From one alien alloy can be carried out several rounds of ammunition, depending on the type of weapons. Also, engineers can proizvdit ammunition in one production stream for multiple types of weapons.{NEWLINE}{NEWLINE}Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
+      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition from alloy aliens allows to our soldiers use them in their pistols, rifles (including sniper), shotguns, heavy and auto cannon.{NEWLINE} {NEWLINE}A few clips of ammunition can be made from one alloy aliens, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons."
 
       STR_ACID_CLIPS: "Acid ammunition"
-      STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning. {NEWLINE} {NEWLINE} It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
+      STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
 
-      STR_AL_CLIPS: "Бронебойные боеприпасы"
-      STR_AL_AMMO: "Бронебойные дроби"
+      STR_AL_CLIPS: "Armor-piercing ammunition"
+      STR_AL_AMMO: "Armor-piercing shells"
 
-      STR_ALLOY_CLIPS_MANUFACTURE: "Производство боеприпасов"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы - в этом производстве изготавливаются примерно два сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби - производство картечи. Примерно из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получется много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
+      STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition - this production from two alien alloys mades by 3 clips for the pistol, submachine gun, rifle and sniper rifle.{NEWLINE} {NEWLINE}Armor-piercing shells - this production from four alien alloys mades 4 ammo for the shotgun and by 2 ammo for heavy cannon and auto-cannon.{NEWLINE} {NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a submachine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the production receives the output to a single alloy alien one ammo or clip."
 
-      STR_PISTOL: "Пистолет"
-      STR_PISTOL_CLIP: "Магазин к пистолету"
-      STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
-      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть экипировки любого снайпера, как дополнительное оружие."
+      STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
+      STR_PISTOL_UFOPEDIA: "The standard issue XCom pistol is a high powered semi-automatic with a 9 round capacity."
 
-      STR_MACHINE_PISTOL: "Пистолет-пулемёт"
-      STR_MACHINE_PISTOL_CLIP: "Магазин к пистолет-пулемёту"
-      STR_MACHINE_PISTOL_AL_CLIP: "Магазин ББ к пистолет-пулемёту"
-      STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон 9-го калибра. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
+      STR_MACHINE_PISTOL: "Machine pistol"
+      STR_MACHINE_PISTOL_CLIP: "Machine pistol Clip"
+      STR_MACHINE_PISTOL_AL_CLIP: "Machine pistol-AP Clip"
+      STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It's less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
 
-      STR_RIFLE: "Винтовка"
-      STR_RIFLE_CLIP: "Магазин к винтовке"
-      STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
-      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 6,7 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
+      STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
+      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 6.7mm ammunition in 12 round clips."
 
-      STR_HEAVY_CANNON: "Тяжелая пушка"
-      STR_HC_AP_AMMO: "ТП-ББ магазин"
-      STR_HC_HE_AMMO: "ТП-Р магазин"
-      STR_HC_I_AMMO: "ТП-З магазин"
-      STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
+      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
+      STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
 
-      STR_AUTO_CANNON: "Авто-пушка"
-      STR_AC_AP_AMMO: "АП-ББ магазин"
-      STR_AC_HE_AMMO: "АП-Р магазин"
-      STR_AC_I_AMMO: "АП-З магазин"
-      STR_AUTO_CANNON_UFOPEDIA: "Авто-пушка сочетает эксплуатационную гибкость и мощность тяжелой пушки с возможностью автоматического огня."
+      STR_SHOTGUN: "Shotgun"
+      STR_SHOTGUN_AMMO: "Shotgun AMMO"
+      STR_SHOTGUN_CLIP: "Shotgun-AP AMMO"
+      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard is AMMO contains 6 shells."
 
-      STR_SHOTGUN: "Дробовик"
-      STR_SHOTGUN_AMMO: "Патроны к дробовику"
-      STR_SHOTGUN_CLIP: "Патроны ББ к дробовику"
-      STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 4 патрона."
+      STR_SNIPER_RIFLE: "Sniper rifle"
+      STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
+      STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
 
-      STR_SNIPER_RIFLE: "Снайперская винтовка"
-      STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
-      STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
+      STR_ALLOY_RIFLE: "Assault rifle"
+      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 15 armor-piercing charge. Brust shot can fire with two ammo."
+      STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
+      STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
 
-      STR_ALLOY_RIFLE: "Штурмовая винтовка"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
-      STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
-      STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
+      STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New sniper rifle"
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Thunderbolt-AP clip"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 ammo."
 
-      STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
-      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
-      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
-      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин расчитан на 2 заряда."
+      STR_GRENADE_LAUNCHER: "Grenade launcher"
+      STR_GL_HE_AMMO: "40mm HE grenade"
+      STR_GL_I_AMMO: "40mm Incendiary grenade"
+      STR_GL_S_AMMO: "40mm Smoke grenade"
+      STR_GRENADE_LAUNCHER_UFOPEDIA: "Able to fire an explosive, incendiary and smoke grenades for a long distances."
 
-      STR_GRENADE_LAUNCHER: "Ручной гранотомёт"
-      STR_GL_HE_AMMO: "40mm граната"
-      STR_GL_I_AMMO: "40mm зажигательная граната"
-      STR_GL_S_AMMO: "40mm дымовая граната"
-      STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт. Способен выпускать навесом фугасные, зажигательные и дымовые гранаты на большие расстояния."
+      STR_FUSION_ROCKET: "ANTI-tank blaster ROCKET"
+      STR_SMALL_ROCKET: "Blaster Rocket"
+      STR_SMALL_ROCKET_UFOPEDIA: "Blaster rocket for Rocket Launcher. This rocket can be produced from aliens ammunition."
 
-      STR_ROCKET_LAUNCHER: "Ракетная установка"
-      STR_FUSION_ROCKET: "Бластерная противотанковая ракета"
-      STR_SMALL_ROCKET: "Бластерная ракета"
-      STR_LARGE_ROCKET: "Тяжелая ракета"
-      STR_INCENDIARY_ROCKET: "Зажигательная ракета"
-      STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
-      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета для ракетной установки. "
+      STR_SINGLE_ROCKET_LAUNCHER: "Armor-piercing rocket"
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Single rocket launcher. It fires armor-piercing rocket that can penetrate the wall of the UFOs. Not intended for reuse."
 
-      STR_SINGLE_ROCKET_LAUNCHER: "Бронебойная ракета"
-      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
-
-      STR_INCENDIARY_GRENADE: "Зажигательная граната"
-      STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
-
-      STR_LASER_PISTOL_UFOPEDIA: "Передел минитюризации лазерной технологии. Дальность и точность срельбы принесены в жертву мобильности устройсва и мощности выстрела."
-      STR_LASER_RIFLE_UFOPEDIA: "Вторая попытка использования лазерной технологии в бою. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
-      STR_HEAVY_LASER_UFOPEDIA: "Воплощение лазерной технологии на поле боя. Это дробовик способен выпускать 3 лазерных луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
-
-      STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
-      STR_RAILGUN: "Railgun"
-      STR_RAILGUN_SLUGS: "Railgun Slug"
-      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
-      STR_RAILGUN_UFOPEDIA: "An electromagnetic projectile launcher, the magnetic field propels slugs at very high velocity."
-
-      STR_MEDI_CHEST: "Medicine Chest"
-      STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
+      STR_INCENDIARY_GRENADE: "Incendiary Grenade"
+      STR_INCENDIARY_GRENADE_UFOPEDIA: "Incendiary Grenades are thrown incendiary devices that burn at extremely high temperatures through a violent chemical reaction. Move away from ignition point."
 
       STR_STUN_GRENADE: "Stun Grenade"
       STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Though some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
@@ -6205,19 +6175,17 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Улучшенные боеприпасы"
-      STR_ALLOY_CLIPS_UFOPEDIA: "На основе наших знаний о сплавах пришельцев учённые предложили новую технологию изготовления бронебойных боеприпасов и картечей с увеличенной мощностью поражения. По мимо убойной силы, также увеличено и количество зарядов в обойме. Наши оперативники смогут использовать новые бронебойные боеприпасы в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов, в зависимости от типа вооружения. Также, инженеры могут производить боеприпасы в одном производственном потоке для нескольких типов вооружения.{NEWLINE}{NEWLINE}Более того, возможно дальнейшее усовершенствование открытой технологии. На основе существующих образцов земного стрелкового оружия, учённые готовы разработать производственные чертежи новых типов вооружения, таких как штурмовая и снайперская винтовка."
+      STR_ALLOY_CLIPS_UFOPEDIA: "Новая технология изготовления боеприпасов и картечей из сплавов пришельцев позволит нашим оперативникам использовать их в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов, в зависимости от типа вооружения. Также, инженеры могут производить боеприпасы в одном производственном потоке для нескольких типов вооружения."
 
       STR_ACID_CLIPS: "Кислотные боеприпасы"
-      STR_ACID_CLIPS_UFOPEDIA: "Извлеченный из тела криссалида яд можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов, которые при соприкосновении с целью детонируют и распыляют кислоту в тело врага. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает иммунитетом к кислоте, в той или иной степени. Однако, их роботы, скорее всего сильно уязвимы к такому типу вооружения."
+      STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Производство боеприпасов"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы - в этом производстве изготавливаются примерно два сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби - производство картечи. Примерно из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получется много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы - в этом производстве изготавливаются примерно два сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби - производство картечи. Примерно из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
 
-      STR_PISTOL: "Пистолет"
-      STR_PISTOL_CLIP: "Магазин к пистолету"
       STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
       STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть экипировки любого снайпера, как дополнительное оружие."
 
@@ -6226,27 +6194,16 @@ extraStrings:
       STR_MACHINE_PISTOL_AL_CLIP: "Магазин ББ к пистолет-пулемёту"
       STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон 9-го калибра. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
 
-      STR_RIFLE: "Винтовка"
-      STR_RIFLE_CLIP: "Магазин к винтовке"
       STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
       STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 6,7 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
 
-      STR_HEAVY_CANNON: "Тяжелая пушка"
-      STR_HC_AP_AMMO: "ТП-ББ магазин"
-      STR_HC_HE_AMMO: "ТП-Р магазин"
-      STR_HC_I_AMMO: "ТП-З магазин"
       STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
-
-      STR_AUTO_CANNON: "Авто-пушка"
-      STR_AC_AP_AMMO: "АП-ББ магазин"
-      STR_AC_HE_AMMO: "АП-Р магазин"
-      STR_AC_I_AMMO: "АП-З магазин"
       STR_AUTO_CANNON_UFOPEDIA: "Автоматическая пушка сочетает пальбу очередью и мощность тяжелой пушки. Выпускает до четырёх зарядов за раз, точность стрельбы соответствующая."
 
       STR_SHOTGUN: "Дробовик"
       STR_SHOTGUN_AMMO: "Патроны к дробовику"
       STR_SHOTGUN_CLIP: "Патроны ББ к дробовику"
-      STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 4 патрона."
+      STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 6 патронов."
 
       STR_SNIPER_RIFLE: "Снайперская винтовка"
       STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
@@ -6262,7 +6219,7 @@ extraStrings:
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
       STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именнитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громозкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин расчитан на 2 бронебойных заряда."
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
 
       STR_GRENADE_LAUNCHER: "Гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
@@ -6270,43 +6227,74 @@ extraStrings:
       STR_GL_S_AMMO: "40mm дымовая граната"
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт способен выпускать фугасные, зажигательные и дымовые гранаты на большие расстояния по навесной траектории."
 
-      STR_ROCKET_LAUNCHER: "Ракетная установка"
-
       STR_SMALL_ROCKET: "Бластерная ракета"
       STR_FUSION_ROCKET: "Бластерная противотанковая ракета"
-      STR_LARGE_ROCKET: "Тяжелая ракета"
-      STR_INCENDIARY_ROCKET: "Зажигательная ракета"
-      STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения. Точность стрельбы остаётся приемлемой только на небольших расстояниях."
-      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета"
+      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета для ракетной пусковой установки. Может быть произведена из добытых на поле боя бластерых бомб пришельцев."
 
       STR_SINGLE_ROCKET_LAUNCHER: "Бронебойная ракета"
-      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не преданзначена для повторного использования."
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не предназначена для повторного использования."
 
       STR_INCENDIARY_GRENADE: "Зажигательная граната"
       STR_INCENDIARY_GRENADE_UFOPEDIA: "Брошенная зажигательная граната использует химическую реакцию для воспламенения окружающего пространства."
 
-      STR_LASER_PISTOL_UFOPEDIA: "Передел минитюризации лазерной технологии. Дальность и точность срельбы принесены в жертву мобильности устройсва и мощности выстрела."
-      STR_LASER_RIFLE_UFOPEDIA: "Вторая попытка использования лазерной технологии в бою. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
-      STR_HEAVY_LASER_UFOPEDIA: "Воплощение лазерной технологии на поле боя. Это дробовик способен выпускать 3 лазерных луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
-
-      STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
-      STR_RAILGUN: "Ручной рельсотрон"
-      STR_RAILGUN_SLUGS: "Жетон к ручному рельсотрону"
-      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле."
-      STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное, к тому же однозарядное. Создать штурмовой аналог не представляется возможным."
-
-      STR_MEDI_CHEST: "Медицинская аптечка"
-      STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
-
       STR_STUN_GRENADE: "Парализующая граната"
       STR_STUN_GRENADE_UFOPEDIA: "Парализующая бомба с гранатным детонатором и чекой. Несмотря на снижение эффективности в процессе адаптации, это слияние технологии людей и пришельцев даёт определённое удобство."
 
-# Fix the LASER and BLASTER weapons
+# Soldier's toys
 
   - type: en
-    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
+    strings:
+      STR_MEDI_CHEST: "Medicine Chest"
+      STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid, and can be put together for the purpose by an individual or organization or purchased complete."
+  - type: ru
+    strings:
+      STR_MEDI_CHEST: "Медицинская аптечка"
+      STR_MEDI_CHEST_UFOPEDIA: "Стандартный набор перевязочных материалов, инструментов и приспособлений, предназначенных для оказания первой медицинской помощи на поле боя."
+
+# Fix the LASER weapons
+
+  - type: en
+    strings:
+
+      STR_LASER_PISTOL_UFOPEDIA: "Redistribution miniaturization of laser technology. Range and accuracy are sacrificed mobile devices and powerful shooting."
+      STR_LASER_RIFLE_UFOPEDIA: "Adaptation of laser technology for using it in the combat. This device is superior to the standard assault rifle at the firing parameters, but due to the strong heat is not able to conduct a fire queue."
+      STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to produce three laser beams simultaneously. Unfortunately, severe overheating prevents fire too often, it is offset by immense power and infinite ammunition."
+
       STR_LASER_WEAPONS: "Laser Weapons"
       STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
+
+  - type: ru
+    strings:
+
+      STR_LASER_PISTOL_UFOPEDIA: "Передел минитюаризации лазерной технологии. Дальность и точность стрельбы принесены в жертву мобильности устройства и мощности выстрела."
+      STR_LASER_RIFLE_UFOPEDIA: "Попытка использования лазерной технологии на поле боя. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
+      STR_HEAVY_LASER_UFOPEDIA: "Лазерный дробовик способен выпускать 3 луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
+
+      STR_LASER_WEAPONS: "Лазерное оружие"
+      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
+
+# Electromagnetic weapons
+
+  - type: en
+    strings:
+      STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
+      STR_RAILGUN: "Railgun"
+      STR_RAILGUN_SLUGS: "Railgun Slug"
+      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "By reverse engineering alien artifacts human technology has made great advances. We have been able to weaponise techonologies that up until now seemed to be well outside our reach. Mass acccelerator weapons shoot ultrasonic dense bursts of baryons to the target, with a combined kinetic and thermal energy that the destructive potential of alien plasma techonology. With further research we should be able to derive reliable weapons from the early prototypes."
+      STR_RAILGUN_UFOPEDIA: "The sniper rifle is a supercharged version of the mass accelerator rifle. While it is not capable of auto bursts due to overheating it delivers a stronger punch. Adapted alien techonology has been used to reduce its recoil, thus allowing for very accurate long range shots."
+  - type: ru
+    strings:
+      STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
+      STR_RAILGUN: "Ручной рельсотрон"
+      STR_RAILGUN_SLUGS: "Жетон к ручному рельсотрону"
+      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле. Сила Лоренца (сила Ампера) действует и на рельсы, приводя их к взаимному отталкиванию...{NEWLINE}{NEWLINE}Кароче, новейшее wunderwaffe со всеми вытекающими."
+      STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное, к тому же однозарядное. Создать штурмовой аналог не представляется возможным."
+
+# Fix the ALIEN weapons
+
+  - type: en
+    strings:
+
       STR_ALIEN_WEAPON: "Alien's weapon"
       STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
       STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
@@ -6318,8 +6306,7 @@ extraStrings:
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
     strings:
-      STR_LASER_WEAPONS: "Лазерное оружие"
-      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
+
       STR_ALIEN_WEAPON: "Оружие пришельцев"
       STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
       STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
