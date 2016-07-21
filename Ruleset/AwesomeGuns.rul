@@ -4995,6 +4995,15 @@ extraSprites:
       24: Resources/AwesomeGuns/Crafts/Raven/Minimized.gif
       35: Resources/AwesomeGuns/Crafts/Raven/Dogfight.gif
 
+  #TODO: Default image for Lightning in UFOpedia should be changed, because it is UGLY
+  - type: UP003.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Lightning/UFOpedia.gif
+
+
 # Craft weapons
 
   - type: Tornado_UFOPEDIAImage
