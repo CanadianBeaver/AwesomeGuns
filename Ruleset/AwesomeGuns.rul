@@ -280,7 +280,7 @@ craftWeapons:
   - type: STR_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 160 #damage: 100
+    damage: 180 #damage: 100
     range: 42 #range: 60 (42 is used by STR_TERROR_SHIP)
     accuracy: 10 #accuracy: 80
     reloadCautious: 48
@@ -295,8 +295,8 @@ craftWeapons:
   - type: STR_STINGRAY
     sprite: 0
     sound: 5
-    damage: 40 #damage: 70
-    range: 20 #range: 30 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
+    damage: 60 #damage: 70
+    range: 22 #range: 30 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 20 #accuracy: 70
     reloadCautious: 32
     reloadStandard: 24
@@ -310,13 +310,13 @@ craftWeapons:
   - type: STR_CANNON_UC
     sprite: 2
     sound: 4
-    damage: 10
-    range: 10
+    damage: 9 #damage: 10
+    range: 9 #range: 10
     accuracy: 18 #accuracy: 25
     reloadCautious: 2
     reloadStandard: 2
     reloadAggressive: 2
-    ammoMax: 90 #ammoMax: 200
+    ammoMax: 100 #ammoMax: 200
     rearmRate: 50 #rearmRate: 100
     launcher: STR_CANNON
     clip: STR_CANNON_ROUNDS_X50
@@ -328,7 +328,7 @@ craftWeapons:
   - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 160 #damage: 100
+    damage: 180 #damage: 100
     range: 42 #range: 60
     accuracy: 40 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
@@ -344,8 +344,8 @@ craftWeapons:
   - type: STR_ALLOY_STINGRAY
     sprite: 0
     sound: 5
-    damage: 40 #damage: 70
-    range: 20 #range: 30
+    damage: 60 #damage: 70
+    range: 22 #range: 30
     accuracy: 50 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
     reloadStandard: 18 #reloadStandard: 24
@@ -365,8 +365,8 @@ craftWeapons:
     reloadCautious: 2
     reloadStandard: 2
     reloadAggressive: 2
-    ammoMax: 120 #ammoMax: 200
-    rearmRate: 60 #rearmRate: 100
+    ammoMax: 125 #ammoMax: 200
+    rearmRate: 50 #rearmRate: 100
     launcher: STR_ALLOY_CANNON
     clip: STR_CANNON_ROUNDS_X50
     projectileType: 2
@@ -384,7 +384,7 @@ craftWeapons:
     reloadStandard: 10 #reloadStandard: 12
     reloadAggressive: 10 #reloadAggressive: 12
     ammoMax: 25 #ammoMax: 100
-    rearmRate: 4 #rearmRate: 50
+    rearmRate: 5 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
 
@@ -397,8 +397,8 @@ craftWeapons:
     reloadCautious: 13 #reloadCautious: 12
     reloadStandard: 12 #reloadStandard: 12
     reloadAggressive: 11 #reloadAggressive: 12
-    ammoMax: 12 #ammoMax: 100
-    rearmRate: 2 #rearmRate: 50
+    ammoMax: 16 #ammoMax: 100
+    rearmRate: 4 #rearmRate: 50
     launcher: STR_PLASMA_BEAM
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
@@ -4457,8 +4457,19 @@ ufopaedia:
 
 # Craft weapons
 
-  - id: STR_ALLOY_AVALANCHE
+  - id: STR_IMPROVED_ROCKETS
+    title: STR_IMPROVED_ROCKETS_TITLE
     listOrder: 750
+    type_id: 7
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text_width: 146
+    text: STR_IMPROVED_ROCKETS_UFOPEDIA
+    image_id: IMPROVED_ROCKETS_UFOPEDIAImage
+    requires:
+      - STR_IMPROVED_ROCKETS
+
+  - id: STR_ALLOY_AVALANCHE
+    listOrder: 754
     type_id: 2
     requires:
       - STR_IMPROVED_ROCKETS
@@ -4467,7 +4478,7 @@ ufopaedia:
     text: STR_ALLOY_AVALANCHE_UFOPEDIA
 
   - id: STR_ALLOY_STINGRAY
-    listOrder: 650
+    listOrder: 752
     type_id: 2
     requires:
       - STR_IMPROVED_ROCKETS
@@ -4476,7 +4487,7 @@ ufopaedia:
     text: STR_ALLOY_STINGRAY_UFOPEDIA
 
   - id: STR_ALLOY_CANNON_UC
-    listOrder: 850
+    listOrder: 825
     type_id: 2
     requires:
       - STR_ALLOY_CANNON
@@ -4485,7 +4496,7 @@ ufopaedia:
     text: STR_ALLOY_CANNON_UFOPEDIA
 
   - id: STR_FUSION_BALL_UC
-    listOrder: 751
+    listOrder: 1150
 
 # Tanks
 
@@ -4625,16 +4636,6 @@ ufopaedia:
     image_id: ACID_CLIPS_UFOPEDIAImage
     requires:
       - STR_ACID_CLIPS
-
-  - id: STR_IMPROVED_ROCKETS
-    listOrder: 1924
-    type_id: 7
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text_width: 146
-    text: STR_IMPROVED_ROCKETS_UFOPEDIA
-    image_id: IMPROVED_ROCKETS_UFOPEDIAImage
-    requires:
-      - STR_IMPROVED_ROCKETS
 
 # The LASER weapons articles
 
@@ -5959,8 +5960,8 @@ extraStrings:
   - type: en
     strings:
 
-      #TODO: translation should be corrected (it's a Google Translator from Russian)
-      STR_IMPROVED_ROCKETS: "Improved launchers"
+      STR_IMPROVED_ROCKETS: "Improved rocket launchers"
+      STR_IMPROVED_ROCKETS_TITLE: "Improved launchers"
       STR_IMPROVED_ROCKETS_UFOPEDIA: "Using alien alloys and navigation will increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE} {NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
 
       STR_STINGRAY: "STINGRAY"
@@ -5987,7 +5988,8 @@ extraStrings:
       STR_ALLOY_CANNON: "Tuned Cannon"
       STR_ALLOY_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
 
-      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE A SHIP WEAPON FROM VARIOUS COMPONENTS OF HEAVY WEAPONS OF ALIENS. THIS WEAPON GENERATES THE PLASMA BUNCH."
+      STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER BEAM IS POWERED TO FIGHT AGAINST UFO ON CLOSED DISTANCES."
+      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS SHIP WEAPON FROM ALIENS HEAVY WEAPON'S COMPONENTS. THIS WEAPON CAN GENERATE THE PLASMA BUNCH AND FIGHT AGAINST UFO."
 
       STR_FUSION_MISSILE: "AVALANCHE upgrading"
       STR_FUSION_BALL_UC: "STORM"
@@ -5999,7 +6001,8 @@ extraStrings:
     strings:
 
       STR_IMPROVED_ROCKETS: "Улучшенные пусковые установки"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволит повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения пусковых комплектов кораблей и наземных ракетных установок.{NEWLINE}{NEWLINE}Особо интересной разработкой наших учёных является новая компактная бронебойная ракета, которая способна пробивать корпус НЛО прямо на поле боя, открывая таким образом нашим оперативникам путь внутрь инопланетного корабля в любом удобном для них месте."
+      STR_IMPROVED_ROCKETS_TITLE: "Улучшение ракет"
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволяет повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения для всех пусковых установок кораблей.{NEWLINE}{NEWLINE}Также, имеется новая бронебойная ракета с однозарядной пусковой установкой наземного использования. Такая ракета способна пробивать корпус НЛО прямо на поле боя, открывая нашим оперативникам путь во внутрь инопланетного корабля в любом удобном для них месте."
 
       STR_STINGRAY: "СКАТ"
       STR_STINGRAY_LAUNCHER: "Пусковая установка \"Скат\""
@@ -6025,53 +6028,14 @@ extraStrings:
       STR_ALLOY_CANNON: "Авиапушка из сплавов пришельцев"
       STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
-      STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ГЕНЕРИРУЮЩУЮ ПЛАЗМЕННЫЕ СГУСТКИ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ."
+      STR_LASER_CANNON_UFOPEDIA: "ЛАЗЕРНЫЙ ИЗЛУЧАТЕЛЬ ВЫСОКОЙ МОЩНОСТИ, КОТОРЫМ МОЖНО ПОРАЖАТЬ КОРАБЛИ ПРИЩЕЛЬЦЕВ НА НЕБОЛЬШИХ РАССТОЯНИЯХ."
+      STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ, КОТОРАЯ ГЕНЕРИРУЕТ ПЛАЗМЕННЫЕ СГУСТКИ ЭНЕРГИИ."
 
       STR_FUSION_MISSILE: "Улучшение ЛАВИНЫ"
       STR_FUSION_BALL_UC: "ШТОРМ"
       STR_FUSION_BALL_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_FUSION_BALL: "Ракета \"Шторм\""
       STR_FUSION_BALL_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ КОМПЛЕКСА \"ЛАВИНА\" СО ВСТРОЕННЫМ В РАКЕТУ ЦЕЛЕУКАЗАТЕЛЕМ И БЛАСТЕРНОЙ БОМБОЙ ПРИШЕЛЬЦЕВ."
-
-# Fix the ALIEN CONTAINMENT
-
-  - type: en
-    strings:
-      STR_ALIEN_BIOLOGY: "Alien Biology"
-      STR_ALIEN_BIOLOGY_UFOPEDIA: "Our preliminary research show that aliens have DNA much like ours, but so different that we should assume it has extraterrestrial origins - or at least coming from some inconceivable depths of time. Moreover, certain fragments seem to have been added artificially, probably extracted from Earth organisms. This likely helps the aliens to adapt to our environment, but it is either short-term or incomplete: dependant on pre-processed nutrients and with poor immunology, aliens can't survive on Earth for long, therefore special arrangements must be made to study a living specimen."
-  - type: ru
-    strings:
-      STR_ALIEN_BIOLOGY: "Биология пришельцев"
-      STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
-
-# Fix the LASER and BLASTER weapons
-
-  - type: en
-    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
-      STR_LASER_WEAPONS: "Laser Weapons"
-      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
-      STR_ALIEN_WEAPON: "Alien's weapon"
-      STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
-      STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
-      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
-      STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
-  - type: ru
-    strings:
-      STR_LASER_WEAPONS: "Лазерное оружие"
-      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
-      STR_ALIEN_WEAPON: "Оружие пришельцев"
-      STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
-      STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
-      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
-      STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
 
 # Armors
 
@@ -6133,13 +6097,13 @@ extraStrings:
       # UFOpedia
       STR_PERSONAL_ARMOR_UFOPEDIA: "Броня с использованием сплавов пришельцев дает нашим бойцам больше шансов в сражении с инопланетной угрозой."
       STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Легкая броня с использованием сплавов пришельцев и технологии антигравитации и навигации, дающая полную свободу передвижения на поле боя."
-      STR_POWER_SUIT_UFOPEDIA: "Эта броня питается от энергетического источника на элериуме и значительно увеличивает силу, что делает ее наилучшей защитой для бойцов."
+      STR_POWER_SUIT_UFOPEDIA: "Эта броня питается от энергетического источника на Элериум-115 и значительно увеличивает силу, что делает ее наилучшей защитой для бойцов."
       STR_FLYING_SUIT_UFOPEDIA: "Улучшенная версия энергоскафандра, объединяющая технологии антигравитации и навигации пришельцев, дающая полную свободу передвижения на поле боя."
 
 # Conventional weapons
 
   - type: en
-    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
+    strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
       STR_ALLOY_CLIPS_UFOPEDIA: "Based on our knowledge of the alien alloys Scholars have proposed a new production of armor-piercing ammunition technology and buckshot with increased power losses. By passing lethal force, and also increased the number of charges in the cage. Our investigators will be able to use new armor-piercing ammunition in their guns, rifles (including sniper), shotguns, manual and automatic guns.{NEWLINE}{NEWLINE}From one alien alloy can be carried out several rounds of ammunition, depending on the type of weapons. Also, engineers can proizvdit ammunition in one production stream for multiple types of weapons.{NEWLINE}{NEWLINE}Moreover, it is possible to further improvement of open technology. On the basis of the existing models of the earth in small arms, scientists are ready to develop production drawings of new types of weapons, such as assault and sniper rifle."
@@ -6236,7 +6200,6 @@ extraStrings:
 
       STR_STUN_GRENADE: "Stun Grenade"
       STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Though some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
-
 
   - type: ru
     strings:
@@ -6337,6 +6300,46 @@ extraStrings:
 
       STR_STUN_GRENADE: "Парализующая граната"
       STR_STUN_GRENADE_UFOPEDIA: "Парализующая бомба с гранатным детонатором и чекой. Несмотря на снижение эффективности в процессе адаптации, это слияние технологии людей и пришельцев даёт определённое удобство."
+
+# Fix the LASER and BLASTER weapons
+
+  - type: en
+    strings: #TODO: translation should be corrected (it's a Google Translator from Russian)
+      STR_LASER_WEAPONS: "Laser Weapons"
+      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
+      STR_ALIEN_WEAPON: "Alien's weapon"
+      STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
+      STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
+  - type: ru
+    strings:
+      STR_LASER_WEAPONS: "Лазерное оружие"
+      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
+      STR_ALIEN_WEAPON: "Оружие пришельцев"
+      STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
+      STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
+      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
+      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA"
+      STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
+
+# Fix the ALIEN CONTAINMENT
+
+  - type: en
+    strings:
+      STR_ALIEN_BIOLOGY: "Alien Biology"
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "Our preliminary research show that aliens have DNA much like ours, but so different that we should assume it has extraterrestrial origins - or at least coming from some inconceivable depths of time. Moreover, certain fragments seem to have been added artificially, probably extracted from Earth organisms. This likely helps the aliens to adapt to our environment, but it is either short-term or incomplete: dependant on pre-processed nutrients and with poor immunology, aliens can't survive on Earth for long, therefore special arrangements must be made to study a living specimen."
+  - type: ru
+    strings:
+      STR_ALIEN_BIOLOGY: "Биология пришельцев"
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
 
 
 
