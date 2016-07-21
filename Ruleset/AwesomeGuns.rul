@@ -865,7 +865,7 @@ items:
     bulletSpeed: 1
     hitSound: 8002 #hitSound: 22
     hitAnimation: 56
-    power: 38
+    power: 40
     damageType: 1
     clipSize: 9 #clipSize: 12
     battleType: 2
@@ -930,7 +930,7 @@ items:
     bulletSpeed: 1
     hitSound: 8002
     hitAnimation: 56
-    power: 38
+    power: 40
     damageType: 1
     clipSize: 15
     battleType: 2
@@ -2020,7 +2020,7 @@ items:
     handSprite: 710
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
-    power: 70
+    power: 68
     damageType: 5
     clipSize: 14
     battleType: 2
