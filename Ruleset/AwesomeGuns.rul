@@ -1076,9 +1076,9 @@ items:
     size: 0.2
     costSell: 16000
     weight: 18
-    bigSprite: 530
-    floorSprite: 530
-    handSprite: 530
+    bigSprite: 116
+    floorSprite: 116
+    handSprite: 496
     bulletSprite: 13
     fireSound: 8011 #fireSound: 4
     compatibleAmmo:
@@ -1111,9 +1111,9 @@ items:
     size: 0.075
     costSell: 800
     weight: 3
-    bigSprite: 531
-    floorSprite: 531
-    handSprite: 352
+    bigSprite: 117
+    floorSprite: 117
+    handSprite: 504
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 66
@@ -1128,9 +1128,9 @@ items:
     size: 0.075
     costSell: 800
     weight: 3
-    bigSprite: 532
-    floorSprite: 531
-    handSprite: 352
+    bigSprite: 118
+    floorSprite: 118
+    handSprite: 512
     bulletSpeed: 3
     hitSound: 8013
     hitAnimation: 76
@@ -1145,9 +1145,9 @@ items:
     size: 0.3
     costSell: 75000
     weight: 30
-    bigSprite: 550
-    floorSprite: 550
-    handSprite: 550
+    bigSprite: 120
+    floorSprite: 120
+    handSprite: 520
     bulletSprite: 14
     fireSound: 8017
     compatibleAmmo:
@@ -1176,9 +1176,9 @@ items:
     size: 0.05
     costSell: 1200
     weight: 2
-    bigSprite: 551
-    floorSprite: 551
-    handSprite: 352
+    bigSprite: 121
+    floorSprite: 121
+    handSprite: 528
     bulletSpeed: 5
     hitSound: 8018
     hitAnimation: 66
@@ -1193,9 +1193,9 @@ items:
     size: 0.05
     costSell: 1200
     weight: 2
-    bigSprite: 552
-    floorSprite: 551
-    handSprite: 352
+    bigSprite: 122
+    floorSprite: 122
+    handSprite: 536
     bulletSpeed: 5
     hitSound: 8013
     hitAnimation: 76
@@ -5583,22 +5583,26 @@ extraSprites:
       113: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
       114: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
 
+      116: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.gif
+      117: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.gif
+      118: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.gif
+
+      120: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
+      121: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.gif
+      122: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.gif
 
 
 
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.gif
-      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.gif
-      532: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.gif
-      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
-      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.gif
-      552: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.gif
+
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.gif
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_CLIP.gif
+
       11: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_2.gif
       12: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_AP_AMMO.gif
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_HP_AMMO.gif
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.gif
+
       7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.gif
       590: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob.gif
       591: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Bigob_HE_AMMO.gif
@@ -5641,14 +5645,18 @@ extraSprites:
       113: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.gif
       114: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_AL_CLIP.gif
 
+      116: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.gif
+      117: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_AL_CLIP.gif
+      118: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_AC_CLIP.gif
+
+      120: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob.gif
+      121: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_AL_CLIP.gif
+      122: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_AC_CLIP.gif
 
 
 
 
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.gif
-      531: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_CLIP.png
-      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob.gif
-      551: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_CLIP.gif
+
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob.gif
       561: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_AMMO.gif
       562: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_CLIP.gif
@@ -5719,23 +5727,22 @@ extraSprites:
       480: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_CLIP.gif
       488: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.gif
 
+      496: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.gif
+      504: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs_AL_CLIP.gif
+      512: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs_AC_CLIP.gif
+
+      520: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
+      528: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs_AL_CLIP.gif
+      536: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs_AC_CLIP.gif
 
 
-      #496:
-      #504:
-      #512:
 
-      #630:
-      #638:
 
-      530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.gif
-      550: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.gif
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.gif
       576: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_CLIP.gif
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_2.gif
-      #622:
-      #770:
+
       1301: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
       1311: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
       1321: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
