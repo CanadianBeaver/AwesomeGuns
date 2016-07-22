@@ -844,7 +844,7 @@ items:
     weight: 1 #weight: 3
     bigSprite: 4
     floorSprite: 4
-    handSprite: 1361
+    handSprite: 408
     hitSound: 8002 #hitSound: 22
     bulletSpeed: 0
     hitAnimation: 26
@@ -859,9 +859,9 @@ items:
     size: 0.05 #size: 0.1
     costSell: 140
     weight: 1 #weight: 3
-    bigSprite: 502
-    floorSprite: 502
-    handSprite: 1371
+    bigSprite: 102
+    floorSprite: 102
+    handSprite: 416
     bulletSpeed: 1
     hitSound: 8002 #hitSound: 22
     hitAnimation: 56
@@ -877,9 +877,9 @@ items:
     costBuy: 850
     costSell: 620
     weight: 6
-    bigSprite: 510
-    floorSprite: 510
-    handSprite: 510
+    bigSprite: 110
+    floorSprite: 110
+    handSprite: 424
     bulletSprite: 1
     fireSound: 8005
     compatibleAmmo:
@@ -907,9 +907,9 @@ items:
     costBuy: 112
     costSell: 84
     weight: 1
-    bigSprite: 511
-    floorSprite: 511
-    handSprite: 1361
+    bigSprite: 111
+    floorSprite: 111
+    handSprite: 432
     bulletSpeed: 0
     hitSound: 8002
     hitAnimation: 26
@@ -924,9 +924,9 @@ items:
     size: 0.07 #size: 0.1
     costSell: 224
     weight: 1
-    bigSprite: 512
-    floorSprite: 511
-    handSprite: 1371
+    bigSprite: 112
+    floorSprite: 112
+    handSprite: 440
     bulletSpeed: 1
     hitSound: 8002
     hitAnimation: 56
@@ -977,7 +977,7 @@ items:
     weight: 2 #weight: 3
     bigSprite: 2
     floorSprite: 2
-    handSprite: 1351
+    handSprite: 456
     bulletSpeed: 1
     hitSound: 8010 #hitSound: 22
     hitAnimation: 26
@@ -992,9 +992,9 @@ items:
     size: 0.075 #size: 0.1
     costSell: 400
     weight: 2 #weight: 3
-    bigSprite: 522
-    floorSprite: 75
-    handSprite: 1351
+    bigSprite: 122
+    floorSprite: 122
+    handSprite: 464
     bulletSpeed: 2
     hitSound: 8010 #hitSound: 22
     hitAnimation: 56
@@ -5554,15 +5554,19 @@ extraSprites:
   - type: BIGOBS.PCK # Contains 57 (0-56) objects. #57-#58 are reserved for CIVM_CORPSE and CIVF_CORPSE. #1001-#1005 are reserved for personal armors.
     files:
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
-      3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif
-      4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.gif
-      502: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.gif
-      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob.gif
-      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.gif
-      512: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.gif
-      #1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.gif - default image is OK
-      2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.gif
-      522: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.gif
+
+      3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif #100
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.gif #101
+      102: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.gif
+      110: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob.gif
+      111: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.gif
+      112: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.gif
+      #1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.gif - default image is OK #120
+      2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.gif #121
+      122: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.gif
+
+
+
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob.gif
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_CLIP.gif
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Bigob_AL_CLIP.gif
@@ -5604,14 +5608,18 @@ extraSprites:
     files:
       74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
       73: Resources/AwesomeGuns/Items/Floorob_ELERIUM.gif
-      #3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.gif - default image is OK
-      4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.gif
-      502: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_AL_CLIP.gif
-      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
-      511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
+      #3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.gif - default image is OK  #100
+      4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.gif #101
+      102: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_AL_CLIP.gif
+      110: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
+      111: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
+      112: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_AL_CLIP.gif
       # 1: Resources/AwesomeGuns/Weapons/RIFLE/Floorob.gif - default image is OK
       2: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_CLIP.gif
-      75: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_AL_CLIP.gif
+      122: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_AL_CLIP.gif
+
+
+
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.gif
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.png
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_AL_CLIP.png
@@ -5673,17 +5681,22 @@ extraSprites:
       #392:
       # conventional weapons use images from 400
       #400: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
-      #408:
-      #416:
-      #424:
-      #432:
-      #440:
-      #448:
-      1361: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
-      1371: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
-      510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
-      #0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif - default image is OK
-      1351: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
+      408: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
+      416: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
+      424: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
+      432: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs_CLIP.gif
+      440: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs_AL_CLIP.gif
+      #448: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif - default image is OK
+      456: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
+      464: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_AL_CLIP.gif
+
+      #472:
+      #480:
+      #488:
+      #496:
+      #504:
+      #512:
+
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.gif
       638: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.png
       530: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.gif
