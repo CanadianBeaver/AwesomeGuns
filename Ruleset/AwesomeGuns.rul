@@ -3244,6 +3244,18 @@ units:
   - type: STR_CELATID_TERRORIST
     deathSound: 77
   - type: STR_REAPER_TERRORIST
+    stats:
+      tu: 93 #tu: 62
+      stamina: 90
+      health: 148
+      bravery: 90
+      reactions: 64
+      firing: 0
+      throwing: 0
+      strength: 90
+      psiStrength: 35
+      psiSkill: 0
+      melee: 80
     deathSound: 78
   - type: STR_SILACOID_TERRORIST
     deathSound: 79
