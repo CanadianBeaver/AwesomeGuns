@@ -1788,7 +1788,7 @@ items:
     size: 0.1
     costSell: 20000
     weight: 6 #weight: 7
-    bigSprite: 5
+    bigSprite: 6
     floorSprite: 5
     handSprite: 112
     bulletSprite: 5
@@ -1819,7 +1819,7 @@ items:
   - type: STR_LASER_RIFLE
     size: 0.2
     costSell: 36900
-    weight: 11 #weight: 8
+    weight: 12 #weight: 8
     bigSprite: 0
     floorSprite: 0
     handSprite: 8
