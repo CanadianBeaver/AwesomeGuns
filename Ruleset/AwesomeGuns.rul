@@ -5681,7 +5681,7 @@ extraSprites:
       1361: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_CLIP.gif
       1371: Resources/AwesomeGuns/Weapons/PISTOL/Handobs_AL_CLIP.gif
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Handobs.gif
-      0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif
+      #0: Resources/AwesomeGuns/Weapons/RIFLE/Handobs.gif - default image is OK
       1351: Resources/AwesomeGuns/Weapons/RIFLE/Handobs_CLIP.gif
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs.gif
       638: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Handobs_AL_CLIP.png
