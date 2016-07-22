@@ -993,7 +993,7 @@ items:
     costSell: 400
     weight: 2 #weight: 3
     bigSprite: 522
-    floorSprite: 2
+    floorSprite: 75
     handSprite: 1351
     bulletSpeed: 2
     hitSound: 8010 #hitSound: 22
@@ -5610,7 +5610,8 @@ extraSprites:
       510: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob.gif
       511: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Floorob_CLIP.gif
       # 1: Resources/AwesomeGuns/Weapons/RIFLE/Floorob.gif - default image is OK
-      2: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_CLIP.png
+      2: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_CLIP.gif
+      75: Resources/AwesomeGuns/Weapons/RIFLE/Floorob_AL_CLIP.gif
       630: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob.gif
       631: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_CLIP.png
       632: Resources/AwesomeGuns/Weapons/SNIPER_RIFLE/Floorob_AL_CLIP.png
