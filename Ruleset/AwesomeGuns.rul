@@ -3532,6 +3532,7 @@ research:
     cost: 500
     points: 20
     dependencies:
+      - STR_ALIEN_WEAPON
       - STR_MIND_PROBE
       - STR_PSI_LAB
 
@@ -3616,6 +3617,7 @@ research:
 # PLASMA weapons and Greanades
 
   - name: STR_ALIEN_WEAPON
+    listOrder: 1450
     cost: 1000
     points: 20
     dependencies:
@@ -3623,6 +3625,7 @@ research:
       - STR_ALIEN_WEAPON_DEPENDENCY
 
   - name: STR_ALIEN_WEAPON_USING
+    listOrder: 1451
     cost: 200
     points: 10
     dependencies:
@@ -4615,7 +4618,7 @@ ufopaedia:
       - STR_ALIEN_WEAPON
 
   - id: STR_ALIEN_WEAPON_USING
-    listOrder: 58011
+    listOrder: 4711
     type_id: 8
     section: STR_ALIEN_ARTIFACTS
     text: STR_ALIEN_WEAPON_USING_UFOPEDIA
@@ -6294,10 +6297,9 @@ extraStrings:
 
   - type: en
     strings:
-
-      STR_ALIEN_WEAPON: "Alien's weapon"
-      STR_ALIEN_WEAPON_UFOPEDIA: "ALIEN WEAPON"
-      STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
+      STR_ALIEN_WEAPON: "Alien's weapons and techonologies"
+      STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
+      STR_ALIEN_WEAPON_USING: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some conversion of ammunition for plasma pistols and rifles will allow to be used in combat. Other types of weapons adapted to human nature and warfare techniques is not possible.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably not worth hurry to sell all the remains."
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
@@ -6306,11 +6308,10 @@ extraStrings:
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
     strings:
-
-      STR_ALIEN_WEAPON: "Оружие пришельцев"
-      STR_ALIEN_WEAPON_UFOPEDIA: "Оружие пришельцев разное. Возможно мы сможем использовать пистолеты. Для винтовок понадобиться что-то придумать, а вот тяжелую плазму и бластера никак... толи продавать, толи складировать до лучших времен... TODO: написать статью"
+      STR_ALIEN_WEAPON: "Оружие и технологии пришельцев"
+      STR_ALIEN_WEAPON_UFOPEDIA: "Пришельцы используют различные типы вооружения, но в основе всего лежит энергия Элериум-115. Принцип оружия кардинально отличается от земного и судя по всему управляется оно силой разума, природу которого нам ещё предстоит изучить. Воспроизвести нечто подобное наша цивилизация не в состоянии. Тем не менее, некоторые типы вооружения довольно просты в обращении и не требуют псионических навыков. Например наши солдаты могут пользоваться гранатами пришельцев уже сейчас.{NEWLINE}{NEWLINE}Нужно поймать и допросить больше живых пришельцев. Возможно таким образом мы найдём способ применения или адаптации инопланетных технологий."
       STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
-      STR_ALIEN_WEAPON_USING_UFOPEDIA: "ALIEN WEAPON USING"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Наши солдаты могут использовать некоторое оружие инопланетян без особого труда. Например, некоторая переделка боеприпасов для плазменных пистолетов и винтовок позволит их  использовать в бою. Остальные типы вооружения адаптировать под человеческую природу и технику ведения боя не представляется возможным.{NEWLINE}{NEWLINE}Однако, возможно мы всё-таки найдём способ применения оружия инопланетян в какой-то мере. Наверное не стоит спешно продавать все остатки."
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "STR_CONVERTED_PLASMA_PISTOL_CLIP"
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "STR_CONVERTED_PLASMA_RIFLE_CLIP"
