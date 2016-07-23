@@ -1645,9 +1645,9 @@ items:
     size: 0.2
     costSell: 15000
     weight: 6
-    bigSprite: 830
-    floorSprite: 830
-    handSprite: 830
+    bigSprite: 148
+    floorSprite: 148
+    handSprite: 712
     bulletSprite: 0
     bulletSpeed: 3
     hitSound: 8038 #hitSound: 0
@@ -1928,7 +1928,7 @@ items:
     weight: 3
     bigSprite: 34
     floorSprite: 33
-    handSprite: 710
+    handSprite: 1220
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 52 #power: 52
@@ -5610,6 +5610,7 @@ extraSprites:
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob.gif #144
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Bigob_S_Rocket.gif #144 #145 #146
 
+      148: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
 
 
 
@@ -5625,7 +5626,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
       770: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
-      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
+
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
@@ -5675,6 +5676,7 @@ extraSprites:
       15: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob.gif #143
       16: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Floorob_S_Rocket.gif #144 #145 #146
 
+      148: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
 
 
@@ -5688,7 +5690,7 @@ extraSprites:
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
       770: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
       #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.gif - default image is OK
-      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
+
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -5767,22 +5769,25 @@ extraSprites:
       696: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_L_Rocket.gif
       704: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Handobs_I_Rocket.gif
 
+      712: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
-
+      #720:
+      #728:
+      #736:
 
 
 
       8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.gif
 
       # alien's weapons use images from 800
-      710: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
+      1220: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       1381: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
       #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.gif - default image is OK
       1231: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
-      830: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
+
 
 # Images for UFOPAEDIA
 
