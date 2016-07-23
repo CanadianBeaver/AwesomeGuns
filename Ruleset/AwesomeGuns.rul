@@ -2137,7 +2137,7 @@ items:
     size: 0.3
     costSell: 144000
     weight: 28 #weight: 16
-    bigSprite: 820 #bigSprite: 35
+    bigSprite: 35
     floorSprite: 34
     handSprite: 56
     bulletSprite: 10
@@ -5624,24 +5624,25 @@ extraSprites:
       39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
 
+      # laser weapons use default images
+      5: Resources/AwesomeGuns/Weapons/LASER/Bigob1.gif
+      0: Resources/AwesomeGuns/Weapons/LASER/Bigob2.gif
+      6: Resources/AwesomeGuns/Weapons/LASER/Bigob3.gif
 
+      # plasma weapons use images from 160
+      32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png #170
+      34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png #171
+      #172:
+      31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png #174
+      41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png #175
+      #176:
 
-
-      5: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob1.gif
-      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob2.gif
-      6: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob3.gif
-
-
-
-
-      32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
-      34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png
-      31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png
-      41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
+      # electromagnetic weapons use images from 190
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
 
-      820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
+      #
+      35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
 
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
@@ -5706,11 +5707,14 @@ extraSprites:
       #38: STR_ALIEN_GRENADE - default image is OK #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
 
+      # laser weapons use default images
+      0: Resources/AwesomeGuns/Weapons/LASER/Floorob.gif
 
 
 
 
-      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.gif
+
+
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
@@ -5801,6 +5805,11 @@ extraSprites:
 
       712: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
+      # laser weapons use default images
+      8: Resources/AwesomeGuns/Weapons/LASER/Handobs.gif
+
+      # alien's weapons use images from 720
+
       #720:
       #728:
       #736:
@@ -5812,12 +5821,6 @@ extraSprites:
       #784:
       #792:
 
-
-
-
-      8: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Handobs.gif
-
-      # alien's weapons use images from 800
       1220: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
       1381: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
