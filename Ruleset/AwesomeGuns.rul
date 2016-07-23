@@ -1792,7 +1792,7 @@ items:
     floorSprite: 5
     handSprite: 112
     bulletSprite: 5
-    bulletSpeed: 2
+    bulletSpeed: 6
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
@@ -1824,7 +1824,7 @@ items:
     floorSprite: 0
     handSprite: 8
     bulletSprite: 6
-    bulletSpeed: 3
+    bulletSpeed: 8
     fireSound: 8052 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
