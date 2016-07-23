@@ -6250,7 +6250,7 @@ extraStrings:
       STR_SNIPER_RIFLE: "Sniper rifle"
       STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
       STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
 
       STR_ALLOY_RIFLE: "Assault rifle"
       STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 14 armor-piercing charge. Brust shot can fire with two ammo."
@@ -6319,7 +6319,7 @@ extraStrings:
       STR_SNIPER_RIFLE: "Снайперская винтовка"
       STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
       STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,62x51 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
       STR_ALLOY_RIFLE: "Штурмовая винтовка"
       STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 14 усовершенствованных зарядов. Очередью стреляет по два заряда."
@@ -6330,7 +6330,7 @@ extraStrings:
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
       STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 25 мм. Отличная средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Отличное средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
 
       STR_GRENADE_LAUNCHER: "Гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
