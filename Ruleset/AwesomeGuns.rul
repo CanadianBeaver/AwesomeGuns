@@ -5708,7 +5708,7 @@ extraSprites:
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
 
       # laser weapons use default images
-      0: Resources/AwesomeGuns/Weapons/LASER/Floorob.gif
+      0: Resources/AwesomeGuns/Weapons/LASER/Floorob2.gif
 
 
 
@@ -5806,7 +5806,7 @@ extraSprites:
       712: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
       # laser weapons use default images
-      8: Resources/AwesomeGuns/Weapons/LASER/Handobs.gif
+      8: Resources/AwesomeGuns/Weapons/LASER/Handobs2.gif
 
       # alien's weapons use images from 720
 
