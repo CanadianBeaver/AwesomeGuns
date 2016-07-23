@@ -1119,7 +1119,7 @@ items:
     hitAnimation: 66
     power: 52
     damageType: 1
-    clipSize: 15
+    clipSize: 14
     battleType: 2
     armor: 15
 
@@ -1136,7 +1136,7 @@ items:
     hitAnimation: 76
     power: 50
     damageType: 8
-    clipSize: 15
+    clipSize: 14
     battleType: 2
     armor: 15
 
@@ -6237,7 +6237,7 @@ extraStrings:
       STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It's less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
 
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
-      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 6.7mm ammunition in 12 round clips."
+      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips."
 
       STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
       STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
@@ -6253,7 +6253,7 @@ extraStrings:
       STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
 
       STR_ALLOY_RIFLE: "Assault rifle"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 15 armor-piercing charge. Brust shot can fire with two ammo."
+      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 14 armor-piercing charge. Brust shot can fire with two ammo."
       STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
       STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
 
@@ -6298,15 +6298,15 @@ extraStrings:
       STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы - в этом производстве изготавливаются примерно два сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби - производство картечи. Примерно из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
 
       STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
-      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть экипировки любого снайпера, как дополнительное оружие."
+      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9×19 мм Парабеллум. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть дополнительной экипировки."
 
       STR_MACHINE_PISTOL: "Пистолет-пулемёт"
       STR_MACHINE_PISTOL_CLIP: "Магазин к пистолет-пулемёту"
       STR_MACHINE_PISTOL_AL_CLIP: "Магазин ББ к пистолет-пулемёту"
-      STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон 9-го калибра. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
+      STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
 
       STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
-      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 6,7 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
+      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 5,56x45 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
 
       STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
       STR_AUTO_CANNON_UFOPEDIA: "Автоматическая пушка сочетает пальбу очередью и мощность тяжелой пушки. Выпускает до четырёх зарядов за раз, точность стрельбы соответствующая."
@@ -6322,7 +6322,7 @@ extraStrings:
       STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,5 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
       STR_ALLOY_RIFLE: "Штурмовая винтовка"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 15 усовершенствованных зарядов. Очередью стреляет по два заряда."
+      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 14 усовершенствованных зарядов. Очередью стреляет по два заряда."
       STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
       STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
 
