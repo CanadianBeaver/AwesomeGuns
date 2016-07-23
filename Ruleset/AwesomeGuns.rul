@@ -5540,7 +5540,7 @@ extraSprites:
     subY: 40
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
-      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
+      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.gif
       106: Resources/AwesomeGuns/Weapons/SPRITES/HIT_RAILGUN.gif
 
   - type: HIT.PCK
