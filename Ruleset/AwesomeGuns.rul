@@ -5753,9 +5753,9 @@ extraSprites:
       608: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Handobs_S_AMMO.gif
 
       24: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs.gif #616
-      624: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.png
-      632: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.png
-      640: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.png
+      624: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_AP_AMMO.gif
+      632: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_HE_AMMO.gif
+      640: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Handobs_I_AMMO.gif
 
       32: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs.gif #648
       656: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Handobs_AP_AMMO.gif
