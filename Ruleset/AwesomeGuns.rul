@@ -1299,7 +1299,7 @@ items:
     tuAimed: 80 #tuAimed: 80
     battleType: 1
     twoHanded: true
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     armor: 20
     maxRange: 28
