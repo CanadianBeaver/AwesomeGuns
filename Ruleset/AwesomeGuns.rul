@@ -774,7 +774,7 @@ items:
     bulletSpeed: 5
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 86 #hitAnimation: 46
+    hitAnimation: 96 #hitAnimation: 46
     power: 110
     damageType: 5
     accuracySnap: 80 #accuracySnap: 85
@@ -793,16 +793,25 @@ items:
 
 # Alien's Weapons
 
+  - type: CHRYSSALID_WEAPON
+    meleeAnimation: 24
+
+  - type: ZOMBIE_WEAPON
+    meleeAnimation: 24
+
+  - type: REAPER_WEAPON
+    meleeAnimation: 14
+
   - type: CYBERDISC_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 86 #hitAnimation: 46
+    hitAnimation: 96 #hitAnimation: 46
     bulletSpeed: 5
 
   - type: SECTOPOD_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 86 #hitAnimation: 46
+    hitAnimation: 96 #hitAnimation: 46
     bulletSpeed: 5
 
 # CONVENTIONAL weapons
@@ -1930,7 +1939,7 @@ items:
     floorSprite: 33
     handSprite: 744
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 46
+    hitAnimation: 86 #hitAnimation: 46
     power: 52 #power: 52
     damageType: 5
     clipSize: 26
@@ -2121,7 +2130,7 @@ items:
     handSprite: 728
     bulletSpeed: 8
     hitSound: 8018
-    hitAnimation: 96
+    hitAnimation: 106
     power: 125
     damageType: 1
     clipSize: 1
@@ -5522,6 +5531,7 @@ extraSprites:
     files:
       56: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY.gif
       66: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY_HEAVY.gif
+      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_PISTOL.gif
 
   - type: SMOKE.PCK
     width: 320
@@ -5530,8 +5540,8 @@ extraSprites:
     subY: 40
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
-      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
-      96: Resources/AwesomeGuns/Weapons/SPRITES/HIT_RAILGUN.gif
+      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.png
+      106: Resources/AwesomeGuns/Weapons/SPRITES/HIT_RAILGUN.gif
 
   - type: HIT.PCK
     width: 320
@@ -5540,6 +5550,8 @@ extraSprites:
     subY: 40
     files:
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
+      14: Resources/AwesomeGuns/Weapons/SPRITES/Hit_REAPER.gif
+      24: Resources/AwesomeGuns/Weapons/SPRITES/Hit_CHRYSSALID.gif
 
   - type: Projectiles
     width: 105
