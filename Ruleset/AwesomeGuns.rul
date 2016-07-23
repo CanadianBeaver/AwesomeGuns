@@ -1928,7 +1928,7 @@ items:
     weight: 3
     bigSprite: 34
     floorSprite: 33
-    handSprite: 1220
+    handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 52 #power: 52
@@ -1946,7 +1946,7 @@ items:
     weight: 4
     bigSprite: 34
     floorSprite: 33
-    handSprite: 710
+    handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 48 #power: 52
@@ -1999,7 +1999,7 @@ items:
     weight: 3
     bigSprite: 41
     floorSprite: 33
-    handSprite: 710
+    handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 80
@@ -2017,7 +2017,7 @@ items:
     weight: 4
     bigSprite: 41
     floorSprite: 33
-    handSprite: 710
+    handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 68
@@ -2069,7 +2069,7 @@ items:
     weight: 3
     bigSprite: 25
     floorSprite: 33
-    handSprite: 1381
+    handSprite: 792
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 115
@@ -2086,9 +2086,9 @@ items:
     size: 0.2
     costSell: 144000
     weight: 40
-    bigSprite: 750
-    floorSprite: 750
-    handSprite: 750
+    bigSprite: 160
+    floorSprite: 160
+    handSprite: 720
     bulletSprite: 15
     fireSound: 8067
     compatibleAmmo:
@@ -2116,9 +2116,9 @@ items:
     size: 0.1
     costSell: 3150
     weight: 2
-    bigSprite: 760
-    floorSprite: 760
-    handSprite: 760 # handSprite: 120
+    bigSprite: 161
+    floorSprite: 161
+    handSprite: 728
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 96
@@ -2170,7 +2170,7 @@ items:
     weight: 5 #weight: 3
     bigSprite: 36
     floorSprite: 35
-    handSprite: 1231
+    handSprite: 800
     hitSound: 0
     hitAnimation: 0
     power: 200
@@ -5624,12 +5624,16 @@ extraSprites:
       39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
 
-      # laser weapons use default images
+      # laser weapons use their default images
       5: Resources/AwesomeGuns/Weapons/LASER/Bigob1.gif
       0: Resources/AwesomeGuns/Weapons/LASER/Bigob2.gif
       6: Resources/AwesomeGuns/Weapons/LASER/Bigob3.gif
 
-      # plasma weapons use images from 160
+      # electromagnetic weapons use images from 160
+      160: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
+      161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
+
+      # plasma weapons use images from 170
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png #170
       34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png #171
       #172:
@@ -5637,13 +5641,8 @@ extraSprites:
       41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png #175
       #176:
 
-      # electromagnetic weapons use images from 190
-      750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
-      760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
-
-      #
+      # BLASTER and SMALL LAUNCHER weapons
       35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
-
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
@@ -5707,21 +5706,17 @@ extraSprites:
       #38: STR_ALIEN_GRENADE - default image is OK #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
 
-      # laser weapons use default images
+      # laser weapons use their default images
       0: Resources/AwesomeGuns/Weapons/LASER/Floorob2.gif
+      6: Resources/AwesomeGuns/Weapons/LASER/Floorob3.gif
 
+      # electromagnetic weapons use images from 160
+      160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
+      161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
 
-
-
-
-
-      33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
+      # plasma weapons use their default images
+      31: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
-      750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
-      760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
-
-      #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.gif - default image is OK
-
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -5805,30 +5800,28 @@ extraSprites:
 
       712: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
-      # laser weapons use default images
+      # laser weapons use their default images
+      112: Resources/AwesomeGuns/Weapons/LASER/Handobs1.gif
       8: Resources/AwesomeGuns/Weapons/LASER/Handobs2.gif
+      16: Resources/AwesomeGuns/Weapons/LASER/Handobs3.gif
 
-      # alien's weapons use images from 720
+      # electromagnetic weapons use images from 720
+      720: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
+      728: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
 
-      #720:
-      #728:
-      #736:
-      #744:
-      #752:
-      #760:
-      #768:
-      #776:
-      #784:
-      #792:
+      # alien's weapons use images from 736
 
-      1220: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
-      48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png
-      1381: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
-      750: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
-      760: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
-      #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs.gif - default image is OK
-      1231: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
+      #736: PLASMA_PISTOL
+      744: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
+      #752: PLASMA_PISTOL CLIP 2
+      48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png #760
+      #768: PLASMA_RIFLE CLIP
+      #776: PLASMA_RIFLE CLIP 2
+      #784: HEAVY_PLASMA
+      792: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
 
+      # BLASTER and SMALL LAUNCHER weapons
+      800: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
 
 # Images for UFOPAEDIA
 
