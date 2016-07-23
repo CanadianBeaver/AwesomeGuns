@@ -1696,8 +1696,8 @@ items:
     costBuy: 340
     costSell: 280
     weight: 3
-    bigSprite: 610
-    floorSprite: 610
+    bigSprite: 151
+    floorSprite: 151
     handSprite: 304
     power: 70
     damageType: 2
@@ -1710,8 +1710,8 @@ items:
     costBuy: 150
     costSell: 120
     weight: 3
-    bigSprite: 620 #bigSprite: 20
-    floorSprite: 620 #floorSprite: 20
+    bigSprite: 20
+    floorSprite: 20
     handSprite: 312
     power: 66 #power: 60
     damageType: 9
@@ -1772,8 +1772,8 @@ items:
     size: 0.1
     costSell: 14850
     weight: 4
-    bigSprite: 770
-    floorSprite: 770
+    bigSprite: 156
+    floorSprite: 156
     handSprite: 344
     hitSound: 0
     hitAnimation: 0
@@ -5565,8 +5565,11 @@ extraSprites:
 
   - type: BIGOBS.PCK # Contains 57 (0-56) objects. #57-#58 are reserved for CIVM_CORPSE and CIVF_CORPSE. #1001-#1005 are reserved for personal armors.
     files:
+
+      # items
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
 
+      # conventional weapons use images from 100
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif #100
       4: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_CLIP.gif #101
       102: Resources/AwesomeGuns/Weapons/PISTOL/Bigob_AL_CLIP.gif
@@ -5612,27 +5615,43 @@ extraSprites:
 
       148: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Bigob.gif
 
+      # explosions use images from 150
+      #19: STR_GRENADE - default image is OK #150
+      151: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_INCENDIARY.gif
+      20: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif #152
+      #21: STR_PROXIMITY_GRENADE - default image is OK #153
+      #22: STR_HIGH_EXPLOSIVE - default image is OK #154
+      39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
+      156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
 
 
-      610: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_INCENDIARY.gif
-      620: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif
-      39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif
-      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob.gif
+
+
+      5: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob1.gif
+      0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob2.gif
+      6: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Bigob3.gif
+
+
+
+
       32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png
       34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png
       31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png
       41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
-      770: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
+
       820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
 
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
+
+      # items
       74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
       73: Resources/AwesomeGuns/Items/Floorob_ELERIUM.gif
 
+      # conventional weapons use images from 100
       #3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.gif - default image is OK  #100
       4: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_CLIP.gif #101
       102: Resources/AwesomeGuns/Weapons/PISTOL/Floorob_AL_CLIP.gif
@@ -5678,17 +5697,25 @@ extraSprites:
 
       148: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Floorob.gif
 
+      # explosions use images from 150
+      #19: STR_GRENADE - default image is OK #150
+      151: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_INCENDIARY.gif
+      20: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_SMOKE.gif #152
+      #21: STR_PROXIMITY_GRENADE - default image is OK #153
+      #22: STR_HIGH_EXPLOSIVE - default image is OK #154
+      #38: STR_ALIEN_GRENADE - default image is OK #155
+      156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
 
 
 
-      610: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_INCENDIARY.gif
-      620: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_SMOKE.gif
+
+
       0: Resources/AwesomeGuns/Weapons/LASER_RIFLE/Floorob.gif
       33: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
       750: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       760: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
-      770: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
+
       #820: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Floorob.gif - default image is OK
 
 
@@ -5698,6 +5725,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+
       # items
       128: Resources/AwesomeGuns/Items/Handobs_ELERIUM.gif
       136: Resources/AwesomeGuns/Items/Handobs_MOTION_SCANNER.gif
@@ -5709,6 +5737,7 @@ extraSprites:
       #184:
       #192: #200: #208: #216: #224: #232: #240: #248: #256: #264: #272: #280:  #288:
       #296:
+
       # explosions use images from 304
       304: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
       312: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
@@ -5719,6 +5748,7 @@ extraSprites:
       #352:
       #360: #368: #376: #384:
       #392:
+
       # conventional weapons use images from 400
 
       #400: Resources/AwesomeGuns/Weapons/PISTOL/Handobs.gif - default image is OK
@@ -5774,6 +5804,14 @@ extraSprites:
       #720:
       #728:
       #736:
+      #744:
+      #752:
+      #760:
+      #768:
+      #776:
+      #784:
+      #792:
+
 
 
 
