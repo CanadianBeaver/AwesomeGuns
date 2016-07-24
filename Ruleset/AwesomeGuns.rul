@@ -2088,50 +2088,6 @@ items:
     recoveryPoints: 1
     armor: 18
 
-
-
-
-
-
-
-
-  - type: STR_PLASMA_PISTOL
-    bigSprite: 1502
-    floorSprite: 1502
-    handSprite: 1508
-
-  - type: STR_PLASMA_PISTOL_CLIP
-    bigSprite: 1503
-    floorSprite: 1503
-    #handSprite: 1524
-
-  - type: STR_PLASMA_RIFLE
-    bigSprite: 1504
-    floorSprite: 1504
-    handSprite: 1516
-
-  - type: STR_PLASMA_RIFLE_CLIP
-    bigSprite: 1505
-    floorSprite: 1505
-    #handSprite: 1540
-
-  - type: STR_HEAVY_PLASMA
-    bigSprite: 1506
-    floorSprite: 1506
-    handSprite: 1524
-
-  - type: STR_HEAVY_PLASMA_CLIP
-    bigSprite: 1507
-    floorSprite: 1507
-    #handSprite: 1556
-
-
-
-
-
-
-
-
 # RAIL weapons
 
   - type: STR_RAILGUN # new item
@@ -5700,21 +5656,6 @@ extraSprites:
       # BLASTER and SMALL LAUNCHER weapons
       35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
 
-
-
-
-    #test plasma TODO: check it
-  - type: BIGOBS.PCK
-    width: 256
-    height: 48
-    subX: 32
-    subY: 48
-    files:
-      1500: Resources/AwesomeGuns/Weapons/PLASMA/Projector_BIGOBS.png
-
-
-
-
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
 
@@ -5788,24 +5729,6 @@ extraSprites:
       # plasma weapons use their default images
       31: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
-
-
-
-
-
-    #test plasma TODO: check it
-  - type: FLOOROB.PCK
-    width: 256
-    height: 40
-    subX: 32
-    subY: 40
-    files:
-      1500: Resources/AwesomeGuns/Weapons/PLASMA/Projector_FLOOROBS.png
-
-
-
-
-
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -5911,23 +5834,6 @@ extraSprites:
 
       # BLASTER and SMALL LAUNCHER weapons
       800: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
-
-
-
-
-
-    #test plasma TODO: check it
-  - type: HANDOB.PCK
-    width: 256
-    height: 160
-    subX: 32
-    subY: 40
-    files:
-      1500: Resources/AwesomeGuns/Weapons/PLASMA/Projector_HANDOBS.png
-
-
-
-
 
 # Images for UFOPAEDIA
 
