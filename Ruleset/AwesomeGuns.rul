@@ -1931,13 +1931,13 @@ items:
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
       - STR_PLASMA_PISTOL_CLIP
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.1
     costSell: 4440
     weight: 3
     bigSprite: 34
     floorSprite: 33
-    handSprite: 744
+    handSprite: 736
     hitSound: 8064 #hitSound: 19
     hitAnimation: 86 #hitAnimation: 46
     power: 52 #power: 52
@@ -1953,8 +1953,8 @@ items:
     size: 0.1
     costSell: 4440
     weight: 4
-    bigSprite: 34
-    floorSprite: 33
+    bigSprite: 172
+    floorSprite: 172
     handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -2002,13 +2002,13 @@ items:
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
       - STR_PLASMA_RIFLE_CLIP
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.1
     costSell: 6290
     weight: 3
     bigSprite: 41
-    floorSprite: 33
-    handSprite: 744
+    floorSprite: 175 #floorSprite: 33
+    handSprite: 752
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 80
@@ -2024,9 +2024,9 @@ items:
     size: 0.1
     costSell: 6290
     weight: 4
-    bigSprite: 41
-    floorSprite: 33
-    handSprite: 744
+    bigSprite: 176
+    floorSprite: 176
+    handSprite: 760
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 68
@@ -2038,7 +2038,7 @@ items:
   - type: STR_HEAVY_PLASMA
     requires:
       - STR_HEAVY_PLASMA
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.2
     costSell: 171600
     weight: 28 #weight: 8
@@ -2072,13 +2072,13 @@ items:
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_HEAVY_PLASMA_CLIP
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.3
     costSell: 9590
     weight: 3
     bigSprite: 25
-    floorSprite: 33
-    handSprite: 792
+    floorSprite: 178 #floorSprite: 33
+    handSprite: 768
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
     power: 115
@@ -2142,7 +2142,7 @@ items:
   - type: STR_BLASTER_LAUNCHER
     requires:
       - STR_BLASTER_LAUNCHER
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.3
     costSell: 144000
     weight: 28 #weight: 16
@@ -2173,21 +2173,21 @@ items:
   - type: STR_BLASTER_BOMB
     requires:
       - STR_BLASTER_BOMB
-      - STR_ALIENS_ONLY
+      #- STR_ALIENS_ONLY
     size: 0.2
     costSell: 17028
     weight: 5 #weight: 3
     bigSprite: 36
     floorSprite: 35
-    handSprite: 800
+    handSprite: 776
     hitSound: 0
     hitAnimation: 0
     power: 200
     damageType: 3
     clipSize: 1
     battleType: 2
-    invWidth: 1
-    invHeight: 2
+    invWidth: 2 #invWidth: 1
+    invHeight: 1 #invHeight: 2
     recoveryPoints: 1
     blastRadius: 10
     armor: 10
@@ -2214,7 +2214,7 @@ items:
     battleType: 1
     twoHanded: true
     arcingShot: true
-    invWidth: 2
+    invWidth: 1 #invWidth: 2
     invHeight: 2
     recoveryPoints: 4
     armor: 18
@@ -2233,13 +2233,15 @@ items:
     weight: 3
     bigSprite: 38
     floorSprite: 37
-    handSprite: 176
+    handSprite: 784
     hitSound: 0
     hitAnimation: 0
     power: 90
     damageType: 6
-    clipSize: 1
+    clipSize: 6 #clipSize: 1
     battleType: 2
+    invWidth: 2 #invWidth: 1
+    invHeight: 1 #invHeight: 2
     recoveryPoints: 1
     armor: 8
 
@@ -5633,7 +5635,9 @@ extraSprites:
       20: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif #152
       #21: STR_PROXIMITY_GRENADE - default image is OK #153
       #22: STR_HIGH_EXPLOSIVE - default image is OK #154
-      39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
+      #39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
+      39: Resources/AwesomeGuns/Weapons/ALIENS/Grenade.gif
+
       156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
 
       # laser weapons use their default images
@@ -5646,15 +5650,26 @@ extraSprites:
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
 
       # plasma weapons use images from 170
-      32: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob.png #170
-      34: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Bigob_CLIP.png #171
-      #172:
-      31: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob.png #174
-      41: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Bigob_CLIP.png #175
-      #176:
+      32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif #170
+      34: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip.gif #171
+      172: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip2.gif
+      31: Resources/AwesomeGuns/Weapons/ALIENS/Rifle.gif #174
+      41: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip.gif #175
+      176: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip2.gif
+      30: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasma.gif #178
+      25: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasmaClip.gif #178
+      #180:
 
       # BLASTER and SMALL LAUNCHER weapons
-      35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
+      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
+      35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
+      36: Resources/AwesomeGuns/Weapons/ALIENS/BlasterBomb.gif
+      37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
+      38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif
+
+
+
+
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
@@ -5716,6 +5731,7 @@ extraSprites:
       #21: STR_PROXIMITY_GRENADE - default image is OK #153
       #22: STR_HIGH_EXPLOSIVE - default image is OK #154
       #38: STR_ALIEN_GRENADE - default image is OK #155
+      38: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Grenade.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
 
       # laser weapons use their default images
@@ -5729,6 +5745,33 @@ extraSprites:
       # plasma weapons use their default images
       31: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
       30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
+
+
+
+
+
+      # plasma weapons use images from 170
+      31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif #170
+      33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif #171
+      172: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip2.gif
+      30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif #174
+      175: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
+      176: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip2.gif
+      29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif #178
+      178: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
+      #180:
+
+      # BLASTER and SMALL LAUNCHER weapons
+      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
+      34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
+      35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
+      36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
+      37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif
+
+
+
+
+
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -5744,7 +5787,7 @@ extraSprites:
       152: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
       160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
-      176: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
+      #176: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
       #184:
       #192: #200: #208: #216: #224: #232: #240: #248: #256: #264: #272: #280:  #288:
       #296:
@@ -5754,7 +5797,8 @@ extraSprites:
       312: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
       320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
       328: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
-      336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
+      #336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
+      336: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Grenade.gif
       344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
       #352:
       #360: #368: #376: #384:
@@ -5824,16 +5868,38 @@ extraSprites:
       # alien's weapons use images from 736
 
       #736: PLASMA_PISTOL
-      744: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
+      #744: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
       #752: PLASMA_PISTOL CLIP 2
-      48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png #760
+      #48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png #760
       #768: PLASMA_RIFLE CLIP
       #776: PLASMA_RIFLE CLIP 2
       #784: HEAVY_PLASMA
-      792: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
+      #792: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
 
       # BLASTER and SMALL LAUNCHER weapons
-      800: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
+      #800: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
+
+      104: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Pistol.gif
+      736: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/PistolClip.gif
+      744: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/PistolClip2.gif
+      48: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Rifle.gif
+      752: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/RifleClip.gif
+      760: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/RifleClip2.gif
+      40: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasma.gif
+      768: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasmaClip.gif
+      #180:
+
+      # BLASTER and SMALL LAUNCHER weapons
+      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
+      56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
+      776: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterBomb.gif
+      64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
+      784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
+
+
+
+
+
 
 # Images for UFOPAEDIA
 
@@ -6004,10 +6070,10 @@ extraSounds:
       8053: Resources/AwesomeGuns/Weapons/LASER/Fire3.ogg
       8054: Resources/AwesomeGuns/Weapons/LASER/Hit.ogg
       8055: Resources/AwesomeGuns/Weapons/LASER/FireT.ogg
-      8061: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire1.wav
-      8062: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire2.wav
-      8063: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Fire3.wav
-      8064: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Hit.wav
+      8061: Resources/AwesomeGuns/Weapons/ALIENS/Sounds/Fire1.wav
+      8062: Resources/AwesomeGuns/Weapons/ALIENS/Sounds/Fire2.wav
+      8063: Resources/AwesomeGuns/Weapons/ALIENS/Sounds/Fire3.wav
+      8064: Resources/AwesomeGuns/Weapons/ALIENS/Sounds/Hit.wav
       8067: Resources/AwesomeGuns/Weapons/RAILGUN/Fire.ogg
 
 
