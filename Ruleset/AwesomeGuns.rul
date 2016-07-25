@@ -1931,7 +1931,7 @@ items:
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
       - STR_PLASMA_PISTOL_CLIP
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 4440
     weight: 3
@@ -1953,11 +1953,11 @@ items:
     size: 0.1
     costSell: 4440
     weight: 4
-    bigSprite: 172
-    floorSprite: 172
+    bigSprite: 162
+    floorSprite: 162
     handSprite: 744
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 46
+    hitAnimation: 86
     power: 48 #power: 52
     damageType: 5
     clipSize: 13 #clipSize: 26
@@ -2002,12 +2002,12 @@ items:
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
       - STR_PLASMA_RIFLE_CLIP
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 6290
     weight: 3
     bigSprite: 41
-    floorSprite: 175 #floorSprite: 33
+    floorSprite: 163 #floorSprite: 33
     handSprite: 752
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -2024,8 +2024,8 @@ items:
     size: 0.1
     costSell: 6290
     weight: 4
-    bigSprite: 176
-    floorSprite: 176
+    bigSprite: 164
+    floorSprite: 164
     handSprite: 760
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -2038,7 +2038,7 @@ items:
   - type: STR_HEAVY_PLASMA
     requires:
       - STR_HEAVY_PLASMA
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 171600
     weight: 28 #weight: 8
@@ -2072,12 +2072,12 @@ items:
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
       - STR_HEAVY_PLASMA_CLIP
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.3
     costSell: 9590
     weight: 3
     bigSprite: 25
-    floorSprite: 178 #floorSprite: 33
+    floorSprite: 168 #floorSprite: 33
     handSprite: 768
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -2142,7 +2142,7 @@ items:
   - type: STR_BLASTER_LAUNCHER
     requires:
       - STR_BLASTER_LAUNCHER
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.3
     costSell: 144000
     weight: 28 #weight: 16
@@ -2173,7 +2173,7 @@ items:
   - type: STR_BLASTER_BOMB
     requires:
       - STR_BLASTER_BOMB
-      #- STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 17028
     weight: 5 #weight: 3
@@ -5649,15 +5649,15 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
 
-      # plasma weapons use images from 170
-      32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif #170
-      34: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip.gif #171
-      172: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip2.gif
-      31: Resources/AwesomeGuns/Weapons/ALIENS/Rifle.gif #174
-      41: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip.gif #175
-      176: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip2.gif
-      30: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasma.gif #178
-      25: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasmaClip.gif #178
+      # plasma weapons use use their default images, but for clip starts from 162
+      32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif
+      34: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip.gif
+      162: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip2.gif
+      31: Resources/AwesomeGuns/Weapons/ALIENS/Rifle.gif
+      41: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip.gif
+      164: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip2.gif
+      30: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasma.gif
+      25: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasmaClip.gif
       #180:
 
       # BLASTER and SMALL LAUNCHER weapons
@@ -5742,23 +5742,15 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
 
-      # plasma weapons use their default images
-      31: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Floorob_CLIP.png
-      30: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Floorob.png
-
-
-
-
-
-      # plasma weapons use images from 170
-      31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif #170
-      33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif #171
-      172: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip2.gif
-      30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif #174
-      175: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
-      176: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip2.gif
-      29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif #178
-      178: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
+      # plasma weapons use use their default images, but for clip starts from 162
+      31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif
+      33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif
+      162: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip2.gif
+      30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif
+      163: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
+      164: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip2.gif
+      29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif
+      168: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
       #180:
 
       # BLASTER and SMALL LAUNCHER weapons
