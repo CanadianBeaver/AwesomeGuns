@@ -55,7 +55,7 @@ I avoid to make changes in alien's missions or UFOs. There are a few mods for th
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
 - X-Com Weapon Rework and Expansion - 0.8.5
-- Weapon Rework/Expansion
+- XenoOperations
 - Robin's Extra Weapons
 - Improved Hand Objects
 - AlienInventory
@@ -67,19 +67,16 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Laser Rifle Recolor
 - GrenadeLauncher
 - Incendiary_grenade_24jul
-- ImprovedHandObsPack
 - EqualTerms1.03
-- Equal Terms (Prime alpha)
+- WolframLance
 - Ryskeliini_GunsNGadgets_1st_pack_v12
 - OpticalEleriumV0-94b
-- TinyResearchMod 1.0
 - Raven
 - Air Combat Rebalanced
 - Railgun
 - Better look personal armor
 - Armored Vest
 - Scout Power Armor
-- Stormhawk
 - Quick-Draw Hip Slot
 - Reproduction
 - FastRamp
