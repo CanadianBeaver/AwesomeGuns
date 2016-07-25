@@ -2238,10 +2238,10 @@ items:
     hitAnimation: 0
     power: 90
     damageType: 6
-    clipSize: 6 #clipSize: 1
+    clipSize: 1
     battleType: 2
-    invWidth: 2 #invWidth: 1
-    invHeight: 1 #invHeight: 2
+    invWidth: 1
+    invHeight: 1
     recoveryPoints: 1
     armor: 8
 
@@ -5665,7 +5665,7 @@ extraSprites:
       35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
       36: Resources/AwesomeGuns/Weapons/ALIENS/BlasterBomb.gif
       37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
-      38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif
+      #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
 
 
 
@@ -5758,7 +5758,7 @@ extraSprites:
       34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
       35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
       36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
-      37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif
+      #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
 
 
 
