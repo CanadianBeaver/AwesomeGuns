@@ -6470,7 +6470,7 @@ extraStrings:
       STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to produce three laser beams simultaneously. Unfortunately, severe overheating prevents fire too often, it is offset by immense power and infinite ammunition."
 
       STR_LASER_WEAPONS: "Laser Weapons"
-      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
+      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create an unique light beam that can transmit a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laser Tank from Tank Rocket"
@@ -6483,7 +6483,7 @@ extraStrings:
       STR_HEAVY_LASER_UFOPEDIA: "Лазерный дробовик способен выпускать 3 луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
 
       STR_LASER_WEAPONS: "Лазерное оружие"
-      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
+      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, была обнаружена уникальная возможность создавать луч света, способный передавать энергию на расстояния. Используя сплавы пришельцев и кристаллы Элериум-115, можно сконструировать новый тип вооружения, которое будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому оружию.{NEWLINE}{NEWLINE}Нужно как можно скорее разработать лазерную авиапушку использую навигационный блок НЛО."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Лазерный танк из пушечного танка"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Лазерный танк из ракетного танка"
