@@ -5635,9 +5635,7 @@ extraSprites:
       20: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_SMOKE.gif #152
       #21: STR_PROXIMITY_GRENADE - default image is OK #153
       #22: STR_HIGH_EXPLOSIVE - default image is OK #154
-      #39: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_ALIEN.gif #155
-      39: Resources/AwesomeGuns/Weapons/ALIENS/Grenade.gif
-
+      39: Resources/AwesomeGuns/Weapons/ALIENS/Grenade.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
 
       # laser weapons use their default images
@@ -5789,7 +5787,6 @@ extraSprites:
       312: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
       320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
       328: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
-      #336: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_ALIEN.gif
       336: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Grenade.gif
       344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
       #352:
