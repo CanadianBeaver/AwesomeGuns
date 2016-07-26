@@ -139,10 +139,10 @@ facilities:
 
   - type: STR_MISSILE_DEFENSES
     buildCost: 200000
-    buildTime: 15 #buildTime: 16
-    monthlyCost: 5000
+    buildTime: 12 #buildTime: 16
+    monthlyCost: 6000 #monthlyCost: 5000
     defense: 600 #defense: 500
-    hitRatio: 60 #hitRatio: 50
+    hitRatio: 55 #hitRatio: 50
     fireSound: 5
     hitSound: 10
 
@@ -150,10 +150,10 @@ facilities:
     requires:
       - STR_LASER_DEFENSE
     buildCost: 400000
-    buildTime: 20 #buildTime: 24
+    buildTime: 18 #buildTime: 24
     monthlyCost: 12000 #monthlyCost: 10000
     defense: 700 #defense: 600
-    hitRatio: 70 #hitRatio: 60
+    hitRatio: 65 #hitRatio: 60
     fireSound: 15 #fireSound: 8
     hitSound: 10
 
