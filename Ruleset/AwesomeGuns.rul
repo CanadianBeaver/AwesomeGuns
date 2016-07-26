@@ -694,7 +694,7 @@ items:
 
   - type: STR_TANK_ROCKET_LAUNCHER
     size: 6
-    costBuy: 275000 #costBuy: 480000
+    costBuy: 270000 #costBuy: 480000
     costSell: 200000 #costSell: 360000
     transferTime: 48 #transferTime: 96
     weight: 1
@@ -2880,7 +2880,7 @@ armors:
       - 0.7 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.6 # Laser
       - 0.6 # Plasma
       - 1.1 # Stun
       - 1.2 # Melee
@@ -2898,7 +2898,7 @@ armors:
       - 0.7 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.6 # Laser
       - 0.6 # Plasma
       - 1.0 # Stun
       - 1.2 # Melee
@@ -2916,7 +2916,7 @@ armors:
       - 0.7 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.6 # Laser
       - 0.6 # Plasma
       - 1.0 # Stun
       - 1.2 # Melee
@@ -3042,8 +3042,8 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
-      - 0.5 # Plasma
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
       - 1.0 # Acid
@@ -3060,8 +3060,8 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
-      - 0.5 # Plasma
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
       - 1.0 # Acid
@@ -3078,8 +3078,8 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
-      - 0.5 # Plasma
+      - 0.6 # Laser
+      - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
       - 1.0 # Acid
@@ -3936,22 +3936,40 @@ manufacture:
 
 # Tanks
 
-  - name: STR_TANK_LASER_CANNON
+  - delete: STR_TANK_LASER_CANNON
+
+  - name: STR_TANK_LASER_CANNON_FROM_TANK_CANNON
+    listOrder: 500
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
       - STR_LASER_CANNON
     space: 25
     time: 400 #time: 1200
-    cost: 20000 #cost: 500000
+    cost: 60000 #cost: 500000
     requiredItems:
       STR_TANK_CANNON: 1
       STR_LASER_CANNON: 1
     producedItems:
-        STR_TANK_LASER_CANNON: 1
-        STR_CANNON: 1
+      STR_TANK_LASER_CANNON: 1
+      STR_CANNON: 1
+
+  - name: STR_TANK_LASER_CANNON_FROM_TANK_ROCKET
+    listOrder: 501
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_LASER_CANNON
+    space: 25
+    time: 400 #time: 1200
+    cost: 30000 #cost: 500000
+    requiredItems:
+      STR_TANK_ROCKET_LAUNCHER: 1
+      STR_LASER_CANNON: 1
+    producedItems:
+      STR_TANK_LASER_CANNON: 1
+      STR_STINGRAY_LAUNCHER: 1
 
   - name: STR_TANK_CANNON
-    listOrder: 499
+    listOrder: 498
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
       - STR_LASER_CANNON
@@ -3962,8 +3980,23 @@ manufacture:
       STR_TANK_LASER_CANNON: 1
       STR_CANNON: 1
     producedItems:
-        STR_TANK_CANNON: 1
-        STR_LASER_CANNON: 1
+      STR_TANK_CANNON: 1
+      STR_LASER_CANNON: 1
+
+  - name: STR_TANK_ROCKET_LAUNCHER
+    listOrder: 499
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_LASER_CANNON
+    space: 25
+    time: 400 #time: 1200
+    cost: 25000 #cost: 500000
+    requiredItems:
+      STR_TANK_LASER_CANNON: 1
+      STR_STINGRAY_LAUNCHER: 1
+    producedItems:
+      STR_TANK_ROCKET_LAUNCHER: 1
+      STR_LASER_CANNON: 1
 
   - name: STR_HOVERTANK_PLASMA
     category: STR_HEAVY_WEAPONS_PLATFORM
@@ -6439,6 +6472,9 @@ extraStrings:
       STR_LASER_WEAPONS: "Laser Weapons"
       STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create a unique light beam that can transmite a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 with special shape, will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
 
+      STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
+      STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laser Tank from Tank Rocket"
+
   - type: ru
     strings:
 
@@ -6448,6 +6484,9 @@ extraStrings:
 
       STR_LASER_WEAPONS: "Лазерное оружие"
       STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, мы обнаружили возможность создавать особый луч света, передающий энергию на расстояния. Предполагается, что используя сплавы пришельцев и кристаллы Элериум-115 особой формы, можно сконструировать новый тип вооружения.{NEWLINE}{NEWLINE}Такое оружие будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому. По нашим оценкам, возможно его применение как на поле боя так и для оборудования наших кораблей."
+
+      STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Лазерный танк из пушечного танка"
+      STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Лазерный танк из ракетного танка"
 
 # Electromagnetic weapons
 
