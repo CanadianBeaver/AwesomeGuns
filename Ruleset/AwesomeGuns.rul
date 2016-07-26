@@ -2139,7 +2139,63 @@ items:
 
 # BLASTER (ALIENS ONLY) and SMALL LAUNCHER weapons
 
+  - type: STR_SMALL_LAUNCHER
+    listOrder: 5600
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ALIEN_WEAPON
+    size: 0.2
+    costSell: 120000
+    weight: 10
+    bigSprite: 37
+    floorSprite: 36
+    handSprite: 64
+    bulletSprite: 9
+    bulletSpeed: 0
+    fireSound: 53
+    compatibleAmmo:
+      - STR_STUN_BOMB
+    accuracySnap: 65
+    accuracyAimed: 110
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    invWidth: 1 #invWidth: 2
+    invHeight: 2
+    recoveryPoints: 4
+    armor: 18
+    maxRange: 200
+    aimRange: 200
+    snapRange: 15
+    autoRange: 7
+    minRange: 0
+    dropoff: 2
+
+  - type: STR_STUN_BOMB
+    listOrder: 5700
+    requires:
+      - STR_STUN_BOMB
+    size: 0.1
+    costSell: 15200
+    weight: 3
+    bigSprite: 38
+    floorSprite: 37
+    handSprite: 784
+    hitSound: 0
+    hitAnimation: 0
+    power: 90
+    damageType: 6
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 1
+    armor: 8
+
   - type: STR_BLASTER_LAUNCHER
+    listOrder: 5800
     requires:
       - STR_BLASTER_LAUNCHER
       - STR_ALIENS_ONLY
@@ -2171,6 +2227,7 @@ items:
     dropoff: 2
 
   - type: STR_BLASTER_BOMB
+    listOrder: 5900
     requires:
       - STR_BLASTER_BOMB
       - STR_ALIENS_ONLY
@@ -2191,59 +2248,6 @@ items:
     recoveryPoints: 1
     blastRadius: 10
     armor: 10
-
-  - type: STR_SMALL_LAUNCHER
-    requires:
-      - STR_SMALL_LAUNCHER
-      - STR_ALIEN_WEAPON
-    size: 0.2
-    costSell: 120000
-    weight: 15 #weight: 10
-    bigSprite: 37
-    floorSprite: 36
-    handSprite: 64
-    bulletSprite: 9
-    bulletSpeed: 0
-    fireSound: 53
-    compatibleAmmo:
-      - STR_STUN_BOMB
-    accuracySnap: 65
-    accuracyAimed: 110
-    tuSnap: 40
-    tuAimed: 75
-    battleType: 1
-    twoHanded: true
-    arcingShot: true
-    invWidth: 1 #invWidth: 2
-    invHeight: 2
-    recoveryPoints: 4
-    armor: 18
-    maxRange: 200
-    aimRange: 200
-    snapRange: 15
-    autoRange: 7
-    minRange: 0
-    dropoff: 2
-
-  - type: STR_STUN_BOMB
-    requires:
-      - STR_STUN_BOMB
-    size: 0.1
-    costSell: 15200
-    weight: 3
-    bigSprite: 38
-    floorSprite: 37
-    handSprite: 784
-    hitSound: 0
-    hitAnimation: 0
-    power: 90
-    damageType: 6
-    clipSize: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    recoveryPoints: 1
-    armor: 8
 
 # Toys
 
@@ -4306,7 +4310,7 @@ manufacture:
     requires:
       - STR_ALIEN_WEAPON_USING
     space: 4
-    time: 600
+    time: 250
     cost: 2000
     requiredItems:
       STR_ELERIUM_115: 1
@@ -4318,7 +4322,7 @@ manufacture:
     requires:
       - STR_ALIEN_WEAPON_USING
     space: 4
-    time: 800
+    time: 350
     cost: 3000
     requiredItems:
       STR_ELERIUM_115: 1
@@ -4672,6 +4676,18 @@ ufopaedia:
     requires:
       - STR_ALIEN_WEAPON_USING
     text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
+
+# Fix the list order for BLASTER and SMALL LAUNCHER weapons
+
+  - id: STR_SMALL_LAUNCHER
+    listOrder: 5400
+  - id: STR_STUN_BOMB
+    listOrder: 5500
+
+  - id: STR_BLASTER_LAUNCHER
+    listOrder: 5600
+  - id: STR_BLASTER_BOMB
+    listOrder: 5700
 
 # Soldiers' toys
 
