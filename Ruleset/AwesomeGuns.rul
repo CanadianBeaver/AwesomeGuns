@@ -297,7 +297,7 @@ craftWeapons:
     sound: 5
     damage: 60 #damage: 70
     range: 22 #range: 30 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
-    accuracy: 20 #accuracy: 70
+    accuracy: 25 #accuracy: 70
     reloadCautious: 32
     reloadStandard: 24
     reloadAggressive: 16
@@ -346,7 +346,7 @@ craftWeapons:
     sound: 5
     damage: 60 #damage: 70
     range: 22 #range: 30
-    accuracy: 50 #accuracy: 70
+    accuracy: 60 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
     reloadStandard: 18 #reloadStandard: 24
     reloadAggressive: 12 #reloadAggressive: 16
@@ -377,14 +377,14 @@ craftWeapons:
   - type: STR_LASER_CANNON_UC
     sprite: 4
     sound: 15 #sound: 8
-    damage: 50 #damage: 70
+    damage: 40 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
-    accuracy: 75 #accuracy: 35
+    accuracy: 60 #accuracy: 35
     reloadCautious: 10 #reloadCautious: 12
     reloadStandard: 10 #reloadStandard: 12
     reloadAggressive: 10 #reloadAggressive: 12
-    ammoMax: 25 #ammoMax: 100
-    rearmRate: 5 #rearmRate: 50
+    ammoMax: 30 #ammoMax: 100
+    rearmRate: 6 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
 
