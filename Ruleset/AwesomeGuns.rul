@@ -3457,6 +3457,7 @@ research:
     dependencies:
       - STR_ELERIUM_115
       - STR_ALIEN_ENGINEER
+      - STR_ALIEN_WEAPON
 
 # Fix the error that relatives to research time of SECTOID COMMANDER
 
