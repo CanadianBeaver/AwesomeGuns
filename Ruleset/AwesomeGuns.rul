@@ -5833,7 +5833,7 @@ extraSprites:
       #21: STR_PROXIMITY_GRENADE - default image is OK #153
       #22: STR_HIGH_EXPLOSIVE - default image is OK #154
       39: Resources/AwesomeGuns/Weapons/ALIENS/Grenade.gif #155
-      156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN_GRENADE.gif
+      156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN.gif
 
       # laser weapons use their default images
       5: Resources/AwesomeGuns/Weapons/LASER/Bigob1.gif
@@ -5844,7 +5844,7 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
 
-      # plasma weapons use their default images
+      # alien's plasma weapons use their default images
       32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif
       34: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip.gif
       31: Resources/AwesomeGuns/Weapons/ALIENS/Rifle.gif
@@ -5859,7 +5859,6 @@ extraSprites:
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
-      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
       35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
       36: Resources/AwesomeGuns/Weapons/ALIENS/BlasterBomb.gif
       37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
@@ -5926,7 +5925,7 @@ extraSprites:
       #22: STR_HIGH_EXPLOSIVE - default image is OK #154
       #38: STR_ALIEN_GRENADE - default image is OK #155
       38: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Grenade.gif #155
-      156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN_GRENADE.gif
+      156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN.gif
 
       # laser weapons use their default images
       0: Resources/AwesomeGuns/Weapons/LASER/Floorob2.gif
@@ -5936,7 +5935,7 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
 
-      # plasma weapons use their default images, clips use images from 162
+      # alien's plasma weapons use their default images, clips use images from 162
       31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif
       33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif
       30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif
@@ -5951,7 +5950,6 @@ extraSprites:
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
-      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
       34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
       35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
       36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
@@ -5982,7 +5980,7 @@ extraSprites:
       320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
       328: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
       336: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Grenade.gif
-      344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_GRENADE.gif
+      344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN.gif
       #352:
       #360: #368: #376: #384:
       #392:
@@ -6048,7 +6046,7 @@ extraSprites:
       720: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
       728: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
 
-      # alien's weapons use images from 736
+      # alien's plasma weapons use images from 736
       104: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Pistol.gif
       736: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/PistolClip.gif
       48: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Rifle.gif
@@ -6063,7 +6061,6 @@ extraSprites:
       800: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
-      #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
       56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
       776: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterBomb.gif
       64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
