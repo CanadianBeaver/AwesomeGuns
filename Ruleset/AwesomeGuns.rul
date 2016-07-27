@@ -2143,7 +2143,7 @@ items:
     listOrder: 5600
     requires:
       - STR_SMALL_LAUNCHER
-      - STR_ALIEN_WEAPON
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 120000
     weight: 10
@@ -2177,6 +2177,7 @@ items:
     listOrder: 5700
     requires:
       - STR_STUN_BOMB
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 15200
     weight: 3
