@@ -1900,7 +1900,7 @@ items:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 84000
-    weight: 10 #weight: 3
+    weight: 4 #weight: 3
     bigSprite: 32
     floorSprite: 31
     handSprite: 104
@@ -1970,7 +1970,7 @@ items:
       - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 126500
-    weight: 20 #weight: 5
+    weight: 6 #weight: 5
     bigSprite: 31
     floorSprite: 30
     handSprite: 48
@@ -2041,7 +2041,7 @@ items:
       - STR_ALIENS_ONLY
     size: 0.2
     costSell: 171600
-    weight: 28 #weight: 8
+    weight: 9 #weight: 8
     bigSprite: 30
     floorSprite: 29
     handSprite: 40
@@ -2146,7 +2146,7 @@ items:
       - STR_ALIENS_ONLY
     size: 0.2
     costSell: 120000
-    weight: 10
+    weight: 5 #weight: 10
     bigSprite: 37
     floorSprite: 36
     handSprite: 64
@@ -2202,7 +2202,7 @@ items:
       - STR_ALIENS_ONLY
     size: 0.3
     costSell: 144000
-    weight: 28 #weight: 16
+    weight: 15 #weight: 16
     bigSprite: 35
     floorSprite: 34
     handSprite: 56
@@ -2234,7 +2234,7 @@ items:
       - STR_ALIENS_ONLY
     size: 0.2
     costSell: 17028
-    weight: 5 #weight: 3
+    weight: 4 #weight: 3
     bigSprite: 36
     floorSprite: 35
     handSprite: 776
