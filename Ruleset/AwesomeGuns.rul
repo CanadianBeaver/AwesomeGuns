@@ -3324,6 +3324,7 @@ research:
     points: 25
     dependencies:
       - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ALIEN_ENGINEER
 
   - name: STR_ULTIMATE_CRAFT
     cost: 1200 #cost: 900
