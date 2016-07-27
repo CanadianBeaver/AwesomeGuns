@@ -3318,13 +3318,19 @@ research:
     points: 30
     dependencies:
       - STR_NEW_FIGHTER_CRAFT
-      - STR_HYPER_WAVE_DECODER
+
+  - name: STR_GRAV_SHIELD
+    cost: 930
+    points: 25
+    dependencies:
+      - STR_NEW_FIGHTER_TRANSPORTER
 
   - name: STR_ULTIMATE_CRAFT
     cost: 1200 #cost: 900
     points: 30
     dependencies:
       - STR_GRAV_SHIELD
+      - STR_HYPER_WAVE_DECODER
 
 # Craft alloy weapons
 
