@@ -6470,7 +6470,7 @@ extraStrings:
       STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to produce three laser beams simultaneously. Unfortunately, severe overheating prevents fire too often, it is offset by immense power and infinite ammunition."
 
       STR_LASER_WEAPONS: "Laser Weapons"
-      STR_LASER_WEAPONS_UFOPEDIA: "Research on Elerium-115 we have found a way to create an unique light beam that can transmit a power over distances. It is assumed that by using alien alloys and crystals Elerium-115 will be possible to create a new type of weapon.{NEWLINE}{NEWLINE}This weapon will have a lot more ammunition and will can damage targets like the conventional weapons. It will be possible to use on the battlefield and for equipment our crafts."
+      STR_LASER_WEAPONS_UFOPEDIA: "Through experiments on Elerium-115 were discovered a unique opportunity to create a beam of light capable of transmitting power over distances. Using alien alloys and crystals of Ellerium-115 are possible to build a new type of weapon that will have a lot more ammunition and will not be less effective than the conventional weapons.{NEWLINE}{NEWLINE}It is necessary to develop as soon as possible a laser cannon using the UFO Navigation."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laser Tank from Tank Rocket"
