@@ -6200,13 +6200,13 @@ extraStrings:
       STR_ALLOY_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
 
       STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER BEAM IS POWERED TO FIGHT AGAINST UFO ON CLOSED DISTANCES."
-      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS SHIP WEAPON FROM ALIENS HEAVY WEAPON'S COMPONENTS. THIS WEAPON CAN GENERATE THE PLASMA BUNCH AND FIGHT AGAINST UFO."
+      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS CRAFT WEAPON FROM ALIENS HEAVY WEAPON'S COMPONENTS. THIS WEAPON CAN GENERATE THE PLASMA BUNCH AND FIGHT AGAINST UFO."
 
       STR_FUSION_MISSILE: "AVALANCHE upgrading"
       STR_FUSION_BALL_UC: "STORM"
       STR_FUSION_BALL_LAUNCHER: "Storm Launcher"
       STR_FUSION_BALL: "Storm Missile"
-      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN AIMER AND ALIEN'S BLASTER BOMB IN THE MISSILES."
+      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN AIMER AND ALIEN'S BLASTER BOMB."
 
   - type: ru
     strings:
@@ -6519,6 +6519,7 @@ extraStrings:
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Converted power source for the small alien Plasma Pistol. Contains Elerium - the source of all alien power."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Plasma Rifle Clip"
       STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Converted small object is used as a power source for a Plasma Rifle - a medium powered alien weapon.  Contains a small quantity of Elerium."
+      STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
   - type: ru
@@ -6531,6 +6532,7 @@ extraStrings:
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Переделанный источник энергии для небольшого плазменного пистолета. Содержит небольшое количество элериума - источника энергии всех инопланетных технологий."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Переделанный магазин к плаз. винтовке"
       STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Переделанный источник энергии для плазменной винтовки - оружия пришельцев средней мощности. Содержит небольшое количество элериума."
+      STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
 
