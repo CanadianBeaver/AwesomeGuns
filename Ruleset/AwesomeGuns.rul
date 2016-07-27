@@ -1208,7 +1208,7 @@ items:
     bulletSpeed: 5
     hitSound: 8013
     hitAnimation: 76
-    power: 80
+    power: 84
     damageType: 8
     clipSize: 2
     battleType: 2
@@ -1805,7 +1805,7 @@ items:
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 48 #power: 46
+    power: 46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
     accuracySnap: 70 #accuracySnap: 40
@@ -1851,9 +1851,9 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 22
-    maxRange: 45
-    aimRange: 35
-    snapRange: 25
+    maxRange: 44
+    aimRange: 36
+    snapRange: 26
     autoRange: 0
     minRange: 0
     dropoff: 2
@@ -1897,7 +1897,7 @@ items:
   - type: STR_PLASMA_PISTOL
     requires:
       - STR_PLASMA_PISTOL
-      - STR_ALIEN_WEAPON_USING
+      - STR_ALIENS_ONLY
     size: 0.1
     costSell: 84000
     weight: 4 #weight: 3
@@ -1909,11 +1909,10 @@ items:
     fireSound: 8061 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_PISTOL_CLIP
-      - STR_CONVERTED_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
     accuracySnap: 65
-    accuracyAimed: 80 #accuracyAimed: 85
-    tuAuto: 40 #tuAuto: 30
+    accuracyAimed: 85
+    tuAuto: 30
     tuSnap: 30
     tuAimed: 60
     battleType: 1
@@ -1921,12 +1920,12 @@ items:
     invHeight: 2
     recoveryPoints: 3
     armor: 28
-    maxRange: 35
-    aimRange: 25
-    snapRange: 16
-    autoRange: 12
-    minRange: 1
-    dropoff: 3
+    # maxRange: 35
+    # aimRange: 25
+    # snapRange: 16
+    # autoRange: 12
+    # minRange: 1
+    # dropoff: 3
 
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
@@ -1940,34 +1939,17 @@ items:
     handSprite: 736
     hitSound: 8064 #hitSound: 19
     hitAnimation: 86 #hitAnimation: 46
-    power: 52 #power: 52
+    power: 52
     damageType: 5
     clipSize: 26
     battleType: 2
     recoveryPoints: 1
     armor: 16
 
-  - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    requires:
-      - STR_ALIEN_WEAPON_USING
-    size: 0.1
-    costSell: 4440
-    weight: 4
-    bigSprite: 162
-    floorSprite: 162
-    handSprite: 744
-    hitSound: 8064 #hitSound: 19
-    hitAnimation: 86
-    power: 48 #power: 52
-    damageType: 5
-    clipSize: 13 #clipSize: 26
-    battleType: 2
-    armor: 10
-
   - type: STR_PLASMA_RIFLE
     requires:
       - STR_PLASMA_RIFLE
-      - STR_ALIEN_WEAPON_USING
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 126500
     weight: 6 #weight: 5
@@ -1979,11 +1961,10 @@ items:
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
-      - STR_CONVERTED_PLASMA_RIFLE_CLIP
-    accuracyAuto: 50 #accuracyAuto: 55
-    accuracySnap: 74 #accuracySnap: 86
-    accuracyAimed: 93 #accuracyAimed: 100
-    tuAuto: 40 #tuAuto: 36
+    accuracyAuto: 55
+    accuracySnap: 86
+    accuracyAimed: 100
+    tuAuto: 36
     tuSnap: 30
     tuAimed: 60
     battleType: 1
@@ -1992,12 +1973,12 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 30
-    maxRange: 50
-    aimRange: 40
-    snapRange: 26
-    autoRange: 16
-    minRange: 2
-    dropoff: 2
+    # maxRange: 50
+    # aimRange: 40
+    # snapRange: 26
+    # autoRange: 16
+    # minRange: 2
+    # dropoff: 2
 
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
@@ -2018,23 +1999,6 @@ items:
     recoveryPoints: 1
     armor: 17
 
-  - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    requires:
-      - STR_ALIEN_WEAPON_USING
-    size: 0.1
-    costSell: 6290
-    weight: 4
-    bigSprite: 164
-    floorSprite: 164
-    handSprite: 760
-    hitSound: 8064 #hitSound: 19
-    hitAnimation: 46
-    power: 68
-    damageType: 5
-    clipSize: 14
-    battleType: 2
-    armor: 10
-
   - type: STR_HEAVY_PLASMA
     requires:
       - STR_HEAVY_PLASMA
@@ -2051,9 +2015,9 @@ items:
     compatibleAmmo:
       - STR_HEAVY_PLASMA_CLIP
     accuracyAuto: 50
-    accuracySnap: 69 #accuracySnap: 75
-    accuracyAimed: 87 #accuracyAimed: 110
-    tuAuto: 40 #tuAuto: 35
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 35
     tuSnap: 30
     tuAimed: 60
     battleType: 1
@@ -2062,12 +2026,12 @@ items:
     invHeight: 3
     recoveryPoints: 5
     armor: 32
-    maxRange: 50
-    aimRange: 40
-    snapRange: 28
-    autoRange: 18
-    minRange: 3
-    dropoff: 2
+    # maxRange: 50
+    # aimRange: 40
+    # snapRange: 28
+    # autoRange: 18
+    # minRange: 3
+    # dropoff: 2
 
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
@@ -2083,10 +2047,111 @@ items:
     hitAnimation: 46
     power: 115
     damageType: 5
-    clipSize: 25 #clipSize: 35
+    clipSize: 35
     battleType: 2
     recoveryPoints: 1
     armor: 18
+
+# Converted PLASMA weapons
+
+  - type: STR_CONVERTED_PLASMA_PISTOL
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 84000
+    weight: 8 #weight: 3
+    bigSprite: 164
+    floorSprite: 164
+    handSprite: 792
+    bulletSprite: 19 #bulletSprite: 8
+    bulletSpeed: 1
+    fireSound: 8061 #fireSound: 18
+    compatibleAmmo:
+      - STR_CONVERTED_PLASMA_PISTOL_CLIP
+    accuracyAuto: 50
+    accuracySnap: 60
+    accuracyAimed: 75 #accuracyAimed: 85
+    tuAuto: 40 #tuAuto: 30
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 28
+    maxRange: 34
+    aimRange: 25
+    snapRange: 16
+    autoRange: 12
+    minRange: 1
+    dropoff: 3
+
+  - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 4440
+    weight: 4 #weight: 3
+    bigSprite: 165
+    floorSprite: 165
+    handSprite: 744
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 116
+    power: 48 #power: 52
+    damageType: 5
+    clipSize: 13 #clipSize: 26
+    battleType: 2
+    armor: 10
+
+  - type: STR_CONVERTED_PLASMA_RIFLE
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.2
+    costSell: 126500
+    weight: 16
+    bigSprite: 167
+    floorSprite: 167
+    handSprite: 760
+    bulletSprite: 21 #bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 8062 #fireSound: 18
+    compatibleAmmo:
+      - STR_CONVERTED_PLASMA_RIFLE_CLIP
+    accuracyAuto: 50 #accuracyAuto: 55
+    accuracySnap: 70 #accuracySnap: 86
+    accuracyAimed: 85 #accuracyAimed: 100
+    tuAuto: 40 #tuAuto: 36
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 30
+    maxRange: 44
+    aimRange: 36
+    snapRange: 26
+    autoRange: 16
+    minRange: 2
+    dropoff: 2
+
+  - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 6290
+    weight: 5 #weight: 3
+    bigSprite: 168
+    floorSprite: 168
+    handSprite: 800
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 116
+    power: 74 #power: 80
+    damageType: 5
+    clipSize: 14
+    battleType: 2
+    armor: 10
 
 # RAIL weapons
 
@@ -4346,28 +4411,60 @@ manufacture:
     requiredItems:
       STR_STUN_BOMB: 1
 
+# Converted PLASMA weapons
+
+  - name: STR_CONVERTED_PLASMA_PISTOL
+    listOrder: 1901
+    category: STR_WEAPON
+    requires:
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 3
+    time: 900
+    cost: 56000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+      STR_PLASMA_PISTOL: 2
+
   - name: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    listOrder: 2001
+    listOrder: 1902
     category: STR_AMMUNITION
     requires:
+      - STR_PLASMA_PISTOL_CLIP
       - STR_ALIEN_WEAPON_USING
     space: 4
-    time: 250
+    time: 180
     cost: 2000
     requiredItems:
       STR_ELERIUM_115: 1
       STR_PLASMA_PISTOL_CLIP: 1
 
-  - name: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    listOrder: 1801
+  - name: STR_CONVERTED_PLASMA_RIFLE
+    listOrder: 1910
     category: STR_AMMUNITION
     requires:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
       - STR_ALIEN_WEAPON_USING
     space: 4
-    time: 350
+    time: 2500
+    cost: 88000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+      STR_PLASMA_RIFLE: 2
+
+  - name: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    listOrder: 1911
+    category: STR_AMMUNITION
+    requires:
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 240
     cost: 3000
     requiredItems:
-      STR_ELERIUM_115: 1
+      STR_ELERIUM_115: 2
       STR_PLASMA_RIFLE_CLIP: 1
 
 # Personal armors
@@ -4676,6 +4773,54 @@ ufopaedia:
     requires:
       - STR_LASER_WEAPONS
 
+# Converted PLASMA weapons
+
+  - id: STR_ALIEN_WEAPON_USING
+    listOrder: 3850
+    type_id: 7
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
+    text: STR_ALIEN_WEAPON_USING_UFOPEDIA
+    image_id: ALIEN_WEAPON_USING_UFOPEDIAImage
+    requires:
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_PLASMA_PISTOL
+    listOrder: 3851
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_RIFLE
+    listOrder: 3852
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
+
 # Fix the list order for PLASMA items
 
   - id: STR_ALIEN_WEAPON
@@ -4685,14 +4830,6 @@ ufopaedia:
     text: STR_ALIEN_WEAPON_UFOPEDIA
     requires:
       - STR_ALIEN_WEAPON
-
-  - id: STR_ALIEN_WEAPON_USING
-    listOrder: 4711
-    type_id: 8
-    section: STR_ALIEN_ARTIFACTS
-    text: STR_ALIEN_WEAPON_USING_UFOPEDIA
-    requires:
-      - STR_ALIEN_WEAPON_USING
 
   - id: STR_PLASMA_PISTOL
     listOrder: 4800
@@ -5601,7 +5738,8 @@ extraSprites:
     files:
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
       96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.gif
-      106: Resources/AwesomeGuns/Weapons/SPRITES/HIT_RAILGUN.gif
+      106: Resources/AwesomeGuns/Weapons/SPRITES/Hit_RAILGUN.gif
+      116: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
 
   - type: HIT.PCK
     width: 320
@@ -5632,6 +5770,7 @@ extraSprites:
     subY: 3
     files:
       560: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma.png
+      665: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma_BLUE.png
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
@@ -5705,16 +5844,19 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
 
-      # plasma weapons use use their default images, but for clip starts from 162
+      # plasma weapons use their default images
       32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif
       34: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip.gif
-      162: Resources/AwesomeGuns/Weapons/ALIENS/PistolClip2.gif
       31: Resources/AwesomeGuns/Weapons/ALIENS/Rifle.gif
       41: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip.gif
-      164: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip2.gif
       30: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasma.gif
       25: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasmaClip.gif
-      #180:
+
+      # converted plasma weapons use images from 164
+      164: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Pistol.gif
+      165: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/PistolClip.gif
+      167: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Rifle.gif
+      168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
@@ -5794,16 +5936,19 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
 
-      # plasma weapons use use their default images, but for clip starts from 162
+      # plasma weapons use their default images
       31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif
       33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif
-      162: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip2.gif
       30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif
       163: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
-      164: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip2.gif
       29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif
       168: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
-      #180:
+
+      # converted plasma weapons use images from 164
+      164: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Pistol.gif
+      165: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/PistolClip.gif
+      167: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Rifle.gif
+      168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
@@ -5904,28 +6049,18 @@ extraSprites:
       728: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
 
       # alien's weapons use images from 736
-
-      #736: PLASMA_PISTOL
-      #744: Resources/AwesomeGuns/Weapons/PLASMA_PISTOL/Handobs_CLIP.png
-      #752: PLASMA_PISTOL CLIP 2
-      #48: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs.png #760
-      #768: PLASMA_RIFLE CLIP
-      #776: PLASMA_RIFLE CLIP 2
-      #784: HEAVY_PLASMA
-      #792: Resources/AwesomeGuns/Weapons/PLASMA_RIFLE/Handobs_HEAVY_CLIP.gif
-
-      # BLASTER and SMALL LAUNCHER weapons
-      #800: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Handobs_BOMB.gif
-
       104: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Pistol.gif
       736: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/PistolClip.gif
-      744: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/PistolClip2.gif
       48: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Rifle.gif
       752: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/RifleClip.gif
-      760: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/RifleClip2.gif
       40: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasma.gif
       768: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasmaClip.gif
-      #180:
+
+      # converted plasma weapons
+      792: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Pistol.gif
+      744: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/PistolClip.gif
+      760: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Rifle.gif
+      800: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/RifleClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       #35: Resources/AwesomeGuns/Weapons/BLASTER_LAUNCHER/Bigob.gif
@@ -5942,6 +6077,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/AwesomeGuns/UI/Research/LASER_WEAPONS_UFOpedia.gif
+
+  - type: ALIEN_WEAPON_USING_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ALIEN_WEAPON_USING_UFOpedia.gif
 
   - type: ALIEN_BIOLOGY_UFOPEDIAImage
     singleImage: true
@@ -6522,23 +6664,38 @@ extraStrings:
       STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
       STR_ALIEN_WEAPON_USING: "ALIEN WEAPON USING"
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some conversion of ammunition for plasma pistols and rifles will allow to be used in combat. Other types of weapons adapted to human nature and warfare techniques is not possible.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably not worth hurry to sell all the remains."
+
+      STR_CONVERTED_PLASMA_PISTOL: "Converted Plasma Pistol"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Converted Plasma Pistol Clip"
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Converted power source for the small alien Plasma Pistol. Contains Elerium - the source of all alien power."
+
+      STR_CONVERTED_PLASMA_RIFLE: "Converted Plasma Rifle"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Plasma Rifle Clip"
       STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Converted small object is used as a power source for a Plasma Rifle - a medium powered alien weapon.  Contains a small quantity of Elerium."
+
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
+
   - type: ru
     strings:
       STR_ALIEN_WEAPON: "Оружие и технологии пришельцев"
       STR_ALIEN_WEAPON_UFOPEDIA: "Пришельцы используют различные типы вооружения, но в основе всего лежит энергия Элериум-115. Принцип оружия кардинально отличается от земного и судя по всему управляется оно силой разума, природу которого нам ещё предстоит изучить. Воспроизвести нечто подобное наша цивилизация не в состоянии. Тем не менее, некоторые типы вооружения довольно просты в обращении и не требуют псионических навыков. Например наши солдаты могут пользоваться гранатами пришельцев уже сейчас.{NEWLINE}{NEWLINE}Нужно поймать и допросить больше живых пришельцев. Возможно таким образом мы найдём способ применения или адаптации инопланетных технологий."
       STR_ALIEN_WEAPON_USING: "Использование оружия пришельцев"
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "Наши солдаты могут использовать некоторое оружие инопланетян без особого труда. Например, некоторая переделка боеприпасов для плазменных пистолетов и винтовок позволит их  использовать в бою. Остальные типы вооружения адаптировать под человеческую природу и технику ведения боя не представляется возможным.{NEWLINE}{NEWLINE}Однако, возможно мы всё-таки найдём способ применения оружия инопланетян в какой-то мере. Наверное не стоит спешно продавать все остатки."
+
+      STR_CONVERTED_PLASMA_PISTOL: "Переделанный плаз. пистолет"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Переделанный плаз. пистолет"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Переделанный магазин к плаз. пистолету"
       STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Переделанный источник энергии для небольшого плазменного пистолета. Содержит небольшое количество элериума - источника энергии всех инопланетных технологий."
+
+      STR_CONVERTED_PLASMA_RIFLE: "Переделанная плаз. винтовка"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Переделанная плаз. винтовка"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Переделанный магазин к плаз. винтовке"
       STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Переделанный источник энергии для плазменной винтовки - оружия пришельцев средней мощности. Содержит небольшое количество элериума."
+
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "Эта пусковая установка пришельцев стреляет мощными управляемыми \"бластерными ракетами\". Траектория, по которой будет следовать ракета, задается непосредственно перед выстрелом. Это оружие управляется мозгом и только пришельцы могут его использовать."
