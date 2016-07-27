@@ -1988,7 +1988,7 @@ items:
     costSell: 6290
     weight: 3
     bigSprite: 41
-    floorSprite: 163 #floorSprite: 33
+    floorSprite: 162 #floorSprite: 33
     handSprite: 752
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -2041,7 +2041,7 @@ items:
     costSell: 9590
     weight: 3
     bigSprite: 25
-    floorSprite: 168 #floorSprite: 33
+    floorSprite: 163 #floorSprite: 33
     handSprite: 768
     hitSound: 8064 #hitSound: 19
     hitAnimation: 46
@@ -5936,13 +5936,13 @@ extraSprites:
       160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
       161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
 
-      # plasma weapons use their default images
+      # plasma weapons use their default images, clips use images from 162
       31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif
       33: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/PistolClip.gif
       30: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Rifle.gif
-      163: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
+      162: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
       29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif
-      168: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
+      163: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
 
       # converted plasma weapons use images from 164
       164: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Pistol.gif
