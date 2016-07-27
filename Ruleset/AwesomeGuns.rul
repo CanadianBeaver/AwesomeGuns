@@ -1707,7 +1707,7 @@ items:
     weight: 3
     bigSprite: 151
     floorSprite: 151
-    handSprite: 304
+    handSprite: 200
     power: 70
     damageType: 2
     battleType: 4
@@ -1721,7 +1721,7 @@ items:
     weight: 3
     bigSprite: 20
     floorSprite: 20
-    handSprite: 312
+    handSprite: 208
     power: 66 #power: 60
     damageType: 9
     battleType: 4
@@ -1736,7 +1736,7 @@ items:
     weight: 3
     bigSprite: 21
     floorSprite: 21
-    handSprite: 320
+    handSprite: 216
     power: 75 #power: 70
     damageType: 3
     battleType: 5
@@ -1750,7 +1750,7 @@ items:
     weight: 6
     bigSprite: 22
     floorSprite: 22
-    handSprite: 328
+    handSprite: 224
     power: 110
     damageType: 3
     battleType: 4
@@ -1768,7 +1768,7 @@ items:
     weight: 3
     bigSprite: 39
     floorSprite: 38
-    handSprite: 336
+    handSprite: 232
     power: 90
     damageType: 3
     battleType: 4
@@ -1783,7 +1783,7 @@ items:
     weight: 4
     bigSprite: 156
     floorSprite: 156
-    handSprite: 344
+    handSprite: 240
     hitSound: 0
     hitAnimation: 0
     power: 62
@@ -5969,21 +5969,18 @@ extraSprites:
       152: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
       160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
-      #176: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN_BOMB.gif
-      #184:
-      #192: #200: #208: #216: #224: #232: #240: #248: #256: #264: #272: #280:  #288:
-      #296:
+      #176: #184: #192:
 
       # explosions use images from 304
-      304: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
-      312: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
-      320: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
-      328: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
-      336: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Grenade.gif
-      344: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN.gif
-      #352:
-      #360: #368: #376: #384:
-      #392:
+      200: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
+      208: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
+      216: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
+      224: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_HIGH_EXPLOSIVE.gif
+      232: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Grenade.gif
+      240: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN.gif
+      #248: #256: #264: #272: #280: #288: #296:
+      #304: #312: #320: #328: #336: #344: #352:
+      #360: #368: #376: #384: #392:
 
       # conventional weapons use images from 400
 
