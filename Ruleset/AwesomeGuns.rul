@@ -2093,6 +2093,7 @@ items:
 # Converted PLASMA weapons
 
   - type: STR_CONVERTED_PLASMA_PISTOL
+    listOrder: 5501
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
@@ -2125,6 +2126,7 @@ items:
     dropoff: 3
 
   - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    listOrder: 5502
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
@@ -2142,6 +2144,7 @@ items:
     armor: 10
 
   - type: STR_CONVERTED_PLASMA_RIFLE
+    listOrder: 5301
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.2
@@ -2175,6 +2178,7 @@ items:
     dropoff: 2
 
   - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    listOrder: 5302
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
@@ -2207,7 +2211,7 @@ items:
       - STR_RAILGUN_SLUGS
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 100
+    accuracyAimed: 90
     tuAuto: 0
     tuSnap: 0
     tuAimed: 82 # 15tu for reloading a weapon, 1tu for turning in place 45 degrees, soldier should have at least 84tu for firing without pauses, at least 85tu for firing without pauses and turning in place 45 degrees
