@@ -1093,6 +1093,7 @@ items:
     compatibleAmmo:
       - STR_ALLOY_RIFLE_CLIP
       - STR_ACID_RIFLE_CLIP
+      - STR_ELERIUM_RIFLE_CLIP
     accuracyAuto: 32
     accuracySnap: 62
     accuracyAimed: 80
@@ -1149,6 +1150,24 @@ items:
     battleType: 2
     armor: 15
 
+  - type: STR_ELERIUM_RIFLE_CLIP # new item
+    listOrder: 2208
+    size: 0.075
+    costSell: 1600
+    weight: 3
+    bigSprite: 119
+    floorSprite: 119
+    handSprite: 384
+    bulletSpeed: 3
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageType: 3
+    blastRadius: 1
+    clipSize: 14
+    battleType: 2
+    armor: 12
+
   - type: STR_ALLOY_SNIPER_RIFLE # new item
     listOrder: 2226
     size: 0.3
@@ -1162,6 +1181,7 @@ items:
     compatibleAmmo:
       - STR_ALLOY_SNIPER_RIFLE_CLIP
       - STR_ACID_SNIPER_RIFLE_CLIP
+      - STR_ELERIUM_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
     accuracyAimed: 95
@@ -1210,6 +1230,24 @@ items:
     hitAnimation: 76
     power: 84
     damageType: 8
+    clipSize: 2
+    battleType: 2
+    armor: 12
+
+  - type: STR_ELERIUM_SNIPER_RIFLE_CLIP # new item
+    listOrder: 2229
+    size: 0.05
+    costSell: 2400
+    weight: 2
+    bigSprite: 123
+    floorSprite: 123
+    handSprite: 392
+    bulletSpeed: 5
+    hitSound: 0
+    hitAnimation: 0
+    power: 98
+    damageType: 3
+    blastRadius: 1
     clipSize: 2
     battleType: 2
     armor: 12
@@ -3456,6 +3494,16 @@ research:
       - STR_CHRYSSALID_AUTOPSY
       - STR_ALLOY_WEAPON
 
+  - name: STR_ELERIUM_CLIPS
+    listOrder: 915
+    cost: 400
+    points: 10
+    dependencies:
+      - STR_ALLOY_WEAPON
+      - STR_ALIEN_WEAPON
+      - STR_FUSION_ROCKET
+      - STR_ELERIUM_115
+
 # Armors
 
   - name: STR_PERSONAL_ARMOR
@@ -4197,6 +4245,18 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
+  - name: STR_ELERIUM_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 813
+    requires:
+      - STR_ELERIUM_CLIPS
+    space: 2
+    time: 60
+    cost: 1400
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 1
+
   - name: STR_ALLOY_SNIPER_RIFLE
     category: STR_WEAPON
     listOrder: 815
@@ -4229,6 +4289,18 @@ manufacture:
     cost: 900
     requiredItems:
       STR_ALIEN_ALLOYS: 1
+
+  - name: STR_ELERIUM_SNIPER_RIFLE_CLIP
+    category: STR_AMMUNITION
+    listOrder: 818
+    requires:
+      - STR_ELERIUM_CLIPS
+    space: 2
+    time: 60
+    cost: 1400
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 1
 
   - name: STR_SHOTGUN_CLIP
     listOrder: 807
@@ -4744,7 +4816,7 @@ ufopaedia:
       - STR_ALLOY_CLIPS
 
   - id: STR_ACID_CLIPS
-    listOrder: 1927
+    listOrder: 1928
     type_id: 7
     section: STR_WEAPONS_AND_EQUIPMENT
     text_width: 146
@@ -4753,8 +4825,18 @@ ufopaedia:
     requires:
       - STR_ACID_CLIPS
 
+  - id: STR_ELERIUM_CLIPS
+    listOrder: 1929
+    type_id: 7
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
+    text: STR_ELERIUM_CLIPS_UFOPEDIA
+    image_id: ELERIUM_CLIPS_UFOPEDIAImage
+    requires:
+      - STR_ELERIUM_CLIPS
+
   - id: STR_ALLOY_CLIPS_MANUFACTURE
-    listOrder: 1928
+    listOrder: 1927
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA
@@ -5039,6 +5121,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ACID_CLIPS
+  - id: STR_ELERIUM_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ELERIUM_CLIPS
 
   - id: STR_ALLOY_SNIPER_RIFLE
     listOrder: 2220
@@ -5057,6 +5144,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ACID_CLIPS
+  - id: STR_ELERIUM_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ELERIUM_CLIPS
 
   - id: STR_SHOTGUN
     listOrder: 2235
@@ -5800,10 +5892,12 @@ extraSprites:
       116: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob.gif
       117: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AL_CLIP.gif
       118: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_AC_CLIP.gif
+      119: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Bigob_EL_CLIP.gif
 
       120: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob.gif
       121: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AL_CLIP.gif
       122: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_AC_CLIP.gif
+      123: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Bigob_EL_CLIP.gif
 
       124: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob.gif
       125: Resources/AwesomeGuns/Weapons/SHOTGUN/Bigob_AMMO.gif
@@ -5891,10 +5985,12 @@ extraSprites:
       116: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob.gif
       117: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_AL_CLIP.gif
       118: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_AC_CLIP.gif
+      119: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Floorob_EL_CLIP.gif
 
       120: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob.gif
       121: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_AL_CLIP.gif
       122: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_AC_CLIP.gif
+      123: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Floorob_EL_CLIP.gif
 
       124: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob.gif
       125: Resources/AwesomeGuns/Weapons/SHOTGUN/Floorob_AMMO.gif
@@ -5971,7 +6067,7 @@ extraSprites:
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
       #176: #184: #192:
 
-      # explosions use images from 304
+      # explosions use images from 200
       200: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
       208: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_SMOKE.gif
       216: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_PROXIMITY.gif
@@ -5980,7 +6076,9 @@ extraSprites:
       240: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_STUN.gif
       #248: #256: #264: #272: #280: #288: #296:
       #304: #312: #320: #328: #336: #344: #352:
-      #360: #368: #376: #384: #392:
+      #360: #368: #376:
+      #384: - is using for ELERIUM_RIFLE_CLIP
+      #392: - is using for ELERIUM SNIPER RIFLE CLIP
 
       # conventional weapons use images from 400
 
@@ -6003,10 +6101,12 @@ extraSprites:
       496: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs.gif
       504: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs_AL_CLIP.gif
       512: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs_AC_CLIP.gif
+      384: Resources/AwesomeGuns/Weapons/ALLOY_RIFLE/Handobs_EL_CLIP.gif
 
       520: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs.gif
       528: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs_AL_CLIP.gif
       536: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs_AC_CLIP.gif
+      392: Resources/AwesomeGuns/Weapons/ALLOY_SNIPER_RIFLE/Handobs_EL_CLIP.gif
 
       560: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs.gif
       568: Resources/AwesomeGuns/Weapons/SHOTGUN/Handobs_AMMO.gif
@@ -6099,6 +6199,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/AwesomeGuns/UI/Research/ACID_CLIPS_UFOpedia.gif
+
+  - type: ELERIUM_CLIPS_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/UI/Research/ELERIUM_CLIPS_UFOpedia.gif
 
   - type: IMPROVED_ROCKETS_UFOPEDIAImage
     singleImage: true
@@ -6465,6 +6572,9 @@ extraStrings:
       STR_ACID_CLIPS: "Acid ammunition"
       STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
 
+      STR_ELERIUM_CLIPS: "Elerium ammunition"
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition..."
+
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
@@ -6499,12 +6609,14 @@ extraStrings:
       STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 14 armor-piercing charge. Brust shot can fire with two ammo."
       STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
       STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
+      STR_ELERIUM_RIFLE_CLIP: "Assault rifle-EL clip"
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New sniper rifle"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 ammo."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Thunderbolt-AP clip"
       STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 ammo."
+      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Thunderbolt-EL clip"
 
       STR_GRENADE_LAUNCHER: "Grenade launcher"
       STR_GL_HE_AMMO: "40mm HE grenade"
@@ -6533,6 +6645,9 @@ extraStrings:
 
       STR_ACID_CLIPS: "Кислотные боеприпасы"
       STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
+
+      STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Элериумные боеприпасы..."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
@@ -6568,12 +6683,14 @@ extraStrings:
       STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 14 усовершенствованных зарядов. Очередью стреляет по два заряда."
       STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
       STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
+      STR_ELERIUM_RIFLE_CLIP: "Магазин ЭЛ к штурмовой винтовке"
 
       STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Отличное средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
       STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Отличное средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
+      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Магазин ЭЛ к Молнии Зевса"
 
       STR_GRENADE_LAUNCHER: "Гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
