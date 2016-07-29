@@ -5356,7 +5356,6 @@ extraSprites:
       24: Resources/AwesomeGuns/Crafts/Raven/Minimized.gif
       35: Resources/AwesomeGuns/Crafts/Raven/Dogfight.gif
 
-  #TODO: Default image for Lightning in UFOpedia should be changed, because it is UGLY
   - type: UP003.SPK
     singleImage: true
     width: 320
@@ -5970,7 +5969,7 @@ extraSprites:
       105: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_CLIP.gif
       106: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Bigob_AL_CLIP.gif
 
-      #1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.gif - default image is OK #108
+      1: Resources/AwesomeGuns/Weapons/RIFLE/Bigob.gif #108
       2: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_CLIP.gif #109
       110: Resources/AwesomeGuns/Weapons/RIFLE/Bigob_AL_CLIP.gif
 
