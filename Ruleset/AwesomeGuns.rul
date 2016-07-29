@@ -277,7 +277,7 @@ craftWeapons:
 
 # Conventional
 
-  - type: STR_AVALANCHE # sum.damage = 420, prob.damage ~ 63
+  - type: STR_AVALANCHE # sum.damage = 420, prob.damage ~ 63, sec.damage ~ 0.875
     sprite: 1
     sound: 14 #sound: 5
     damage: 210 #damage: 100
@@ -292,7 +292,7 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 8
 
-  - type: STR_STINGRAY # sum.damage = 480, prob.damage ~ 120
+  - type: STR_STINGRAY # sum.damage = 480, prob.damage ~ 120, sec.damage ~ 0.625
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
@@ -307,14 +307,14 @@ craftWeapons:
     projectileType: 0
     projectileSpeed: 10
 
-  - type: STR_CANNON_UC
+  - type: STR_CANNON_UC # sum.damage = 1000, prob.damage ~ 180, sec.damage ~ 0.9
     sprite: 2
     sound: 4
     damage: 10 #damage: 10
     range: 12 #range: 10
     accuracy: 18 #accuracy: 25
-    reloadCautious: 4 #reloadCautious: 2
-    reloadStandard: 3 #reloadStandard: 2
+    reloadCautious: 2 #reloadCautious: 2
+    reloadStandard: 2 #reloadStandard: 2
     reloadAggressive: 2
     ammoMax: 100 #ammoMax: 200
     rearmRate: 50 #rearmRate: 100
@@ -325,7 +325,7 @@ craftWeapons:
 
 # Alloy
 
-  - type: STR_ALLOY_AVALANCHE # sum.damage = 420, prob.damage ~ 168
+  - type: STR_ALLOY_AVALANCHE # sum.damage = 420, prob.damage ~ 168, sec.damage ~ 2.8
     sprite: 1
     sound: 14 #sound: 5
     damage: 210 #damage: 100
@@ -341,7 +341,7 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 9
 
-  - type: STR_ALLOY_STINGRAY # sum.damage = 480, prob.damage ~ 288
+  - type: STR_ALLOY_STINGRAY # sum.damage = 480, prob.damage ~ 288, sec.damage ~ 2
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
@@ -356,14 +356,14 @@ craftWeapons:
     projectileType: 0
     projectileSpeed: 11 #projectileSpeed: 8
 
-  - type: STR_ALLOY_CANNON_UC
+  - type: STR_ALLOY_CANNON_UC # sum.damage = 1500, prob.damage ~ 540, sec.damage ~ 2.16
     sprite: 2
     sound: 4
     damage: 12
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
     accuracy: 36 #accuracy: 25
-    reloadCautious: 4 #reloadCautious: 2
-    reloadStandard: 3 #reloadStandard: 2
+    reloadCautious: 2 #reloadCautious: 2
+    reloadStandard: 2 #reloadStandard: 2
     reloadAggressive: 2
     ammoMax: 125 #ammoMax: 200
     rearmRate: 50 #rearmRate: 100
@@ -374,24 +374,40 @@ craftWeapons:
 
 # New
 
-  - type: STR_LASER_CANNON_UC # sum.damage = 768, prob.damage ~ 576
+  - type: STR_ELECTROMAGNETIC_CANNON_UC # sum.damage = 1200, prob.damage ~ 540, sec.damage ~ 1.35
+    sprite: 12
+    sound: 16
+    damage: 12
+    range: 38 # (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
+    accuracy: 45
+    reloadCautious: 4
+    reloadStandard: 4
+    reloadAggressive: 4
+    ammoMax: 100
+    rearmRate: 40
+    launcher: STR_ELECTROMAGNETIC_CANNON
+    clip: STR_ELECTROMAGNETIC_SLUGS_X40
+    projectileType: 2
+    projectileSpeed: 25
+
+  - type: STR_LASER_CANNON_UC # sum.damage = 800, prob.damage ~ 640, sec.damage ~ 1.66666666667
     sprite: 4
     sound: 15 #sound: 8
-    damage: 24 #damage: 70
+    damage: 25 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
-    accuracy: 75 #accuracy: 35
-    reloadCautious: 12 #reloadCautious: 12
+    accuracy: 80 #accuracy: 35
+    reloadCautious: 13 #reloadCautious: 12
     reloadStandard: 12 #reloadStandard: 12
-    reloadAggressive: 12 #reloadAggressive: 12
+    reloadAggressive: 11 #reloadAggressive: 12
     ammoMax: 32 #ammoMax: 100
     rearmRate: 6 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
 
-  - type: STR_PLASMA_BEAM_UC # sum.damage = 1280, prob.damage ~ 704
+  - type: STR_PLASMA_BEAM_UC # sum.damage = 1280, prob.damage ~ 704, sec.damage ~ 2.75
     sprite: 3 #sprite: 5
     sound: 9
-    damage: 80 #damage: 140
+    damage: 75 #damage: 140
     range: 36 #range: 52 (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
     accuracy: 55 #accuracy: 50
     reloadCautious: 16 #reloadCautious: 12
@@ -403,10 +419,10 @@ craftWeapons:
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
 
-  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 640, prob.damage ~ 608
+  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 640, prob.damage ~ 608, sec.damage ~ 10.5178571429
     sprite: 11 #sprite: 3
     sound: 7
-    damage: 320 #damage: 230
+    damage: 310 #damage: 230
     range: 65 # (65 is used by STR_BATTLESHIP)
     accuracy: 95 #accuracy: 100
     reloadCautious: 38 #reloadCautious: 32
@@ -487,17 +503,30 @@ items:
     transferTime: 48
 
   - type: STR_PLASMA_BEAM # alien technologies cannot be reproduced, but this is an unique exception
-    size: 1.2
+    size: 2.2 #size: 1.2
     costSell: 267300
     transferTime: 48
 
+  - type: STR_ELECTROMAGNETIC_CANNON
+    listOrder: 1010
+    size: 2.4
+    costSell: 200200
+    transferTime: 48
+
+  - type: STR_ELECTROMAGNETIC_SLUGS_X40
+    listOrder: 1011
+    size: 0.1
+    costSell: 4480
+    transferTime: 48 #transferTime: 96
+    clipSize: 40
+
   - type: STR_FUSION_BALL_LAUNCHER # AVALANCHE upgrade launcher
-    size: 2.0
+    size: 1.0 #size: 2.0
     costSell: 281000
     transferTime: 48
 
   - type: STR_FUSION_BALL # AVALANCHE upgrade missile
-    size: 0.6
+    size: 1.8 #size: 0.6
     costSell: 53300
     transferTime: 48
     clipSize: 1
@@ -3575,14 +3604,21 @@ research:
 
 # Electromagnetic weapons
 
+  - name: STR_ELECTROMAGNETIC_CANNON
+    listOrder: 4304
+    cost: 475
+    points: 20
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+      - STR_ALIEN_ENGINEER
+      - STR_ALIEN_WEAPON
+
   - name: STR_ELECTROMAGNETIC_WEAPONS
     listOrder: 4305
     cost: 300
     points: 15
     dependencies:
-      - STR_ELERIUM_115
-      - STR_ALIEN_ENGINEER
-      - STR_ALIEN_WEAPON
+      - STR_ELECTROMAGNETIC_CANNON
 
 # Fix the error that relatives to research time of SECTOID COMMANDER
 
@@ -4001,13 +4037,37 @@ manufacture:
       - STR_ALLOY_CANNON
     space: 6
     time: 300
-    cost: 8000
+    cost: 28000
     requiredItems:
       STR_UFO_NAVIGATION: 1
       STR_CANNON: 1
       STR_ALIEN_ALLOYS: 15
 
 # Craft Weapons - New
+
+  - name: STR_ELECTROMAGNETIC_CANNON
+    listOrder: 160
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ELECTROMAGNETIC_CANNON
+    space: 6
+    time: 2000
+    cost: 150150
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 10
+
+  - name: STR_ELECTROMAGNETIC_SLUGS_X40
+    listOrder: 161
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ELECTROMAGNETIC_CANNON
+    space: 4
+    time: 620
+    cost: 3360
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
 
   - name: STR_LASER_CANNON
     category: STR_CRAFT_WEAPON
@@ -4395,7 +4455,7 @@ manufacture:
     cost: 98000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 10
+      STR_ELERIUM_115: 6
 
   - name: STR_RAILGUN_SLUGS
     listOrder: 846
@@ -4740,6 +4800,15 @@ ufopaedia:
     image_id: ALLOY_CANNON_UFOPEDIAImage
     text: STR_ALLOY_CANNON_UFOPEDIA
 
+  - id: STR_ELECTROMAGNETIC_CANNON_UC
+    listOrder: 835
+    type_id: 2
+    requires:
+      - STR_ELECTROMAGNETIC_CANNON
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: ELECTROMAGNETIC_CANNON_UFOPEDIAImage
+    text: STR_ELECTROMAGNETIC_CANNON_UFOPEDIA
+
   - id: STR_FUSION_BALL_UC
     listOrder: 1150
 
@@ -4885,9 +4954,9 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
+      - STR_PLASMA_PISTOL
       - STR_PLASMA_PISTOL_CLIP
       - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA
 
   - id: STR_CONVERTED_PLASMA_RIFLE
     listOrder: 3852
@@ -4903,9 +4972,9 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
+      - STR_PLASMA_RIFLE
       - STR_PLASMA_RIFLE_CLIP
       - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
 
 # Fix the list order for PLASMA items
 
@@ -4925,22 +4994,6 @@ ufopaedia:
     listOrder: 5200
   - id: STR_HEAVY_PLASMA_CLIP
     listOrder: 5300
-
-  - id: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    listOrder: 4901
-    type_id: 4
-    section: STR_ALIEN_ARTIFACTS
-    requires:
-      - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA
-
-  - id: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    listOrder: 5101
-    type_id: 4
-    section: STR_ALIEN_ARTIFACTS
-    requires:
-      - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA
 
 # Fix the list order for BLASTER and SMALL LAUNCHER weapons
 
@@ -5207,18 +5260,8 @@ ufopaedia:
 
 # Electromagnetic weapons
 
-  - id: STR_ELECTROMAGNETIC_WEAPONS
-    listOrder: 3860
-    type_id: 7
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text_width: 146
-    text: STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA
-    image_id: ELECTROMAGNETIC_WEAPONS_UFOPEDIAImage
-    requires:
-      - STR_ELECTROMAGNETIC_WEAPONS
-
   - id: STR_RAILGUN
-    listOrder: 3861
+    listOrder: 2225
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_RAILGUN_UFOPEDIA
@@ -5323,12 +5366,26 @@ extraSprites:
 
 # Craft weapons
 
+  - type: UP007.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Avalanche_UFOpedia.gif
+
   - type: Tornado_UFOPEDIAImage
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/AwesomeGuns/Crafts/Weapons/Tornado_UFOpedia.gif
+
+  - type: UP006.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/Stingray_UFOpedia.gif
 
   - type: Barracuda_UFOPEDIAImage
     singleImage: true
@@ -5368,18 +5425,18 @@ extraSprites:
       0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpedia.gif
 
   # RAILGUN craft weapon
-  # - type: RAIL_CANNON_UFOPEDIAImage
-  #   singleImage: true
-  #   width: 320
-  #   height: 200
-  #   files:
-  #     0: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_UFOpedia.gif
-  #- type: INTICON.PCK
-  #  files:
-  #    xx: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Inticon.gif
-  #- type: BASEBITS.PCK
-  #  files:
-  #    xx: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Basebit.gif
+  - type: ELECTROMAGNETIC_CANNON_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_UFOpedia.gif
+  - type: INTICON.PCK
+    files:
+      17: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Inticon.gif
+  - type: BASEBITS.PCK
+    files:
+      60: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Basebit.gif
 
   # Fusion craft weapon
   - type: UP009.SPK
@@ -6246,13 +6303,6 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/UI/Research/IMPROVED_ROCKETS_UFOpedia.gif
 
-  - type: ELECTROMAGNETIC_WEAPONS_UFOPEDIAImage
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/AwesomeGuns/UI/Research/ELECTROMAGNETIC_WEAPONS_UFOpedia.gif
-
 
 
 extraSounds:
@@ -6268,6 +6318,7 @@ extraSounds:
       15: Resources/AwesomeGuns/Crafts/Sounds/laser.wav
       9: Resources/AwesomeGuns/Crafts/Sounds/plasma.ogg
       7: Resources/AwesomeGuns/Crafts/Sounds/fusion.wav
+      16: Resources/AwesomeGuns/Crafts/Sounds/rail.wav
 
 # Global sounds interface
 
@@ -6479,10 +6530,15 @@ extraStrings:
       STR_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOR PIERCING ROUNDS CAPABLE OF PENETRATING 16 INCHES OF STEEL."
       STR_ALLOY_CANNON_UC: "TUNED CANNON"
       STR_ALLOY_CANNON: "Tuned Cannon"
-      STR_ALLOY_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
+      STR_ALLOY_CANNON_UFOPEDIA: "POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
 
       STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER BEAM IS POWERED TO FIGHT AGAINST UFO ON CLOSED DISTANCES."
       STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS CRAFT WEAPON FROM ALIENS HEAVY WEAPON'S COMPONENTS. THIS WEAPON CAN GENERATE THE PLASMA BUNCH AND FIGHT AGAINST UFO."
+
+      STR_ELECTROMAGNETIC_CANNON_UC: "ELECTROMAGNETIC CANNON"
+      STR_ELECTROMAGNETIC_CANNON: "Electromagnetic Cannon"
+      STR_ELECTROMAGNETIC_SLUGS_X40: "Electromagnetic Cannon Slugs(x40)"
+      STR_ELECTROMAGNETIC_CANNON_UFOPEDIA: "HIGH POWERED ELECTROMAGNETIC CANNON WHICH FIRES ARMOR PIERCING ROUNDS CAPABLE OF PENETRATING 32 INCHES OF STEEL."
 
       STR_FUSION_MISSILE: "AVALANCHE upgrading"
       STR_FUSION_BALL_UC: "STORM"
@@ -6523,6 +6579,11 @@ extraStrings:
 
       STR_LASER_CANNON_UFOPEDIA: "ЛАЗЕРНЫЙ ИЗЛУЧАТЕЛЬ ВЫСОКОЙ МОЩНОСТИ, КОТОРЫМ МОЖНО ПОРАЖАТЬ КОРАБЛИ ПРИЩЕЛЬЦЕВ НА НЕБОЛЬШИХ РАССТОЯНИЯХ."
       STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ, КОТОРАЯ ГЕНЕРИРУЕТ ПЛАЗМЕННЫЕ СГУСТКИ ЭНЕРГИИ."
+
+      STR_ELECTROMAGNETIC_CANNON_UC: "РЕЛЬСОВАЯ АВИАПУШКА"
+      STR_ELECTROMAGNETIC_CANNON: "Рельсовая авиапушка"
+      STR_ELECTROMAGNETIC_SLUGS_X40: "Жетоны к рельсовой авиапушке (х40)"
+      STR_ELECTROMAGNETIC_CANNON_UFOPEDIA: "РЕЛЬСОВАЯ АВИАПУШКА ПОВЫШЕННОЙ ДАЛЬНОСТИ СТРЕЛЬБЫ.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
       STR_FUSION_MISSILE: "Улучшение ЛАВИНЫ"
       STR_FUSION_BALL_UC: "ШТОРМ"
@@ -6605,7 +6666,7 @@ extraStrings:
       STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition..."
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition... The last word in the fight against the aliens."
 
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
@@ -6679,7 +6740,7 @@ extraStrings:
       STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
 
       STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "Элериумные боеприпасы..."
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Боеприпасы использующие энергию Элериум-115 для создания мощной взрывной волны в месте попадания...{NEWLINE}{NEWLINE}Кароче, новейшее wunderwaffe со всеми вытекающими."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
@@ -6789,14 +6850,12 @@ extraStrings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
       STR_RAILGUN_SLUGS: "Railgun Slug"
-      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "By reverse engineering alien artifacts human technology has made great advances. We have been able to weaponise techonologies that up until now seemed to be well outside our reach. Mass acccelerator weapons shoot ultrasonic dense bursts of baryons to the target, with a combined kinetic and thermal energy that the destructive potential of alien plasma techonology. With further research we should be able to derive reliable weapons from the early prototypes."
       STR_RAILGUN_UFOPEDIA: "The sniper rifle is a supercharged version of the mass accelerator rifle. While it is not capable of auto bursts due to overheating it delivers a stronger punch. Adapted alien techonology has been used to reduce its recoil, thus allowing for very accurate long range shots."
   - type: ru
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
       STR_RAILGUN: "Ручной рельсотрон"
       STR_RAILGUN_SLUGS: "Жетон к ручному рельсотрону"
-      STR_ELECTROMAGNETIC_WEAPONS_UFOPEDIA: "Рельсотрон состоит из двух параллельных электродов (рельсов), подключённых к источнику постоянного тока. Разгоняемая электропроводная масса располагается между рельсами, замыкая электрическую цепь, и приобретает ускорение вследствие силы Лоренца, действующей на замкнутый проводник с током в его собственном магнитном поле. Сила Лоренца (сила Ампера) действует и на рельсы, приводя их к взаимному отталкиванию...{NEWLINE}{NEWLINE}Кароче, новейшее wunderwaffe со всеми вытекающими."
       STR_RAILGUN_UFOPEDIA: "Относительно мобильный электромагнитный ускоритель масс. Стреляет на огромные расстояния практически без потери точности. Скорость жетона в несколько раз выше скорости пули, что даёт преимущество в убойной силе. Однако, как оружие довольно тяжелое и неудобное, к тому же однозарядное. Создать штурмовой аналог не представляется возможным."
 
 # Fix the ALIEN weapons
@@ -6811,12 +6870,10 @@ extraStrings:
       STR_CONVERTED_PLASMA_PISTOL: "Converted Plasma Pistol"
       STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Converted Plasma Pistol Clip"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Converted power source for the small alien Plasma Pistol. Contains Elerium - the source of all alien power."
 
       STR_CONVERTED_PLASMA_RIFLE: "Converted Plasma Rifle"
       STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Plasma Rifle Clip"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Converted small object is used as a power source for a Plasma Rifle - a medium powered alien weapon.  Contains a small quantity of Elerium."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
@@ -6832,12 +6889,10 @@ extraStrings:
       STR_CONVERTED_PLASMA_PISTOL: "Переделанный плаз. пистолет"
       STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Переделанный плаз. пистолет"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Переделанный магазин к плаз. пистолету"
-      STR_CONVERTED_PLASMA_PISTOL_CLIP_UFOPEDIA: "Переделанный источник энергии для небольшого плазменного пистолета. Содержит небольшое количество элериума - источника энергии всех инопланетных технологий."
 
       STR_CONVERTED_PLASMA_RIFLE: "Переделанная плаз. винтовка"
       STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Переделанная плаз. винтовка"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Переделанный магазин к плаз. винтовке"
-      STR_CONVERTED_PLASMA_RIFLE_CLIP_UFOPEDIA: "Переделанный источник энергии для плазменной винтовки - оружия пришельцев средней мощности. Содержит небольшое количество элериума."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
