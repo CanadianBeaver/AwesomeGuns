@@ -292,7 +292,7 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 8
 
-  - type: STR_STINGRAY # sum.damage = 360, prob.damage ~ 90
+  - type: STR_STINGRAY # sum.damage = 480, prob.damage ~ 120
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
@@ -301,7 +301,7 @@ craftWeapons:
     reloadCautious: 32
     reloadStandard: 24
     reloadAggressive: 16
-    ammoMax: 6
+    ammoMax: 8 #ammoMax: 6
     launcher: STR_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILES
     projectileType: 0
@@ -341,16 +341,16 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 9
 
-  - type: STR_ALLOY_STINGRAY # sum.damage = 360, prob.damage ~ 234
+  - type: STR_ALLOY_STINGRAY # sum.damage = 480, prob.damage ~ 288
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
     range: 22 #range: 30
-    accuracy: 65 #accuracy: 70
+    accuracy: 60 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
     reloadStandard: 18 #reloadStandard: 24
     reloadAggressive: 12 #reloadAggressive: 16
-    ammoMax: 6
+    ammoMax: 8 #ammoMax: 6
     launcher: STR_ALLOY_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILES
     projectileType: 0
@@ -403,15 +403,15 @@ craftWeapons:
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
 
-  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 580, prob.damage ~ 551
+  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 640, prob.damage ~ 608
     sprite: 11 #sprite: 3
     sound: 7
-    damage: 290 #damage: 230
+    damage: 320 #damage: 230
     range: 65 # (65 is used by STR_BATTLESHIP)
     accuracy: 95 #accuracy: 100
-    reloadCautious: 36 #reloadCautious: 32
-    reloadStandard: 26 #reloadStandard: 24
-    reloadAggressive: 16 #reloadAggressive: 16
+    reloadCautious: 38 #reloadCautious: 32
+    reloadStandard: 28 #reloadStandard: 24
+    reloadAggressive: 18 #reloadAggressive: 16
     ammoMax: 2
     launcher: STR_FUSION_BALL_LAUNCHER
     clip: STR_FUSION_BALL
