@@ -277,12 +277,12 @@ craftWeapons:
 
 # Conventional
 
-  - type: STR_AVALANCHE
+  - type: STR_AVALANCHE # sum.damage = 420, prob.damage ~ 63
     sprite: 1
     sound: 14 #sound: 5
-    damage: 180 #damage: 100
+    damage: 210 #damage: 100
     range: 42 #range: 60 (42 is used by STR_TERROR_SHIP)
-    accuracy: 10 #accuracy: 80
+    accuracy: 15 #accuracy: 80
     reloadCautious: 48
     reloadStandard: 36
     reloadAggressive: 24
@@ -292,7 +292,7 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 8
 
-  - type: STR_STINGRAY
+  - type: STR_STINGRAY # sum.damage = 360, prob.damage ~ 90
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
@@ -310,11 +310,11 @@ craftWeapons:
   - type: STR_CANNON_UC
     sprite: 2
     sound: 4
-    damage: 9 #damage: 10
-    range: 9 #range: 10
+    damage: 10 #damage: 10
+    range: 12 #range: 10
     accuracy: 18 #accuracy: 25
-    reloadCautious: 2
-    reloadStandard: 2
+    reloadCautious: 4 #reloadCautious: 2
+    reloadStandard: 3 #reloadStandard: 2
     reloadAggressive: 2
     ammoMax: 100 #ammoMax: 200
     rearmRate: 50 #rearmRate: 100
@@ -325,10 +325,10 @@ craftWeapons:
 
 # Alloy
 
-  - type: STR_ALLOY_AVALANCHE
+  - type: STR_ALLOY_AVALANCHE # sum.damage = 420, prob.damage ~ 168
     sprite: 1
     sound: 14 #sound: 5
-    damage: 180 #damage: 100
+    damage: 210 #damage: 100
     range: 42 #range: 60
     accuracy: 40 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
@@ -339,14 +339,14 @@ craftWeapons:
     clip: STR_AVALANCHE_MISSILES
     rearmRate: 2
     projectileType: 1
-    projectileSpeed: 10
+    projectileSpeed: 9
 
-  - type: STR_ALLOY_STINGRAY
+  - type: STR_ALLOY_STINGRAY # sum.damage = 360, prob.damage ~ 234
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
     range: 22 #range: 30
-    accuracy: 60 #accuracy: 70
+    accuracy: 65 #accuracy: 70
     reloadCautious: 24 #reloadCautious: 32
     reloadStandard: 18 #reloadStandard: 24
     reloadAggressive: 12 #reloadAggressive: 16
@@ -354,7 +354,7 @@ craftWeapons:
     launcher: STR_ALLOY_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILES
     projectileType: 0
-    projectileSpeed: 12 #projectileSpeed: 8
+    projectileSpeed: 11 #projectileSpeed: 8
 
   - type: STR_ALLOY_CANNON_UC
     sprite: 2
@@ -362,53 +362,53 @@ craftWeapons:
     damage: 12
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
     accuracy: 36 #accuracy: 25
-    reloadCautious: 2
-    reloadStandard: 2
+    reloadCautious: 4 #reloadCautious: 2
+    reloadStandard: 3 #reloadStandard: 2
     reloadAggressive: 2
     ammoMax: 125 #ammoMax: 200
     rearmRate: 50 #rearmRate: 100
     launcher: STR_ALLOY_CANNON
     clip: STR_CANNON_ROUNDS_X50
     projectileType: 2
-    projectileSpeed: 15 #projectileSpeed: 8
+    projectileSpeed: 13 #projectileSpeed: 8
 
 # New
 
-  - type: STR_LASER_CANNON_UC
+  - type: STR_LASER_CANNON_UC # sum.damage = 768, prob.damage ~ 576
     sprite: 4
     sound: 15 #sound: 8
-    damage: 40 #damage: 70
+    damage: 24 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
-    accuracy: 60 #accuracy: 35
-    reloadCautious: 10 #reloadCautious: 12
-    reloadStandard: 10 #reloadStandard: 12
-    reloadAggressive: 10 #reloadAggressive: 12
-    ammoMax: 30 #ammoMax: 100
+    accuracy: 75 #accuracy: 35
+    reloadCautious: 12 #reloadCautious: 12
+    reloadStandard: 12 #reloadStandard: 12
+    reloadAggressive: 12 #reloadAggressive: 12
+    ammoMax: 32 #ammoMax: 100
     rearmRate: 6 #rearmRate: 50
     launcher: STR_LASER_CANNON
     projectileType: 4
 
-  - type: STR_PLASMA_BEAM_UC
+  - type: STR_PLASMA_BEAM_UC # sum.damage = 1280, prob.damage ~ 704
     sprite: 3 #sprite: 5
     sound: 9
     damage: 80 #damage: 140
     range: 36 #range: 52 (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
-    accuracy: 50
-    reloadCautious: 13 #reloadCautious: 12
-    reloadStandard: 12 #reloadStandard: 12
-    reloadAggressive: 11 #reloadAggressive: 12
+    accuracy: 55 #accuracy: 50
+    reloadCautious: 16 #reloadCautious: 12
+    reloadStandard: 15 #reloadStandard: 12
+    reloadAggressive: 14 #reloadAggressive: 12
     ammoMax: 16 #ammoMax: 100
     rearmRate: 4 #rearmRate: 50
     launcher: STR_PLASMA_BEAM
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
 
-  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade
+  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 580, prob.damage ~ 551
     sprite: 11 #sprite: 3
     sound: 7
-    damage: 230
+    damage: 290 #damage: 230
     range: 65 # (65 is used by STR_BATTLESHIP)
-    accuracy: 90 #accuracy: 100
+    accuracy: 95 #accuracy: 100
     reloadCautious: 36 #reloadCautious: 32
     reloadStandard: 26 #reloadStandard: 24
     reloadAggressive: 16 #reloadAggressive: 16
@@ -5321,7 +5321,6 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/Crafts/Lightning/UFOpedia.gif
 
-
 # Craft weapons
 
   - type: Tornado_UFOPEDIAImage
@@ -5338,12 +5337,27 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/Crafts/Weapons/Barracuda_UFOpedia.gif
 
-  - type: ALLOY_CANNON_UFOPEDIAImage
+  - type: UP008.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/AwesomeGuns/Crafts/Weapons/Cannon_UFOpedia.gif
+
+  - type: ALLOY_CANNON_UFOPEDIAImage
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/AlloyCannon_UFOpedia.gif
+
+  # Laser image for UFOpedia
+  - type: UP010.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/AwesomeGuns/Crafts/Weapons/LaserCannon_UFOpedia.gif
 
   # Plasma image for UFOpedia
   - type: UP011.SPK
@@ -5352,6 +5366,20 @@ extraSprites:
     height: 200
     files:
       0: Resources/AwesomeGuns/Crafts/Weapons/Plasma_UFOpedia.gif
+
+  # RAILGUN craft weapon
+  # - type: RAIL_CANNON_UFOPEDIAImage
+  #   singleImage: true
+  #   width: 320
+  #   height: 200
+  #   files:
+  #     0: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_UFOpedia.gif
+  #- type: INTICON.PCK
+  #  files:
+  #    xx: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Inticon.gif
+  #- type: BASEBITS.PCK
+  #  files:
+  #    xx: Resources/AwesomeGuns/Crafts/Weapons/RailCannon_Basebit.gif
 
   # Fusion craft weapon
   - type: UP009.SPK
