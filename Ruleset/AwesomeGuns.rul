@@ -226,7 +226,7 @@ crafts:
     sprite: 4
     fuelMax: 32 #fuelMax: 20
     damageMax: 500
-    speedMax: 4000 #speedMax: 4200
+    speedMax: 3900 #speedMax: 4200
     accel: 9
     weapons: 2
     costRent: 200000 #costRent: 0
@@ -242,7 +242,7 @@ crafts:
     sprite: 1
     fuelMax: 48 #fuelMax: 30
     damageMax: 800
-    speedMax: 3100
+    speedMax: 2600 #speedMax: 3100
     accel: 9
     weapons: 1
     soldiers: 12
