@@ -447,7 +447,7 @@ items:
     transferTime: 48
 
   - type: STR_AVALANCHE_MISSILES
-    size: 1.5
+    size: 1.2 #size: 1.5
     costBuy: 11250 #costBuy: 9000
     costSell: 8500 #costSell: 7200
     transferTime: 48
@@ -473,7 +473,7 @@ items:
     transferTime: 48
 
   - type: STR_CANNON_ROUNDS_X50
-    size: 0.075 #0.1
+    size: 0.1
     costBuy: 1240
     costSell: 1012
     transferTime: 48 #transferTime: 96
@@ -526,7 +526,7 @@ items:
     transferTime: 48
 
   - type: STR_FUSION_BALL # AVALANCHE upgrade missile
-    size: 1.8 #size: 0.6
+    size: 1.5 #size: 0.6
     costSell: 53300
     transferTime: 48
     clipSize: 1
