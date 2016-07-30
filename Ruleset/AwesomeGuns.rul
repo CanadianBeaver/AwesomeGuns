@@ -282,7 +282,7 @@ craftWeapons:
     sound: 14 #sound: 5
     damage: 210 #damage: 100
     range: 42 #range: 60 (42 is used by STR_TERROR_SHIP)
-    accuracy: 15 #accuracy: 80
+    accuracy: 12 #accuracy: 80
     reloadCautious: 48
     reloadStandard: 36
     reloadAggressive: 24
@@ -297,7 +297,7 @@ craftWeapons:
     sound: 5
     damage: 60 #damage: 70
     range: 22 #range: 30 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
-    accuracy: 25 #accuracy: 70
+    accuracy: 20 #accuracy: 70
     reloadCautious: 32
     reloadStandard: 24
     reloadAggressive: 16
@@ -312,7 +312,7 @@ craftWeapons:
     sound: 4
     damage: 10 #damage: 10
     range: 12 #range: 10
-    accuracy: 18 #accuracy: 25
+    accuracy: 16 #accuracy: 25
     reloadCautious: 2 #reloadCautious: 2
     reloadStandard: 2 #reloadStandard: 2
     reloadAggressive: 2
@@ -325,12 +325,12 @@ craftWeapons:
 
 # Alloy
 
-  - type: STR_ALLOY_AVALANCHE # sum.damage = 420, prob.damage ~ 168, sec.damage ~ 2.8
+  - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
     damage: 210 #damage: 100
     range: 42 #range: 60
-    accuracy: 40 #accuracy: 80
+    accuracy: 36 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
     reloadStandard: 30 #reloadStandard: 36
     reloadAggressive: 20 #reloadAggressive: 24
@@ -341,7 +341,7 @@ craftWeapons:
     projectileType: 1
     projectileSpeed: 9
 
-  - type: STR_ALLOY_STINGRAY # sum.damage = 480, prob.damage ~ 288, sec.damage ~ 2
+  - type: STR_ALLOY_STINGRAY
     sprite: 0
     sound: 5
     damage: 60 #damage: 70
@@ -356,12 +356,12 @@ craftWeapons:
     projectileType: 0
     projectileSpeed: 11 #projectileSpeed: 8
 
-  - type: STR_ALLOY_CANNON_UC # sum.damage = 1500, prob.damage ~ 540, sec.damage ~ 2.16
+  - type: STR_ALLOY_CANNON_UC
     sprite: 2
     sound: 4
-    damage: 12
+    damage: 10
     range: 15 #range: 10 (15 is used by STR_MEDIUM_SCOUT)
-    accuracy: 36 #accuracy: 25
+    accuracy: 48 #accuracy: 25
     reloadCautious: 2 #reloadCautious: 2
     reloadStandard: 2 #reloadStandard: 2
     reloadAggressive: 2
@@ -374,12 +374,12 @@ craftWeapons:
 
 # New
 
-  - type: STR_ELECTROMAGNETIC_CANNON_UC # sum.damage = 1200, prob.damage ~ 540, sec.damage ~ 1.35
+  - type: STR_ELECTROMAGNETIC_CANNON_UC
     sprite: 12
     sound: 16
     damage: 12
     range: 38 # (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
-    accuracy: 45
+    accuracy: 48
     reloadCautious: 4
     reloadStandard: 4
     reloadAggressive: 4
@@ -390,10 +390,10 @@ craftWeapons:
     projectileType: 2
     projectileSpeed: 25
 
-  - type: STR_LASER_CANNON_UC # sum.damage = 800, prob.damage ~ 640, sec.damage ~ 1.66666666667
+  - type: STR_LASER_CANNON_UC
     sprite: 4
     sound: 15 #sound: 8
-    damage: 25 #damage: 70
+    damage: 30 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 80 #accuracy: 35
     reloadCautious: 13 #reloadCautious: 12
@@ -404,7 +404,7 @@ craftWeapons:
     launcher: STR_LASER_CANNON
     projectileType: 4
 
-  - type: STR_PLASMA_BEAM_UC # sum.damage = 1280, prob.damage ~ 704, sec.damage ~ 2.75
+  - type: STR_PLASMA_BEAM_UC
     sprite: 3 #sprite: 5
     sound: 9
     damage: 75 #damage: 140
@@ -419,7 +419,7 @@ craftWeapons:
     projectileType: 3 #projectileType: 5
     projectileSpeed: 18
 
-  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade, sum.damage = 640, prob.damage ~ 608, sec.damage ~ 10.5178571429
+  - type: STR_FUSION_BALL_UC # AVALANCHE upgrade
     sprite: 11 #sprite: 3
     sound: 7
     damage: 310 #damage: 230
@@ -449,7 +449,7 @@ items:
   - type: STR_AVALANCHE_MISSILES
     size: 1.5
     costBuy: 11250 #costBuy: 9000
-    costSell: 9000 #costSell: 7200
+    costSell: 8500 #costSell: 7200
     transferTime: 48
     clipSize: 1
 
@@ -482,20 +482,33 @@ items:
   - type: STR_ALLOY_AVALANCHE_LAUNCHER
     listOrder: 301
     size: 1
-    costSell: 102000
+    costSell: 76500
     transferTime: 48
 
   - type: STR_ALLOY_STINGRAY_LAUNCHER
     listOrder: 101
     size: 0.8
-    costSell: 192000
+    costSell: 10200
     transferTime: 48
 
   - type: STR_ALLOY_CANNON
     listOrder: 501
     size: 1.5
-    costSell: 36000
+    costSell: 14400
     transferTime: 48
+
+  - type: STR_ELECTROMAGNETIC_CANNON
+    listOrder: 1010
+    size: 2.4
+    costSell: 204000
+    transferTime: 48
+
+  - type: STR_ELECTROMAGNETIC_SLUGS_X40
+    listOrder: 1011
+    size: 0.1
+    costSell: 4000
+    transferTime: 48 #transferTime: 96
+    clipSize: 40
 
   - type: STR_LASER_CANNON
     size: 2.0
@@ -506,19 +519,6 @@ items:
     size: 2.2 #size: 1.2
     costSell: 267300
     transferTime: 48
-
-  - type: STR_ELECTROMAGNETIC_CANNON
-    listOrder: 1010
-    size: 2.4
-    costSell: 200200
-    transferTime: 48
-
-  - type: STR_ELECTROMAGNETIC_SLUGS_X40
-    listOrder: 1011
-    size: 0.1
-    costSell: 4480
-    transferTime: 48 #transferTime: 96
-    clipSize: 40
 
   - type: STR_FUSION_BALL_LAUNCHER # AVALANCHE upgrade launcher
     size: 1.0 #size: 2.0
@@ -4011,7 +4011,7 @@ manufacture:
       - STR_IMPROVED_ROCKETS
     space: 6
     time: 800
-    cost: 20000
+    cost: 31875
     requiredItems:
       STR_AVALANCHE_LAUNCHER: 1
       STR_ALIEN_ALLOYS: 8
@@ -4024,7 +4024,7 @@ manufacture:
       - STR_IMPROVED_ROCKETS
     space: 6
     time: 600
-    cost: 10000
+    cost: 4250
     requiredItems:
       STR_STINGRAY_LAUNCHER: 1
       STR_ALIEN_ALLOYS: 6
@@ -4037,7 +4037,7 @@ manufacture:
       - STR_ALLOY_CANNON
     space: 6
     time: 300
-    cost: 28000
+    cost: 6000
     requiredItems:
       STR_UFO_NAVIGATION: 1
       STR_CANNON: 1
@@ -4052,7 +4052,7 @@ manufacture:
       - STR_ELECTROMAGNETIC_CANNON
     space: 6
     time: 2000
-    cost: 150150
+    cost: 176000
     requiredItems:
       STR_UFO_NAVIGATION: 1
       STR_ALIEN_ALLOYS: 20
@@ -4065,7 +4065,7 @@ manufacture:
       - STR_ELECTROMAGNETIC_CANNON
     space: 4
     time: 620
-    cost: 3360
+    cost: 3500
     requiredItems:
       STR_ALIEN_ALLOYS: 8
 
