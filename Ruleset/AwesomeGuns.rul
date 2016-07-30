@@ -1447,7 +1447,7 @@ items:
     size: 0.3
     costBuy: 13500
     costSell: 10125
-    weight: 20 #weight: 19
+    weight: 19
     bigSprite: 7
     floorSprite: 7
     handSprite: 32
@@ -1480,7 +1480,7 @@ items:
     size: 0.1
     costBuy: 0 #costBuy: 500
     costSell: 800 #costSell: 400
-    weight: 5
+    weight: 4 #weight: 5
     bigSprite: 8
     floorSprite: 8
     handSprite: 656
@@ -1499,7 +1499,7 @@ items:
     size: 0.1
     costBuy: 700
     costSell: 560
-    weight: 5
+    weight: 4 #weight: 5
     bigSprite: 9
     floorSprite: 9
     handSprite: 664
@@ -1519,7 +1519,7 @@ items:
     size: 0.1
     costBuy: 650
     costSell: 520
-    weight: 5
+    weight: 4 #weight: 5
     bigSprite: 10
     floorSprite: 10
     handSprite: 672
@@ -2794,7 +2794,7 @@ armors:
     corpseBattle:
       - STR_HEAVY_CORPSE_ARMOR
     storeItem: STR_HEAVY_PERSONAL_ARMOR
-    weight: 16
+    weight: 12
     stats:
       tu: -5
       stamina: -25
@@ -2823,7 +2823,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_ARMOR
     storeItem: STR_PERSONAL_ARMOR
-    weight: 12
+    weight: 10
     stats:
       stamina: -15
       firing: 5
@@ -2881,7 +2881,7 @@ armors:
     corpseBattle:
       - STR_POWER_CORPSE_SUIT
     storeItem: STR_POWER_SUIT
-    weight: 20
+    weight: 15
     stats:
       tu: 15
       stamina: -15
@@ -2915,7 +2915,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_SUIT
     storeItem: STR_FLYING_SUIT
-    weight: 18
+    weight: 14
     stats:
       tu: 5
     frontArmor: 100
