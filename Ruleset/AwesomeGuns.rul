@@ -6470,7 +6470,7 @@ extraStrings:
   - type: en
     strings:
       STR_QUICK_DRAW: "QUICK"
-      STR_BREAST: "BREAST"
+      STR_BREAST: "BREAST" #"VEST"
   - type: ru
     strings:
       STR_QUICK_DRAW: "КОБУРА"
@@ -6501,7 +6501,7 @@ extraStrings:
       STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИЙ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
 
 # Craft Weapons
-  - type: en
+  - type: en #TODO: translation should be checked and corrected
     strings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
@@ -6593,7 +6593,7 @@ extraStrings:
 
 # Armors
 
-  - type: en
+  - type: en #TODO: translation should be checked and corrected
     strings:
       # Standard armors
       STR_NONE_UC_TITLE: "STANDARD EQUIPMENT"
@@ -6656,7 +6656,7 @@ extraStrings:
 
 # Conventional weapons
 
-  - type: en
+  - type: en #TODO: translation should be checked and corrected
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
@@ -6855,7 +6855,7 @@ extraStrings:
 
 # Electromagnetic weapons
 
-  - type: en
+  - type: en #TODO: translation should be checked and corrected
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
@@ -6870,7 +6870,7 @@ extraStrings:
 
 # Fix the ALIEN weapons
 
-  - type: en
+  - type: en #TODO: translation should be checked and corrected
     strings:
       STR_ALIEN_WEAPON: "Alien's weapons and techonologies"
       STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
@@ -6913,11 +6913,11 @@ extraStrings:
   - type: en
     strings:
       STR_ALIEN_BIOLOGY: "Alien Biology"
-      STR_ALIEN_BIOLOGY_UFOPEDIA: "Our preliminary research show that aliens have DNA much like ours, but so different that we should assume it has extraterrestrial origins - or at least coming from some inconceivable depths of time. Moreover, certain fragments seem to have been added artificially, probably extracted from Earth organisms. This likely helps the aliens to adapt to our environment, but it is either short-term or incomplete: dependant on pre-processed nutrients and with poor immunology, aliens can't survive on Earth for long, therefore special arrangements must be made to study a living specimen."
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "The Alien DNA is totally different from mankind, but some of the pieces have been added artificially and have a terrestrial origin. This was done for adaptation with the Earth's environment. However, a prolonged stay on the Earth is not possible. Their immune system is not ready to fight against our diseases, they are very picky about food and their nervous system requires constant relax. We have to build a special containment facility for keeping aliens alive for examination and interrogation."
   - type: ru
     strings:
       STR_ALIEN_BIOLOGY: "Биология пришельцев"
-      STR_ALIEN_BIOLOGY_UFOPEDIA: "Наши предварительные исследования показывают, что ДНК пришельцев имеет много общего с нашей. Но различия всё таки довольно существенны, из чего можно предположить, что наше инопланетное происхождение маловероятно. По крайней мере если общность и была когда-то, то в очень отдалённом прошлом. Также мы уверены, что некоторые фрагменты ДНК пришельцев, были добавлены искусственно, и вероятно имеют земное происхождение. Скорее всего это сделано для адаптации инопланетян к существованию в земной среде. Тем не менее, продолжительное пребывание инопланетных организмов на Земле, не возможно по многим причинам. Их иммунная система не готова справиться с нашей окружающей средой, их организмы очень привередливы к питанию, а их нервная система требует постоянной релаксации. Мы должны построить специальный изолятор, в котором смогли бы содержать живые особи пришельцев для изучения их жизнедеятельности и проведения допросов."
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "ДНК пришельцев кардинально отличается от нашей, но некоторые из фрагментов были добавлены искусственно и имеют земное происхождение. Это сделано для адаптации к существованию в земной среде. Однако, продолжительное пребывание на Земле не возможно. Их иммунная система не готова справиться с нашей средой, их организмы очень привередливы к питанию, а их нервная система требует релаксаций. Мы должны построить специальный изолятор в котором смогли бы содержать живые особи для изучения и проведения допросов."
 
 
 
