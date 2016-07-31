@@ -43,7 +43,7 @@ I would appreciate hearing your opinion on this. Please feel free to contact me 
 
 * Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
-* The folder *Descriptions* contains only work documents. Files in this folder are used just for development process.
+* The folder *WorkFiles* contains only work documents. Files in this folder are used just for development process.
 
 ###Compatible mods:
 
