@@ -1,7 +1,7 @@
 #
 # Awesome Guns MOD (version alpha).
 # Author: Radu Martin
-#
+# Email: ontariobeaver@gmail.com
 #
 # I got images and ideas from many mods,
 # but I never copy these without adaptation.
@@ -6112,6 +6112,7 @@ extraSprites:
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN.gif
 
       # laser weapons use their default images
+      5: Resources/AwesomeGuns/Weapons/LASER/Floorob1.gif
       0: Resources/AwesomeGuns/Weapons/LASER/Floorob2.gif
       6: Resources/AwesomeGuns/Weapons/LASER/Floorob3.gif
 
@@ -6819,12 +6820,12 @@ extraStrings:
   - type: en
     strings:
 
-      STR_LASER_PISTOL_UFOPEDIA: "Redistribution miniaturization of laser technology. Range and accuracy are sacrificed mobile devices and powerful shooting."
-      STR_LASER_RIFLE_UFOPEDIA: "Adaptation of laser technology for using it in the combat. This device is superior to the standard assault rifle at the firing parameters, but due to the strong heat is not able to conduct a fire queue."
-      STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to produce three laser beams simultaneously. Unfortunately, severe overheating prevents fire too often, it is offset by immense power and infinite ammunition."
+      STR_LASER_PISTOL_UFOPEDIA: "Laser technology turn into minimum size. Fire range and accuracy are sacrified to get mobile using and powerful shooting comparing to the conventional pistol."
+      STR_LASER_RIFLE_UFOPEDIA: "Adaptation of laser technology for using in the combat. This device is superior to the standard rifle, but due to the overheating is not able to conduct a quick fire."
+      STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to fire three laser beams at once. Unfortunately, severe overheating does not allow to fire too often. But it has immense power and infinite ammunition."
 
       STR_LASER_WEAPONS: "Laser Weapons"
-      STR_LASER_WEAPONS_UFOPEDIA: "Through experiments on Elerium-115 were discovered a unique opportunity to create a beam of light capable of transmitting power over distances. Using alien alloys and crystals of Ellerium-115 are possible to build a new type of weapon that will have a lot more ammunition and will not be less effective than the conventional weapons.{NEWLINE}{NEWLINE}It is necessary to develop as soon as possible a laser cannon using the UFO Navigation."
+      STR_LASER_WEAPONS_UFOPEDIA: "Through experiments on Elerium-115 was discovered an opportunity caring energy transfer on distance - a beam of light like modern lasers. The alien alloys and crystals of Elerium-115 can improve the terrestrial laser to be used in combats. New laser weapons will have a lot more ammunition and will not be less effective than the conventional weapons.{NEWLINE}{NEWLINE}If the UFO Navigation is researched, then it will be possible to develop a laser craft cannon and start using the laser technology in combats."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laser Tank from Tank Rocket"
@@ -6837,7 +6838,7 @@ extraStrings:
       STR_HEAVY_LASER_UFOPEDIA: "Лазерный дробовик способен выпускать 3 луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
 
       STR_LASER_WEAPONS: "Лазерное оружие"
-      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115, была обнаружена уникальная возможность создавать луч света, способный передавать энергию на расстояния. Используя сплавы пришельцев и кристаллы Элериум-115, можно сконструировать новый тип вооружения, которое будет обладать намного большим боезапасом и не уступать в мощности современному стрелковому оружию.{NEWLINE}{NEWLINE}Нужно как можно скорее разработать лазерную авиапушку использую навигационный блок НЛО."
+      STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115 была обнаружена возможность передачи энергии на расстояния лучом света, подобного современным лазерам. Используя сплавы пришельцев и кристаллы Элериум-115 можно улучшить параметры земных лазеров до боевого применения. Новое вооружение будет обладать большим боезапасом и не уступать в мощности современному стрелковому оружию.{NEWLINE}{NEWLINE}Если изучить навигационный блок НЛО, то можно будет создать лазерную авиапушку и начать применять лазерную технологию в бою."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Лазерный танк из пушечного танка"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Лазерный танк из ракетного танка"
