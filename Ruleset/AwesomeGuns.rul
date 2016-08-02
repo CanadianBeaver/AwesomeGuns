@@ -4331,8 +4331,8 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 210 # 92 hours * 2 alloys + 24 hours for clips AND round (100 hours is original value for alien alloys)
-    cost: 8000 # 3.500$ * 2 alloys + 1000$ for clips
+    time: 400 # ~ 92 hours * 4 alloys + 24 hours for clips AND round (100 hours is original value for alien alloys)
+    cost: 14800 # 3.500$ * 4 alloys + 800$ for clips
     producedItems:
       STR_PISTOL_AL_CLIP: 3
       STR_MACHINE_PISTOL_AL_CLIP: 3
@@ -4344,8 +4344,8 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 420 # 92 hours * 4 alloys + (24 * 2) hours for ammo AND round (100 hours is original value for alien alloys)
-    cost: 15000 # 3.500$ * 4 alloys + 1000$ for clips
+    time: 460 # ~ 92 hours * 4 alloys + (24 * 4) hours for ammo AND round (100 hours is original value for alien alloys)
+    cost: 15500 # 3.500$ * 4 alloys + 1500$ for clips
     producedItems:
       STR_SHOTGUN_CLIP: 4
       STR_HC_AP_AMMO: 2
@@ -6844,7 +6844,7 @@ extraStrings:
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition - this production from two alien alloys mades by 3 clips for the pistol, submachine gun, rifle and sniper rifle.{NEWLINE} {NEWLINE}Armor-piercing shells - this production from four alien alloys mades 4 ammo for the shotgun and by 2 ammo for heavy cannon and auto-cannon.{NEWLINE} {NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a submachine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the production receives the output to a single alloy alien one ammo or clip."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from two alien alloys mades by 3 clips for the pistol, submachine gun, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys mades 4 ammo for the shotgun and by 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a submachine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the production receives the output to a single alloy alien one ammo or clip."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
       STR_PISTOL_UFOPEDIA: "The standard issue XCom pistol is a high powered semi-automatic with a 9 round capacity."
@@ -6918,7 +6918,7 @@ extraStrings:
       STR_AL_AMMO: "Бронебойные дроби"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Производство боеприпасов"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы - в этом производстве изготавливаются примерно два сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби - производство картечи. Примерно из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы> в этом производстве изготавливаются примерно четыре сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби> это производство картечей, где из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
 
       STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
       STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9×19 мм Парабеллум. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть дополнительной экипировки."
