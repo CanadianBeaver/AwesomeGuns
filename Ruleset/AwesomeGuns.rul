@@ -519,9 +519,9 @@ craftWeapons:
     damage: 30 #damage: 70
     range: 20 # range: 21 (20 is used by STR_ABDUCTOR, 22 is used by STR_HARVESTER)
     accuracy: 80 #accuracy: 35
-    reloadCautious: 13 #reloadCautious: 12
-    reloadStandard: 12 #reloadStandard: 12
-    reloadAggressive: 11 #reloadAggressive: 12
+    reloadCautious: 10 #reloadCautious: 12
+    reloadStandard: 10 #reloadStandard: 12
+    reloadAggressive: 10 #reloadAggressive: 12
     ammoMax: 32 #ammoMax: 100
     rearmRate: 6 #rearmRate: 50
     launcher: STR_LASER_CANNON
@@ -533,9 +533,9 @@ craftWeapons:
     damage: 75 #damage: 140
     range: 36 #range: 52 (42 is used by STR_TERROR_SHIP, 36 is used by STR_SUPPLY_SHIP)
     accuracy: 55 #accuracy: 50
-    reloadCautious: 16 #reloadCautious: 12
-    reloadStandard: 15 #reloadStandard: 12
-    reloadAggressive: 14 #reloadAggressive: 12
+    reloadCautious: 11 #reloadCautious: 12
+    reloadStandard: 11 #reloadStandard: 12
+    reloadAggressive: 11 #reloadAggressive: 12
     ammoMax: 16 #ammoMax: 100
     rearmRate: 4 #rearmRate: 50
     launcher: STR_PLASMA_BEAM
