@@ -6832,16 +6832,16 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
-      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition from alloy aliens allows to our soldiers use them in their pistols, rifles (including sniper), shotguns, heavy and auto cannon.{NEWLINE} {NEWLINE}A few clips of ammunition can be made from one alloy aliens, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons."
+      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition from alien alloys allows our soldiers to use them in their pistols, rifles (including sniper), shotguns, heavy and auto cannon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alloy aliens, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons."
 
       STR_ACID_CLIPS: "Acid ammunition"
-      STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
+      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the Chryssalid Corpse can be used for the production of a particular acid. The capsule shape of the charge can permit to keep the acid inside the ammunition, which in a direct contact with an alien will detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
 
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from two alien alloys mades by 3 clips for the pistol, submachine gun, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys mades 4 ammo for the shotgun and by 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a submachine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the production receives the output to a single alloy alien one ammo or clip."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from two alien alloys makes 3 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys makes 4 ammo for the shotgun and 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced a single alloy alien to one ammo or clip."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
       STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition... The last word in the fight against the aliens."
