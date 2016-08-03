@@ -3938,7 +3938,7 @@ research:
 
   - name: STR_ALIEN_WEAPON_USING
     listOrder: 1451
-    cost: 200
+    cost: 500
     points: 10
     dependencies:
       - STR_ALIEN_WEAPON
