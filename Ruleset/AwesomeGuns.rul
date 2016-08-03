@@ -6837,14 +6837,14 @@ extraStrings:
       STR_ACID_CLIPS: "Acid ammunition"
       STR_ACID_CLIPS_UFOPEDIA: "Extracted from the Chryssalid Corpse poison can be used for the production of a particular acid. The capsule form of the charge will allow to keep acid inside the ammunition, which, in contact with a view to detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
 
-      STR_ELERIUM_CLIPS: "Elerium ammunition"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition... The last word in the fight against the aliens."
-
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
       STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from two alien alloys mades by 3 clips for the pistol, submachine gun, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys mades 4 ammo for the shotgun and by 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a submachine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the production receives the output to a single alloy alien one ammo or clip."
+
+      STR_ELERIUM_CLIPS: "Elerium ammunition"
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition... The last word in the fight against the aliens."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
       STR_PISTOL_UFOPEDIA: "The standard issue XCom pistol is a high powered semi-automatic with a 9 round capacity."
@@ -6857,24 +6857,16 @@ extraStrings:
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
       STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips."
 
-      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
-      STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
-
-      STR_SHOTGUN: "Shotgun"
-      STR_SHOTGUN_AMMO: "Shotgun AMMO"
-      STR_SHOTGUN_CLIP: "Shotgun-AP AMMO"
-      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard is AMMO contains 6 shells."
-
-      STR_SNIPER_RIFLE: "Sniper rifle"
-      STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
-      STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
-
       STR_ALLOY_RIFLE: "Assault rifle"
       STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 14 armor-piercing charge. Brust shot can fire with two ammo."
       STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
       STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
       STR_ELERIUM_RIFLE_CLIP: "Assault rifle-EL clip"
+
+      STR_SNIPER_RIFLE: "Sniper rifle"
+      STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
+      STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New sniper rifle"
@@ -6883,12 +6875,21 @@ extraStrings:
       STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
       STR_ELERIUM_SNIPER_RIFLE_CLIP: "Thunderbolt-EL clip"
 
+      STR_SHOTGUN: "Shotgun"
+      STR_SHOTGUN_AMMO: "Shotgun AMMO"
+      STR_SHOTGUN_CLIP: "Shotgun-AP AMMO"
+      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard is AMMO contains 6 shells."
+
+      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
+      STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
+
       STR_GRENADE_LAUNCHER: "Grenade launcher"
       STR_GL_HE_AMMO: "40mm HE grenade"
       STR_GL_I_AMMO: "40mm Incendiary grenade"
       STR_GL_S_AMMO: "40mm Smoke grenade"
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Able to fire an explosive, incendiary and smoke grenades for a long distances."
 
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire different sizes of missile."
       STR_FUSION_ROCKET: "ANTI-tank blaster ROCKET"
       STR_SMALL_ROCKET: "Blaster Rocket"
       STR_SMALL_ROCKET_UFOPEDIA: "Blaster rocket for Rocket Launcher. This rocket can be produced from aliens ammunition."
@@ -6906,22 +6907,22 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Улучшенные боеприпасы"
-      STR_ALLOY_CLIPS_UFOPEDIA: "Новая технология изготовления боеприпасов и картечей из сплавов пришельцев позволит нашим оперативникам использовать их в своих пистолетах, винтовках (включая снайперские), дробовиках, ручных и автоматических пушках.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов, в зависимости от типа вооружения. Также, инженеры могут производить боеприпасы в одном производственном потоке для нескольких типов вооружения."
+      STR_ALLOY_CLIPS_UFOPEDIA: "Новая технология изготовления боеприпасов и картечей из сплавов пришельцев позволяет существенно увеличить огневую мощь стрелкового вооружения.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов. Также возможно производить боеприпасы для нескольких типов вооружения одновременно. В следующем разделе можно найти более подробную информацию о производственном процессе."
 
       STR_ACID_CLIPS: "Кислотные боеприпасы"
       STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
-
-      STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "Боеприпасы использующие энергию Элериум-115 для создания мощной взрывной волны в месте попадания...{NEWLINE}{NEWLINE}Кароче, новейшее wunderwaffe со всеми вытекающими."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Производство боеприпасов"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы> в этом производстве изготавливаются примерно четыре сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби> это производство картечей, где из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции. В таком случае, всегда используется один сплав пришельцев, из которого можно получить до 5 магазинов для пистолета, 3 магазина для пистолет-пулемёта, 2 магазина для винтовки, 2 магазина для снайперской винтовки или четыре патронташа для дробовика. Остальное производство получает на выходе к одному сплаву пришельцев один магазин."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы> в этом производстве изготавливаются примерно четыре сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби> это производство картечей, где из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции.{NEWLINE}{NEWLINE}В этом случае, из одного имеющегося сплава пришельцев можно изготовить 5 магазинов для пистолета или 3 магазина для пистолет-пулемёта или по 2 магазина для винтовок или четыре патронташа для дробовика. В остальных случаях производится один магазин к одному сплаву пришельцев."
+
+      STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Сложный наукоёмкий и технологически совершенный процесс позволяет производить боеприпасы использующие энергию Элериум-115. В месте детонации создаётся взрывная волна огромной силы...{NEWLINE}{NEWLINE}Проще говоря, новейшее wunderwaffe со всеми вытекающими."
 
       STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
-      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9×19 мм Парабеллум. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть дополнительной экипировки."
+      STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм Парабеллум. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть дополнительной экипировки."
 
       STR_MACHINE_PISTOL: "Пистолет-пулемёт"
       STR_MACHINE_PISTOL_CLIP: "Магазин к пистолет-пулемёту"
@@ -6929,33 +6930,33 @@ extraStrings:
       STR_MACHINE_PISTOL_UFOPEDIA: "Пятнадцатизарядный автоматический пистолет-пулемёт, использующий для стрельбы пистолетный патрон. По точности стрельбы уступает стандартному пистолету, но имеет магазин большой ёмкости и способен вести автоматический огонь с одной руки по 5 зарядов в каждой очереди."
 
       STR_RIFLE_AL_CLIP: "Магазин ББ к винтовке"
-      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 5,56x45 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях. Неплохо стреляет очередью и наспех."
+      STR_RIFLE_UFOPEDIA: "Армейская винтовка калибра 5,56x45 мм, снабженная лазерным прицелом. Стандартный магазин содержит 12 патронов. Вполне подойдёт для боя на близких и средних дистанциях."
 
-      STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
-      STR_AUTO_CANNON_UFOPEDIA: "Автоматическая пушка сочетает пальбу очередью и мощность тяжелой пушки. Выпускает до четырёх зарядов за раз, точность стрельбы соответствующая."
+      STR_ALLOY_RIFLE: "Штурмовая винтовка"
+      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев и способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Магазин рассчитан на 14 усовершенствованных зарядов. Очередью стреляет по два заряда."
+      STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
+      STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
+      STR_ELERIUM_RIFLE_CLIP: "Магазин ЭЛ к штурмовой винтовке"
+
+      STR_SNIPER_RIFLE: "Снайперская винтовка"
+      STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
+      STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация винтовки под бронебойный калибр 7,62x51 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
+
+      STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Магазин рассчитан на 2 бронебойных заряда. К сожалению очень громоздкая и требует время для предварительной подготовки перед стрельбой."
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
+      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Магазин ЭЛ к Молнии Зевса"
 
       STR_SHOTGUN: "Дробовик"
       STR_SHOTGUN_AMMO: "Патроны к дробовику"
       STR_SHOTGUN_CLIP: "Патроны ББ к дробовику"
       STR_SHOTGUN_UFOPEDIA: "Гладкоствольное полуавтоматическое ружьё. Использует патроны 12 калибра выпускающие пять массированных гранул за выстрел. Идеальное подходит для боя на близкой дистанции и в закрытых помещениях. Стандартная загрузка рассчитана на 6 патронов."
 
-      STR_SNIPER_RIFLE: "Снайперская винтовка"
-      STR_SNIPER_RIFLE_CLIP: "Магазин к снайперской винтовке"
-      STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Модификация штурмовой винтовки под бронебойный калибр 7,62x51 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
-
-      STR_ALLOY_RIFLE: "Штурмовая винтовка"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Штурмовая винтовка сделана полностью из сплавов пришельцев. Она способна вести бой с хорошей точностью и скорострельностью на любой дистанции. Также обладает впечатляющей убойной силой. Магазин расчитан на 14 усовершенствованных зарядов. Очередью стреляет по два заряда."
-      STR_ALLOY_RIFLE_CLIP: "Магазин ББ к штурмовой винтовке"
-      STR_ACID_RIFLE_CLIP: "Магазин КС к штурмовой винтовке"
-      STR_ELERIUM_RIFLE_CLIP: "Магазин ЭЛ к штурмовой винтовке"
-
-      STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
-      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Именитая крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Отличное средство для поражения сильнобронированных целей на дальних дистанциях. К сожалению очень громоздкая и требует предварительной подготовки. Подойдёт только опытным и сильным оперативникам. Магазин рассчитан на 2 бронебойных заряда."
-      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
-      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Магазин ЭЛ к Молнии Зевса"
+      STR_HEAVY_CANNON_UFOPEDIA: "Ручная пушка - мощное, страшное и дюже громоздкое оружие. Добавить больше нечего."
+      STR_AUTO_CANNON_UFOPEDIA: "Автоматическая пушка сочетает пальбу очередью и мощность тяжелой пушки. Выпускает до четырёх зарядов за раз, точность стрельбы соответствующая."
 
       STR_GRENADE_LAUNCHER: "Гранотомёт"
       STR_GL_HE_AMMO: "40mm граната"
@@ -6963,9 +6964,10 @@ extraStrings:
       STR_GL_S_AMMO: "40mm дымовая граната"
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Ручной гранатомёт способен выпускать фугасные, зажигательные и дымовые гранаты на большие расстояния по навесной траектории."
 
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "Пусковая ракетная установка с лазерной системой наведения способная выпускать различные типы ракет."
       STR_SMALL_ROCKET: "Бластерная ракета"
       STR_FUSION_ROCKET: "Бластерная противотанковая ракета"
-      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета для ракетной пусковой установки. Может быть произведена из добытых на поле боя бластерых бомб пришельцев."
+      STR_SMALL_ROCKET_UFOPEDIA: "Бластерная ракета для ракетной установки. Может быть произведена из добытых на поле боя бластерых бомб пришельцев."
 
       STR_SINGLE_ROCKET_LAUNCHER: "Бронебойная ракета"
       STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Однозарядная ракетная установка. Стреляет бронебойным зарядом, способным пробивать корпус НЛО. Не предназначена для повторного использования."
