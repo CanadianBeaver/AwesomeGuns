@@ -81,9 +81,6 @@ regions:
       - name: STR_HALIFAX
         lon: 299
         lat: -45.63
-      - name: STR_INUVIK
-        lon: 224.18
-        lat: -68.74
       - name: STR_QUEBECCITY
         lon: 290.45
         lat: -48.11
@@ -93,9 +90,6 @@ regions:
       - name: STR_WINNIPEG
         lon: 262.37
         lat: -50.44
-      - name: STR_YELLOWKNIFE
-        lon: 242.19
-        lat: -65.52
       - name: STR_ATLANTA
         lon: 275.625
         lat: -33.75
@@ -171,8 +165,6 @@ regions:
         lon: 293.125
         lat: -10.5
       # new cities
-
-
         # - [302.71, 302.71, 26.41, 26.41, -2, STR_ASUNCION]
         # - [310.56, 310.56, 0, 0, -1, STR_BELEM]
         # - [316.0, 316.0, 19.875, 19.875, -5, STR_BELOHORIZONTE]
@@ -190,11 +182,39 @@ regions:
         # - [324.65, 324.65, 8.07, 8.07, -7, STR_RECIFE]
         # - [321.25, 321.25, 13, 13, -5, STR_SALVADOR]
         # - [313.325, 313.325, 23.5, 23.5, -6, STR_SAOPAULO]
-
-
-
-
-
+  - type: STR_ARCTIC
+    cities:
+    # new cities
+      - name: STR_INUVIK
+        lon: 224.18
+        lat: -68.74
+      - name: STR_BARROW
+        lon: 200.45
+        lat: -70.65
+      - name: STR_MURMANSK
+        lon: 33.75
+        lat: -69.28
+      - name: STR_KAUJUITOQ
+        lon: 273.655
+        lat: -70.566
+      - name: STR_TIKSI
+        lon: 129.05
+        lat: -73.15
+      - name: STR_DIKSON
+        lon: 81.37
+        lat: -73.43
+      - name: STR_ANADYR
+        lon: 179.77
+        lat: -64.53
+      - name: STR_REYKJAVIK
+        lon: -21.94
+        lat: -64.18
+      - name: STR_NUUK
+        lon: -51.44
+        lat: -64.18
+      - name: STR_YELLOWKNIFE
+        lon: 242.19
+        lat: -65.52
 
 
 facilities:
@@ -6569,11 +6589,9 @@ extraStrings:
       STR_TORONTO: "Toronto"
       STR_EDMONTON: "Edmonton"
       STR_HALIFAX: "Halifax"
-      STR_INUVIK: "Inuvik"
       STR_QUEBECCITY: "Quebec City"
       STR_SASKATOON: "Saskatoon"
       STR_WINNIPEG: "Winnipeg"
-      STR_YELLOWKNIFE: "Yellowknife"
       STR_ATLANTA: "Atlanta"
       STR_BOSTON: "Boston"
       STR_HOUSTON: "Houston"
@@ -6591,16 +6609,26 @@ extraStrings:
       STR_GUATEMALA: "Guatemala"
       STR_SANTODOMINGO: "Santo Domingo"
       STR_TIJUANA: "Tijuana"
+
+      STR_INUVIK: "Inuvik"
+      STR_BARROW: "Barrow"
+      STR_MURMANSK: "Murmansk"
+      STR_KAUJUITOQ: "Kuujjuaq"
+      STR_TIKSI: "Tiksi"
+      STR_DIKSON: "Dikson"
+      STR_ANADYR: "Anadyr"
+      STR_REYKJAVIK: "Reykjavík"
+      STR_NUUK: "Nuuk"
+      STR_YELLOWKNIFE: "Yellowknife"
+
   - type: ru
     strings:
       STR_TORONTO: "Торонто"
       STR_EDMONTON: "Эдмонтон"
       STR_HALIFAX: "Халифакс"
-      STR_INUVIK: "Инувик"
       STR_QUEBECCITY: "Квебек"
       STR_SASKATOON: "Саскатун"
       STR_WINNIPEG: "Виннипег"
-      STR_YELLOWKNIFE: "Йеллоунайф"
       STR_ATLANTA: "Атланта"
       STR_BOSTON: "Бостон"
       STR_HOUSTON: "Хьюстон"
@@ -6618,6 +6646,18 @@ extraStrings:
       STR_GUATEMALA: "Гватемала"
       STR_SANTODOMINGO: "Санто-Доминго"
       STR_TIJUANA: "Тихуана"
+
+      STR_INUVIK: "Инувик"
+      STR_BARROW: "Барроу"
+      STR_MURMANSK: "Мурманск"
+      STR_KAUJUITOQ: "Кууджуак"
+      STR_TIKSI: "Тикси"
+      STR_DIKSON: "Диксон"
+      STR_ANADYR: "Анадырь"
+      STR_REYKJAVIK: "Рейкьявик"
+      STR_NUUK: "Нуук"
+      STR_YELLOWKNIFE: "Йеллоунайф"
+
 
 
 # Restyling New Game dialog like DOOM-II
