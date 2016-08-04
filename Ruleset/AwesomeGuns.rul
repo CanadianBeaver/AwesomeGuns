@@ -6896,12 +6896,12 @@ extraStrings:
       STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИЙ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
 
 # Craft Weapons
-  - type: en #TODO: translation should be checked and corrected
+  - type: en
     strings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
       STR_IMPROVED_ROCKETS_TITLE: "Improved launchers"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using the alien alloys and UFO navigation can increase homing of the standard missiles. Ready-to-production drawings include improved sets of launchers and land-based missile launcher.{NEWLINE}{NEWLINE}Particularly interesting development of our scientists is a new compact armor-piercing missile, which is capable of punching body UFO right on the battlefield, thus opening our operatives way inside alien spaceship in any convenient for them."
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using the alien alloys and UFO navigation can increase homing of the standard missiles and improve craft launchers.{NEWLINE}{NEWLINE}Ready-to-production drawings include improved sets of launchers and land-based missile launcher. Particularly interesting development is a new compact armor-piercing rocket, which is able to penetrate the body of UFO right on the battlefield and opens the way to our soldiers inside the alien spaceship at any convenient for them."
 
       STR_STINGRAY: "STINGRAY"
       STR_STINGRAY_LAUNCHER: "Stingray Launcher"
@@ -6909,7 +6909,7 @@ extraStrings:
       STR_STINGRAY_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH SPECIALLY SHIELDED ELECTRONICS."
       STR_ALLOY_STINGRAY: "TUNED STINGRAY"
       STR_ALLOY_STINGRAY_LAUNCHER: "Tuned Stingray Launcher"
-      STR_ALLOY_STINGRAY_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH SPECIALLY SHIELDED ELECTRONICS.{NEWLINE}{NEWLINE}GUIDANCE SYSTEMS HAVE BEEN TUNED TO IMPROVE ACQUISITION AND TRACKING OF ALIEN SAUCER TARGETS."
+      STR_ALLOY_STINGRAY_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR STINGRAY MISSILES."
 
       STR_AVALANCHE: "AVALANCHE"
       STR_AVALANCHE_LAUNCHER: "Avalanche Launcher"
@@ -6917,7 +6917,7 @@ extraStrings:
       STR_AVALANCHE_UFOPEDIA: "AIR TO AIR MISSILE WITH NUCLEAR WARHEAD, BUT AN EXTREMELY HEAVY LOAD."
       STR_ALLOY_AVALANCHE: "TUNED AVALANCHE"
       STR_ALLOY_AVALANCHE_LAUNCHER: "Tuned Avalanche Launcher"
-      STR_ALLOY_AVALANCHE_UFOPEDIA: "DEVASTATING AIR TO AIR MISSILE WITH A NUCLEAR WARHEAD.{NEWLINE}{NEWLINE}GUIDANCE SYSTEMS HAVE BEEN TUNED TO IMPROVE ACQUISITION AND TRACKING OF ALIEN SAUCER TARGETS."
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR AVALANCHE MISSILES."
 
       STR_CANNON_UC: "CANNON"
       STR_CANNON: "Cannon"
@@ -6925,28 +6925,28 @@ extraStrings:
       STR_CANNON_UFOPEDIA: "HIGH POWERED CANNON WHICH FIRES ARMOR PIERCING ROUNDS CAPABLE OF PENETRATING 16 INCHES OF STEEL."
       STR_ALLOY_CANNON_UC: "TUNED CANNON"
       STR_ALLOY_CANNON: "Tuned Cannon"
-      STR_ALLOY_CANNON_UFOPEDIA: "POWERED CANNON WHICH FIRES ARMOUR PIERCING ROUNDS.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN TUNED TO IMPROVE EFFECTIVENESS AGAINST ALIEN SAUCER'S EVASIVE MANEUVERS."
+      STR_ALLOY_CANNON_UFOPEDIA: "IMPROVED HIGH POWERED CANNON.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN IMPROVED AGAINST UFO EVASIVE MANEUVERS."
 
       STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER BEAM IS POWERED TO FIGHT AGAINST UFO ON CLOSED DISTANCES."
-      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS CRAFT WEAPON FROM ALIENS HEAVY WEAPON'S COMPONENTS. THIS WEAPON CAN GENERATE THE PLASMA BUNCH AND FIGHT AGAINST UFO."
+      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS PLASMA GENERATOR FROM ALIENS HEAVY WEAPON'S COMPONENTS."
 
       STR_ELECTROMAGNETIC_CANNON_UC: "ELECTROMAGNETIC CANNON"
       STR_ELECTROMAGNETIC_CANNON: "Electromagnetic Cannon"
       STR_ELECTROMAGNETIC_SLUGS_X40: "Electromagnetic Cannon Slugs(x40)"
-      STR_ELECTROMAGNETIC_CANNON_UFOPEDIA: "HIGH POWERED ELECTROMAGNETIC CANNON WHICH FIRES ARMOR PIERCING ROUNDS CAPABLE OF PENETRATING 32 INCHES OF STEEL."
+      STR_ELECTROMAGNETIC_CANNON_UFOPEDIA: "RAIL HIGH POWERED CANNON.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN IMPROVED AGAINST UFO EVASIVE MANEUVERS."
 
       STR_FUSION_MISSILE: "AVALANCHE upgrading"
       STR_FUSION_BALL_UC: "STORM"
       STR_FUSION_BALL_LAUNCHER: "Storm Launcher"
       STR_FUSION_BALL: "Storm Missile"
-      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN AIMER AND ALIEN'S BLASTER BOMB."
+      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN UFO NAVIGATION AND ALIEN'S BLASTER BOMB."
 
   - type: ru
     strings:
 
       STR_IMPROVED_ROCKETS: "Улучшенные пусковые установки"
       STR_IMPROVED_ROCKETS_TITLE: "Улучшение ракет"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев позволяет повысить параметры ракет в целом. Готовые к производству чертежи включают в себя улучшения для всех пусковых установок кораблей.{NEWLINE}{NEWLINE}Также, имеется новая бронебойная ракета с однозарядной пусковой установкой наземного использования. Такая ракета способна пробивать корпус НЛО прямо на поле боя, открывая нашим оперативникам путь во внутрь инопланетного корабля в любом удобном для них месте."
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Использование сплавов пришельцев и навигационных блоков НЛО позволяет повысить боевые характеристики наших ракет и пусковых установок в целом.{NEWLINE}{NEWLINE}Готовые к производству чертежи включают в себя улучшения для кораблей. Также, разработана новая бронебойная ракета наземного использования с однозарядной пусковой установкой, которая способна пробивать корпус НЛО прямо на поле боя открывая нашим оперативникам путь во внутрь инопланетного корабля в любом удобном для них месте."
 
       STR_STINGRAY: "СКАТ"
       STR_STINGRAY_LAUNCHER: "Пусковая установка \"Скат\""
@@ -6973,7 +6973,7 @@ extraStrings:
       STR_ALLOY_CANNON_UFOPEDIA: "УЛУЧШЕННАЯ АВТОМАТИЧЕСКАЯ АВИАПУШКА.{NEWLINE}{NEWLINE}СИСТЕМЫ УПРАВЛЕНИЯ ОГНЕМ БЫЛИ УСОВЕРШЕНСТВОВАНЫ С УЧЕТОМ МАНЕВРИРОВАНИЯ КОРАБЛЕЙ ПРИШЕЛЬЦЕВ."
 
       STR_LASER_CANNON_UFOPEDIA: "ЛАЗЕРНЫЙ ИЗЛУЧАТЕЛЬ ВЫСОКОЙ МОЩНОСТИ, КОТОРЫМ МОЖНО ПОРАЖАТЬ КОРАБЛИ ПРИЩЕЛЬЦЕВ НА НЕБОЛЬШИХ РАССТОЯНИЯХ."
-      STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНУЮ УСТАНОВКУ ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ, КОТОРАЯ ГЕНЕРИРУЕТ ПЛАЗМЕННЫЕ СГУСТКИ ЭНЕРГИИ."
+      STR_PLASMA_BEAM_UFOPEDIA: "НАШИ ИНЖЕНЕРЫ НАШЛИ СПОСОБ СОБРАТЬ КОРАБЕЛЬНЫЙ ПЛАЗМЕННЫЙ ГЕНЕРАТОР ИЗ РАЗЛИЧНЫХ КОМПОНЕНТОВ ТЯЖЕЛОГО ОРУЖИЯ ПРИШЕЛЬЦЕВ"
 
       STR_ELECTROMAGNETIC_CANNON_UC: "РЕЛЬСОВАЯ АВИАПУШКА"
       STR_ELECTROMAGNETIC_CANNON: "Рельсовая авиапушка"
@@ -6984,7 +6984,7 @@ extraStrings:
       STR_FUSION_BALL_UC: "ШТОРМ"
       STR_FUSION_BALL_LAUNCHER: "Пусковая установка \"Шторм\""
       STR_FUSION_BALL: "Ракета \"Шторм\""
-      STR_FUSION_BALL_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ КОМПЛЕКСА \"ЛАВИНА\" СО ВСТРОЕННЫМ В РАКЕТУ ЦЕЛЕУКАЗАТЕЛЕМ И БЛАСТЕРНОЙ БОМБОЙ ПРИШЕЛЬЦЕВ."
+      STR_FUSION_BALL_UFOPEDIA: "ГЛУБОКАЯ МОДЕРНИЗАЦИЯ РАКЕТ \"ЛАВИНА\" СО ВСТРОЕННЫМ ЦЕЛЕУКАЗАТЕЛЕМ И БЛАСТЕРНОЙ БОМБОЙ ПРИШЕЛЬЦЕВ."
 
 # Armors
 
