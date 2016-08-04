@@ -95,6 +95,12 @@ regions:
       - name: Tijuana
         lon: 243.284
         lat: -31.834
+      - name: Sanfrancisco
+        lon: 236.705
+        lat: -38.72
+      - name: Miami
+        lon: 279.95
+        lat: -25.91
   - type: STR_ARCTIC
     cities:
       - name: Inuvik
@@ -232,10 +238,32 @@ regions:
         lat: -51.40
   - type: STR_NORTH_AFRICA
     cities:
-
+      - name: Jerusalem
+        lon: 34.59
+        lat: -32.25
+      - name: Tripoli
+        lon: 11.19
+        lat: -33.57
+      - name: Juba
+        lon: 31.36
+        lat: -4.51
+      - name: Dakar
+        lon: -17.35
+        lat: -14.45
+      - name: Kano
+        lon: 8.55
+        lat: -12.20
+      - name: Djibouti
+        lon: 43.98
+        lat: -10.62
   - type: STR_SOUTHERN_AFRICA
     cities:
-
+      - name: Antananarivo
+        lon: 47.8
+        lat: 18.7
+      - name: Windhoek
+        lon: 17.25
+        lat: 22.5
   - type: STR_CENTRAL_ASIA
     cities:
       - name: Antalya
@@ -281,7 +309,29 @@ regions:
       - name: Surgut
         lon: 74.24
         lat: -61.15
-
+  - type: STR_AUSTRALASIA
+    cities:
+      - name: Hobart
+        lon: 147.25
+        lat: 42.78
+      - name: Brisbane
+        lon: 152.99
+        lat: 26.85
+      - name: Fiji
+        lon: 178.5
+        lat: 18.13
+      - name: Adelaide
+        lon: 137.46
+        lat: 35.34
+      - name: Darwin
+        lon: 131
+        lat: 12.27
+      - name: Jayapura
+        lon: 140.42
+        lat: 2
+      - name: Sydney
+        lon: 151.62
+        lat: 33.01
 
 
 
@@ -6659,12 +6709,14 @@ extraStrings:
       Panama: "Panama City"
       Belem: "Belém"
       Asuncion: "Asunción"
+      Sanfrancisco: "San Francisco"
+
   - type: ru
     strings:
       Toronto: "Торонто"
       Quebec: "Квебек"
       Edmonton: "Эдмонтон"
-      Halifax: "Халифакс"
+      Halifax: "Галифакс"
       Saskatoon: "Саскатун"
       Winnipeg: "Виннипег"
       Atlanta: "Атланта"
@@ -6678,6 +6730,8 @@ extraStrings:
       Cancun: "Канкун"
       Guatemala: "Гватемала"
       Tijuana: "Тихуана"
+      Sanfrancisco: "Сан-Франциско"
+      Miami: "Майами"
       # ARCTIC
       Inuvik: "Инувик"
       Barrow: "Барроу"
@@ -6725,9 +6779,15 @@ extraStrings:
       Sevastopol: "Севастополь"
       Voronezh: "Воронеж"
       # NORTH AFRICA
-
+      Jerusalem: "Иерусалим"
+      Tripoli: "Триполи"
+      Juba: "Джуба"
+      Dakar: "Дакар"
+      Kano: "Кано"
+      Djibouti: "Джибути"
       # SOUTHERN AFRICA
-
+      Antananarivo: "Антананариву"
+      Windhoek: "Виндхук"
       # CENTRAL ASIA
       Antalya: "Анталья"
       Dubai: "Дубай"
@@ -6744,7 +6804,14 @@ extraStrings:
       Yakutsk: "Якутск"
       Krasnoyarsk: "Красноярск"
       Surgut: "Сургут"
-
+      # AUSTRALASIA
+      Hobart: "Хобарт"
+      Brisbane: "Брисбен"
+      Fiji: "Фиджи"
+      Adelaide: "Аделаида"
+      Darwin: "Дарвин"
+      Jayapura: "Джаяпура"
+      Sydney: "Сидней"
 
 # Restyling New Game dialog like DOOM-II
 
