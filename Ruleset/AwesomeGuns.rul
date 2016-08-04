@@ -46,7 +46,7 @@ regions:
   - type: STR_NORTH_AMERICA
     cities:
       - name: Toronto # it is my city...
-        lon: 279.454
+        lon: 279.46
         lat: -42.93
       - name: Quebec
         lon: 290.45
@@ -56,7 +56,7 @@ regions:
         lat: -53.32
       - name: Halifax
         lon: 299
-        lat: -45.63
+        lat: -45.7
       - name: Saskatoon
         lon: 253.46
         lat: -52.06
@@ -64,13 +64,13 @@ regions:
         lon: 262.37
         lat: -49.90
       - name: Atlanta
-        lon: 275.625
+        lon: 275.63
         lat: -33.75
       - name: Boston
-        lon: 289.348
-        lat: -42.429
+        lon: 289.35
+        lat: -42.43
       - name: Houston
-        lon: 264.625
+        lon: 264.62
         lat: -29.75
       - name: Denver
         lon: 252.85
@@ -79,10 +79,25 @@ regions:
         lon: 235.47
         lat: -47
       - name: Chihuahua
-        lon: 255.23
-        lat: -29.04
+        lon: 255
+        lat: -29
+      - name: ElPaso
+        lon: 254
+        lat: -31.9
+      - name: Memphis
+        lon: 268.9
+        lat: -35.1
+      - name: Indianapolis
+        lon: 273.8
+        lat: -38.9
+      - name: Billings
+        lon: 249.4
+        lat: -45.5
+      - name: Minneapolis
+        lon: 266.5
+        lat: -44.9
       - name: Guadalajara
-        lon: 256.625
+        lon: 256.62
         lat: -21.25
       - name: Managua
         lon: 273.22
@@ -92,12 +107,12 @@ regions:
         lat: -20.6
       - name: Guatemala
         lon: 269.5
-        lat: -14.625
+        lat: -14.62
       - name: Tijuana
-        lon: 243.284
-        lat: -31.834
+        lon: 243.28
+        lat: -31.83
       - name: Sanfrancisco
-        lon: 236.705
+        lon: 236.70
         lat: -38.72
       - name: Miami
         lon: 279.95
@@ -114,8 +129,8 @@ regions:
         lon: 33.75
         lat: -69.28
       - name: Kuujjuaq
-        lon: 273.655
-        lat: -70.566
+        lon: 273.65
+        lat: -70.57
       - name: Tiksi
         lon: 129.05
         lat: -73.15
@@ -166,11 +181,11 @@ regions:
         lon: 23.58
         lat: -38.09
       - name: Barcelona
-        lon: 1.594
-        lat: -41.346
+        lon: 1.6
+        lat: -41.35
       - name: Belgrade
-        lon: 20.5
-        lat: -44.5
+        lon: 20.2
+        lat: -44.4
       - name: Belfast
         lon: 353.5
         lat: -55
@@ -181,53 +196,59 @@ regions:
         lon: 359.47
         lat: -44.85
       - name: Brest
-        lon: 355.431
-        lat: -48.231
+        lon: 355.43
+        lat: -48.23
       - name: Munich
-        lon: 11.414
-        lat: -48.661
+        lon: 11.45
+        lat: -48.66
+      - name: Cologne
+        lon: 7.2
+        lat: -50.9
       - name: Milan
         lon: 8.9
-        lat: -44.8
+        lat: -44.75
       - name: Venice
-        lon: 12.70
-        lat: -45.48
+        lon: 12.7
+        lat: -45.5
       - name: Lisbon
-        lon: 350.776
+        lon: 350.78
         lat: -38.67
       - name: Ferrol
         lon: -8.25
-        lat: -43.466
+        lat: -43.47
       - name: Krakow
         lon: 19.83
         lat: -50.13
       - name: Warsaw
         lon: 21.08
-        lat: -53.103
+        lat: -53.10
       - name: Oslo
         lon: 10.17
         lat: -59.5
       - name: Stockholm
-        lon: 17.325
-        lat: -58.943
+        lon: 17.32
+        lat: -58.94
       - name: Copenhagen
         lon: 10.3
         lat: -56.23
+      - name: Bucharest
+        lon: 26.05
+        lat: -44.35
       - name: Sofia
         lon: 24.70
         lat: -42.91
       - name: Kiev
         lon: 30.06
-        lat: -49.834
+        lat: -49.83
       - name: Minsk
         lon: 27.5
-        lat: -53.875
+        lat: -53.87
       - name: Kishinev
         lon: 28.55
         lat: -47
       - name: Astrakhan
-        lon: 48.499
-        lat: -45.774
+        lon: 48.5
+        lat: -45.77
       - name: Leningrad
         lon: 29.80
         lat: -60.23
@@ -285,8 +306,8 @@ regions:
         lon: 135.05
         lat: -48.29
       - name: Pyongyang
-        lon: 125.43
-        lat: -39.01
+        lon: 125.44
+        lat: -38.82
       - name: Taipei
         lon: 121.68
         lat: -25.02
@@ -6711,6 +6732,7 @@ extraStrings:
       Belem: "Belém"
       Asuncion: "Asunción"
       Sanfrancisco: "San Francisco"
+      ElPaso: "El Paso"
 
   - type: ru
     strings:
@@ -6733,6 +6755,11 @@ extraStrings:
       Tijuana: "Тихуана"
       Sanfrancisco: "Сан-Франциско"
       Miami: "Майами"
+      ElPaso: "Эль-Пасо"
+      Memphis: "Мемфис"
+      Indianapolis: "Индианаполис"
+      Billings: "Биллингс"
+      Minneapolis: "Миннеаполис"
       # ARCTIC
       Inuvik: "Инувик"
       Barrow: "Барроу"
@@ -6762,6 +6789,7 @@ extraStrings:
       Bordeaux: "Бордо"
       Brest: "Брест"
       Munich: "Мюнхен"
+      Cologne: "Кёльн"
       Milan: "Милан"
       Venice: "Венеция"
       Lisbon: "Лиссабон"
@@ -6771,6 +6799,7 @@ extraStrings:
       Oslo: "Осло"
       Stockholm: "Стокгольм"
       Copenhagen: "Копенгаген"
+      Bucharest: "Бухарест"
       Sofia: "София"
       Kiev: "Киев"
       Minsk: "Минск"
