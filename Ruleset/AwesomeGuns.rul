@@ -52,16 +52,16 @@ regions:
         lat: -48.11
       - name: Edmonton
         lon: 245.67
-        lat: -55.76
+        lat: -53.32
       - name: Halifax
         lon: 299
         lat: -45.63
       - name: Saskatoon
         lon: 253.46
-        lat: -55.76
+        lat: -52.06
       - name: Winnipeg
         lon: 262.37
-        lat: -50.44
+        lat: -49.90
       - name: Atlanta
         lon: 275.625
         lat: -33.75
@@ -95,29 +95,6 @@ regions:
       - name: Tijuana
         lon: 243.284
         lat: -31.834
-  - type: STR_SOUTH_AMERICA
-    cities:
-      - name: Panama
-        lon: 280.62
-        lat: -9.43
-      - name: Belem
-        lon: 310.56
-        lat: 0
-      - name: Manaus
-        lon: 301.19
-        lat: 3.2
-      - name: Salvador
-        lon: 321.25
-        lat: 13
-      - name: Asuncion
-        lon: 302.71
-        lat: 26.41
-      - name: Fortaleza
-        lon: 321.5
-        lat: 3.75
-      - name: Recife
-        lon: 324.65
-        lat: 8.07
   - type: STR_ARCTIC
     cities:
       - name: Inuvik
@@ -149,12 +126,35 @@ regions:
         lat: -64.18
       - name: Yellowknife
         lon: 242.19
-        lat: -65.52
+        lat: -62.56
+      - name: Arkhangelsk
+        lon: 40.32
+        lat: -64.92
+  - type: STR_SOUTH_AMERICA
+    cities:
+      - name: Panama
+        lon: 280.62
+        lat: -9.43
+      - name: Belem
+        lon: 310.56
+        lat: 0
+      - name: Manaus
+        lon: 301.19
+        lat: 3.2
+      - name: Salvador
+        lon: 321.25
+        lat: 13
+      - name: Asuncion
+        lon: 302.71
+        lat: 26.41
+      - name: Fortaleza
+        lon: 321.5
+        lat: 3.75
+      - name: Recife
+        lon: 324.65
+        lat: 8.07
   - type: STR_EUROPE
     cities:
-      - name: Antalya
-        lon: 30.8
-        lat: -36.75
       - name: Athens
         lon: 23.58
         lat: -38.09
@@ -164,6 +164,9 @@ regions:
       - name: Belgrade
         lon: 20.5
         lat: -44.5
+      - name: Belfast
+        lon: 353.5
+        lat: -55
       - name: Marseille
         lon: 5.3
         lat: -43.3
@@ -223,7 +226,27 @@ regions:
         lat: -60.23
       - name: Sevastopol
         lon: 33.67
-        lat: -44.72
+        lat: -44.42
+      - name: Voronezh
+        lon: 39.12
+        lat: -51.40
+  - type: STR_NORTH_AFRICA
+    cities:
+
+  - type: STR_SOUTHERN_AFRICA
+    cities:
+
+  - type: STR_CENTRAL_ASIA
+    cities:
+      - name: Antalya
+        lon: 30.8
+        lat: -36.75
+      - name: Dubai
+        lon: 55.76
+        lat: -25.58
+      - name: Chennai
+        lon: 80.44
+        lat: -13.05
   - type: STR_SOUTH_EAST_ASIA
     cities:
       - name: Vladivostok
@@ -232,19 +255,32 @@ regions:
       - name: Khabarovsk
         lon: 135.05
         lat: -48.29
+      - name: Pyongyang
+        lon: 125.43
+        lat: -39.01
+      - name: Taipei
+        lon: 121.68
+        lat: -25.02
+  - type: STR_SIBERIA
+    cities:
       - name: Irkutsk
-        lon: 104.18
-        lat: -52.17
-
-
-
-
-
-
-
-
-
-
+        lon: 101.18
+        lat: -53.17
+      - name: Chita
+        lon: 111.31
+        lat: -52.02
+      - name: Ulaanbaatar
+        lon: 105.55
+        lat: -48.55
+      - name: Yakutsk
+        lon: 128.83
+        lat: -61.21
+      - name: Krasnoyarsk
+        lon: 93.04
+        lat: -56.01
+      - name: Surgut
+        lon: 74.24
+        lat: -61.15
 
 
 
@@ -6642,15 +6678,7 @@ extraStrings:
       Cancun: "Канкун"
       Guatemala: "Гватемала"
       Tijuana: "Тихуана"
-      #
-      Panama: "Панама"
-      Belem: "Белен"
-      Manaus: "Манаус"
-      Salvador: "Салвадор"
-      Asuncion: "Асунсьон"
-      Fortaleza: "Форталеза"
-      Recife: "Ресифи"
-      #
+      # ARCTIC
       Inuvik: "Инувик"
       Barrow: "Барроу"
       Murmansk: "Мурманск"
@@ -6661,11 +6689,20 @@ extraStrings:
       Reykjavik: "Рейкьявик"
       Nuuk: "Нуук"
       Yellowknife: "Йеллоунайф"
-      #
-      Antalya: "Анталья"
+      Arkhangelsk: "Архангельск"
+      # SOUTH AMERICA
+      Panama: "Панама"
+      Belem: "Белен"
+      Manaus: "Манаус"
+      Salvador: "Салвадор"
+      Asuncion: "Асунсьон"
+      Fortaleza: "Форталеза"
+      Recife: "Ресифи"
+      # EUROPE
       Athens: "Афины"
       Barcelona: "Барселона"
       Belgrade: "Белград"
+      Belfast: "Белфаст"
       Marseille: "Марсель"
       Bordeaux: "Бордо"
       Brest: "Брест"
@@ -6686,10 +6723,27 @@ extraStrings:
       Astrakhan: "Астрахань"
       Leningrad: "Санкт-Петербург"
       Sevastopol: "Севастополь"
-      #
+      Voronezh: "Воронеж"
+      # NORTH AFRICA
+
+      # SOUTHERN AFRICA
+
+      # CENTRAL ASIA
+      Antalya: "Анталья"
+      Dubai: "Дубай"
+      Chennai: "Ченнаи"
+      # SOUTH EAST ASIA
       Vladivostok: "Владивосток"
       Khabarovsk: "Хабаровск"
+      Pyongyang: "Пхеньян"
+      Taipei: "Тайбэй"
+      # SIBERIA
       Irkutsk: "Иркутск"
+      Chita: "Чита"
+      Ulaanbaatar: "Улан-Батор"
+      Yakutsk: "Якутск"
+      Krasnoyarsk: "Красноярск"
+      Surgut: "Сургут"
 
 
 # Restyling New Game dialog like DOOM-II
