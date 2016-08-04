@@ -44,177 +44,209 @@
 regions:
   - type: STR_NORTH_AMERICA
     cities:
-      - name: STR_NEW_YORK
-        lon: 286.125
-        lat: -40.75
-      - name: STR_WASHINGTON
-        lon: 282.875
-        lat: -38.75
-      - name: STR_LOS_ANGELES
-        lon: 241.75
-        lat: -34.125
-      - name: STR_MONTREAL
-        lon: 284.25
-        lat: -45.5
-      - name: STR_HAVANA
-        lon: 277.625
-        lat: -22.5
-      - name: STR_MEXICO_CITY
-        lon: 260.875
-        lat: -19.375
-      - name: STR_CHICAGO
-        lon: 272.375
-        lat: -41.875
-      - name: STR_VANCOUVER
-        lon: 236.75
-        lat: -49.375
-      - name: STR_DALLAS
-        lon: 263.375
-        lat: -32.75
-      # new cities
-      - name: STR_TORONTO # it is my city...
+      - name: Toronto # it is my city...
         lon: 279.454
         lat: -42.93
-      - name: STR_EDMONTON
-        lon: 245.67
-        lat: -55.76
-      - name: STR_HALIFAX
-        lon: 299
-        lat: -45.63
-      - name: STR_QUEBECCITY
+      - name: Quebec
         lon: 290.45
         lat: -48.11
-      - name: STR_SASKATOON
+      - name: Edmonton
+        lon: 245.67
+        lat: -55.76
+      - name: Halifax
+        lon: 299
+        lat: -45.63
+      - name: Saskatoon
         lon: 253.46
         lat: -55.76
-      - name: STR_WINNIPEG
+      - name: Winnipeg
         lon: 262.37
         lat: -50.44
-      - name: STR_ATLANTA
+      - name: Atlanta
         lon: 275.625
         lat: -33.75
-      - name: STR_BOSTON
+      - name: Boston
         lon: 289.348
         lat: -42.429
-      - name: STR_HOUSTON
+      - name: Houston
         lon: 264.625
         lat: -29.75
-      - name: STR_NEWORLEANS
-        lon: 269.92
-        lat: -29.642
-      - name: STR_DENVER
+      - name: Denver
         lon: 252.85
         lat: -40
-      - name: STR_DETROIT
-        lon: 276.478
-        lat: -41.810
-      - name: STR_SEATTLE
+      - name: Seattle
         lon: 235.47
         lat: -47
-      - name: STR_SANFRANCISCO
-        lon: 236.705
-        lat: -38.72
-      - name: STR_KANSASCITY
-        lon: 261.89
-        lat: -38.22
-      - name: STR_LASVEGAS
-        lon: 243.11
-        lat: -37.05
-      - name: STR_CHIHUAHUA
+      - name: Chihuahua
         lon: 255.23
         lat: -29.04
-      - name: STR_GUADALAJARA
+      - name: Guadalajara
         lon: 256.625
         lat: -21.25
-      - name: STR_MANAGUA
+      - name: Managua
         lon: 273.22
         lat: -11.5
-      - name: STR_CANCUN
+      - name: Cancun
         lon: 271.9
         lat: -20.6
-      - name: STR_GUATEMALA
+      - name: Guatemala
         lon: 269.5
         lat: -14.625
-      - name: STR_SANTODOMINGO
-        lon: 290
-        lat: -18.5
-      - name: STR_TIJUANA
+      - name: Tijuana
         lon: 243.284
         lat: -31.834
   - type: STR_SOUTH_AMERICA
     cities:
-      - name: STR_BRASILIA
-        lon: 312.125
-        lat: 15.75
-      - name: STR_BOGOTA
-        lon: 285.875
-        lat: -4.5
-      - name: STR_BUENOS_AIRES
-        lon: 302.5
-        lat: 34.5
-      - name: STR_SANTIAGO
-        lon: 289.375
-        lat: 33.375
-      - name: STR_RIO_DE_JANEIRO
-        lon: 316.875
-        lat: 22.875
-      - name: STR_LIMA
-        lon: 283
-        lat: 12
-      - name: STR_CARACAS
-        lon: 293.125
-        lat: -10.5
-      # new cities
-        # - [302.71, 302.71, 26.41, 26.41, -2, STR_ASUNCION]
-        # - [310.56, 310.56, 0, 0, -1, STR_BELEM]
-        # - [316.0, 316.0, 19.875, 19.875, -5, STR_BELOHORIZONTE]
-        # - [285.45, 285.45, -10.46, -10.46, -5, STR_CARTAGENA]
-        # - [306.30, 306.30, -5.66, -5.66, -7, STR_CAYENNE]
-        # - [321.5, 321.5, 3.75, 3.75, -7, STR_FORTALEZA]
-        # - [299.41, 299.41, -9.23, -9.23, -6, STR_GEORGETOWN]
-        # - [281.598, 281.598, -2.216, -2.216, -1, STR_GUAYAQUIL]
-        # - [292.28, 292.28, 16.93, 16.93, -5, STR_LAPAZ]
-        # - [301.19, 301.19, 3.2, 3.2, -5, STR_MANAUS]
-        # - [288.46, 288.46, -10.83, -10.83, -1, STR_MARACAIBO]
-        # - [324.527, 324.527, 5.294, 5.294, -7, STR_NATAL]
-        # - [280.62, 280.62, -9.43, -9.43, -7, STR_PANAMA]
-        # - [308.91, 308.91, 31.10, 31.10, -3, STR_PORTOALEGRE]
-        # - [324.65, 324.65, 8.07, 8.07, -7, STR_RECIFE]
-        # - [321.25, 321.25, 13, 13, -5, STR_SALVADOR]
-        # - [313.325, 313.325, 23.5, 23.5, -6, STR_SAOPAULO]
+      - name: Panama
+        lon: 280.62
+        lat: -9.43
+      - name: Belem
+        lon: 310.56
+        lat: 0
+      - name: Manaus
+        lon: 301.19
+        lat: 3.2
+      - name: Salvador
+        lon: 321.25
+        lat: 13
+      - name: Asuncion
+        lon: 302.71
+        lat: 26.41
+      - name: Fortaleza
+        lon: 321.5
+        lat: 3.75
+      - name: Recife
+        lon: 324.65
+        lat: 8.07
   - type: STR_ARCTIC
     cities:
-    # new cities
-      - name: STR_INUVIK
+      - name: Inuvik
         lon: 224.18
         lat: -68.74
-      - name: STR_BARROW
+      - name: Barrow
         lon: 200.45
         lat: -70.65
-      - name: STR_MURMANSK
+      - name: Murmansk
         lon: 33.75
         lat: -69.28
-      - name: STR_KAUJUITOQ
+      - name: Kuujjuaq
         lon: 273.655
         lat: -70.566
-      - name: STR_TIKSI
+      - name: Tiksi
         lon: 129.05
         lat: -73.15
-      - name: STR_DIKSON
+      - name: Dikson
         lon: 81.37
         lat: -73.43
-      - name: STR_ANADYR
+      - name: Anadyr
         lon: 179.77
         lat: -64.53
-      - name: STR_REYKJAVIK
+      - name: Reykjavik
         lon: -21.94
         lat: -64.18
-      - name: STR_NUUK
+      - name: Nuuk
         lon: -51.44
         lat: -64.18
-      - name: STR_YELLOWKNIFE
+      - name: Yellowknife
         lon: 242.19
         lat: -65.52
+  - type: STR_EUROPE
+    cities:
+      - name: Antalya
+        lon: 30.8
+        lat: -36.75
+      - name: Athens
+        lon: 23.58
+        lat: -38.09
+      - name: Barcelona
+        lon: 1.594
+        lat: -41.346
+      - name: Belgrade
+        lon: 20.5
+        lat: -44.5
+      - name: Marseille
+        lon: 5.3
+        lat: -43.3
+      - name: Bordeaux
+        lon: 359.47
+        lat: -44.85
+      - name: Brest
+        lon: 355.431
+        lat: -48.231
+      - name: Munich
+        lon: 11.414
+        lat: -48.661
+      - name: Milan
+        lon: 8.9
+        lat: -44.8
+      - name: Venice
+        lon: 12.70
+        lat: -45.48
+      - name: Lisbon
+        lon: 350.776
+        lat: -38.67
+      - name: Ferrol
+        lon: -8.25
+        lat: -43.466
+      - name: Krakow
+        lon: 19.83
+        lat: -50.13
+      - name: Warsaw
+        lon: 21.08
+        lat: -53.103
+      - name: Oslo
+        lon: 10.17
+        lat: -59.5
+      - name: Stockholm
+        lon: 17.325
+        lat: -58.943
+      - name: Copenhagen
+        lon: 10.3
+        lat: -56.23
+      - name: Sofia
+        lon: 24.70
+        lat: -42.91
+      - name: Kiev
+        lon: 30.06
+        lat: -49.834
+      - name: Minsk
+        lon: 27.5
+        lat: -53.875
+      - name: Kishinev
+        lon: 28.55
+        lat: -47
+      - name: Astrakhan
+        lon: 48.499
+        lat: -45.774
+      - name: Leningrad
+        lon: 29.80
+        lat: -60.23
+      - name: Sevastopol
+        lon: 33.67
+        lat: -44.72
+  - type: STR_SOUTH_EAST_ASIA
+    cities:
+      - name: Vladivostok
+        lon: 131.54
+        lat: -43.08
+      - name: Khabarovsk
+        lon: 135.05
+        lat: -48.29
+      - name: Irkutsk
+        lon: 104.18
+        lat: -52.17
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 facilities:
@@ -6586,78 +6618,78 @@ extraStrings:
 
   - type: en
     strings:
-      STR_TORONTO: "Toronto"
-      STR_EDMONTON: "Edmonton"
-      STR_HALIFAX: "Halifax"
-      STR_QUEBECCITY: "Quebec City"
-      STR_SASKATOON: "Saskatoon"
-      STR_WINNIPEG: "Winnipeg"
-      STR_ATLANTA: "Atlanta"
-      STR_BOSTON: "Boston"
-      STR_HOUSTON: "Houston"
-      STR_NEWORLEANS: "New Orleans"
-      STR_DENVER: "Denver"
-      STR_DETROIT: "Detroit"
-      STR_SEATTLE: "Seattle"
-      STR_SANFRANCISCO: "San Francisco"
-      STR_KANSASCITY: "Kansas City"
-      STR_LASVEGAS: "Las Vegas"
-      STR_CHIHUAHUA: "Chihuahua"
-      STR_GUADALAJARA: "Guadalajara"
-      STR_MANAGUA: "Managua"
-      STR_CANCUN: "Cancun"
-      STR_GUATEMALA: "Guatemala"
-      STR_SANTODOMINGO: "Santo Domingo"
-      STR_TIJUANA: "Tijuana"
-
-      STR_INUVIK: "Inuvik"
-      STR_BARROW: "Barrow"
-      STR_MURMANSK: "Murmansk"
-      STR_KAUJUITOQ: "Kuujjuaq"
-      STR_TIKSI: "Tiksi"
-      STR_DIKSON: "Dikson"
-      STR_ANADYR: "Anadyr"
-      STR_REYKJAVIK: "Reykjavík"
-      STR_NUUK: "Nuuk"
-      STR_YELLOWKNIFE: "Yellowknife"
-
+      Quebec: "Quebec City"
+      Reykjavik: "Reykjavík"
+      Panama: "Panama City"
+      Belem: "Belém"
+      Asuncion: "Asunción"
   - type: ru
     strings:
-      STR_TORONTO: "Торонто"
-      STR_EDMONTON: "Эдмонтон"
-      STR_HALIFAX: "Халифакс"
-      STR_QUEBECCITY: "Квебек"
-      STR_SASKATOON: "Саскатун"
-      STR_WINNIPEG: "Виннипег"
-      STR_ATLANTA: "Атланта"
-      STR_BOSTON: "Бостон"
-      STR_HOUSTON: "Хьюстон"
-      STR_NEWORLEANS: "Новый Орлеан"
-      STR_DENVER: "Денвер"
-      STR_DETROIT: "Детройт"
-      STR_SEATTLE: "Сиэтл"
-      STR_SANFRANCISCO: "Сан-Франциско"
-      STR_KANSASCITY: "Канзас-Сити"
-      STR_LASVEGAS: "Лас-Вегас"
-      STR_CHIHUAHUA: "Чиуауа"
-      STR_GUADALAJARA: "Гвадалахара"
-      STR_MANAGUA: "Манагуа"
-      STR_CANCUN: "Канкун"
-      STR_GUATEMALA: "Гватемала"
-      STR_SANTODOMINGO: "Санто-Доминго"
-      STR_TIJUANA: "Тихуана"
-
-      STR_INUVIK: "Инувик"
-      STR_BARROW: "Барроу"
-      STR_MURMANSK: "Мурманск"
-      STR_KAUJUITOQ: "Кууджуак"
-      STR_TIKSI: "Тикси"
-      STR_DIKSON: "Диксон"
-      STR_ANADYR: "Анадырь"
-      STR_REYKJAVIK: "Рейкьявик"
-      STR_NUUK: "Нуук"
-      STR_YELLOWKNIFE: "Йеллоунайф"
-
+      Toronto: "Торонто"
+      Quebec: "Квебек"
+      Edmonton: "Эдмонтон"
+      Halifax: "Халифакс"
+      Saskatoon: "Саскатун"
+      Winnipeg: "Виннипег"
+      Atlanta: "Атланта"
+      Boston: "Бостон"
+      Houston: "Хьюстон"
+      Denver: "Денвер"
+      Seattle: "Сиэтл"
+      Chihuahua: "Чиуауа"
+      Guadalajara: "Гвадалахара"
+      Managua: "Манагуа"
+      Cancun: "Канкун"
+      Guatemala: "Гватемала"
+      Tijuana: "Тихуана"
+      #
+      Panama: "Панама"
+      Belem: "Белен"
+      Manaus: "Манаус"
+      Salvador: "Салвадор"
+      Asuncion: "Асунсьон"
+      Fortaleza: "Форталеза"
+      Recife: "Ресифи"
+      #
+      Inuvik: "Инувик"
+      Barrow: "Барроу"
+      Murmansk: "Мурманск"
+      Kuujjuaq: "Кууджуак"
+      Tiksi: "Тикси"
+      Dikson: "Диксон"
+      Anadyr: "Анадырь"
+      Reykjavik: "Рейкьявик"
+      Nuuk: "Нуук"
+      Yellowknife: "Йеллоунайф"
+      #
+      Antalya: "Анталья"
+      Athens: "Афины"
+      Barcelona: "Барселона"
+      Belgrade: "Белград"
+      Marseille: "Марсель"
+      Bordeaux: "Бордо"
+      Brest: "Брест"
+      Munich: "Мюнхен"
+      Milan: "Милан"
+      Venice: "Венеция"
+      Lisbon: "Лиссабон"
+      Ferrol: "Ферроль"
+      Krakow: "Краков"
+      Warsaw: "Варшава"
+      Oslo: "Осло"
+      Stockholm: "Стокгольм"
+      Copenhagen: "Копенгаген"
+      Sofia: "София"
+      Kiev: "Киев"
+      Minsk: "Минск"
+      Kishinev: "Кишинёв"
+      Astrakhan: "Астрахань"
+      Leningrad: "Санкт-Петербург"
+      Sevastopol: "Севастополь"
+      #
+      Vladivostok: "Владивосток"
+      Khabarovsk: "Хабаровск"
+      Irkutsk: "Иркутск"
 
 
 # Restyling New Game dialog like DOOM-II
