@@ -6,6 +6,8 @@
 
 #Research
 
-The big point in the game is on Research tree. AwesomeGuns modification changes a few of them and implements a lot of new. [Read more...](Research.md)
+Research in the AwesomeGuns modification conducts four sections: Alien Biology, Conventional Weapons and Equipments, Laser Weapons and Alien Weapons. These implementations give a lot of different guns and items. [Read more...](Research.md)
 
 #Manufacture
+
+Manufacturing was changed also. Production of laser weapon consumes Elerium, Alien items cannot be manufactured, tanks can be changed into each other and more other. [Read more...](Manufacture.md)
