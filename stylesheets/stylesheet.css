@@ -31,8 +31,8 @@ a {
 .btn.home {
 	background-image: url("Home-icon.gif");
 	background-repeat: no-repeat;
-	background-position: 2px center;
-	padding-left: 48px;
+	background-position: 4px center;
+	padding-left: 36px;
 }
 
 .btn:hover {
