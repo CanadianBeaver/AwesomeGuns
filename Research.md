@@ -1,6 +1,6 @@
 #Research in the AwesomeGuns modification
 
-The big point in the game is on Research tree. AwesomeGuns modification changes a few of researches and implements something new.
+The big point in the game is on Research tree. AwesomeGuns modification changes a few of them and implements a lot of new.
 
 ## Biological research
 
