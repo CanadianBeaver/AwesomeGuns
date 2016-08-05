@@ -4,10 +4,10 @@ The big point in the game is on Research tree. AwesomeGuns modification changes 
 
 ## Biological research
 
-- Alien containment depends on alien biology that is necessary for keeping alien live.
-- Also, the Alien food and Alien entertainment are necessary, because these can keep alien live.
-- The Alien biology opens the MEDI Kit that can be manufactured from alien corpses. 
-- Alien research and interrogation are important. These research are opening the alien weapons.
+- Alien containment depends on alien biology which is necessary to understand how aliens live
+- The Alien food and Alien entertainment are necessary to prevent aliens from dying
+- The Alien biology opens the MEDI Kit that can be manufactured from alien corpses
+- Alien research and interrogation are important. These research are opening the alien weapons
 
 ## Conventional weapon and Crafts
 
