@@ -25,8 +25,14 @@ The big point in the game is on Research tree. AwesomeGuns modification changes 
 ### Laser weapon
 
 - Laser technology depends on Elerium and UFO Power Source
-- Research of laser weapon opens from craft cannon.
+- Research of laser weapon opens from craft cannon
  
+### Alien weapon
 
+- Research of alien weapon depends on interrogation. Alien soldier, engineer and medic are necessary for this
+- The alien weapons are controlled by mind, therefore alien weapons can not be used by human without changing
+- The plasma pistols and plasma rifles can be converted for using in combats
+- The heavy plasma and blaster bombs can not be used in combats, but can be used in manufacturing weapons for aircrafts
+- The stun grenade can be manufactured from alien stun bomb
 
 ![Research tree](WorkFiles/Research.png)
