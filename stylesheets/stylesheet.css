@@ -28,7 +28,7 @@ a {
   .btn + .btn {
     margin-left: 1rem; }
     
-.btn home {
+.btn.home {
   margin-left: 1rem; 
 	background-image: url("Home-icon.gif");
 	background-repeat: no-repeat;
