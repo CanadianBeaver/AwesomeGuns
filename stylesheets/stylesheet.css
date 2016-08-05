@@ -29,10 +29,10 @@ a {
     margin-left: 1rem; }
     
 .btn.home {
-  margin-left: 1rem; 
 	background-image: url("Home-icon.gif");
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: 2px center;
+	padding-left: 48px;
 }
 
 .btn:hover {
