@@ -10,4 +10,4 @@ Research in the AwesomeGuns modification conducts four sections: Alien Biology, 
 
 #Manufacture
 
-Manufacturing was changed also. Production of laser weapon consumes Elerium, Alien items cannot be manufactured, tanks can be changed into each other and more other. [Read more...](Manufacture.md)
+Some of manufacturing were changed and were balanced. New production processes and items were introduced, production of laser weapon consumes Elerium, alien items cannot be manufactured but can be converted, tanks can be changed into each other and more other.
