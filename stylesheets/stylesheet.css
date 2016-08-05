@@ -81,11 +81,11 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 1.75rem; } }
+    font-size: 2rem; } }
 
 @media screen and (max-width: 42em) {
   .project-name {
-    font-size: 1.25rem; } }
+    font-size: 1.5rem; } }
 
 .project-tagline {
   margin-bottom: 2rem;
