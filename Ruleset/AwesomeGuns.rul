@@ -2001,6 +2001,7 @@ items:
     armor: 6
 
   - type: STR_SINGLE_ROCKET_LAUNCHER
+    listOrder: 3405
     size: 0.2
     costSell: 15000
     weight: 6
