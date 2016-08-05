@@ -7045,26 +7045,26 @@ extraStrings:
 
 # Conventional weapons
 
-  - type: en #TODO: translation should be checked and corrected
+  - type: en
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
-      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition from alien alloys allows our soldiers to use them in their pistols, rifles (including sniper), shotguns, heavy and auto cannon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alloy aliens, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons."
+      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition and grapeshot from alien alloys can significantly increase the firepower of conventional weapon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alien alloys, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons. The next section contains more information about manufacturing."
 
       STR_ACID_CLIPS: "Acid ammunition"
-      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the Chryssalid Corpse can be used for the production of a particular acid. The capsule shape of the charge can permit to keep the acid inside the ammunition, which in a direct contact with an alien will detonate and sprayed acid in the enemy's body. We may make such charges from alien alloys for assault rifles and Zeus lightning.{NEWLINE} {NEWLINE}It seems that most of the newcomers have immunity to acid, in one degree or another. However, their robots are likely highly vulnerable to this type of weapons."
+      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the chryssalid corpse can be used for the production of a particular acid. The capsule shape can keep the acid inside the ammunition and sprays it into enemy's body when direct contact. We may make such clips from alien alloys for Assault rifle and Thunderbolt.{NEWLINE}{NEWLINE}It seems that the most of aliens have immunity to acid. However, their robots are likely highly vulnerable from this type of weapons."
 
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from two alien alloys makes 3 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys makes 4 ammo for the shotgun and 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case, always use one alien alloy from which you can manufacture up to 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced a single alloy alien to one ammo or clip."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from four alien alloys makes 3 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys makes 4 ammo for the shotgun and 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products.{NEWLINE}{NEWLINE}In this case from one alien alloys can be manufactured 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced an one ammo or clip from single alien alloys."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "Elerium ammunition... The last word in the fight against the aliens."
+      STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place....{NEWLINE}{NEWLINE}By simple words, that will show off as the latest apocalypse with all the consequences."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
-      STR_PISTOL_UFOPEDIA: "The standard issue XCom pistol is a high powered semi-automatic with a 9 round capacity."
+      STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap, quick. An integral part of the additional equipment."
 
       STR_MACHINE_PISTOL: "Machine pistol"
       STR_MACHINE_PISTOL_CLIP: "Machine pistol Clip"
@@ -7072,10 +7072,10 @@ extraStrings:
       STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It's less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
 
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
-      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips."
+      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips. It is suitable for fighting at close to medium range."
 
       STR_ALLOY_RIFLE: "Assault rifle"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloy. This weapon has a good precision and fire rate. Standard clip is targeted at 14 armor-piercing charge. Brust shot can fire with two ammo."
+      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloys. This weapon has a good precision and fire rate. Standard clip is targeted at 12 armor-piercing charge. Brust shot can fire with two ammo."
       STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
       STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
       STR_ELERIUM_RIFLE_CLIP: "Assault rifle-EL clip"
@@ -7083,7 +7083,7 @@ extraStrings:
       STR_SNIPER_RIFLE: "Sniper rifle"
       STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
       STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing charge."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing bluets."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New sniper rifle"
@@ -7095,7 +7095,7 @@ extraStrings:
       STR_SHOTGUN: "Shotgun"
       STR_SHOTGUN_AMMO: "Shotgun AMMO"
       STR_SHOTGUN_CLIP: "Shotgun-AP AMMO"
-      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard is AMMO contains 6 shells."
+      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard AMMO contains 6 shells."
 
       STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
       STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
