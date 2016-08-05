@@ -7246,12 +7246,12 @@ extraStrings:
 
 # Electromagnetic weapons
 
-  - type: en #TODO: translation should be checked and corrected
+  - type: en
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
       STR_RAILGUN_SLUGS: "Railgun Slug"
-      STR_RAILGUN_UFOPEDIA: "The sniper rifle is a supercharged version of the mass accelerator rifle. While it is not capable of auto bursts due to overheating it delivers a stronger punch. Adapted alien techonology has been used to reduce its recoil, thus allowing for very accurate long range shots."
+      STR_RAILGUN_UFOPEDIA: "Almost mobile electromagnetic accelerator. Fires on the enormous distances with little or no loss of accuracy. Speed of slug is so higher which gives the advantage of lethal force. However, as a weapon is quite difficult and it fires single-shot. Create an assault rifle is not possible."
   - type: ru
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
