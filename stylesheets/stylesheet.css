@@ -107,8 +107,8 @@ a {
     font-size: 0.8rem; } }
     
 .main-content .readmore {
-padding-left: 6px;  
-font-size: 90%;
+margin-left: 6px;  
+font-size: 85%;
 white-space: nowrap;
 }
 
@@ -117,7 +117,7 @@ white-space: nowrap;
 color: #339966; 
 text-decoration: none;
 }
-.main-content a:href
+.main-content a:hover
 {
 color: #66cc99; 
 text-decoration: none;
