@@ -53,7 +53,6 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
       
-      
 .btnmenu {
   display: inline-block;
   margin-bottom: 1rem;
@@ -65,6 +64,12 @@ a {
   border-radius: 0.15rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
   padding: 2px 2px; }
+  
+.btnmenu:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }  
 
 .page-header {
   color: #fff;
