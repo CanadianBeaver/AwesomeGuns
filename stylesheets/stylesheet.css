@@ -107,7 +107,7 @@ a {
     font-size: 0.8rem; } }
 
 
-.main-content img.screen, .main-content div.screen img { border-radius: 12px; border: 1px solid #333333; box-shadow: 0 0 12px #333333; box-shadow: 0 0 6px #333333 inset; }
+.main-content img.screen, .main-content div.screen img { border-radius: 12px; border: 1px solid #ff3333; box-shadow: 0 0 12px #333333; box-shadow: 0 0 6px #FF3333 inset; }
 .main-content div.screen { text-align: center; }
 .main-content .readmore { margin-left: 3px; font-size: 88%; white-space: nowrap; }
 
