@@ -123,6 +123,18 @@ color: #66cc99;
 text-decoration: none;
 }
 
+.main-content img
+{
+opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.main-content img:hover
+{
+opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {
