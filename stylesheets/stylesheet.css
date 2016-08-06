@@ -107,7 +107,7 @@ a {
 .readmore {
 display: inline-block;  
 font-size: small;
-background: #cceecc;
+border-color: #cceecc;
 border-radius: 6px;
 padding: 0px 4px 0px 4px;
 color: #999999;
