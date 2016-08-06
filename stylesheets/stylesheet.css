@@ -125,8 +125,8 @@ text-decoration: none;
 
 .main-content img
 {
-opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
 .main-content img:hover
