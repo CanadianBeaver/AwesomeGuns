@@ -105,8 +105,11 @@ a {
     font-size: 0.8rem; } }
     
 .readmore {
+display: inline-block;  
+font-size: small;
 background: #99CC99;
-border-radius: 10px;
+border-radius: 6px;
+padding: 4px;
 color: white;
 white-space: nowrap;
 }    
