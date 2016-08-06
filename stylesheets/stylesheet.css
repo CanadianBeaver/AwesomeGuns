@@ -108,7 +108,7 @@ a {
 
 
 .main-content img.screenbox, .main-content div.screenbox img { border-radius: 1px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
-.main-content img.screen, .main-content div.screen img { border-radius: 12px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
+.main-content img.screen, .main-content div.screen img { border-radius: 10px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
 .main-content div.screenbox, .main-content div.screen { text-align: center; }
 
 .main-content a { color: #339966; text-decoration: none; }
