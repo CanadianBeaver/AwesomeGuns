@@ -86,7 +86,9 @@ a {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btnmenu {
     padding: 1px 4px;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; } 
+.btnmenu.selected  {
+  font-size: 1.1rem; } }
 
 @media screen and (max-width: 42em) {
   .btnmenu {
@@ -96,7 +98,9 @@ a {
     font-size: 0.8rem; }
     .btnmenu + .btnmenu {
       margin-top: 0.4rem;
-      margin-left: 0; } }
+      margin-left: 0; }
+.btnmenu.selected  {
+  font-size: 1rem; } }      
       
 .page-header {
   color: #fff;
