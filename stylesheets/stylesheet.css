@@ -108,8 +108,7 @@ a {
     
 .readmore {
 display: inline-block;  
-font-size: small;
-padding: 0px 4px 0px 4px;
+font-size: 90%;
 color: #606c71;
 white-space: nowrap;
 text-decoration: none;
