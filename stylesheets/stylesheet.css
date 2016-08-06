@@ -107,12 +107,14 @@ a {
     font-size: 0.8rem; } }
 
 
+.main-content img.screenbox, .main-content div.screenbox img { border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
 .main-content img.screen, .main-content div.screen img { border-radius: 12px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
-.main-content div.screen { text-align: center; }
-.main-content .readmore { margin-left: 3px; font-size: 88%; white-space: nowrap; }
+.main-content div.screenbox, .main-content div.screen { text-align: center; }
 
 .main-content a { color: #339966; text-decoration: none; }
 .main-content a:hover { color: #66cc99; text-decoration: none; }
+
+.main-content .readmore { margin-left: 3px; font-size: 88%; white-space: nowrap; }
 
 .main-content :first-child {
   margin-top: 0; }
