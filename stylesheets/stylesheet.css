@@ -105,7 +105,9 @@ a {
     font-size: 0.8rem; } }
     
 .readmore {
-  font-size: 0.9rem;
+background: blue;
+border-radius: 10px;
+color: white;
 }    
 
 .main-content :first-child {
