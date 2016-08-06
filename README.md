@@ -3,7 +3,7 @@
 #Awesome Guns
 
 This is a mod for the [OpenXcom game](http://openxcom.org). 
-Current state: **final testing (improve the images and text translations)**. [Read more...](https://canadianbeaver.github.io/AwesomeGuns)
+Current state: almost done (improve the images and articles). [Read more...](https://canadianbeaver.github.io/AwesomeGuns)
 
 ###Why am I doing it?
 
