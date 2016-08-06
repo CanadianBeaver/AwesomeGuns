@@ -46,6 +46,7 @@ a {
 @media screen and (max-width: 42em) {
   .btn {
     display: block;
+    margin-bottom: 0rem;    
     width: 100%;
     padding: 0.5rem;
     font-size: 0.9rem; }
