@@ -72,6 +72,7 @@ a {
     padding: 0.3rem 0.3rem; } }
 
 .project-name {
+  text-shadow: 2px 2px 8px #FF0000;
   margin-top: 0;
   margin-bottom: 0.1rem; }
 
