@@ -91,8 +91,6 @@ a {
       margin-top: 0.4rem;
       margin-left: 0; } }
       
-      
-
 .page-header {
   color: #fff;
   text-align: center;
@@ -109,7 +107,7 @@ a {
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 0.3rem 0.5rem; } }
+    padding: 0.5rem 0.5rem; } }
 
 .project-name {
   text-shadow: 2px 2px 8px #FF3333;
