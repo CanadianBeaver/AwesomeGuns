@@ -106,18 +106,22 @@ a {
   .project-tagline {
     font-size: 0.8rem; } }
     
-.readmore {
-display: inline-block;  
+.main-content .readmore {
+padding-left: 6px;  
 font-size: 90%;
-color: #339966; 
 white-space: nowrap;
-text-decoration: none;
 }
 
-.readmore:hover {
+.main-content a
+{
+color: #339966; 
+text-decoration: none;
+}
+.main-content a:href
+{
 color: #66cc99; 
 text-decoration: none;
-}    
+}
 
 .main-content :first-child {
   margin-top: 0; }
