@@ -75,6 +75,7 @@ a {
 .btnmenu.selected  {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  box-shadow: 0px 0px rgba(255, 255, 255, 0.3), 0px 0px rgba(255, 255, 255, 0.3) inset;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); } 
   
