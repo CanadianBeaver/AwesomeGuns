@@ -60,7 +60,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - XenoOperations - the biggest special thanks to XOps who is the author and who allowed me to use images of plasma weapon
 - Robin's Extra Weapons
 - Improved Hand Objects
-- AlienInventory
+- Lukes Inventory Images
 - Advanced_Medikit
 - NewTUReserveUI
 - 2012DeathSounds
