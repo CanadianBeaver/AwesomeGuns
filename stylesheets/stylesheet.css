@@ -101,7 +101,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 1rem 2rem; } }
+    padding: 1rem 1.5rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
@@ -109,7 +109,7 @@ a {
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 0.3rem 0.3rem; } }
+    padding: 0.3rem 0.5rem; } }
 
 .project-name {
   text-shadow: 2px 2px 8px #FF3333;
