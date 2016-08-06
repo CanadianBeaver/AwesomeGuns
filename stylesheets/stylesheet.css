@@ -47,10 +47,10 @@ a {
   .btn {
     display: block;
     width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem; }
+    padding: 0.5rem;
+    font-size: 0.8rem; }
     .btn + .btn {
-      margin-top: 0.6rem;
+      margin-top: 0.5rem;
       margin-left: 0; } }
       
 .btnmenu {
