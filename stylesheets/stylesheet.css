@@ -17,7 +17,7 @@ a {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -55,7 +55,7 @@ a {
       
 .btnmenu {
   display: inline-block;
-  margin-bottom: 0rem;
+  margin-bottom: 0.33rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
