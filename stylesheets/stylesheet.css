@@ -105,9 +105,10 @@ a {
     font-size: 0.8rem; } }
     
 .readmore {
-background: blue;
+background: #99CC99;
 border-radius: 10px;
 color: white;
+white-space: nowrap;
 }    
 
 .main-content :first-child {
