@@ -109,19 +109,14 @@ a {
 .readmore {
 display: inline-block;  
 font-size: 90%;
-color: #448866; 
+color: #339966; 
 white-space: nowrap;
 text-decoration: none;
-}    
-
-p::first-letter { 
-  font-size: 110%;
 }
 
 .readmore:hover {
-color: #448866; 
+color: #66cc99; 
 text-decoration: none;
-text-shadow: 1px 1px 2px #99ffcc;
 }    
 
 .main-content :first-child {
