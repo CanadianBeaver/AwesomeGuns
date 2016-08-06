@@ -62,16 +62,36 @@ a {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.15rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
-  padding: 1px 6px; }
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
 .btnmenu + .btnmenu {
-    margin-left: 0.45rem; }
+    margin-left: 0.4rem; }
     
 .btnmenu:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }  
+  
+@media screen and (min-width: 64em) {
+  .btnmenu {
+    padding: 1px 6px;  } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .btnmenu {
+    padding: 1px 4px;
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 42em) {
+  .btnmenu {
+    display: block;
+    width: 100%;
+    padding: 1px 6px;
+    font-size: 0.8rem; }
+    .btnmenu + .btnmenu {
+      margin-top: 0.4rem;
+      margin-left: 0; } }
+      
+      
 
 .page-header {
   color: #fff;
