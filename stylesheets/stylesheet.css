@@ -330,9 +330,10 @@ a {
    padding: 1rem;
    padding-right: 3rem; 
    width: 5%; }
+   
 .site-footer div.links a { 
   display: block; 
-  white-space: nowrap; };
+  white-space: nowrap; }
 
 .site-footer div.socialbtn {
    display: table-cell; 
