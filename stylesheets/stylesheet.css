@@ -320,7 +320,7 @@ a {
 .site-footer a:hover {
     text-decoration: underline; }    
     
-.site-footer .copy { display: table-cell; }
+.site-footer .copy { display: table-cell; width: 1%; white-space: nowrap; }
 
 .site-footer div.links {
  display: table-cell; margin-left: 1rem;
