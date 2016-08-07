@@ -24,17 +24,6 @@ If you have the same preferences, I would like to invite you to create it togeth
 - The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
 - And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
 
-###The main ideas
-
-- Do only the necessary changes.
-- Do not copy ideas or implementations from another mods without checking, adaptation and improvement.
-- Improve visualization without compromises.
-- Alien's technologies is impossible for implementing. Therefore, we can't manufacture plasma or fusion weapons, but our soldiers can use it in the battle.
-- Conventional weapons should be suitable as long as possible
-- Armour should be more different and more specialized. There are armor for snipers, for heavy soldiers, for supports. It is difficult for realization, because the game doesn't have soldier's specialization, but it can be done.
-- Realistic balance for crafts, shooting, alien's protection.
-- Some changes just for fun...
-
 ###Contacts
 
 I would appreciate hearing your opinion on this. Please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
