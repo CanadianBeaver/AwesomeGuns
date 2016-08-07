@@ -287,8 +287,6 @@ a {
 
 .site-footer {
   color: #819198;  
-  display: table;  
-  width: 100%;
   margin-top: 2rem;
   border-top: solid 2px #999999;  
   background: #444444;
@@ -313,13 +311,12 @@ a {
     padding: 1rem;        
     padding-bottom: 1rem;    
     font-size: 10px; } }
-    
-.site-footer a {
-  color: #819198;  
-  text-decoration: none; }
-.site-footer a:hover {
-    text-decoration: underline; }    
-    
+  
+.site-footer a { color: #819198; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }    
+
+.site-footer .table { display: table; width: 100%; }
+
 .site-footer .copy { 
   display: table-cell; 
   width: 5%; 
