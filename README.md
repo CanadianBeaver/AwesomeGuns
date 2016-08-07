@@ -3,7 +3,7 @@
 #Awesome Guns
 
 This is a mod for the [OpenXcom game](http://openxcom.org). 
-Current state: almost done (improve the images and articles). [Read more...](https://canadianbeaver.github.io/AwesomeGuns)
+Current state: almost done. [Read more...](https://canadianbeaver.github.io/AwesomeGuns)
 
 ###Why am I doing it?
 
@@ -23,10 +23,6 @@ If you have the same preferences, I would like to invite you to create it togeth
 - I correct prepared images in [GrafX2](http://pulkomandy.tk/projects/GrafX2), because the [GIMP damages palette in *.png* files](http://openxcom.org/forum/index.php?topic=2676.0) and do not set the 0 value for background in indexed *.gif* files.
 - The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
 - And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
-
-###Contacts
-
-I would appreciate hearing your opinion on this. Please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
 
 ##How to install it?
 
@@ -72,3 +68,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - FastRamp
 - HQSounds_FinalModPack
 - *If I have forgotten someone, please let me know.*
+
+###Contacts
+
+I would appreciate hearing your opinion on this. Please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
