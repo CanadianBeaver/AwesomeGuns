@@ -308,3 +308,9 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+    
+.site-footer a {
+  color: #1e6bb8;
+  text-decoration: none; }
+.site-footer a:hover {
+    text-decoration: underline; }    
