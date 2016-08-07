@@ -157,10 +157,11 @@ aside.download .btn {
   .project-tagline {
     font-size: 0.8rem; } }
 
-.main-content img.screenbox4, .main-content div.screenbox4 img { border-radius: 6px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
-.main-content img.screenbox, .main-content div.screenbox img { border-radius: 1px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
-.main-content img.screen, .main-content div.screen img { border-radius: 10px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
-.main-content div.screenbox, .main-content div.screen, .main-content div.screenbox4 { text-align: center; }
+.main-content img.screenbox12, .main-content div.screenbox12 img { border-radius: 12px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
+.main-content img.screenbox8, .main-content div.screenbox8 img { border-radius: 8px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
+.main-content img.screenbox4, .main-content div.screenbox4 img { border-radius: 4px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
+.main-content img.screenbox2, .main-content div.screenbox2 img { border-radius: 2px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
+.main-content div.screenbox2, .main-content div.screenbox4, .main-content div.screenbox8, .main-content div.screenbox12, .main-content img.screen { text-align: center; }
 
 .main-content a { color: #339966; text-decoration: none; }
 .main-content a:hover { color: #66cc99; text-decoration: none; }
