@@ -334,7 +334,7 @@ a {
   display: block; 
   white-space: nowrap; };
 
-.site-footer div.social {
+.site-footer div.socialbtn {
    display: table-cell; 
    padding: 1rem;
    padding-right: 3rem; 
