@@ -302,11 +302,13 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
+  border-top: solid 2px #888888;     
     padding: 1.5rem;    
     font-size: 0.6rem; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
+  border-top: solid 1px #888888;     
     padding: 1rem;        
     font-size: 0.4rem; } }
     
