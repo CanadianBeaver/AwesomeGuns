@@ -138,7 +138,7 @@ aside.download .btn {
     font-size: 1.5rem; } }
 
 .project-tagline {
-  text-shadow: 2px 2px 4px #333333;
+  text-shadow: 0px 0px 5px #333333;
   margin-bottom: 2.2rem;
   margin-top: 0;  
   font-weight: normal;
@@ -150,6 +150,7 @@ aside.download .btn {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-tagline {
+  text-shadow: 0px 0px 3px #333333;    
     font-size: 1rem; } }
 
 @media screen and (max-width: 42em) {
