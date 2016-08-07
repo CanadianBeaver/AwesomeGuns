@@ -299,7 +299,7 @@ div.downloads .btn:hover {
 
 @media screen and (min-width: 64em) {
  .site-footer {
-    text-align: justify;
+    text-align: center;
     margin-top: 4rem;
     padding: 1.6rem;    
     padding-bottom: 2.6rem;  } }
