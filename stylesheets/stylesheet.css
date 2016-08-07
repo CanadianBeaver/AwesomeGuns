@@ -345,7 +345,7 @@ a {
 
 @media screen and (max-width: 42em) {
 .site-footer .table {margin: 0;}  
-.site-footer .copy {display: table-row; padding-top: 6px; text-align: center;}
-.site-footer .links {display: table-row; padding-top: 3px; }
-.site-footer .links a {padding-top: 3px; text-align: center; }
-.site-footer .socialbtn {display: table-row; padding-top: 6px; text-align: center;}}
+.site-footer .copy {display: table-row; padding-top: 8px; text-align: center;}
+.site-footer .links {display: table-row; padding-top: 4px; }
+.site-footer .links a {padding-top: 4px; text-align: center; }
+.site-footer .socialbtn {display: table-row; padding-top: 8px; text-align: center;}}
