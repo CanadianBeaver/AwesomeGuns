@@ -41,6 +41,7 @@ I would appreciate hearing your opinion on this. Please feel free to contact me 
 
 ##How to install it?
 
+* Download the [.zip](https://github.com/CanadianBeaver/AwesomeGuns/zipball/master) or the [.tar.gz](https://github.com/CanadianBeaver/AwesomeGuns/tarball/master) achrcive and extract files.
 * Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
 * The folder *WorkFiles* contains only work documents. Files in this folder are used just for development process.
