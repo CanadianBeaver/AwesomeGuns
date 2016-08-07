@@ -120,7 +120,7 @@ aside.download .btn {
     padding: 0.5rem 0.5rem; } }
 
 .project-name {
-  text-shadow: 2px 2px 8px #FF3333;
+  text-shadow: 0px 0px 8px #cc3333;
   margin-top: 0;
   margin-bottom: 0.1rem; }
 
@@ -134,6 +134,7 @@ aside.download .btn {
 
 @media screen and (max-width: 42em) {
   .project-name {
+    text-shadow: 0px 0px 5px #cc3333;    
     font-size: 1.5rem; } }
 
 .project-tagline {
