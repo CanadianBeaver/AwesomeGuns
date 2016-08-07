@@ -323,3 +323,5 @@ a {
 .site-footer div.links {
  display: inline-block; 
 }
+.site-footer div.links a { display: block };
+
