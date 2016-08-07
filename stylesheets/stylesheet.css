@@ -291,9 +291,7 @@ a {
   background: #444444;
 }
 
-.site-footer-owner {   color: #819198;
-  display: block;
- }
+.site-footer .copy { color: #819198;  display: block; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
