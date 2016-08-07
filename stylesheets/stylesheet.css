@@ -299,9 +299,10 @@ div.downloads .btn:hover {
 
 @media screen and (min-width: 64em) {
  .site-footer {
+    text-align: justify;
     margin-top: 4rem;
-    padding: 1.5rem;    
-    padding-bottom: 2.5rem;  } }
+    padding: 1.6rem;    
+    padding-bottom: 2.6rem;  } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
@@ -320,10 +321,8 @@ div.downloads .btn:hover {
 .site-footer a { color: #819198; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }    
 
-.site-footer .table { display: table; margin-left: 5rem; margin-right: 4rem;  }
-
 .site-footer .copy { 
-  display: table-cell; 
+  display: inline-block; 
   min-width: 15%; 
   white-space: nowrap; 
   padding: 1rem; 
@@ -331,7 +330,7 @@ div.downloads .btn:hover {
   vertical-align: middle; }
 
 .site-footer .links {
-   display: table-cell; 
+   display: inline-block; 
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;   
@@ -342,7 +341,7 @@ div.downloads .btn:hover {
   white-space: nowrap; }
 
 .site-footer .socialbtn {
-   display: table-cell; 
+   display: inline-block; 
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;
