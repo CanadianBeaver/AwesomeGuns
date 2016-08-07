@@ -56,8 +56,8 @@ AwesomeGuns modification can be incompatible with previous saved files, because 
 ###Special thanks
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
-- X-Com Weapon Rework and Expansion - 0.8.5
-- XenoOperations - the biggest special thanks to XOps who is the author and who allowed me to use images of plasma weapon
+- Weapon Rework/Expansion
+- XenoOperations
 - Robin's Extra Weapons
 - Improved Hand Objects
 - Lukes Inventory Images
@@ -68,7 +68,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Doom_Skill_Levels
 - Laser Rifle Recolor
 - GrenadeLauncher
-- Incendiary_grenade_24jul
+- Incendiary grenade
 - EqualTerms1.03
 - WolframLance
 - Ryskeliini_GunsNGadgets_1st_pack_v12
@@ -77,7 +77,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Air Combat Rebalanced
 - Railgun
 - Better look personal armor
-- Armored Vest
+- Grey armored vest
 - Scout Power Armor
 - Quick-Draw Hip Slot
 - Reproduction
