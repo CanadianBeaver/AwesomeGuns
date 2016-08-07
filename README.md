@@ -53,8 +53,6 @@ I avoid to make changes in alien's missions or UFOs. There are a few mods for th
 
 AwesomeGuns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving.
 
-###Special thanks
-
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
 - Weapon Rework/Expansion
 - XenoOperations
