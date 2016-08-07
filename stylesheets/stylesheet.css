@@ -286,12 +286,13 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
+  color: #819198;  
   margin-top: 2rem;
   border-top: solid 2px #999999;  
   background: #444444;
 }
 
-.site-footer .copy { color: #819198;  display: block; }
+.site-footer .copy { display: inline-block; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
@@ -311,7 +312,7 @@ a {
     font-size: 0.4rem; } }
     
 .site-footer a {
-  color: #1e6bb8;
+  color: #819198;  
   text-decoration: none; }
 .site-footer a:hover {
     text-decoration: underline; }    
