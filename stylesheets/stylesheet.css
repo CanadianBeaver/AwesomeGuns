@@ -139,7 +139,7 @@ div.downloads .btn:hover {
 @media screen and (max-width: 42em) {
   .project-name {
     text-shadow: 0px 0px 6px #cccc66
-    font-size: 1.5rem; } }
+    font-size: 1.25rem; } }
 
 .project-tagline {
   text-shadow: 0px 0px 5px #333333;
@@ -159,7 +159,7 @@ div.downloads .btn:hover {
 
 @media screen and (max-width: 42em) {
   .project-tagline {
-    font-size: 0.8rem; } }
+    font-size: 0.75rem; } }
 
 .main-content img.screenbox12, .main-content div.screenbox12 img { border-radius: 12px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
 .main-content img.screenbox8, .main-content div.screenbox8 img { border-radius: 8px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
