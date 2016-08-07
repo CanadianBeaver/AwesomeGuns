@@ -319,7 +319,7 @@ a {
 
 .site-footer .copy { 
   display: table-cell; 
-  width: 5%; 
+  min-width: 15%; 
   white-space: nowrap; 
   padding: 1rem; 
   padding-right: 3rem; 
@@ -330,7 +330,7 @@ a {
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;   
-   width: 5%; }
+   min-width: 20%;  }
    
 .site-footer .links a { 
   display: block; 
@@ -341,7 +341,7 @@ a {
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;
-   width: 100%;   
+   max-width: 45%;   
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
