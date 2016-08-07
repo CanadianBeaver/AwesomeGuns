@@ -315,7 +315,7 @@ a {
 .site-footer a { color: #819198; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }    
 
-.site-footer .table { display: table; width: 100%; }
+.site-footer .table { display: table; margin-left: 5rem; margin-right: 4rem;  }
 
 .site-footer .copy { 
   display: table-cell; 
