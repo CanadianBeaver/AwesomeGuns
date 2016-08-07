@@ -134,11 +134,12 @@ div.downloads .btn:hover {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
+    text-shadow: 0px 0px 9px #cc99cc, #666666 1px 1px 0, #666666 -1px -1px 0, #666666 -1px 1px 0, #666666 1px -1px 0;
     font-size: 2rem; } }
 
 @media screen and (max-width: 42em) {
   .project-name {
-    text-shadow: 0px 0px 6px #cccc66
+    text-shadow: 0px 0px 6px #cc99cc, #666666 1px 1px 0, #666666 -1px -1px 0, #666666 -1px 1px 0, #666666 1px -1px 0;
     font-size: 1.25rem; } }
 
 .project-tagline {
