@@ -293,7 +293,7 @@ a {
 }
 
 .site-footer .copy { display: inline-block; }
-.site-footer .copy:first-letter { font-size: 133%; }
+.site-footer .copy:first-letter { font-size: 150%; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
