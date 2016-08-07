@@ -288,14 +288,14 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1; 
+  width: 100%;
+  background: #444444;
+}
 
-.site-footer-owner {
+.site-footer-owner {   color: #819198;
   display: block;
-  font-weight: bold; }
-
-.site-footer-credits {
-  color: #819198; }
+ }
 
 @media screen and (min-width: 64em) {
   .site-footer {
