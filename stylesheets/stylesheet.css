@@ -296,14 +296,14 @@ a {
 
 @media screen and (min-width: 64em) {
  .site-footer {
-    padding: 2rem;    
+    padding: 1.5rem;    
     padding-bottom: 2.5rem;    
     font-size: 12px; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
   border-top: solid 2px #999999;     
-    padding: 1.5rem;    
+    padding: 1.25rem;    
     padding-bottom: 2rem;    
     font-size: 12px; } }
 
@@ -325,11 +325,13 @@ a {
   width: 5%; 
   white-space: nowrap; 
   padding: 1rem; 
+  padding-right: 3rem; 
   vertical-align: middle; }
 
 .site-footer div.links {
    display: table-cell; 
    padding: 1rem;
+   padding-right: 3rem; 
    width: 5%; }
 .site-footer div.links a { 
   display: block; 
@@ -338,5 +340,6 @@ a {
 .site-footer div.social {
    display: table-cell; 
    padding: 1rem;
+   padding-right: 3rem; 
    width: 100%;   
 }
