@@ -344,6 +344,13 @@ a {
    width: 100%;   
 }
 
+@media screen and (min-width: 42em) and (max-width: 64em) {
+.site-footer .table {margin: 8px; width: 100%;}  
+.site-footer .copy {padding: 8px; }
+.site-footer .links {padding: 8px; }
+.site-footer .links a {padding-top: 8px;  }
+.site-footer .socialbtn {padding: 8px; } }
+    
 @media screen and (max-width: 42em) {
 .site-footer .table {margin: 0; width: 100%;}  
 .site-footer .copy {display: table-row; padding: 8px; text-align: center;}
