@@ -292,8 +292,6 @@ a {
   background: #444444;
 }
 
-.site-footer .copy { display: inline-block; }
-
 @media screen and (min-width: 64em) {
   .site-footer {
     padding: 2rem;    
@@ -319,3 +317,9 @@ a {
   text-decoration: none; }
 .site-footer a:hover {
     text-decoration: underline; }    
+    
+.site-footer .copy { display: inline-block; }
+
+.site-footer div.links {
+ display: inline-block; 
+}
