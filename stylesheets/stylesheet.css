@@ -287,14 +287,15 @@ a {
 
 .site-footer {
   color: #819198;  
+  display: table;  
+  width: 100%;
   margin-top: 2rem;
   border-top: solid 2px #999999;  
   background: #444444;
 }
 
 @media screen and (min-width: 64em) {
-  .site-footer {
-    display: table;
+ .site-footer {
     padding: 2rem;    
     padding-bottom: 2.5rem;    
     font-size: 12px; } }
