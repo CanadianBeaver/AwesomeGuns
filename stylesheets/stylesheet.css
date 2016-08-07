@@ -49,7 +49,11 @@ div.downloads .btn:hover {
     margin: 0.33rem;
     padding: 0.4rem;
     font-size: 0.8rem; } }
-      
+    
+@media screen and (max-width: 32em) {
+  div.downloads .btn {
+    display: hidden; } }
+
 .btnmenu {
   display: inline-block;
   margin-bottom: 0.33rem;
