@@ -15,9 +15,7 @@ a {
   a:hover {
     text-decoration: underline; }
     
-div.downloads {
-  position: absolute; 
-  top:0; right: 0; }    
+div.downloads { position: absolute; top:0; right: 0; }    
 
 div.downloads .btn {
   display: block;
@@ -29,7 +27,7 @@ div.downloads .btn {
   border-width: 1px;
   border-radius: 0.4rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-div.downloads .btn + div.downloads .btn { margin-top: 1rem;}
+div.downloads .btn + .btn { margin-top: 1rem;}
 
 div.downloads .btn:hover {
   color: rgba(255, 255, 255, 0.8);
