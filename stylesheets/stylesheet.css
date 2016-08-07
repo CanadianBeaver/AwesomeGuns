@@ -291,6 +291,7 @@ div.downloads .btn:hover {
     font-size: 1rem; } }
 
 .site-footer {
+  text-align: center;  
   color: #819198;  
   border-top: solid 2px #999999;  
   background: #444444;
@@ -299,7 +300,6 @@ div.downloads .btn:hover {
 
 @media screen and (min-width: 64em) {
  .site-footer {
-    text-align: center;
     margin-top: 4rem;
     padding: 1.6rem;    
     padding-bottom: 2.6rem;  } }
