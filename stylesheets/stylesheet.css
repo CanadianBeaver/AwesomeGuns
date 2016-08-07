@@ -100,8 +100,9 @@ div.downloads .btn:hover {
     padding: 1px 6px;
     font-size: 0.8rem; }
     .btnmenu + .btnmenu {
-      margin-top: 0.4rem;
-      margin-left: 0; }
+      margin: 0.4rem;
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;}
 .btnmenu.selected  {
   font-size: 1rem; } }      
       
@@ -140,11 +141,11 @@ div.downloads .btn:hover {
 @media screen and (max-width: 42em) {
   .project-name {
     text-shadow: 0px 0px 6px #cc99cc, #666666 1px 1px 0, #666666 -1px -1px 0, #666666 -1px 1px 0, #666666 1px -1px 0;
-    font-size: 1.25rem; } }
+    font-size: 1.5rem; } }
 
 .project-tagline {
   text-shadow: 0px 0px 5px #333333;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2rem;
   margin-top: 0;  
   font-weight: normal;
   opacity: 0.7; }
