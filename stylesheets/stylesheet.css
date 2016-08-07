@@ -320,7 +320,12 @@ a {
 .site-footer a:hover {
     text-decoration: underline; }    
     
-.site-footer .copy { display: table-cell; width: 1%; white-space: nowrap; padding: 1rem; }
+.site-footer .copy { 
+  display: table-cell; 
+  width: 1%; 
+  white-space: nowrap; 
+  padding: 1rem; 
+  vertical-align: middle; }
 
 .site-footer div.links {
  display: table-cell; padding: 1rem;
