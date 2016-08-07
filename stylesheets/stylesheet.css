@@ -294,6 +294,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .site-footer {
+    display: table;
     padding: 2rem;    
     padding-bottom: 2.5rem;    
     font-size: 12px; } }
@@ -318,10 +319,10 @@ a {
 .site-footer a:hover {
     text-decoration: underline; }    
     
-.site-footer .copy { display: inline-block; }
+.site-footer .copy { display: table-cell; }
 
 .site-footer div.links {
- display: inline-block; margin-left: 1rem;
+ display: table-cell; margin-left: 1rem;
 }
 .site-footer div.links a { display: block };
 
