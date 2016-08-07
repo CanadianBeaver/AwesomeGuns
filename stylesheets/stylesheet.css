@@ -298,12 +298,12 @@ a {
 @media screen and (min-width: 64em) {
   .site-footer {
     padding: 2rem;    
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
     padding: 1.5rem;    
-    font-size: 0.4rem; } }
+    font-size: 0.5rem; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
