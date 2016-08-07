@@ -355,4 +355,4 @@ a {
 .site-footer .table {margin: 0; width: 100%;}  
 .site-footer .copy {display: table-row; padding: 8px; text-align: center;}
 .site-footer .links {display: table-row; padding: 8px; }
-.site-footer .socialbtn {display: table-row; padding: 8px; text-align: center;}}
+.site-footer .socialbtn {display: table-row; padding: 8px; text-align: center; max-width: 100%;}}
