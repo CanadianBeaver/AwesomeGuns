@@ -144,17 +144,14 @@ aside.download .btn {
   opacity: 0.7; }
 
 @media screen and (min-width: 64em) {
-.page-header br { margin-bottom: 3rem; }
   .project-tagline {
     font-size: 1.25rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header br { margin-bottom: 2rem; }
   .project-tagline {
     font-size: 1rem; } }
 
 @media screen and (max-width: 42em) {
-.page-header br { margin-bottom: 1rem; }  
   .project-tagline {
     font-size: 0.8rem; } }
 
