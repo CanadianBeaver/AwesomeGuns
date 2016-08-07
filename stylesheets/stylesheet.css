@@ -351,7 +351,7 @@ div.downloads .btn:hover {
 .site-footer .socialbtn {padding: 8px; } }
     
 @media screen and (max-width: 42em) {
-.site-footer .copy {padding: 8px; text-align: center;}
-.site-footer .links { padding: 8px; text-align: center; }
+.site-footer .copy {display: block; padding: 8px; text-align: center;}
+.site-footer .links {display: block; padding: 8px; text-align: center; }
 .site-footer .links a {text-align: center; padding-top: 8px;}
-.site-footer .socialbtn {padding: 8px; text-align: center;}}
+.site-footer .socialbtn {display: block; padding: 8px; text-align: center;}}
