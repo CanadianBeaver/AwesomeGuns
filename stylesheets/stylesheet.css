@@ -287,27 +287,29 @@ a {
 
 .site-footer {
   color: #819198;  
-  margin-top: 2rem;
   border-top: solid 2px #999999;  
   background: #444444;
 }
 
 @media screen and (min-width: 64em) {
  .site-footer {
+    margin-top: 4rem;
     padding: 1.5rem;    
     padding-bottom: 2.5rem;    
     font-size: 12px; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
-  border-top: solid 2px #999999;     
+    margin-top: 3rem;    
+    border-top: solid 2px #999999;     
     padding: 1.25rem;    
     padding-bottom: 2rem;    
     font-size: 12px; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
-  border-top: solid 1px #999999;     
+    margin-top: 2rem;    
+    border-top: solid 1px #999999;     
     padding: 1rem;        
     padding-bottom: 1rem;    
     font-size: 10px; } }
