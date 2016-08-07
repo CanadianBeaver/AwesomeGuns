@@ -294,7 +294,6 @@ a {
 
 @media screen and (min-width: 64em) {
  .site-footer {
-   text-align: center;
     padding: 1.5rem;    
     padding-bottom: 2.5rem;    
     font-size: 12px; } }
