@@ -323,7 +323,6 @@ div.downloads .btn:hover {
 
 .site-footer .copy { 
   display: inline-block; 
-  min-width: 15%; 
   white-space: nowrap; 
   padding: 1rem; 
   padding-right: 3rem; 
@@ -333,8 +332,7 @@ div.downloads .btn:hover {
    display: inline-block; 
    padding: 1rem;
    padding-right: 3rem; 
-   vertical-align: middle;   
-   min-width: 15%;  }
+   vertical-align: middle;   }
    
 .site-footer .links a { 
   display: block; 
@@ -345,7 +343,6 @@ div.downloads .btn:hover {
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;
-   max-width: 40%;   
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
