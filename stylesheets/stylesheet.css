@@ -50,7 +50,7 @@ div.downloads .btn:hover {
     padding: 0.4rem;
     font-size: 0.8rem; } }
     
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 33em) {
   div.downloads .btn {
     display: none; } }
 
