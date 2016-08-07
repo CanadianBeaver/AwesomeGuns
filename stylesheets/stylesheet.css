@@ -293,23 +293,25 @@ a {
 }
 
 .site-footer .copy { display: inline-block; }
-.site-footer .copy::first-letter { color: #999999;  }
 
 @media screen and (min-width: 64em) {
   .site-footer {
     padding: 2rem;    
+    padding-bottom: 2.5rem;    
     font-size: 12px; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
   border-top: solid 2px #999999;     
     padding: 1.5rem;    
+    padding-bottom: 2rem;    
     font-size: 12px; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
   border-top: solid 1px #999999;     
     padding: 1rem;        
+    padding-bottom: 1rem;    
     font-size: 10px; } }
     
 .site-footer a {
