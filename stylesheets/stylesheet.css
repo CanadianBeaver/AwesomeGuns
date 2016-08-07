@@ -52,7 +52,7 @@ div.downloads .btn:hover {
     
 @media screen and (max-width: 32em) {
   div.downloads .btn {
-    display: hidden; } }
+    display: none; } }
 
 .btnmenu {
   display: inline-block;
