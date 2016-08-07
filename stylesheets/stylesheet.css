@@ -141,24 +141,25 @@ a {
 
 .project-tagline {
   text-shadow: 2px 2px 4px #333333;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.2rem;
   margin-top: 0;  
   font-weight: normal;
   opacity: 0.7; }
 
 @media screen and (min-width: 64em) {
+.page-header br { margin-bottom: 3rem; }
   .project-tagline {
     font-size: 1.25rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
+  .page-header br { margin-bottom: 2rem; }
   .project-tagline {
     font-size: 1rem; } }
 
 @media screen and (max-width: 42em) {
+.page-header br { margin-bottom: 1rem; }  
   .project-tagline {
     font-size: 0.8rem; } }
-
-.page-header br { margin-bottom: 3rem; }
 
 .main-content img.screenbox4, .main-content div.screenbox4 img { border-radius: 6px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
 .main-content img.screenbox, .main-content div.screenbox img { border-radius: 1px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px #333333; }
