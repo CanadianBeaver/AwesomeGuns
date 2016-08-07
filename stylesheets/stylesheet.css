@@ -322,7 +322,7 @@ a {
     
 .site-footer .copy { 
   display: table-cell; 
-  width: 1%; 
+  width: 5%; 
   white-space: nowrap; 
   padding: 1rem; 
   vertical-align: middle; }
@@ -330,9 +330,13 @@ a {
 .site-footer div.links {
    display: table-cell; 
    padding: 1rem;
-   width: 1%;
-}
+   width: 5%; }
 .site-footer div.links a { 
   display: block; 
-  white-space: nowrap;  };
+  white-space: nowrap; };
 
+.site-footer div.social {
+   display: table-cell; 
+   padding: 1rem;
+   width: 100%;   
+}
