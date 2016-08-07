@@ -321,7 +321,7 @@ a {
 .site-footer .copy { display: inline-block; }
 
 .site-footer div.links {
- display: inline-block; 
+ display: inline-block; margin-left: 1rem;
 }
 .site-footer div.links a { display: block };
 
