@@ -15,10 +15,11 @@ a {
   a:hover {
     text-decoration: underline; }
     
-aside.download{
-  float:right;
-}    
-aside.download .btn {
+div.downloads {
+  position: absolute; 
+  top:0; 
+  right: 0; }    
+div.downloads .btn {
   display: block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
@@ -29,23 +30,23 @@ aside.download .btn {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
 
-aside.download .btn:hover {
+div.downloads .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
 @media screen and (min-width: 64em) {
-  aside.download .btn {
+  div.downloads .btn {
     padding: 0.75rem 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-aside.download .btn {
+  div.downloads .btn {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 42em) {
-aside.download .btn {
+  div.downloads .btn {
     margin-bottom: 4px;    
     width: 100%;
     padding: 0.4rem;
