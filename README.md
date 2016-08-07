@@ -31,7 +31,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
 * The folder *WorkFiles* contains only work documents. Files in this folder are used just for development process.
 
-###Compatible mods:
+###Compatible mods and special thanks
 
 I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
 - [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
