@@ -346,9 +346,9 @@ div.downloads .btn:hover {
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-.site-footer .copy {padding: 8px; }
-.site-footer .links {padding: 8px; }
-.site-footer .socialbtn {padding: 8px; } }
+.site-footer .copy { padding: 0.6rem; }
+.site-footer .links { padding: 0.6rem; }
+.site-footer .socialbtn { padding: 0.6rem; } }
     
 @media screen and (max-width: 42em) {
 .site-footer .copy {display: block; padding: 8px; text-align: center;}
