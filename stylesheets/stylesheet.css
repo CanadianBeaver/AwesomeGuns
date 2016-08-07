@@ -122,7 +122,7 @@ div.downloads .btn:hover {
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 0.5rem 0.5rem; } }
+    padding: 0.3rem 0.3rem; } }
 
 .project-name {
   text-shadow: 0px 0px 12px #cc99cc, #666666 1px 1px 0, #666666 -1px -1px 0, #666666 -1px 1px 0, #666666 1px -1px 0;
