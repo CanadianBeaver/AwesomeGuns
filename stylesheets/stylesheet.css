@@ -286,10 +286,8 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px #eff0f1; 
-  width: 100%;
   background: #444444;
 }
 
@@ -299,14 +297,17 @@ a {
 
 @media screen and (min-width: 64em) {
   .site-footer {
+    padding: 2rem;    
     font-size: 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
+    padding: 1.5rem;    
     font-size: 1rem; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
+    padding: 1rem;        
     font-size: 0.9rem; } }
     
 .site-footer a {
