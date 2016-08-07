@@ -346,5 +346,6 @@ a {
 @media screen and (max-width: 42em) {
 .site-footer .table {margin: 0;}  
 .site-footer .copy {display: table-row; padding-top: 6px;}
-.site-footer .links {display: table-row; padding-top: 6px;}
+.site-footer .links {display: table-row; padding-top: 3px; }
+.site-footer .links a {padding-top: 3px; }
 .site-footer .socialbtn {display: table-row; padding-top: 6px;}}
