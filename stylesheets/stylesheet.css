@@ -55,6 +55,7 @@ div.downloads .btn:hover {
     display: none; } }
 
 .btnmenu {
+  font-size: 1rem;
   display: inline-block;
   margin-bottom: 0.33rem;
   color: rgba(255, 255, 255, 0.7);
@@ -77,7 +78,7 @@ div.downloads .btn:hover {
   text-shadow: 0px 0px 8px #159957;  
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); } 
   
