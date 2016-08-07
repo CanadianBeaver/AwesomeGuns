@@ -325,20 +325,26 @@ a {
   padding-right: 3rem; 
   vertical-align: middle; }
 
-.site-footer div.links {
+.site-footer .links {
    display: table-cell; 
    padding: 1rem;
    padding-right: 3rem; 
    width: 5%; }
    
-.site-footer div.links a { 
+.site-footer .links a { 
   display: block; 
   white-space: nowrap; }
 
-.site-footer div.socialbtn {
+.site-footer .socialbtn {
    display: table-cell; 
    padding: 1rem;
    padding-right: 3rem; 
    vertical-align: middle;
    width: 100%;   
 }
+
+@media screen and (max-width: 42em) {
+.site-footer .table {margin: 0;}  
+.site-footer .copy {display: table-row;}
+.site-footer .links {display: table-row;}
+.site-footer .socialbtn {display: table-row;}}
