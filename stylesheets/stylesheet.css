@@ -166,8 +166,12 @@ div.downloads .btn:hover {
 .arrowred {
   position: relative;
   margin: 50px auto;
+  display: inline-block;  
+  width: 200px;
+  height: 30px;
+  background: orangered;    
   }
-.arrowred:before,  .arrowred:after {
+.arrowred:before, .arrowred:after {
     content: "";
     display: block;
     position: absolute;
@@ -175,20 +179,12 @@ div.downloads .btn:hover {
     height: 0;
     border: 40px solid transparent; 
     border-right: 0;    }
-.arrowred {
-  width: 200px;
-  height: 30px;
-  background: orangered;  
-  }
 .arrowred:after {
     top: -25px;
     right: -30px;
-    border-left-color: orangered;  
-    }
+    border-left-color: orangered; }
 
-  
-    
-.arrow {
+.arrowblue {
   position: relative;
   margin: 50px auto;
   display: inline-block;
@@ -196,8 +192,8 @@ div.downloads .btn:hover {
   height: 15px;
   border-radius: 50%;
   background: steelblue; }
-  .arrow:before,
-  .arrow:after {
+  .arrowblue:before,
+  .arrowblue:after {
     content: "";
     display: block;
     position: absolute;
@@ -205,13 +201,13 @@ div.downloads .btn:hover {
     height: 0;
     border: 40px solid transparent; 
     border-right: 0; }
-.arrow:before {
+.arrowblue:before {
     top: -7px;
     left: -19px;
     border: 15px solid transparent; 
     border-right-color: steelblue; 
     border-left: 0;}
-.arrow:after {
+.arrowblue:after {
       top: -7px;
       right: -19px;
       border: 15px solid transparent; 
