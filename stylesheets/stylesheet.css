@@ -334,9 +334,11 @@ div.downloads .btn:hover {
    padding-right: 3rem; 
    vertical-align: middle;   }
    
-.site-footer .links a { 
+.site-footer .links a, .site-footer .links span { 
   display: block; 
   white-space: nowrap; }
+  
+.site-footer .links span { text-decoration: underline}  
 
 .site-footer .socialbtn {
    display: inline-block; 
@@ -355,5 +357,5 @@ div.downloads .btn:hover {
 @media screen and (max-width: 42em) {
 .site-footer .copy {display: block; padding: 8px; text-align: center;}
 .site-footer .links {display: block; padding: 8px; text-align: center; }
-.site-footer .links a {text-align: center; padding-top: 8px;}
+.site-footer .links a, .site-footer .links span {text-align: center; padding-top: 8px;}
 .site-footer .socialbtn {display: block; padding: 8px; text-align: center;}}
