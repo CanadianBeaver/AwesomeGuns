@@ -166,6 +166,7 @@ div.downloads .btn:hover {
 .arrow {
   position: relative;
   margin: 50px auto;
+  display: inline-block;
   }
   .arrow:before,
   .arrow:after {
