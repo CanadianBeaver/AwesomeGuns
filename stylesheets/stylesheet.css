@@ -178,8 +178,10 @@ div.downloads .btn:hover {
   background-color: #44586c;
   padding: 6px; }
   
-.main-content .blackback {
+.main-content img.blackback {
   background-color: #000000;
+  border: none;
+  border-radius: 0;  
   box-shadow: 0 0 6px 5px rgba(0,0,0,1); }  
 
 .main-content :first-child {
