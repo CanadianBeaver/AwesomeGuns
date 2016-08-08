@@ -336,9 +336,10 @@ div.downloads .btn:hover {
    
 .site-footer .links a, .site-footer .links span { 
   display: block; 
+  padding: 1px 4px;
   white-space: nowrap; }
   
-.site-footer .links span { text-decoration: underline}  
+.site-footer .links span { background-color: #565656 }  
 
 .site-footer .socialbtn {
    display: inline-block; 
