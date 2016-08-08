@@ -72,4 +72,4 @@ I got images and ideas from many mods, but I never copy these without adaptation
 
 ###Contacts
 
-I would appreciate hearing your opinion on this. Please feel free <a target="_blank" href="https://form.jotform.com/62196392930259">to contact me</a>.
+I would appreciate hearing your opinion on this. Please feel free <a href="https://form.jotform.com/62196392930259">to contact me</a>.
