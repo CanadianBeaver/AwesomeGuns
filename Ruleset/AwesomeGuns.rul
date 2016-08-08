@@ -7091,23 +7091,23 @@ extraStrings:
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
       STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap, quick. An integral part of the additional equipment."
 
-      STR_MACHINE_PISTOL: "Machine pistol"
-      STR_MACHINE_PISTOL_CLIP: "Machine pistol Clip"
-      STR_MACHINE_PISTOL_AL_CLIP: "Machine pistol-AP Clip"
+      STR_MACHINE_PISTOL: "Machine Pistol"
+      STR_MACHINE_PISTOL_CLIP: "Machine Pistol Clip"
+      STR_MACHINE_PISTOL_AL_CLIP: "Machine Pistol-AP Clip"
       STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It's less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
 
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
       STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips. It is suitable for fighting at close to medium range."
 
-      STR_ALLOY_RIFLE: "Assault rifle"
+      STR_ALLOY_RIFLE: "Assault Rifle"
       STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloys. This weapon has a good precision and fire rate. Standard clip is targeted at 12 armor-piercing clips. Brust shot can fire with two bullets."
-      STR_ALLOY_RIFLE_CLIP: "Assault rifle-AP clip"
-      STR_ACID_RIFLE_CLIP: "Assault rifle-AC clip"
-      STR_ELERIUM_RIFLE_CLIP: "Assault rifle-EL clip"
+      STR_ALLOY_RIFLE_CLIP: "Assault Rifle-AP clip"
+      STR_ACID_RIFLE_CLIP: "Assault Rifle-AC clip"
+      STR_ELERIUM_RIFLE_CLIP: "Assault Rifle-EL clip"
 
-      STR_SNIPER_RIFLE: "Sniper rifle"
-      STR_SNIPER_RIFLE_CLIP: "Sniper rifle Clip"
-      STR_SNIPER_RIFLE_AL_CLIP: "Sniper rifle-AP Clip"
+      STR_SNIPER_RIFLE: "Sniper Rifle"
+      STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
+      STR_SNIPER_RIFLE_AL_CLIP: "Sniper Rifle-AP Clip"
       STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing bluets."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
@@ -7119,16 +7119,16 @@ extraStrings:
 
       STR_SHOTGUN: "Shotgun"
       STR_SHOTGUN_AMMO: "Shotgun AMMO"
-      STR_SHOTGUN_CLIP: "Shotgun-AP AMMO"
+      STR_SHOTGUN_CLIP: "Shotgun-AL AMMO"
       STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard AMMO contains 6 shells."
 
       STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
       STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
 
-      STR_GRENADE_LAUNCHER: "Grenade launcher"
-      STR_GL_HE_AMMO: "40mm HE grenade"
-      STR_GL_I_AMMO: "40mm Incendiary grenade"
-      STR_GL_S_AMMO: "40mm Smoke grenade"
+      STR_GRENADE_LAUNCHER: "Grenade Launcher"
+      STR_GL_HE_AMMO: "40mm HE Grenade"
+      STR_GL_I_AMMO: "40mm Incendiary Grenade"
+      STR_GL_S_AMMO: "40mm Smoke Grenade"
       STR_GRENADE_LAUNCHER_UFOPEDIA: "Able to fire an explosive, incendiary and smoke grenades for a long distances."
 
       STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire different sizes of missile."
@@ -7136,7 +7136,7 @@ extraStrings:
       STR_SMALL_ROCKET: "Blaster Rocket"
       STR_SMALL_ROCKET_UFOPEDIA: "Blaster rocket for Rocket Launcher. This rocket can be produced from aliens ammunition."
 
-      STR_SINGLE_ROCKET_LAUNCHER: "Armor-piercing rocket"
+      STR_SINGLE_ROCKET_LAUNCHER: "Armor-piercing Rocket"
       STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Single rocket launcher. It fires armor-piercing rocket that can penetrate the wall of the UFOs. Not intended for reuse."
 
       STR_INCENDIARY_GRENADE: "Incendiary Grenade"
