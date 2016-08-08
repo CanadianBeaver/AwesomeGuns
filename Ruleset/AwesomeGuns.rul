@@ -45,6 +45,8 @@
 # - FastRamp
 # - HQSounds_FinalModPack
 # - Stun Grenade
+# - The X-Com Files
+# - Hardmode Expansion
 # - If I have forgotten someone, please let me know.
 #
 #
@@ -3015,12 +3017,23 @@ armors:
 
   - type: STR_NONE_UC
     stats:
-      bravery: -10
+      bravery: -20
       melee: -15
     frontArmor: 12
     sideArmor: 8
     rearArmor: 5
     underArmor: 2
+    damageModifier:
+      - 1.0 # None
+      - 1.0 # Armor Piercing
+      - 1.0 # Incendiary
+      - 1.0 # High Explosive
+      - 1.0 # Laser
+      - 1.0 # Plasma
+      - 1.2 # Stun
+      - 1.2 # Melee
+      - 1.6 # Acid
+      - 1.0 # Smoke
 
   - type: STR_ARMORED_VEST_UC
     spriteSheet: ARMOREDVEST.PCK
@@ -3034,20 +3047,20 @@ armors:
       stamina: -15
       reactions: 10
       melee: 10
-    frontArmor: 30
-    sideArmor: 20
-    rearArmor: 12
+    frontArmor: 28
+    sideArmor: 18
+    rearArmor: 10
     underArmor: 5
     damageModifier:
       - 1.0 # None
-      - 0.7 # Armor Piercing
+      - 0.8 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.7 # High Explosive
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.8 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
-      - 1.0 # Acid
+      - 1.25 # Acid
       - 1.0 # Smoke
     loftempsSet: [ 3 ]
 
@@ -3059,22 +3072,23 @@ armors:
     storeItem: STR_LIGHT_VEST
     weight: 5
     stats:
+      bravery: -10
       stamina: -15
-      firing: 10
+      firing: 5
     frontArmor: 18
     sideArmor: 12
     rearArmor: 7
     underArmor: 3
     damageModifier:
       - 1.0 # None
-      - 0.85 # Armor Piercing
+      - 0.9 # Armor Piercing
       - 1.0 # Incendiary
-      - 0.85 # High Explosive
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.9 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
-      - 1.0 # Acid
+      - 1.25 # Acid
       - 1.0 # Smoke
     loftempsSet: [ 3 ]
 
@@ -3098,12 +3112,12 @@ armors:
     underArmor: 36
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.6 # Incendiary
-      - 0.8 # High Explosive
+      - 0.8 # Armor Piercing
+      - 0.8 # Incendiary
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.7 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.1 # Acid
       - 1.0 # Smoke
@@ -3127,12 +3141,12 @@ armors:
     underArmor: 30
     damageModifier:
       - 1.0 # None
-      - 0.8 # Armor Piercing
-      - 0.8 # Incendiary
-      - 0.9 # High Explosive
+      - 0.9 # Armor Piercing
+      - 0.9 # Incendiary
+      - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.8 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.1 # Acid
       - 1.0 # Smoke
@@ -3154,12 +3168,12 @@ armors:
     underArmor: 25
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
+      - 0.95 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.9 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.1 # Acid
       - 1.0 # Smoke
@@ -3175,7 +3189,7 @@ armors:
     storeItem: STR_POWER_SUIT
     weight: 15
     stats:
-      tu: 15
+      tu: 12
       stamina: -15
       reactions: 10
       firing: 10
@@ -3190,12 +3204,12 @@ armors:
     ##underArmor: 60
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
+      - 0.7 # Armor Piercing
       - 0.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.5 # Laser
+      - 0.7 # Laser
       - 1.0 # Plasma
-      - 0.7 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Acid
       - 0.0 # Smoke
@@ -3209,7 +3223,8 @@ armors:
     storeItem: STR_FLYING_SUIT
     weight: 14
     stats:
-      tu: 5
+      tu: 4
+      stamina: -10
     frontArmor: 100
     sideArmor: 80 # PLASMA rifle has power=80
     rearArmor: 70
@@ -3221,12 +3236,12 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0 # None
-      - 0.6 # Armor Piercing
-      - 0.0 # Incendiary
+      - 0.8 # Armor Piercing
+      - 0.2 # Incendiary
       - 1.0 # High Explosive
-      - 0.5 # Laser
+      - 0.8 # Laser
       - 1.0 # Plasma
-      - 0.7 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Acid
       - 0.0 # Smoke
@@ -3240,8 +3255,9 @@ armors:
     storeItem: STR_LIGHT_FLYING_SUIT
     weight: 6
     stats:
-      tu: 5
-      firing: 10
+      tu: 2
+      stamina: -15
+      firing: 5
     frontArmor: 42
     sideArmor: 33
     rearArmor: 25
@@ -3249,12 +3265,12 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0 # None
-      - 1.0 # Armor Piercing
+      - 0.95 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 1.0 # Laser
       - 1.0 # Plasma
-      - 0.9 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.1 # Acid
       - 1.0 # Smoke
