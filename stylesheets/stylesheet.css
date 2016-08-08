@@ -163,57 +163,6 @@ div.downloads .btn:hover {
   .project-tagline {
     font-size: 0.75rem; } }
 
-.arrowred {
-  position: relative;
-  margin: 50px auto;
-  display: inline-block;  
-  width: 200px;
-  height: 30px;
-  background: orangered;    
-  }
-.arrowred:before, .arrowred:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 40px solid transparent; 
-    border-right: 0;    }
-.arrowred:after {
-    top: -25px;
-    right: -30px;
-    border-left-color: orangered; }
-
-.arrowblue {
-  position: relative;
-  margin: 50px auto;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: steelblue; }
-  .arrowblue:before,
-  .arrowblue:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 40px solid transparent; 
-    border-right: 0; }
-.arrowblue:before {
-    top: -7px;
-    left: -19px;
-    border: 15px solid transparent; 
-    border-right-color: steelblue; 
-    border-left: 0;}
-.arrowblue:after {
-      top: -7px;
-      right: -19px;
-      border: 15px solid transparent; 
-      border-left-color: steelblue; 
-      border-right: 0;}
-    
 .main-content img.screenbox12, .main-content div.screenbox12 img { border-radius: 12px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px -1px rgba(51,51,51,1); margin: 6px; }
 .main-content img.screenbox8, .main-content div.screenbox8 img { border-radius: 8px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px -1px rgba(51,51,51,1); margin: 6px; }
 .main-content img.screenbox4, .main-content div.screenbox4 img { border-radius: 4px; border: 1px solid #666666; box-shadow: 0 0 9px #333333 inset, 0 0 15px -1px rgba(51,51,51,1); margin: 6px; }
