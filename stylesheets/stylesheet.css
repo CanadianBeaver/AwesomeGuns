@@ -180,9 +180,6 @@ div.downloads .btn:hover {
     }
     
 .arrow {
-  position: absolute;
-  top: center;
-  left: center;
   width: 15px;
   height: 15px;
   border-radius: 50%;
