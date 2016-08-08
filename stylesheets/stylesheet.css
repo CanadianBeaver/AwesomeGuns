@@ -164,6 +164,21 @@ div.downloads .btn:hover {
     font-size: 0.75rem; } }
     
 .arrow {
+  position: relative;
+  margin: 50px auto;
+  }
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent; 
+    border-right: 0;
+    }
+    
+.arrow {
   position: absolute;
   top: center;
   left: center;
