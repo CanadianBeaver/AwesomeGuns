@@ -68,6 +68,8 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - FastRamp
 - HQSounds_FinalModPack
 - Stun Grenade
+- The X-Com Files 
+- Hardmode Expansion
 - *If I have forgotten someone, please let me know.*
 
 ###Contacts
