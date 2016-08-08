@@ -162,6 +162,31 @@ div.downloads .btn:hover {
 @media screen and (max-width: 42em) {
   .project-tagline {
     font-size: 0.75rem; } }
+
+.arrowred {
+  position: relative;
+  margin: 50px auto;
+  }
+.arrowred:before,  .arrowred:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent; 
+    border-right: 0;    }
+.arrowred {
+  width: 200px;
+  height: 30px;
+  background: orangered;  
+  }
+.arrowred:after {
+    top: -25px;
+    right: -30px;
+    border-left-color: orangered;  
+    }
+
+  
     
 .arrow {
   position: relative;
