@@ -67,6 +67,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Reproduction
 - FastRamp
 - HQSounds_FinalModPack
+- Stun Grenade
 - *If I have forgotten someone, please let me know.*
 
 ###Contacts
