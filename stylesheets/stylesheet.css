@@ -336,7 +336,7 @@ div.downloads .btn:hover {
    
 .site-footer .links a, .site-footer .links span { 
   display: block; 
-  padding: 1px 4px;
+  padding: 2px 8px;
   white-space: nowrap; }
   
 .site-footer .links span { background-color: #565656 }  
