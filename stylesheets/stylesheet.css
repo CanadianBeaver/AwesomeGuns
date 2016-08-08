@@ -172,8 +172,6 @@ div.downloads .btn:hover {
 .main-content a { color: #339966; text-decoration: none; }
 .main-content a:hover { color: #66cc99; text-decoration: none; }
 
-img { image-rendering: crisp-edges; }
-
 .main-content .readmore { margin-left: 3px; font-size: 88%; white-space: nowrap; }
 
 .main-content :first-child {
