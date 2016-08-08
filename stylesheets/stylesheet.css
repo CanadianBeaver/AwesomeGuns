@@ -345,7 +345,7 @@ div.downloads .btn:hover {
    vertical-align: middle;
 }
 
-.site-footer .socialbtn .at-icon-wrapper { border-radius: 4px; }
+.at-icon-wrapper { border-radius: 4px; }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
 .site-footer .copy { padding: 0.6rem; }
