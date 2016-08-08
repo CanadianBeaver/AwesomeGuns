@@ -167,7 +167,10 @@ div.downloads .btn:hover {
   position: relative;
   margin: 50px auto;
   display: inline-block;
-  }
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: steelblue; }
   .arrow:before,
   .arrow:after {
     content: "";
@@ -176,14 +179,7 @@ div.downloads .btn:hover {
     width: 0;
     height: 0;
     border: 40px solid transparent; 
-    border-right: 0;
-    }
-    
-.arrow {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: steelblue;}
+    border-right: 0; }
 .arrow:before {
     top: -7px;
     left: -19px;
