@@ -6926,7 +6926,7 @@ extraStrings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
       STR_IMPROVED_ROCKETS_TITLE: "Improved launchers"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using the alien alloys and UFO navigation can increase homing of the standard missiles and improve craft launchers.{NEWLINE}{NEWLINE}Ready-to-production drawings include improved sets of launchers and land-based missile launcher. Particularly interesting development is a new compact armor-piercing rocket, which is able to penetrate the body of UFO right on the battlefield and opens the way to our soldiers inside the alien spaceship at any convenient for them."
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using the alien alloys and UFO navigation can increase homing of the standard missiles and improve craft launchers.{NEWLINE}{NEWLINE}Ready-to-production drawings include improved sets of launchers and land-based missile launcher. Particularly interesting development is a new compact armor-piercing rocket, which is able to penetrate the body of UFO during the combats and opens the way to our soldiers inside the alien spaceship."
 
       STR_STINGRAY: "STINGRAY"
       STR_STINGRAY_LAUNCHER: "Stingray Launcher"
@@ -6952,7 +6952,7 @@ extraStrings:
       STR_ALLOY_CANNON: "Tuned Cannon"
       STR_ALLOY_CANNON_UFOPEDIA: "IMPROVED HIGH POWERED CANNON.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN IMPROVED AGAINST UFO EVASIVE MANEUVERS."
 
-      STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER BEAM IS POWERED TO FIGHT AGAINST UFO ON CLOSED DISTANCES."
+      STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER CANNON IS POWERED TO FIGHT AGAINST UFO ON CLOSE DISTANCES."
       STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS PLASMA GENERATOR FROM ALIENS HEAVY WEAPON'S COMPONENTS."
 
       STR_ELECTROMAGNETIC_CANNON_UC: "ELECTROMAGNETIC CANNON"
@@ -7086,7 +7086,7 @@ extraStrings:
       STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from four alien alloys makes 3 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys makes 4 ammo for the shotgun and 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products.{NEWLINE}{NEWLINE}In this case from one alien alloys can be manufactured 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced an one ammo or clip from single alien alloys."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place....{NEWLINE}{NEWLINE}By simple words, that will show off as the latest apocalypse with all the consequences."
+      STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
       STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap, quick. An integral part of the additional equipment."
@@ -7291,7 +7291,7 @@ extraStrings:
       STR_ALIEN_WEAPON: "Aliens weapons and technologies"
       STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
       STR_ALIEN_WEAPON_USING: "Using aliens weapons"
-      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some conversion of ammunition for plasma pistols and rifles will allow to be used in combat. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably not worth hurry to sell all the remains."
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some ammunition converting of plasma pistols and rifles will allow to be used in combats. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably, it is not necessary to sell all of alien weapons at once."
 
       STR_CONVERTED_PLASMA_PISTOL: "Converted Plasma Pistol"
       STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol"
