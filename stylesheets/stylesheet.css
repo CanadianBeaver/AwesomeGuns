@@ -348,7 +348,7 @@ div.downloads .btn:hover {
   padding: 1px 8px;
   white-space: nowrap; }
   
-.site-footer .links span { background-color: #565656; border-radius: 4px; }  
+.site-footer .links span { background-color: #565656; border-radius: 3px; }  
 
 .site-footer .socialbtn {
    display: inline-block; 
