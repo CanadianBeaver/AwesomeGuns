@@ -302,13 +302,13 @@ div.downloads .btn:hover {
   background-color: #2a2a2a !important;
   padding: 6px !important; }
   
-.site-footer-before { margin: 0px; }
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
-@media screen and (min-width: 42em) and (max-width: 64em) {  .site-footer-before { margin-top: 3rem; } }
-@media screen and (max-width: 42em) {  .site-footer-before { margin-top: 2rem; display: none; } }
+@media screen and (min-width: 42em) and (max-width: 64em) {  .site-footer-before { margin-top: 3.5rem; } }
+@media screen and (max-width: 42em) {  .site-footer-before { margin-top: 2rem; } }
 
 .site-footer-before div.funny { position: absolute; left: 0; }
-@media screen and (max-width: 60em) {  .site-footer-before div.funny { display: none; } }  
+.site-footer-before div.funny img { position: relative; }
+@media screen and (max-width: 80em) { .site-footer-before div.funny { display: none; } }  
   
 .site-footer {
   text-align: center;  
