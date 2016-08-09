@@ -300,6 +300,17 @@ div.downloads .btn:hover {
   background-color: #2a2a2a !important;
   padding: 6px !important; }
   
+.site-footer-before {  }
+
+@media screen and (min-width: 64em) {
+ .site-footer-before { margin-top: 4rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .site-footer-before { margin-top: 3rem; } }
+
+@media screen and (max-width: 42em) {
+  .site-footer-before { margin-top: 2rem; } }
+  
 .site-footer {
   text-align: center;  
   color: #819198;  
@@ -310,20 +321,17 @@ div.downloads .btn:hover {
 
 @media screen and (min-width: 64em) {
  .site-footer {
-    margin-top: 4rem;
     padding: 1.6rem;    
     padding-bottom: 2.6rem;  } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .site-footer {
-    margin-top: 3rem;    
     border-top: solid 2px #999999;     
     padding: 1.25rem;    
     padding-bottom: 2rem; } }
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    margin-top: 2rem;    
     border-top: solid 1px #999999;     
     padding: 1rem;        
     padding-bottom: 1rem; } }
