@@ -4,7 +4,7 @@
 
 This is a big modification for the [OpenXcom game](http://openxcom.org).
 
-Current state: released [Read more...](https://canadianbeaver.github.io/AwesomeGuns)
+Current state: released, [read more...](https://canadianbeaver.github.io/AwesomeGuns)
 
 Current plans: rolling-release
 
