@@ -304,6 +304,8 @@ div.downloads .btn:hover {
   
 .site-footer-before {  }
 
+.site-footer-before img { position: absolute; left: 0;  }
+
 @media screen and (min-width: 64em) {
  .site-footer-before { margin-top: 5rem; } }
 
