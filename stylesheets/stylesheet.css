@@ -303,17 +303,11 @@ div.downloads .btn:hover {
   padding: 6px !important; }
   
 .site-footer-before {  }
+@media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
+@media screen and (min-width: 42em) and (max-width: 64em) {  .site-footer-before { margin-top: 3rem; } }
+@media screen and (max-width: 42em) {  .site-footer-before { margin-top: 2rem; display: none; } }
 
-.site-footer-before img { position: absolute; left: 0;  }
-
-@media screen and (min-width: 64em) {
- .site-footer-before { margin-top: 5rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .site-footer-before { margin-top: 3rem; } }
-
-@media screen and (max-width: 42em) {
-  .site-footer-before { margin-top: 2rem; display: none; } }
+.site-footer-before div.funny { position: absolute; left: 0; }
   
 .site-footer {
   text-align: center;  
