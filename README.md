@@ -2,9 +2,9 @@
 
 ##Awesome Guns
 
-This is a big modification for the [OpenXcom game](http://openxcom.org).
-Current state: released 
-Current plans: rolling-release
+This is a big modification for the [OpenXcom game](http://openxcom.org).    
+Current state: released     
+Current plans: rolling-release     
 WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)
 
 ###Why am I doing it?
