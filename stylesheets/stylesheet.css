@@ -75,8 +75,8 @@ div.downloads .btn:hover {
   border-color: rgba(255, 255, 255, 0.3); } 
   
 .btnmenu.selected  {
-  text-shadow: 0px 0px 8px #159957;  
-  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 8px rgba(255, 255, 200, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.2);
