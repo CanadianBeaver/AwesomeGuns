@@ -301,13 +301,15 @@ div.downloads .btn:hover {
 .main-content .blackback {
   background-color: #2a2a2a !important;
   padding: 6px !important; }
-  
+
+
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) {  .site-footer-before { margin-top: 3.5rem; } }
 @media screen and (max-width: 42em) {  .site-footer-before { margin-top: 2rem; } }
 
+.site-footer-before-center div.funny { position: absolute; height: 0px; width: 100%; text-align: center; }
 .site-footer-before div.funny { position: absolute; height: 0px; }
-.site-footer-before div.funny img { position: absolute; }
+.site-footer-before-center div.funny img, .site-footer-before div.funny img { position: absolute; }
 @media screen and (max-width: 77em) { .site-footer-before div.funny { display: none; } }  
   
 .site-footer {
