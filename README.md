@@ -40,7 +40,7 @@ I avoid to make changes in alien's missions or UFOs. There are a few mods for th
 - [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
 - [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
 
-AwesomeGuns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving.
+Awesome Guns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving, at least еру holster (quick), breast and right shoulder must be empty.
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
 - Weapon Rework/Expansion
