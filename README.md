@@ -3,10 +3,9 @@
 ##Awesome Guns
 
 This is a big modification for the [OpenXcom game](http://openxcom.org).
-
-Current state: released, [read more...](https://canadianbeaver.github.io/AwesomeGuns)
-
+Current state: released 
 Current plans: rolling-release
+WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)
 
 ###Why am I doing it?
 
@@ -40,7 +39,7 @@ I avoid to make changes in alien's missions or UFOs. There are a few mods for th
 - [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
 - [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
 
-Awesome Guns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving, at least the holster (quick), breast and right shoulder must be empty.
+Awesome Guns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving, at least the right shoulder, right leg, left shoulder, left leg, and belt must be empty.
 
 I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
 - Weapon Rework/Expansion
