@@ -313,7 +313,7 @@ div.downloads .btn:hover {
 @media screen and (max-width: 77em) { .site-footer-before div.funny { display: none; } }  
 @media screen and (max-width: 42em) { 
   .site-footer-before-center div.funny { display: none; }
-  .site-footer-before-center { margin-top: 2rem; } }  
+  .site-footer-before-center { margin-top: 2rem !important; } }  
   
 .site-footer {
   text-align: center;  
