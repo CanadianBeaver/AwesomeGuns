@@ -307,7 +307,7 @@ div.downloads .btn:hover {
 @media screen and (max-width: 42em) {  .site-footer-before { margin-top: 2rem; } }
 
 .site-footer-before div.funny { position: absolute; height: 0px; }
-.site-footer-before div.funny img { position: relative; }
+.site-footer-before div.funny img { position: absolute; }
 @media screen and (max-width: 77em) { .site-footer-before div.funny { display: none; } }  
   
 .site-footer {
