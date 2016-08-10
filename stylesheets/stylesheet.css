@@ -311,6 +311,7 @@ div.downloads .btn:hover {
 .site-footer-before div.funny { position: absolute; height: 0px; }
 .site-footer-before-center div.funny img, .site-footer-before div.funny img { position: absolute; }
 @media screen and (max-width: 77em) { .site-footer-before div.funny { display: none; } }  
+@media screen and (max-width: 42em) { .site-footer-before-center div.funny { display: none; } }  
   
 .site-footer {
   text-align: center;  
