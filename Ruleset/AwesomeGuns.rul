@@ -6246,7 +6246,7 @@ extraSprites:
     subY: 3
     files:
       385: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_GrenadeLauncher.png
-      455: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rifle_AL.png
+      455: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rifle_AL.gif
       420: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle.png
       490: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle_AL.png
       525: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rail.png
