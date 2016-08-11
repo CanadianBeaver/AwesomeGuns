@@ -1870,7 +1870,7 @@ items:
     bigSprite: 128
     floorSprite: 128
     handSprite: 584
-    bulletSprite: 11
+    bulletSprite: 15
     fireSound: 8033
     compatibleAmmo:
       - STR_GL_HE_AMMO
@@ -2561,7 +2561,7 @@ items:
     bigSprite: 160
     floorSprite: 160
     handSprite: 720
-    bulletSprite: 15
+    bulletSprite: 11
     fireSound: 8067
     compatibleAmmo:
       - STR_RAILGUN_SLUGS
@@ -6242,22 +6242,15 @@ extraSprites:
 # Improve hits and sprites
 
   - type: SMOKE.PCK
-    width: 160
-    height: 80
-    subX: 32
-    subY: 40
-    files:
-      56: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY.gif
-      66: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY_HEAVY.gif
-      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_PISTOL.gif
-
-  - type: SMOKE.PCK
     width: 320
     height: 40
     subX: 32
     subY: 40
     files:
+      56: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY.gif
+      66: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY_HEAVY.gif
       76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
+      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_PISTOL.gif
       96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.gif
       106: Resources/AwesomeGuns/Weapons/SPRITES/Hit_RAILGUN.gif
       116: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
@@ -6278,11 +6271,11 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_GrenadeLauncher.png
+      385: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rail.gif
       455: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rifle_AL.gif
-      420: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle.png
-      490: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle_AL.png
-      525: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rail.png
+      420: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle.gif
+      490: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle_AL.gif
+      525: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_GrenadeLauncher.gif
 
   - type: Projectiles
     width: 105
@@ -6290,8 +6283,8 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      560: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma.png
-      665: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma_BLUE.png
+      560: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma.gif
+      665: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma_BLUE.gif
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
