@@ -85,6 +85,9 @@ regions:
       - name: Houston
         lon: 264.62
         lat: -29.75
+      - name: NewOrleans
+        lon: 269.85
+        lat: -29.85
       - name: Phoenix
         lon: 248.37
         lat: -33.67
@@ -194,6 +197,9 @@ regions:
       - name: Recife
         lon: 324.65
         lat: 8.07
+      - name: LaPaz
+        lon: 292.65
+        lat: 17.49
   - type: STR_EUROPE
     cities:
       - name: Athens
@@ -286,6 +292,12 @@ regions:
       - name: Voronezh
         lon: 39.12
         lat: -51.40
+      - name: Kaliningrad
+        lon: 20.10
+        lat: -54.97
+      - name: Riga
+        lon: 24.16
+        lat: -57.13
       - name: Ufa
         lon: 55.58
         lat: -54.44
@@ -6773,12 +6785,14 @@ extraStrings:
   - type: en
     strings:
       Quebec: "Quebec City"
+      NewOrleans: "New Orleans"
       Reykjavik: "Reykjavík"
       Panama: "Panama City"
       Belem: "Belém"
       Asuncion: "Asunción"
       Sanfrancisco: "San Francisco"
       ElPaso: "El Paso"
+      LaPaz: "La Paz"
 
   - type: ru
     strings:
@@ -6792,6 +6806,7 @@ extraStrings:
       Atlanta: "Атланта"
       Boston: "Бостон"
       Houston: "Хьюстон"
+      NewOrleans: "Новый Орлеан"
       Phoenix: "Финикс"
       Denver: "Денвер"
       Seattle: "Сиэтл"
@@ -6829,6 +6844,7 @@ extraStrings:
       Asuncion: "Асунсьон"
       Fortaleza: "Форталеза"
       Recife: "Ресифи"
+      LaPaz: "Ла-Пас"
       # EUROPE
       Athens: "Афины"
       Barcelona: "Барселона"
@@ -6860,6 +6876,8 @@ extraStrings:
       Leningrad: "Санкт-Петербург"
       Sevastopol: "Севастополь"
       Voronezh: "Воронеж"
+      Kaliningrad: "Калининград"
+      Riga: "Рига"
       Ufa: "Уфа"
       # NORTH AFRICA
       Jerusalem: "Иерусалим"
