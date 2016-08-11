@@ -1012,7 +1012,7 @@ items:
     bigSprite: 43
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 4
+    bulletSprite: 13
     fireSound: 12
     compatibleAmmo:
       - STR_HWP_CANNON_SHELLS
@@ -1056,7 +1056,7 @@ items:
     bigSprite: 42
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 0
+    bulletSprite: 18
     fireSound: 52
     compatibleAmmo:
       - STR_HWP_ROCKETS
@@ -1099,7 +1099,7 @@ items:
     bigSprite: 54
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 7 #bulletSprite: 5
+    bulletSprite: 31
     bulletSpeed: 5
     fireSound: 8055 #fireSound: 11
     hitSound: 8054 #hitSound: 19
@@ -1125,7 +1125,7 @@ items:
     bigSprite: 40
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 8
+    bulletSprite: 32
     bulletSpeed: 5
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
@@ -1161,13 +1161,22 @@ items:
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 96 #hitAnimation: 46
+    bulletSprite: 32
     bulletSpeed: 5
 
   - type: SECTOPOD_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 96 #hitAnimation: 46
+    bulletSprite: 32
     bulletSpeed: 5
+
+  - type: CELATID_WEAPON
+    fireSound: 51
+    hitSound: 19
+    hitAnimation: 126 #hitAnimation: 46
+    bulletSprite: 33 #bulletSprite: 8
+    arcingShot: true
 
 # CONVENTIONAL weapons
 
@@ -1179,7 +1188,7 @@ items:
     bigSprite: 3
     floorSprite: 3
     handSprite: 96
-    bulletSprite: 1
+    bulletSprite: 0
     fireSound: 8001 #fireSound: 4
     compatibleAmmo:
       - STR_PISTOL_CLIP
@@ -1209,6 +1218,7 @@ items:
     bigSprite: 4
     floorSprite: 4
     handSprite: 408
+    bulletSprite: 0
     hitSound: 8002 #hitSound: 22
     bulletSpeed: 0
     hitAnimation: 26
@@ -1226,6 +1236,7 @@ items:
     bigSprite: 102
     floorSprite: 102
     handSprite: 416
+    bulletSprite: 1
     bulletSpeed: 1
     hitSound: 8002 #hitSound: 22
     hitAnimation: 56
@@ -1244,7 +1255,7 @@ items:
     bigSprite: 104
     floorSprite: 104
     handSprite: 424
-    bulletSprite: 1
+    bulletSprite: 0
     fireSound: 8005
     compatibleAmmo:
       - STR_MACHINE_PISTOL_CLIP
@@ -1274,6 +1285,7 @@ items:
     bigSprite: 105
     floorSprite: 105
     handSprite: 432
+    bulletSprite: 0
     bulletSpeed: 0
     hitSound: 8002
     hitAnimation: 26
@@ -1291,6 +1303,7 @@ items:
     bigSprite: 106
     floorSprite: 106
     handSprite: 440
+    bulletSprite: 1
     bulletSpeed: 1
     hitSound: 8002
     hitAnimation: 56
@@ -1342,6 +1355,7 @@ items:
     bigSprite: 2
     floorSprite: 2
     handSprite: 456
+    bulletSprite: 2
     bulletSpeed: 1
     hitSound: 8010 #hitSound: 22
     hitAnimation: 26
@@ -1359,6 +1373,7 @@ items:
     bigSprite: 110
     floorSprite: 110
     handSprite: 464
+    bulletSprite: 3
     bulletSpeed: 2
     hitSound: 8010 #hitSound: 22
     hitAnimation: 56
@@ -1377,7 +1392,7 @@ items:
     bigSprite: 112
     floorSprite: 112
     handSprite: 472
-    bulletSprite: 12
+    bulletSprite: 4
     fireSound: 8015
     compatibleAmmo:
       - STR_SNIPER_RIFLE_CLIP
@@ -1409,6 +1424,7 @@ items:
     bigSprite: 113
     floorSprite: 113
     handSprite: 480
+    bulletSprite: 4
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 26
@@ -1426,6 +1442,7 @@ items:
     bigSprite: 114
     floorSprite: 114
     handSprite: 488
+    bulletSprite: 5
     bulletSpeed: 4
     hitSound: 8010
     hitAnimation: 56
@@ -1443,7 +1460,7 @@ items:
     bigSprite: 116
     floorSprite: 116
     handSprite: 496
-    bulletSprite: 13
+    bulletSprite: 6
     fireSound: 8011 #fireSound: 4
     compatibleAmmo:
       - STR_ALLOY_RIFLE_CLIP
@@ -1479,6 +1496,7 @@ items:
     bigSprite: 117
     floorSprite: 117
     handSprite: 504
+    bulletSprite: 6
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 66
@@ -1496,6 +1514,7 @@ items:
     bigSprite: 118
     floorSprite: 118
     handSprite: 512
+    bulletSprite: 7
     bulletSpeed: 3
     hitSound: 8013
     hitAnimation: 76
@@ -1513,6 +1532,7 @@ items:
     bigSprite: 119
     floorSprite: 119
     handSprite: 384
+    bulletSprite: 8
     bulletSpeed: 3
     hitSound: 0
     hitAnimation: 0
@@ -1531,7 +1551,7 @@ items:
     bigSprite: 120
     floorSprite: 120
     handSprite: 520
-    bulletSprite: 14
+    bulletSprite: 9
     fireSound: 8017
     compatibleAmmo:
       - STR_ALLOY_SNIPER_RIFLE_CLIP
@@ -1563,6 +1583,7 @@ items:
     bigSprite: 121
     floorSprite: 121
     handSprite: 528
+    bulletSprite: 9
     bulletSpeed: 5
     hitSound: 8018
     hitAnimation: 66
@@ -1580,6 +1601,7 @@ items:
     bigSprite: 122
     floorSprite: 122
     handSprite: 536
+    bulletSprite: 10
     bulletSpeed: 5
     hitSound: 8013
     hitAnimation: 76
@@ -1597,6 +1619,7 @@ items:
     bigSprite: 123
     floorSprite: 123
     handSprite: 392
+    bulletSprite: 11
     bulletSpeed: 5
     hitSound: 0
     hitAnimation: 0
@@ -1687,7 +1710,7 @@ items:
     bigSprite: 11
     floorSprite: 11
     handSprite: 24
-    bulletSprite: 4
+    bulletSprite: 13
     fireSound: 8025 #fireSound: 12
     compatibleAmmo:
       - STR_HC_HE_AMMO
@@ -1777,7 +1800,7 @@ items:
     bigSprite: 7
     floorSprite: 7
     handSprite: 32
-    bulletSprite: 3
+    bulletSprite: 14
     fireSound: 8029 #fireSound: 12
     compatibleAmmo:
       - STR_AC_HE_AMMO
@@ -1904,6 +1927,7 @@ items:
     bigSprite: 129
     floorSprite: 129
     handSprite: 592
+    bulletSprite: 15
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1923,6 +1947,7 @@ items:
     bigSprite: 130
     floorSprite: 130
     handSprite: 600
+    bulletSprite: 16
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1942,6 +1967,7 @@ items:
     bigSprite: 131
     floorSprite: 131
     handSprite: 608
+    bulletSprite: 17
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -1960,7 +1986,7 @@ items:
     bigSprite: 15
     floorSprite: 15
     handSprite: 72
-    bulletSprite: 0
+    bulletSprite: 18
     fireSound: 8037 #fireSound: 52
     compatibleAmmo:
       - STR_LARGE_ROCKET
@@ -1985,6 +2011,7 @@ items:
     dropoff: 5
 
   - type: STR_SMALL_ROCKET
+    listOrder: 3400
     requires:
       - STR_FUSION_ROCKET
     size: 0.2
@@ -1994,6 +2021,7 @@ items:
     bigSprite: 16
     floorSprite: 16
     handSprite: 688
+    bulletSprite: 19
     hitSound: 0
     hitAnimation: 0
     power: 160 #power: 75, power: 200
@@ -2006,6 +2034,7 @@ items:
     armor: 6
 
   - type: STR_LARGE_ROCKET
+    listOrder: 3200
     size: 0.16
     costBuy: 850 #costBuy: 900
     costSell: 630 #costSell: 720
@@ -2013,6 +2042,7 @@ items:
     bigSprite: 17
     floorSprite: 17
     handSprite: 696
+    bulletSprite: 18
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -2025,6 +2055,7 @@ items:
     armor: 6
 
   - type: STR_INCENDIARY_ROCKET
+    listOrder: 3300
     size: 0.16
     costBuy: 1100 #costBuy: 1200
     costSell: 800 #costSell: 960
@@ -2032,6 +2063,7 @@ items:
     bigSprite: 18
     floorSprite: 18
     handSprite: 704
+    bulletSprite: 18
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
@@ -2051,7 +2083,7 @@ items:
     bigSprite: 148
     floorSprite: 148
     handSprite: 712
-    bulletSprite: 0
+    bulletSprite: 18
     bulletSpeed: 3
     hitSound: 8038 #hitSound: 0
     hitAnimation: 0
@@ -2194,7 +2226,7 @@ items:
     bigSprite: 5
     floorSprite: 5
     handSprite: 112
-    bulletSprite: 5
+    bulletSprite: 20
     bulletSpeed: 6
     fireSound: 8051 #fireSound: 11
     hitSound: 8054 #hitSound: 19
@@ -2226,7 +2258,7 @@ items:
     bigSprite: 0
     floorSprite: 0
     handSprite: 8
-    bulletSprite: 6
+    bulletSprite: 22 # 21
     bulletSpeed: 8
     fireSound: 8052 #fireSound: 11
     hitSound: 8054 #hitSound: 19
@@ -2259,7 +2291,7 @@ items:
     bigSprite: 6
     floorSprite: 6
     handSprite: 16
-    bulletSprite: 7
+    bulletSprite: 22
     bulletSpeed: 0 #bulletSpeed: 4
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
@@ -2298,7 +2330,7 @@ items:
     bigSprite: 32
     floorSprite: 31
     handSprite: 104
-    bulletSprite: 16 #bulletSprite: 8
+    bulletSprite: 23 #bulletSprite: 8
     bulletSpeed: 1
     fireSound: 8061 #fireSound: 18
     compatibleAmmo:
@@ -2350,7 +2382,7 @@ items:
     bigSprite: 31
     floorSprite: 30
     handSprite: 48
-    bulletSprite: 17 #bulletSprite: 8
+    bulletSprite: 24 #bulletSprite: 8
     bulletSpeed: 2
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
@@ -2403,7 +2435,7 @@ items:
     bigSprite: 30
     floorSprite: 29
     handSprite: 40
-    bulletSprite: 18 #bulletSprite: 8
+    bulletSprite: 25 #bulletSprite: 8
     bulletSpeed: 3
     fireSound: 8063 #fireSound: 18
     compatibleAmmo:
@@ -2458,7 +2490,7 @@ items:
     bigSprite: 164
     floorSprite: 164
     handSprite: 792
-    bulletSprite: 19 #bulletSprite: 8
+    bulletSprite: 28 #bulletSprite: 8
     bulletSpeed: 1
     fireSound: 8061 #fireSound: 18
     compatibleAmmo:
@@ -2509,7 +2541,7 @@ items:
     bigSprite: 167
     floorSprite: 167
     handSprite: 760
-    bulletSprite: 21 #bulletSprite: 8
+    bulletSprite: 30 #29 bulletSprite: 8
     bulletSpeed: 2
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
@@ -2561,7 +2593,7 @@ items:
     bigSprite: 160
     floorSprite: 160
     handSprite: 720
-    bulletSprite: 11
+    bulletSprite: 12
     fireSound: 8067
     compatibleAmmo:
       - STR_RAILGUN_SLUGS
@@ -2613,7 +2645,7 @@ items:
     bigSprite: 37
     floorSprite: 36
     handSprite: 64
-    bulletSprite: 9
+    bulletSprite: 26
     bulletSpeed: 0
     fireSound: 53
     compatibleAmmo:
@@ -2669,7 +2701,7 @@ items:
     bigSprite: 35
     floorSprite: 34
     handSprite: 56
-    bulletSprite: 10
+    bulletSprite: 27
     bulletSpeed: 0
     fireSound: 53
     compatibleAmmo:
@@ -6241,6 +6273,14 @@ extraSprites:
 
 # Improve hits and sprites
 
+  - type: Projectiles
+    width: 105
+    height: 102
+    subX: 3
+    subY: 3
+    files:
+      0: Resources/AwesomeGuns/Weapons/SPRITES/BulletSprites.gif
+
   - type: SMOKE.PCK
     width: 320
     height: 40
@@ -6254,6 +6294,7 @@ extraSprites:
       96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.gif
       106: Resources/AwesomeGuns/Weapons/SPRITES/Hit_RAILGUN.gif
       116: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
+      126: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_ACID.gif
 
   - type: HIT.PCK
     width: 320
@@ -6264,27 +6305,6 @@ extraSprites:
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
       14: Resources/AwesomeGuns/Weapons/SPRITES/Hit_REAPER.gif
       24: Resources/AwesomeGuns/Weapons/SPRITES/Hit_CHRYSSALID.gif
-
-  - type: Projectiles
-    width: 105
-    height: 3
-    subX: 3
-    subY: 3
-    files:
-      385: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rail.gif
-      455: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Rifle_AL.gif
-      420: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle.gif
-      490: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_SniperRifle_AL.gif
-      525: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_GrenadeLauncher.gif
-
-  - type: Projectiles
-    width: 105
-    height: 9
-    subX: 3
-    subY: 3
-    files:
-      560: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma.gif
-      665: Resources/AwesomeGuns/Weapons/SPRITES/Sprites_Plasma_BLUE.gif
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
