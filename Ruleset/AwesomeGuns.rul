@@ -64,6 +64,9 @@ regions:
       - name: Edmonton
         lon: 245.67
         lat: -53.32
+      - name: Calgary
+        lon: 245.67
+        lat: -51.03
       - name: Halifax
         lon: 299
         lat: -45.7
@@ -82,6 +85,9 @@ regions:
       - name: Houston
         lon: 264.62
         lat: -29.75
+      - name: Phoenix
+        lon: 248.37
+        lat: -33.67
       - name: Denver
         lon: 252.85
         lat: -40
@@ -129,6 +135,9 @@ regions:
         lat: -25.91
   - type: STR_ARCTIC
     cities:
+      - name: Iqaluit
+        lon: -68.31
+        lat: -63.44
       - name: Inuvik
         lon: 224.18
         lat: -68.74
@@ -193,9 +202,15 @@ regions:
       - name: Barcelona
         lon: 1.6
         lat: -41.35
+      - name: Seville
+        lon: -5.59
+        lat: -37.23
       - name: Belgrade
         lon: 20.2
         lat: -44.4
+      - name: Dublin
+        lon: 353.56
+        lat: -53.20
       - name: Belfast
         lon: 353.5
         lat: -55
@@ -217,6 +232,9 @@ regions:
       - name: Milan
         lon: 8.9
         lat: -44.75
+      - name: Palermo
+        lon: 13.22
+        lat: -37.83
       - name: Venice
         lon: 12.7
         lat: -45.5
@@ -268,6 +286,9 @@ regions:
       - name: Voronezh
         lon: 39.12
         lat: -51.40
+      - name: Ufa
+        lon: 55.58
+        lat: -54.44
   - type: STR_NORTH_AFRICA
     cities:
       - name: Jerusalem
@@ -6764,12 +6785,14 @@ extraStrings:
       Toronto: "Торонто"
       Quebec: "Квебек"
       Edmonton: "Эдмонтон"
+      Calgary: "Калгари"
       Halifax: "Галифакс"
       Saskatoon: "Саскатун"
       Winnipeg: "Виннипег"
       Atlanta: "Атланта"
       Boston: "Бостон"
       Houston: "Хьюстон"
+      Phoenix: "Финикс"
       Denver: "Денвер"
       Seattle: "Сиэтл"
       Chihuahua: "Чиуауа"
@@ -6787,6 +6810,7 @@ extraStrings:
       Minneapolis: "Миннеаполис"
       # ARCTIC
       Inuvik: "Инувик"
+      Iqaluit: "Икалуит"
       Barrow: "Барроу"
       Murmansk: "Мурманск"
       Kuujjuaq: "Кууджуак"
@@ -6808,7 +6832,9 @@ extraStrings:
       # EUROPE
       Athens: "Афины"
       Barcelona: "Барселона"
+      Seville: "Севилья"
       Belgrade: "Белград"
+      Dublin: "Дублин"
       Belfast: "Белфаст"
       Marseille: "Марсель"
       Bordeaux: "Бордо"
@@ -6816,6 +6842,7 @@ extraStrings:
       Munich: "Мюнхен"
       Cologne: "Кёльн"
       Milan: "Милан"
+      Palermo: "Палермо"
       Venice: "Венеция"
       Lisbon: "Лиссабон"
       Ferrol: "Ферроль"
@@ -6833,6 +6860,7 @@ extraStrings:
       Leningrad: "Санкт-Петербург"
       Sevastopol: "Севастополь"
       Voronezh: "Воронеж"
+      Ufa: "Уфа"
       # NORTH AFRICA
       Jerusalem: "Иерусалим"
       Tripoli: "Триполи"
