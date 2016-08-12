@@ -6279,7 +6279,7 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      0: Resources/AwesomeGuns/Weapons/SPRITES/BulletSprites.gif
+      0: Resources/AwesomeGuns/Weapons/SPRITES/Projectiles.gif
 
   - type: SMOKE.PCK
     width: 320
@@ -6298,13 +6298,11 @@ extraSprites:
 
   - type: HIT.PCK
     width: 320
-    height: 40
+    height: 120
     subX: 32
     subY: 40
     files:
-      4: Resources/AwesomeGuns/Weapons/SPRITES/Hit_STUN.gif
-      14: Resources/AwesomeGuns/Weapons/SPRITES/Hit_REAPER.gif
-      24: Resources/AwesomeGuns/Weapons/SPRITES/Hit_CHRYSSALID.gif
+      4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
@@ -7170,7 +7168,7 @@ extraStrings:
       STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing bluets."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
-      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New sniper rifle"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New Sniper Rifle"
       STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 bullets."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Thunderbolt-AP clip"
       STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
