@@ -1171,12 +1171,14 @@ items:
     bulletSprite: 32
     bulletSpeed: 5
 
-  - type: CELATID_WEAPON
-    fireSound: 51
-    hitSound: 19
+  - type: CELATID_WEAPON # acid
     hitAnimation: 126 #hitAnimation: 46
     bulletSprite: 33 #bulletSprite: 8
     arcingShot: true
+
+  - type: SILACOID_WEAPON # stone
+    meleeAnimation: 34
+    accuracyMelee: 200 #accuracyMelee: 100
 
 # CONVENTIONAL weapons
 
@@ -6298,11 +6300,16 @@ extraSprites:
 
   - type: HIT.PCK
     width: 320
-    height: 120
+    height: 160
     subX: 32
     subY: 40
     files:
+      # 4: STUN
+      #14: REAPER
+      #24: CHRYSSALID
+      #34: SILACOID
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
+
 
 # Change items visualization on the battle screen, in the hands and on the floor
 
