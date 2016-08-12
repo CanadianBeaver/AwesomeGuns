@@ -31,7 +31,6 @@ If you have the same preferences, I would like to invite you to create it togeth
 * Download the [.zip](https://github.com/CanadianBeaver/AwesomeGuns/zipball/master) or the [.tar.gz](https://github.com/CanadianBeaver/AwesomeGuns/tarball/master) achrcive and extract files.
 * Copy the *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
-* The folder *WorkFiles* contains only work documents. Files in this folder are used just for development process.
 
 ###Compatible mods and special thanks
 
