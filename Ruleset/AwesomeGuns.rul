@@ -2543,7 +2543,7 @@ items:
     bigSprite: 167
     floorSprite: 167
     handSprite: 760
-    bulletSprite: 30 #29 bulletSprite: 8
+    bulletSprite: 29 #bulletSprite: 8
     bulletSpeed: 2
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
@@ -6307,7 +6307,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      136: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
+      136: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Converted.gif
 
 
   - type: HIT.PCK
