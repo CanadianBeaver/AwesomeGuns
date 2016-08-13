@@ -1129,7 +1129,7 @@ items:
     bulletSpeed: 4
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 96 #hitAnimation: 46
+    hitAnimation: 116 #hitAnimation: 46
     power: 110
     damageType: 5
     accuracySnap: 80 #accuracySnap: 85
@@ -1160,14 +1160,14 @@ items:
   - type: CYBERDISC_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 96 #hitAnimation: 46
+    hitAnimation: 116 #hitAnimation: 46
     bulletSprite: 32
     bulletSpeed: 5
 
   - type: SECTOPOD_WEAPON
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 96 #hitAnimation: 46
+    hitAnimation: 116 #hitAnimation: 46
     bulletSprite: 32
     bulletSpeed: 5
 
@@ -2366,7 +2366,7 @@ items:
     floorSprite: 33
     handSprite: 736
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 86 #hitAnimation: 46
+    hitAnimation: 96 #hitAnimation: 46
     power: 52
     damageType: 5
     clipSize: 26
@@ -2472,7 +2472,7 @@ items:
     floorSprite: 163 #floorSprite: 33
     handSprite: 768
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 46
+    hitAnimation: 106 #hitAnimation: 46
     power: 115
     damageType: 5
     clipSize: 35
@@ -2526,7 +2526,7 @@ items:
     floorSprite: 165
     handSprite: 744
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 116
+    hitAnimation: 136
     power: 48 #power: 52
     damageType: 5
     clipSize: 13 #clipSize: 26
@@ -2578,7 +2578,7 @@ items:
     floorSprite: 168
     handSprite: 800
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 116
+    hitAnimation: 136
     power: 74 #power: 80
     damageType: 5
     clipSize: 14
@@ -2627,7 +2627,7 @@ items:
     handSprite: 728
     bulletSpeed: 8
     hitSound: 8018
-    hitAnimation: 106
+    hitAnimation: 86
     power: 125
     damageType: 1
     clipSize: 1
@@ -6285,18 +6285,30 @@ extraSprites:
 
   - type: SMOKE.PCK
     width: 320
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      #56: ALLOY standard
+      #66: ALLOY improved
+      #76: ACID improved
+      #86: RAILGUN
+      56: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Conventional.gif
+
+      #96: PISTOL
+      #106: HEAVY, Rifle use default sprites = 46
+      #116: TANKs
+      #126: ACID
+      96: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Plasma.gif
+
+  - type: SMOKE.PCK
+    width: 320
     height: 40
     subX: 32
     subY: 40
     files:
-      56: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY.gif
-      66: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ALLOY_HEAVY.gif
-      76: Resources/AwesomeGuns/Weapons/SPRITES/Hit_ACID.gif
-      86: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_PISTOL.gif
-      96: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA.gif
-      106: Resources/AwesomeGuns/Weapons/SPRITES/Hit_RAILGUN.gif
-      116: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
-      126: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_ACID.gif
+      136: Resources/AwesomeGuns/Weapons/SPRITES/Hit_PLASMA_BLUE.gif
+
 
   - type: HIT.PCK
     width: 320
