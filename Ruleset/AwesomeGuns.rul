@@ -1125,11 +1125,11 @@ items:
     bigSprite: 40
     floorSprite: 0
     handSprite: 0
-    bulletSprite: 32
+    bulletSprite: 30
     bulletSpeed: 4
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
-    hitAnimation: 116 #hitAnimation: 46
+    hitAnimation: 146 #hitAnimation: 46
     power: 110
     damageType: 5
     accuracySnap: 80 #accuracySnap: 85
@@ -6303,10 +6303,12 @@ extraSprites:
 
   - type: SMOKE.PCK
     width: 320
-    height: 40
+    height: 80
     subX: 32
     subY: 40
     files:
+      #136: Converted Pistol and Rifle
+      #146: HoverTank
       136: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Converted.gif
 
 
