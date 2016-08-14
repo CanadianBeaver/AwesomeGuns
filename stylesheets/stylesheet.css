@@ -115,12 +115,14 @@ div.donate
 
 div.donate p.text
 {
+  max-width: 175px;
   font-size: xx-small;
   color: #999999;
+  text-align: center;
 }
 
 @media screen and (max-width: 42em) {
-  div.donate { position: static; text-align: right; } }
+  div.donate { position: static; text-align: right; max-width: 33%; } }
       
 .page-header {
   color: #fff;
