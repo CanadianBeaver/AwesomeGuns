@@ -121,7 +121,8 @@ div.donate p.text
 }
 
 @media screen and (max-width: 64em) {
-  div.donate { position: static; max-width: 33%; right: unset; } }
+  div.donate { position: static; max-width: 90%; right: unset; text-align: right;  } 
+  div.donate p.text {max-width: 33%;} }
       
 .page-header {
   color: #fff;
