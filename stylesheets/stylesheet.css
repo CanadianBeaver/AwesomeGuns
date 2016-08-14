@@ -120,11 +120,11 @@ div.donate .text
   color: #999999;
 }
 
-.indexh1 { margin-top: 0px; }
+.indexh1 { margin-top: 0px !important; }
 
 @media screen and (min-width: 42em) and (max-width: 68em) {
   div.donate .text { display: none; }
-  .indexh1 { margin-top: 12px; } }
+  .indexh1 { margin-top: 12px !important; } }
 
 @media screen and (max-width: 42em) {
   div.donate { position: static; max-width: 100%; right: unset; text-align: right; margin-top: -18px;  } 
