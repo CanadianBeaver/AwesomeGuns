@@ -122,10 +122,11 @@ div.donate .text
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
+  div.donate { margin-top: -12px;  }   
   div.donate .text { display: none; } }
 
 @media screen and (max-width: 42em) {
-  div.donate { position: static; max-width: 100%; right: unset; text-align: right;  } 
+  div.donate { position: static; max-width: 100%; right: unset; text-align: right; margin-top: -18px;  } 
   div.donate .text {display: none; } }
 
 .page-header {
