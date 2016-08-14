@@ -105,6 +105,15 @@ div.downloads .btn:hover {
       margin-right: 0.1rem;}
 .btnmenu.selected  {
   font-size: 1rem; } }      
+  
+div.donate
+{
+  position: absolute;
+  right: 48px;
+}
+
+@media screen and (max-width: 42em) {
+  .page-header { position: static; } }
       
 .page-header {
   color: #fff;
