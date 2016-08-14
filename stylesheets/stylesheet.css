@@ -118,6 +118,7 @@ div.donate .text
 {
   font-size: xx-small;
   color: #999999;
+  margin-bottom: 4px;
 }
 
 @media screen and (max-width: 64em) {
