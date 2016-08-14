@@ -122,15 +122,12 @@ div.donate .text
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  div.donate { position: static; max-width: 33%; right: unset;   } 
-  div.donate .text { content: "If you'd like to support it, please make a donation via PayPal."; }
-  
-}
+  div.donate .text { content: "If you'd like to support it, please make a donation via PayPal."; } }
 
 @media screen and (max-width: 42em) {
   div.donate { position: static; max-width: 100%; right: unset; text-align: right;  } 
   div.donate .text {display: none; } }
-      
+
 .page-header {
   color: #fff;
   text-align: center;
