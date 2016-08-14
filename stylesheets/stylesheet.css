@@ -122,7 +122,7 @@ div.donate .text
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  div.donate { position: static; max-width: 33%; right: unset;   } 
+  div.donate { position: static; max-width: 33%; right: unset;   } }
 
 @media screen and (max-width: 42em) {
   div.donate { position: static; max-width: 100%; right: unset; text-align: right;  } 
