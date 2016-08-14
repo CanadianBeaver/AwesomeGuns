@@ -118,12 +118,15 @@ div.donate .text
 {
   font-size: xx-small;
   color: #999999;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-@media screen and (max-width: 64em) {
-  div.donate { position: static; max-width: 90%; right: unset; text-align: right;  } 
-  div.donate .text {max-width: 33%;} }
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  div.donate { position: static; max-width: 33%; right: unset;   } 
+
+@media screen and (max-width: 42em) {
+  div.donate { position: static; max-width: 100%; right: unset; text-align: right;  } 
+  div.donate .text {display: none; } }
       
 .page-header {
   color: #fff;
