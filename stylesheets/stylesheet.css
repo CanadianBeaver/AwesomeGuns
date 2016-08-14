@@ -112,6 +112,12 @@ div.donate
   right: 12px;
 }
 
+div.donate p.text
+{
+  font-size: small;
+  color: #666666;
+}
+
 @media screen and (max-width: 42em) {
   div.donate { position: static; text-align: right; } }
       
