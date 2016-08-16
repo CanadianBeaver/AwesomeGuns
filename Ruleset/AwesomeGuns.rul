@@ -606,7 +606,7 @@ craftWeapons:
   - type: STR_AVALANCHE # sum.damage = 420, prob.damage ~ 63, sec.damage ~ 0.875
     sprite: 1
     sound: 14 #sound: 5
-    damage: 210 #damage: 100
+    damage: 150 #damage: 100
     range: 42 #range: 60 (42 is used by STR_TERROR_SHIP)
     accuracy: 12 #accuracy: 80
     reloadCautious: 48
@@ -654,7 +654,7 @@ craftWeapons:
   - type: STR_ALLOY_AVALANCHE
     sprite: 1
     sound: 14 #sound: 5
-    damage: 210 #damage: 100
+    damage: 150 #damage: 100
     range: 42 #range: 60
     accuracy: 36 #accuracy: 80
     reloadCautious: 40 #reloadCautious: 48
