@@ -1,0 +1,6 @@
+name: "Awesome Guns"
+version: 1.1
+description: "an awesome modification of the OpenXcom game"
+author: Radu Martin (CanadianBeaver)
+id: "AwesomeGuns"
+master: "xcom1"
