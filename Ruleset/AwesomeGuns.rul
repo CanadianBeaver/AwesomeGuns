@@ -1149,13 +1149,13 @@ items:
 # Alien's Weapons
 
   - type: CHRYSSALID_WEAPON
-    meleeAnimation: 24
+    meleeAnimation: 14
 
   - type: ZOMBIE_WEAPON
-    meleeAnimation: 24
+    meleeAnimation: 14
 
   - type: REAPER_WEAPON
-    meleeAnimation: 14
+    meleeAnimation: 24
 
   - type: CYBERDISC_WEAPON
     fireSound: 8063 #fireSound: 18
@@ -2175,7 +2175,7 @@ items:
     size: 0.15
     costBuy: 4000 #costBuy: 1500
     costSell: 3000
-    weight: 6
+    weight: 5 #weight: 6
     bigSprite: 22
     floorSprite: 22
     handSprite: 224
@@ -2208,7 +2208,7 @@ items:
     listOrder: 4505
     size: 0.1
     costSell: 14850
-    weight: 4
+    weight: 3
     bigSprite: 156
     floorSprite: 156
     handSprite: 240
@@ -6319,8 +6319,8 @@ extraSprites:
     subY: 40
     files:
       # 4: STUN
-      #14: REAPER
-      #24: CHRYSSALID
+      #14: CHRYSSALID
+      #24: REAPER
       #34: SILACOID
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
 
