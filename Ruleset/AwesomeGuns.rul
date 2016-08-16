@@ -4389,7 +4389,7 @@ manufacture:
     cost: 31875
     requiredItems:
       STR_AVALANCHE_LAUNCHER: 1
-      STR_ALIEN_ALLOYS: 8
+      STR_ALIEN_ALLOYS: 12
       STR_UFO_NAVIGATION: 1
 
   - name: STR_ALLOY_STINGRAY_LAUNCHER
@@ -4402,7 +4402,7 @@ manufacture:
     cost: 4250
     requiredItems:
       STR_STINGRAY_LAUNCHER: 1
-      STR_ALIEN_ALLOYS: 6
+      STR_ALIEN_ALLOYS: 10
       STR_UFO_NAVIGATION: 1
 
   - name: STR_ALLOY_CANNON
@@ -4429,7 +4429,7 @@ manufacture:
     time: 2000
     cost: 176000
     requiredItems:
-      STR_UFO_NAVIGATION: 1
+      STR_UFO_NAVIGATION: 2
       STR_ALIEN_ALLOYS: 20
       STR_ELERIUM_115: 10
 
@@ -4439,8 +4439,8 @@ manufacture:
     requires:
       - STR_ELECTROMAGNETIC_CANNON
     space: 4
-    time: 620
-    cost: 3500
+    time: 550
+    cost: 3200
     requiredItems:
       STR_ALIEN_ALLOYS: 8
 
@@ -4452,9 +4452,9 @@ manufacture:
     time: 1800 #time: 300
     cost: 182000
     requiredItems:
-      STR_UFO_NAVIGATION: 1
-      STR_ALIEN_ALLOYS: 12
-      STR_ELERIUM_115: 8
+      STR_UFO_NAVIGATION: 4
+      STR_ALIEN_ALLOYS: 15
+      STR_ELERIUM_115: 12
 
   - name: STR_PLASMA_BEAM  # alien technologies cannot be reproduced, but this is an unique exception
     category: STR_CRAFT_WEAPON
@@ -4465,10 +4465,10 @@ manufacture:
     cost: 226000
     requiredItems:
       STR_UFO_NAVIGATION: 1
-      STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 18
-      STR_HEAVY_PLASMA: 18
-      STR_HEAVY_PLASMA_CLIP: 36
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 36
+      STR_HEAVY_PLASMA: 27
+      STR_HEAVY_PLASMA_CLIP: 54
 
   - name: STR_FUSION_BALL_LAUNCHER # AVALANCHE upgrade launcher
     category: STR_CRAFT_WEAPON
@@ -4478,8 +4478,10 @@ manufacture:
     time: 2000 #time: 400
     cost: 242000
     requiredItems:
+      STR_UFO_NAVIGATION: 2
       STR_AVALANCHE_LAUNCHER: 1
-      STR_BLASTER_LAUNCHER: 1
+      STR_BLASTER_LAUNCHER: 2
+      STR_ALIEN_ALLOYS: 8
 
   - name: STR_FUSION_BALL # AVALANCHE upgrade missile
     listOrder: 105
@@ -4490,10 +4492,9 @@ manufacture:
     time: 600
     cost: 28000
     requiredItems:
-      #STR_ELERIUM_115: 4
       STR_UFO_NAVIGATION: 1
       STR_AVALANCHE_MISSILES: 1
-      STR_BLASTER_BOMB: 1
+      STR_BLASTER_BOMB: 2
 
 # Tanks
 
@@ -4568,9 +4569,10 @@ manufacture:
     time: 3200 #time: 1200
     cost: 550000 #cost: 850000
     requiredItems:
+      STR_UFO_NAVIGATION: 1
       STR_UFO_POWER_SOURCE: 1
       STR_PLASMA_BEAM: 1
-      STR_ALIEN_ALLOYS: 30
+      STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 30
 
   - delete: STR_HOVERTANK_LAUNCHER # alien technologies cannot be reproduced
