@@ -48,7 +48,7 @@ div.downloads .btn:hover {
 div.downloads .btn + .btn { margin: 0;}    }
 
 @media screen and (max-width: 42em) {
-  div.downloads { position: static; padding-top: 6px; padding-bottom: 6px; }      
+  div.downloads { position: static; padding-top: 6px; padding-bottom: 2px; }      
   div.downloads .btn {
     display: block;
     margin: 0px;    
@@ -59,12 +59,7 @@ div.downloads .btn + .btn {
     margin: 0.4rem;
     margin-left: 0.1rem;
     margin-right: 0.1rem;} }
-    
-    
-    
-    
-    
-
+  
 .btnmenu {
   font-size: 1rem;
   display: inline-block;
