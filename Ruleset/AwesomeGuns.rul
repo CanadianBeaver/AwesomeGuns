@@ -543,6 +543,7 @@ crafts:
     costSell: 800000
     costRent: 300000
     refuelRate: 50
+    repairRate: 2 # 1 is the default for all crafts
     radarRange: 450 # improved interceptor radar
     score: 275
 
@@ -558,7 +559,7 @@ crafts:
     costRent: 200000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 3 #refuelRate: 5
-    repairRate: 2 # 1 is the default for all crafts
+    repairRate: 3 # 1 is the default for all crafts
     radarRange: 450 # improved interceptor radar
     score: 300 #score: 200
 
@@ -575,7 +576,7 @@ crafts:
     costRent: 300000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 4 #refuelRate: 5
-    repairRate: 2 # 1 is the default for all crafts
+    repairRate: 3 # 1 is the default for all crafts
     radarRange: 620 # ranger radar
     score: 350 #score: 300
 
@@ -593,7 +594,7 @@ crafts:
     costRent: 450000 #costRent: 0
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
-    repairRate: 2 # 1 is the default for all crafts
+    repairRate: 3 # 1 is the default for all crafts
     radarRange: 725 # improved ranger radar
     score: 400
 
@@ -1346,8 +1347,8 @@ items:
     minRange: 2
     dropoff: 2
     meleePower: 75
-    tuMelee: 30
-    accuracyMelee: 175
+    tuMelee: 28
+    accuracyMelee: 90
 
   - type: STR_RIFLE_CLIP
     size: 0.075 #size: 0.1
@@ -1486,9 +1487,9 @@ items:
     autoRange: 12
     minRange: 2
     dropoff: 2
-    meleePower: 65
+    meleePower: 85
     tuMelee: 30
-    accuracyMelee: 150
+    accuracyMelee: 90
 
   - type: STR_ALLOY_RIFLE_CLIP # new item
     listOrder: 2206
@@ -1664,8 +1665,8 @@ items:
     minRange: 0
     dropoff: 4
     meleePower: 75
-    tuMelee: 30
-    accuracyMelee: 175
+    tuMelee: 26
+    accuracyMelee: 100
 
   - type: STR_SHOTGUN_AMMO # new item
     listOrder: 2281
@@ -1735,6 +1736,9 @@ items:
     autoRange: 0
     minRange: 5
     dropoff: 3
+    meleePower: 94
+    tuMelee: 32
+    accuracyMelee: 85
 
   - type: STR_HC_AP_AMMO
     size: 0.1
@@ -2203,6 +2207,7 @@ items:
     recoveryPoints: 1
     blastRadius: 5
     armor: 8
+    attraction: 10
 
   - type: STR_STUN_GRENADE
     listOrder: 4505
@@ -2347,13 +2352,8 @@ items:
     invWidth: 1
     invHeight: 2
     recoveryPoints: 3
-    armor: 28
-    # maxRange: 35
-    # aimRange: 25
-    # snapRange: 16
-    # autoRange: 12
-    # minRange: 1
-    # dropoff: 3
+    armor: 30
+    attraction: 10
 
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
@@ -2372,7 +2372,8 @@ items:
     clipSize: 26
     battleType: 2
     recoveryPoints: 1
-    armor: 16
+    armor: 20
+    attraction: 10
 
   - type: STR_PLASMA_RIFLE
     requires:
@@ -2400,13 +2401,8 @@ items:
     invWidth: 1
     invHeight: 3
     recoveryPoints: 4
-    armor: 30
-    # maxRange: 50
-    # aimRange: 40
-    # snapRange: 26
-    # autoRange: 16
-    # minRange: 2
-    # dropoff: 2
+    armor: 36
+    attraction: 10
 
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
@@ -2425,7 +2421,8 @@ items:
     clipSize: 28
     battleType: 2
     recoveryPoints: 1
-    armor: 17
+    armor: 22
+    attraction: 10
 
   - type: STR_HEAVY_PLASMA
     requires:
@@ -2453,13 +2450,8 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 32
-    # maxRange: 50
-    # aimRange: 40
-    # snapRange: 28
-    # autoRange: 18
-    # minRange: 3
-    # dropoff: 2
+    armor: 40
+    attraction: 10
 
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
@@ -2478,7 +2470,8 @@ items:
     clipSize: 35
     battleType: 2
     recoveryPoints: 1
-    armor: 18
+    armor: 24
+    attraction: 10
 
 # Converted PLASMA weapons
 
@@ -2662,13 +2655,8 @@ items:
     invWidth: 1 #invWidth: 2
     invHeight: 2
     recoveryPoints: 4
-    armor: 18
-    maxRange: 200
-    aimRange: 200
-    snapRange: 15
-    autoRange: 7
-    minRange: 0
-    dropoff: 2
+    armor: 30
+    attraction: 10
 
   - type: STR_STUN_BOMB
     listOrder: 5700
@@ -2690,7 +2678,8 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 1
-    armor: 8
+    armor: 16
+    attraction: 10
 
   - type: STR_BLASTER_LAUNCHER
     listOrder: 5800
@@ -2716,13 +2705,8 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 28
-    maxRange: 200
-    aimRange: 200
-    snapRange: 15
-    autoRange: 7
-    minRange: 0
-    dropoff: 2
+    armor: 44
+    attraction: 10
 
   - type: STR_BLASTER_BOMB
     listOrder: 5900
@@ -2745,7 +2729,8 @@ items:
     invHeight: 1 #invHeight: 2
     recoveryPoints: 1
     blastRadius: 10
-    armor: 10
+    armor: 12
+    attraction: 10
 
 # Toys
 
