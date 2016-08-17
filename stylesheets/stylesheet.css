@@ -77,7 +77,8 @@ div.donate
    text-align: center;
 }
 
-div.donate div { display: inline-block; font-size: small; margin-bottom: 0; margin: 2rem; }
+div.donate div { display: inline-block; font-size: small; margin-bottom: 0 !important; margin: 2rem; }
+div.donate div p { margin: 0; }
   
 .btnmenu {
   font-size: 1rem;
