@@ -45,13 +45,13 @@ div.downloads .btn:hover {
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 42em) {
-  div.downloads { position: static; padding-top: 6px;   }      
+  div.downloads { position: static; padding-top: 6px; padding-bottom: 6px; }      
   div.downloads .btn {
-    margin: 0;    
-    display: block;
+    margin: 0px;    
     width: 100%;
     padding: 1px 6px;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+div.downloads .btn + .btn { margin-top: 0rem;} }
       
     
     
