@@ -46,9 +46,9 @@ div.downloads .btn:hover {
     padding: 0.33rem 0.5rem;
     border-radius: 0.25rem;  
     margin: 0; 
-    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
     font-size: 0.8rem; } 
-div.downloads .btn + .btn { margin: 0; margin-bottom: 0.25rem; }    }
+div.downloads .btn + .btn { margin: 0; margin-top: 0.25rem; }    }
 
 @media screen and (max-width: 42em) {
   div.downloads { position: static; margin-top: 0.9rem; /*display: none;*/ }      
