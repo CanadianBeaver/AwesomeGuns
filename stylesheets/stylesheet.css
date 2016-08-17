@@ -132,11 +132,11 @@ div.downloads .btn + .btn {
   color: #999999;
 }
 
-.support_the_project + h3 { margin-top: 0px !important; }
+.support_the_project + h3 { margin-top: 0 !important; }
 
 @media screen and (max-width: 68em) {
   .support_the_project { display: none; }
-  .support_the_project + h3 { margin-top: 18px !important; } }
+  .support_the_project + h3 { margin-top: 0 !important; } }
 
 .page-header {
   color: #fff;
