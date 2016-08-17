@@ -45,6 +45,7 @@ div.downloads .btn:hover {
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 42em) {
+  div.downloads { position: static; }      
   div.downloads .btn {
     display: block;
     width: 100%;
