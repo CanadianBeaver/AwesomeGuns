@@ -141,14 +141,12 @@ div.donate div p { margin: 0; }
   text-align: center;  
   font-size: xx-small;
   color: #999999;
+  margin-top: 1rem;
 }
 
 .support_the_project a { font-weight: bold; }
 
-.support_the_project + h3 { margin-top: 0 !important; }
-
-@media screen and (max-width: 68em) {
-  .support_the_project { display: none; } }
+@media screen and (max-width: 68em) { .support_the_project { display: none; } }
 
 .page-header {
   color: #fff;
