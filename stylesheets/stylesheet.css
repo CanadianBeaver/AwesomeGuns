@@ -122,29 +122,21 @@ div.downloads .btn + .btn {
 .btnmenu.selected  {
   font-size: 1rem; } }      
   
-div.donate
+.support_the_project
 {
   max-width: 175px;
   position: absolute;
   right: 40px;
   text-align: center;  
-}
-
-div.donate .text
-{
   font-size: xx-small;
   color: #999999;
 }
 
-.indexh1 { margin-top: 0px !important; }
+.support_the_project + h3 { margin-top: 0px !important; }
 
-@media screen and (min-width: 42em) and (max-width: 68em) {
-  div.donate .text { display: none; }
-  .indexh1 { margin-top: 18px !important; } }
-
-@media screen and (max-width: 42em) {
-  div.donate { position: static; max-width: 100%; right: unset; text-align: right; margin-top: -18px;  } 
-  div.donate .text {display: none; } }
+@media screen and (max-width: 68em) {
+  .support_the_project { display: none; }
+  .support_the_project + h3 { margin-top: 18px !important; } }
 
 .page-header {
   color: #fff;
