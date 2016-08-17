@@ -1199,8 +1199,8 @@ items:
     accuracySnap: 60 #accuracySnap: 60
     accuracyAimed: 78 #accuracyAimed: 78
     tuAuto: 0
-    tuSnap: 15 #tuSnap: 18
-    tuAimed: 25 #tuAimed: 30
+    tuSnap: 16 #tuSnap: 18
+    tuAimed: 28 #tuAimed: 30
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -1332,7 +1332,7 @@ items:
     accuracySnap: 60 #accuracySnap: 60
     accuracyAimed: 75 #accuracyAimed: 110
     tuAuto: 35 #tuAuto: 35
-    tuSnap: 25 #tuSnap: 25
+    tuSnap: 24 #tuSnap: 25
     tuAimed: 70 #tuAimed: 80
     battleType: 1
     twoHanded: true
@@ -1470,10 +1470,10 @@ items:
       - STR_ELERIUM_RIFLE_CLIP
     accuracyAuto: 32
     accuracySnap: 62
-    accuracyAimed: 80
-    tuAuto: 25
-    tuSnap: 25
-    tuAimed: 80
+    accuracyAimed: 78
+    tuAuto: 26
+    tuSnap: 26
+    tuAimed: 76
     battleType: 1
     autoShots: 2
     twoHanded: true
@@ -1538,7 +1538,7 @@ items:
     bulletSpeed: 3
     hitSound: 0
     hitAnimation: 0
-    power: 80
+    power: 78
     damageType: 3
     blastRadius: 1
     clipSize: 12
@@ -1561,7 +1561,7 @@ items:
       - STR_ELERIUM_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 95
+    accuracyAimed: 94
     tuAuto: 0
     tuSnap: 0
     tuAimed: 99
@@ -1729,7 +1729,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 20
-    maxRange: 28
+    maxRange: 25
     aimRange: 20
     snapRange: 12
     autoRange: 0
@@ -2239,14 +2239,14 @@ items:
     accuracySnap: 70 #accuracySnap: 40
     accuracyAimed: 80 #accuracyAimed: 68
     tuAuto: 0 #tuAuto: 25
-    tuSnap: 40 #tuSnap: 20
+    tuSnap: 35 #tuSnap: 20
     tuAimed: 50 #tuAimed: 55
     clipSize: -1
     battleType: 1
     invWidth: 1
     invHeight: 2
     armor: 20
-    maxRange: 35
+    maxRange: 30
     aimRange: 25
     snapRange: 15
     autoRange: 0
@@ -2268,8 +2268,8 @@ items:
     power: 62 #power: 60
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
-    accuracySnap: 80 #accuracySnap: 65
-    accuracyAimed: 100 #accuracyAimed: 100
+    accuracySnap: 75 #accuracySnap: 65
+    accuracyAimed: 85 #accuracyAimed: 100
     tuAuto: 0 #tuAuto: 34
     tuSnap: 40 #tuSnap: 25
     tuAimed: 60 #tuAimed: 50
@@ -2283,7 +2283,7 @@ items:
     aimRange: 36
     snapRange: 26
     autoRange: 0
-    minRange: 0
+    minRange: 2
     dropoff: 2
 
   - type: STR_HEAVY_LASER
@@ -2298,7 +2298,7 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 60 #power: 85
+    power: 58 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 68 #accuracySnap: 50
@@ -2313,7 +2313,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 24
-    maxRange: 20
+    maxRange: 18
     aimRange: 0
     snapRange: 10
     autoRange: 0
@@ -2498,20 +2498,20 @@ items:
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
-    accuracySnap: 60
+    accuracySnap: 60 #accuracySnap: 65
     accuracyAimed: 75 #accuracyAimed: 85
     tuAuto: 40 #tuAuto: 30
-    tuSnap: 30
-    tuAimed: 60
+    tuSnap: 33
+    tuAimed: 62
     battleType: 1
     invWidth: 1
     invHeight: 2
     recoveryPoints: 3
     armor: 28
-    maxRange: 34
-    aimRange: 25
-    snapRange: 16
-    autoRange: 12
+    maxRange: 30
+    aimRange: 24
+    snapRange: 14
+    autoRange: 10
     minRange: 1
     dropoff: 3
 
@@ -2550,20 +2550,20 @@ items:
       - STR_CONVERTED_PLASMA_RIFLE_CLIP
     accuracyAuto: 50 #accuracyAuto: 55
     accuracySnap: 70 #accuracySnap: 86
-    accuracyAimed: 85 #accuracyAimed: 100
+    accuracyAimed: 77 #accuracyAimed: 100
     tuAuto: 40 #tuAuto: 36
-    tuSnap: 30
-    tuAimed: 60
+    tuSnap: 33
+    tuAimed: 65
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 4
     armor: 30
-    maxRange: 44
-    aimRange: 36
-    snapRange: 26
-    autoRange: 16
+    maxRange: 42
+    aimRange: 30
+    snapRange: 22
+    autoRange: 11
     minRange: 2
     dropoff: 2
 
@@ -2579,7 +2579,7 @@ items:
     handSprite: 800
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 74 #power: 80
+    power: 68 #power: 80
     damageType: 5
     clipSize: 14
     battleType: 2
@@ -2601,7 +2601,7 @@ items:
       - STR_RAILGUN_SLUGS
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 85
+    accuracyAimed: 75
     tuAuto: 0
     tuSnap: 0
     tuAimed: 82 # 15tu for reloading a weapon, 1tu for turning in place 45 degrees, soldier should have at least 84tu for firing without pauses, at least 85tu for firing without pauses and turning in place 45 degrees
@@ -2610,7 +2610,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    maxRange: 72
+    maxRange: 68
     aimRange: 55
     snapRange: 0
     autoRange: 0
@@ -2628,7 +2628,7 @@ items:
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 86
-    power: 125
+    power: 120
     damageType: 1
     clipSize: 1
     battleType: 2
