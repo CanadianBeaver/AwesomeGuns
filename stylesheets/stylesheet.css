@@ -44,6 +44,7 @@ div.downloads .btn:hover {
   div.downloads .btn {
     display: inline-block;
     padding: 0.33rem 0.5rem;
+    border-radius: 0.25rem;    
     font-size: 0.8rem; } 
 div.downloads .btn + .btn { margin: 0;}    }
 
@@ -53,6 +54,7 @@ div.downloads .btn + .btn { margin: 0;}    }
     display: block;
     margin: 0px;    
     width: 100%;
+    border-radius: 0.25rem;    
     padding: 1px 6px;
     font-size: 0.8rem; }
 div.downloads .btn + .btn { 
