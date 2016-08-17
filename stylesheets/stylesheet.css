@@ -69,6 +69,15 @@ div.downloads .btn + .btn {
     margin: 0.4rem;
     margin-left: 0.1rem;
     margin-right: 0.1rem;} }
+    
+    
+div.donate
+{
+   width: 100%;
+   text-align: center;
+}
+
+div.donate div { display: inline-block; }
   
 .btnmenu {
   font-size: 1rem;
