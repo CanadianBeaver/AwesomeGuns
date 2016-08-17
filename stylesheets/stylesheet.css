@@ -132,6 +132,8 @@ div.downloads .btn + .btn {
   color: #999999;
 }
 
+.support_the_project a { font-weight: bold; }
+
 .support_the_project + h3 { margin-top: 0 !important; }
 
 @media screen and (max-width: 68em) {
