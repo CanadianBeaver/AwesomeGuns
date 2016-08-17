@@ -124,15 +124,13 @@ div.downloads .btn + .btn {
   
 .support_the_project
 {
-  max-width: 175px;
+  white-space: nowrap; 
   position: absolute;
   right: 20px;
   text-align: center;  
   font-size: xx-small;
   color: #999999;
 }
-
-.support_the_project a { white-space: nowrap; }
 
 .support_the_project + h3 { margin-top: 0 !important; }
 
