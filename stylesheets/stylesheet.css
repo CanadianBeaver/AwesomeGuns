@@ -46,13 +46,16 @@ div.downloads .btn:hover {
 
 @media screen and (max-width: 42em) {
   div.downloads .btn {
-    margin: 0.33rem;
-    padding: 0.4rem;
+    display: block;
+    width: 100%;
+    padding: 1px 6px;
     font-size: 0.8rem; } }
+      
     
-@media screen and (max-width: 34em) {
-  div.downloads .btn {
-    display: none; } }
+    
+    
+    
+    
 
 .btnmenu {
   font-size: 1rem;
