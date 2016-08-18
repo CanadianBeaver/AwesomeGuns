@@ -80,6 +80,10 @@ div.donate
 
 div.donate div { display: inline-block; font-size: small; margin: 0rem 2rem; }
 div.donate div p { margin: 0; }
+
+@media screen and (max-width: 42em) {
+  div.donate div { display: block; margin: 1rem; }
+}
   
 .btnmenu {
   font-size: 1rem;
