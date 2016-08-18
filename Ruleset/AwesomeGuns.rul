@@ -6801,7 +6801,7 @@ extraStrings:
 
 # Extra cities
 
-  - type: en
+  - type: en-US
     strings:
       Quebec: "Quebec City"
       NewOrleans: "New Orleans"
@@ -6935,7 +6935,7 @@ extraStrings:
 
 # Restyling New Game dialog like DOOM-II
 
-  - type: en
+  - type: en-US
     strings:
       STR_1_BEGINNER: "I'm too young to die"
       STR_2_EXPERIENCED: "Hey, not too rough"
@@ -6952,7 +6952,7 @@ extraStrings:
 
 # Restyling inventory screen
 
-  - type: en
+  - type: en-US
     strings:
       STR_QUICK_DRAW: "QUICK"
       STR_BREAST: "BREAST" #"VEST"
@@ -6962,7 +6962,7 @@ extraStrings:
       STR_BREAST: "ЖИЛЕТКА"
 
 # Radar facilities
-  - type: en
+  - type: en-US
     strings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1500 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 10 minutes."
       STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2250 nautical miles and is linked to satellite systems for ground search. Each system has a 5% chance of detecting an average sized object every 10 minutes."
@@ -6974,7 +6974,7 @@ extraStrings:
       STR_HYPER_WAVE_DECODER_UFOPEDIA: "Средства связи инопланетян основаны на использовании гиперпространственных волн, распространяющихся почти мгновенно. Декодер позволяет осуществить перехват и расшифровку переговоров НЛО на расстоянии в 1900 морских миль. Возможно определение типа НЛО, его принадлежности определенной расе инопланетян и тип выполняемого им задания с вероятностью 85%."
 
 # Raven - new improved interceptor
-  - type: en
+  - type: en-US
     strings:
       STR_IMPROVED_INTERCEPTOR: "Improved interceptor"
       STR_RAVEN: "RAVEN"
@@ -6986,7 +6986,7 @@ extraStrings:
       STR_RAVEN_UFOPEDIA: "УСОВЕРШЕНСТВОВАННЫЙ ПЕРЕХВАТЧИК, СКОНСТРУИРОВАННЫЙ ПО ПРИНЦИПУ АДАПТАЦИИ ТЕХНОЛОГИЙ ПРИШЕЛЬЦЕВ В ЗЕМНОЙ АВИАТЕХНИКЕ."
 
 # Craft Weapons
-  - type: en
+  - type: en-US
     strings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
@@ -7078,7 +7078,7 @@ extraStrings:
 
 # Armors
 
-  - type: en
+  - type: en-US
     strings:
       # Standard armors
       STR_NONE_UC_TITLE: "STANDARD EQUIPMENT"
@@ -7135,7 +7135,7 @@ extraStrings:
 
 # Conventional weapons
 
-  - type: en
+  - type: en-US
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
@@ -7287,7 +7287,7 @@ extraStrings:
 
 # Soldier's toys
 
-  - type: en
+  - type: en-US
     strings:
       STR_MEDI_CHEST: "Medicine Chest"
       STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid on the battlefields."
@@ -7298,7 +7298,7 @@ extraStrings:
 
 # Fix the LASER weapons
 
-  - type: en
+  - type: en-US
     strings:
 
       STR_LASER_PISTOL_UFOPEDIA: "Laser technology turn into minimum size. Fire range and accuracy are sacrified to get mobile using and powerful shooting comparing to the conventional pistol."
@@ -7336,7 +7336,7 @@ extraStrings:
 
 # Electromagnetic weapons
 
-  - type: en
+  - type: en-US
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
@@ -7351,7 +7351,7 @@ extraStrings:
 
 # Fix the ALIEN weapons
 
-  - type: en
+  - type: en-US
     strings:
       STR_ALIEN_WEAPON: "Aliens weapons and technologies"
       STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
@@ -7397,7 +7397,7 @@ extraStrings:
 
 # Fix the ALIEN CONTAINMENT
 
-  - type: en
+  - type: en-US
     strings:
       STR_ALIEN_BIOLOGY: "Alien Biology"
       STR_ALIEN_BIOLOGY_UFOPEDIA: "The Alien DNA is totally different from mankind, but some of the pieces have been added artificially and have a terrestrial origin. This was done for adaptation with the Earth's environment. However, a prolonged stay on the Earth is not possible. Their immune system is not ready to fight against our diseases, they are very picky about food and their nervous system requires constant relax. We have to build a special containment facility for keeping aliens alive for examination and interrogation."
