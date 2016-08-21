@@ -1539,7 +1539,7 @@ items:
     bulletSpeed: 3
     hitSound: 0
     hitAnimation: 0
-    power: 78
+    power: 64
     damageType: 3
     blastRadius: 1
     clipSize: 12
