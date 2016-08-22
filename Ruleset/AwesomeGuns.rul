@@ -2221,7 +2221,7 @@ items:
     handSprite: 240
     hitSound: 0
     hitAnimation: 0
-    power: 62
+    power: 65
     damageType: 6
     battleType: 4
     armor: 8
