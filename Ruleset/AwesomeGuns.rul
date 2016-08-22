@@ -4863,8 +4863,9 @@ manufacture:
     time: 500
     cost: 160000
     requiredItems:
-      STR_ELERIUM_115: 1
+      STR_ELERIUM_115: 5
       STR_MIND_PROBE: 1
+      STR_ETHEREAL_CORPSE: 1
 
 # Alien technologies cannot be reproduced, except ALIEN ALLOYS
 
