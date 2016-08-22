@@ -1923,6 +1923,8 @@ items:
     autoRange: 0
     minRange: 12
     dropoff: 3
+    tuMelee: 28
+    accuracyMelee: 90
 
   - type: STR_GL_HE_AMMO
     listOrder: 3091
