@@ -3358,11 +3358,11 @@ armors:
       - 1.0 # None
       - 0.8 # Armor Piercing
       - 0.8 # Incendiary
-      - 0.4 # High Explosive
+      - 0.5 # High Explosive
       - 0.6 # Laser
       - 0.6 # Plasma
       - 0.0 # Stun
-      - 0.4 # Melee
+      - 0.6 # Melee
       - 1.5 # Acid
       - 0.0 # Smoke
 
