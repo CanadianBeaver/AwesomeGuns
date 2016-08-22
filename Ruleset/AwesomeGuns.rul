@@ -1969,7 +1969,7 @@ items:
     size: 0.08
     costBuy: 160
     costSell: 120
-    weight: 3
+    weight: 2
     bigSprite: 131
     floorSprite: 131
     handSprite: 608
@@ -2150,7 +2150,7 @@ items:
     size: 0.08
     costBuy: 150
     costSell: 120
-    weight: 3
+    weight: 2
     bigSprite: 20
     floorSprite: 20
     handSprite: 208
