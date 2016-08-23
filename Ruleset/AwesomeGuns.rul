@@ -7366,11 +7366,11 @@ extraStrings:
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some ammunition converting of plasma pistols and rifles will allow to be used in combats. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably, it is not necessary to sell all of alien weapons at once."
 
       STR_CONVERTED_PLASMA_PISTOL: "Converted Plasma Pistol"
-      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol from alien pistols"
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Converted Plasma Pistol Clip"
 
       STR_CONVERTED_PLASMA_RIFLE: "Converted Plasma Rifle"
-      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Plasma Rifle Clip"
 
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
@@ -7388,11 +7388,11 @@ extraStrings:
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "Наши солдаты могут использовать некоторое оружие инопланетян без особого труда. Например, некоторая переделка боеприпасов для плазменных пистолетов и винтовок позволит их  использовать в бою. Остальные типы вооружения адаптировать под человеческую природу и технику ведения боя не представляется возможным.{NEWLINE}{NEWLINE}Однако, возможно мы всё-таки найдём способ применения оружия инопланетян в какой-то мере. Наверное не стоит спешно продавать все остатки."
 
       STR_CONVERTED_PLASMA_PISTOL: "Переделанный плаз. пистолет"
-      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Переделанный плаз. пистолет"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Переделанный плазменный пистолет пришельцев."
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Переделанный магазин к плаз. пистолету"
 
       STR_CONVERTED_PLASMA_RIFLE: "Переделанная плаз. винтовка"
-      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Переделанная плаз. винтовка"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Переделанная плазменная винтовка пришельцев."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Переделанный магазин к плаз. винтовке"
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
