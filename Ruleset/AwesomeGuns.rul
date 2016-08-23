@@ -7176,7 +7176,7 @@ extraStrings:
       STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing bluets."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
-      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "New Sniper Rifle"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Heavy Sniper Rifle"
       STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 bullets."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Thunderbolt-AP clip"
       STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
@@ -7251,7 +7251,7 @@ extraStrings:
       STR_SNIPER_RIFLE_UFOPEDIA: "Модификация винтовки под бронебойный калибр 7,62x51 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
       STR_ALLOY_SNIPER_RIFLE: "Молния Зевса"
-      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Новая снайперская винтовка"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Крупнокалиберная винтовка"
       STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Магазин рассчитан на два бронебойных заряда. К сожалению очень громоздкая и требует время для предварительной подготовки перед стрельбой."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
       STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
