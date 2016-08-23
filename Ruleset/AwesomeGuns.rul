@@ -1234,7 +1234,7 @@ items:
   - type: STR_PISTOL_AL_CLIP # new item
     listOrder: 2001
     size: 0.05 #size: 0.1
-    costSell: 140
+    costSell: 500
     weight: 1 #weight: 3
     bigSprite: 102
     floorSprite: 102
@@ -1301,7 +1301,7 @@ items:
   - type: STR_MACHINE_PISTOL_AL_CLIP # new item
     listOrder: 2012
     size: 0.07 #size: 0.1
-    costSell: 224
+    costSell: 530
     weight: 1
     bigSprite: 106
     floorSprite: 106
@@ -1371,7 +1371,7 @@ items:
   - type: STR_RIFLE_AL_CLIP # new item
     listOrder: 2201
     size: 0.075 #size: 0.1
-    costSell: 400
+    costSell: 940
     weight: 2 #weight: 3
     bigSprite: 110
     floorSprite: 110
@@ -1421,8 +1421,8 @@ items:
   - type: STR_SNIPER_RIFLE_CLIP # new item
     listOrder: 2215
     size: 0.05
-    costBuy: 400
-    costSell: 300
+    costBuy: 500
+    costSell: 375
     weight: 3
     bigSprite: 113
     floorSprite: 113
@@ -1440,7 +1440,7 @@ items:
   - type: STR_SNIPER_RIFLE_AL_CLIP # new item
     listOrder: 2216
     size: 0.05
-    costSell: 800
+    costSell: 1600
     weight: 3
     bigSprite: 114
     floorSprite: 114
@@ -1458,7 +1458,7 @@ items:
   - type: STR_ALLOY_RIFLE # new item
     listOrder: 2205
     size: 0.2
-    costSell: 16000
+    costSell: 18750
     weight: 18
     bigSprite: 116
     floorSprite: 116
@@ -1494,7 +1494,7 @@ items:
   - type: STR_ALLOY_RIFLE_CLIP # new item
     listOrder: 2206
     size: 0.075
-    costSell: 800
+    costSell: 1600
     weight: 3
     bigSprite: 117
     floorSprite: 117
@@ -1512,7 +1512,7 @@ items:
   - type: STR_ACID_RIFLE_CLIP # new item
     listOrder: 2207
     size: 0.075
-    costSell: 800
+    costSell: 1600
     weight: 3
     bigSprite: 118
     floorSprite: 118
@@ -1530,7 +1530,7 @@ items:
   - type: STR_ELERIUM_RIFLE_CLIP # new item
     listOrder: 2208
     size: 0.075
-    costSell: 1600
+    costSell: 2000
     weight: 3
     bigSprite: 119
     floorSprite: 119
@@ -1549,7 +1549,7 @@ items:
   - type: STR_ALLOY_SNIPER_RIFLE # new item
     listOrder: 2226
     size: 0.3
-    costSell: 75000
+    costSell: 72500
     weight: 30
     bigSprite: 120
     floorSprite: 120
@@ -1581,7 +1581,7 @@ items:
   - type: STR_ALLOY_SNIPER_RIFLE_CLIP # new item
     listOrder: 2227
     size: 0.05
-    costSell: 1200
+    costSell: 1875
     weight: 2
     bigSprite: 121
     floorSprite: 121
@@ -1599,7 +1599,7 @@ items:
   - type: STR_ACID_SNIPER_RIFLE_CLIP # new item
     listOrder: 2228
     size: 0.05
-    costSell: 1200
+    costSell: 1875
     weight: 2
     bigSprite: 122
     floorSprite: 122
@@ -1690,7 +1690,7 @@ items:
   - type: STR_SHOTGUN_CLIP # new item
     listOrder: 2282
     size: 0.035
-    costSell: 400
+    costSell: 940
     weight: 1
     bigSprite: 126
     floorSprite: 126
@@ -1707,8 +1707,8 @@ items:
 
   - type: STR_HEAVY_CANNON
     size: 0.3
-    costBuy: 6400
-    costSell: 4800
+    costBuy: 9900 #6400
+    costSell: 7425 #4800
     weight: 18
     bigSprite: 11
     floorSprite: 11
@@ -1743,7 +1743,7 @@ items:
   - type: STR_HC_AP_AMMO
     size: 0.1
     costBuy: 0 #costBuy: 300
-    costSell: 750 #costSell: 225
+    costSell: 940 #costSell: 225
     weight: 3 #weight: 6
     bigSprite: 12
     floorSprite: 12
@@ -1763,7 +1763,7 @@ items:
   - type: STR_HC_HE_AMMO
     size: 0.1
     costBuy: 500
-    costSell: 400
+    costSell: 375 #400
     weight: 3 #weight: 6
     bigSprite: 13
     floorSprite: 13
@@ -1781,8 +1781,8 @@ items:
 
   - type: STR_HC_I_AMMO
     size: 0.1
-    costBuy: 400
-    costSell: 300
+    costBuy: 450 #400
+    costSell: 338 #300
     weight: 3 #weight: 6
     bigSprite: 14
     floorSprite: 14
@@ -1800,8 +1800,8 @@ items:
 
   - type: STR_AUTO_CANNON
     size: 0.3
-    costBuy: 13500
-    costSell: 10125
+    costBuy: 10500 #13500
+    costSell: 7875 #10125
     weight: 19
     bigSprite: 7
     floorSprite: 7
@@ -1834,7 +1834,7 @@ items:
   - type: STR_AC_AP_AMMO
     size: 0.1
     costBuy: 0 #costBuy: 500
-    costSell: 800 #costSell: 400
+    costSell: 1000 #costSell: 400
     weight: 4 #weight: 5
     bigSprite: 8
     floorSprite: 8
@@ -1853,7 +1853,7 @@ items:
   - type: STR_AC_HE_AMMO
     size: 0.1
     costBuy: 700
-    costSell: 560
+    costSell: 525 #560
     weight: 4 #weight: 5
     bigSprite: 9
     floorSprite: 9
@@ -1873,7 +1873,7 @@ items:
   - type: STR_AC_I_AMMO
     size: 0.1
     costBuy: 650
-    costSell: 520
+    costSell: 490 #520
     weight: 4 #weight: 5
     bigSprite: 10
     floorSprite: 10
@@ -1988,8 +1988,8 @@ items:
 
   - type: STR_ROCKET_LAUNCHER
     size: 0.4
-    costBuy: 4000
-    costSell: 3000
+    costBuy: 6000 #4000
+    costSell: 4500 #3000
     weight: 10
     bigSprite: 15
     floorSprite: 15
@@ -2024,7 +2024,7 @@ items:
       - STR_FUSION_ROCKET
     size: 0.2
     costBuy: 0 #costBuy: 600
-    costSell: 17028 #costSell: 480
+    costSell: 10000 #costSell: 480
     weight: 4
     bigSprite: 16
     floorSprite: 16
@@ -2086,7 +2086,7 @@ items:
   - type: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 3405
     size: 0.2
-    costSell: 15000
+    costSell: 12000
     weight: 6
     bigSprite: 148
     floorSprite: 148
@@ -2295,7 +2295,7 @@ items:
 
   - type: STR_HEAVY_LASER
     size: 0.3
-    costSell: 61000
+    costSell: 49000 #61000
     weight: 14 #weight: 18
     bigSprite: 6
     floorSprite: 6
@@ -2585,7 +2585,7 @@ items:
   - type: STR_RAILGUN # new item
     listOrder: 3450
     size: 0.2
-    costSell: 144000
+    costSell: 134000
     weight: 40
     bigSprite: 160
     floorSprite: 160
@@ -2615,7 +2615,7 @@ items:
   - type: STR_RAILGUN_SLUGS # new item
     listOrder: 3451
     size: 0.1
-    costSell: 3150
+    costSell: 2100
     weight: 2
     bigSprite: 161
     floorSprite: 161
@@ -4573,25 +4573,25 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 400 # ~ 92 hours * 4 alloys + 24 hours for clips AND round (100 hours is original value for alien alloys)
-    cost: 14800 # 3.500$ * 4 alloys + 800$ for clips
+    time: 324 # ~ 92 hours * 3 alloys + 24*2 hours for clips (100 hours is original value for alien alloys)
+    cost: 13275 # 3.500$ * 3 alloys + 2775$ for clips
     producedItems:
-      STR_PISTOL_AL_CLIP: 3
-      STR_MACHINE_PISTOL_AL_CLIP: 3
-      STR_RIFLE_AL_CLIP: 3
-      STR_SNIPER_RIFLE_AL_CLIP: 3
+      STR_PISTOL_AL_CLIP: 1
+      STR_MACHINE_PISTOL_AL_CLIP: 1
+      STR_RIFLE_AL_CLIP: 1
+      STR_SNIPER_RIFLE_AL_CLIP: 1
 
   - name: STR_AL_AMMO
     listOrder: 802
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 460 # ~ 92 hours * 4 alloys + (24 * 4) hours for ammo AND round (100 hours is original value for alien alloys)
-    cost: 15500 # 3.500$ * 4 alloys + 1500$ for clips
+    time: 232 # ~ 92 hours * 2 alloys + 24*2 hours for ammo (100 hours is original value for alien alloys)
+    cost: 9300 # 3.500$ * 2 alloys + 2300$ for clips
     producedItems:
-      STR_SHOTGUN_CLIP: 4
-      STR_HC_AP_AMMO: 2
-      STR_AC_AP_AMMO: 2
+      STR_SHOTGUN_CLIP: 1
+      STR_HC_AP_AMMO: 1
+      STR_AC_AP_AMMO: 1
 
   - name: STR_PISTOL_AL_CLIP
     listOrder: 803
@@ -4599,11 +4599,9 @@ manufacture:
     requires:
       - STR_ALLOY_CLIPS
     time: 24
-    cost: 525
+    cost: 400
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    producedItems:
-      STR_PISTOL_AL_CLIP: 5
 
   - name: STR_MACHINE_PISTOL_AL_CLIP
     listOrder: 804
@@ -4611,11 +4609,9 @@ manufacture:
     requires:
       - STR_ALLOY_CLIPS
     time: 24
-    cost: 675
+    cost: 425
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    producedItems:
-      STR_MACHINE_PISTOL_AL_CLIP: 4
 
   - name: STR_RIFLE_AL_CLIP
     listOrder: 805
@@ -4623,11 +4619,9 @@ manufacture:
     requires:
       - STR_ALLOY_CLIPS
     time: 24
-    cost: 900
+    cost: 750
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    producedItems:
-      STR_RIFLE_AL_CLIP: 3
 
   - name: STR_SNIPER_RIFLE_AL_CLIP
     listOrder: 806
@@ -4638,8 +4632,6 @@ manufacture:
     cost: 1200
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    producedItems:
-      STR_SNIPER_RIFLE_AL_CLIP: 2
 
   - name: STR_ALLOY_RIFLE
     category: STR_WEAPON
@@ -4648,9 +4640,9 @@ manufacture:
       - STR_ALLOY_RIFLE
     space: 2
     time: 360
-    cost: 12500
+    cost: 15000
     requiredItems:
-      STR_ALIEN_ALLOYS: 4
+      STR_ALIEN_ALLOYS: 8
 
   - name: STR_ALLOY_RIFLE_CLIP
     category: STR_AMMUNITION
@@ -4659,7 +4651,7 @@ manufacture:
       - STR_ALLOY_RIFLE
     space: 2
     time: 36
-    cost: 700
+    cost: 1500
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4670,7 +4662,7 @@ manufacture:
       - STR_ACID_CLIPS
     space: 2
     time: 36
-    cost: 700
+    cost: 1500
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4681,7 +4673,7 @@ manufacture:
       - STR_ELERIUM_CLIPS
     space: 2
     time: 60
-    cost: 1400
+    cost: 1500
     requiredItems:
       STR_ALIEN_ALLOYS: 1
       STR_ELERIUM_115: 1
@@ -4693,9 +4685,9 @@ manufacture:
       - STR_ALLOY_SNIPER_RIFLE_RESEARCH
     space: 4
     time: 480
-    cost: 55000
+    cost: 58000
     requiredItems:
-      STR_ALIEN_ALLOYS: 8
+      STR_ALIEN_ALLOYS: 12
 
   - name: STR_ALLOY_SNIPER_RIFLE_CLIP
     category: STR_AMMUNITION
@@ -4704,7 +4696,7 @@ manufacture:
       - STR_ALLOY_SNIPER_RIFLE_RESEARCH
     space: 2
     time: 36
-    cost: 900
+    cost: 1200
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4715,7 +4707,7 @@ manufacture:
       - STR_ACID_CLIPS
     space: 2
     time: 36
-    cost: 900
+    cost: 1200
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4726,7 +4718,7 @@ manufacture:
       - STR_ELERIUM_CLIPS
     space: 2
     time: 60
-    cost: 1400
+    cost: 1800
     requiredItems:
       STR_ALIEN_ALLOYS: 1
       STR_ELERIUM_115: 1
@@ -4737,7 +4729,7 @@ manufacture:
     requires:
       - STR_ALLOY_CLIPS
     time: 24
-    cost: 1200
+    cost: 750
     requiredItems:
       STR_ALIEN_ALLOYS: 1
     producedItems:
@@ -4748,8 +4740,8 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 32
-    cost: 300
+    time: 24
+    cost: 750
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4758,8 +4750,8 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ALLOY_CLIPS
-    time: 32
-    cost: 600
+    time: 24
+    cost: 800
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -4769,7 +4761,7 @@ manufacture:
     requires:
       - STR_IMPROVED_ROCKETS
     time: 400
-    cost: 11250
+    cost: 9000
     requiredItems:
       STR_ALIEN_ALLOYS: 5
 
@@ -4819,7 +4811,7 @@ manufacture:
     time: 2000
     cost: 98000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 14
       STR_ELERIUM_115: 6
 
   - name: STR_RAILGUN_SLUGS
@@ -4828,7 +4820,7 @@ manufacture:
     requires:
       - STR_ELECTROMAGNETIC_WEAPONS
     space: 4
-    time: 180
+    time: 96
     cost: 1680
     requiredItems:
       STR_ALIEN_ALLOYS: 1
@@ -7156,7 +7148,7 @@ extraStrings:
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from four alien alloys makes 3 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from four alien alloys makes 4 ammo for the shotgun and 2 ammo for heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products.{NEWLINE}{NEWLINE}In this case from one alien alloys can be manufactured 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced an one ammo or clip from single alien alloys."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from 3 alien alloys makes 1 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from 2 alien alloys makes 1 ammo for the shotgun, heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products.{NEWLINE}{NEWLINE}In this case from one alien alloys can be manufactured 5 clips for a pistol or 3 clips for a machine pistol or 2 clips for a rifle or 2 clips for a sniper rifle or 4 ammo for shotgun. The rest of the cases it is produced an one ammo or clip from single alien alloys."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
       STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
@@ -7231,7 +7223,7 @@ extraStrings:
       STR_AL_AMMO: "Бронебойные дроби"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Производство боеприпасов"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы> в этом производстве изготавливаются примерно четыре сплава пришельцев из которых потом производится по 3 магазина для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби> это производство картечей, где из четырёх сплавов пришельцев изготавливаются 4 магазина для дробовика, 2 магазина для тяжелой пушки и 2 магазина для авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции.{NEWLINE}{NEWLINE}В этом случае, из одного имеющегося сплава пришельцев можно изготовить 5 магазинов для пистолета или 3 магазина для пистолет-пулемёта или по 2 магазина для винтовок или четыре патронташа для дробовика. В остальных случаях производится один магазин к одному сплаву пришельцев."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Бронебойные боеприпасы> в этом производстве изготавливаются примерно три сплава пришельцев из которых потом производится по 1 магазину для пистолета, пистолет-пулемёта, винтовки и снайперской винтовки.{NEWLINE}{NEWLINE}Бронебойные дроби> это производство картечей, где из двух сплавов пришельцев изготавливаются по 1 магазину для дробовика, тяжелой пушки и авто-пушки.{NEWLINE}{NEWLINE}Выгодно производить сразу несколько типов боеприпасов. При производстве боеприпасов для конкретного типа вооружения получается много бракованной продукции.{NEWLINE}{NEWLINE}В этом случае, из одного имеющегося сплава пришельцев можно изготовить 5 магазинов для пистолета или 3 магазина для пистолет-пулемёта или по 2 магазина для винтовок или четыре патронташа для дробовика. В остальных случаях производится один магазин к одному сплаву пришельцев."
 
       STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
       STR_ELERIUM_CLIPS_UFOPEDIA: "Сложный наукоёмкий и технологически совершенный процесс позволяет производить боеприпасы использующие энергию Элериум-115. В месте детонации создаётся взрывная волна огромной силы...{NEWLINE}{NEWLINE}Проще говоря, новейшее wunderwaffe со всеми вытекающими."
