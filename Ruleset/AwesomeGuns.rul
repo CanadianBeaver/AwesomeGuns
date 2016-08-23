@@ -3791,7 +3791,7 @@ research:
 # Crafts
 
   - name: STR_IMPROVED_INTERCEPTOR
-    cost: 400
+    cost: 500
     points: 20
     dependencies:
       - STR_ALIEN_ALLOYS
@@ -3850,6 +3850,11 @@ research:
       - STR_UFO_NAVIGATION
 
 # New weapons and ammo from ALIEN ALLOYS
+
+  - name: STR_ALIEN_ALLOYS
+    cost: 450 #400
+    points: 30
+    needItem: true
 
   - name: STR_ALLOY_CLIPS
     listOrder: 911
