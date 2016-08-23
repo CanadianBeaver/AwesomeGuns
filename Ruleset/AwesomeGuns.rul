@@ -4181,6 +4181,7 @@ research:
     points: 20
     dependencies:
       - STR_ALIEN_WEAPON
+      - STR_LASER_WEAPONS
       - STR_LEADER_PLUS
       - STR_ALIEN_WEAPON_USING_DEPENDENCY
 
