@@ -2496,8 +2496,8 @@ items:
     accuracySnap: 60 #accuracySnap: 65
     accuracyAimed: 75 #accuracyAimed: 85
     tuAuto: 40 #tuAuto: 30
-    tuSnap: 33
-    tuAimed: 62
+    tuSnap: 33 #tuSnap: 30
+    tuAimed: 62 #tuAuto: 60
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -2543,12 +2543,12 @@ items:
     fireSound: 8062 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_RIFLE_CLIP
-    accuracyAuto: 50 #accuracyAuto: 55
-    accuracySnap: 70 #accuracySnap: 86
+    accuracyAuto: 48 #accuracyAuto: 55
+    accuracySnap: 62 #accuracySnap: 86
     accuracyAimed: 77 #accuracyAimed: 100
     tuAuto: 40 #tuAuto: 36
-    tuSnap: 33
-    tuAimed: 65
+    tuSnap: 33 #tuSnap: 30
+    tuAimed: 62 #tuAuto: 60
     battleType: 1
     twoHanded: true
     invWidth: 1
