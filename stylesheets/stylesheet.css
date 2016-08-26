@@ -137,13 +137,13 @@ div.donate div p { margin: 0; }
   
 .support_the_project
 {
+  white-space: nowrap;
   position: absolute;
   right: 20px;
   text-align: center;  
   font-size: xx-small;
   color: #999999;
   margin-top: 3px !important;
-  max-width: 10rem;
 }
 
 .support_the_project a { font-weight: bold; }
