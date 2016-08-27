@@ -366,9 +366,9 @@ color: #999999;
 }
 .main-content .recommend dt img {
 float: left;
-width: 65px;
+width: 62px;
 max-height: 100px;
-margin-right: 4px;  
+margin-right: 5px;  
 }
 .main-content .recommend dd { 
 font-size: smaller;
