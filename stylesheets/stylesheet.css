@@ -366,6 +366,7 @@ color: #999999;
 .main-content .recommend dt img {
 float: left;
 width: 65px;
+max-height: 65px;
 margin-right: 4px;  
 }
 .main-content .recommend dd { 
