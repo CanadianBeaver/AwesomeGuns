@@ -349,7 +349,7 @@ div.donate div p { margin: 0; }
 
 .main-content .recommend dt { 
   font-weight: initial;
-  clear: all;
+  clear: both;
 }  
 .main-content .recommend dt date { 
 font-size: x-small;
@@ -368,8 +368,8 @@ color: #999999;
 float: left;
 width: 62px;
 max-height: 100px;
-margin-right: 5px;  
-margin-top: 6px;  
+margin-right: 4px;  
+margin-top: 12px;  
 }
 .main-content .recommend dd { 
 font-size: smaller;
