@@ -353,12 +353,13 @@ div.donate div p { margin: 0; }
 }  
 .main-content .recommend dt date { 
   font-size: small; 
+  font-style: initial;  
 }
 .main-content .recommend dd { 
-font-size: small;
-border-left-width: thick;
-border-left-style: groove;
-border-left-color: #8cb0c8;
+font-size: smaller;
+border-left-width: 3px;
+border-left-style: solid;
+border-left-color: #ddeeff;
 padding: 0.25rem 0.6rem;
 }  
 
