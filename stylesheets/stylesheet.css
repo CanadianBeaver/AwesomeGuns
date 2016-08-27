@@ -353,15 +353,15 @@ div.donate div p { margin: 0; }
 .main-content .recommend dt date { 
 font-size: x-small;
 font-style: italic;
-padding-left: 0.5rem;
 vertical-align: super;
 background-color: beige;
 padding: 0px 8px;
+margin-left: 0.5rem;
 border-radius: 6px;
 border-color: bisque;
 border-style: solid;
 border: bisque solid 1px;
-color: #666666;
+color: #999999;
 }
 .main-content .recommend dd { 
 font-size: smaller;
