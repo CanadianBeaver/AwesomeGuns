@@ -347,8 +347,17 @@ div.donate div p { margin: 0; }
   padding: 6px !important; }
   
 
-.main-content .recommend dt { font-variant: italic; }  
-.main-content .recommend date { font-size: small; }
+.main-content .recommend dt { 
+  font-style: italic;
+  font-weight: initial;
+}  
+.main-content .recommend dt date { 
+  font-size: small; 
+}
+.main-content .recommend dd { 
+font-size: small;
+}  
+
 
 
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
