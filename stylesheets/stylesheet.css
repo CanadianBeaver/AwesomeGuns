@@ -345,6 +345,10 @@ div.donate div p { margin: 0; }
 .main-content .blackback {
   background-color: #2a2a2a !important;
   padding: 6px !important; }
+  
+
+.main-content .recommend dt { font-variant: italic; }  
+.main-content .recommend date { font-size: small; }
 
 
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
