@@ -363,12 +363,18 @@ border-style: solid;
 border: bisque solid 1px;
 color: #999999;
 }
+.main-content .recommend dt img {
+float: left;
+max-width: 65px;
+margin-right: 4px;
+}
 .main-content .recommend dd { 
 font-size: smaller;
 border-left-width: 3px;
 border-left-style: solid;
 border-left-color: #ddeeff;
 padding: 0.25rem 0.6rem;
+margin-left: 72px;
 }  
 
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
