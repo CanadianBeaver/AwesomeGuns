@@ -348,12 +348,11 @@ div.donate div p { margin: 0; }
   
 
 .main-content .recommend dt { 
-  font-style: italic;
   font-weight: initial;
 }  
 .main-content .recommend dt date { 
 font-size: x-small;
-font-style: initial;
+font-style: italic;
 padding-left: 0.5rem;
 vertical-align: super;
 }
