@@ -352,8 +352,10 @@ div.donate div p { margin: 0; }
   font-weight: initial;
 }  
 .main-content .recommend dt date { 
-  font-size: small; 
-  font-style: initial;  
+font-size: x-small;
+font-style: initial;
+padding-left: 0.5rem;
+vertical-align: super;
 }
 .main-content .recommend dd { 
 font-size: smaller;
