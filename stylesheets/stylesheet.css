@@ -356,9 +356,11 @@ div.donate div p { margin: 0; }
 }
 .main-content .recommend dd { 
 font-size: small;
+border-left-width: thick;
+border-left-style: groove;
+border-left-color: #6880a4;
+padding: 0.25rem 0.6rem;
 }  
-
-
 
 @media screen and (min-width: 64em) { .site-footer-before { margin-top: 5rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) {  .site-footer-before { margin-top: 3.5rem; } }
