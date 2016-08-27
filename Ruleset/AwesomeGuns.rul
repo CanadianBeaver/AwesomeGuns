@@ -340,6 +340,9 @@ regions:
       - name: Chennai
         lon: 80.44
         lat: -13.05
+      - name: Islamabad
+        lon: 72.35
+        lat: -32.58
   - type: STR_SOUTH_EAST_ASIA
     cities:
       - name: Vladivostok
@@ -354,6 +357,9 @@ regions:
       - name: Taipei
         lon: 121.68
         lat: -25.02
+      - name: Osaka
+        lon: 135.4
+        lat: -34.2
   - type: STR_SIBERIA
     cities:
       - name: Irkutsk
@@ -374,6 +380,9 @@ regions:
       - name: Surgut
         lon: 74.24
         lat: -61.15
+      - name: Chelyabinsk
+        lon: 61.845
+        lat: -57.48
   - type: STR_AUSTRALASIA
     cities:
       - name: Hobart
@@ -397,7 +406,11 @@ regions:
       - name: Sydney
         lon: 151.62
         lat: 33.01
-
+  - type: STR_PACIFIC
+    cities:
+      - name: Honolulu
+        lon: 207.074
+        lat: -21.3902
 
 
 facilities:
@@ -6917,11 +6930,13 @@ extraStrings:
       Antalya: "Анталья"
       Dubai: "Дубай"
       Chennai: "Ченнаи"
+      Islamabad : "Исламабад"
       # SOUTH EAST ASIA
       Vladivostok: "Владивосток"
       Khabarovsk: "Хабаровск"
       Pyongyang: "Пхеньян"
       Taipei: "Тайбэй"
+      Osaka: "Осака"
       # SIBERIA
       Irkutsk: "Иркутск"
       Chita: "Чита"
@@ -6929,6 +6944,7 @@ extraStrings:
       Yakutsk: "Якутск"
       Krasnoyarsk: "Красноярск"
       Surgut: "Сургут"
+      Chelyabinsk: "Челябинск"
       # AUSTRALASIA
       Hobart: "Хобарт"
       Brisbane: "Брисбен"
@@ -6937,6 +6953,8 @@ extraStrings:
       Darwin: "Дарвин"
       Jayapura: "Джаяпура"
       Sydney: "Сидней"
+      # PACIFIC
+      Honolulu : "Гонолулу"
 
 # Restyling New Game dialog like DOOM-II
 
