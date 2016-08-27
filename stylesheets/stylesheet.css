@@ -350,6 +350,7 @@ div.donate div p { margin: 0; }
 .main-content .recommend dt { 
   font-weight: initial;
   clear: both;
+  margin-top: 2rem;  
 }  
 .main-content .recommend dt date { 
 font-size: x-small;
