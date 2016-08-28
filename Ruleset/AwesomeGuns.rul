@@ -1825,10 +1825,10 @@ items:
       - STR_AC_I_AMMO
       - STR_AC_AP_AMMO
     accuracyAuto: 40 #accuracyAuto: 32
-    accuracySnap: 0 #accuracySnap: 56
+    accuracySnap: 40 #accuracySnap: 56
     accuracyAimed: 0 #accuracyAimed: 82
     tuAuto: 40
-    tuSnap: 0 #tuSnap: 33
+    tuSnap: 33 #tuSnap: 33
     tuAimed: 0 #tuAimed: 80
     battleType: 1
     autoShots: 4
@@ -2598,20 +2598,20 @@ items:
       - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 201600
-    weight: 22 #8
+    weight: 2 #8
     bigSprite: 169
     floorSprite: 169
     handSprite: 808
-    bulletSprite: 29 #bulletSprite: 8
-    bulletSpeed: 2
-    fireSound: 8062 #fireSound: 18
+    bulletSprite: 28 #bulletSprite: 8
+    bulletSpeed: 1
+    fireSound: 8063 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_CANNON_CLIP
     accuracyAuto: 45 #accuracyAuto: 50
-    accuracySnap: 0 #accuracySnap: 75
+    accuracySnap: 45 #accuracySnap: 75
     accuracyAimed: 0 #accuracyAimed: 110
-    tuAuto: 35 #tuAuto: 35
-    tuSnap: 0 #tuSnap: 30
+    tuAuto: 40 #tuAuto: 35
+    tuSnap: 33 #tuSnap: 30
     tuAimed: 0 #tuAuto: 60
     battleType: 1
     autoShots: 6
@@ -2639,7 +2639,7 @@ items:
     handSprite: 816
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 46 #power: 115
+    power: 52 #power: 115
     damageType: 5
     clipSize: 18 #35
     battleType: 2
