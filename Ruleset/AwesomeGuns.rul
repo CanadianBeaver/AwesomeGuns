@@ -2318,7 +2318,7 @@ items:
     fireSound: 8053 #fireSound: 11
     hitSound: 8054 #hitSound: 19
     hitAnimation: 36
-    power: 58 #power: 85
+    power: 60 #power: 85
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 68 #accuracySnap: 50
@@ -2491,7 +2491,7 @@ items:
 # Converted PLASMA weapons
 
   - type: STR_CONVERTED_PLASMA_PISTOL
-    listOrder: 5501
+    listOrder: 5505
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
@@ -2524,12 +2524,12 @@ items:
     dropoff: 3
 
   - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    listOrder: 5502
+    listOrder: 5506
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 4440
-    weight: 4 #weight: 3
+    weight: 3 #weight: 3
     bigSprite: 165
     floorSprite: 165
     handSprite: 744
@@ -2537,17 +2537,17 @@ items:
     hitAnimation: 136
     power: 48 #power: 52
     damageType: 5
-    clipSize: 13 #clipSize: 26
+    clipSize: 12 #clipSize: 26
     battleType: 2
     armor: 10
 
   - type: STR_CONVERTED_PLASMA_RIFLE
-    listOrder: 5301
+    listOrder: 5515
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 126500
-    weight: 16
+    weight: 16 #5
     bigSprite: 167
     floorSprite: 167
     handSprite: 760
@@ -2576,12 +2576,12 @@ items:
     dropoff: 2
 
   - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    listOrder: 5302
+    listOrder: 5516
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 6290
-    weight: 5 #weight: 3
+    weight: 4 #weight: 3
     bigSprite: 168
     floorSprite: 168
     handSprite: 800
@@ -2589,9 +2589,62 @@ items:
     hitAnimation: 136
     power: 68 #power: 80
     damageType: 5
-    clipSize: 14
+    clipSize: 15
     battleType: 2
-    armor: 10
+    armor: 14
+
+  - type: STR_CONVERTED_PLASMA_CANNON
+    listOrder: 5525
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.2
+    costSell: 201600
+    weight: 22 #8
+    bigSprite: 169
+    floorSprite: 169
+    handSprite: 808
+    bulletSprite: 29 #bulletSprite: 8
+    bulletSpeed: 2
+    fireSound: 8062 #fireSound: 18
+    compatibleAmmo:
+      - STR_CONVERTED_PLASMA_CANNON_CLIP
+    accuracyAuto: 45 #accuracyAuto: 50
+    accuracySnap: 0 #accuracySnap: 75
+    accuracyAimed: 0 #accuracyAimed: 110
+    tuAuto: 35 #tuAuto: 35
+    tuSnap: 0 #tuSnap: 30
+    tuAimed: 0 #tuAuto: 60
+    battleType: 1
+    autoShots: 6
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 32
+    maxRange: 42
+    aimRange: 30
+    snapRange: 22
+    autoRange: 11
+    minRange: 2
+    dropoff: 2
+
+  - type: STR_CONVERTED_PLASMA_CANNON_CLIP
+    listOrder: 5526
+    requires:
+      - STR_ALIEN_WEAPON_USING
+    size: 0.1
+    costSell: 8380
+    weight: 5 #weight: 3
+    bigSprite: 170
+    floorSprite: 170
+    handSprite: 816
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 136
+    power: 46 #power: 115
+    damageType: 5
+    clipSize: 18
+    battleType: 2
+    armor: 18
 
 # RAIL weapons
 
@@ -4983,6 +5036,35 @@ manufacture:
       STR_ELERIUM_115: 4
       STR_PLASMA_RIFLE_CLIP: 2
 
+  - name: STR_CONVERTED_PLASMA_CANNON
+    listOrder: 1912
+    category: STR_AMMUNITION
+    requires:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 2500
+    cost: 144000
+    requiredItems:
+      STR_ELERIUM_115: 12
+      STR_ALIEN_ALLOYS: 12
+      STR_HEAVY_PLASMA: 2
+      STR_MIND_PROBE: 1
+
+  - name: STR_CONVERTED_PLASMA_CANNON_CLIP
+    listOrder: 1913
+    category: STR_AMMUNITION
+    requires:
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 240
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 6
+      STR_HEAVY_PLASMA_CLIP: 2
+
 # Personal armors
 
   - name: STR_HEAVY_PERSONAL_ARMOR
@@ -5354,6 +5436,24 @@ ufopaedia:
     requires:
       - STR_PLASMA_RIFLE
       - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_PLASMA_CANNON
+    listOrder: 3853
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_CANNON_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
       - STR_ALIEN_WEAPON_USING
 
 # Fix the list order for PLASMA items
@@ -6417,6 +6517,8 @@ extraSprites:
       165: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/PistolClip.gif
       167: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Rifle.gif
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/RifleClip.gif
+      169: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Cannon.gif
+      170: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/CannonClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
@@ -6511,6 +6613,8 @@ extraSprites:
       165: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/PistolClip.gif
       167: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Rifle.gif
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/RifleClip.gif
+      169: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Cannon.gif
+      170: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/CannonClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
@@ -6623,6 +6727,8 @@ extraSprites:
       744: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/PistolClip.gif
       760: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Rifle.gif
       800: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/RifleClip.gif
+      808: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Cannon.gif
+      816: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/CannonClip.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
@@ -7389,6 +7495,10 @@ extraStrings:
       STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles"
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Plasma Rifle Clip"
 
+      STR_CONVERTED_PLASMA_CANNON: "Converted Plasma Cannon"
+      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles"
+      STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Plasma Cannon Clip"
+
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
@@ -7410,6 +7520,10 @@ extraStrings:
       STR_CONVERTED_PLASMA_RIFLE: "Переделанная плаз. винтовка"
       STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Переделанная плазменная винтовка пришельцев."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Переделанный магазин к плаз. винтовке"
+
+      STR_CONVERTED_PLASMA_CANNON: "Переделанная плаз. пушка"
+      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Переделанная плазменная пушка пришельцев."
+      STR_CONVERTED_PLASMA_CANNON_CLIP: "Переделанный магазин к плаз. пушке"
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
