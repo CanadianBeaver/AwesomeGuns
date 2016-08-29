@@ -1838,7 +1838,7 @@ items:
     armor: 20
     maxRange: 24
     aimRange: 0
-    snapRange: 0
+    snapRange: 16
     autoRange: 16
     minRange: 5
     dropoff: 3
@@ -1918,21 +1918,21 @@ items:
       - STR_GL_I_AMMO
       - STR_GL_S_AMMO
     accuracyAuto: 0
-    accuracySnap: 33
+    accuracySnap: 0
     accuracyAimed: 66
     tuAuto: 0
-    tuSnap: 33
-    tuAimed: 66
+    tuSnap: 0
+    tuAimed: 33
     battleType: 1
     twoHanded: true
     arcingShot: true
     invWidth: 1
     invHeight: 3
     armor: 16
-    maxRange: 38
-    aimRange: 28
+    maxRange: 40
+    aimRange: 30
     snapRange: 20
-    autoRange: 0
+    autoRange: 20
     minRange: 12
     dropoff: 3
     tuMelee: 28
@@ -2489,7 +2489,7 @@ items:
 
 # Converted PLASMA weapons
 
-  - type: STR_CONVERTED_PLASMA_PISTOL
+  - type: STR_CONVERTED_PLASMA_PISTOL # new item
     listOrder: 5505
     requires:
       - STR_ALIEN_WEAPON_USING
@@ -2522,7 +2522,7 @@ items:
     minRange: 1
     dropoff: 3
 
-  - type: STR_CONVERTED_PLASMA_PISTOL_CLIP
+  - type: STR_CONVERTED_PLASMA_PISTOL_CLIP # new item
     listOrder: 5506
     requires:
       - STR_ALIEN_WEAPON_USING
@@ -2538,9 +2538,9 @@ items:
     damageType: 5
     clipSize: 12 #clipSize: 26
     battleType: 2
-    armor: 10
+    armor: 12
 
-  - type: STR_CONVERTED_PLASMA_RIFLE
+  - type: STR_CONVERTED_PLASMA_RIFLE # new item
     listOrder: 5515
     requires:
       - STR_ALIEN_WEAPON_USING
@@ -2574,7 +2574,7 @@ items:
     minRange: 2
     dropoff: 2
 
-  - type: STR_CONVERTED_PLASMA_RIFLE_CLIP
+  - type: STR_CONVERTED_PLASMA_RIFLE_CLIP # new item
     listOrder: 5516
     requires:
       - STR_ALIEN_WEAPON_USING
@@ -2590,20 +2590,20 @@ items:
     damageType: 5
     clipSize: 14 #28
     battleType: 2
-    armor: 14
+    armor: 15
 
-  - type: STR_CONVERTED_PLASMA_CANNON
+  - type: STR_CONVERTED_PLASMA_CANNON # new item
     listOrder: 5525
     requires:
       - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 201600
-    weight: 2 #8
+    weight: 18
     bigSprite: 169
     floorSprite: 169
     handSprite: 808
     bulletSprite: 28 #bulletSprite: 8
-    bulletSpeed: 1
+    bulletSpeed: 2
     fireSound: 8063 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_CANNON_CLIP
@@ -2620,14 +2620,14 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 32
-    maxRange: 42
-    aimRange: 30
-    snapRange: 22
-    autoRange: 11
-    minRange: 2
-    dropoff: 2
+    maxRange: 28
+    aimRange: 0
+    snapRange: 18
+    autoRange: 15
+    minRange: 4
+    dropoff: 3
 
-  - type: STR_CONVERTED_PLASMA_CANNON_CLIP
+  - type: STR_CONVERTED_PLASMA_CANNON_CLIP # new item
     listOrder: 5526
     requires:
       - STR_ALIEN_WEAPON_USING
@@ -2639,11 +2639,107 @@ items:
     handSprite: 816
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 52 #power: 115
+    power: 54 #power: 115
     damageType: 5
     clipSize: 18 #35
     battleType: 2
     armor: 18
+
+  - type: STR_CONVERTED_GRENADE_LAUNCHER # new item
+    listOrder: 5535
+    size: 0.2
+    costSell: 201600
+    weight: 9
+    bigSprite: 171
+    floorSprite: 171
+    handSprite: 824
+    bulletSprite: 26
+    fireSound: 53
+    compatibleAmmo:
+      - STR_CGL_PLASMA_AMMO
+      - STR_CGL_STUN_BOMBS
+      - STR_CGL_ELERIUM_BOMBS
+    accuracyAuto: 44
+    accuracySnap: 0
+    accuracyAimed: 88
+    tuAuto: 33
+    tuSnap: 0
+    tuAimed: 66
+    battleType: 1
+    autoShots: 2
+    twoHanded: true
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    armor: 16
+    maxRange: 44
+    aimRange: 33
+    snapRange: 22
+    autoRange: 22
+    minRange: 10
+    dropoff: 3
+
+  - type: STR_CGL_PLASMA_AMMO
+    listOrder: 5537
+    size: 0.1
+    costSell: 12560
+    weight: 4
+    bigSprite: 172
+    floorSprite: 172
+    handSprite: 832
+    bulletSprite: 29
+    bulletSpeed: 2
+    hitSound: 8064 #hitSound: 19
+    hitAnimation: 136
+    power: 86
+    damageType: 5
+    clipSize: 16
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 22
+
+  - type: STR_CGL_STUN_BOMBS
+    listOrder: 5538
+    size: 0.1
+    costSell: 25125
+    weight: 4
+    bigSprite: 173
+    floorSprite: 173
+    handSprite: 840
+    bulletSprite: 28
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 88
+    damageType: 6
+    clipSize: 4
+    battleType: 2
+    blastRadius: 5
+    invWidth: 1
+    invHeight: 2
+    armor: 18
+
+  - type: STR_CGL_ELERIUM_BOMBS
+    listOrder: 5539
+    size: 0.1
+    costSell: 25125
+    weight: 4
+    bigSprite: 174
+    floorSprite: 174
+    handSprite: 848
+    bulletSprite: 29
+    bulletSpeed: 1
+    hitSound: 0
+    hitAnimation: 0
+    power: 92
+    damageType: 3
+    clipSize: 4
+    battleType: 2
+    blastRadius: 5
+    invWidth: 1
+    invHeight: 2
+    armor: 15
 
 # RAIL weapons
 
@@ -4351,6 +4447,14 @@ research:
       - STR_STUN_BOMB
       - STR_ALIEN_MEDIC
 
+  - name: STR_CONVERTED_GRENADE_LAUNCHER
+    listOrder: 4460
+    cost: 320
+    points: 10
+    dependencies:
+      - STR_STUN_GRENADE
+      - STR_ALIEN_WEAPON_USING
+
 # BLASTER weapons
 
   - name: STR_BLASTER_LAUNCHER # STR_ALIENS_ONLY
@@ -4975,6 +5079,54 @@ manufacture:
     requiredItems:
       STR_STUN_BOMB: 1
 
+  - name: STR_CONVERTED_GRENADE_LAUNCHER # production is similar to STR_CONVERTED_PLASMA_CANNON
+    listOrder: 1915
+    category: STR_WEAPON
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+    space: 4
+    time: 2500
+    cost: 144000
+    requiredItems:
+      STR_ELERIUM_115: 8
+      STR_ALIEN_ALLOYS: 12
+      STR_SMALL_LAUNCHER: 2
+      STR_MIND_PROBE: 1
+
+  - name: STR_CGL_PLASMA_AMMO # production is similar to STR_STUN_GRENADE
+    listOrder: 1916
+    category: STR_AMMUNITION
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+    space: 3
+    time: 400
+    cost: 10048
+    requiredItems:
+      STR_ELERIUM_115: 4
+
+  - name: STR_CGL_STUN_BOMBS # production is similar to STR_STUN_GRENADE
+    listOrder: 1917
+    category: STR_AMMUNITION
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+    space: 3
+    time: 400
+    cost: 20100
+    requiredItems:
+      STR_STUN_BOMB: 4
+
+  - name: STR_CGL_ELERIUM_BOMBS # production is similar to STR_STUN_GRENADE
+    listOrder: 1918
+    category: STR_AMMUNITION
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+      - STR_ELERIUM_CLIPS
+    space: 3
+    time: 400
+    cost: 20100
+    requiredItems:
+      STR_ELERIUM_115: 4
+
 # Converted PLASMA weapons
 
   - name: STR_CONVERTED_PLASMA_PISTOL
@@ -5008,7 +5160,7 @@ manufacture:
 
   - name: STR_CONVERTED_PLASMA_RIFLE
     listOrder: 1910
-    category: STR_AMMUNITION
+    category: STR_WEAPON
     requires:
       - STR_PLASMA_RIFLE
       - STR_PLASMA_RIFLE_CLIP
@@ -5037,7 +5189,7 @@ manufacture:
 
   - name: STR_CONVERTED_PLASMA_CANNON
     listOrder: 1912
-    category: STR_AMMUNITION
+    category: STR_WEAPON
     requires:
       - STR_HEAVY_PLASMA
       - STR_HEAVY_PLASMA_CLIP
@@ -5454,6 +5606,33 @@ ufopaedia:
       - STR_HEAVY_PLASMA
       - STR_HEAVY_PLASMA_CLIP
       - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_GRENADE_LAUNCHER
+    listOrder: 3854
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+    text: STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA
+
+  - id: STR_CGL_PLASMA_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+
+  - id: STR_CGL_STUN_BOMBS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+
+  - id: STR_CGL_ELERIUM_BOMBS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+      - STR_ELERIUM_CLIPS
 
 # Fix the list order for PLASMA items
 
@@ -6518,6 +6697,10 @@ extraSprites:
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/RifleClip.gif
       169: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Cannon.gif
       170: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/CannonClip.gif
+      171: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Launcher.gif
+      172: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/LauncherPBombs.gif
+      173: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/LauncherSBombs.gif
+      174: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/LauncherEBombs.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
@@ -6614,6 +6797,10 @@ extraSprites:
       168: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/RifleClip.gif
       169: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Cannon.gif
       170: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/CannonClip.gif
+      171: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Launcher.gif
+      172: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/LauncherPBombs.gif
+      173: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/LauncherSBombs.gif
+      174: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/LauncherEBombs.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
@@ -6728,6 +6915,10 @@ extraSprites:
       800: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/RifleClip.gif
       808: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Cannon.gif
       816: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/CannonClip.gif
+      824: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Launcher.gif
+      832: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/LauncherPBombs.gif
+      840: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/LauncherSBombs.gif
+      848: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/LauncherEBombs.gif
 
       # BLASTER and SMALL LAUNCHER weapons
       56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
@@ -7498,6 +7689,12 @@ extraStrings:
       STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles"
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Plasma Cannon Clip"
 
+      STR_CONVERTED_GRENADE_LAUNCHER: "Converted Grenade Launcher"
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Launcher from alien small launcher"
+      STR_CGL_PLASMA_AMMO: "Plasma bombs"
+      STR_CGL_STUN_BOMBS: "Stun bombs"
+      STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
+
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
@@ -7523,6 +7720,12 @@ extraStrings:
       STR_CONVERTED_PLASMA_CANNON: "Переделанная плаз. пушка"
       STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Переделанная плазменная пушка пришельцев."
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Переделанный магазин к плаз. пушке"
+
+      STR_CONVERTED_GRENADE_LAUNCHER: "Переделанный гранатомёт"
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Переделанный гранатомёт пришельцев."
+      STR_CGL_PLASMA_AMMO: "Плазменные заряды"
+      STR_CGL_STUN_BOMBS: "Парализующие бомбы"
+      STR_CGL_ELERIUM_BOMBS: "Элериумные бомбы"
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
