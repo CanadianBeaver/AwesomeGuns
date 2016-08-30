@@ -2670,6 +2670,8 @@ items:
 
   - type: STR_CONVERTED_GRENADE_LAUNCHER # new item
     listOrder: 5535
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
     size: 0.2
     costSell: 201600
     weight: 9
@@ -2763,6 +2765,30 @@ items:
     invWidth: 1
     invHeight: 2
     armor: 15
+
+  - type: STR_PLASMA_BLADE # new item
+    listOrder: 3792
+    requires:
+      - STR_PLASMA_BLADE
+    size: 0.1
+    costSell: 33000
+    weight: 5
+    bigSprite: 175
+    floorSprite: 175
+    handSprite: 856
+    meleeSound: 8065
+    meleeAnimation: 44
+    power: 86
+    damageType: 5
+    accuracyMelee: 100
+    tuMelee: 24
+    battleType: 3
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    armor: 35
+
 
 # RAIL weapons
 
@@ -4551,6 +4577,13 @@ research:
       - STR_STUN_GRENADE
       - STR_ALIEN_WEAPON_USING
 
+  - name: STR_PLASMA_BLADE
+    listOrder: 4465
+    cost: 275
+    points: 10
+    dependencies:
+      - STR_ALIEN_WEAPON_USING
+
 # BLASTER weapons
 
   - name: STR_BLASTER_LAUNCHER # STR_ALIENS_ONLY
@@ -5312,6 +5345,19 @@ manufacture:
       STR_ELERIUM_115: 6
       STR_HEAVY_PLASMA_CLIP: 2
 
+  - name: STR_PLASMA_BLADE # production is similar to STR_CONVERTED_PLASMA_CANNON
+    listOrder: 1920
+    category: STR_WEAPON
+    requires:
+      - STR_PLASMA_BLADE
+    space: 4
+    time: 2200
+    cost: 20100
+    requiredItems:
+      STR_ELERIUM_115: 10
+      STR_ALIEN_ALLOYS: 10
+
+
 # Personal armors
 
   - name: STR_HEAVY_PERSONAL_ARMOR
@@ -5729,6 +5775,14 @@ ufopaedia:
     requires:
       - STR_CONVERTED_GRENADE_LAUNCHER
       - STR_ELERIUM_CLIPS
+
+  - id: STR_PLASMA_BLADE
+    listOrder: 3856
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_BLADE
+    text: STR_PLASMA_BLADE_UFOPEDIA
 
 # Fix the list order for PLASMA items
 
@@ -6814,6 +6868,9 @@ extraSprites:
       37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
       #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
 
+      # blade
+      175: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Bigob.gif
+
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
 
@@ -6914,6 +6971,9 @@ extraSprites:
       35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
       36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
       #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
+
+      # blade
+      175: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Floorob.gif
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -7033,6 +7093,10 @@ extraSprites:
       776: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterBomb.gif
       64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
       784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
+
+      # blade
+      856: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Handobs.gif
+
 
 # Images for UFOPAEDIA
 
@@ -7811,6 +7875,9 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
 
+      STR_PLASMA_BLADE: "Plasma Blade"
+      STR_PLASMA_BLADE_UFOPEDIA: "Plasma Blade"
+
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
@@ -7842,6 +7909,9 @@ extraStrings:
       STR_CGL_PLASMA_AMMO: "Плазменные заряды"
       STR_CGL_STUN_BOMBS: "Парализующие бомбы"
       STR_CGL_ELERIUM_BOMBS: "Элериумные бомбы"
+
+      STR_PLASMA_BLADE: "Плазменный меч"
+      STR_PLASMA_BLADE_UFOPEDIA: "Плазменный меч"
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
