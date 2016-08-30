@@ -2278,7 +2278,7 @@ items:
     accuracyMelee: 99
     tuMelee: 24
     battleType: 3
-    twoHanded: true
+    twoHanded: false
     invWidth: 1
     invHeight: 3
     skillApplied: false
