@@ -1209,7 +1209,7 @@ items:
     meleeAnimation: 44
     power: 54
     damageType: 1
-    accuracyMelee: 100
+    accuracyMelee: 90
     tuMelee: 18
     battleType: 3
     twoHanded: false
@@ -2514,8 +2514,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_PISTOL # new item
     listOrder: 5505
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 84000
     weight: 8 #weight: 3
@@ -2547,8 +2545,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_PISTOL_CLIP # new item
     listOrder: 5506
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 4440
     weight: 3 #weight: 3
@@ -2565,8 +2561,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_RIFLE # new item
     listOrder: 5515
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 126500
     weight: 16 #5
@@ -2599,8 +2593,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_RIFLE_CLIP # new item
     listOrder: 5516
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 6290
     weight: 4 #weight: 3
@@ -2617,8 +2609,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_CANNON # new item
     listOrder: 5525
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.2
     costSell: 201600
     weight: 18
@@ -2652,8 +2642,6 @@ items:
 
   - type: STR_CONVERTED_PLASMA_CANNON_CLIP # new item
     listOrder: 5526
-    requires:
-      - STR_ALIEN_WEAPON_USING
     size: 0.1
     costSell: 8380
     weight: 5 #weight: 3
@@ -2670,8 +2658,6 @@ items:
 
   - type: STR_CONVERTED_GRENADE_LAUNCHER # new item
     listOrder: 5535
-    requires:
-      - STR_CONVERTED_GRENADE_LAUNCHER
     size: 0.2
     costSell: 201600
     weight: 9
@@ -2767,9 +2753,7 @@ items:
     armor: 15
 
   - type: STR_PLASMA_BLADE # new item
-    listOrder: 3792
-    requires:
-      - STR_PLASMA_BLADE
+    listOrder: 5542
     size: 0.1
     costSell: 33000
     weight: 5
@@ -2780,7 +2764,7 @@ items:
     meleeAnimation: 54
     power: 86
     damageType: 5
-    accuracyMelee: 100
+    accuracyMelee: 95
     tuMelee: 24
     battleType: 3
     twoHanded: false
@@ -5351,7 +5335,7 @@ manufacture:
     requires:
       - STR_PLASMA_BLADE
     space: 4
-    time: 2200
+    time: 800
     cost: 20100
     requiredItems:
       STR_ELERIUM_115: 10
@@ -7875,8 +7859,8 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
 
-      STR_PLASMA_BLADE: "Plasma Blade"
-      STR_PLASMA_BLADE_UFOPEDIA: "Plasma Blade"
+      STR_PLASMA_BLADE: "Plasma Sword"
+      STR_PLASMA_BLADE_UFOPEDIA: "This lethal implement of sword combines a large blade, a micron thick at the edge, a plasma emitter, and an electromagnet. When activated, hot plasma floods the EM field surrounding the blade, superheating it to the point where its touch would make titanium run like water."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
@@ -7911,7 +7895,7 @@ extraStrings:
       STR_CGL_ELERIUM_BOMBS: "Элериумные бомбы"
 
       STR_PLASMA_BLADE: "Плазменный меч"
-      STR_PLASMA_BLADE_UFOPEDIA: "Плазменный меч"
+      STR_PLASMA_BLADE_UFOPEDIA: "Это смертельная реализация клинка сочетает в себе большое лезвие микронной заточки, плазменный эмиттер и электромагнит. При активации горячая плазма заполняет электромагнитное поле вокруг лезвия, разогревая цель при контакте до температуры плавления Титана."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
