@@ -148,7 +148,9 @@ div.donate div p { margin: 0; }
 
 .support_the_project a { font-weight: bold; }
 
-@media screen and (max-width: 78em) { .support_the_project { display: none; } }
+@media screen and (max-width: 78em) { 
+  support_the_project { bottom: -30px;}
+  /*.support_the_project { display: none; } */}
 
 .page-header {
   color: #fff;
