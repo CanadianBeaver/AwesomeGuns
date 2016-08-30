@@ -71,6 +71,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - HQSounds_FinalModPack
 - Stun Grenade
 - Final Mod Pack
+- Plasma Melee Weapons
 - *If I have forgotten someone, please let me know.*
 
 ###Contacts
