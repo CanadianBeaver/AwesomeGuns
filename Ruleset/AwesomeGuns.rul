@@ -3863,6 +3863,79 @@ armors:
 
 units:
 
+  # Aliens melee opportunity
+  - type: STR_SECTOID_SOLDIER
+    stats:
+      melee: 20
+  - type: STR_SECTOID_ENGINEER
+    stats:
+      melee: 18
+  - type: STR_SECTOID_MEDIC
+    stats:
+      melee: 18
+  - type: STR_SECTOID_NAVIGATOR
+    stats:
+      melee: 18
+  - type: STR_SECTOID_LEADER
+    stats:
+      melee: 20
+  - type: STR_SECTOID_COMMANDER
+    stats:
+      melee: 22
+  - type: STR_FLOATER_SOLDIER
+    stats:
+      melee: 36
+  - type: STR_FLOATER_ENGINEER
+    stats:
+      melee: 33
+  - type: STR_FLOATER_NAVIGATOR
+    stats:
+      melee: 33
+  - type: STR_FLOATER_MEDIC
+    stats:
+      melee: 33
+  - type: STR_FLOATER_LEADER
+    stats:
+      melee: 36
+  - type: STR_FLOATER_COMMANDER
+    stats:
+      melee: 38
+  - type: STR_SNAKEMAN_SOLDIER
+    stats:
+      melee: 48
+  - type: STR_SNAKEMAN_NAVIGATOR
+    stats:
+      melee: 44
+  - type: STR_SNAKEMAN_ENGINEER
+    stats:
+      melee: 44
+  - type: STR_SNAKEMAN_LEADER
+    stats:
+      melee: 48
+  - type: STR_SNAKEMAN_COMMANDER
+    stats:
+      melee: 50
+  - type: STR_MUTON_SOLDIER
+    stats:
+      melee: 68
+  - type: STR_MUTON_NAVIGATOR
+    stats:
+      melee: 65
+  - type: STR_MUTON_ENGINEER
+    stats:
+      melee: 65
+  - type: STR_CELATID_TERRORIST
+    stats:
+      melee: 28
+  - type: STR_SILACOID_TERRORIST
+    stats:
+      melee: 75
+  - type: STR_SECTOPOD_TERRORIST
+    stats:
+      melee: 120
+
+
+
 # Aliens killing effects
   - type: STR_SECTOID_SOLDIER
     deathSound: 71
