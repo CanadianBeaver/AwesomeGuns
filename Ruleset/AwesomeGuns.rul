@@ -7181,7 +7181,7 @@ extraSounds:
 
   - type: BATTLE.CAT # SAMPLE2.CAT
     files:
-      8000: Resources/AwesomeGuns/Weapons/KNIFE/Fire1.ogg
+      8000: Resources/AwesomeGuns/Weapons/KNIFE/Fire.ogg
       8001: Resources/AwesomeGuns/Weapons/PISTOL/Fire.ogg
       8002: Resources/AwesomeGuns/Weapons/PISTOL/Hit.wav
       8005: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Fire.wav
@@ -7216,7 +7216,7 @@ extraSounds:
       8062: Resources/AwesomeGuns/Weapons/ALIENS/Fire2.wav
       8063: Resources/AwesomeGuns/Weapons/ALIENS/Fire3.wav
       8064: Resources/AwesomeGuns/Weapons/ALIENS/Hit.wav
-      8065: Resources/AwesomeGuns/Weapons/KNIFE/Fire2.wav
+      8065: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Fire.wav
       8067: Resources/AwesomeGuns/Weapons/RAILGUN/Fire.ogg
 
 
