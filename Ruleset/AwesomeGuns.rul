@@ -45,7 +45,7 @@
 # - FastRamp
 # - HQSounds_FinalModPack
 # - Stun Grenade
-# - Final Mod Pack 
+# - Final Mod Pack
 # - Plasma Melee Weapons
 # - If I have forgotten someone, please let me know.
 #
@@ -1195,6 +1195,28 @@ items:
     accuracyMelee: 200 #accuracyMelee: 100
 
 # CONVENTIONAL weapons
+
+  - type: STR_KNIFE # new item
+    listOrder: 3790
+    size: 0.08
+    costBuy: 400
+    costSell: 300
+    weight: 3
+    bigSprite: 60
+    floorSprite: 75
+    handSprite: 176
+    meleeSound: 54
+    meleeAnimation: 44
+    power: 54
+    damageType: 1
+    accuracyMelee: 100
+    tuMelee: 18
+    battleType: 3
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    skillApplied: false
+    armor: 28
 
   - type: STR_PISTOL
     size: 0.1
@@ -5851,6 +5873,14 @@ ufopaedia:
   - id: STR_SECTOPOD_AUTOPSY
     listOrder: 9800
 
+# Knife
+
+  - id: STR_KNIFE
+    listOrder: 1990
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KNIFE_UFOPEDIA
+
 # Alloy weapons
 
   - id: STR_PISTOL_AL_CLIP
@@ -6671,7 +6701,7 @@ extraSprites:
 
   - type: HIT.PCK
     width: 320
-    height: 160
+    height: 200
     subX: 32
     subY: 40
     files:
@@ -6679,6 +6709,7 @@ extraSprites:
       #14: CHRYSSALID
       #24: REAPER
       #34: SILACOID
+      #44: KNIFE
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
 
 
@@ -6689,6 +6720,7 @@ extraSprites:
 
       # items
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
+      60: Resources/AwesomeGuns/Weapons/KNIFE/Bigob.gif
 
       # conventional weapons use images from 100
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif #100
@@ -6786,8 +6818,9 @@ extraSprites:
     files:
 
       # items
-      74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
       73: Resources/AwesomeGuns/Items/Floorob_ELERIUM.gif
+      74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
+      75: Resources/AwesomeGuns/Weapons/KNIFE/Floorob.gif
 
       # conventional weapons use images from 100
       #3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.gif - default image is OK  #100
@@ -6896,7 +6929,8 @@ extraSprites:
       152: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
       160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
-      #176: #184: #192:
+      176: Resources/AwesomeGuns/Weapons/KNIFE/Handobs.gif
+      #184: #192:
 
       # explosions use images from 200
       200: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
@@ -7546,6 +7580,9 @@ extraStrings:
       STR_ELERIUM_CLIPS: "Elerium ammunition"
       STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
 
+      STR_KNIFE: "Combat knife"
+      STR_KNIFE_UFOPEDIA: "A combat knife is a fighting knife designed solely for military use and primarily intended for hand-to-hand or close combat fighting."
+
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
       STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap, quick. An integral part of the additional equipment."
 
@@ -7620,6 +7657,9 @@ extraStrings:
 
       STR_ELERIUM_CLIPS: "Элериумные боеприпасы"
       STR_ELERIUM_CLIPS_UFOPEDIA: "Сложный наукоёмкий и технологически совершенный процесс позволяет производить боеприпасы использующие энергию Элериум-115. В месте детонации создаётся взрывная волна огромной силы...{NEWLINE}{NEWLINE}Проще говоря, новейшее wunderwaffe со всеми вытекающими."
+
+      STR_KNIFE: "Боевой нож"
+      STR_KNIFE_UFOPEDIA: "Боевой нож предназначенн для поражения живой силы противника в ходе боевых действий или специальных операций."
 
       STR_PISTOL_AL_CLIP: "Магазин ББ к пистолету"
       STR_PISTOL_UFOPEDIA: "Полуавтоматический пистолет со стандартным пистолетным калибром 9x19 мм Парабеллум. В обойме 9 зарядов. Лёгкий, дешёвый, скорострельный. Неотъемлемая часть дополнительной экипировки."
