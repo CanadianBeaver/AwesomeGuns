@@ -1197,8 +1197,8 @@ items:
 # CONVENTIONAL weapons
 
   - type: STR_KNIFE # new item
-    listOrder: 3790
-    size: 0.08
+    listOrder: 1890
+    size: 0.06
     costBuy: 400
     costSell: 300
     weight: 3
@@ -2263,6 +2263,27 @@ items:
 
 # LASER weapons
 
+  - type: STR_LASER_SWORD # new item
+    listOrder: 3490
+    size: 0.1
+    costSell: 24000
+    weight: 4
+    bigSprite: 175
+    floorSprite: 175
+    handSprite: 856
+    meleeSound: 8051
+    meleeAnimation: 54
+    power: 85
+    damageType: 5
+    accuracyMelee: 99
+    tuMelee: 24
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    skillApplied: false
+    armor: 40
+
   - type: STR_LASER_PISTOL
     size: 0.1
     costSell: 20000
@@ -2752,24 +2773,38 @@ items:
     invHeight: 2
     armor: 15
 
-  - type: STR_PLASMA_BLADE # new item
-    listOrder: 5542
-    size: 0.1
-    costSell: 33000
+  - type: STR_PLASMA_BLADE # STR_PLASMA_SWORD for UFOpaedia article, real values are bellow
     weight: 5
-    bigSprite: 175
-    floorSprite: 175
-    handSprite: 856
-    meleeSound: 8065
-    meleeAnimation: 54
-    power: 86
+    bigSprite: 176
+    power: 90
     damageType: 5
-    accuracyMelee: 95
-    tuMelee: 24
+    accuracyMelee: 94
+    tuMelee: 25
     battleType: 3
     twoHanded: false
     invWidth: 1
     invHeight: 3
+    skillApplied: false
+    armor: 35
+
+  - type: STR_PLASMA_SWORD # new item, real values
+    listOrder: 5542
+    size: 0.08
+    costSell: 33000
+    weight: 5
+    bigSprite: 177
+    floorSprite: 176
+    handSprite: 864
+    meleeSound: 8065
+    meleeAnimation: 64
+    power: 90
+    damageType: 5
+    accuracyMelee: 94
+    tuMelee: 25
+    battleType: 3
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
     skillApplied: false
     armor: 35
 
@@ -4212,6 +4247,13 @@ research:
       - STR_ALIEN_ALLOYS
       - STR_UFO_NAVIGATION
 
+  - name: STR_LASER_SWORD
+    listOrder: 190
+    cost: 190
+    points: 10
+    dependencies:
+      - STR_LASER_RIFLE
+
   - name: STR_LASER_PISTOL
     cost: 200 #cost: 100
     points: 10
@@ -4561,11 +4603,12 @@ research:
       - STR_STUN_GRENADE
       - STR_ALIEN_WEAPON_USING
 
-  - name: STR_PLASMA_BLADE
+  - name: STR_PLASMA_SWORD
     listOrder: 4465
-    cost: 275
+    cost: 250
     points: 10
     dependencies:
+      - STR_LASER_SWORD
       - STR_ALIEN_WEAPON_USING
 
 # BLASTER weapons
@@ -5054,6 +5097,18 @@ manufacture:
 
 # LASER weapons
 
+  - name: STR_LASER_SWORD
+    listOrder: 890
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_SWORD
+    space: 2
+    time: 325
+    cost: 15000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+      STR_ELERIUM_115: 2
+
   - name: STR_LASER_PISTOL
     category: STR_WEAPON
     requires:
@@ -5329,17 +5384,17 @@ manufacture:
       STR_ELERIUM_115: 6
       STR_HEAVY_PLASMA_CLIP: 2
 
-  - name: STR_PLASMA_BLADE # production is similar to STR_CONVERTED_PLASMA_CANNON
+  - name: STR_PLASMA_SWORD # production is similar to STR_CONVERTED_PLASMA_CANNON
     listOrder: 1920
     category: STR_WEAPON
     requires:
-      - STR_PLASMA_BLADE
+      - STR_PLASMA_SWORD
     space: 4
     time: 800
     cost: 20100
     requiredItems:
-      STR_ELERIUM_115: 10
-      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 5
+      STR_ALIEN_ALLOYS: 8
 
 
 # Personal armors
@@ -5667,6 +5722,14 @@ ufopaedia:
     requires:
       - STR_LASER_WEAPONS
 
+  - id: STR_LASER_SWORD
+    listOrder: 3595
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_SWORD
+    text: STR_LASER_SWORD_UFOPEDIA
+
 # Converted PLASMA weapons
 
   - id: STR_ALIEN_WEAPON_USING
@@ -5761,12 +5824,13 @@ ufopaedia:
       - STR_ELERIUM_CLIPS
 
   - id: STR_PLASMA_BLADE
+    title: STR_PLASMA_SWORD
     listOrder: 3856
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_PLASMA_BLADE
-    text: STR_PLASMA_BLADE_UFOPEDIA
+      - STR_PLASMA_SWORD
+    text: STR_PLASMA_SWORD_UFOPEDIA
 
 # Fix the list order for PLASMA items
 
@@ -6738,7 +6802,7 @@ extraSprites:
 
   - type: HIT.PCK
     width: 320
-    height: 240
+    height: 280
     subX: 32
     subY: 40
     files:
@@ -6747,7 +6811,8 @@ extraSprites:
       #24: REAPER
       #34: SILACOID
       #44: KNIFE
-      #55: Blade
+      #55: Laser Sword
+      #65: Plasma Sword
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
 
 
@@ -6852,8 +6917,10 @@ extraSprites:
       37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
       #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
 
-      # blade
-      175: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Bigob.gif
+      # swords
+      175: Resources/AwesomeGuns/Weapons/LASER_SWORD/Bigob.gif
+      176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Bigob.gif
+      177: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/BigobCombat.gif
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
@@ -6956,8 +7023,9 @@ extraSprites:
       36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
       #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
 
-      # blade
-      175: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Floorob.gif
+      # swords
+      175: Resources/AwesomeGuns/Weapons/LASER_SWORD/Floorob.gif
+      176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Floorob.gif
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -7078,8 +7146,9 @@ extraSprites:
       64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
       784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
 
-      # blade
-      856: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Handobs.gif
+      # swords
+      856: Resources/AwesomeGuns/Weapons/LASER_SWORD/Handobs.gif
+      864: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Handobs.gif
 
 
 # Images for UFOPAEDIA
@@ -7264,7 +7333,7 @@ extraSounds:
       8062: Resources/AwesomeGuns/Weapons/ALIENS/Fire2.wav
       8063: Resources/AwesomeGuns/Weapons/ALIENS/Fire3.wav
       8064: Resources/AwesomeGuns/Weapons/ALIENS/Hit.wav
-      8065: Resources/AwesomeGuns/Weapons/PLASMA_BLADE/Fire.wav
+      8065: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Fire.wav
       8067: Resources/AwesomeGuns/Weapons/RAILGUN/Fire.ogg
 
 
@@ -7793,6 +7862,9 @@ extraStrings:
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laser Tank from Tank Rocket"
 
+      STR_LASER_SWORD: "Laser Sword"
+      STR_LASER_SWORD_UFOPEDIA: "A long time ago in a galaxy far, far away...{NEWLINE}{NEWLINE}The soldiers insisted we make this thing. No it doesn't hum or buzz. Due to the nature of the laser cutter, the wielder's strength is not added to the weapon, but the cutting damage is very high regardless."
+
   - type: ru
     strings:
 
@@ -7804,6 +7876,9 @@ extraStrings:
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Лазерный танк из пушечного танка"
       STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Лазерный танк из ракетного танка"
+
+      STR_LASER_SWORD: "Лазерный меч"
+      STR_LASER_SWORD_UFOPEDIA: "Давным-давно в одной далекой, далекой галактике...{NEWLINE}{NEWLINE}По просьбе наших оперативников мы готовы производить и такие экзотические предметы экипировки."
 
   - type: pl-PL
     strings:
@@ -7859,8 +7934,8 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
 
-      STR_PLASMA_BLADE: "Plasma Sword"
-      STR_PLASMA_BLADE_UFOPEDIA: "This lethal implement of sword combines a large blade, a micron thick at the edge, a plasma emitter, and an electromagnet. When activated, hot plasma floods the EM field surrounding the blade, superheating it to the point where its touch would make titanium run like water."
+      STR_PLASMA_SWORD: "Plasma Sword"
+      STR_PLASMA_SWORD_UFOPEDIA: "This lethal implement of sword combines a large blade, a micron thick at the edge, a plasma emitter, and an electromagnet. When activated, hot plasma floods the EM field surrounding the blade, superheating it to the point where its touch would make titanium run like water."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
       STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
@@ -7894,8 +7969,8 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Парализующие бомбы"
       STR_CGL_ELERIUM_BOMBS: "Элериумные бомбы"
 
-      STR_PLASMA_BLADE: "Плазменный меч"
-      STR_PLASMA_BLADE_UFOPEDIA: "Это смертельная реализация клинка сочетает в себе большое лезвие микронной заточки, плазменный эмиттер и электромагнит. При активации горячая плазма заполняет электромагнитное поле вокруг лезвия, разогревая цель при контакте до температуры плавления Титана."
+      STR_PLASMA_SWORD: "Плазменный меч"
+      STR_PLASMA_SWORD_UFOPEDIA: "Это смертельная реализация клинка сочетает в себе большое лезвие микронной заточки, плазменный эмиттер и электромагнит. При активации горячая плазма заполняет электромагнитное поле вокруг лезвия, разогревая цель при контакте до температуры плавления Титана."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
       STR_SMALL_LAUNCHER_UFOPEDIA: "Небольшая пусковая установка, стреляющая парализующими снарядами. К сожалению не применима для ведения боя нашими солдатами."
