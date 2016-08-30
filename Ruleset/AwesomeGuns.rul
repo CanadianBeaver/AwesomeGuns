@@ -2271,7 +2271,7 @@ items:
     bigSprite: 175
     floorSprite: 175
     handSprite: 856
-    meleeSound: 8051
+    meleeSound: 8054
     meleeAnimation: 54
     power: 85
     damageType: 5
@@ -6918,7 +6918,7 @@ extraSprites:
       #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
 
       # swords
-      175: Resources/AwesomeGuns/Weapons/LASER_SWORD/Bigob.gif
+      175: Resources/AwesomeGuns/Weapons/LASER/Bigob0.gif
       176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Bigob.gif
       177: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/BigobCombat.gif
 
@@ -7024,7 +7024,7 @@ extraSprites:
       #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
 
       # swords
-      175: Resources/AwesomeGuns/Weapons/LASER_SWORD/Floorob.gif
+      175: Resources/AwesomeGuns/Weapons/LASER/Floorob0.gif
       176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Floorob.gif
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
@@ -7147,7 +7147,7 @@ extraSprites:
       784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
 
       # swords
-      856: Resources/AwesomeGuns/Weapons/LASER_SWORD/Handobs.gif
+      856: Resources/AwesomeGuns/Weapons/LASER/Handobs0.gif
       864: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Handobs.gif
 
 
