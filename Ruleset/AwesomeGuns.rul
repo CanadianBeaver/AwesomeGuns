@@ -2777,7 +2777,7 @@ items:
     floorSprite: 175
     handSprite: 856
     meleeSound: 8065
-    meleeAnimation: 44
+    meleeAnimation: 54
     power: 86
     damageType: 5
     accuracyMelee: 100
@@ -6752,10 +6752,9 @@ extraSprites:
       #146: HoverTank
       136: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Converted.gif
 
-
   - type: HIT.PCK
     width: 320
-    height: 200
+    height: 240
     subX: 32
     subY: 40
     files:
@@ -6764,6 +6763,7 @@ extraSprites:
       #24: REAPER
       #34: SILACOID
       #44: KNIFE
+      #55: Blade
       4: Resources/AwesomeGuns/Weapons/SPRITES/Hits.gif
 
 
