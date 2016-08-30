@@ -1931,8 +1931,8 @@ items:
     armor: 16
     maxRange: 40
     aimRange: 30
-    snapRange: 20
-    autoRange: 20
+    snapRange: 0
+    autoRange: 0
     minRange: 12
     dropoff: 3
     tuMelee: 28
@@ -2659,9 +2659,9 @@ items:
       - STR_CGL_PLASMA_AMMO
       - STR_CGL_STUN_BOMBS
       - STR_CGL_ELERIUM_BOMBS
-    accuracyAuto: 44
+    accuracyAuto: 45
     accuracySnap: 0
-    accuracyAimed: 88
+    accuracyAimed: 85
     tuAuto: 33
     tuSnap: 0
     tuAimed: 66
@@ -2674,7 +2674,7 @@ items:
     armor: 16
     maxRange: 44
     aimRange: 33
-    snapRange: 22
+    snapRange: 0
     autoRange: 22
     minRange: 10
     dropoff: 3
@@ -7690,7 +7690,7 @@ extraStrings:
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Cannon Clip"
 
       STR_CONVERTED_GRENADE_LAUNCHER: "Converted Launcher"
-      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launcher"
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launchers"
       STR_CGL_PLASMA_AMMO: "Plasma bombs"
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
