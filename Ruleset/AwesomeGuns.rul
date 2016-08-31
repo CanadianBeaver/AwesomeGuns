@@ -1215,7 +1215,6 @@ items:
     twoHanded: false
     invWidth: 1
     invHeight: 2
-    skillApplied: false
     armor: 28
 
   - type: STR_PISTOL
@@ -1381,7 +1380,7 @@ items:
     autoRange: 9
     minRange: 2
     dropoff: 2
-    meleePower: 75
+    meleePower: 65
     tuMelee: 28
     accuracyMelee: 90
 
@@ -1522,7 +1521,7 @@ items:
     autoRange: 12
     minRange: 2
     dropoff: 2
-    meleePower: 85
+    meleePower: 75
     tuMelee: 30
     accuracyMelee: 90
 
@@ -1699,9 +1698,9 @@ items:
     autoRange: 0
     minRange: 0
     dropoff: 4
-    meleePower: 75
+    meleePower: 80
     tuMelee: 26
-    accuracyMelee: 100
+    accuracyMelee: 95
 
   - type: STR_SHOTGUN_AMMO # new item
     listOrder: 2281
@@ -1771,7 +1770,7 @@ items:
     autoRange: 0
     minRange: 5
     dropoff: 3
-    meleePower: 94
+    meleePower: 85
     tuMelee: 32
     accuracyMelee: 85
 
@@ -1958,8 +1957,9 @@ items:
     autoRange: 0
     minRange: 12
     dropoff: 3
+    meleePower: 65
     tuMelee: 28
-    accuracyMelee: 90
+    accuracyMelee: 80
 
   - type: STR_GL_HE_AMMO
     listOrder: 3091
@@ -2281,7 +2281,6 @@ items:
     twoHanded: false
     invWidth: 1
     invHeight: 3
-    skillApplied: false
     armor: 40
 
   - type: STR_LASER_PISTOL
@@ -2784,7 +2783,6 @@ items:
     twoHanded: false
     invWidth: 1
     invHeight: 3
-    skillApplied: false
     armor: 35
 
   - type: STR_PLASMA_SWORD # new item, real values
@@ -2805,7 +2803,6 @@ items:
     twoHanded: false
     invWidth: 1
     invHeight: 2
-    skillApplied: false
     armor: 35
 
 
