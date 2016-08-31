@@ -5085,6 +5085,17 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
+  - name: STR_SMALL_ROCKET
+    listOrder: 840
+    category: STR_AMMUNITION
+    requires:
+      - STR_FUSION_ROCKET
+    space: 3
+    time: 220
+    cost: 8000
+    requiredItems:
+      STR_BLASTER_BOMB: 1
+
   - name: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 835
     category: STR_AMMUNITION
@@ -5373,17 +5384,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 4
 
-  - name: STR_SMALL_ROCKET
-    listOrder: 840
-    category: STR_AMMUNITION
-    requires:
-      - STR_FUSION_ROCKET
-    space: 3
-    time: 220
-    cost: 8000
-    requiredItems:
-      STR_BLASTER_BOMB: 1
-
   - name: STR_STUN_GRENADE
     listOrder: 1190
     category: STR_WEAPON
@@ -5394,7 +5394,6 @@ manufacture:
     cost: 6700
     requiredItems:
       STR_STUN_BOMB: 1
-
 
 # Personal armors
 
