@@ -53,6 +53,7 @@
 #
 
 countries:
+
   - delete: STR_USA
   - delete: STR_CANADA
   - delete: STR_RUSSIA
