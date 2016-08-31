@@ -47,7 +47,6 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Robin's Extra Weapons
 - Improved Hand Objects
 - Lukes Inventory Images
-- Advanced_Medikit
 - NewTUReserveUI
 - 2012DeathSounds
 - CraftMissleSound
