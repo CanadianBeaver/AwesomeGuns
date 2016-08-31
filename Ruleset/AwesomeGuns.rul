@@ -6657,19 +6657,19 @@ extraSprites:
   - type: MAN_9F0.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F0.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F0.gif
   - type: MAN_9F1.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F1.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F1.gif
   - type: MAN_9F2.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F2.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F2.gif
   - type: MAN_9F3.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F3.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_9F3.gif
 
 # Restyling images of Power and Flying Suits for inventory (remove helms)
 
