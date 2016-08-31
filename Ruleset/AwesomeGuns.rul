@@ -2725,7 +2725,7 @@ items:
     hitAnimation: 136
     power: 86
     damageType: 5
-    clipSize: 16
+    clipSize: 12
     battleType: 2
     invWidth: 1
     invHeight: 2
