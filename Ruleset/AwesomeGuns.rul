@@ -4600,16 +4600,16 @@ research:
     cost: 320
     points: 10
     dependencies:
-      - STR_STUN_GRENADE
       - STR_ALIEN_WEAPON_USING
+      - STR_STUN_GRENADE
 
   - name: STR_PLASMA_SWORD
     listOrder: 4465
     cost: 250
     points: 10
     dependencies:
-      - STR_LASER_SWORD
       - STR_ALIEN_WEAPON_USING
+      - STR_LASER_SWORD
 
 # BLASTER weapons
 
@@ -5225,27 +5225,109 @@ manufacture:
   - delete: STR_ALIEN_GRENADE
   - delete: STR_MIND_PROBE
 
-  - name: STR_SMALL_ROCKET  # production is similar to STR_BLASTER_BOMB
-    listOrder: 840
-    category: STR_AMMUNITION
-    requires:
-      - STR_FUSION_ROCKET
-    space: 3
-    time: 220
-    cost: 8000
-    requiredItems:
-      STR_BLASTER_BOMB: 1
+# Converted PLASMA weapons
 
-  - name: STR_STUN_GRENADE # production is similar to STR_ALIEN_GRENADE
-    listOrder: 1190
+  - name: STR_PLASMA_SWORD
+    listOrder: 1901
     category: STR_WEAPON
     requires:
-      - STR_STUN_GRENADE
-    space: 2
-    time: 200
-    cost: 6700
+      - STR_PLASMA_SWORD
+    space: 4
+    time: 800
+    cost: 20100
     requiredItems:
-      STR_STUN_BOMB: 1
+      STR_ELERIUM_115: 5
+      STR_ALIEN_ALLOYS: 8
+
+  - name: STR_CONVERTED_PLASMA_PISTOL
+    listOrder: 1903
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_PISTOL
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 3
+    time: 900
+    cost: 56000
+    requiredItems:
+      STR_ELERIUM_115: 5
+      STR_ALIEN_ALLOYS: 5
+      STR_PLASMA_PISTOL: 2
+      STR_MIND_PROBE: 1
+
+  - name: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    listOrder: 1904
+    category: STR_AMMUNITION
+    requires:
+      - STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 180
+    cost: 2000
+    requiredItems:
+      STR_ELERIUM_115: 2
+      STR_PLASMA_PISTOL_CLIP: 2
+
+  - name: STR_CONVERTED_PLASMA_RIFLE
+    listOrder: 1910
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_RIFLE
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 2500
+    cost: 88000
+    requiredItems:
+      STR_ELERIUM_115: 8
+      STR_ALIEN_ALLOYS: 8
+      STR_PLASMA_RIFLE: 2
+      STR_MIND_PROBE: 1
+
+  - name: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    listOrder: 1911
+    category: STR_AMMUNITION
+    requires:
+      - STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 240
+    cost: 3000
+    requiredItems:
+      STR_ELERIUM_115: 4
+      STR_PLASMA_RIFLE_CLIP: 2
+
+  - name: STR_CONVERTED_PLASMA_CANNON
+    listOrder: 1912
+    category: STR_WEAPON
+    requires:
+      - STR_HEAVY_LASER
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 2500
+    cost: 144000
+    requiredItems:
+      STR_ELERIUM_115: 12
+      STR_ALIEN_ALLOYS: 12
+      STR_HEAVY_PLASMA: 2
+      STR_MIND_PROBE: 1
+
+  - name: STR_CONVERTED_PLASMA_CANNON_CLIP
+    listOrder: 1913
+    category: STR_AMMUNITION
+    requires:
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    space: 4
+    time: 240
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 6
+      STR_HEAVY_PLASMA_CLIP: 2
 
   - name: STR_CONVERTED_GRENADE_LAUNCHER # production is similar to STR_CONVERTED_PLASMA_CANNON
     listOrder: 1915
@@ -5295,106 +5377,27 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 4
 
-# Converted PLASMA weapons
-
-  - name: STR_CONVERTED_PLASMA_PISTOL
-    listOrder: 1901
-    category: STR_WEAPON
+  - name: STR_SMALL_ROCKET
+    listOrder: 840
+    category: STR_AMMUNITION
     requires:
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_ALIEN_WEAPON_USING
+      - STR_FUSION_ROCKET
     space: 3
-    time: 900
-    cost: 56000
+    time: 220
+    cost: 8000
     requiredItems:
-      STR_ELERIUM_115: 5
-      STR_ALIEN_ALLOYS: 5
-      STR_PLASMA_PISTOL: 2
-      STR_MIND_PROBE: 1
+      STR_BLASTER_BOMB: 1
 
-  - name: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    listOrder: 1902
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_ALIEN_WEAPON_USING
-    space: 4
-    time: 180
-    cost: 2000
-    requiredItems:
-      STR_ELERIUM_115: 2
-      STR_PLASMA_PISTOL_CLIP: 2
-
-  - name: STR_CONVERTED_PLASMA_RIFLE
-    listOrder: 1910
+  - name: STR_STUN_GRENADE
+    listOrder: 1190
     category: STR_WEAPON
     requires:
-      - STR_PLASMA_RIFLE
-      - STR_PLASMA_RIFLE_CLIP
-      - STR_ALIEN_WEAPON_USING
-    space: 4
-    time: 2500
-    cost: 88000
+      - STR_STUN_GRENADE
+    space: 2
+    time: 200
+    cost: 6700
     requiredItems:
-      STR_ELERIUM_115: 8
-      STR_ALIEN_ALLOYS: 8
-      STR_PLASMA_RIFLE: 2
-      STR_MIND_PROBE: 1
-
-  - name: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    listOrder: 1911
-    category: STR_AMMUNITION
-    requires:
-      - STR_PLASMA_RIFLE_CLIP
-      - STR_ALIEN_WEAPON_USING
-    space: 4
-    time: 240
-    cost: 3000
-    requiredItems:
-      STR_ELERIUM_115: 4
-      STR_PLASMA_RIFLE_CLIP: 2
-
-  - name: STR_CONVERTED_PLASMA_CANNON
-    listOrder: 1912
-    category: STR_WEAPON
-    requires:
-      - STR_HEAVY_PLASMA
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_ALIEN_WEAPON_USING
-    space: 4
-    time: 2500
-    cost: 144000
-    requiredItems:
-      STR_ELERIUM_115: 12
-      STR_ALIEN_ALLOYS: 12
-      STR_HEAVY_PLASMA: 2
-      STR_MIND_PROBE: 1
-
-  - name: STR_CONVERTED_PLASMA_CANNON_CLIP
-    listOrder: 1913
-    category: STR_AMMUNITION
-    requires:
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_ALIEN_WEAPON_USING
-    space: 4
-    time: 240
-    cost: 4000
-    requiredItems:
-      STR_ELERIUM_115: 6
-      STR_HEAVY_PLASMA_CLIP: 2
-
-  - name: STR_PLASMA_SWORD # production is similar to STR_CONVERTED_PLASMA_CANNON
-    listOrder: 1920
-    category: STR_WEAPON
-    requires:
-      - STR_PLASMA_SWORD
-    space: 4
-    time: 800
-    cost: 20100
-    requiredItems:
-      STR_ELERIUM_115: 5
-      STR_ALIEN_ALLOYS: 8
+      STR_STUN_BOMB: 1
 
 
 # Personal armors
