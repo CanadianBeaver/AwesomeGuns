@@ -2685,7 +2685,7 @@ items:
     bigSprite: 171
     floorSprite: 171
     handSprite: 824
-    bulletSprite: 26
+    bulletSprite: 29
     fireSound: 53
     compatibleAmmo:
       - STR_CGL_PLASMA_AMMO
@@ -2739,7 +2739,7 @@ items:
     bigSprite: 173
     floorSprite: 173
     handSprite: 840
-    bulletSprite: 28
+    bulletSprite: 26
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
