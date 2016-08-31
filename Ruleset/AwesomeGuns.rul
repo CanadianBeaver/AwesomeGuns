@@ -6680,12 +6680,12 @@ extraSprites:
     files:
       1002: Resources/AwesomeGuns/Armors/MAN_2_Floorob.png
   - type: XCOM_2.PCK
-    width: 1024
-    height: 80
+    width: 256
+    height: 40
     subX: 32
     subY: 40
     files:
-      0: Resources/AwesomeGuns/Armors/MAN_2_Sheet.png
+      32: Resources/AwesomeGuns/Armors/MAN_2_Sheet.gif
   - type: MAN_2M0.SPK
     singleImage: true
     files:
