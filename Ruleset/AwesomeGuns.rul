@@ -5206,10 +5206,6 @@ manufacture:
 
 # Alien technologies cannot be reproduced, except ALIEN ALLOYS
 
-  - name: STR_ALIEN_ALLOYS # profit = 75.000/m, we can make money at beginning
-    space: 10
-    time: 90 #time: 100, 320 items per month for 40 engineers
-
   - delete: STR_UFO_POWER_SOURCE
   - delete: STR_UFO_NAVIGATION
   - delete: STR_PLASMA_PISTOL
