@@ -45,10 +45,12 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - Weapon Rework/Expansion
 - XenoOperations
 - Robin's Extra Weapons
+- Railgun 
 - Improved Hand Objects
 - Lukes Inventory Images
 - NewTUReserveUI
 - 2012DeathSounds
+- Raven
 - CraftMissleSound
 - Doom_Skill_Levels
 - Laser Rifle Recolor
@@ -58,9 +60,7 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - WolframLance
 - Ryskeliini_GunsNGadgets_1st_pack_v12
 - OpticalEleriumV0-94b
-- Raven
 - Air Combat Rebalanced
-- Railgun
 - Better look personal armor
 - Grey armored vest
 - Scout Power Armor
@@ -69,7 +69,6 @@ I got images and ideas from many mods, but I never copy these without adaptation
 - FastRamp
 - HQSounds_FinalModPack
 - Stun Grenade
-- Final Mod Pack
 - Plasma Melee Weapons
 - *If I have forgotten someone, please let me know.*
 
