@@ -6441,7 +6441,7 @@ extraSprites:
   #   files:
   #     0: Resources/AwesomeGuns/UI/Civilians/civilianf_sprites.png
 
-# Standard armors
+# Standard armours
 
   - type: BIGOBS.PCK
     files:
@@ -6535,7 +6535,7 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/Armors/Inventory/MAN_6F3.png
 
-# Personal armors
+# Personal armours
 
   - type: BIGOBS.PCK
     files:
@@ -6615,19 +6615,19 @@ extraSprites:
   - type: MAN_8F0.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F0.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F0.gif
   - type: MAN_8F1.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F1.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F1.gif
   - type: MAN_8F2.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F2.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F2.gif
   - type: MAN_8F3.SPK
     singleImage: true
     files:
-      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F3.png
+      0: Resources/AwesomeGuns/Armors/Inventory/MAN_8F3.gif
 
 # Power and Flying Suits
 
@@ -6751,7 +6751,7 @@ extraSprites:
     files:
       0: Resources/AwesomeGuns/Armors/Inventory/MAN_3F3.gif
 
-# Colors for Control Panel - movings buttons
+# Colours for Control Panel - moving buttons
 
   - type: TFTDReserve
     width: 59
