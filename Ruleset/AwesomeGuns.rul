@@ -6686,6 +6686,11 @@ extraSprites:
     subY: 40
     files:
       32: Resources/AwesomeGuns/Armors/MAN_2_Sheet.gif
+  - type: XCOM_2.PCK
+    files:
+      264: Resources/AwesomeGuns/Armors/XCOM_2_264.png
+      265: Resources/AwesomeGuns/Armors/XCOM_2_265.png
+      266: Resources/AwesomeGuns/Armors/XCOM_2_266.png
   - type: MAN_2M0.SPK
     singleImage: true
     files:
