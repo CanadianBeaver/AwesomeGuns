@@ -1550,8 +1550,8 @@ items:
   - type: STR_SNIPER_RIFLE_CLIP # new item
     listOrder: 2215
     size: 0.05
-    costBuy: 500
-    costSell: 375
+    costBuy: 416
+    costSell: 312
     weight: 3
     bigSprite: 113
     floorSprite: 113
@@ -1872,7 +1872,7 @@ items:
   - type: STR_HC_AP_AMMO
     size: 0.1
     costBuy: 0 #costBuy: 300
-    costSell: 940 #costSell: 225
+    costSell: 970 #costSell: 225
     weight: 3 #weight: 6
     bigSprite: 12
     floorSprite: 12
@@ -2344,7 +2344,7 @@ items:
   - type: STR_STUN_GRENADE
     listOrder: 4505
     size: 0.1
-    costSell: 14850
+    costSell: 7425
     weight: 3
     bigSprite: 156
     floorSprite: 156
@@ -2709,7 +2709,7 @@ items:
   - type: STR_CONVERTED_PLASMA_RIFLE_CLIP # new item
     listOrder: 5516
     size: 0.1
-    costSell: 6290
+    costSell: 6500
     weight: 4 #weight: 3
     bigSprite: 168
     floorSprite: 168
@@ -2758,7 +2758,7 @@ items:
   - type: STR_CONVERTED_PLASMA_CANNON_CLIP # new item
     listOrder: 5526
     size: 0.1
-    costSell: 8380
+    costSell: 8800
     weight: 5 #weight: 3
     bigSprite: 170
     floorSprite: 170
@@ -2828,7 +2828,7 @@ items:
   - type: STR_CGL_STUN_BOMBS
     listOrder: 5538
     size: 0.1
-    costSell: 25125
+    costSell: 16800
     weight: 4
     bigSprite: 173
     floorSprite: 173
@@ -2849,7 +2849,7 @@ items:
   - type: STR_CGL_ELERIUM_BOMBS
     listOrder: 5539
     size: 0.1
-    costSell: 25125
+    costSell: 16800
     weight: 4
     bigSprite: 174
     floorSprite: 174
@@ -5164,7 +5164,7 @@ manufacture:
     requires:
       - STR_ALLOY_CLIPS
     time: 24
-    cost: 750
+    cost: 775
     requiredItems:
       STR_ALIEN_ALLOYS: 1
 
@@ -5450,7 +5450,7 @@ manufacture:
       - STR_CONVERTED_GRENADE_LAUNCHER
     space: 3
     time: 400
-    cost: 10048
+    cost: 6000
     requiredItems:
       STR_ELERIUM_115: 4
 
@@ -5461,7 +5461,7 @@ manufacture:
       - STR_CONVERTED_GRENADE_LAUNCHER
     space: 3
     time: 400
-    cost: 20100
+    cost: 8000
     requiredItems:
       STR_STUN_BOMB: 4
 
@@ -5473,7 +5473,7 @@ manufacture:
       - STR_ELERIUM_CLIPS
     space: 3
     time: 400
-    cost: 20100
+    cost: 8000
     requiredItems:
       STR_ELERIUM_115: 4
 
@@ -5484,7 +5484,7 @@ manufacture:
       - STR_STUN_GRENADE
     space: 2
     time: 200
-    cost: 6700
+    cost: 3350
     requiredItems:
       STR_STUN_BOMB: 1
 
