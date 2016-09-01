@@ -8044,19 +8044,19 @@ extraStrings:
       STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some ammunition converting from plasma pistols and rifles will allow to be used in combats. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably, it is not necessary to sell all of alien weapons at once."
 
       STR_CONVERTED_PLASMA_PISTOL: "Converted Pistol"
-      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol from alien pistols"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol from alien pistols. Small but useful gun."
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Converted Pistol Clip"
 
       STR_CONVERTED_PLASMA_RIFLE: "Converted Rifle"
-      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles. Simple shooting for simple targets."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Rifle Clip"
 
       STR_CONVERTED_PLASMA_CANNON: "Converted Cannon"
-      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles"
+      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles. Our engineers have no idea what is it..."
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Cannon Clip"
 
       STR_CONVERTED_GRENADE_LAUNCHER: "Converted Launcher"
-      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launchers"
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launchers. It can be a BFG... or can not..."
       STR_CGL_PLASMA_AMMO: "Plasma bombs"
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
