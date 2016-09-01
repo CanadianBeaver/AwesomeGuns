@@ -1533,7 +1533,7 @@ items:
     accuracySnap: 60
     accuracyAimed: 90
     tuAuto: 0
-    tuSnap: 51
+    tuSnap: 52
     tuAimed: 80
     battleType: 1
     twoHanded: true
@@ -1560,7 +1560,7 @@ items:
     bulletSpeed: 3
     hitSound: 8010
     hitAnimation: 26
-    power: 40
+    power: 42
     damageType: 1
     clipSize: 3
     battleType: 2
@@ -2046,7 +2046,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 22
-    maxRange: 40
+    maxRange: 42
     aimRange: 30
     snapRange: 0
     autoRange: 0
@@ -2132,7 +2132,7 @@ items:
       - STR_SMALL_ROCKET
     accuracyAuto: 0
     accuracySnap: 60 #accuracySnap: 55
-    accuracyAimed: 120 #accuracyAimed: 115
+    accuracyAimed: 100 #accuracyAimed: 115
     tuAuto: 0
     tuSnap: 40 #tuSnap: 45
     tuAimed: 75
@@ -2141,7 +2141,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 34
-    maxRange: 75
+    maxRange: 55
     aimRange: 34
     snapRange: 26
     autoRange: 0
@@ -2162,7 +2162,7 @@ items:
     bulletSprite: 19
     hitSound: 0
     hitAnimation: 0
-    power: 160 #power: 75, power: 200
+    power: 165 #power: 75, power: 200
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -2184,7 +2184,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 120 #power: 100
+    power: 100 #power: 100
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -2205,7 +2205,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 140 #power: 90
+    power: 110 #power: 90
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -2227,8 +2227,8 @@ items:
     hitAnimation: 0
     fireSound: 8037 #fireSound: 52
     accuracyAuto: 0
-    accuracySnap: 50 #accuracySnap: 55
-    accuracyAimed: 100 #accuracyAimed: 115
+    accuracySnap: 55
+    accuracyAimed: 95
     tuAuto: 0
     tuSnap: 35
     tuAimed: 66
@@ -2748,7 +2748,7 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 20
-    maxRange: 28
+    maxRange: 32
     aimRange: 0
     snapRange: 18
     autoRange: 15
@@ -2798,10 +2798,10 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 20
-    maxRange: 44
+    maxRange: 46
     aimRange: 33
     snapRange: 0
-    autoRange: 22
+    autoRange: 18
     minRange: 10
     dropoff: 3
 
@@ -2920,7 +2920,7 @@ items:
     accuracyAimed: 75
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 82 # 15tu for reloading a weapon, 1tu for turning in place 45 degrees, soldier should have at least 84tu for firing without pauses, at least 85tu for firing without pauses and turning in place 45 degrees
+    tuAimed: 82
     battleType: 1
     twoHanded: true
     invWidth: 2
