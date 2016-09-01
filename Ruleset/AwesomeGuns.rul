@@ -6601,24 +6601,6 @@ extraSprites:
       50: Resources/AwesomeGuns/UI/Civilians/civilianm_floorpb.png
       51: Resources/AwesomeGuns/UI/Civilians/civilianf_floorob.png
 
-  # These sprites do not work, TODO: should be replaced
-  # - type: CIVM.PCK
-  #   width: 512
-  #   height: 720
-  #   subX: 32
-  #   subY: 40
-  #   files:
-  #     0: Resources/AwesomeGuns/UI/Civilians/civilianm_sprites.png
-
-  # These sprites do not work, TODO: should be replaced
-  # - type: CIVF.PCK
-  #   width: 512
-  #   height: 720
-  #   subX: 32
-  #   subY: 40
-  #   files:
-  #     0: Resources/AwesomeGuns/UI/Civilians/civilianf_sprites.png
-
 # Standard armours
 
   - type: BIGOBS.PCK
