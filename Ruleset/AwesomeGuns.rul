@@ -82,7 +82,7 @@ countries:
       - [283, 292.5, -44, -40] # Boston
       - [250, 255, -30.7, -32.5] # El Paso
       - [205, 210.5, -22.5, -18.5] # Honolulu
-      - [194, 219, -72, -54] # Alaska
+      - [191.5, 219, -72, -54] # Alaska
 
   - type: STR_CANADA
     fundingBase: 230
@@ -90,7 +90,7 @@ countries:
     labelLon: 265
     labelLat: -54
     areas:
-      - [219, 230, -70, -55]
+      - [219, 230, -72, -54] # Inuvik
       - [230, 305, -75, -49]
       - [277, 308, -49, -44] # Halifax
       - [277, 283, -44, -42] # Toronto
@@ -146,9 +146,9 @@ countries:
       - [28, 50, -70, -50] # Moscow
       - [32, 37, -46.5, -44] # Crimea
       - [37, 50, -50, -42] # Astrakhan
-      - [50, 74, -77, -50.5] # Chelyabinsk
-      - [74, 165, -80, -50] # Siberia
-      - [165, 190, -70, -59] # Anadyr
+      #- [50, 74, -77, -50.6] # Chelyabinsk
+      - [50, 165, -80, -50] # Siberia
+      - [165, 190, -71, -59] # Anadyr
       - [130, 138, -50, -40] # Vladivostok
       - [17.75, 22.25, -56, -54] # Kaliningrad
 
@@ -177,9 +177,9 @@ countries:
     labelLon: 80
     labelLat: -24
     areas:
-      - [70, 85, -30, -8]
+      - [68, 85, -30, -8]
       - [74, 79, -35, -30]
-      - [85, 95, -27, -20]
+      - [85, 94, -28, -20]
 
   - type: STR_BRAZIL
     fundingBase: 300
@@ -187,10 +187,11 @@ countries:
     labelLon: 305
     labelLat: 5
     areas:
+      - [286.5, 290, 4.4, 11.4]
       - [290, 302, -3, 14]
       - [302, 310, -3, 22]
       - [310, 326, -1.5, 25]
-      - [304, 313, 22, 33.25]
+      - [303.5, 313, 22, 33.25]
 
   - type: STR_AUSTRALIA
     fundingBase: 280
@@ -206,7 +207,7 @@ countries:
     labelLon: 7.5
     labelLat: -10
     areas:
-      - [2, 15, -14, -4]
+      - [2.5, 15, -14, -4]
 
   - type: STR_SOUTH_AFRICA
     fundingBase: 230
@@ -214,7 +215,8 @@ countries:
     labelLon: 25
     labelLat: 30
     areas:
-      - [15, 25, 26, 35]
+      - [15.8, 25, 28.4, 35]
+      - [19, 25, 25, 28.4]
       - [25, 33.5, 22, 35]
 
   - type: STR_EGYPT
@@ -224,6 +226,7 @@ countries:
     labelLat: -26
     areas:
       - [25, 35, -31.75, -22]
+      - [35, 37, -29, -22]
 
 
 regions:
