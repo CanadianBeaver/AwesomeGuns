@@ -41,37 +41,6 @@ I avoid to make changes in alien's missions or UFOs. There are a few mods for th
 
 Awesome Guns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving, at least the right shoulder, right leg, left shoulder, left leg, and belt must be empty.
 
-I got images and ideas from many mods, but I never copy these without adaptation. Basic of them are:
-- Weapon Rework/Expansion
-- XenoOperations
-- Robin's Extra Weapons
-- Railgun 
-- Improved Hand Objects
-- Lukes Inventory Images
-- NewTUReserveUI
-- 2012DeathSounds
-- Raven
-- CraftMissleSound
-- Doom_Skill_Levels
-- Laser Rifle Recolor
-- GrenadeLauncher
-- Incendiary grenade
-- EqualTerms1.03
-- WolframLance
-- Ryskeliini_GunsNGadgets_1st_pack_v12
-- OpticalEleriumV0-94b
-- Air Combat Rebalanced
-- Better look personal armor
-- Grey armored vest
-- Scout Power Armor
-- Quick-Draw Hip Slot
-- Reproduction
-- FastRamp
-- HQSounds_FinalModPack
-- Stun Grenade
-- Plasma Melee Weapons
-- *If I have forgotten someone, please let me know.*
-
 ###Contacts
 
 I would appreciate hearing your opinion on this. Please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
