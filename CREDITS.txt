@@ -1,6 +1,5 @@
-I got images and ideas from many mods, but I never copy these without adaptation. 
+I got images and ideas from many mods. Basic of them are:
 
-Basic of them are:
 - Weapon Rework/Expansion
 - XenoOperations
 - Robin's Extra Weapons
@@ -31,4 +30,4 @@ Basic of them are:
 
 If I have forgotten someone, please let me know. 
 
-Special thanks to all the people who participated in the development of Awesome Guns modification.
+Special thanks to all people who participated in the development of Awesome Guns modification.
