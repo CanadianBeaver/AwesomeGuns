@@ -8004,7 +8004,7 @@ extraStrings:
 
   - type: en-US
     strings:
-      STR_MEDI_CHEST: "Medicine Chest"
+      STR_MEDI_CHEST: "First Aid Kit"
       STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid on the battlefields."
   - type: ru
     strings:
