@@ -5880,280 +5880,13 @@ ufopaedia:
     requires:
       - STR_ALLOY_CLIPS
 
-# The LASER weapons articles
-
-  - id: STR_LASER_WEAPONS
-    listOrder: 3590
-    type_id: 7
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text_width: 146
-    text: STR_LASER_WEAPONS_UFOPEDIA
-    image_id: LASER_WEAPONS_UFOPEDIAImage
-    requires:
-      - STR_LASER_WEAPONS
-
-  - id: STR_LASER_SWORD
-    listOrder: 3595
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_LASER_SWORD
-    text: STR_LASER_SWORD_UFOPEDIA
-
-# Converted PLASMA weapons
-
-  - id: STR_ALIEN_WEAPON_USING
-    listOrder: 3850
-    type_id: 7
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text_width: 146
-    text: STR_ALIEN_WEAPON_USING_UFOPEDIA
-    image_id: ALIEN_WEAPON_USING_UFOPEDIAImage
-    requires:
-      - STR_ALIEN_WEAPON_USING
-
-  - id: STR_CONVERTED_PLASMA_PISTOL
-    listOrder: 3851
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA
-
-  - id: STR_CONVERTED_PLASMA_PISTOL_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_PLASMA_PISTOL
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_ALIEN_WEAPON_USING
-
-  - id: STR_CONVERTED_PLASMA_RIFLE
-    listOrder: 3852
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_PLASMA_RIFLE
-      - STR_PLASMA_RIFLE_CLIP
-      - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA
-
-  - id: STR_CONVERTED_PLASMA_RIFLE_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_PLASMA_RIFLE
-      - STR_PLASMA_RIFLE_CLIP
-      - STR_ALIEN_WEAPON_USING
-
-  - id: STR_CONVERTED_PLASMA_CANNON
-    listOrder: 3853
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_HEAVY_PLASMA
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_ALIEN_WEAPON_USING
-    text: STR_CONVERTED_PLASMA_CANNON_UFOPEDIA
-
-  - id: STR_CONVERTED_PLASMA_CANNON_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_HEAVY_PLASMA
-      - STR_HEAVY_PLASMA_CLIP
-      - STR_ALIEN_WEAPON_USING
-
-  - id: STR_CONVERTED_GRENADE_LAUNCHER
-    listOrder: 3854
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_CONVERTED_GRENADE_LAUNCHER
-    text: STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA
-
-  - id: STR_CGL_PLASMA_AMMO
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_CONVERTED_GRENADE_LAUNCHER
-
-  - id: STR_CGL_STUN_BOMBS
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_CONVERTED_GRENADE_LAUNCHER
-
-  - id: STR_CGL_ELERIUM_BOMBS
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_CONVERTED_GRENADE_LAUNCHER
-      - STR_ELERIUM_CLIPS
-
-  - id: STR_PLASMA_BLADE
-    title: STR_PLASMA_SWORD
-    listOrder: 3856
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_PLASMA_SWORD
-    text: STR_PLASMA_SWORD_UFOPEDIA
-
-# Fix the list order for PLASMA items
-
-  - id: STR_ALIEN_WEAPON
-    listOrder: 4710
-    type_id: 8
-    section: STR_ALIEN_ARTIFACTS
-    text: STR_ALIEN_WEAPON_UFOPEDIA
-    requires:
-      - STR_ALIEN_WEAPON
-
-  - id: STR_PLASMA_PISTOL
-    listOrder: 4800
-  - id: STR_PLASMA_PISTOL_CLIP
-    listOrder: 4900
-  - id: STR_HEAVY_PLASMA
-    listOrder: 5200
-  - id: STR_HEAVY_PLASMA_CLIP
-    listOrder: 5300
-
-# Fix the list order for BLASTER and SMALL LAUNCHER weapons
-
-  - id: STR_SMALL_LAUNCHER
-    listOrder: 5400
-  - id: STR_STUN_BOMB
-    listOrder: 5500
-
-  - id: STR_BLASTER_LAUNCHER
-    listOrder: 5600
-  - id: STR_BLASTER_BOMB
-    listOrder: 5700
-
-# Soldiers' toys
-
-  - id: STR_MOTION_SCANNER # it can be bought
-    requires: []
-
-  - id: STR_MEDI_CHEST
-    listOrder: 4399
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MEDI_CHEST_UFOPEDIA
-
-# Fix the list order for ELERIUM_115 item
-
-  - id: STR_ELERIUM_115
-    listOrder: 6050
-
-# Fix the ALIEN CONTAINMENT
-
-  - id: STR_ALIEN_BIOLOGY
-    listOrder: 4590
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    text_width: 146
-    text: STR_ALIEN_BIOLOGY_UFOPEDIA
-    image_id: ALIEN_BIOLOGY_UFOPEDIAImage
-    requires:
-      - STR_ALIEN_BIOLOGY
-
-  - id: STR_ALIEN_CONTAINMENT
-    requires:
-      - STR_ALIEN_CONTAINMENT
-
-  - id: STR_STUN_ROD
-    requires:
-      - STR_STUN_ROD
-
-  - id: STR_STUN_GRENADE
-    listOrder: 4605
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_STUN_GRENADE_UFOPEDIA
-    requires:
-      - STR_STUN_GRENADE
-
-  - id: STR_SMALL_ROCKET
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SMALL_ROCKET_UFOPEDIA
-    requires:
-      - STR_FUSION_ROCKET
-
-# Fix the list order for alien AUTOPSies
-
-  - id: STR_SECTOID
-    listOrder: 7900
-  - id: STR_SECTOID_AUTOPSY
-    listOrder: 7800
-
-  - id: STR_CYBERDISC
-    listOrder: 8100
-  - id: STR_CYBERDISC_AUTOPSY
-    listOrder: 8000
-
-  - id: STR_FLOATER
-    listOrder: 8300
-  - id: STR_FLOATER_AUTOPSY
-    listOrder: 8200
-
-  - id: STR_REAPER
-    listOrder: 8500
-  - id: STR_REAPER_AUTOPSY
-    listOrder: 8400
-
-  - id: STR_SNAKEMAN
-    listOrder: 8700
-  - id: STR_SNAKEMAN_AUTOPSY
-    listOrder: 8600
-
-  - id: STR_CHRYSSALID
-    listOrder: 8900
-  - id: STR_CHRYSSALID_AUTOPSY
-    listOrder: 8800
-
-  #- id: STR_ZOMBIE TODO: there is no article, but there is a research
-    #listOrder: 8951
-  #- id: STR_ZOMBIE_AUTOPSY
-    #listOrder: 8950
-
-  - id: STR_MUTON
-    listOrder: 9100
-  - id: STR_MUTON_AUTOPSY
-    listOrder: 9000
-
-  - id: STR_CELATID
-    listOrder: 9300
-  - id: STR_CELATID_AUTOPSY
-    listOrder: 9200
-
-  - id: STR_SILACOID
-    listOrder: 9500
-  - id: STR_SILACOID_AUTOPSY
-    listOrder: 9400
-
-  - id: STR_ETHEREAL
-    listOrder: 9700
-  - id: STR_ETHEREAL_AUTOPSY
-    listOrder: 9600
-
-  - id: STR_SECTOPOD
-    listOrder: 9900
-  - id: STR_SECTOPOD_AUTOPSY
-    listOrder: 9800
-
-# Knife
+# Conventional weapons
 
   - id: STR_KNIFE
     listOrder: 1990
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_KNIFE_UFOPEDIA
-
-# Alloy weapons
 
   - id: STR_PISTOL_AL_CLIP
     type_id: 4
@@ -6305,6 +6038,271 @@ ufopaedia:
   - id: STR_RAILGUN_SLUGS
     type_id: 4
     section: STR_NOT_AVAILABLE
+
+# The LASER weapons articles
+
+  - id: STR_LASER_WEAPONS
+    listOrder: 3590
+    type_id: 7
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
+    text: STR_LASER_WEAPONS_UFOPEDIA
+    image_id: LASER_WEAPONS_UFOPEDIAImage
+    requires:
+      - STR_LASER_WEAPONS
+
+  - id: STR_LASER_SWORD
+    listOrder: 3595
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_SWORD
+    text: STR_LASER_SWORD_UFOPEDIA
+
+# Converted PLASMA weapons
+
+  - id: STR_ALIEN_WEAPON_USING
+    listOrder: 3850
+    type_id: 7
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text_width: 146
+    text: STR_ALIEN_WEAPON_USING_UFOPEDIA
+    image_id: ALIEN_WEAPON_USING_UFOPEDIAImage
+    requires:
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_PLASMA_BLADE
+    title: STR_PLASMA_SWORD
+    listOrder: 3851
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_SWORD
+    text: STR_PLASMA_SWORD_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_PISTOL
+    listOrder: 3853
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      #- STR_PLASMA_PISTOL # TODO: Visualization bug has found here
+      #- STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      #- STR_PLASMA_PISTOL # TODO: Visualization bug has found here
+      #- STR_PLASMA_PISTOL_CLIP
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_PLASMA_RIFLE
+    listOrder: 3855
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      #- STR_PLASMA_RIFLE # TODO: Visualization bug has found here
+      #- STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      #- STR_PLASMA_RIFLE # TODO: Visualization bug has found here
+      #- STR_PLASMA_RIFLE_CLIP
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_PLASMA_CANNON
+    listOrder: 3857
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      #- STR_HEAVY_PLASMA # TODO: Visualization bug has found here
+      #- STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+    text: STR_CONVERTED_PLASMA_CANNON_UFOPEDIA
+
+  - id: STR_CONVERTED_PLASMA_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      #- STR_HEAVY_PLASMA # TODO: Visualization bug has found here
+      #- STR_HEAVY_PLASMA_CLIP
+      - STR_ALIEN_WEAPON_USING
+
+  - id: STR_CONVERTED_GRENADE_LAUNCHER
+    listOrder: 3859
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+    text: STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA
+
+  - id: STR_CGL_PLASMA_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+
+  - id: STR_CGL_STUN_BOMBS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+
+  - id: STR_CGL_ELERIUM_BOMBS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CONVERTED_GRENADE_LAUNCHER
+      - STR_ELERIUM_CLIPS
+
+# Fix the list order for PLASMA items
+
+  - id: STR_ALIEN_WEAPON
+    listOrder: 4710
+    type_id: 8
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_ALIEN_WEAPON_UFOPEDIA
+    requires:
+      - STR_ALIEN_WEAPON
+
+  - id: STR_PLASMA_PISTOL
+    listOrder: 4800
+  - id: STR_PLASMA_PISTOL_CLIP
+    listOrder: 4900
+  - id: STR_HEAVY_PLASMA
+    listOrder: 5200
+  - id: STR_HEAVY_PLASMA_CLIP
+    listOrder: 5300
+
+# Fix the list order for BLASTER and SMALL LAUNCHER weapons
+
+  - id: STR_SMALL_LAUNCHER
+    listOrder: 5400
+  - id: STR_STUN_BOMB
+    listOrder: 5500
+
+  - id: STR_BLASTER_LAUNCHER
+    listOrder: 5600
+  - id: STR_BLASTER_BOMB
+    listOrder: 5700
+
+# Soldiers' toys
+
+  - id: STR_MOTION_SCANNER # it can be bought
+    requires: []
+
+  - id: STR_MEDI_CHEST
+    listOrder: 4399
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MEDI_CHEST_UFOPEDIA
+
+# Fix the list order for ELERIUM_115 item
+
+  - id: STR_ELERIUM_115
+    listOrder: 6050
+
+# Fix the ALIEN CONTAINMENT
+
+  - id: STR_ALIEN_BIOLOGY
+    listOrder: 4590
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    text_width: 146
+    text: STR_ALIEN_BIOLOGY_UFOPEDIA
+    image_id: ALIEN_BIOLOGY_UFOPEDIAImage
+    requires:
+      - STR_ALIEN_BIOLOGY
+
+  - id: STR_ALIEN_CONTAINMENT
+    requires:
+      - STR_ALIEN_CONTAINMENT
+
+  - id: STR_STUN_ROD
+    requires:
+      - STR_STUN_ROD
+
+  - id: STR_STUN_GRENADE
+    listOrder: 4605
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_STUN_GRENADE_UFOPEDIA
+    requires:
+      - STR_STUN_GRENADE
+
+  - id: STR_SMALL_ROCKET
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMALL_ROCKET_UFOPEDIA
+    requires:
+      - STR_FUSION_ROCKET
+
+# Fix the list order for alien AUTOPSies
+
+  - id: STR_SECTOID
+    listOrder: 7900
+  - id: STR_SECTOID_AUTOPSY
+    listOrder: 7800
+
+  - id: STR_CYBERDISC
+    listOrder: 8100
+  - id: STR_CYBERDISC_AUTOPSY
+    listOrder: 8000
+
+  - id: STR_FLOATER
+    listOrder: 8300
+  - id: STR_FLOATER_AUTOPSY
+    listOrder: 8200
+
+  - id: STR_REAPER
+    listOrder: 8500
+  - id: STR_REAPER_AUTOPSY
+    listOrder: 8400
+
+  - id: STR_SNAKEMAN
+    listOrder: 8700
+  - id: STR_SNAKEMAN_AUTOPSY
+    listOrder: 8600
+
+  - id: STR_CHRYSSALID
+    listOrder: 8900
+  - id: STR_CHRYSSALID_AUTOPSY
+    listOrder: 8800
+
+  #- id: STR_ZOMBIE TODO: there is no article, but there is a research
+    #listOrder: 8951
+  #- id: STR_ZOMBIE_AUTOPSY
+    #listOrder: 8950
+
+  - id: STR_MUTON
+    listOrder: 9100
+  - id: STR_MUTON_AUTOPSY
+    listOrder: 9000
+
+  - id: STR_CELATID
+    listOrder: 9300
+  - id: STR_CELATID_AUTOPSY
+    listOrder: 9200
+
+  - id: STR_SILACOID
+    listOrder: 9500
+  - id: STR_SILACOID_AUTOPSY
+    listOrder: 9400
+
+  - id: STR_ETHEREAL
+    listOrder: 9700
+  - id: STR_ETHEREAL_AUTOPSY
+    listOrder: 9600
+
+  - id: STR_SECTOPOD
+    listOrder: 9900
+  - id: STR_SECTOPOD_AUTOPSY
+    listOrder: 9800
 
 
 
