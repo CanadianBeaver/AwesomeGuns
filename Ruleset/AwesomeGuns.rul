@@ -1549,7 +1549,7 @@ items:
 
   - type: STR_SNIPER_RIFLE_CLIP # new item
     listOrder: 2215
-    size: 0.05
+    size: 0.07
     costBuy: 416
     costSell: 312
     weight: 3
@@ -1568,7 +1568,7 @@ items:
 
   - type: STR_SNIPER_RIFLE_AL_CLIP # new item
     listOrder: 2216
-    size: 0.05
+    size: 0.07
     costSell: 1600
     weight: 3
     bigSprite: 114
@@ -1727,7 +1727,7 @@ items:
 
   - type: STR_ACID_SNIPER_RIFLE_CLIP # new item
     listOrder: 2228
-    size: 0.05
+    size: 0.08
     costSell: 1875
     weight: 2
     bigSprite: 122
@@ -1745,7 +1745,7 @@ items:
 
   - type: STR_ELERIUM_SNIPER_RIFLE_CLIP # new item
     listOrder: 2229
-    size: 0.05
+    size: 0.08
     costSell: 2400
     weight: 2
     bigSprite: 123
@@ -1764,7 +1764,7 @@ items:
 
   - type: STR_SHOTGUN # new item
     listOrder: 2280
-    size: 0.18
+    size: 0.14
     costBuy: 3400
     costSell: 2550
     weight: 9
@@ -1835,7 +1835,7 @@ items:
     armor: 16
 
   - type: STR_HEAVY_CANNON
-    size: 0.3
+    size: 0.26
     costBuy: 9900 #6400
     costSell: 7425 #4800
     weight: 18
@@ -2021,10 +2021,10 @@ items:
 
   - type: STR_GRENADE_LAUNCHER # new item
     listOrder: 3090
-    size: 0.15
+    size: 0.14
     costBuy: 5800
     costSell: 4350
-    weight: 8
+    weight: 7
     bigSprite: 128
     floorSprite: 128
     handSprite: 584
@@ -2120,7 +2120,7 @@ items:
     size: 0.4
     costBuy: 6000 #4000
     costSell: 4500 #3000
-    weight: 10
+    weight: 12
     bigSprite: 15
     floorSprite: 15
     handSprite: 72
@@ -2215,7 +2215,7 @@ items:
 
   - type: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 3405
-    size: 0.2
+    size: 0.25
     costSell: 15000
     weight: 6
     bigSprite: 148
@@ -2360,7 +2360,7 @@ items:
 
   - type: STR_LASER_SWORD # new item
     listOrder: 3490
-    size: 0.1
+    size: 0.12
     costSell: 8000
     weight: 4
     bigSprite: 175
@@ -2678,7 +2678,7 @@ items:
     listOrder: 5515
     size: 0.2
     costSell: 126500
-    weight: 16 #5
+    weight: 15 #5
     bigSprite: 167
     floorSprite: 167
     handSprite: 760
@@ -2724,9 +2724,9 @@ items:
 
   - type: STR_CONVERTED_PLASMA_CANNON # new item
     listOrder: 5525
-    size: 0.2
+    size: 0.3
     costSell: 171600
-    weight: 18
+    weight: 12
     bigSprite: 169
     floorSprite: 169
     handSprite: 808
@@ -2773,9 +2773,9 @@ items:
 
   - type: STR_CONVERTED_GRENADE_LAUNCHER # new item
     listOrder: 5535
-    size: 0.2
+    size: 0.3
     costSell: 126500
-    weight: 9
+    weight: 12
     bigSprite: 171
     floorSprite: 171
     handSprite: 824
@@ -2827,7 +2827,7 @@ items:
 
   - type: STR_CGL_STUN_BOMBS
     listOrder: 5538
-    size: 0.1
+    size: 0.15
     costSell: 16800
     weight: 4
     bigSprite: 173
@@ -2848,7 +2848,7 @@ items:
 
   - type: STR_CGL_ELERIUM_BOMBS
     listOrder: 5539
-    size: 0.1
+    size: 0.15
     costSell: 16800
     weight: 4
     bigSprite: 174
