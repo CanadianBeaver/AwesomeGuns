@@ -6985,6 +6985,7 @@ extraSprites:
     files:
 
       # items
+      29: Resources/AwesomeGuns/Weapons/ALIENS/MindProbe.gif
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
       60: Resources/AwesomeGuns/Weapons/KNIFE/Bigob.gif
 
@@ -7200,7 +7201,7 @@ extraSprites:
       # items
       128: Resources/AwesomeGuns/Items/Handobs_ELERIUM.gif
       136: Resources/AwesomeGuns/Items/Handobs_MOTION_SCANNER.gif
-      144: Resources/AwesomeGuns/Items/Handobs_MIND_PROBE.gif
+      144: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/MindProbe.gif
       152: Resources/AwesomeGuns/Items/Handobs_ELECTRO_FLARE.gif
       160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
