@@ -1587,7 +1587,7 @@ items:
   - type: STR_ALLOY_RIFLE # new item
     listOrder: 2205
     size: 0.2
-    costSell: 18750
+    costSell: 8700
     weight: 18
     bigSprite: 116
     floorSprite: 116
@@ -1678,7 +1678,7 @@ items:
   - type: STR_ALLOY_SNIPER_RIFLE # new item
     listOrder: 2226
     size: 0.3
-    costSell: 72500
+    costSell: 69500
     weight: 30
     bigSprite: 120
     floorSprite: 120
@@ -2216,7 +2216,7 @@ items:
   - type: STR_SINGLE_ROCKET_LAUNCHER
     listOrder: 3405
     size: 0.2
-    costSell: 12000
+    costSell: 15000
     weight: 6
     bigSprite: 148
     floorSprite: 148
@@ -2361,7 +2361,7 @@ items:
   - type: STR_LASER_SWORD # new item
     listOrder: 3490
     size: 0.1
-    costSell: 24000
+    costSell: 8000
     weight: 4
     bigSprite: 175
     floorSprite: 175
@@ -2380,7 +2380,7 @@ items:
 
   - type: STR_LASER_PISTOL
     size: 0.1
-    costSell: 20000
+    costSell: 10000 #20000
     weight: 6 #weight: 7
     bigSprite: 5
     floorSprite: 5
@@ -2412,7 +2412,7 @@ items:
 
   - type: STR_LASER_RIFLE
     size: 0.2
-    costSell: 36900
+    costSell: 25000 #36900
     weight: 12 #weight: 8
     bigSprite: 0
     floorSprite: 0
@@ -2445,7 +2445,7 @@ items:
 
   - type: STR_HEAVY_LASER
     size: 0.3
-    costSell: 49000 #61000
+    costSell: 40000 #61000
     weight: 14 #weight: 18
     bigSprite: 6
     floorSprite: 6
@@ -2484,7 +2484,7 @@ items:
       - STR_PLASMA_PISTOL
       - STR_ALIENS_ONLY
     size: 0.1
-    costSell: 84000
+    costSell: 40000 #84000
     weight: 4 #weight: 3
     bigSprite: 32
     floorSprite: 31
@@ -2532,7 +2532,7 @@ items:
       - STR_PLASMA_RIFLE
       - STR_ALIENS_ONLY
     size: 0.2
-    costSell: 126500
+    costSell: 60000 #126500
     weight: 6 #weight: 5
     bigSprite: 31
     floorSprite: 30
@@ -2581,7 +2581,7 @@ items:
       - STR_HEAVY_PLASMA
       - STR_ALIENS_ONLY
     size: 0.2
-    costSell: 171600
+    costSell: 80000 #171600
     weight: 9 #weight: 8
     bigSprite: 30
     floorSprite: 29
@@ -2725,7 +2725,7 @@ items:
   - type: STR_CONVERTED_PLASMA_CANNON # new item
     listOrder: 5525
     size: 0.2
-    costSell: 201600
+    costSell: 171600
     weight: 18
     bigSprite: 169
     floorSprite: 169
@@ -2774,7 +2774,7 @@ items:
   - type: STR_CONVERTED_GRENADE_LAUNCHER # new item
     listOrder: 5535
     size: 0.2
-    costSell: 201600
+    costSell: 126500
     weight: 9
     bigSprite: 171
     floorSprite: 171
@@ -2883,7 +2883,7 @@ items:
   - type: STR_PLASMA_SWORD # new item, real values
     listOrder: 5542
     size: 0.08
-    costSell: 33000
+    costSell: 72000
     weight: 5
     bigSprite: 177
     floorSprite: 176
@@ -2906,7 +2906,7 @@ items:
   - type: STR_RAILGUN # new item
     listOrder: 3450
     size: 0.2
-    costSell: 134000
+    costSell: 130000
     weight: 40
     bigSprite: 160
     floorSprite: 160
@@ -5063,7 +5063,7 @@ manufacture:
       - STR_ALLOY_RIFLE
     space: 2
     time: 360
-    cost: 15000
+    cost: 7250
     requiredItems:
       STR_ALIEN_ALLOYS: 8
 
@@ -5195,7 +5195,7 @@ manufacture:
     requires:
       - STR_IMPROVED_ROCKETS
     time: 400
-    cost: 9000
+    cost: 12500
     requiredItems:
       STR_ALIEN_ALLOYS: 5
 
@@ -5208,7 +5208,7 @@ manufacture:
       - STR_LASER_SWORD
     space: 2
     time: 325
-    cost: 15000
+    cost: 6400
     requiredItems:
       STR_ALIEN_ALLOYS: 4
       STR_ELERIUM_115: 2
@@ -5219,7 +5219,7 @@ manufacture:
       - STR_LASER_PISTOL
     space: 2
     time: 300
-    cost: 12000 #cost: 8000
+    cost: 8000 #cost: 8000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
       STR_ELERIUM_115: 1
@@ -5230,7 +5230,7 @@ manufacture:
       - STR_LASER_RIFLE
     space: 3
     time: 400
-    cost: 25000 #cost: 20000
+    cost: 20000 #cost: 20000
     requiredItems:
       STR_ALIEN_ALLOYS: 5
       STR_ELERIUM_115: 2
@@ -5241,7 +5241,7 @@ manufacture:
       - STR_HEAVY_LASER
     space: 4
     time: 700
-    cost: 35000 #cost: 32000
+    cost: 32000 #cost: 32000
     requiredItems:
       STR_ALIEN_ALLOYS: 8
       STR_ELERIUM_115: 4
@@ -5255,7 +5255,7 @@ manufacture:
       - STR_ELECTROMAGNETIC_WEAPONS
     space: 4
     time: 2000
-    cost: 98000
+    cost: 108000
     requiredItems:
       STR_ALIEN_ALLOYS: 14
       STR_ELERIUM_115: 6
@@ -5334,7 +5334,7 @@ manufacture:
       - STR_PLASMA_SWORD
     space: 4
     time: 800
-    cost: 20100
+    cost: 60000
     requiredItems:
       STR_ELERIUM_115: 5
       STR_ALIEN_ALLOYS: 8
@@ -5349,7 +5349,7 @@ manufacture:
       - STR_ALIEN_WEAPON_USING
     space: 3
     time: 900
-    cost: 56000
+    cost: 70000
     requiredItems:
       STR_ELERIUM_115: 5
       STR_ALIEN_ALLOYS: 5
@@ -5379,7 +5379,7 @@ manufacture:
       - STR_ALIEN_WEAPON_USING
     space: 4
     time: 2500
-    cost: 88000
+    cost: 105000
     requiredItems:
       STR_ELERIUM_115: 8
       STR_ALIEN_ALLOYS: 8
@@ -5409,7 +5409,7 @@ manufacture:
       - STR_ALIEN_WEAPON_USING
     space: 4
     time: 2500
-    cost: 144000
+    cost: 143000
     requiredItems:
       STR_ELERIUM_115: 12
       STR_ALIEN_ALLOYS: 12
@@ -5436,7 +5436,7 @@ manufacture:
       - STR_CONVERTED_GRENADE_LAUNCHER
     space: 4
     time: 2500
-    cost: 144000
+    cost: 105417
     requiredItems:
       STR_ELERIUM_115: 8
       STR_ALIEN_ALLOYS: 12
