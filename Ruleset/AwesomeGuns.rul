@@ -2956,7 +2956,7 @@ items:
   - type: STR_PLASMA_BLADE # STR_PLASMA_SWORD for UFOpaedia article, real values are bellow
     weight: 5
     bigSprite: 176
-    power: 90
+    power: 96
     damageType: 5
     accuracyMelee: 94
     tuMelee: 25
@@ -8098,7 +8098,7 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
 
-      STR_PLASMA_SWORD: "Plasma Sword"
+      STR_PLASMA_SWORD: "Plasma Blade"
       STR_PLASMA_SWORD_UFOPEDIA: "This lethal implement of sword combines a large blade, a micron thick at the edge, a plasma emitter, and an electromagnet. When activated, hot plasma floods the EM field surrounding the blade, superheating it to the point where its touch would make titanium run like water."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
@@ -8133,7 +8133,7 @@ extraStrings:
       STR_CGL_STUN_BOMBS: "Парализующие бомбы"
       STR_CGL_ELERIUM_BOMBS: "Элериумные бомбы"
 
-      STR_PLASMA_SWORD: "Плазменный меч"
+      STR_PLASMA_SWORD: "Плазменный коготь"
       STR_PLASMA_SWORD_UFOPEDIA: "Это смертельная реализация клинка сочетает в себе большое лезвие микронной заточки, плазменный эмиттер и электромагнит. При активации горячая плазма заполняет электромагнитное поле вокруг лезвия, разогревая цель при контакте до температуры плавления Титана."
 
       STR_ALIEN_GRENADE_UFOPEDIA: "Применяется так же, как и земные гранаты, однако имеет большую мощность и не требует зсионических способностей."
