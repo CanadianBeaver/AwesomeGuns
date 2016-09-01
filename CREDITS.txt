@@ -1,4 +1,4 @@
-I got images and ideas from many mods, but I never copy these without adaptation.
+I got images and ideas from many mods, but I never copy these without adaptation. 
 
 Basic of them are:
 - Weapon Rework/Expansion
@@ -29,4 +29,6 @@ Basic of them are:
 - Stun Grenade
 - Plasma Melee Weapons
 
-If I have forgotten someone, please let me know.
+If I have forgotten someone, please let me know. 
+
+Special thanks to all the people who participated in the development of Awesome Guns modification.
