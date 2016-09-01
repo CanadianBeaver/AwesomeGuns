@@ -7862,7 +7862,7 @@ extraStrings:
       STR_ELERIUM_CLIPS: "Elerium ammunition"
       STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
 
-      STR_KNIFE: "Combat knife"
+      STR_KNIFE: "Combat Knife"
       STR_KNIFE_UFOPEDIA: "A combat knife is a fighting knife designed solely for military use and primarily intended for hand-to-hand or close combat fighting."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
