@@ -6632,17 +6632,17 @@ extraSprites:
 
   - type: BIGOBS.PCK
     files:
-      1004: Resources/AwesomeGuns/Armors/MAN_7_Corpse.png
+      1004: Resources/AwesomeGuns/Armors/MAN_7_Corpse.gif
   - type: FLOOROB.PCK
     files:
-      1004: Resources/AwesomeGuns/Armors/MAN_7_Floorob.png
+      1004: Resources/AwesomeGuns/Armors/MAN_7_Floorob.gif
   - type: HEAVYPERSONALARMOR.PCK
     width: 256
     height: 1400
     subX: 32
     subY: 40
     files:
-      0: Resources/AwesomeGuns/Armors/MAN_7_Sheet.png
+      0: Resources/AwesomeGuns/Armors/MAN_7_Sheet.gif
   - type: MAN_7M0.SPK
     singleImage: true
     files:
