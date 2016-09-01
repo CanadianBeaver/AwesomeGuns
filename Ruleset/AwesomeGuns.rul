@@ -146,7 +146,7 @@ countries:
       - [28, 50, -70, -50] # Moscow
       - [32, 37, -46.5, -44] # Crimea
       - [37, 50, -50, -42] # Astrakhan
-      - [50, 74, -77, -40] # Chelyabinsk
+      - [50, 74, -77, -50.5] # Chelyabinsk
       - [74, 165, -80, -50] # Siberia
       - [165, 190, -70, -59] # Anadyr
       - [130, 138, -50, -40] # Vladivostok
@@ -160,7 +160,7 @@ countries:
     areas:
       - [74, 98, -50, -30]
       - [98, 123, -50, -21]
-      - [123, 130, -54, -40]
+      - [123, 130, -53, -40]
 
   - type: STR_JAPAN
     fundingBase: 400
@@ -1381,10 +1381,12 @@ items:
     handSprite: 176
     meleeSound: 8000
     meleeAnimation: 44
-    power: 54
-    damageType: 1
+    power: 64
+    strengthApplied: true
+    skillApplied: true
+    damageType: 7
     accuracyMelee: 90
-    tuMelee: 18
+    tuMelee: 16
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -2447,8 +2449,10 @@ items:
     handSprite: 856
     meleeSound: 8054
     meleeAnimation: 54
-    power: 85
-    damageType: 5
+    power: 88
+    strengthApplied: false
+    skillApplied: true
+    damageType: 7
     accuracyMelee: 99
     tuMelee: 24
     battleType: 3
@@ -2969,8 +2973,10 @@ items:
     handSprite: 864
     meleeSound: 8065
     meleeAnimation: 64
-    power: 90
-    damageType: 5
+    power: 96
+    strengthApplied: false
+    skillApplied: true
+    damageType: 7
     accuracyMelee: 94
     tuMelee: 25
     battleType: 3
@@ -2978,7 +2984,6 @@ items:
     invWidth: 1
     invHeight: 2
     armor: 35
-
 
 # RAIL weapons
 
