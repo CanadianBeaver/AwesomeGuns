@@ -7816,13 +7816,13 @@ extraStrings:
       STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition and grapeshot from alien alloys can significantly increase the firepower of conventional weapon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alien alloys, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons. The next section contains more information about manufacturing."
 
       STR_ACID_CLIPS: "Acid ammunition"
-      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the chryssalid corpse can be used for the production of a particular acid. The capsule shape can keep the acid inside the ammunition and sprays it into enemy's body when direct contact. We may make such clips from alien alloys for Assault rifle and Thunderbolt.{NEWLINE}{NEWLINE}It seems that the most of aliens have immunity to acid. However, their robots are likely highly vulnerable from this type of weapons."
+      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the chryssalid corpse can be used for the production of a particular acid. The capsule shape can keep the acid inside the ammunition and sprays it into enemy's body when direct contact. We may make such clips from alien alloys for Assault rifle and Thunderbolt.{NEWLINE}{NEWLINE}It seems that the most of aliens have immunity to acid. However, their robots are highly vulnerable from this type of weapons."
 
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production from 3 alien alloys makes 1 clips for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> this production from 2 alien alloys makes 1 ammo for the shotgun, heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}Profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case from one alien alloy can be manufactured just one ammo or clip."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production makes 1 clips for the pistol, machine pistol, rifle and sniper rifle from 3 alien alloys.{NEWLINE}{NEWLINE}Armor-piercing shells> this production makes 1 ammo for the shotgun, heavy cannon and auto-cannon from 2 alien alloys.{NEWLINE}{NEWLINE}It is profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case it can be manufactured just one ammo or clip from one alien alloy."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
       STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
@@ -7831,12 +7831,12 @@ extraStrings:
       STR_KNIFE_UFOPEDIA: "A combat knife is a fighting knife designed solely for military use and primarily intended for hand-to-hand or close combat fighting."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
-      STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap, quick. An integral part of the additional equipment."
+      STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap and quick integral part of the additional equipment."
 
       STR_MACHINE_PISTOL: "Machine Pistol"
       STR_MACHINE_PISTOL_CLIP: "Machine Pistol Clip"
       STR_MACHINE_PISTOL_AL_CLIP: "Machine Pistol-AP Clip"
-      STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It's less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
+      STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It is less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
 
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
       STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips. It is suitable for fighting at close to medium range."
@@ -7864,7 +7864,7 @@ extraStrings:
       STR_SHOTGUN_CLIP: "Shotgun-AL AMMO"
       STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard AMMO contains 6 shells."
 
-      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon."
+      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is devastating, but cumbersome weapon."
       STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
 
       STR_GRENADE_LAUNCHER: "Grenade Launcher"
@@ -8027,7 +8027,7 @@ extraStrings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
       STR_RAILGUN_SLUGS: "Railgun Slug"
-      STR_RAILGUN_UFOPEDIA: "Almost mobile electromagnetic accelerator. Fires on the enormous distances with little or no loss of accuracy. Speed of slug is so higher which gives the advantage of lethal force. However, as a weapon is quite difficult and it fires single-shot. Create an assault rifle is not possible."
+      STR_RAILGUN_UFOPEDIA: "Almost mobile electromagnetic accelerator. It fires on the enormous distances with little or no loss of accuracy. Speed of slug is so higher which gives the advantage of lethal force. However, as a weapon Railgun is quite difficult and it fires single-shot. Creating an assault rifle is not possible."
   - type: ru
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
@@ -8053,7 +8053,7 @@ extraStrings:
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Rifle Clip"
 
       STR_CONVERTED_PLASMA_CANNON: "Converted Cannon"
-      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles. Our engineers have no idea what is it..."
+      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Converted Plasma Cannon from alien heavy plasma rifles. Our engineers have no idea what it is..."
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Cannon Clip"
 
       STR_CONVERTED_GRENADE_LAUNCHER: "Converted Launcher"
