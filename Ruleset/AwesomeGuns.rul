@@ -6948,6 +6948,7 @@ extraSprites:
     files:
 
       # items
+      26: Resources/AwesomeGuns/Items/STUN_ROD.gif
       29: Resources/AwesomeGuns/Weapons/ALIENS/MindProbe.gif
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
       60: Resources/AwesomeGuns/Weapons/KNIFE/Bigob.gif
