@@ -134,12 +134,9 @@ div.donate div p { margin: 0; }
 .btnmenu.selected  {
   font-size: 1rem; } }      
   
-.latestrelease { display: block;
-    width: 100%;
-    padding: 1px 2px;
-    font-size: 0.6rem; }
-.latestrelease a { display: block; text-decoration: none; color: rgba(255, 255, 255, 0.7); }
-.latestrelease span { display: block; font-size: 0.4rem; }
+.latestrelease { display: block; }
+.latestrelease a { display: block; text-decoration: none; font-size: 0.6rem; color: rgba(255, 255, 255, 0.85); }
+.latestrelease span { display: block; font-size: 0.4rem; color: rgba(255, 255, 255, 0.7); }
 
 @media screen and (min-width: 42em) and (max-width: 64em) { 
   .latestrelease a, .latestrelease span { display: inline-block; } 
