@@ -70,7 +70,6 @@ div.downloads .btn + .btn {
     margin-left: 0.1rem;
     margin-right: 0.1rem;} }
     
-    
 div.donate
 {
    width: 100%;
@@ -139,10 +138,10 @@ div.donate div p { margin: 0; }
     width: 100%;
     padding: 1px 2px;
     font-size: 0.6rem; }
-.latestrelease .release { display: block; }
-.latestrelease .date { display: block; font-size: 0.4rem; }
+.latestrelease a { display: block; text-decoration: none; color: rgba(255, 255, 255, 0.7); }
+.latestrelease span { display: block; font-size: 0.4rem; }
 
-@media screen and (min-width: 42em) and (max-width: 64em) { .latestrelease .release, .latestrelease .date { display: block;} }
+@media screen and (min-width: 42em) and (max-width: 64em) { .latestrelease a, .latestrelease span { display: inline-block;} }
 @media screen and (max-width: 42em) { .latestrelease { display: none;} }
   
 .support_the_project
