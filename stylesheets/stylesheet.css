@@ -141,8 +141,10 @@ div.donate div p { margin: 0; }
 .latestrelease a { display: block; text-decoration: none; color: rgba(255, 255, 255, 0.7); }
 .latestrelease span { display: block; font-size: 0.4rem; }
 
-@media screen and (min-width: 42em) and (max-width: 64em) { .latestrelease a, .latestrelease span { display: inline-block;} }
-@media screen and (max-width: 42em) { .latestrelease { display: none;} }
+@media screen and (min-width: 42em) and (max-width: 64em) { 
+  .latestrelease a, .latestrelease span { display: inline-block; } 
+  .latestrelease span { margin-left: 4px;} }
+/*@media screen and (max-width: 42em) { .latestrelease { display: none;} }*/
   
 .support_the_project
 {
