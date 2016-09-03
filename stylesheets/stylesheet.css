@@ -135,6 +135,15 @@ div.donate div p { margin: 0; }
 .btnmenu.selected  {
   font-size: 1rem; } }      
   
+.latestrelease { display: block;
+    width: 100%;
+    padding: 1px 2px;
+    font-size: 0.6rem; }
+.latestrelease .release { display: block; }
+.latestrelease .date{ display: block; font-size: 0.4rem; }
+
+@media screen and (max-width: 42em) { .latestrelease { display: none;} }
+  
 .support_the_project
 {
   white-space: nowrap;
