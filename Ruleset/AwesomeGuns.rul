@@ -2903,7 +2903,7 @@ items:
     bigSprite: 174
     floorSprite: 174
     handSprite: 848
-    bulletSprite: 29
+    bulletSprite: 34
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
@@ -6893,7 +6893,7 @@ extraSprites:
 
   - type: Projectiles
     width: 105
-    height: 102
+    height: 105
     subX: 3
     subY: 3
     files:
