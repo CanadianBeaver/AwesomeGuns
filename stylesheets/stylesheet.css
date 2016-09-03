@@ -140,8 +140,9 @@ div.donate div p { margin: 0; }
     padding: 1px 2px;
     font-size: 0.6rem; }
 .latestrelease .release { display: block; }
-.latestrelease .date{ display: block; font-size: 0.4rem; }
+.latestrelease .date { display: block; font-size: 0.4rem; }
 
+@media screen and (min-width: 42em) and (max-width: 64em) { .latestrelease .release, .latestrelease .date { display: block;} }
 @media screen and (max-width: 42em) { .latestrelease { display: none;} }
   
 .support_the_project
