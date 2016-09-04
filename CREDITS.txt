@@ -26,8 +26,7 @@ I got images and ideas from many mods. Basic of them are:
 - FastRamp
 - HQSounds_FinalModPack
 - Stun Grenade
-- Plasma Melee Weapons
 
-If I have forgotten someone, please let me know. 
+If I have forgotten someone, please let me know.
 
 Special thanks to all people who participated in the development of Awesome Guns modification.

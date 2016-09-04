@@ -1346,13 +1346,14 @@ items:
     floorSprite: 75
     handSprite: 176
     meleeSound: 8000
+    meleeHitSound: 8001
     meleeAnimation: 44
-    power: 64
+    power: 50
     strengthApplied: true
     skillApplied: true
     damageType: 7
     accuracyMelee: 90
-    tuMelee: 16
+    tuMelee: 15
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -1368,7 +1369,7 @@ items:
     floorSprite: 3
     handSprite: 96
     bulletSprite: 0
-    fireSound: 8001 #fireSound: 4
+    fireSound: 8002 #fireSound: 4
     compatibleAmmo:
       - STR_PISTOL_CLIP
       - STR_PISTOL_AL_CLIP
@@ -1398,7 +1399,7 @@ items:
     floorSprite: 4
     handSprite: 408
     bulletSprite: 0
-    hitSound: 8002 #hitSound: 22
+    hitSound: 8003 #hitSound: 22
     bulletSpeed: 0
     hitAnimation: 26
     power: 26
@@ -1417,7 +1418,7 @@ items:
     handSprite: 416
     bulletSprite: 1
     bulletSpeed: 1
-    hitSound: 8002 #hitSound: 22
+    hitSound: 8003 #hitSound: 22
     hitAnimation: 56
     power: 40
     damageType: 1
@@ -1466,7 +1467,7 @@ items:
     handSprite: 432
     bulletSprite: 0
     bulletSpeed: 0
-    hitSound: 8002
+    hitSound: 8003
     hitAnimation: 26
     power: 26
     damageType: 1
@@ -1484,7 +1485,7 @@ items:
     handSprite: 440
     bulletSprite: 1
     bulletSpeed: 1
-    hitSound: 8002
+    hitSound: 8003
     hitAnimation: 56
     power: 40
     damageType: 1
@@ -2413,14 +2414,15 @@ items:
     bigSprite: 175
     floorSprite: 175
     handSprite: 856
-    meleeSound: 8054
+    meleeSound: 8051
+    meleeHitSound: 8054
     meleeAnimation: 54
     power: 88
     strengthApplied: false
     skillApplied: true
     damageType: 7
-    accuracyMelee: 99
-    tuMelee: 24
+    accuracyMelee: 116
+    tuMelee: 22
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -2921,8 +2923,8 @@ items:
     bigSprite: 176
     power: 96
     damageType: 5
-    accuracyMelee: 94
-    tuMelee: 25
+    accuracyMelee: 100
+    tuMelee: 24
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -2938,13 +2940,14 @@ items:
     floorSprite: 176
     handSprite: 864
     meleeSound: 8065
+    meleeHitSound: 8066
     meleeAnimation: 64
     power: 96
     strengthApplied: false
     skillApplied: true
     damageType: 7
-    accuracyMelee: 94
-    tuMelee: 25
+    accuracyMelee: 100
+    tuMelee: 24
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -7428,8 +7431,9 @@ extraSounds:
   - type: BATTLE.CAT # SAMPLE2.CAT
     files:
       8000: Resources/AwesomeGuns/Weapons/KNIFE/Fire.ogg
-      8001: Resources/AwesomeGuns/Weapons/PISTOL/Fire.ogg
-      8002: Resources/AwesomeGuns/Weapons/PISTOL/Hit.wav
+      8001: Resources/AwesomeGuns/Weapons/KNIFE/Hit.wav
+      8002: Resources/AwesomeGuns/Weapons/PISTOL/Fire.ogg
+      8003: Resources/AwesomeGuns/Weapons/PISTOL/Hit.wav
       8005: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Fire.wav
       #8006: Resources/AwesomeGuns/Weapons/MACHINE_PISTOL/Hit.wav - it uses PISTOL sound
       8009: Resources/AwesomeGuns/Weapons/RIFLE/Fire.wav
@@ -7463,6 +7467,7 @@ extraSounds:
       8063: Resources/AwesomeGuns/Weapons/ALIENS/Fire3.wav
       8064: Resources/AwesomeGuns/Weapons/ALIENS/Hit.wav
       8065: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Fire.wav
+      8066: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Hit.wav
       8067: Resources/AwesomeGuns/Weapons/RAILGUN/Fire.ogg
 
 
