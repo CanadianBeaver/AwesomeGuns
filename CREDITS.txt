@@ -4,6 +4,7 @@ I got images and ideas from many mods. Basic of them are:
 - XenoOperations
 - Robin's Extra Weapons
 - Railgun
+- Alternate Combat Knife
 - Improved Hand Objects
 - Lukes Inventory Images
 - NewTUReserveUI
