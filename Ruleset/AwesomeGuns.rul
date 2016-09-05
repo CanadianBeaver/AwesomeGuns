@@ -1347,11 +1347,11 @@ items:
     meleeSound: 8000
     meleeHitSound: 8001
     meleeAnimation: 44
-    power: 50
+    power: 52
     strengthApplied: true
     skillApplied: true
     damageType: 7
-    accuracyMelee: 90
+    accuracyMelee: 100
     tuMelee: 15
     battleType: 3
     twoHanded: false
@@ -2420,8 +2420,8 @@ items:
     strengthApplied: false
     skillApplied: true
     damageType: 7
-    accuracyMelee: 116
-    tuMelee: 22
+    accuracyMelee: 125
+    tuMelee: 24
     battleType: 3
     twoHanded: false
     invWidth: 1
@@ -2941,12 +2941,12 @@ items:
     meleeSound: 8065
     meleeHitSound: 8066
     meleeAnimation: 64
-    power: 96
+    power: 80
     strengthApplied: false
     skillApplied: true
     damageType: 7
     accuracyMelee: 100
-    tuMelee: 24
+    tuMelee: 22
     battleType: 3
     twoHanded: false
     invWidth: 1
