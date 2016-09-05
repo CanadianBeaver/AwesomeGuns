@@ -109,7 +109,6 @@ countries:
       - [28, 50, -70, -50] # Moscow
       - [32, 37, -46.5, -44] # Crimea
       - [37, 50, -50, -42] # Astrakhan
-      #- [50, 74, -77, -50.6] # Chelyabinsk
       - [50, 165, -80, -50] # Siberia
       - [165, 190, -71, -59] # Anadyr
       - [130, 138, -50, -40] # Vladivostok
