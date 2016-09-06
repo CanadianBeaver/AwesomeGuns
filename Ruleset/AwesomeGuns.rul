@@ -556,8 +556,14 @@ facilities:
 
 # Capacities of MODULES
 
+  - type: STR_ACCESS_LIFT
+    listOrder: 6100
+    buildCost: 250000
+    buildTime: 1
+    monthlyCost: 3600
+
   - type: STR_HANGAR
-    listOrder: 6150 # 6100 is STR_ACCESS_LIFT
+    listOrder: 6150
     buildCost: 200000
     buildTime: 22 #buildTime: 25
     monthlyCost: 25000
