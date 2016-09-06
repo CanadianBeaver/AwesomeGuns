@@ -6220,6 +6220,7 @@ ufopaedia:
       - STR_ALIEN_BIOLOGY
 
   - id: STR_ALIEN_CONTAINMENT
+    listOrder: 7550
     requires:
       - STR_ALIEN_CONTAINMENT
 
