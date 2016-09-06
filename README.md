@@ -28,18 +28,10 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 ###How to install it?
 
-* Download the [OpenXcom game](http://openxcom.org/downloads-milestones/) version 1.0 (June 13, 2014) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games).
+* Download the [OpenXcom game](http://openxcom.org/downloads-milestones/) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games).
 * Download the [.zip](https://github.com/CanadianBeaver/AwesomeGuns/archive/master.zip) or the [.tar.gz](https://github.com/CanadianBeaver/AwesomeGuns/archive/master.tar.gz) archive of the Awesome Guns modification and extract files and folders.
 * Copy the extracted *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the extracted *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
-
-###Compatible mods and special thanks
-
-I avoid to make changes in alien's missions or UFOs. There are a few mods for this and they work fine with my creation. I recommend to use these mods:
-- [Lukes Expanded Terror Mission](http://www.openxcom.com/mod/lukes-expanded-terror-mission)
-- [Solar's New UFOs](http://www.openxcom.com/mod/solar-039-s-new-ufos) (be aware, only version 1.1 is for stable game's release)
-
-Awesome Guns modification can be incompatible with previous saved files, because inventory is redone. To avoid problems with previous saved files your soldiers should be stripped before saving, at least the right shoulder, right leg, left shoulder, left leg, and belt must be empty.
 
 ###Contacts
 
