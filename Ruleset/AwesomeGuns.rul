@@ -557,40 +557,45 @@ facilities:
 # Capacities of MODULES
 
   - type: STR_HANGAR
+    listOrder: 6150 # 6100 is STR_ACCESS_LIFT
     buildCost: 200000
     buildTime: 22 #buildTime: 25
     monthlyCost: 25000
     storage: 10 #storage: 0
 
   - type: STR_GENERAL_STORES
+    listOrder: 6175
     buildCost: 150000
     buildTime: 8 #buildTime: 10
     monthlyCost: 5000
     storage: 50
 
   - type: STR_LIVING_QUARTERS
+    listOrder: 6200
     buildCost: 400000
     buildTime: 16
     monthlyCost: 10000
     personnel: 50
 
   - type: STR_LABORATORY
+    listOrder: 6300
     buildCost: 750000
     buildTime: 26
     monthlyCost: 30000
     labs: 50
 
   - type: STR_WORKSHOP
+    listOrder: 6400
     buildCost: 800000
     buildTime: 32
     monthlyCost: 35000
-
     workshops: 50
     storage: 3 #storage: 0
 
 # Fix the RADAR SYSTEMS
 
   - type: STR_SMALL_RADAR_SYSTEM
+    listOrder: 6500
     buildCost: 350000 #buildCost: 500000
     buildTime: 8 #buildTime: 12
     monthlyCost: 10000
@@ -598,6 +603,7 @@ facilities:
     radarChance: 20 #radarChance: 10
 
   - type: STR_LARGE_RADAR_SYSTEM
+    listOrder: 6600
     buildCost: 600000 #buildCost: 800000
     buildTime: 15 #buildTime: 25
     monthlyCost: 30000 #monthlyCost: 15000
@@ -605,6 +611,7 @@ facilities:
     radarChance: 5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
+    listOrder: 6650
     requires:
       - STR_HYPER_WAVE_DECODER
     buildCost: 1800000 #buildCost: 1400000
@@ -616,6 +623,7 @@ facilities:
 # Fix the DEFENSES
 
   - type: STR_MISSILE_DEFENSES
+    listOrder: 6700
     buildCost: 200000
     buildTime: 12 #buildTime: 16
     monthlyCost: 6000 #monthlyCost: 5000
@@ -625,6 +633,7 @@ facilities:
     hitSound: 10
 
   - type: STR_LASER_DEFENSES
+    listOrder: 6800
     requires:
       - STR_LASER_DEFENSE
     buildCost: 400000
@@ -639,9 +648,19 @@ facilities:
 
   - delete: STR_FUSION_BALL_DEFENSES # alien technologies cannot be reproduced
 
+  - type: STR_GRAV_SHIELD
+    listOrder: 7300
+
+  - type: STR_MIND_SHIELD
+    listOrder: 7400
+
 # Fix the ALIEN CONTAINMENT
 
+  - type: STR_PSIONIC_LABORATORY
+    listOrder: 7500
+
   - type: STR_ALIEN_CONTAINMENT
+    listOrder: 7550
     requires:
       - STR_ALIEN_CONTAINMENT
     buildCost: 400000
