@@ -563,7 +563,7 @@ facilities:
     listOrder: 6100
     buildCost: 250000 #300000
     buildTime: 1
-    monthlyCost: 3600 #4000
+    monthlyCost: 3750 #4000
 
   - type: STR_HANGAR
     listOrder: 6150
