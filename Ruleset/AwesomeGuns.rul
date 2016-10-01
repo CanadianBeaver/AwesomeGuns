@@ -2016,7 +2016,7 @@ items:
       - STR_AC_HE_AMMO
       - STR_AC_I_AMMO
       - STR_AC_AP_AMMO
-    accuracyAuto: 40 #accuracyAuto: 32
+    accuracyAuto: 30 #accuracyAuto: 32
     accuracySnap: 40 #accuracySnap: 56
     accuracyAimed: 0 #accuracyAimed: 82
     tuAuto: 40
@@ -2028,12 +2028,12 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 28
-    maxRange: 24
+    maxRange: 28
     aimRange: 0
     snapRange: 16
     autoRange: 16
-    minRange: 5
-    dropoff: 3
+    minRange: 6
+    dropoff: 4
 
   - type: STR_AC_AP_AMMO
     size: 0.1
@@ -2085,7 +2085,7 @@ items:
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
-    power: 48 #power: 42
+    power: 50 #power: 42
     damageType: 2
     clipSize: 14
     battleType: 2
