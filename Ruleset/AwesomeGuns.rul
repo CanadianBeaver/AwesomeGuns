@@ -2206,10 +2206,10 @@ items:
       - STR_INCENDIARY_ROCKET
       - STR_SMALL_ROCKET
     accuracyAuto: 0
-    accuracySnap: 60 #accuracySnap: 55
-    accuracyAimed: 100 #accuracyAimed: 115
+    accuracySnap: 0 #accuracySnap: 55
+    accuracyAimed: 110 #accuracyAimed: 115
     tuAuto: 0
-    tuSnap: 40 #tuSnap: 45
+    tuSnap: 0 #tuSnap: 45
     tuAimed: 75
     battleType: 1
     twoHanded: true
@@ -2259,7 +2259,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 100 #power: 100
+    power: 110 #power: 100
     damageType: 3
     clipSize: 1
     battleType: 2
@@ -2280,7 +2280,7 @@ items:
     bulletSpeed: 0
     hitSound: 0
     hitAnimation: 0
-    power: 110 #power: 90
+    power: 120 #power: 90
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -2302,12 +2302,12 @@ items:
     hitAnimation: 0
     fireSound: 8037 #fireSound: 52
     accuracyAuto: 0
-    accuracySnap: 55
+    accuracySnap: 0
     accuracyAimed: 95
     tuAuto: 0
-    tuSnap: 35
+    tuSnap: 0
     tuAimed: 66
-    power: 220
+    power: 225
     damageType: 1
     clipSize: 1
     battleType: 1
