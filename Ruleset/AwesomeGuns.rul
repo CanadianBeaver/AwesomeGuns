@@ -7026,7 +7026,8 @@ extraSprites:
       13: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_HP_AMMO.gif #135
       14: Resources/AwesomeGuns/Weapons/HEAVY_CANNON/Bigob_I_AMMO.gif #136
 
-      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.gif #138 #139
+      7: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob.gif #138
+      8: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob_AP_AMMO.gif #139
       9: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob_HE_AMMO.gif #140
       10: Resources/AwesomeGuns/Weapons/AUTO_CANNON/Bigob_I_AMMO.gif #141
 
