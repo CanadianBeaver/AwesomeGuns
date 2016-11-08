@@ -2794,7 +2794,7 @@ items:
     handSprite: 800
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 70 #power: 80
+    power: 72 #power: 80
     damageType: 5
     clipSize: 14 #28
     battleType: 2
@@ -2865,7 +2865,7 @@ items:
       - STR_CGL_ELERIUM_BOMBS
     accuracyAuto: 45
     accuracySnap: 0
-    accuracyAimed: 85
+    accuracyAimed: 80
     tuAuto: 33
     tuSnap: 0
     tuAimed: 66
