@@ -2794,7 +2794,7 @@ items:
     handSprite: 800
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 72 #power: 80
+    power: 74 #power: 80
     damageType: 5
     clipSize: 14 #28
     battleType: 2
@@ -2895,7 +2895,7 @@ items:
     bulletSpeed: 2
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 86
+    power: 88
     damageType: 5
     clipSize: 12
     battleType: 2
