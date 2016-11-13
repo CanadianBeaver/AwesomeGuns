@@ -3168,7 +3168,7 @@ items:
     healthRecovery: 2
     stunRecovery: 3
     energyRecovery: 8
-    tuUse: 32
+    tuUse: 28
     flatRate: true
     armor: 14
 
