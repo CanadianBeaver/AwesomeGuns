@@ -6931,6 +6931,15 @@ extraSprites:
       0: Resources/AwesomeGuns/Weapons/SPRITES/Projectiles.gif
 
   - type: SMOKE.PCK
+    height: 40
+    width: 384
+    subX: 32
+    subY: 40
+    files:
+      #8: Smoke cloud
+      8: Resources/AwesomeGuns/Weapons/SPRITES/Smoke_Smoke.gif
+
+  - type: SMOKE.PCK
     width: 320
     height: 160
     subX: 32
