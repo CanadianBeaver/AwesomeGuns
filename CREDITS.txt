@@ -27,6 +27,7 @@ I got images and ideas from many mods. Basic of them are:
 - FastRamp
 - HQSounds_FinalModPack
 - Stun Grenade
+- Alternative Smoke
 
 If I have forgotten someone, please let me know.
 
