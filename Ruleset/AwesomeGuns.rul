@@ -1606,7 +1606,7 @@ items:
       - STR_SNIPER_RIFLE_AL_CLIP
     accuracyAuto: 0
     accuracySnap: 60
-    accuracyAimed: 90
+    accuracyAimed: 85
     tuAuto: 0
     tuSnap: 52
     tuAimed: 80
@@ -1766,7 +1766,7 @@ items:
       - STR_ELERIUM_SNIPER_RIFLE_CLIP
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 94
+    accuracyAimed: 90
     tuAuto: 0
     tuSnap: 0
     tuAimed: 99
