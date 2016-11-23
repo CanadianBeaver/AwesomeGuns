@@ -3257,9 +3257,21 @@ items:
     bigSprite: 55
     floorSprite: 72
     handSprite: 152
-    power: 16 #power: 15
+    power: 12 #power: 15
     battleType: 10
-    armor: 38
+    armor: 22
+
+  - type: STR_LASER_FLARE # new item
+    listOrder: 4610
+    size: 0.1
+    costSell: 240
+    weight: 1 #weight: 3
+    bigSprite: 61
+    floorSprite: 76
+    handSprite: 184
+    power: 15
+    battleType: 10
+    armor: 16
 
   - type: STR_ELERIUM_115
     size: 0.1
@@ -5282,7 +5294,18 @@ manufacture:
 
 # LASER weapons
 
-  - name: STR_LASER_SWORD
+  - name: STR_LASER_FLARE # new item
+    listOrder: 1190
+    category: STR_EQUIPMENT
+    requires:
+      - STR_LASER_WEAPONS
+    space: 2
+    time: 80
+    cost: 60
+    requiredItems:
+      STR_ELECTRO_FLARE: 2
+
+  - name: STR_LASER_SWORD # new item
     listOrder: 890
     category: STR_WEAPON
     requires:
@@ -5559,7 +5582,7 @@ manufacture:
       STR_ELERIUM_115: 4
 
   - name: STR_STUN_GRENADE
-    listOrder: 1190
+    listOrder: 1150
     category: STR_WEAPON
     requires:
       - STR_STUN_GRENADE
@@ -6060,6 +6083,14 @@ ufopaedia:
     requires:
       - STR_LASER_SWORD
     text: STR_LASER_SWORD_UFOPEDIA
+
+  - id: STR_LASER_FLARE
+    listOrder: 4710
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_WEAPONS
+    text: STR_LASER_FLARE_UFOPEDIA
 
 # Converted PLASMA weapons
 
@@ -6993,6 +7024,7 @@ extraSprites:
       29: Resources/AwesomeGuns/Weapons/ALIENS/MindProbe.gif
       59: Resources/AwesomeGuns/Items/MEDI_CHEST/Bigob.gif
       60: Resources/AwesomeGuns/Weapons/KNIFE/Bigob.gif
+      61: Resources/AwesomeGuns/Weapons/LASER/BigobFlare.gif
 
       # conventional weapons use images from 100
       3: Resources/AwesomeGuns/Weapons/PISTOL/Bigob.gif #100
@@ -7101,6 +7133,7 @@ extraSprites:
       73: Resources/AwesomeGuns/Items/Floorob_ELERIUM.gif
       74: Resources/AwesomeGuns/Items/MEDI_CHEST/Floorob.gif
       75: Resources/AwesomeGuns/Weapons/KNIFE/Floorob.gif
+      76: Resources/AwesomeGuns/Weapons/LASER/FloorobFlare.gif
 
       # conventional weapons use images from 100
       #3: Resources/AwesomeGuns/Weapons/PISTOL/Floorob.gif - default image is OK  #100
@@ -7214,7 +7247,8 @@ extraSprites:
       160: Resources/AwesomeGuns/Items/Handobs_MEDI_KIT.gif
       168: Resources/AwesomeGuns/Items/MEDI_CHEST/Handobs.gif
       176: Resources/AwesomeGuns/Weapons/KNIFE/Handobs.gif
-      #184: #192:
+      184: Resources/AwesomeGuns/Weapons/LASER/HandobsFlare.gif
+      #192:
 
       # explosions use images from 200
       200: Resources/AwesomeGuns/Weapons/GRENADES/Handobs_INCENDIARY.gif
@@ -8039,6 +8073,9 @@ extraStrings:
       STR_LASER_SWORD: "Laser Sword"
       STR_LASER_SWORD_UFOPEDIA: "A long time ago in a galaxy far, far away...{NEWLINE}{NEWLINE}The soldiers insisted we make this thing. No it doesn't hum or buzz. Due to the nature of the laser cutter, the wielder's strength is not added to the weapon, but the cutting damage is very high regardless."
 
+      STR_LASER_FLARE: "Laser-flare"
+      STR_LASER_FLARE_UFOPEDIA: "This is an implementation of the laser technologies into two electro-flares. This device lights a large area and provides a higher level of security."
+
   - type: ru
     strings:
 
@@ -8053,6 +8090,9 @@ extraStrings:
 
       STR_LASER_SWORD: "Лазерный меч"
       STR_LASER_SWORD_UFOPEDIA: "Давным-давно в одной далекой, далекой галактике...{NEWLINE}{NEWLINE}По просьбе наших оперативников мы готовы производить и такие экзотические предметы экипировки."
+
+      STR_LASER_FLARE: "Лазерный осветитель"
+      STR_LASER_FLARE_UFOPEDIA: "Улучшенная модель на основе совмещения лазерных технологий в двух осветителях. Излучает больше света, что позволяет легче ориентироваться в темноте."
 
   - type: pl-PL
     strings:
