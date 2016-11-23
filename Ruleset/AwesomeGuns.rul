@@ -3265,7 +3265,7 @@ items:
     listOrder: 4610
     size: 0.1
     costSell: 240
-    weight: 1 #weight: 3
+    weight: 2 #weight: 3
     bigSprite: 61
     floorSprite: 76
     handSprite: 184
