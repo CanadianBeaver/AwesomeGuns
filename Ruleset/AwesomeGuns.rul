@@ -2536,9 +2536,9 @@ items:
     power: 60 #power: 85
     damageType: 4
     accuracyAuto: 0
-    accuracySnap: 68 #accuracySnap: 50
+    accuracySnap: 66 #accuracySnap: 50
     accuracyAimed: 0 #accuracyAimed: 84
-    tuSnap: 35 #tuSnap: 33
+    tuSnap: 36 #tuSnap: 33
     tuAimed: 0 #tuAimed: 75
     tuAuto: 0
     clipSize: -1
