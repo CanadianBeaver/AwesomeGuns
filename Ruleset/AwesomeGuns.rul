@@ -1283,7 +1283,7 @@ items:
     bulletSprite: 31
     bulletSpeed: 4
     fireSound: 8055 #fireSound: 11
-    hitSound: 8054 #hitSound: 19
+    hitSound: 8050 #hitSound: 19
     hitAnimation: 36
     power: 120 #power: 110
     damageType: 4
@@ -2442,7 +2442,7 @@ items:
     floorSprite: 175
     handSprite: 856
     meleeSound: 8051
-    meleeHitSound: 8054
+    meleeHitSound: 8050
     meleeAnimation: 54
     power: 88
     strengthApplied: false
@@ -2466,9 +2466,9 @@ items:
     bulletSprite: 20
     bulletSpeed: 6
     fireSound: 8051 #fireSound: 11
-    hitSound: 8054 #hitSound: 19
+    hitSound: 8050 #hitSound: 19
     hitAnimation: 36
-    power: 46 #46
+    power: 48 #46
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 28
     accuracySnap: 70 #accuracySnap: 40
@@ -2498,9 +2498,9 @@ items:
     bulletSprite: 22 # 21
     bulletSpeed: 8
     fireSound: 8052 #fireSound: 11
-    hitSound: 8054 #hitSound: 19
+    hitSound: 8050 #hitSound: 19
     hitAnimation: 36
-    power: 64 #power: 60
+    power: 65 #power: 60
     damageType: 4
     accuracyAuto: 0 #accuracyAuto: 46
     accuracySnap: 75 #accuracySnap: 65
@@ -2524,14 +2524,14 @@ items:
   - type: STR_HEAVY_LASER
     size: 0.3
     costSell: 40000 #61000
-    weight: 14 #weight: 18
+    weight: 15 #weight: 18
     bigSprite: 6
     floorSprite: 6
     handSprite: 16
     bulletSprite: 22
     bulletSpeed: 0 #bulletSpeed: 4
     fireSound: 8053 #fireSound: 11
-    hitSound: 8054 #hitSound: 19
+    hitSound: 8050 #hitSound: 19
     hitAnimation: 36
     power: 60 #power: 85
     damageType: 4
@@ -2553,6 +2553,40 @@ items:
     snapRange: 10
     autoRange: 0
     minRange: 0
+    dropoff: 3
+
+  - type: STR_SNIPER_LASER # new item
+    listOrder: 3750
+    size: 0.3
+    costSell: 72000
+    weight: 45
+    bigSprite: 160
+    floorSprite: 160
+    handSprite: 720
+    bulletSprite: 31
+    bulletSpeed: 12
+    fireSound: 8054
+    hitSound: 8050
+    hitAnimation: 36
+    power: 124
+    damageType: 4
+    accuracyAuto: 0
+    accuracySnap: 75
+    accuracyAimed: 90
+    tuAuto: 0
+    tuSnap: 75
+    tuAimed: 99
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 36
+    maxRange: 52
+    aimRange: 38
+    snapRange: 26
+    autoRange: 0
+    minRange: 15
     dropoff: 3
 
 # PLASMA weapons
@@ -2988,9 +3022,9 @@ items:
     size: 0.2
     costSell: 130000
     weight: 40
-    bigSprite: 160
-    floorSprite: 160
-    handSprite: 720
+    bigSprite: 180
+    floorSprite: 180
+    handSprite: 872
     bulletSprite: 12
     fireSound: 8067
     compatibleAmmo:
@@ -3018,9 +3052,9 @@ items:
     size: 0.1
     costSell: 2100
     weight: 2
-    bigSprite: 161
-    floorSprite: 161
-    handSprite: 728
+    bigSprite: 181
+    floorSprite: 181
+    handSprite: 880
     bulletSpeed: 8
     hitSound: 8018
     hitAnimation: 86
@@ -4458,6 +4492,13 @@ research:
     dependencies:
       - STR_LASER_RIFLE
 
+  - name: STR_SNIPER_LASER_RESEARCH # new item
+    listOrder: 402
+    cost: 460
+    points: 10
+    dependencies:
+      - STR_HEAVY_LASER
+
   - name: STR_LASER_DEFENSE
     cost: 600 #cost: 510
     points: 15
@@ -5350,6 +5391,18 @@ manufacture:
       STR_ALIEN_ALLOYS: 8
       STR_ELERIUM_115: 4
 
+  - name: STR_SNIPER_LASER # new item
+    listOrder: 1120
+    category: STR_WEAPON
+    requires:
+      - STR_SNIPER_LASER_RESEARCH
+    space: 4
+    time: 800
+    cost: 61000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+      STR_ELERIUM_115: 6
+
 # Electromagnetic weapons
 
   - name: STR_RAILGUN
@@ -6083,6 +6136,14 @@ ufopaedia:
     requires:
       - STR_LASER_SWORD
     text: STR_LASER_SWORD_UFOPEDIA
+
+  - id: STR_SNIPER_LASER
+    listOrder: 3810
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SNIPER_LASER_RESEARCH
+    text: STR_SNIPER_LASER_UFOPEDIA
 
   - id: STR_LASER_FLARE
     listOrder: 4710
@@ -7086,14 +7147,11 @@ extraSprites:
       39: Resources/AwesomeGuns/Weapons/ALIENS/Grenade.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Bigob_STUN.gif
 
-      # laser weapons use their default images
+      # laser weapons use their default images, but SNIPER uses 160
       5: Resources/AwesomeGuns/Weapons/LASER/Bigob1.gif
       0: Resources/AwesomeGuns/Weapons/LASER/Bigob2.gif
       6: Resources/AwesomeGuns/Weapons/LASER/Bigob3.gif
-
-      # electromagnetic weapons use images from 160
-      160: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
-      161: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
+      160: Resources/AwesomeGuns/Weapons/LASER/Bigob4.gif
 
       # alien's plasma weapons use their default images
       32: Resources/AwesomeGuns/Weapons/ALIENS/Pistol.gif
@@ -7102,6 +7160,12 @@ extraSprites:
       41: Resources/AwesomeGuns/Weapons/ALIENS/RifleClip.gif
       30: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasma.gif
       25: Resources/AwesomeGuns/Weapons/ALIENS/HeavyPlasmaClip.gif
+
+      # BLASTER and SMALL LAUNCHER weapons
+      35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
+      36: Resources/AwesomeGuns/Weapons/ALIENS/BlasterBomb.gif
+      37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
+      #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
 
       # converted plasma weapons use images from 164
       164: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Pistol.gif
@@ -7115,16 +7179,15 @@ extraSprites:
       173: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/LauncherSBombs.gif
       174: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/LauncherEBombs.gif
 
-      # BLASTER and SMALL LAUNCHER weapons
-      35: Resources/AwesomeGuns/Weapons/ALIENS/BlasterLauncher.gif
-      36: Resources/AwesomeGuns/Weapons/ALIENS/BlasterBomb.gif
-      37: Resources/AwesomeGuns/Weapons/ALIENS/SmallLauncher.gif
-      #38: Resources/AwesomeGuns/Weapons/ALIENS/StunBomb.gif - default image is OK
-
       # swords
       175: Resources/AwesomeGuns/Weapons/LASER/Bigob0.gif
       176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Bigob.gif
       177: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/BigobCombat.gif
+
+      # electromagnetic weapons use images from 180
+      180: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob.gif
+      181: Resources/AwesomeGuns/Weapons/RAILGUN/Bigob_Slugs.gif
+
 
   - type: FLOOROB.PCK #Contains 73 (0-72) objects. #1001-#1005 are reserved for personal armors.
     files:
@@ -7193,14 +7256,11 @@ extraSprites:
       38: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Grenade.gif #155
       156: Resources/AwesomeGuns/Weapons/GRENADES/Floorob_STUN.gif
 
-      # laser weapons use their default images
+      # laser weapons use their default images, but SNIPER uses 160
       5: Resources/AwesomeGuns/Weapons/LASER/Floorob1.gif
       0: Resources/AwesomeGuns/Weapons/LASER/Floorob2.gif
       6: Resources/AwesomeGuns/Weapons/LASER/Floorob3.gif
-
-      # electromagnetic weapons use images from 160
-      160: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
-      161: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
+      160: Resources/AwesomeGuns/Weapons/LASER/Floorob4.gif
 
       # alien's plasma weapons use their default images, clips use images from 162
       31: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/Pistol.gif
@@ -7209,6 +7269,12 @@ extraSprites:
       162: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/RifleClip.gif
       29: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasma.gif
       163: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/HeavyPlasmaClip.gif
+
+      # BLASTER and SMALL LAUNCHER weapons
+      34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
+      35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
+      36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
+      #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
 
       # converted plasma weapons use images from 164
       164: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/Pistol.gif
@@ -7222,15 +7288,14 @@ extraSprites:
       173: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/LauncherSBombs.gif
       174: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Floorob/LauncherEBombs.gif
 
-      # BLASTER and SMALL LAUNCHER weapons
-      34: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterLauncher.gif
-      35: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/BlasterBomb.gif
-      36: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/SmallLauncher.gif
-      #37: Resources/AwesomeGuns/Weapons/ALIENS/Floorob/StunBomb.gif - default image is OK
-
       # swords
       175: Resources/AwesomeGuns/Weapons/LASER/Floorob0.gif
       176: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Floorob.gif
+
+      # electromagnetic weapons use images from 180
+      180: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob.gif
+      181: Resources/AwesomeGuns/Weapons/RAILGUN/Floorob_Slugs.gif
+
 
   - type: HANDOB.PCK #Contains 16 rows (0-15) of 8 images. First available index is 128.
     width: 256
@@ -7317,14 +7382,11 @@ extraSprites:
 
       712: Resources/AwesomeGuns/Weapons/SINGLE_ROCKET_LAUNCHER/Handobs.gif
 
-      # laser weapons use their default images
+      # laser weapons use their default images, but SNIPER uses 720 (728 is free)
       112: Resources/AwesomeGuns/Weapons/LASER/Handobs1.gif
       8: Resources/AwesomeGuns/Weapons/LASER/Handobs2.gif
       16: Resources/AwesomeGuns/Weapons/LASER/Handobs3.gif
-
-      # electromagnetic weapons use images from 720
-      720: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
-      728: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
+      720: Resources/AwesomeGuns/Weapons/LASER/Handobs4.gif
 
       # alien's plasma weapons use images from 736
       104: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/Pistol.gif
@@ -7333,6 +7395,12 @@ extraSprites:
       752: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/RifleClip.gif
       40: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasma.gif
       768: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/HeavyPlasmaClip.gif
+
+      # BLASTER and SMALL LAUNCHER weapons
+      56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
+      776: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterBomb.gif
+      64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
+      784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
 
       # converted plasma weapons
       792: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/Pistol.gif
@@ -7346,16 +7414,13 @@ extraSprites:
       840: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/LauncherSBombs.gif
       848: Resources/AwesomeGuns/Weapons/ALIENS_CONVERTED/Handobs/LauncherEBombs.gif
 
-      # BLASTER and SMALL LAUNCHER weapons
-      56: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterLauncher.gif
-      776: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/BlasterBomb.gif
-      64: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/SmallLauncher.gif
-      784: Resources/AwesomeGuns/Weapons/ALIENS/Handobs/StunBomb.gif
-
       # swords
       856: Resources/AwesomeGuns/Weapons/LASER/Handobs0.gif
       864: Resources/AwesomeGuns/Weapons/PLASMA_SWORD/Handobs.gif
 
+      # electromagnetic weapons use images from 872
+      872: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs.gif
+      880: Resources/AwesomeGuns/Weapons/RAILGUN/Handobs_Slugs.gif
 
 # Images for UFOPAEDIA
 
@@ -7531,11 +7596,14 @@ extraSounds:
       #8034: Resources/AwesomeGuns/Weapons/GRENADE_LAUNCHER/Hit.wav - it doesn't use sound
       8037: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Fire.wav
       8038: Resources/AwesomeGuns/Weapons/ROCKET_LAUNCHER/Hit.wav
+      #Laser weapons
+      8050: Resources/AwesomeGuns/Weapons/LASER/Hit.ogg
       8051: Resources/AwesomeGuns/Weapons/LASER/Fire1.ogg
       8052: Resources/AwesomeGuns/Weapons/LASER/Fire2.ogg
       8053: Resources/AwesomeGuns/Weapons/LASER/Fire3.ogg
-      8054: Resources/AwesomeGuns/Weapons/LASER/Hit.ogg
+      8054: Resources/AwesomeGuns/Weapons/LASER/Fire4.ogg
       8055: Resources/AwesomeGuns/Weapons/LASER/FireT.ogg
+      #Plasma weapons
       8061: Resources/AwesomeGuns/Weapons/ALIENS/Fire1.wav
       8062: Resources/AwesomeGuns/Weapons/ALIENS/Fire2.wav
       8063: Resources/AwesomeGuns/Weapons/ALIENS/Fire3.wav
@@ -7974,7 +8042,7 @@ extraStrings:
       STR_ALLOY_CLIPS_UFOPEDIA: "Новая технология изготовления боеприпасов и картечей из сплавов пришельцев позволяет существенно увеличить огневую мощь стрелкового вооружения.{NEWLINE}{NEWLINE}Из одного сплава пришельцев может производиться несколько комплектов боеприпасов. Также возможно производить боеприпасы для нескольких типов вооружения одновременно. В следующем разделе можно найти более подробную информацию о производственном процессе."
 
       STR_ACID_CLIPS: "Кислотные боеприпасы"
-      STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и молнии Зевса.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
+      STR_ACID_CLIPS_UFOPEDIA: "Яд из тела криссалида можно использовать для производства особой кислоты. Капсульная форма заряда позволит сохранять кислоту внутри боеприпасов и распылять её в тело врага при детонации. Мы можем производить такие заряды из сплавов пришельцев для штурмовой винтовки и Громовержеца.{NEWLINE}{NEWLINE}Похоже, что основная масса пришельцев обладает некоторым иммунитетом к кислоте. Однако, их роботы скорее всего уязвимы к такому типу вооружения."
 
       STR_AL_CLIPS: "Бронебойные боеприпасы"
       STR_AL_AMMO: "Бронебойные дроби"
@@ -8010,12 +8078,12 @@ extraStrings:
       STR_SNIPER_RIFLE_AL_CLIP: "Магазин ББ к снайперской винтовке"
       STR_SNIPER_RIFLE_UFOPEDIA: "Модификация винтовки под бронебойный калибр 7,62x51 мм. Увеличенная точность и убойная сила делают эту винтовку незаменимой в бою на средних и дальних дистанциях. Стандартный магазин расчитан на 3 бронебойных заряда."
 
-      STR_ALLOY_SNIPER_RIFLE: "Гром Зевса"
+      STR_ALLOY_SNIPER_RIFLE: "Громовержец"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Крупнокалиберная винтовка"
       STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Крупнокалиберная снайперская винтовка использует бронебойный калибр 12,7x99 мм. Магазин рассчитан на два бронебойных заряда. К сожалению очень громоздкая и требует время для предварительной подготовки перед стрельбой."
-      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Молнии Зевса"
-      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Молнии Зевса"
-      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Магазин ЭЛ к Молнии Зевса"
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Магазин ББ к Громовержецу"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Магазин КС к Громовержецу"
+      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Магазин ЭЛ к Громовержецу"
 
       STR_SHOTGUN: "Дробовик"
       STR_SHOTGUN_AMMO: "Патроны к дробовику"
@@ -8065,6 +8133,10 @@ extraStrings:
       STR_LASER_RIFLE_UFOPEDIA: "Adaptation of laser technology for using in the combat. This device is superior to the standard rifle, but due to the overheating is not able to conduct a quick fire."
       STR_HEAVY_LASER_UFOPEDIA: "This shotgun is able to fire three laser beams at once. Unfortunately, severe overheating does not allow to fire too often. But it has immense power and infinite ammunition."
 
+      STR_SNIPER_LASER: "Εκαεργος"
+      STR_SNIPER_LASER_RESEARCH: "Laser Sniper Rifle"
+      STR_SNIPER_LASER_UFOPEDIA: "Heavy laser rifle. This laser weapon is unbelievable powered and greatest precision on middle and long distances. In addition, it has unlimited ammo."
+
       STR_LASER_WEAPONS_UFOPEDIA: "Through experiments on Elerium-115 was discovered an opportunity caring energy transfer on distance - a beam of light like modern lasers. The alien alloys and crystals of Elerium-115 can improve the terrestrial laser to be used in combats. New laser weapons will have a lot more ammunition and will not be less effective than the conventional weapons.{NEWLINE}{NEWLINE}If the UFO Navigation is researched, then it will be possible to develop a laser craft cannon and start using the laser technology in combats."
 
       STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laser Tank from Tank Cannon"
@@ -8082,6 +8154,10 @@ extraStrings:
       STR_LASER_PISTOL_UFOPEDIA: "Передел минитюаризации лазерной технологии. Дальность и точность стрельбы принесены в жертву мобильности устройства и мощности выстрела."
       STR_LASER_RIFLE_UFOPEDIA: "Попытка использования лазерной технологии на поле боя. Это устройство превосходит стандартную штурмовую винтовку по параметрам стрельбы, но из-за сильного перегрева не способно вести огонь очередью."
       STR_HEAVY_LASER_UFOPEDIA: "Лазерный дробовик способен выпускать 3 луча одновременно. К сожалению, сильный перегрев не позволяет вести огонь слишком часто, что компенсируется огромной мощью и бесконечным боезапасом."
+
+      STR_SNIPER_LASER: "Гекаэрг"
+      STR_SNIPER_LASER_RESEARCH: "Лазерная снайперская винтовка"
+      STR_SNIPER_LASER_UFOPEDIA: "Тяжёлая лазерная снайперская винтовка является пределом лазерных технологий. Невероятнейшая мощность, бесконечный боезапас и отличные прицельные характеристики делают эту винтовку совершенной на поле боя. К сожалению, перегрев, присущий всем лазерам, а также огромный вес не позволяют вести бой на близких дистанциях."
 
       STR_LASER_WEAPONS_UFOPEDIA: "Проводя эксперименты над Элериум-115 была обнаружена возможность передачи энергии на расстояния лучом света, подобного современным лазерам. Используя сплавы пришельцев и кристаллы Элериум-115 можно улучшить параметры земных лазеров до боевого применения. Новое вооружение будет обладать большим боезапасом и не уступать в мощности современному стрелковому оружию.{NEWLINE}{NEWLINE}Если изучить навигационный блок НЛО, то можно будет создать лазерную авиапушку и начать применять лазерную технологию в бою."
 
