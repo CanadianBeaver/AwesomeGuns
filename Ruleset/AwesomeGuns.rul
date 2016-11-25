@@ -2780,7 +2780,7 @@ items:
     handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 50 #power: 52
+    power: 54 #power: 52
     damageType: 5
     clipSize: 12 #clipSize: 26
     battleType: 2
@@ -2828,7 +2828,7 @@ items:
     handSprite: 800
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 74 #power: 80
+    power: 78 #power: 80
     damageType: 5
     clipSize: 14 #28
     battleType: 2
@@ -2877,7 +2877,7 @@ items:
     handSprite: 816
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 55 #power: 115
+    power: 56 #power: 115
     damageType: 5
     clipSize: 18 #35
     battleType: 2
@@ -2929,7 +2929,7 @@ items:
     bulletSpeed: 2
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 88
+    power: 90
     damageType: 5
     clipSize: 12
     battleType: 2
@@ -2949,7 +2949,7 @@ items:
     bulletSpeed: 1
     hitSound: 0
     hitAnimation: 0
-    power: 90
+    power: 92
     damageType: 6
     clipSize: 4
     battleType: 2
