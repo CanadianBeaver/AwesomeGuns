@@ -2568,7 +2568,7 @@ items:
     fireSound: 8054
     hitSound: 8050
     hitAnimation: 36
-    power: 124
+    power: 116
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 75
