@@ -37,29 +37,35 @@ countries:
     labelLon: 260
     labelLat: -40
     areas:
-      - [235, 255, -49, -32.5] # West
+      - [235, 255, -49, -32.1] # West
       - [255, 277, -49, -29.5] # Centre
-      - [260, 277, -29.5, -26] # South
+      - [259.75, 277, -29.5, -26] # South
       - [277, 281, -32, -25] #Miami
-      - [277, 286, -42, -32]
-      - [283, 292.5, -44, -40] # Boston
+      - [277, 290, -42, -32] #Washington
+      - [283, 292.5, -44, -42] # Boston
       - [284.25, 293.25, -44, -45] # North Boston
       - [289.25, 292.5, -45, -46.75] # North-North Boston
-      - [250, 255, -30.7, -32.5] # El Paso
+      - [251, 255, -30.5, -32.1] # El Paso
+      - [256, 259.75, -28, -29.5] # South El Paso
       - [205, 210.5, -22.5, -18.5] # Honolulu
       - [191.5, 219, -72, -54] # Alaska
       - [219, 230, -58, -54] # South Inuvik
 
-  - type: STR_CANADA
+  - type: STR_RUSSIA
     fundingBase: 230
-    fundingCap: 4000
-    labelLon: 265
-    labelLat: -54
+    fundingCap: 8000
+    labelLon: 49
+    labelLat: -60
     areas:
-      - [219, 230, -72, -58] # Inuvik
-      - [230, 305, -80, -49]
-      - [277, 308, -49, -44] # Halifax
-      - [277, 283, -44, -42] # Toronto
+      - [28, 50, -70, -50] # Moscow
+      - [37, 50, -50, -42] # Astrakhan
+      - [50, 61.5, -77, -50] # Western Siberia 1
+      - [61.5, 77, -77.5, -54] # Western Siberia 2
+      - [77, 165, -78, -50] # Siberia
+      - [165, 190.25, -70.15, -59.5] # Anadyr
+      - [130, 138, -50, -40] # Vladivostok
+      - [138, 147, -50, -45.5] # Sahalin
+      - [17.75, 22.25, -56, -54] # Kaliningrad
 
   - type: STR_UK
     fundingBase: 240
@@ -91,7 +97,7 @@ countries:
     labelLon: 12.5
     labelLat: -43.875
     areas:
-      - [7, 15, -46.5, -43]
+      - [7, 15, -47, -43]
       - [11, 19, -43, -36]
 
   - type: STR_SPAIN
@@ -100,22 +106,8 @@ countries:
     labelLon: 357.5
     labelLat: -42.625
     areas:
-      - [353, 3, -43, -36.5]
+      - [353, 3.3, -43, -36.5]
       - [350, 355, -44, -41.5] # Ferrol
-
-  - type: STR_RUSSIA
-    fundingBase: 230
-    fundingCap: 8000
-    labelLon: 49
-    labelLat: -60
-    areas:
-      - [28, 50, -70, -50] # Moscow
-      - [32, 37, -46.5, -44] # Crimea
-      - [37, 50, -50, -42] # Astrakhan
-      - [50, 165, -80, -50] # Siberia
-      - [165, 190, -71, -59] # Anadyr
-      - [130, 138, -50, -40] # Vladivostok
-      - [17.75, 22.25, -56, -54] # Kaliningrad
 
   - type: STR_CHINA
     fundingBase: 245
@@ -134,7 +126,7 @@ countries:
     labelLat: -38.25
     areas:
       - [129.6, 143, -40, -30]
-      - [138, 147, -46, -40]
+      - [138, 147, -45.5, -40]
 
   - type: STR_INDIA
     fundingBase: 150
@@ -152,11 +144,16 @@ countries:
     labelLon: 305
     labelLat: 5
     areas:
-      - [286.5, 290, 4.4, 11.4]
-      - [290, 302, -3, 14]
-      - [302, 310, -3, 22]
-      - [310, 326, -1.5, 25]
-      - [303.5, 313, 22, 33.25]
+      - [286.25, 290, 4.4, 11.2] # West 1
+      - [290, 295.5, -2.1, 11.1] # West 2
+      - [295.5, 297.5, -4.75, 12.5] # West 3
+      - [297.5, 299.2, -5.5, 14] # West 4
+      - [299.2, 301.8, -1.5, 16.25] # West 5
+      - [299.2, 301.1, -5.4, -1.5] # Above of West 5
+      - [301.8, 325.1, -1.83, 25] # Central
+      - [307, 311, -4.5, -1.83] # North
+      - [305, 313.25, 25, 33.25] # South
+      - [302.5, 305, 27, 31.75] # West of South
 
   - type: STR_AUSTRALIA
     fundingBase: 280
@@ -180,9 +177,9 @@ countries:
     labelLon: 25
     labelLat: 30
     areas:
-      - [15.8, 25, 28.4, 35]
-      - [19, 25, 25, 28.4]
-      - [25, 33.5, 22, 35]
+      - [15.75, 26.5, 28.25, 34.5] # Cape Town
+      - [20, 26.5, 25, 28.25]
+      - [26.5, 33.25, 22, 34.25] # Pretoria
 
   - type: STR_EGYPT
     fundingBase: 230
@@ -191,8 +188,19 @@ countries:
     labelLat: -26
     areas:
       - [25, 35, -31.75, -22]
-      - [35, 37, -29, -22]
+      - [35, 37, -29.25, -22.7]
 
+  - type: STR_CANADA
+    fundingBase: 230
+    fundingCap: 4000
+    labelLon: 265
+    labelLat: -54
+    areas:
+      - [219, 230, -72, -58] # Inuvik
+      - [230, 305, -70, -49]
+      - [230, 292, -79, -70] # North
+      - [277, 308, -49, -44] # Halifax
+      - [277, 283, -44, -42] # Toronto
 
 regions:
   - type: STR_NORTH_AMERICA
@@ -203,6 +211,12 @@ regions:
       - name: Quebec
         lon: 290.45
         lat: -48.11
+      - name: Fredericton
+        lon: 292.71
+        lat: -45.57
+      - name: Whitehorse
+        lon: 226.62
+        lat: -60.43
       - name: Edmonton
         lon: 245.67
         lat: -53.32
@@ -218,12 +232,21 @@ regions:
       - name: Winnipeg
         lon: 262.37
         lat: -49.90
+      - name: SantoDomingo
+        lon: 290
+        lat: -18.5
       - name: Atlanta
         lon: 275.63
         lat: -33.75
       - name: Boston
         lon: 289.35
         lat: -42.43
+      - name: Charleston
+        lon: 280.64
+        lat: -33.28
+      - name: LasVegas
+        lon: 244.10
+        lat: -37.01
       - name: Houston
         lon: 264.62
         lat: -29.75
@@ -245,6 +268,9 @@ regions:
       - name: ElPaso
         lon: 254
         lat: -31.9
+      - name: Albuquerque
+        lon: 254
+        lat: -35.06
       - name: Memphis
         lon: 268.9
         lat: -35.1
@@ -386,6 +412,9 @@ regions:
       - name: Venice
         lon: 12.7
         lat: -45.5
+      - name: Tirana
+        lon: 19.49
+        lat: -41.19
       - name: Lisbon
         lon: 350.78
         lat: -38.67
@@ -479,12 +508,30 @@ regions:
       - name: Dubai
         lon: 55.76
         lat: -25.58
+      - name: Sanaa
+        lon: 44.12
+        lat: -15.20
+      - name: Riyadh
+        lon: 46.43
+        lat: -24.38
+      - name: Aleppo
+        lon: 37.09
+        lat: -36.12
       - name: Chennai
         lon: 80.44
         lat: -13.05
       - name: Islamabad
         lon: 72.35
         lat: -32.58
+      - name: Ashgabat
+        lon: 58.56
+        lat: -38.99
+      - name: Dushanbe
+        lon: 68.46
+        lat: -38.32
+      - name: Karaganda
+        lon: 73.07
+        lat: -49.48
   - type: STR_SOUTH_EAST_ASIA
     cities:
       - name: Vladivostok
@@ -553,6 +600,7 @@ regions:
       - name: Honolulu
         lon: 207.074
         lat: -21.3902
+
 
 
 facilities:
@@ -7621,6 +7669,8 @@ extraStrings:
   - type: en-US
     strings:
       Quebec: "Quebec City"
+      SantoDomingo: "Santo Domingo"
+      LasVegas: "Las Vegas"
       NewOrleans: "New Orleans"
       Reykjavik: "Reykjavík"
       Panama: "Panama City"
@@ -7629,18 +7679,24 @@ extraStrings:
       Sanfrancisco: "San Francisco"
       ElPaso: "El Paso"
       LaPaz: "La Paz"
+      Sanaa: "Sana'a"
 
   - type: ru
     strings:
       Toronto: "Торонто"
       Quebec: "Квебек"
+      Fredericton: "Фредериктон"
+      Whitehorse: "Уайтхорс"
       Edmonton: "Эдмонтон"
       Calgary: "Калгари"
       Halifax: "Галифакс"
       Saskatoon: "Саскатун"
       Winnipeg: "Виннипег"
+      SantoDomingo: "Санто-Доминго"
       Atlanta: "Атланта"
       Boston: "Бостон"
+      Charleston: "Чарлстон"
+      LasVegas: "Лас-Вегас"
       Houston: "Хьюстон"
       NewOrleans: "Новый Орлеан"
       Phoenix: "Финикс"
@@ -7655,6 +7711,7 @@ extraStrings:
       Sanfrancisco: "Сан-Франциско"
       Miami: "Майами"
       ElPaso: "Эль-Пасо"
+      Albuquerque: "Альбукерке"
       Memphis: "Мемфис"
       Indianapolis: "Индианаполис"
       Billings: "Биллингс"
@@ -7696,6 +7753,7 @@ extraStrings:
       Milan: "Милан"
       Palermo: "Палермо"
       Venice: "Венеция"
+      Tirana: "Тирана"
       Lisbon: "Лиссабон"
       Ferrol: "Ферроль"
       Krakow: "Краков"
@@ -7728,8 +7786,14 @@ extraStrings:
       # CENTRAL ASIA
       Antalya: "Анталья"
       Dubai: "Дубай"
+      Sanaa: "Сана"
+      Riyadh: "Эр-Рияд"
+      Aleppo: "Алеппо"
       Chennai: "Ченнаи"
       Islamabad : "Исламабад"
+      Ashgabat: "Ашхабад"
+      Dushanbe: "Душанбе"
+      Karaganda: "Караганда"
       # SOUTH EAST ASIA
       Vladivostok: "Владивосток"
       Khabarovsk: "Хабаровск"
