@@ -1423,7 +1423,7 @@ items:
     meleeSound: 8000
     meleeHitSound: 8001
     meleeAnimation: 44
-    power: 52
+    power: 60
     strengthApplied: true
     skillApplied: true
     damageType: 7
@@ -2492,7 +2492,7 @@ items:
     meleeSound: 8051
     meleeHitSound: 8050
     meleeAnimation: 54
-    power: 88
+    power: 92
     strengthApplied: false
     skillApplied: true
     damageType: 7
@@ -2616,14 +2616,14 @@ items:
     fireSound: 8054
     hitSound: 8050
     hitAnimation: 36
-    power: 116
+    power: 124
     damageType: 4
     accuracyAuto: 0
     accuracySnap: 75
-    accuracyAimed: 90
+    accuracyAimed: 95
     tuAuto: 0
     tuSnap: 75
-    tuAimed: 99
+    tuAimed: 100
     clipSize: -1
     battleType: 1
     twoHanded: true
@@ -2828,7 +2828,7 @@ items:
     handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 54 #power: 52
+    power: 52 #power: 52
     damageType: 5
     clipSize: 12 #clipSize: 26
     battleType: 2
@@ -2876,7 +2876,7 @@ items:
     handSprite: 800
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 78 #power: 80
+    power: 80 #power: 80
     damageType: 5
     clipSize: 14 #28
     battleType: 2
@@ -2925,7 +2925,7 @@ items:
     handSprite: 816
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 56 #power: 115
+    power: 58 # 52
     damageType: 5
     clipSize: 18 #35
     battleType: 2
@@ -2977,7 +2977,7 @@ items:
     bulletSpeed: 2
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 90
+    power: 108
     damageType: 5
     clipSize: 12
     battleType: 2
@@ -3030,7 +3030,7 @@ items:
   - type: STR_PLASMA_BLADE # STR_PLASMA_SWORD for UFOpaedia article, real values are bellow
     weight: 5
     bigSprite: 176
-    power: 96
+    power: 98
     damageType: 5
     accuracyMelee: 100
     tuMelee: 24
