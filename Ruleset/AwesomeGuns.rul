@@ -3882,7 +3882,7 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 0.6 # Laser
-      - 0.6 # Plasma
+      - 0.5 # Plasma
       - 1.1 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
@@ -3900,7 +3900,7 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 0.6 # Laser
-      - 0.6 # Plasma
+      - 0.5 # Plasma
       - 1.0 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
@@ -3918,7 +3918,7 @@ armors:
       - 1.0 # Incendiary
       - 1.0 # High Explosive
       - 0.6 # Laser
-      - 0.6 # Plasma
+      - 0.5 # Plasma
       - 1.0 # Stun
       - 1.2 # Melee
       - 0.4 # Acid
@@ -3936,7 +3936,7 @@ armors:
       - 1.8 # Incendiary
       - 0.7 # High Explosive
       - 0.6 # Laser
-      - 0.6 # Plasma
+      - 0.5 # Plasma
       - 0.7 # Stun
       - 0.7 # Melee
       - 0.4 # Acid
@@ -3953,7 +3953,7 @@ armors:
       - 0.8 # Armor Piercing
       - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
+      - 0.55 # Laser
       - 0.5 # Plasma
       - 1.2 # Stun
       - 1.2 # Melee
@@ -3971,7 +3971,7 @@ armors:
       - 0.8 # Armor Piercing
       - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
+      - 0.55 # Laser
       - 0.5 # Plasma
       - 1.15 # Stun
       - 1.1 # Melee
@@ -3989,7 +3989,7 @@ armors:
       - 0.8 # Armor Piercing
       - 0.6 # Incendiary
       - 0.6 # High Explosive
-      - 0.5 # Laser
+      - 0.55 # Laser
       - 0.5 # Plasma
       - 1.1 # Stun
       - 1.0 # Melee
@@ -4007,7 +4007,7 @@ armors:
       - 0.6 # Armor Piercing
       - 0.2 # Incendiary
       - 1.5 # High Explosive
-      - 0.2 # Laser
+      - 0.3 # Laser
       - 0.2 # Plasma
       - 1.0 # Stun
       - 1.0 # Melee
@@ -4025,7 +4025,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.8 # High Explosive
-      - 0.6 # Laser
+      - 0.65 # Laser
       - 0.6 # Plasma
       - 0.0 # Stun
       - 1.0 # Melee
@@ -4043,7 +4043,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.6 # Laser
+      - 0.65 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -4061,7 +4061,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.6 # Laser
+      - 0.65 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -4079,7 +4079,7 @@ armors:
       - 0.6 # Armor Piercing
       - 1.0 # Incendiary
       - 0.6 # High Explosive
-      - 0.6 # Laser
+      - 0.65 # Laser
       - 0.6 # Plasma
       - 0.6 # Stun
       - 0.8 # Melee
@@ -4097,7 +4097,7 @@ armors:
       - 1.4 # Armor Piercing
       - 1.0 # Incendiary
       - 1.0 # High Explosive
-      - 0.2 # Laser
+      - 0.3 # Laser
       - 0.2 # Plasma
       - 0.8 # Stun
       - 1.2 # Melee
@@ -4116,7 +4116,7 @@ armors:
       - 0.0 # Incendiary
       - 0.8 # High Explosive
       - 1.0 # Laser
-      - 1.0 # Plasma
+      - 0.9 # Plasma
       - 0.8 # Stun
       - 0.6 # Melee
       - 0.0 # Acid
@@ -4133,7 +4133,7 @@ armors:
       - 1.0 # Armor Piercing
       - 0.8 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.85 # Laser
       - 0.8 # Plasma
       - 0.8 # Stun
       - 1.6 # Melee
@@ -4151,7 +4151,7 @@ armors:
       - 1.1 # Armor Piercing
       - 0.8 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.85 # Laser
       - 0.8 # Plasma
       - 0.75 # Stun
       - 1.5 # Melee
@@ -4169,7 +4169,7 @@ armors:
       - 1.2 # Armor Piercing
       - 0.8 # Incendiary
       - 1.0 # High Explosive
-      - 0.8 # Laser
+      - 0.85 # Laser
       - 0.8 # Plasma
       - 0.7 # Stun
       - 1.4 # Melee
