@@ -2462,7 +2462,7 @@ items:
     recoveryPoints: 1
     blastRadius: 5
     armor: 12
-    attraction: 10
+    attraction: 6
 
   - type: STR_STUN_GRENADE
     listOrder: 4505
@@ -3291,6 +3291,7 @@ items:
     tuUse: 50
     recoveryPoints: 1
     armor: 10
+    LOSRequired: false
 
   - type: STR_PSI_AMP
     requires:
@@ -3309,6 +3310,10 @@ items:
     tuUse: 25
     flatRate: true
     armor: 9
+    LOSRequired: true
+
+  - type: ALIEN_PSI_WEAPON
+    LOSRequired: true
 
   - type: STR_STUN_ROD
     size: 0.1
