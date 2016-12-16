@@ -1333,7 +1333,7 @@ items:
     fireSound: 8055 #fireSound: 11
     hitSound: 8050 #hitSound: 19
     hitAnimation: 36
-    power: 120 #power: 110
+    power: 125 #power: 110
     damageType: 4
     accuracySnap: 90 #accuracySnap: 50
     accuracyAimed: 120 #accuracyAimed: 85
@@ -1359,7 +1359,7 @@ items:
     fireSound: 8063 #fireSound: 18
     hitSound: 8064 #hitSound: 19
     hitAnimation: 146 #hitAnimation: 46
-    power: 110
+    power: 115 # 110
     damageType: 5
     accuracySnap: 80 #accuracySnap: 85
     accuracyAimed: 100
