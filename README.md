@@ -2,9 +2,9 @@
 
 ##Awesome Guns
 
-This is an awesome modification of the [OpenXcom game](http://openxcom.org).    
-Current state: released     
-Current plans: rolling-release     
+This is an awesome modification of the [OpenXcom game](http://openxcom.org).
+Current state: released
+Current plans: rolling-release
 WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)
 
 ###Why am I doing it?
@@ -20,7 +20,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 ###How do I make it?
 
 - Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope this mod will work fine on other platforms without problems.
-- Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license. 
+- Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license.
 - I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I take images from [ufopaedia.org](http://ufopaedia.org/index.php/Ruleset_Vanilla_IDs_(OpenXcom)) or from another mods and improve each of them. I spend a lot of time to do a better visualization.
 - I correct prepared images in [GrafX2](http://pulkomandy.tk/projects/GrafX2), because the [GIMP damages palette in *.png* files](http://openxcom.org/forum/index.php?topic=2676.0) and do not set the 0 value for background in indexed *.gif* files.
 - The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
@@ -33,6 +33,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 * Download the [latest release](https://github.com/CanadianBeaver/AwesomeGuns/releases/latest) of the Awesome Guns modification and extract files and folders.
 * Copy the extracted *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the extracted *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
+* Switch off all mods and extensions, especially UFOextender and XcomUtil.
 
 If you prefer playing the Awesome Guns modification on OpenXcom Nightly, then [this patch](http://www.openxcom.com/mod/awesome-guns-nightly-patch) can solve the compatibility problems.
 
