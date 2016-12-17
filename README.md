@@ -1,11 +1,10 @@
-﻿X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXcom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes for this game plot and graphics.
+X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXcom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes for this game plot and graphics.
 
 ##Awesome Guns
 
-This is an awesome modification of the [OpenXcom game](http://openxcom.org).
-Current state: released
-Current plans: rolling-release
-WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)
+This is an awesome modification of the [OpenXcom game](http://openxcom.org).  
+Current state: released  
+WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)  
 
 ###Why am I doing it?
 
@@ -19,12 +18,12 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 ###How do I make it?
 
-- Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope this mod will work fine on other platforms without problems.
-- Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license.
-- I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I take images from [ufopaedia.org](http://ufopaedia.org/index.php/Ruleset_Vanilla_IDs_(OpenXcom)) or from another mods and improve each of them. I spend a lot of time to do a better visualization.
-- I correct prepared images in [GrafX2](http://pulkomandy.tk/projects/GrafX2), because the [GIMP damages palette in *.png* files](http://openxcom.org/forum/index.php?topic=2676.0) and do not set the 0 value for background in indexed *.gif* files.
-- The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
-- And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
+* Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope this mod will work fine on other platforms without problems.
+* Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license.
+* I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I take images from [ufopaedia.org](http://ufopaedia.org/index.php/Ruleset_Vanilla_IDs_(OpenXcom)) or from another mods and improve each of them. I spend a lot of time to do a better visualization.
+* I correct prepared images in [GrafX2](http://pulkomandy.tk/projects/GrafX2), because the [GIMP damages palette in *.png* files](http://openxcom.org/forum/index.php?topic=2676.0) and do not set the 0 value for background in indexed *.gif* files.
+* The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
+* And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
 
 ###How to install it?
 
