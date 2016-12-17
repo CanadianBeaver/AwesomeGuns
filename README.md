@@ -3,8 +3,11 @@ X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen,
 ##Awesome Guns
 
 This is an awesome modification of the [OpenXcom game](http://openxcom.org).
+
 Current state: released
+
 WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)
+
 
 ###Why am I doing it?
 
