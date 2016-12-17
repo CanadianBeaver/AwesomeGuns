@@ -2462,7 +2462,7 @@ items:
     recoveryPoints: 1
     blastRadius: 5
     armor: 12
-    attraction: 6
+    attraction: 22
 
   - type: STR_STUN_GRENADE
     listOrder: 4505
@@ -2665,7 +2665,7 @@ items:
     invHeight: 2
     recoveryPoints: 3
     armor: 20
-    attraction: 10
+    attraction: 18
 
   - type: STR_PLASMA_PISTOL_CLIP
     requires:
@@ -2685,7 +2685,7 @@ items:
     battleType: 2
     recoveryPoints: 1
     armor: 20
-    attraction: 10
+    attraction: 18
 
   - type: STR_PLASMA_RIFLE
     requires:
@@ -2714,7 +2714,7 @@ items:
     invHeight: 3
     recoveryPoints: 4
     armor: 22
-    attraction: 10
+    attraction: 20
 
   - type: STR_PLASMA_RIFLE_CLIP
     requires:
@@ -2734,7 +2734,7 @@ items:
     battleType: 2
     recoveryPoints: 1
     armor: 20
-    attraction: 10
+    attraction: 20
 
   - type: STR_HEAVY_PLASMA
     requires:
@@ -2763,7 +2763,7 @@ items:
     invHeight: 3
     recoveryPoints: 5
     armor: 24
-    attraction: 10
+    attraction: 22
 
   - type: STR_HEAVY_PLASMA_CLIP
     requires:
@@ -2783,7 +2783,7 @@ items:
     battleType: 2
     recoveryPoints: 1
     armor: 20
-    attraction: 10
+    attraction: 22
 
 # Converted PLASMA weapons
 
@@ -3141,7 +3141,7 @@ items:
     invHeight: 2
     recoveryPoints: 4
     armor: 22
-    attraction: 10
+    attraction: 20
 
   - type: STR_STUN_BOMB
     listOrder: 5700
@@ -3164,7 +3164,7 @@ items:
     invHeight: 1
     recoveryPoints: 1
     armor: 14
-    attraction: 10
+    attraction: 20
 
   - type: STR_BLASTER_LAUNCHER
     listOrder: 5800
@@ -3191,7 +3191,7 @@ items:
     invHeight: 3
     recoveryPoints: 5
     armor: 44
-    attraction: 10
+    attraction: 24
 
   - type: STR_BLASTER_BOMB
     listOrder: 5900
@@ -3215,7 +3215,7 @@ items:
     recoveryPoints: 1
     blastRadius: 10
     armor: 8
-    attraction: 10
+    attraction: 24
 
 # Toys
 
