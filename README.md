@@ -30,7 +30,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 * Download the [OpenXcom game](http://openxcom.org/downloads-milestones/) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games).
 * Download the [Data Patch](http://openxcom.org/downloads-extras/) and install it.
-* Download the [.zip](https://github.com/CanadianBeaver/AwesomeGuns/archive/master.zip) or the [.tar.gz](https://github.com/CanadianBeaver/AwesomeGuns/archive/master.tar.gz) archive of the Awesome Guns modification and extract files and folders.
+* Download the [latest release](https://github.com/CanadianBeaver/AwesomeGuns/releases/latest) of the Awesome Guns modification and extract files and folders.
 * Copy the extracted *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the extracted *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
 
