@@ -2828,7 +2828,7 @@ items:
     handSprite: 744
     hitSound: 8064 #hitSound: 19
     hitAnimation: 136
-    power: 52 #power: 52
+    power: 54 #power: 52
     damageType: 5
     clipSize: 12 #clipSize: 26
     battleType: 2
