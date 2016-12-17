@@ -34,7 +34,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 * Copy the extracted *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
 * Copy the extracted *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
 
-If you prefer playing the Awesome Guns modification on OpenXcom Nightly, then [this patch](https://canadianbeaver.github.io/AwesomeGuns/www.openxcom.com/mod/awesome-guns-nightly-patch) can solve the compatibility problems.
+If you prefer playing the Awesome Guns modification on OpenXcom Nightly, then [this patch](http://www.openxcom.com/mod/awesome-guns-nightly-patch) can solve the compatibility problems.
 
 ###Contacts
 
