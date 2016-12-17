@@ -304,6 +304,12 @@ regions:
       - name: Miami
         lon: 279.95
         lat: -25.91
+      - name: Anchorage
+        lon: 209.46
+        lat: -61.12
+      - name: Orlando
+        lon: 278.75
+        lat: -28.54
   - type: STR_ARCTIC
     cities:
       - name: Iqaluit
@@ -7721,6 +7727,8 @@ extraStrings:
       Indianapolis: "Индианаполис"
       Billings: "Биллингс"
       Minneapolis: "Миннеаполис"
+      Anchorage: "Анкоридж"
+      Orlando: "Орландо"
       # ARCTIC
       Inuvik: "Инувик"
       Iqaluit: "Икалуит"
