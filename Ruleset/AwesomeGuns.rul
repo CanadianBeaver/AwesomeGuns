@@ -174,8 +174,8 @@ countries:
   - type: STR_SOUTH_AFRICA
     fundingBase: 230
     fundingCap: 3000
-    labelLon: 25
-    labelLat: 30
+    labelLon: 23.75
+    labelLat: 29.5
     areas:
       - [15.75, 26.5, 28.25, 34.5] # Cape Town
       - [20, 26.5, 25, 28.25]
@@ -185,7 +185,7 @@ countries:
     fundingBase: 230
     fundingCap: 2000
     labelLon: 29
-    labelLat: -26
+    labelLat: -26.75
     areas:
       - [25, 35, -31.75, -22]
       - [35, 37, -29.25, -22.7]
@@ -374,6 +374,12 @@ regions:
       - name: LaPaz
         lon: 292.65
         lat: 17.49
+      - name: Cayenne
+        lon: 306.30
+        lat: -5.66
+      - name: Guayaquil
+        lon: 281.59
+        lat: -2.22
   - type: STR_EUROPE
     cities:
       - name: Athens
@@ -498,6 +504,9 @@ regions:
       - name: Djibouti
         lon: 43.98
         lat: -10.62
+      - name: Aswan
+        lon: 32.9
+        lat: -24.36
   - type: STR_SOUTHERN_AFRICA
     cities:
       - name: Antananarivo
@@ -506,6 +515,9 @@ regions:
       - name: Windhoek
         lon: 17.25
         lat: 22.5
+      - name: Durban
+        lon: 31.75
+        lat: 29.51
   - type: STR_CENTRAL_ASIA
     cities:
       - name: Antalya
@@ -7751,6 +7763,8 @@ extraStrings:
       Fortaleza: "Форталеза"
       Recife: "Ресифи"
       LaPaz: "Ла-Пас"
+      Cayenne: "Кайенна"
+      Guayaquil: "Гуаякиль"
       # EUROPE
       Athens: "Афины"
       Barcelona: "Барселона"
@@ -7793,9 +7807,11 @@ extraStrings:
       Dakar: "Дакар"
       Kano: "Кано"
       Djibouti: "Джибути"
+      Aswan: "Асуан"
       # SOUTHERN AFRICA
       Antananarivo: "Антананариву"
       Windhoek: "Виндхук"
+      Durban: "Дурбан"
       # CENTRAL ASIA
       Antalya: "Анталья"
       Dubai: "Дубай"
