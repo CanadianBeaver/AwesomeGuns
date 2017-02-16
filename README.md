@@ -18,7 +18,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 ###How do I make it?
 
-* Primary, I am used to working with the [Debian and Mate](https://wiki.debian.org/Mate). I hope this mod will work fine on other platforms without problems.
+* Primary, I am used to working with the [Debian and Mate](https://www.codeproject.com/articles/1086376/building-useful-homestation-from-ugly-debian). I hope this mod will work fine on other platforms without problems.
 * Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license.
 * I am used to working with the [Gimp](https://www.gimp.org/) for correct images. I am not a good painter. Therefore, I take images from [ufopaedia.org](http://ufopaedia.org/index.php/Ruleset_Vanilla_IDs_(OpenXcom)) or from another mods and improve each of them. I spend a lot of time to do a better visualization.
 * I correct prepared images in [GrafX2](http://pulkomandy.tk/projects/GrafX2), because the [GIMP damages palette in *.png* files](http://openxcom.org/forum/index.php?topic=2676.0) and do not set the 0 value for background in indexed *.gif* files.
