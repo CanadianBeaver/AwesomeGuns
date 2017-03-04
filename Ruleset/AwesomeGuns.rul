@@ -7906,7 +7906,7 @@ extraStrings:
 
       STR_IMPROVED_ROCKETS: "Improved rocket launchers"
       STR_IMPROVED_ROCKETS_TITLE: "Improved launchers"
-      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using the alien alloys and UFO navigation can increase homing of the standard missiles and improve craft launchers.{NEWLINE}{NEWLINE}Ready-to-production drawings include improved sets of launchers and land-based missile launcher. Particularly interesting development is a new compact armor-piercing rocket, which is able to penetrate the body of UFO during the combats and opens the way to our soldiers inside the alien spaceship."
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "Using alien alloys and UFO navigation to increase the homing of standard missiles and improve craft launchers.{NEWLINE}{NEWLINE}Blueprints include an improved craft launcher and a land-based missile launcher. Particularly interesting development is a new compact armor-piercing rocket, capable of penetrating the body of the UFO during combat, this opens the way for boarding by our soldiers."
 
       STR_STINGRAY: "STINGRAY"
       STR_STINGRAY_LAUNCHER: "Stingray Launcher"
@@ -7914,15 +7914,15 @@ extraStrings:
       STR_STINGRAY_UFOPEDIA: "ADVANCED AIR TO AIR MISSILE WITH SPECIALLY SHIELDED ELECTRONICS."
       STR_ALLOY_STINGRAY: "TUNED STINGRAY"
       STR_ALLOY_STINGRAY_LAUNCHER: "Tuned Stingray Launcher"
-      STR_ALLOY_STINGRAY_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR STINGRAY MISSILES."
+      STR_ALLOY_STINGRAY_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR THE STINGRAY MISSILE."
 
       STR_AVALANCHE: "AVALANCHE"
       STR_AVALANCHE_LAUNCHER: "Avalanche Launcher"
       STR_AVALANCHE_MISSILES: "Avalanche Missiles"
-      STR_AVALANCHE_UFOPEDIA: "AIR TO AIR MISSILE WITH NUCLEAR WARHEAD, BUT AN EXTREMELY HEAVY LOAD."
+      STR_AVALANCHE_UFOPEDIA: "AIR TO AIR MISSILE WITH A NUCLEAR WARHEAD, POSSESSING AN EXTREMELY HEAVY PAYLOAD."
       STR_ALLOY_AVALANCHE: "TUNED AVALANCHE"
       STR_ALLOY_AVALANCHE_LAUNCHER: "Tuned Avalanche Launcher"
-      STR_ALLOY_AVALANCHE_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR AVALANCHE MISSILES."
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "IMPROVED LAUNCHER AND HOMING ELECTRONICS FOR THE AVALANCHE MISSILE."
 
       STR_CANNON_UC: "CANNON"
       STR_CANNON: "Cannon"
@@ -7932,8 +7932,8 @@ extraStrings:
       STR_ALLOY_CANNON: "Tuned Cannon"
       STR_ALLOY_CANNON_UFOPEDIA: "IMPROVED HIGH POWERED CANNON.{NEWLINE}{NEWLINE}FIRING PATTERNS HAVE BEEN IMPROVED AGAINST UFO EVASIVE MANEUVERS."
 
-      STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER CANNON IS POWERED TO FIGHT AGAINST UFO ON CLOSE DISTANCES."
-      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS PLASMA GENERATOR FROM ALIENS HEAVY WEAPON'S COMPONENTS."
+      STR_LASER_CANNON_UFOPEDIA: "THIS CONVENTIONAL LASER CANNON IS POWERED FOR DOGFIGHTS AGAINST UFOs."
+      STR_PLASMA_BEAM_UFOPEDIA: "OUR ENGINEERS HAVE FOUND A WAY TO MANUFACTURE THIS PLASMA GENERATOR FROM ALIEN HEAVY WEAPON COMPONENTS."
 
       STR_ELECTROMAGNETIC_CANNON_UC: "ELECTROMAGNETIC CANNON"
       STR_ELECTROMAGNETIC_CANNON: "Electromagnetic Cannon"
@@ -7944,7 +7944,7 @@ extraStrings:
       STR_FUSION_BALL_UC: "STORM"
       STR_FUSION_BALL_LAUNCHER: "Storm Launcher"
       STR_FUSION_BALL: "Storm Missile"
-      STR_FUSION_BALL_UFOPEDIA: "THIS IS A DEEP MODERNIZATION OF \"AVALANCHE\" WITH BUILT-IN UFO NAVIGATION AND ALIEN'S BLASTER BOMB."
+      STR_FUSION_BALL_UFOPEDIA: "THIS IS A MODERNIZATION OF THE \"AVALANCHE\" WITH BUILT-IN UFO NAVIGATION AND ALIEN BLASTER BOMB."
 
   - type: ru
     strings:
@@ -8054,36 +8054,36 @@ extraStrings:
     strings:
 
       STR_ALLOY_CLIPS: "Improved ammunition"
-      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition and grapeshot from alien alloys can significantly increase the firepower of conventional weapon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alien alloys, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons. The next section contains more information about manufacturing."
+      STR_ALLOY_CLIPS_UFOPEDIA: "New technology for manufacturing ammunition from alien alloys can significantly increase the firepower of conventional weapon.{NEWLINE}{NEWLINE}A few clips of ammunition can be made from one alien alloys, depending on type of weapon. Also, engineers can produce clips in one production stream for multiple types of weapons. The next section contains more information about manufacturing."
 
       STR_ACID_CLIPS: "Acid ammunition"
-      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the chryssalid corpse can be used for the production of a particular acid. The capsule shape can keep the acid inside the ammunition and sprays it into enemy's body when direct contact. We may make such clips from alien alloys for Assault rifle and Thunderbolt.{NEWLINE}{NEWLINE}It seems that the most of aliens have immunity to acid. However, their robots are highly vulnerable from this type of weapons."
+      STR_ACID_CLIPS_UFOPEDIA: "Poison extracted from the chryssalid corpse can be used for the production of a particular acid. The capsule shape holds the acid inside the ammunition and sprays it into the targets body on direct contact. Production of such clips from alien alloys for the Assault Rifle and Thunderbolt is now available.{NEWLINE}{NEWLINE}It seems that most of aliens have immunity to acid. However, robotic components are highly vulnerable from this type of weapon."
 
       STR_AL_CLIPS: "Armor-piercing ammunition"
       STR_AL_AMMO: "Armor-piercing shells"
 
       STR_ALLOY_CLIPS_MANUFACTURE: "Production of ammunition"
-      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> this production makes 1 clips for the pistol, machine pistol, rifle and sniper rifle from 3 alien alloys.{NEWLINE}{NEWLINE}Armor-piercing shells> this production makes 1 ammo for the shotgun, heavy cannon and auto-cannon from 2 alien alloys.{NEWLINE}{NEWLINE}It is profitable to produce several types of ammunition. The production of ammunition for pointed weapon makes a lot of defective products. In this case it can be manufactured just one ammo or clip from one alien alloy."
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Armor-piercing ammunition> 3 alien alloys are needed to produce 1 clip for the pistol, machine pistol, rifle and sniper rifle.{NEWLINE}{NEWLINE}Armor-piercing shells> 2 alien alloys are needed to produce 1 clip for the shotgun, heavy cannon and auto-cannon.{NEWLINE}{NEWLINE}It is profitable to produce several types of ammunition. The production of ammunition for pointed weapons incurs defective products. In this case just one ammo or clip can be manufactured from the alien alloys."
 
       STR_ELERIUM_CLIPS: "Elerium ammunition"
-      STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A blast wave of great strength could be created after the detonation takes place..."
+      STR_ELERIUM_CLIPS_UFOPEDIA: "The complex science-intensive and technologically advanced process allows using the energy of the Elerium-115. A powerful blast wave could be created after such detonation takes place..."
 
       STR_KNIFE: "Combat Knife"
       STR_KNIFE_UFOPEDIA: "A combat knife is a fighting knife designed solely for military use and primarily intended for hand-to-hand or close combat fighting."
 
       STR_PISTOL_AL_CLIP: "Pistol-AP Clip"
-      STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is easy, cheap and quick integral part of the additional equipment."
+      STR_PISTOL_UFOPEDIA: "The semi-automatic pistol with a standard pistol caliber 9x19 mm Parabellum. The clip contains 9 bullets. It is light, cheap and an integral part of a soldiers equipment."
 
       STR_MACHINE_PISTOL: "Machine Pistol"
       STR_MACHINE_PISTOL_CLIP: "Machine Pistol Clip"
       STR_MACHINE_PISTOL_AL_CLIP: "Machine Pistol-AP Clip"
-      STR_MACHINE_PISTOL_UFOPEDIA: "This Machine Pistol is designed to be fired with one hand. It is less accurate than the Pistol, but provides automatic fire of 9x19mm bullet at high rate of fire and uses large clips of 15 round."
+      STR_MACHINE_PISTOL_UFOPEDIA: "The Machine Pistol is designed to be fired with one hand. It is less accurate than the Pistol, but provides automatic fire of 9x19mm bullets at a high rate of fire using large clips containing 15 rounds."
 
       STR_RIFLE_AL_CLIP: "Rifle-AP Clip"
-      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition in 12 round clips. It is suitable for fighting at close to medium range."
+      STR_RIFLE_UFOPEDIA: "This highly accurate rifle has laser guided sights and takes 5,56x45mm ammunition utilizing clips containing 12 rounds. It is suitable for fighting at close to medium range."
 
       STR_ALLOY_RIFLE: "Assault Rifle"
-      STR_ALLOY_RIFLE_UFOPEDIA: "Assault rifle was made from alien alloys. This weapon has a good precision and fire rate. Standard clip is targeted at 12 armor-piercing clips. Brust shot can fire with two bullets."
+      STR_ALLOY_RIFLE_UFOPEDIA: "The Assault rifle is manufactured from alien alloys. This weapon has excellent precision and fire rate. ROF=2 in Brust mode."
       STR_ALLOY_RIFLE_CLIP: "Assault Rifle-AP clip"
       STR_ACID_RIFLE_CLIP: "Assault Rifle-AC clip"
       STR_ELERIUM_RIFLE_CLIP: "Assault Rifle-EL clip"
@@ -8091,11 +8091,11 @@ extraStrings:
       STR_SNIPER_RIFLE: "Sniper Rifle"
       STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
       STR_SNIPER_RIFLE_AL_CLIP: "Sniper Rifle-AP Clip"
-      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle for 7,62x51mm ammunition. The increased accuracy and killing power make this rifle indispensable in the fight at medium and long distances. Standard clip is targeted at 3 armor-piercing bluets."
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modification of the rifle includes the 7,62x51mm round. The increased accuracy and stoping power make this rifle indispensable at medium and long range. Standard clip is targeted at 3 armor-piercing bluets."
 
       STR_ALLOY_SNIPER_RIFLE: "Thunderbolt"
       STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Heavy Sniper Rifle"
-      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon is greatest powered and precision on long distances. Unfortunately, it is very heavy. Only for strong soldiers. Clips can keep 2 bullets."
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Heavy sniper rifle. This weapon has great stopping power and extreme precision over long distances. Unfortunately, it is extremely cumbersome with a small clip containing 2 bullets."
       STR_ALLOY_SNIPER_RIFLE_CLIP: "Thunderbolt-AP clip"
       STR_ACID_SNIPER_RIFLE_CLIP: "Thunderbolt-AC clip"
       STR_ELERIUM_SNIPER_RIFLE_CLIP: "Thunderbolt-EL clip"
@@ -8103,30 +8103,30 @@ extraStrings:
       STR_SHOTGUN: "Shotgun"
       STR_SHOTGUN_AMMO: "Shotgun AMMO"
       STR_SHOTGUN_CLIP: "Shotgun-AL AMMO"
-      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for fighting at close range and indoors places. The standard AMMO contains 6 shells."
+      STR_SHOTGUN_UFOPEDIA: "Semi-automatic shotgun rifle fires with five pellets per shot. Ideal for close range, door-to-door fighting. The standard AMMO contains 6 shells."
 
-      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is devastating, but cumbersome weapon."
-      STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a faster fire rate by four shots."
+      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome weapon."
+      STR_AUTO_CANNON_UFOPEDIA: "The auto-cannon combines the versatility and power of a heavy cannon with a ROF of 4."
 
       STR_GRENADE_LAUNCHER: "Grenade Launcher"
       STR_GL_HE_AMMO: "40mm HE Grenade"
       STR_GL_I_AMMO: "40mm Incendiary Grenade"
       STR_GL_S_AMMO: "40mm Smoke Grenade"
-      STR_GRENADE_LAUNCHER_UFOPEDIA: "Able to fire an explosive, incendiary and smoke grenades for a long distances."
+      STR_GRENADE_LAUNCHER_UFOPEDIA: "Able to fire explosive, incendiary and smoke grenades over long distances."
 
-      STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire different sizes of missile."
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher utilizes a laser guided system capable of firing varied sized rockets."
       STR_FUSION_ROCKET: "ANTI-tank blaster ROCKET"
       STR_SMALL_ROCKET: "Blaster Rocket"
-      STR_SMALL_ROCKET_UFOPEDIA: "Blaster rocket for Rocket Launcher. This rocket can be produced from aliens ammunition."
+      STR_SMALL_ROCKET_UFOPEDIA: "Blaster rocket for Rocket Launcher. This rocket is manufactured from alien ammunition."
 
       STR_SINGLE_ROCKET_LAUNCHER: "Armor-piercing Rocket"
-      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Single rocket launcher. It fires armor-piercing rocket that can penetrate the wall of the UFOs. Not intended for reuse."
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Single rocket launcher. Fires a single armor-piercing rocket that can penetrate the wall of the UFO. Not intended for reuse."
 
       STR_INCENDIARY_GRENADE: "Incendiary Grenade"
-      STR_INCENDIARY_GRENADE_UFOPEDIA: "Incendiary Grenades are thrown incendiary devices that burn at extremely high temperatures through a violent chemical reaction. Move away from ignition point."
+      STR_INCENDIARY_GRENADE_UFOPEDIA: "Incendiary Grenades are thrown incendiary devices that burn at extremely high temperatures through a violent chemical reaction. Keep well clear of the ignition point."
 
       STR_STUN_GRENADE: "Stun Grenade"
-      STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Though some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
+      STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Although some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
 
   - type: ru
     strings:
@@ -8211,7 +8211,7 @@ extraStrings:
   - type: en-US
     strings:
       STR_MEDI_CHEST: "First Aid Kit"
-      STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid on the battlefields."
+      STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid on the battlefield."
   - type: ru
     strings:
       STR_MEDI_CHEST: "Медицинская аптечка"
@@ -8282,7 +8282,7 @@ extraStrings:
       STR_ELECTROMAGNETIC_WEAPONS: "Electromagnetic Weapon"
       STR_RAILGUN: "Railgun"
       STR_RAILGUN_SLUGS: "Railgun Slug"
-      STR_RAILGUN_UFOPEDIA: "Almost mobile electromagnetic accelerator. It fires on the enormous distances with little or no loss of accuracy. Speed of slug is so higher which gives the advantage of lethal force. However, as a weapon Railgun is quite difficult and it fires single-shot. Creating an assault rifle is not possible."
+      STR_RAILGUN_UFOPEDIA: "A mobile electromagnetic accelerator, well almost. It is capable of firing at enormous distances with little or no loss of accuracy. A high velocity slug capable of stopping even the bravest of the Mutons. However, the Railgun is quite cumbersome, only capable of firing a single-shot. Creating an automatic cannon design utilizing a multi-round belt proved difficult."
   - type: ru
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
@@ -8295,16 +8295,16 @@ extraStrings:
   - type: en-US
     strings:
       STR_ALIEN_WEAPON: "Aliens weapons and technologies"
-      STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but mainstream is energy of Elerium-115. Weapons principle is radically different from our technologies and it is controlled by the mind power. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers could use the alien's grenades right now.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien's technology."
+      STR_ALIEN_WEAPON_UFOPEDIA: "Aliens use different kinds of weapons, but the mainstream utilize energy of Elerium-115. The Aliens utilize principles radically different from our technologies and maintain full control of their weapon using psionic skills. This knowledge of nature we have yet to explore. However, some kinds of alien weapons are quite easy to handle and do not require psionic skills. For example, our soldiers are quite capable of utilizing alien grenades.{NEWLINE}{NEWLINE}We need to catch and interrogate more sentient aliens. Perhaps in this way we will find a solution to use or adapt alien technology."      
       STR_ALIEN_WEAPON_USING: "Using aliens weapons"
-      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can use some kinds of aliens' weapons without much difficulty. For example, some ammunition converting from plasma pistols and rifles will allow to be used in combats. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. Probably, it is not necessary to sell all of alien weapons at once."
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Our soldiers can utilize some alien weapons without much difficulty. For example, some ammunition converted from plasma pistols and rifles can now be used in combat. Other types of weapons can not be adapted to human nature and warfare techniques.{NEWLINE}{NEWLINE}However, we may still find a way to use the alien weapons. It may be prudent to store some of the alien weapons for a later time."
 
       STR_CONVERTED_PLASMA_PISTOL: "Converted Pistol"
-      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol from alien pistols. Small but useful gun."
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Converted Plasma Pistol from alien pistols. It is not the size that matter but how you use it."
       STR_CONVERTED_PLASMA_PISTOL_CLIP: "Converted Pistol Clip"
 
       STR_CONVERTED_PLASMA_RIFLE: "Converted Rifle"
-      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles. Simple shooting for simple targets."
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Converted Plasma Rifle from alien rifles. Just like the plasma pistol only bigger...also known as the Ron Jeremy."
       STR_CONVERTED_PLASMA_RIFLE_CLIP: "Converted Rifle Clip"
 
       STR_CONVERTED_PLASMA_CANNON: "Converted Cannon"
@@ -8312,7 +8312,7 @@ extraStrings:
       STR_CONVERTED_PLASMA_CANNON_CLIP: "Converted Cannon Clip"
 
       STR_CONVERTED_GRENADE_LAUNCHER: "Converted Launcher"
-      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launchers. It can be a BFG... or can not..."
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Converted Grenade Launcher from alien small launchers. It can be a BFG... or not..."
       STR_CGL_PLASMA_AMMO: "Plasma bombs"
       STR_CGL_STUN_BOMBS: "Stun bombs"
       STR_CGL_ELERIUM_BOMBS: "Elerium bombs"
@@ -8320,12 +8320,12 @@ extraStrings:
       STR_PLASMA_SWORD: "Plasma Blade"
       STR_PLASMA_SWORD_UFOPEDIA: "This lethal implement of sword combines a large blade, a micron thick at the edge, a plasma emitter, and an electromagnet. When activated, hot plasma floods the EM field surrounding the blade, superheating it to the point where its touch would make titanium run like water."
 
-      STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and do not requires psi-skills."
-      STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, can not be used by our soildiers."
+      STR_ALIEN_GRENADE_UFOPEDIA: "This device works in the same way as a terrestrial grenade - except that it is more powerful and does not requires psi-skills."
+      STR_SMALL_LAUNCHER_UFOPEDIA: "A small launcher which fires stun bombs. Unfortunately, cannot be used by our soildiers."
       STR_BLASTER_LAUNCHER_UFOPEDIA: "This is an alien guided missile launcher which fires powerful 'blaster bombs'. When you click to fire the weapon it will generate 'way points' for the blaster bomb to follow. This weapon is controlled by mind and only aliens can use it."
 
-      STR_UFO_POWER_SOURCE_UFOPEDIA: "The power source of alien craft is an anti-matter reactor which uses Elerium (element 115) to generate powerful gravity waves as well as other forms of energy.  The conversion of matter to energy is an incredible 99% efficient, therefore tiny quantities of Elerium can produce a huge amount of power."
-      STR_UFO_NAVIGATION_UFOPEDIA: "Alien craft use sophisticated computers to navigate on earth and through space.  The system is based on optical processors arranged in network fashion.  The control interface is relatively simple - the navigator controls the direction of gravity waves generated by the power source to move the craft in any direction. This system can be used easily by humans."
+      STR_UFO_POWER_SOURCE_UFOPEDIA: "The power source of alien craft is an anti-matter reactor which uses Elerium (element 115), to generate powerful gravity waves as well as other forms of energy.  The conversion of matter to energy is an incredible 99% efficient, therefore tiny quantities of Elerium can produce a huge amount of power."
+      STR_UFO_NAVIGATION_UFOPEDIA: "Alien craft use sophisticated computers to navigate on earth and through space. The system is based on optical processors arranged in network fashion. The control interface is relatively simple - the navigator controls the direction of gravity waves generated by the power source to move the craft in any direction. This system can easily be utilized by humans."
 
   - type: ru
     strings:
@@ -8367,7 +8367,7 @@ extraStrings:
   - type: en-US
     strings:
       STR_ALIEN_BIOLOGY: "Alien Biology"
-      STR_ALIEN_BIOLOGY_UFOPEDIA: "The Alien DNA is totally different from mankind, but some of the pieces have been added artificially and have a terrestrial origin. This was done for adaptation with the Earth's environment. However, a prolonged stay on the Earth is not possible. Their immune system is not ready to fight against our diseases, they are very picky about food and their nervous system requires constant relax. We have to build a special containment facility for keeping aliens alive for examination and interrogation."
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "The Alien DNA is totally different from mankind, but some of the pieces have been added artificially and have a terrestrial origin. This was done for adaptation with the Earth's environment. However, a prolonged stay on the Earth is not possible. Their immune system is not adapted to fight against our diseases, they are very picky about food and, their nervous system is poor at dealing with constant external and sensory stimuli. We have to build a special containment facility for keeping aliens alive for examination and interrogation."
   - type: ru
     strings:
       STR_ALIEN_BIOLOGY: "Биология пришельцев"
