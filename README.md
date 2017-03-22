@@ -1,12 +1,12 @@
 X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Today I am happy, because [a group of people](https://github.com/SupSuper/OpenXcom/graphs/contributors) is reproducing the original plot and the original graphics of this game with great possibilities for mod makers. The name of this project is [OpenXcom](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes for this game plot and graphics.
 
-##Awesome Guns
+## Awesome Guns
 
 This is an awesome modification of the [OpenXcom game](http://openxcom.org).  
 Current state: released  
 WEB: [https://canadianbeaver.github.io/AwesomeGuns](https://canadianbeaver.github.io/AwesomeGuns)  
 
-###Why am I doing it?
+### Why am I doing it?
 
 Original gameplay of X-COM: UFO Defense has a big problem in the middle and in the end of game. The game can make you feel bored. There are a steam of small UFOs, the monotonous and repetitive missions, the heavy plasma has no alternative...  My suggestion to improve this situation is to make more efficient conventional weapons. Let the soldiers use different pistols, rifles, even grenade launchers and more different types of guns. Also, let the soldiers use different armours with different colours and possibilities. Moreover, let be more explosives in in the battles, more incendiary weapons and more smoke.
 
@@ -16,7 +16,7 @@ I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and i
 
 If you have the same preferences, I would like to invite you to create it together.
 
-###How do I make it?
+### How do I make it?
 
 * Primary, I am used to working with the [Debian and Mate](https://www.codeproject.com/articles/1086376/building-useful-homestation-from-ugly-debian). I hope this mod will work fine on other platforms without problems.
 * Secondary, I used to work with the [Geany](https://www.geany.org/). Unfortunately, this text editor is not good for yaml structures. Now, I'm used to working with [Sublime Text](https://www.sublimetext.com/) without purchasing a license. This text editor is OK, but it disturbs me a hundred times per day due to the purchase of a license.
@@ -25,7 +25,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 * The [LibreOffice](http://www.libreoffice.org/) and [Dia](https://wiki.gnome.org/Apps/Dia/) for creating text and diagrams.
 * And at final, of course I use [Git](https://git-scm.com/) and GitHub. This is my first experience with Git and my first project on GitHub.
 
-###How to install it?
+### How to install it?
 
 * Download the [OpenXcom game](http://openxcom.org/downloads-milestones/) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games).
 * Download the [Data Patch](http://openxcom.org/downloads-extras/) and install it.
@@ -36,6 +36,6 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 If you prefer playing the Awesome Guns modification on OpenXcom Nightly, then [this patch](http://www.openxcom.com/mod/awesome-guns-nightly-patch) can solve the compatibility problems.
 
-###Contacts
+### Contacts
 
 I would appreciate hearing your opinion on this. Please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
