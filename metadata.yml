@@ -4,4 +4,4 @@ description: "an awesome modification of the OpenXcom game"
 author: Radu Martin (CanadianBeaver)
 id: "AwesomeGuns"
 master: "xcom1"
-reservedSpace: 3
+reservedSpace: 10
