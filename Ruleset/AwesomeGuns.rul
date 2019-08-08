@@ -7704,6 +7704,21 @@ extraStrings:
       LaPaz: "La Paz"
       Sanaa: "Sana'a"
 
+  - type: cs-CZ
+    strings:
+      Quebec: "Quebec City"
+      SantoDomingo: "Santo Domingo"
+      LasVegas: "Las Vegas"
+      NewOrleans: "New Orleans"
+      Reykjavik: "Reykjavík"
+      Panama: "Panama City"
+      Belem: "Belém"
+      Asuncion: "Asunción"
+      Sanfrancisco: "San Francisco"
+      ElPaso: "El Paso"
+      LaPaz: "La Paz"
+      Sanaa: "Sana'a"
+
   - type: ru
     strings:
       Toronto: "Торонто"
@@ -7857,6 +7872,13 @@ extraStrings:
       STR_3_VETERAN: "Hurt me plenty"
       STR_4_GENIUS: "Ultra-Violence"
       STR_5_SUPERHUMAN: "Nightmare!"
+  - type: cs-CZ
+    strings:
+      STR_1_BEGINNER: "Moc mladý na smrt"
+      STR_2_EXPERIENCED: "Hej, ne tak tvrdě"
+      STR_3_VETERAN: "Prašti mě pořádně"
+      STR_4_GENIUS: "Ultra-Násilí"
+      STR_5_SUPERHUMAN: "Noční můra!"
   - type: ru
     strings:
       STR_1_BEGINNER: "Я слишком молод, чтобы умереть"
@@ -7871,6 +7893,10 @@ extraStrings:
     strings:
       STR_QUICK_DRAW: "QUICK"
       STR_BREAST: "BREAST" #"VEST"
+  - type: cs-CZ
+    strings:
+      STR_QUICK_DRAW: "PŘÍRUČNÍ"
+      STR_BREAST: "HRUĎ"
   - type: ru
     strings:
       STR_QUICK_DRAW: "КОБУРА"
@@ -7882,6 +7908,11 @@ extraStrings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "A small detection system has an effective radar range of 1500 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 10 minutes."
       STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "A large detection system has an effective range of 2250 nautical miles and is linked to satellite systems for ground search. Each system has a 5% chance of detecting an average sized object every 10 minutes."
       STR_HYPER_WAVE_DECODER_UFOPEDIA: "Alien communications rely on a supra-dimensional wave which travels almost instantaneously. The decoder facility intercepts UFO transmissions and decodes the information an effective range of 1900 nautical miles. This system has a 85% chance of detecting and will show the type of UFO, the alien race and the type of activity."
+  - type: cs-CZ
+    strings:
+      STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Malý radarový systém s efektivním dosahem 1500 námořních mil. Aktivní připojení k satelitní síti pro pozemní pátrání. Každý systémem má šanci 20% na detekci objektu průměrné velikosti každých 10 minut."
+      STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "Velký radarový systém s efektivním dosahem 2250 námořních mil. Aktivní připojení k satelitní síti pro pozemní pátrání. Každý systémem má šanci 5% na detekci objektu průměrné velikosti každých 10 minut."
+      STR_HYPER_WAVE_DECODER_UFOPEDIA: "Cizácká komunikace funguje na principu multidimenzionálních vln jenž cestují téměř instantně. Dekódovací stanice zachytává cizácké správy a dešifruje je v efektivním dosahu 1900 námořních mil. Systém má 85% šanci na zachycení zprávy a zobrazení typu plavidla, cizáckou rasu posádky a typ mise."
   - type: ru
     strings:
       STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "Радарная система ближнего обнаружения имеет эффективный радиус действия в 1500 морских миль и связана со спутниковыми системами для поиска наземных объектов. Система обнаруживает цель среднего размера с вероятностью 20% в течении 10 минут. Возможна совместная работа нескольких радарных блоков, что увеличивает вероятность обнаружения."
@@ -7894,6 +7925,11 @@ extraStrings:
       STR_IMPROVED_INTERCEPTOR: "Improved interceptor"
       STR_RAVEN: "RAVEN"
       STR_RAVEN_UFOPEDIA: "THIS IS A PULSE-ENGINE HEAVILY MODIFIED FAST ATTACK FIGHTER. THE UPGRADE COMBINES ALIEN ALLOYS WITH THE LATEST EARTH TECHNOLOGY."
+  - type: cs-CZ
+    strings:
+      STR_IMPROVED_INTERCEPTOR: "Vylepšený stíhač"
+      STR_RAVEN: "HAVRAN"
+      STR_RAVEN_UFOPEDIA: "TĚŽCE MODIFIKOVANÝ RYCHLÍ ÚTOČNÝ LETOUN S PROPULSNÍM MOTOREM. VYLEPŠENÍ KOMBINUJE CIZÁCKÉ SLITINY S NEJMODERNĚJŠÍ POZEMSKOU TECHNOLOGIÍ."
   - type: ru
     strings:
       STR_IMPROVED_INTERCEPTOR: "Усовершенствованный перехватчик"
@@ -7945,6 +7981,51 @@ extraStrings:
       STR_FUSION_BALL_LAUNCHER: "Storm Launcher"
       STR_FUSION_BALL: "Storm Missile"
       STR_FUSION_BALL_UFOPEDIA: "THIS IS A MODERNIZATION OF THE \"AVALANCHE\" WITH BUILT-IN UFO NAVIGATION AND ALIEN BLASTER BOMB."
+
+  - type: cs-CZ
+    strings:
+
+      STR_IMPROVED_ROCKETS: "Vylepšený odpalovač raket"
+      STR_IMPROVED_ROCKETS_TITLE: "Vylepšený odpalovač raket"
+      STR_IMPROVED_ROCKETS_UFOPEDIA: "S použitím cizáckých slitin a navigace UFO jsme byly schopni vylepšit navádění našich standartách raket a vylepšit palubní odpalovače.{NEWLINE}{NEWLINE}Plány obsahují palubní a pozemní odpalovače naváděních střel. Obzvláště zajímavé jsou nové,  přenosné, průbojné rakety schopné prostřelit trup UFO během pozemních misí, to otevírá nové způsoby vstupu do UFO našimi vojáky."
+
+      STR_STINGRAY: "ŽIHADLO"
+      STR_STINGRAY_LAUNCHER: "Odpalovač střel Žihadlo"
+      STR_STINGRAY_MISSILES: "Střely Žihadlo"
+      STR_STINGRAY_UFOPEDIA: "POKROČILÉ VZDUCH-VZDUCH STŘELY SE SPECIÁLNĚ ODSTÍNĚNOU ELEKTRONIKOU."
+      STR_ALLOY_STINGRAY: "VYLEPŠENÉ STŘELY ŽIHADLO"
+      STR_ALLOY_STINGRAY_LAUNCHER: "Vylepšený odpalovač a střely Žihadlo"
+      STR_ALLOY_STINGRAY_UFOPEDIA: "VYLEPŠENÍ ODPALOVAČE A NAVÁDĚCÍCH SYSTÉMŮ PRO STŘELY ŽIHADLO"
+
+      STR_AVALANCHE: "LAVINA"
+      STR_AVALANCHE_LAUNCHER: "Odpalovač střel Lavina"
+      STR_AVALANCHE_MISSILES: "Střely Lavina"
+      STR_AVALANCHE_UFOPEDIA: "VZDUCH-VZDUCH STŘELY S NUKLEÁRNÍ HLAVICÍ, EXTRÉMNĚ NIČIVÁ NÁLOŽ"
+      STR_ALLOY_AVALANCHE: "VYLEPŠENÉ STŘELY LAVINA"
+      STR_ALLOY_AVALANCHE_LAUNCHER: "Vylepšený odpalovač a střely Lavina"
+      STR_ALLOY_AVALANCHE_UFOPEDIA: "VYLEPŠENÍ ODPALOVAČE A NAVÁDĚCÍCH SYSTÉMŮ PRO STŘELY LAVINA."
+
+      STR_CANNON_UC: "KANÓN"
+      STR_CANNON: "Kanón"
+      STR_CANNON_ROUNDS_X50: "Kanónová munice (x50)"
+      STR_CANNON_UFOPEDIA: "VYSOCE VÝKONÝ KANÓN JENŽ STŘÍLÍ PRŮBOJNÉ KULKY SCHOPNÉ PRORAZIT 40 CENTIMETRŮ OCELI."
+      STR_ALLOY_CANNON_UC: "VYLEPŠENÝ KANÓN"
+      STR_ALLOY_CANNON: "Vylepšený Kanón"
+      STR_ALLOY_CANNON_UFOPEDIA: "VYLEPŠENÝ PALUBNÍ KANÓN.{NEWLINE}{NEWLINE}ZPŮSOB STŘELBY BYL VYLEPŠEN S OHLEDEM NA ÚHYBNÉ MANÉVRY UFO."
+
+      STR_LASER_CANNON_UFOPEDIA: "TENTO LASEROVÝ KANÓN BYL VYTVOŘEN PRO LETECKÉ SOUBOJE S UFO."
+      STR_PLASMA_BEAM_UFOPEDIA: "NAŠI INŽENÝŘI NAŠLY ZPŮSOB JAK ZHOTOVIT TENTO PLASMOVÝ KANÓN ZE SOUČÁSTEK TĚŽKÝCH CIZÁCKÝCH ZBRANÍ."
+
+      STR_ELECTROMAGNETIC_CANNON_UC: "ELEKTROMAGNETICKÝ KANÓN"
+      STR_ELECTROMAGNETIC_CANNON: "Elektromagnetický Kanón"
+      STR_ELECTROMAGNETIC_SLUGS_X40: "Elektromagnetické kanónové broky (x40)"
+      STR_ELECTROMAGNETIC_CANNON_UFOPEDIA: "VYSOCE VÝKONÝ ELEKTROMAGNETICKÝ KANÓN.{NEWLINE}{NEWLINE}ZPŮSOB STŘELBY BYL VYLEPŠEN S OHLEDEM NA ÚHYBNÉ MANÉVRY UFO."
+
+      STR_FUSION_MISSILE: "vylepšování střel LAVINA"
+      STR_FUSION_BALL_UC: "HROM"
+      STR_FUSION_BALL_LAUNCHER: "Odpalovač střel Hrom"
+      STR_FUSION_BALL: "Střely Hrom"
+      STR_FUSION_BALL_UFOPEDIA: "MODERNIZACE STŘEL \"LAVINA\" S VESTAVĚNOU NAVIGACÍ UFO A CIZÁCKOU TĚŽKOU BOMBOU."
 
   - type: ru
     strings:
@@ -8020,6 +8101,33 @@ extraStrings:
       STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Flying Armor from Light Armor"
       # UFOpedia
       STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Using the newly discovered Alien Alloys and incorporating alien anti-gravity navigation technology to allow full freedom of movement across the battlefield."
+  - type: cs-CZ
+    strings:
+      # Standard armors
+      STR_NONE_UC_TITLE: "STANDARDNÍ ODĚV"
+      STR_ARMORED_VEST_UC: "TĚŽKÁ VESTA"
+      STR_ARMORED_VEST: "Těžká vesta"
+      STR_LIGHT_VEST_UC: "LEHKÁ VESTA"
+      STR_LIGHT_VEST: "Lehká vesta"
+      # Personal armors
+      STR_HEAVY_PERSONAL_ARMOR_UC: "TĚŽKÁ ZBROJ"
+      STR_HEAVY_PERSONAL_ARMOR: "Těžká zbroj"
+      STR_PERSONAL_ARMOR_UC: "OSOBNÍ ZBROJ"
+      STR_PERSONAL_ARMOR: "Osobní zbroj"
+      STR_LIGHT_PERSONAL_ARMOR_UC: "LEHKÁ ZBROJ"
+      STR_LIGHT_PERSONAL_ARMOR: "Lehká zbroj"
+      # Power and Flying Suits
+      STR_POWER_SUIT_UC: "ENERGETICKÝ SKAFANDR"
+      STR_POWER_SUIT: "Energetický skafadr"
+      STR_FLYING_SUIT_UC: "LÉTAJÍCÍ SKAFANDR"
+      STR_FLYING_SUIT: "Létající skafandr"
+      STR_LIGHT_FLYING_SUIT_UC: "LÉTAJÍCÍ ZBROJ"
+      STR_LIGHT_FLYING_SUIT: "Létající zbroj"
+      # Manufacture
+      STR_FLYING_SUIT_FROM_POWER_SUIT: "Létající skafandr z Energetického skafandru"
+      STR_LIGHT_FLYING_SUIT_FROM_LIGHT_PERSONAL_ARMOR: "Létající zbroj z Lehké zbroje"
+      # UFOpedia
+      STR_LIGHT_FLYING_SUIT_UFOPEDIA: "Za použití nově vyzkoumaných cizáckých slitin a cizácké antigravitační technologie a navigace jsme schopni vytvořit zbroj umožnující naprostou svobodu pohybu po bojišti."
   - type: ru
     strings:
       # Стандартная экипировка
@@ -8128,6 +8236,84 @@ extraStrings:
       STR_STUN_GRENADE: "Stun Grenade"
       STR_STUN_GRENADE_UFOPEDIA: "An alien stun bomb attached to a grenade casing. Although some effectiveness is lost during the conversion process, this fusion of human and alien technology trades power for convenience."
 
+  - type: cs-CZ
+    strings:
+
+      STR_ALLOY_CLIPS: "Vylepšená munice"
+      STR_ALLOY_CLIPS_UFOPEDIA: "Nová technologie produkce munice z cizáckých slitin může výrazně zvýšit palebnou sílu konvenčních zbraní.{NEWLINE}{NEWLINE}Několik zásobníků může být vytvořeno z jednoho ingotu cizácké slitiny, v závislosti na typu zbraně. Inženýři také mohou vytvořit zásobníky pro několik typů zbraní po sobě. Následující sekce obsahuje více informací o produkci munice."
+
+      STR_ACID_CLIPS: "Jedová munice"
+      STR_ACID_CLIPS_UFOPEDIA: "Kyselina získaná z mrtvoly krysklada může být použita k produkci specifického druhu kyseliny. Kapsle ve tvaru kulky obsahuje kyselinu jenž je vstříknuta to těla při přímém kontaktu. Produkce takovéto munice pro útočné pušky a odstřelovací pušky Záblesk je nyní dostupná.{NEWLINE}{NEWLINE}Zdá se že většina cizáků je vůči kyselině imunní. Nicméně, robotické komponenty jsou na tuto munici vysoce náchilné."
+
+      STR_AL_CLIPS: "Průrazná munice"
+      STR_AL_AMMO: "Průrazné broky"
+
+      STR_ALLOY_CLIPS_MANUFACTURE: "Produkce munice"
+      STR_ALLOY_CLIPS_MANUFACTURE_UFOPEDIA: "Průrazné kulky> 3 ingoty cizácké slitiny jsou potřeba pro vytvoření jednoho zásobníku pro pistole, automatické pistole, pušky a odstřelovací pušky.{NEWLINE}{NEWLINE}Průrazné broky> 2 ingoty cizácké slitiny jsou potřeba k vytvoření jednoho zásobníku pro brokovnice, těžké kanóny a gatling.{NEWLINE}{NEWLINE}Je výhodné vytvořit několik typů munice. Produkce munice pro nekompatibilní zbraně vyústí ve vadný výrobek. V tomto případě jen jedna munice nebo zásobník může být vytvořena z cizáckých slitin."
+
+      STR_ELERIUM_CLIPS: "Eleriová munice"
+      STR_ELERIUM_CLIPS_UFOPEDIA: "Komplexní vědecky náročné a technologicky pokročilé procesy umožňují využití energie Eleria-115. Silná rázová vlna může být vytvořena při detonaci takové energie... "
+
+      STR_KNIFE: "Bojový nůž"
+      STR_KNIFE_UFOPEDIA: "Bojový nůž je nůž vytvořen čistě pro vojenské účely myšlen primárně pro boj zblíska."
+
+      STR_PISTOL_AL_CLIP: "Pistolový průrazný zásobník"
+      STR_PISTOL_UFOPEDIA: "Polo-automatická pistole se standardní ráži 9x19mm Parabellum. Zásobník má kapacitu 9 kulek. Zbraň je lehká, levná a integrovaná součást výbavy vojáků."
+
+      STR_MACHINE_PISTOL: "Automatická pistole"
+      STR_MACHINE_PISTOL_CLIP: "Zásobník a.pistole"
+      STR_MACHINE_PISTOL_AL_CLIP: "Průrazný zásobník a.pistole"
+      STR_MACHINE_PISTOL_UFOPEDIA: "Automatická pistole byla navržena ke střelbě jednou rukou. Je méně přesná než standardní pistole ale poskytuje automatickou palbu kulkami 9x19 s vysokou kadencí za použití zásobníků o kapacitě 15 kulek"
+
+      STR_RIFLE_AL_CLIP: "Průrazný puškový zásobník"
+      STR_RIFLE_UFOPEDIA: "Vysoce přesná puška s laserovým zaměřováním. Používá 5,56x45mm kulky v zásobníku o kapacitě 12 kulek. Puška je vhodná pro boj na blízkou nebo střední vzdálenost."
+
+      STR_ALLOY_RIFLE: "Útočná puška"
+      STR_ALLOY_RIFLE_UFOPEDIA: "Útočná puška vytvořena z cizáckých slitin. Tato zbraň exceluje jak v přesnosti tak v kadenci. Střelba dávkou má kadenci dvou kulek."
+      STR_ALLOY_RIFLE_CLIP: "Průrazný zásobník útočné pušky"
+      STR_ACID_RIFLE_CLIP: "Kyselinový zásobník útočné pušky"
+      STR_ELERIUM_RIFLE_CLIP: "Eleriový zásobník útočné pušky"
+
+      STR_SNIPER_RIFLE: "Odstřelovací puška"
+      STR_SNIPER_RIFLE_CLIP: "Zásobník odstřelovací pušky"
+      STR_SNIPER_RIFLE_AL_CLIP: "Průrazný zásobník odstřelovací pušky"
+      STR_SNIPER_RIFLE_UFOPEDIA: "Modifikace útočné pušky zahrnující použití kulek 7,62x51. Zvýšená přesnost a zastavující síla dělá tuto zbraň nepostradatelnou pro boje na střední a velkou vzdálenost. Standardní zásobníky obsahují 3 proti-pancéřové kulky."
+
+      STR_ALLOY_SNIPER_RIFLE: "Záblesk"
+      STR_ALLOY_SNIPER_RIFLE_RESEARCH: "Těžká odstřelovací puška"
+      STR_ALLOY_SNIPER_RIFLE_UFOPEDIA: "Těžká odstřelovací puška. Tato zbraň má obrovskou zastavující sílu a extrémní přesnost na obrovskou vzdálenost. Naneštěstí je extrémně těžkopádná a používá zásobníky jen o dvou kulkách."
+      STR_ALLOY_SNIPER_RIFLE_CLIP: "Průrazný zásobník pro Záblesk"
+      STR_ACID_SNIPER_RIFLE_CLIP: "Kyselinový zásobník pro Záblesk"
+      STR_ELERIUM_SNIPER_RIFLE_CLIP: "Eleriový zásobník pro Záblesk"
+
+      STR_SHOTGUN: "Brokovnice"
+      STR_SHOTGUN_AMMO: "Broky"
+      STR_SHOTGUN_CLIP: "Zásobník brokovnice"
+      STR_SHOTGUN_UFOPEDIA: "Polo-automatická brokovnice jenž vystřelí pět broků za výstřel. Ideální na krátkou vzdálenost nebo boje v interiéru. Standardní zásobník obsahuje 6 broků."
+
+      STR_HEAVY_CANNON_UFOPEDIA: "Těžký kanón je ničivá ale těžkopádná zbraň."
+      STR_AUTO_CANNON_UFOPEDIA: "Gatling kombinuje všestrannost a sílu těžkého kanónu s vysokou kadencí."
+
+      STR_GRENADE_LAUNCHER: "Granátomet"
+      STR_GL_HE_AMMO: "40mm Granát - Demoliční výbušnina"
+      STR_GL_I_AMMO: "40mm Zápalný granát"
+      STR_GL_S_AMMO: "40mm Kouřový granát"
+      STR_GRENADE_LAUNCHER_UFOPEDIA: "Granátomet je schopen vrhat vysoce výbušné, zápalné nebo kouřové granáty na velkou vzdálenost."
+
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "Raketomet využívá laserový naváděcí systémem. Je schopen střílet rakety různých velikostí."
+      STR_FUSION_ROCKET: "Proti-tanková raketa Blaster"
+      STR_SMALL_ROCKET: "Raketa Blaster"
+      STR_SMALL_ROCKET_UFOPEDIA: "Raketa Blaster pro raketomet. Tato raketa je vytvořena z cizácké munice."
+
+      STR_SINGLE_ROCKET_LAUNCHER: "Jednorázový raketomet"
+      STR_SINGLE_ROCKET_LAUNCHER_UFOPEDIA: "Jeden raketomet vystřelí jednu proti-pancéřovou raketu schopnou prorazit zdi UFO. Nelze použít dvakrát."
+
+      STR_INCENDIARY_GRENADE: "Zápalný granát"
+      STR_INCENDIARY_GRENADE_UFOPEDIA: "Zápalné granáty jsou vrhací zařízení jenž způsobují hoření o extrémně vysokých teplotách skrz agresivní chemickou reakci. Držte se dál od místa dopadu."
+
+      STR_STUN_GRENADE: "Omračující granát"
+      STR_STUN_GRENADE_UFOPEDIA: "Cizácká omračující bomba připevněná k spoušti pozemského granátu. Ačkoli nějaké síla je v procesu výroby ztracena, tato kombinace cizácké a pozemské technologie vyměňuje sílu za použitelnost."
+
   - type: ru
     strings:
 
@@ -8212,6 +8398,10 @@ extraStrings:
     strings:
       STR_MEDI_CHEST: "First Aid Kit"
       STR_MEDI_CHEST_UFOPEDIA: "A first aid kit is a collection of supplies and equipment for use in giving first aid on the battlefield."
+  - type: cs-CZ
+    strings:
+      STR_MEDI_CHEST: "Krabička první pomoci"
+      STR_MEDI_CHEST_UFOPEDIA: "Krabička první pomoci v sobě obsahuje nejrůznější zásoby a vybavení potřebné k poskytnutí první pomoci na bojišti."
   - type: ru
     strings:
       STR_MEDI_CHEST: "Медицинская аптечка"
@@ -8240,6 +8430,28 @@ extraStrings:
 
       STR_LASER_FLARE: "Laser-flare"
       STR_LASER_FLARE_UFOPEDIA: "This is an implementation of the laser technologies into two electro-flares. This device lights a large area and provides a higher level of security."
+
+  - type: cs-CZ
+    strings:
+
+      STR_LASER_PISTOL_UFOPEDIA: "Laserová technologie zcela minimalizovaná. Laserová pistole má nižší přesnost a dosah než standardní pistole ale má vysoké poškození a stylový design který je lehký a pohodlný k držení."
+      STR_LASER_RIFLE_UFOPEDIA: "Adaptace laserové technologie pro použití v boji. Tato zbraň má ohromné poškození v porovnání se standardní puškou ale kvůli teplu vygenerovanému laserovou technologií nemůže střílet s vysokou kadencí."
+      STR_HEAVY_LASER_UFOPEDIA: "Tato monstróznost je v podstatě laserová brokovnice: vystřelí tři laserové paprsky najednou. Naneštěstí se nabijí a střílí velice pomalu kvůli extrémnímu teplu vygenerovanému výstřelem. Nicméně má ohromnou sílu a nekonečnou zásobu munice."
+
+      STR_SNIPER_LASER: "Εκαεργος"
+      STR_SNIPER_LASER_RESEARCH: "Laserová odstřelovací puška"
+      STR_SNIPER_LASER_UFOPEDIA: "Laserová odstřelovací puška. Tato zbraň kombinuje neuvěřitelnou sílu s excelentní přesností na střední a dlouhou vzdálenost. Navíc má neomezenou munici."
+
+      STR_LASER_WEAPONS_UFOPEDIA: "Díky experimentům na eleriu-115 jsme zjistily že můžeme přenášet energii na velkou vzdálenost ve formě paprsku světla. Cizácké slitiny a krystaly eleria-115 mohou vylepšit pozemské lasery pro použití v boji. Nové laserové zbraně budou mít více munice a nebudou méně efektivní v porovnání s konvenčními zbraněmi.{NEWLINE}{NEWLINE}Pokud prozkoumáme navigaci UFO bude možné vytvořit laserový palubní kanón a začít používat laserové zbraně v boji."
+
+      STR_TANK_LASER_CANNON_FROM_TANK_CANNON: "Laserový tank z Tanku s dělem"
+      STR_TANK_LASER_CANNON_FROM_TANK_ROCKET: "Laserový tank z Tanku s raketami"
+
+      STR_LASER_SWORD: "Laserový meč"
+      STR_LASER_SWORD_UFOPEDIA: "Před dávnými časy v daleké, daleké galaxii...{NEWLINE}{NEWLINE}Vojáci naléhaly abychom vytvořily tuhle věc. Ne, nehučí to, ani nebzučí. Kvůli podstatě laserové čepele síla nositele nemá vliv na poškození. Poškození je beztak vysoké samo o sobě."
+
+      STR_LASER_FLARE: "Laserová světlice"
+      STR_LASER_FLARE_UFOPEDIA: "Toto je implementace laserové technologie ve formě dvou elektrických světlic. Zařízení osvětlí velkou oblast a zajistí vysokou bezpečnost."
 
   - type: ru
     strings:
@@ -8283,6 +8495,12 @@ extraStrings:
       STR_RAILGUN: "Railgun"
       STR_RAILGUN_SLUGS: "Railgun Slug"
       STR_RAILGUN_UFOPEDIA: "A mobile electromagnetic accelerator, well almost. It is capable of firing at enormous distances with little or no loss of accuracy. A high velocity slug capable of stopping even the bravest of the Mutons. However, the Railgun is quite cumbersome, only capable of firing a single-shot. Creating an automatic cannon design utilizing a multi-round belt proved difficult."
+  - type: cs-CZ
+    strings:
+      STR_ELECTROMAGNETIC_WEAPONS: "Elektromagnetické zbraně"
+      STR_RAILGUN: "Kolejová puška"
+      STR_RAILGUN_SLUGS: "Kolejová patrona"
+      STR_RAILGUN_UFOPEDIA: "Mobilní elektromagnetický urychlovač, inu, skoro. Tato zbraň je schopná střílet na enormní vzdálenost s minimální ztrátou přesnosti. Vysokorychlostní patrona má dostatečnou sílu k zastavení nejsilnějších Mutonů. Nicméně kolejová puška je docela těžkopádná, schopna jediného výstřelu. K tvorbě automatického spouštěcího mechanizmu by bylo zapotřebí použít pás elektromagnetických patron jenž se prokázalo být velice obtížné."
   - type: ru
     strings:
       STR_ELECTROMAGNETIC_WEAPONS: "Электромагнитное оружие"
@@ -8327,6 +8545,34 @@ extraStrings:
       STR_UFO_POWER_SOURCE_UFOPEDIA: "The power source of alien craft is an anti-matter reactor which uses Elerium (element 115), to generate powerful gravity waves as well as other forms of energy.  The conversion of matter to energy is an incredible 99% efficient, therefore tiny quantities of Elerium can produce a huge amount of power."
       STR_UFO_NAVIGATION_UFOPEDIA: "Alien craft use sophisticated computers to navigate on earth and through space. The system is based on optical processors arranged in network fashion. The control interface is relatively simple - the navigator controls the direction of gravity waves generated by the power source to move the craft in any direction. This system can easily be utilized by humans."
 
+  - type: cs-CZ
+    strings:
+      STR_ALIEN_WEAPON: "Cizácké technologie a zbraně"
+      STR_ALIEN_WEAPON_UFOPEDIA: "Cizáci používají jiné druhy zbraní, ale princip je v využití eleria-115. Cizáci využívají tyto principy velice odlišně od pozemské technologie přičemž udržují zbraň pod plnou kontrolou skrze psionické schopnosti. Znalosti o této podstatě teprve musíme prozkoumat. Nicméně, některé z cizáckých zbraní jsou snadno použitelné našimi vojáky a nevyžadují psionické schopnosti, například cizácké granáty mohou být snadno použity našimi vojáky.{NEWLINE}{NEWLINE}Potřebujeme odchytit a vyslechnout více inteligentních cizáků. Možná takto najdeme způsob jak adaptovat a použít cizáckou technologii."      
+      STR_ALIEN_WEAPON_USING: "Použití cizáckých zbraní"
+      STR_ALIEN_WEAPON_USING_UFOPEDIA: "Naši vojáci mohou použít nějaké cizácké zbraně bez větších obtíží. Například, munice konvertovaná z plazmových cizáckých zbraní nyní může být použita v boji. Jiné typy zbraní nemohou být adoptovány k lidské podstatě a bojovým technikám.{NEWLINE}{NEWLINE}Nicméně, způsob jak použít cizácké zbraně může být objeven později. Bylo by moudré nějaké z cizácích zbraní uschovat."
+
+      STR_CONVERTED_PLASMA_PISTOL: "Konvertovaná pistole"
+      STR_CONVERTED_PLASMA_PISTOL_UFOPEDIA: "Konvertovaná pistole z cizácké plazmové pistole. Nezáleží na velikosti ale na tom jak ji použijete."
+      STR_CONVERTED_PLASMA_PISTOL_CLIP: "Zásobník konvertované pistole"
+
+      STR_CONVERTED_PLASMA_RIFLE: "Konvertovaná puška"
+      STR_CONVERTED_PLASMA_RIFLE_UFOPEDIA: "Konvertovaná puška z cizácké plazmové pušky. Stejně jako plasmová pistole jen větžší… také známá jako Ron Jeremy."
+      STR_CONVERTED_PLASMA_RIFLE_CLIP: "Zásobník konvertované pušky"
+
+      STR_CONVERTED_PLASMA_CANNON: "Konvertovaný kanón"
+      STR_CONVERTED_PLASMA_CANNON_UFOPEDIA: "Konvertovaný kanón z cizácké těžké pušky. Naši inženýři vlastně nemají tušení co to je..."
+      STR_CONVERTED_PLASMA_CANNON_CLIP: "Zásobník konvertovaného kanónu"
+
+      STR_CONVERTED_GRENADE_LAUNCHER: "Konvertovaný granátomet"
+      STR_CONVERTED_GRENADE_LAUNCHER_UFOPEDIA: "Konvertovaný granátomet z cizáckého malého odpalovače. Může to být BFG… nebo ne..."
+      STR_CGL_PLASMA_AMMO: "Plasmová bomba"
+      STR_CGL_STUN_BOMBS: "Ochromující bomba"
+      STR_CGL_ELERIUM_BOMBS: "Eleriová bomba"
+
+      STR_PLASMA_SWORD: "Plazmový meč"
+      STR_PLASMA_SWORD_UFOPEDIA: "Tahle smrtelná implementace meče kombinuje velkou čepel, emitor plasmy a elektromagnet. Při aktivaci plasma začne obtékat elektromagnetické pole přičemž je zahřáta na teplotu při které její dotek roztaví titan na tekutinu jenž teče jako voda."
+
   - type: ru
     strings:
       STR_ALIEN_WEAPON: "Оружие и технологии пришельцев"
@@ -8368,6 +8614,10 @@ extraStrings:
     strings:
       STR_ALIEN_BIOLOGY: "Alien Biology"
       STR_ALIEN_BIOLOGY_UFOPEDIA: "The Alien DNA is totally different from mankind, but some of the pieces have been added artificially and have a terrestrial origin. This was done for adaptation with the Earth's environment. However, a prolonged stay on the Earth is not possible. Their immune system is not adapted to fight against our diseases, they are very picky about food and, their nervous system is poor at dealing with constant external and sensory stimuli. We have to build a special containment facility for keeping aliens alive for examination and interrogation."
+  - type: cs-CZ
+    strings:
+      STR_ALIEN_BIOLOGY: "Cizácká biologie"
+      STR_ALIEN_BIOLOGY_UFOPEDIA: "Cizácká DNA je velice odlišní od lidské, ale některé části byly přidány uměle a mají pozemský původ. Udělaly to tak kvůli adaptaci na prostředí planety Země. Nicméně, prodloužený pobit na Zemi není možný. Jejich imunitní systém není schopen odolávat našim nemocem. Jsou velice vybíraví co se týče jídla, jejich nervový systém není schopen neustále řešit vnější podněty jenž jsou na Zemi běžné. Musíme postavit cely schopné udržet cizáky při životě pro průzkumy a výslechy."
   - type: ru
     strings:
       STR_ALIEN_BIOLOGY: "Биология пришельцев"
