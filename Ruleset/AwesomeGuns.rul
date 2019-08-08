@@ -1746,8 +1746,8 @@ items:
     handSprite: 0
     bulletSprite: 31
     bulletSpeed: 4
-    firesound: 155 #fireSound: 11
-    hitsound: 150 #hitSound: 19
+    fireSound: 155 #fireSound: 11
+    hitSound: 150 #hitSound: 19
     hitAnimation: 36
     power: 125 #power: 110
     damageType: 4
@@ -1772,8 +1772,8 @@ items:
     handSprite: 0
     bulletSprite: 30
     bulletSpeed: 4
-    firesound: 163 #fireSound: 18
-    hitsound: 164 #hitSound: 19
+    fireSound: 163 #fireSound: 18
+    hitSound: 164 #hitSound: 19
     hitAnimation: 146 #hitAnimation: 46
     power: 115 # 110
     damageType: 5
@@ -1803,15 +1803,15 @@ items:
     meleeAnimation: 24
 
   - type: CYBERDISC_WEAPON
-    firesound: 163 #fireSound: 18
-    hitsound: 164 #hitSound: 19
+    fireSound: 163 #fireSound: 18
+    hitSound: 164 #hitSound: 19
     hitAnimation: 116 #hitAnimation: 46
     bulletSprite: 32
     bulletSpeed: 5
 
   - type: SECTOPOD_WEAPON
-    firesound: 163 #fireSound: 18
-    hitsound: 164 #hitSound: 19
+    fireSound: 163 #fireSound: 18
+    hitSound: 164 #hitSound: 19
     hitAnimation: 116 #hitAnimation: 46
     bulletSprite: 32
     bulletSpeed: 5
@@ -1836,8 +1836,8 @@ items:
     bigSprite: 60
     floorSprite: 75
     handSprite: 176
-    meleesound: 100
-    meleeHitsound: 101
+    meleeSound: 100
+    meleeHitSound: 101
     meleeAnimation: 44
     power: 60
     strengthApplied: true
@@ -1861,7 +1861,7 @@ items:
     floorSprite: 3
     handSprite: 96
     bulletSprite: 0
-    firesound: 102 #fireSound: 4
+    fireSound: 102 #fireSound: 4
     compatibleAmmo:
       - STR_PISTOL_CLIP
       - STR_PISTOL_AL_CLIP
@@ -1891,7 +1891,7 @@ items:
     floorSprite: 4
     handSprite: 408
     bulletSprite: 0
-    hitsound: 103 #hitSound: 22
+    hitSound: 103 #hitSound: 22
     bulletSpeed: 0
     hitAnimation: 26
     power: 26
@@ -1910,7 +1910,7 @@ items:
     handSprite: 416
     bulletSprite: 1
     bulletSpeed: 1
-    hitsound: 103 #hitSound: 22
+    hitSound: 103 #hitSound: 22
     hitAnimation: 56
     power: 40
     damageType: 1
@@ -1928,7 +1928,7 @@ items:
     floorSprite: 104
     handSprite: 424
     bulletSprite: 0
-    firesound: 105
+    fireSound: 105
     compatibleAmmo:
       - STR_MACHINE_PISTOL_CLIP
       - STR_MACHINE_PISTOL_AL_CLIP
@@ -1959,7 +1959,7 @@ items:
     handSprite: 432
     bulletSprite: 0
     bulletSpeed: 0
-    hitsound: 103
+    hitSound: 103
     hitAnimation: 26
     power: 26
     damageType: 1
@@ -1977,7 +1977,7 @@ items:
     handSprite: 440
     bulletSprite: 1
     bulletSpeed: 1
-    hitsound: 103
+    hitSound: 103
     hitAnimation: 56
     power: 40
     damageType: 1
@@ -1994,7 +1994,7 @@ items:
     floorSprite: 1
     handSprite: 0
     bulletSprite: 2
-    firesound: 109 #fireSound: 4
+    fireSound: 109 #fireSound: 4
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_AL_CLIP
@@ -2029,7 +2029,7 @@ items:
     handSprite: 456
     bulletSprite: 2
     bulletSpeed: 1
-    hitsound: 110 #hitSound: 22
+    hitSound: 110 #hitSound: 22
     hitAnimation: 26
     power: 32 #power: 30
     damageType: 1
@@ -2047,7 +2047,7 @@ items:
     handSprite: 464
     bulletSprite: 3
     bulletSpeed: 2
-    hitsound: 110 #hitSound: 22
+    hitSound: 110 #hitSound: 22
     hitAnimation: 56
     power: 48
     damageType: 1
@@ -2065,7 +2065,7 @@ items:
     floorSprite: 112
     handSprite: 472
     bulletSprite: 4
-    firesound: 115
+    fireSound: 115
     compatibleAmmo:
       - STR_SNIPER_RIFLE_CLIP
       - STR_SNIPER_RIFLE_AL_CLIP
@@ -2098,7 +2098,7 @@ items:
     handSprite: 480
     bulletSprite: 4
     bulletSpeed: 3
-    hitsound: 110
+    hitSound: 110
     hitAnimation: 26
     power: 42
     damageType: 1
@@ -2116,7 +2116,7 @@ items:
     handSprite: 488
     bulletSprite: 5
     bulletSpeed: 4
-    hitsound: 110
+    hitSound: 110
     hitAnimation: 56
     power: 62
     damageType: 1
@@ -2133,7 +2133,7 @@ items:
     floorSprite: 116
     handSprite: 496
     bulletSprite: 6
-    firesound: 111 #fireSound: 4
+    fireSound: 111 #fireSound: 4
     compatibleAmmo:
       - STR_ALLOY_RIFLE_CLIP
       - STR_ACID_RIFLE_CLIP
@@ -2170,7 +2170,7 @@ items:
     handSprite: 504
     bulletSprite: 6
     bulletSpeed: 3
-    hitsound: 110
+    hitSound: 110
     hitAnimation: 66
     power: 52
     damageType: 1
@@ -2188,7 +2188,7 @@ items:
     handSprite: 512
     bulletSprite: 7
     bulletSpeed: 3
-    hitsound: 113
+    hitSound: 113
     hitAnimation: 76
     power: 50
     damageType: 8
@@ -2224,7 +2224,7 @@ items:
     floorSprite: 120
     handSprite: 520
     bulletSprite: 9
-    firesound: 117
+    fireSound: 117
     compatibleAmmo:
       - STR_ALLOY_SNIPER_RIFLE_CLIP
       - STR_ACID_SNIPER_RIFLE_CLIP
@@ -2257,7 +2257,7 @@ items:
     handSprite: 528
     bulletSprite: 9
     bulletSpeed: 5
-    hitsound: 118
+    hitSound: 118
     hitAnimation: 66
     power: 88
     damageType: 1
@@ -2275,7 +2275,7 @@ items:
     handSprite: 536
     bulletSprite: 10
     bulletSpeed: 5
-    hitsound: 113
+    hitSound: 113
     hitAnimation: 76
     power: 84
     damageType: 8
@@ -2312,7 +2312,7 @@ items:
     floorSprite: 124
     handSprite: 560
     bulletSprite: 2
-    firesound: 121
+    fireSound: 121
     compatibleAmmo:
       - STR_SHOTGUN_AMMO
       - STR_SHOTGUN_CLIP
@@ -2347,7 +2347,7 @@ items:
     floorSprite: 125
     handSprite: 568
     bulletSpeed: 0
-    hitsound: 122
+    hitSound: 122
     hitAnimation: 26
     power: 28
     damageType: 1
@@ -2365,7 +2365,7 @@ items:
     floorSprite: 126
     handSprite: 576
     bulletSpeed: 0
-    hitsound: 122
+    hitSound: 122
     hitAnimation: 56
     power: 42
     damageType: 1
@@ -2383,7 +2383,7 @@ items:
     floorSprite: 11
     handSprite: 24
     bulletSprite: 13
-    firesound: 125 #fireSound: 12
+    fireSound: 125 #fireSound: 12
     compatibleAmmo:
       - STR_HC_HE_AMMO
       - STR_HC_I_AMMO
@@ -2417,8 +2417,8 @@ items:
     bigSprite: 12
     floorSprite: 12
     handSprite: 624
-    firesound: 127
-    hitsound: 122 #hitSound: 13
+    fireSound: 127
+    hitSound: 122 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
     power: 52
     damageType: 1
@@ -2476,7 +2476,7 @@ items:
     floorSprite: 7
     handSprite: 32
     bulletSprite: 14
-    firesound: 129 #fireSound: 12
+    fireSound: 129 #fireSound: 12
     compatibleAmmo:
       - STR_AC_HE_AMMO
       - STR_AC_I_AMMO
@@ -2508,7 +2508,7 @@ items:
     bigSprite: 8
     floorSprite: 8
     handSprite: 656
-    hitsound: 122 #hitSound: 13
+    hitSound: 122 #hitSound: 13
     hitAnimation: 56 #hitAnimation: 26
     power: 40 #power: 42
     damageType: 1
@@ -2569,7 +2569,7 @@ items:
     floorSprite: 128
     handSprite: 584
     bulletSprite: 15
-    firesound: 133
+    fireSound: 133
     compatibleAmmo:
       - STR_GL_HE_AMMO
       - STR_GL_I_AMMO
@@ -2665,7 +2665,7 @@ items:
     floorSprite: 15
     handSprite: 72
     bulletSprite: 18
-    firesound: 137 #fireSound: 52
+    fireSound: 137 #fireSound: 52
     compatibleAmmo:
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
@@ -2763,9 +2763,9 @@ items:
     handSprite: 712
     bulletSprite: 18
     bulletSpeed: 3
-    hitsound: 138 #hitSound: 0
+    hitSound: 138 #hitSound: 0
     hitAnimation: 0
-    firesound: 137 #fireSound: 52
+    fireSound: 137 #fireSound: 52
     accuracyAuto: 0
     accuracySnap: 0
     accuracyAimed: 95
@@ -2906,8 +2906,8 @@ items:
     bigSprite: 175
     floorSprite: 175
     handSprite: 856
-    meleesound: 151
-    meleeHitsound: 150
+    meleeSound: 151
+    meleeHitSound: 150
     meleeAnimation: 54
     power: 92
     strengthApplied: false
@@ -2931,8 +2931,8 @@ items:
     handSprite: 112
     bulletSprite: 20
     bulletSpeed: 6
-    firesound: 151 #fireSound: 11
-    hitsound: 150 #hitSound: 19
+    fireSound: 151 #fireSound: 11
+    hitSound: 150 #hitSound: 19
     hitAnimation: 36
     power: 48 #46
     damageType: 4
@@ -2963,8 +2963,8 @@ items:
     handSprite: 8
     bulletSprite: 22 # 21
     bulletSpeed: 8
-    firesound: 152 #fireSound: 11
-    hitsound: 150 #hitSound: 19
+    fireSound: 152 #fireSound: 11
+    hitSound: 150 #hitSound: 19
     hitAnimation: 36
     power: 65 #power: 60
     damageType: 4
@@ -2996,8 +2996,8 @@ items:
     handSprite: 16
     bulletSprite: 22
     bulletSpeed: 0 #bulletSpeed: 4
-    firesound: 153 #fireSound: 11
-    hitsound: 150 #hitSound: 19
+    fireSound: 153 #fireSound: 11
+    hitSound: 150 #hitSound: 19
     hitAnimation: 36
     power: 60 #power: 85
     damageType: 4
@@ -3031,8 +3031,8 @@ items:
     handSprite: 720
     bulletSprite: 31
     bulletSpeed: 12
-    firesound: 154
-    hitsound: 150
+    fireSound: 154
+    hitSound: 150
     hitAnimation: 36
     power: 124
     damageType: 4
@@ -3069,7 +3069,7 @@ items:
     handSprite: 104
     bulletSprite: 23 #bulletSprite: 8
     bulletSpeed: 1
-    firesound: 161 #fireSound: 18
+    fireSound: 161 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
@@ -3095,7 +3095,7 @@ items:
     bigSprite: 34
     floorSprite: 33
     handSprite: 736
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 96 #hitAnimation: 46
     power: 52
     damageType: 5
@@ -3117,7 +3117,7 @@ items:
     handSprite: 48
     bulletSprite: 24 #bulletSprite: 8
     bulletSpeed: 2
-    firesound: 162 #fireSound: 18
+    fireSound: 162 #fireSound: 18
     compatibleAmmo:
       - STR_PLASMA_RIFLE_CLIP
     accuracyAuto: 55
@@ -3144,7 +3144,7 @@ items:
     bigSprite: 41
     floorSprite: 162 #floorSprite: 33
     handSprite: 752
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 46
     power: 80
     damageType: 5
@@ -3166,7 +3166,7 @@ items:
     handSprite: 40
     bulletSprite: 25 #bulletSprite: 8
     bulletSpeed: 3
-    firesound: 163 #fireSound: 18
+    fireSound: 163 #fireSound: 18
     compatibleAmmo:
       - STR_HEAVY_PLASMA_CLIP
     accuracyAuto: 50
@@ -3193,7 +3193,7 @@ items:
     bigSprite: 25
     floorSprite: 163 #floorSprite: 33
     handSprite: 768
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 106 #hitAnimation: 46
     power: 115
     damageType: 5
@@ -3215,7 +3215,7 @@ items:
     handSprite: 792
     bulletSprite: 28 #bulletSprite: 8
     bulletSpeed: 1
-    firesound: 161 #fireSound: 18
+    fireSound: 161 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_PISTOL_CLIP
     accuracyAuto: 50
@@ -3244,7 +3244,7 @@ items:
     bigSprite: 165
     floorSprite: 165
     handSprite: 744
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 136
     power: 54 #power: 52
     damageType: 5
@@ -3262,7 +3262,7 @@ items:
     handSprite: 760
     bulletSprite: 29 #bulletSprite: 8
     bulletSpeed: 2
-    firesound: 162 #fireSound: 18
+    fireSound: 162 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_RIFLE_CLIP
     accuracyAuto: 48 #accuracyAuto: 55
@@ -3292,7 +3292,7 @@ items:
     bigSprite: 168
     floorSprite: 168
     handSprite: 800
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 136
     power: 80 #power: 80
     damageType: 5
@@ -3310,7 +3310,7 @@ items:
     handSprite: 808
     bulletSprite: 28 #bulletSprite: 8
     bulletSpeed: 2
-    firesound: 163 #fireSound: 18
+    fireSound: 163 #fireSound: 18
     compatibleAmmo:
       - STR_CONVERTED_PLASMA_CANNON_CLIP
     accuracyAuto: 45 #accuracyAuto: 50
@@ -3341,7 +3341,7 @@ items:
     bigSprite: 170
     floorSprite: 170
     handSprite: 816
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 136
     power: 58 # 52
     damageType: 5
@@ -3393,7 +3393,7 @@ items:
     handSprite: 832
     bulletSprite: 29
     bulletSpeed: 2
-    hitsound: 164 #hitSound: 19
+    hitSound: 164 #hitSound: 19
     hitAnimation: 136
     power: 108
     damageType: 5
@@ -3467,8 +3467,8 @@ items:
     bigSprite: 177
     floorSprite: 176
     handSprite: 864
-    meleesound: 165
-    meleeHitsound: 166
+    meleeSound: 165
+    meleeHitSound: 166
     meleeAnimation: 64
     power: 80
     strengthApplied: false
@@ -3494,7 +3494,7 @@ items:
     floorSprite: 180
     handSprite: 872
     bulletSprite: 12
-    firesound: 167
+    fireSound: 167
     compatibleAmmo:
       - STR_RAILGUN_SLUGS
     accuracyAuto: 0
@@ -3524,7 +3524,7 @@ items:
     floorSprite: 181
     handSprite: 880
     bulletSpeed: 8
-    hitsound: 118
+    hitSound: 118
     hitAnimation: 86
     power: 120
     damageType: 1
@@ -3606,7 +3606,7 @@ items:
     tuAimed: 80
     battleType: 1
     twoHanded: true
-    waypoint: true
+    waypoints: 3
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
@@ -3981,7 +3981,6 @@ invs:
       STR_RIGHT_HAND: 8
       STR_RIGHT_LEG: 16
       STR_RIGHT_SHOULDER: 14
-      STR_QUICK_DRAW: 12
       STR_QUICK_DRAW: 12
       STR_BREAST: 12
 
@@ -5074,7 +5073,7 @@ research:
 
   - name: STR_ALIEN_CONTAINMENT
     cost: 300
-    score: 10
+    points: 10
     dependencies:
       - STR_ALIEN_ENTERTAINMENT
       - STR_ALIEN_FOOD
@@ -5082,7 +5081,7 @@ research:
 
   - name: STR_STUN_ROD
     cost: 100
-    score: 10
+    points: 10
     dependencies:
       - STR_ALIEN_CONTAINMENT
 
@@ -5185,7 +5184,7 @@ research:
       - STR_ALIEN_ORIGINS
       - STR_ALIEN_ENGINEER
 
-# PLASMA weapons and Greanades
+# PLASMA weapons and grenades
 
   - name: STR_ALIEN_WEAPON
     listOrder: 1450
@@ -9078,17 +9077,28 @@ startingBase:
         STR_PISTOL_CLIP: 4
         STR_MACHINE_PISTOL: 2
         STR_MACHINE_PISTOL_CLIP: 4
-        STR_SHOTGUN: 1
-        STR_SHOTGUN_AMMO: 3
-        STR_RIFLE: 3
-        STR_RIFLE_CLIP: 6
+        STR_SHOTGUN: 2
+        STR_SHOTGUN_AMMO: 4
+        STR_RIFLE: 2
+        STR_RIFLE_CLIP: 4
+        STR_SNIPER_RIFLE: 2
+        STR_SNIPER_RIFLE_CLIP: 4
         STR_HEAVY_CANNON: 1
         STR_HC_HE_AMMO: 1
         STR_HC_I_AMMO: 1
         STR_AUTO_CANNON: 1
         STR_AC_HE_AMMO: 1
         STR_AC_I_AMMO: 1
+        STR_GRENADE_LAUNCHER: 2
+        STR_GL_HE_AMMO: 2
+        STR_GL_I_AMMO: 2
+        STR_GL_S_AMMO: 4
         STR_GRENADE: 8
+        STR_INCENDIARY_GRENADE: 4
+        STR_SMOKE_GRENADE: 6
+        STR_PROXIMITY_GRENADE: 4
+        STR_HIGH_EXPLOSIVE: 2
+        STR_ELECTRO_FLARE: 8
       status: STR_READY
     - type: STR_INTERCEPTOR
       id: 1
@@ -9129,12 +9139,24 @@ startingBase:
     STR_SHOTGUN_AMMO: 5
     STR_RIFLE: 1
     STR_RIFLE_CLIP: 4
+    #STR_SNIPER_RIFLE: 1
+    STR_SNIPER_RIFLE_CLIP: 4
     #STR_HEAVY_CANNON: 1
     STR_HC_HE_AMMO: 4
     STR_HC_I_AMMO: 4
     #STR_AUTO_CANNON: 1
     STR_AC_HE_AMMO: 4
     STR_AC_I_AMMO: 4
+    #STR_GRENADE_LAUNCHER: 1
+    STR_GL_HE_AMMO: 4
+    STR_GL_I_AMMO: 4
+    STR_GL_S_AMMO: 6
     STR_ROCKET_LAUNCHER: 1
     STR_LARGE_ROCKET: 2
-    STR_GRENADE: 5
+    STR_INCENDIARY_ROCKET: 2
+    STR_GRENADE: 6
+    STR_INCENDIARY_GRENADE: 4
+    STR_SMOKE_GRENADE: 8
+    STR_PROXIMITY_GRENADE: 4
+    STR_HIGH_EXPLOSIVE: 4
+    STR_ELECTRO_FLARE: 8

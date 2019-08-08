@@ -1,7 +1,7 @@
 name: "Awesome Guns"
-version: 1.6
+version: 2.0 alpha
 description: "an awesome modification of the OpenXcom game"
-author: Radu Martin (CanadianBeaver)
+author: Radu Martin
 id: "AwesomeGuns"
 master: "xcom1"
 reservedSpace: 2
