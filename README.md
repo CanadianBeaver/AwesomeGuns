@@ -8,11 +8,9 @@ X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen,
 
 Original gameplay of X-COM: UFO Defense has a big problem in the middle and in the end of game. The game can make you feel bored. There are a steam of small UFOs, the monotonous and repetitive missions, the heavy plasma has no alternative...  My suggestion to improve this situation is to make more efficient conventional weapons. Let the soldiers use different pistols, rifles, even grenade launchers and more different types of guns. Also, let the soldiers use different armours with different colours and possibilities. Moreover, let be more explosives in in the battles, more incendiary weapons and more smoke.
 
-I observed [a lot of mods](https://openxcom.mod.io) for OpenXcom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods that will never work. Unfortunately, a lot of mods were made for night game's release and do not work for the stable game's release.
+I observed [a lot of mods](https://openxcom.mod.io) for OpenXcom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods. They introduce a bunch of everything that does not improve the original gameplay. I would like to fix the original gameplay, make it awesome and perfect and do not surprising the players with over 9000! unexpected features.
 
-I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, it should work for the stable game release, it should be simple and it should make only necessary changes.
-
-If you have the same preferences, I would like to invite you to create it together.
+I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, it should be simple and it should make only necessary changes. If you have the same preferences, I would like to invite you to create it together.
 
 ### How do I make it?
 
