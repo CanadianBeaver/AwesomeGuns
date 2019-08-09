@@ -33,7 +33,7 @@ If you have the same preferences, I would like to invite you to create it togeth
 
 ### Contacts
 
-I would appreciate hearing your opinion on this. If you have any questions, please feel free to contact me by email: [ontariobeaver@gmail.com](mailto://ontariobeaver@gmail.com)
+I would appreciate hearing your opinion on this. If you have any questions, please feel free to contact me by [public forum](https://openxcom.org/forum/index.php/topic,4823.0.html).
 
 ### License
 
