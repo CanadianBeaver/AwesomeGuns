@@ -30,14 +30,16 @@ startingBase:
       - type: STR_WORKSHOP
         x: 4
         y: 4
-  scientists: 25
-  engineers: 10
   randomSoldiers: 10
   crafts:
     - type: STR_SKYRANGER
       id: 1
       fuel: 1500
       damage: 0
+      vehicles:
+        - type: STR_TANK_CANNON
+          ammo: 18
+          #size: 4
       items:
         STR_PISTOL: 2
         STR_PISTOL_CLIP: 4
@@ -95,7 +97,7 @@ startingBase:
     STR_CANNON: 1
     STR_CANNON_ROUNDS_X50: 6
     # weapons and items
-    STR_TANK_CANNON: 1
+    #STR_TANK_CANNON: 1 - already loaded into SKYRANGER 
     STR_HWP_CANNON_SHELLS: 24
     STR_PISTOL: 1
     STR_PISTOL_CLIP: 4
@@ -126,3 +128,9 @@ startingBase:
     STR_PROXIMITY_GRENADE: 4
     STR_HIGH_EXPLOSIVE: 4
     STR_ELECTRO_FLARE: 8
+    # STR_SECTOID_CORPSE: 1 - will think about
+  scientists: 25
+  #research: - will think about
+    #- project: STR_SECTOID_CORPSE
+      #assigned: 20
+  engineers: 10
