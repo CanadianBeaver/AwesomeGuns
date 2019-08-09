@@ -1,8 +1,8 @@
 ## Awesome Guns
 
-X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Nowadays, the original gameplay has been reproduced with great possibilities for mod makers in the [OpenXcom project](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes, that includes improved unit balancing, remastered graphics and amazing gameplay.
+X-COM: UFO Defense was such a perfect game. Twenty years ago, when I was a teen, I played this game so much and I loved it so hard. Even though a lot of people and companies tried to embody ideas of this game in their creations, the original plot of UFO Defense has never been improved. Nowadays, the original gameplay has been reproduced with great possibilities for mod makers in the [OpenXcom project](https://github.com/SupSuper/OpenXcom) and fortunately it can be run on Linux. Despite the fact that OpenXcom is awesome I would like to introduce my collection of changes, that includes improved unit balancing, remastered graphics, amazing gameplay and everything else combined into one modification called Awesome Guns.
 
-Awesome Guns Website: https://canadianbeaver.github.io/AwesomeGuns
+Awesome Guns website: https://canadianbeaver.github.io/AwesomeGuns
 
 ### Why am I doing it?
 
