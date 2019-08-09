@@ -24,7 +24,10 @@ I prefer the Debian, because it is stable, simple and it is a minimum necessary.
 * Download the [OpenXcom game](https://openxcom.org/git-builds/) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games). Please, do not forget applay the [Data Patch](http://openxcom.org/downloads-extras) after instaling. The detailed instruction how to install the OpenXcom and Data Patch [is there](https://www.ufopaedia.org/index.php/Installing_(OpenXcom)).
 * Download the [latest release](https://github.com/CanadianBeaver/AwesomeGuns/releases/latest) of the Awesome Guns modification and extract all files and folders into mods folder of OpenXcom game. The detailed instruction how to install mods for the OpenXcom [is there](https://www.ufopaedia.org/index.php/Mods_(OpenXcom)#Installing_Mods_for_the_Nightly_Version). 
 * Switch off all installed mods and switch on the Awesome Guns modification.
-* Awesome Guns modification is a full mod, therefore it can be incompatible with other mods. Also, Awesome Guns modification can be incompatible with original OpenXcom saved files, because inventory screen has been redone. To avoid problems with previous saved files your soldiers should be stripped before saving.
+
+### Compatibility
+
+Awesome Guns modification is a full mod. Therefore it can be incompatible with other mods. Also, Awesome Guns modification can be incompatible with original OpenXcom saved files, because inventory screen has been redone. To avoid problems with previous saved files your soldiers should be stripped before saving.
 
 ### Contacts
 
