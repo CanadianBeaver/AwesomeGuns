@@ -10,7 +10,7 @@ Original gameplay of X-COM: UFO Defense has a big problem in the middle and in t
 
 I observed [a lot of mods](https://openxcom.mod.io) for OpenXcom and found that there are two types of mods. Main ones are simple and perfect, but they do not combine together nicely. Another mods are like a dump of different mods. They introduce a bunch of everything that does not improve the original gameplay. I would like to fix the original gameplay, make it awesome and perfect and do not surprising the players with [over 9000!](https://en.wikipedia.org/wiki/It's_Over_9000!) unexpected features.
 
-I prefer the [Debian](https://www.debian.org/). It is stable, it is simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, it should be simple and it should make only necessary changes. If you have the same preferences, I would like to invite you to create it together.
+I prefer the Debian, because it is stable, simple and it is a minimum necessary. I would like to make a mod with the same ideas. It should be stable, simple and it should make only necessary changes. If you have the same preferences, I would like to invite you to create it together.
 
 ### How do I make it?
 
