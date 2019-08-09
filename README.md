@@ -28,12 +28,8 @@ If you have the same preferences, I would like to invite you to create it togeth
 ### How to install it?
 
 * Download the [OpenXcom game](https://openxcom.org/git-builds/) and install it. Be aware, OpenXcom game requires a vanilla version of the original [UFO: Enemy Unknown](https://en.wikipedia.org/wiki/UFO:_Enemy_Unknown). If you do not own a copy, you can buy it from [one of these retailers](http://ufopaedia.org/index.php/Where_to_Get_the_Games). Please, do not forget applay the [Data Patch](http://openxcom.org/downloads-extras) after instaling. The detailed instruction how to install the OpenXcom and Data patch [is there](https://www.ufopaedia.org/index.php/Installing_(OpenXcom)).
-* Download the [latest release](https://github.com/CanadianBeaver/AwesomeGuns/releases/latest) of the Awesome Guns modification and extract files and folders.
-* Copy the extracted *Ruleset/AwesomeGuns.rul* file into your *openxcom/data/Ruleset* folder.
-* Copy the extracted *Resources/AwesomeGuns* folder into your *openxcom/data/Resources* folder.
-* Switch off all mods and extensions, especially UFOextender and XcomUtil.
-
-If you prefer playing the Awesome Guns modification on OpenXcom Nightly, then [this patch](http://www.openxcom.com/mod/awesome-guns-nightly-patch) can solve the compatibility problems.
+* Download the [latest release](https://github.com/CanadianBeaver/AwesomeGuns/releases/latest) of the Awesome Guns modification and extract all files and folders into mods folder of OpenXcom game. The detailed instruction how to install mods for the OpenXcom [is there](https://www.ufopaedia.org/index.php/Mods_(OpenXcom)). 
+* Switch off all installed mods and extensions and switch on the Awesome Guns modification.
 
 ### Contacts
 
