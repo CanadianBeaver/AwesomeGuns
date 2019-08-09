@@ -1080,7 +1080,7 @@ facilities:
     buildCost: 600000 #buildCost: 800000
     buildTime: 15 #buildTime: 25
     monthlyCost: 30000 #monthlyCost: 15000
-    radarRange: 2250 #radarRange: 2250
+    radarRange: 2250 #radarRange: 2250, perhaps should be increased a little, but less that the aircraft flying distance
     radarChance: 5 #radarChance: 20
 
   - type: STR_HYPER_WAVE_DECODER
@@ -1091,7 +1091,7 @@ facilities:
     buildTime: 20 #buildTime: 26
     monthlyCost: 90000 #monthlyCost: 30000
     radarRange: 1900 #radarRange: 2400
-    radarChance: 85 #radarChance: 100
+    radarChance: 85 #radarChance: 100, perhaps should be 75
 
 # Fix the DEFENSES
 
