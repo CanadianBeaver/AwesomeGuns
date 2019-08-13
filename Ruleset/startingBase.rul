@@ -39,8 +39,9 @@ startingBase:
       vehicles:
         - type: STR_TANK_CANNON
           ammo: 18
-          #size: 4
+          size: 4
       items:
+        STR_KNIFE: 2
         STR_PISTOL: 2
         STR_PISTOL_CLIP: 4
         STR_MACHINE_PISTOL: 2
@@ -62,11 +63,13 @@ startingBase:
         STR_GL_I_AMMO: 2
         STR_GL_S_AMMO: 4
         STR_GRENADE: 8
-        STR_INCENDIARY_GRENADE: 4
-        STR_SMOKE_GRENADE: 6
-        STR_PROXIMITY_GRENADE: 4
+        STR_INCENDIARY_GRENADE: 8
+        STR_SMOKE_GRENADE: 8
+        STR_PROXIMITY_GRENADE: 8
         STR_HIGH_EXPLOSIVE: 2
         STR_ELECTRO_FLARE: 8
+        STR_MOTION_SCANNER: 2
+        STR_MEDI_CHEST: 2
       status: STR_READY
     - type: STR_INTERCEPTOR
       id: 1
@@ -97,40 +100,38 @@ startingBase:
     STR_CANNON: 1
     STR_CANNON_ROUNDS_X50: 6
     # weapons and items
-    #STR_TANK_CANNON: 1 - already loaded into SKYRANGER 
+    #STR_TANK_CANNON: 1 - already loaded into SKYRANGER
     STR_HWP_CANNON_SHELLS: 24
-    STR_PISTOL: 1
+    #STR_PISTOL: 1
     STR_PISTOL_CLIP: 4
-    STR_MACHINE_PISTOL: 1
+    #STR_MACHINE_PISTOL: 1
     STR_MACHINE_PISTOL_CLIP: 4
-    STR_SHOTGUN: 1
-    STR_SHOTGUN_AMMO: 5
-    STR_RIFLE: 1
+    #STR_SHOTGUN: 1
+    STR_SHOTGUN_AMMO: 4
+    #STR_RIFLE: 1
     STR_RIFLE_CLIP: 4
     #STR_SNIPER_RIFLE: 1
     STR_SNIPER_RIFLE_CLIP: 4
     #STR_HEAVY_CANNON: 1
-    STR_HC_HE_AMMO: 4
-    STR_HC_I_AMMO: 4
+    STR_HC_HE_AMMO: 2
+    STR_HC_I_AMMO: 2
     #STR_AUTO_CANNON: 1
-    STR_AC_HE_AMMO: 4
-    STR_AC_I_AMMO: 4
+    STR_AC_HE_AMMO: 2
+    STR_AC_I_AMMO: 2
     #STR_GRENADE_LAUNCHER: 1
     STR_GL_HE_AMMO: 4
     STR_GL_I_AMMO: 4
-    STR_GL_S_AMMO: 6
+    STR_GL_S_AMMO: 4
     STR_ROCKET_LAUNCHER: 1
     STR_LARGE_ROCKET: 2
     STR_INCENDIARY_ROCKET: 2
-    STR_GRENADE: 6
+    STR_GRENADE: 4
     STR_INCENDIARY_GRENADE: 4
-    STR_SMOKE_GRENADE: 8
+    STR_SMOKE_GRENADE: 6
     STR_PROXIMITY_GRENADE: 4
     STR_HIGH_EXPLOSIVE: 4
     STR_ELECTRO_FLARE: 8
-    # STR_SECTOID_CORPSE: 1 - will think about
+    STR_LIGHT_VEST: 4
+    STR_ARMORED_VEST: 2
   scientists: 25
-  #research: - will think about
-    #- project: STR_SECTOID_CORPSE
-      #assigned: 20
   engineers: 10
