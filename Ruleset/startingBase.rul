@@ -99,9 +99,9 @@ startingBase:
     STR_STINGRAY_MISSILES: 25
     STR_CANNON: 1
     STR_CANNON_ROUNDS_X50: 6
-    # weapons and items
-    #STR_TANK_CANNON: 1 - already loaded into SKYRANGER
+    # tank weapons
     STR_HWP_CANNON_SHELLS: 24
+    # conventional weapons and items
     #STR_PISTOL: 1
     STR_PISTOL_CLIP: 4
     #STR_MACHINE_PISTOL: 1
