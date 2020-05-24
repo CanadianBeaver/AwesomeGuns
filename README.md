@@ -31,7 +31,7 @@ Awesome Guns modification is a full mod. Therefore it can be incompatible with o
 
 ### Contacts
 
-I would appreciate hearing your opinion on this. If you have any questions, please feel free to contact me by [public forum](https://openxcom.org/forum/index.php/topic,4823.0.html).
+I would appreciate hearing your opinion on this. If you have any questions, please feel free to contact me by [public forum](https://openxcom.org/forum/index.php/topic,4823.0.html). Also, please review my [professional software](https://github.com/datarza?tab=repositories).
 
 ### License
 
