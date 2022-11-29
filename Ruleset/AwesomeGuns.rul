@@ -1528,6 +1528,7 @@ items:
 
   - type: STR_ARMORED_VEST_CORPSE
     listOrder: 4702
+    battleType: 11
     name: STR_CORPSE
     weight: 27
     bigSprite: 1003
@@ -1544,6 +1545,7 @@ items:
 
   - type: STR_LIGHT_VEST_CORPSE
     listOrder: 4703
+    battleType: 11
     name: STR_CORPSE
     weight: 25
     bigSprite: 1001
@@ -1561,6 +1563,7 @@ items:
 
   - type: STR_HEAVY_CORPSE_ARMOR
     listOrder: 4801
+    battleType: 11
     name: STR_CORPSE
     weight: 34
     bigSprite: 1004
@@ -1591,6 +1594,7 @@ items:
 
   - type: STR_LIGHT_CORPSE_ARMOR
     listOrder: 4799
+    battleType: 11
     name: STR_CORPSE
     weight: 27
     bigSprite: 1005
@@ -1613,6 +1617,7 @@ items:
     recover: false
 
   - type: STR_POWER_CORPSE_SUIT
+    battleType: 11
     name: STR_CORPSE
     weight: 42 #weight: 26
     bigSprite: 1002
@@ -1637,6 +1642,7 @@ items:
 
   - type: STR_LIGHT_CORPSE_SUIT
     listOrder: 4901
+    battleType: 11
     name: STR_CORPSE
     weight: 28
     bigSprite: 1005 # use the same image as STR_LIGHT_CORPSE_ARMOR
